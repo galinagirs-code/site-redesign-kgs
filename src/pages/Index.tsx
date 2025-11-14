@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const equipment = [
@@ -80,16 +81,16 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
                 alt="КГС Логотип"
                 className="h-12 w-auto"
               />
-            </div>
+            </Link>
             
             <nav className="hidden md:flex items-center space-x-6">
-              <a href="#about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</a>
+              <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
               <a href="#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
               <a href="#services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</a>
               <a href="#production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство</a>
@@ -474,7 +475,7 @@ const Index = () => {
             <div>
               <h4 className="font-heading font-semibold mb-4">О компании</h4>
               <ul className="space-y-2 text-sm text-white/70">
-                <li><a href="#about" className="hover:text-accent transition-colors">О нас</a></li>
+                <li><Link to="/about" className="hover:text-accent transition-colors">О нас</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Доставка</a></li>
                 <li><a href="#contact" className="hover:text-accent transition-colors">Контакты</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Реквизиты</a></li>
