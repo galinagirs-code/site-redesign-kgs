@@ -247,6 +247,31 @@ const Contact = () => {
                 title="Карта офиса КГС"
               />
             </div>
+
+            <Card className="mt-8 p-8 bg-gradient-to-br from-primary to-accent/20 text-white max-w-4xl mx-auto">
+              <div className="text-center">
+                <h3 className="text-2xl font-heading font-bold mb-4">
+                  Как добраться
+                </h3>
+                <div className="grid md:grid-cols-3 gap-6 text-sm">
+                  <div>
+                    <Icon name="Car" className="text-accent mx-auto mb-2" size={32} />
+                    <p className="font-semibold mb-1">На автомобиле</p>
+                    <p className="text-white/80">Удобная парковка рядом с офисом</p>
+                  </div>
+                  <div>
+                    <Icon name="Bus" className="text-accent mx-auto mb-2" size={32} />
+                    <p className="font-semibold mb-1">Общественный транспорт</p>
+                    <p className="text-white/80">Остановка в 5 минутах ходьбы</p>
+                  </div>
+                  <div>
+                    <Icon name="Navigation" className="text-accent mx-auto mb-2" size={32} />
+                    <p className="font-semibold mb-1">Навигатор</p>
+                    <p className="text-white/80">Координаты для GPS-навигации</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </div>
 
           <div>
