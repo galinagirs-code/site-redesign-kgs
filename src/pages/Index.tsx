@@ -82,7 +82,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <img 
-                src="https://cdn.poehali.dev/files/bad0729b-62e9-418a-b56c-b630705ebbf7.png"
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
                 alt="КГС Логотип"
                 className="h-12 w-auto"
               />
@@ -441,7 +441,7 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                  src="https://cdn.poehali.dev/files/bad0729b-62e9-418a-b56c-b630705ebbf7.png"
+                  src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
                   alt="КГС Логотип"
                   className="h-16 w-auto"
                 />
