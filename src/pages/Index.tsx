@@ -427,9 +427,24 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold mb-2">Телефоны</h3>
-                      <p className="text-muted-foreground mb-1">8 (800) 600-74-65 — бесплатно</p>
-                      <p className="text-muted-foreground mb-1">+7 (343) 346-74-75 — офис</p>
-                      <p className="text-muted-foreground">+7 (912) 241-03-18 — WhatsApp</p>
+                      <p className="text-muted-foreground mb-1">
+                        <a href="tel:88006007465" className="hover:text-accent transition-colors">
+                          8 (800) 600-74-65
+                        </a>
+                        {" "}— бесплатно
+                      </p>
+                      <p className="text-muted-foreground mb-1">
+                        <a href="tel:+73433467475" className="hover:text-accent transition-colors">
+                          +7 (343) 346-74-75
+                        </a>
+                        {" "}— офис
+                      </p>
+                      <p className="text-muted-foreground">
+                        <a href="tel:+79122410318" className="hover:text-accent transition-colors">
+                          +7 (912) 241-03-18
+                        </a>
+                        {" "}— WhatsApp
+                      </p>
                     </div>
                   </div>
                 </Card>
@@ -441,7 +456,12 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold mb-2">Email</h3>
-                      <p className="text-muted-foreground">info@kgs-ural.ru</p>
+                      <a 
+                        href="mailto:info@kgs-ural.ru"
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        info@kgs-ural.ru
+                      </a>
                     </div>
                   </div>
                 </Card>
