@@ -235,6 +235,15 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          <div className="text-center mt-12">
+            <Link to="/about">
+              <Button size="lg" className="btn-gradient-reverse text-white font-medium">
+                Подробнее о компании
+                <Icon name="ArrowRight" className="ml-2" size={18} />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -297,6 +306,15 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm">{service.description}</p>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/about">
+              <Button size="lg" className="btn-gradient-reverse text-white font-medium">
+                Подробнее об услугах
+                <Icon name="ArrowRight" className="ml-2" size={18} />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
