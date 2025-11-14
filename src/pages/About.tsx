@@ -270,6 +270,159 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Отзывы наших клиентов
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Что говорят о нас компании, с которыми мы работаем
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Работаем с КГС уже 3 года. Отличное качество оборудования, всегда в срок. 
+                Шефмонтаж прошёл без проблем, инженеры очень грамотные."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ООО "СтройТех"</div>
+                  <div className="text-xs text-muted-foreground">Москва</div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Заказывали буровую установку и сваебойный молот. Цена ниже конкурентов, 
+                качество на высоте. Техподдержка всегда на связи."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ООО "ФундаментСтрой"</div>
+                  <div className="text-xs text-muted-foreground">Санкт-Петербург</div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Быстрая доставка в Казахстан, все документы оформили правильно. 
+                Рекомендуем как надёжного поставщика оборудования."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ТОО "КазСтрой"</div>
+                  <div className="text-xs text-muted-foreground">Алматы, Казахстан</div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Отличный сервис! Когда возникла поломка, приехали на следующий день и быстро починили. 
+                Такой подход к клиентам редко встретишь."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ООО "УралФундамент"</div>
+                  <div className="text-xs text-muted-foreground">Екатеринбург</div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Покупали копровую мачту и запчасти. Консультанты помогли подобрать именно то, что нужно. 
+                Оборудование работает безупречно уже полтора года."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ООО "СибирьСтрой"</div>
+                  <div className="text-xs text-muted-foreground">Новосибирск</div>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex text-accent">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                "Собственное производство в Екатеринбурге — это большой плюс. 
+                Изготовили нестандартные металлоконструкции точно в срок."
+              </p>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Building2" className="text-primary" size={20} />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">ЗАО "ВолгаСваи"</div>
+                  <div className="text-xs text-muted-foreground">Самара</div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
