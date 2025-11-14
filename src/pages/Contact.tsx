@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 
@@ -175,6 +176,18 @@ const Contact = () => {
                 <div>
                   <label className="text-sm font-medium mb-2 block">Комментарий / вопрос</label>
                   <Textarea placeholder="Опишите ваш вопрос или задачу..." rows={6} />
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Checkbox id="privacy" className="mt-1" />
+                  <label 
+                    htmlFor="privacy" 
+                    className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                  >
+                    Я согласен на обработку персональных данных в соответствии с{" "}
+                    <a href="#" className="text-primary hover:text-accent underline">
+                      политикой конфиденциальности
+                    </a>
+                  </label>
                 </div>
                 <Button className="w-full btn-gradient text-white h-12" size="lg">
                   Отправить сообщение

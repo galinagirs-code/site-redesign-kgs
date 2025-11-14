@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 
@@ -380,6 +381,18 @@ const Index = () => {
                   <div>
                     <label className="text-sm font-medium mb-2 block">Комментарий</label>
                     <Textarea placeholder="Расскажите о вашем проекте..." rows={4} />
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Checkbox id="privacy-index" className="mt-1" />
+                    <label 
+                      htmlFor="privacy-index" 
+                      className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                    >
+                      Я согласен на обработку персональных данных в соответствии с{" "}
+                      <a href="#" className="text-primary hover:text-accent underline">
+                        политикой конфиденциальности
+                      </a>
+                    </label>
                   </div>
                   <Button className="w-full btn-gradient-reverse text-white" size="lg">
                     Отправить заявку
