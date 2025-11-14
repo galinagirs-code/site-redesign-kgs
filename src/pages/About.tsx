@@ -176,7 +176,7 @@ const About = () => {
               <Link to="/" className="text-white/90 hover:text-accent transition-colors text-sm">Главная</Link>
               <Link to="/about" className="text-accent transition-colors text-sm font-medium">О компании</Link>
               <a href="/#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
-              <a href="/#services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</a>
+              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство</Link>
               <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
