@@ -795,6 +795,140 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Наш офис
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Посетите нас по адресу в Екатеринбурге или свяжитесь удобным способом
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <Card className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="MapPin" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-semibold mb-2">Адрес офиса</h3>
+                    <p className="text-muted-foreground mb-3">
+                      г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      <strong>График работы:</strong><br />
+                      Пн–Пт: 09:00 — 18:00
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Phone" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-semibold mb-2">Телефоны</h3>
+                    <div className="space-y-2 text-muted-foreground">
+                      <p>
+                        <a href="tel:88006007465" className="hover:text-accent transition-colors">
+                          8 (800) 600-74-65
+                        </a>
+                        <span className="text-sm"> — бесплатно</span>
+                      </p>
+                      <p>
+                        <a href="tel:+73433467475" className="hover:text-accent transition-colors">
+                          +7 (343) 346-74-75
+                        </a>
+                        <span className="text-sm"> — офис</span>
+                      </p>
+                      <p>
+                        <a href="tel:+79122410318" className="hover:text-accent transition-colors">
+                          +7 (912) 241-03-18
+                        </a>
+                        <span className="text-sm"> — WhatsApp</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Mail" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-semibold mb-2">Email</h3>
+                    <a 
+                      href="mailto:info@kgs-ural.ru"
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      info@kgs-ural.ru
+                    </a>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Factory" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-semibold mb-2">Производственный цех</h3>
+                    <p className="text-muted-foreground">
+                      г. Берёзовский, Свердловская область<br />
+                      (за ЕКАДом)
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <div className="relative rounded-lg overflow-hidden h-[600px] shadow-xl">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b5c4f3e2d1a9c7b6e5f4a3d2c1b0a9f8e7d6c5b4a3d2c1b0a9f8e7d6c5b4a3d&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                className="border-0"
+                title="Карта офиса КГС"
+              />
+            </div>
+          </div>
+
+          <Card className="mt-12 p-8 bg-gradient-to-br from-primary to-accent/20 text-white max-w-4xl mx-auto">
+            <div className="text-center">
+              <h3 className="text-2xl font-heading font-bold mb-4">
+                Как добраться
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 text-sm">
+                <div>
+                  <Icon name="Car" className="text-accent mx-auto mb-2" size={32} />
+                  <p className="font-semibold mb-1">На автомобиле</p>
+                  <p className="text-white/80">Удобная парковка рядом с офисом</p>
+                </div>
+                <div>
+                  <Icon name="Bus" className="text-accent mx-auto mb-2" size={32} />
+                  <p className="font-semibold mb-1">Общественный транспорт</p>
+                  <p className="text-white/80">Остановка в 5 минутах ходьбы</p>
+                </div>
+                <div>
+                  <Icon name="Navigation" className="text-accent mx-auto mb-2" size={32} />
+                  <p className="font-semibold mb-1">Навигатор</p>
+                  <p className="text-white/80">Координаты для GPS-навигации</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
