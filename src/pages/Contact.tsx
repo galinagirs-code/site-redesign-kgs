@@ -226,7 +226,7 @@ const Contact = () => {
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Наш офис на карте</h2>
             <div className="relative rounded-lg overflow-hidden h-[500px] shadow-2xl max-w-6xl mx-auto">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b5c4f3e2d1a9c7b6e5f4a3d2c1b0a9f8e7d6c5b4a3d2c1b0a9f8e7d6c5b4a3d&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=1169658096189&ll=60.597474%2C56.838011&pt=60.597474,56.838011,pm2rdm"
                 width="100%"
                 height="100%"
                 frameBorder="0"
