@@ -177,7 +177,7 @@ const About = () => {
               <Link to="/about" className="text-accent transition-colors text-sm font-medium">О компании</Link>
               <a href="/#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
               <a href="/#services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</a>
-              <a href="/#contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</a>
+              <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -1147,7 +1147,7 @@ const About = () => {
               <h4 className="font-heading font-semibold mb-4">О компании</h4>
               <ul className="space-y-2 text-sm text-white/70">
                 <li><Link to="/about" className="hover:text-accent transition-colors">О нас</Link></li>
-                <li><a href="/#contact" className="hover:text-accent transition-colors">Контакты</a></li>
+                <li><Link to="/contact" className="hover:text-accent transition-colors">Контакты</Link></li>
               </ul>
             </div>
           </div>

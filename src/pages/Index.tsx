@@ -94,7 +94,7 @@ const Index = () => {
               <a href="#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
               <a href="#services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</a>
               <a href="#production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство</a>
-              <a href="#contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</a>
+              <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -477,7 +477,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-white/70">
                 <li><Link to="/about" className="hover:text-accent transition-colors">О нас</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Доставка</a></li>
-                <li><a href="#contact" className="hover:text-accent transition-colors">Контакты</a></li>
+                <li><Link to="/contact" className="hover:text-accent transition-colors">Контакты</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Реквизиты</a></li>
               </ul>
             </div>
