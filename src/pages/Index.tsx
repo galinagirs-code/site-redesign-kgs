@@ -130,7 +130,7 @@ const Index = () => {
                 <Button size="lg" className="btn-gradient-reverse text-white font-medium">
                   Получить каталог
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button size="lg" className="btn-gradient-reverse text-white font-medium">
                   Запросить консультацию
                 </Button>
               </div>
