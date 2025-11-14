@@ -47,7 +47,8 @@ const Contact = () => {
               <Link to="/" className="text-white/90 hover:text-accent transition-colors text-sm">Главная</Link>
               <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
               <a href="/#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
-              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство</Link>
+              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и логистика</Link>
+              <a href="#" className="text-white/90 hover:text-accent transition-colors text-sm">Новости</a>
               <Link to="/contact" className="text-accent transition-colors text-sm font-medium">Контакты</Link>
             </nav>
 
