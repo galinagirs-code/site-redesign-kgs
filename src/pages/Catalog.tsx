@@ -128,9 +128,11 @@ const Catalog = () => {
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
                 8 (800) 600-74-65
               </a>
-              <Button size="sm" className="btn-gradient text-white hidden md:block">
-                Получить каталог
-              </Button>
+              <a href="#contact">
+                <Button size="sm" className="btn-gradient text-white hidden md:block">
+                  Получить каталог
+                </Button>
+              </a>
               <MobileMenu currentPath="/catalog" />
             </div>
           </div>
@@ -152,10 +154,28 @@ const Catalog = () => {
               Широкий ассортимент техники для строительства свайных фундаментов от ведущих производителей
             </p>
             
-            <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl">
-              <Icon name="Download" className="mr-2" size={20} />
-              Получить каталог
-            </Button>
+            <a href="#contact">
+              <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl">
+                <Icon name="Download" className="mr-2" size={20} />
+                Получить каталог
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-3">
+            {categories.map((category) => (
+              <a 
+                key={category.id}
+                href={`#${category.id}`}
+                className="bg-white hover:bg-accent/10 border border-primary/20 hover:border-accent text-primary hover:text-accent px-4 py-2 rounded-lg transition-all text-sm font-medium shadow-sm hover:shadow-md"
+              >
+                {category.title}
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -163,7 +183,7 @@ const Catalog = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           {categories.map((category, categoryIndex) => (
-            <div key={category.id} className={`mb-16 ${categoryIndex !== 0 ? 'pt-16 border-t' : ''}`}>
+            <div key={category.id} id={category.id} className={`mb-16 ${categoryIndex !== 0 ? 'pt-16 border-t' : ''}`}>
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">
                   {category.title}
@@ -189,12 +209,16 @@ const Catalog = () => {
                       <h3 className="font-heading font-semibold text-lg mb-2 line-clamp-2">{item.name}</h3>
                       <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
                       <div className="flex gap-2">
-                        <Button variant="outline" className="flex-1 border-accent text-accent hover:bg-accent hover:text-white text-sm">
-                          Подробнее
-                        </Button>
-                        <Button className="flex-1 btn-gradient text-white text-sm">
-                          Запросить цену
-                        </Button>
+                        <a href="#contact" className="flex-1">
+                          <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white text-sm">
+                            Подробнее
+                          </Button>
+                        </a>
+                        <a href="#contact" className="flex-1">
+                          <Button className="w-full btn-gradient text-white text-sm">
+                            Запросить цену
+                          </Button>
+                        </a>
                       </div>
                     </CardContent>
                   </Card>
@@ -205,25 +229,71 @@ const Catalog = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-muted/30">
+      <section id="contact" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Получите полный каталог оборудования
-            </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              Свяжитесь с нами для получения подробной информации о технических характеристиках и ценах
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-gradient text-white">
-                <Icon name="Download" className="mr-2" size={20} />
-                Получить каталог
-              </Button>
-              <Button size="lg" className="btn-gradient-reverse text-white">
-                <Icon name="MessageCircle" className="mr-2" size={20} />
-                Получить консультацию
-              </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Получите консультацию</h2>
+              <p className="text-muted-foreground text-lg">
+                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
+              </p>
             </div>
+
+            <Card className="p-8">
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Ваше имя *</label>
+                    <input 
+                      type="text" 
+                      required
+                      placeholder="Иван Иванов"
+                      className="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Телефон *</label>
+                    <input 
+                      type="tel" 
+                      required
+                      placeholder="+7 (___) ___-__-__"
+                      className="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Email</label>
+                  <input 
+                    type="email" 
+                    placeholder="email@example.com"
+                    className="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Комментарий</label>
+                  <textarea 
+                    rows={4}
+                    placeholder="Расскажите о вашем проекте или интересующем оборудовании..."
+                    className="w-full px-4 py-3 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+                  />
+                </div>
+                <div className="flex items-start space-x-3">
+                  <input type="checkbox" id="privacy-catalog" className="mt-1" required />
+                  <label 
+                    htmlFor="privacy-catalog" 
+                    className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                  >
+                    Я согласен на обработку персональных данных в соответствии с{" "}
+                    <a href="#" className="text-primary hover:text-accent underline">
+                      политикой конфиденциальности
+                    </a>
+                  </label>
+                </div>
+                <Button type="submit" className="w-full btn-gradient text-white" size="lg">
+                  Отправить заявку
+                </Button>
+              </form>
+            </Card>
           </div>
         </div>
       </section>

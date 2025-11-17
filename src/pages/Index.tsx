@@ -116,9 +116,11 @@ const Index = () => {
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
                 8 (800) 600-74-65
               </a>
-              <Button size="sm" className="btn-gradient text-white hidden md:block">
-                Заказать звонок
-              </Button>
+              <a href="#contact">
+                <Button size="sm" className="btn-gradient text-white hidden md:block">
+                  Заказать звонок
+                </Button>
+              </a>
               <MobileMenu currentPath="/" />
             </div>
           </div>
@@ -150,12 +152,16 @@ const Index = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
-                <Button size="lg" className="btn-gradient-reverse text-white font-medium">
-                  Получить каталог
-                </Button>
-                <Button size="lg" className="btn-gradient-reverse text-white font-medium">
-                  Запросить консультацию
-                </Button>
+                <a href="#contact">
+                  <Button size="lg" className="btn-gradient-reverse text-white font-medium">
+                    Получить каталог
+                  </Button>
+                </a>
+                <a href="#contact">
+                  <Button size="lg" className="btn-gradient-reverse text-white font-medium">
+                    Запросить консультацию
+                  </Button>
+                </a>
               </div>
 
               <div className="grid grid-cols-3 gap-4">
@@ -292,19 +298,23 @@ const Index = () => {
                 <CardContent className="p-6">
                   <h3 className="font-heading font-semibold text-xl mb-2">{item.title}</h3>
                   <p className="text-muted-foreground mb-4">{item.description}</p>
-                  <Button variant="outline" className="w-full group/btn border-accent text-accent hover:bg-accent hover:text-white">
-                    Подробнее
-                    <Icon name="ArrowRight" className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                  </Button>
+                  <Link to="/catalog">
+                    <Button variant="outline" className="w-full group/btn border-accent text-accent hover:bg-accent hover:text-white">
+                      Подробнее
+                      <Icon name="ArrowRight" className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Полный каталог оборудования
-            </Button>
+            <Link to="/catalog">
+              <Button size="lg" className="bg-accent hover:bg-accent/90">
+                Полный каталог оборудования
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -331,7 +341,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/about">
+            <Link to="/services">
               <Button size="lg" className="btn-gradient-reverse text-white font-medium">
                 Подробнее об услугах
                 <Icon name="ArrowRight" className="ml-2" size={18} />
@@ -378,9 +388,11 @@ const Index = () => {
                 </div>
               </div>
 
-              <Button size="lg" className="mt-8 bg-accent hover:bg-accent/90">
-                Подробнее о производстве
-              </Button>
+              <Link to="/production">
+                <Button size="lg" className="mt-8 bg-accent hover:bg-accent/90">
+                  Подробнее о производстве
+                </Button>
+              </Link>
             </div>
 
             <div className="relative">
@@ -435,7 +447,7 @@ const Index = () => {
                       </a>
                     </label>
                   </div>
-                  <Button className="w-full btn-gradient-reverse text-white" size="lg">
+                  <Button type="submit" className="w-full btn-gradient-reverse text-white" size="lg">
                     Отправить заявку
                   </Button>
                 </form>
