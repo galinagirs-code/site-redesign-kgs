@@ -101,22 +101,22 @@ const Services = () => {
               Полный спектр услуг по монтажу, обслуживанию и ремонту сваебойного и бурового оборудования
             </p>
             
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="#supervision" 
-                className="bg-white/10 hover:bg-accent/20 border border-white/20 hover:border-accent/50 text-white px-4 py-2 rounded-lg transition-all text-sm font-medium"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
               >
                 Шефмонтаж оборудования
               </a>
               <a 
                 href="#maintenance" 
-                className="bg-white/10 hover:bg-accent/20 border border-white/20 hover:border-accent/50 text-white px-4 py-2 rounded-lg transition-all text-sm font-medium"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
               >
                 Техническое обслуживание
               </a>
               <a 
                 href="#guarantee" 
-                className="bg-white/10 hover:bg-accent/20 border border-white/20 hover:border-accent/50 text-white px-4 py-2 rounded-lg transition-all text-sm font-medium"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
               >
                 Гарантия
               </a>
@@ -207,6 +207,55 @@ const Services = () => {
                 </p>
               </div>
             </Card>
+
+            <div className="mt-12">
+              <h3 className="text-2xl font-heading font-bold mb-6 text-center">
+                Фотогалерея работ
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group">
+                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
+                    <Icon name="Image" size={64} className="text-muted-foreground" />
+                  </div>
+                  <CardContent className="p-6">
+                    <h4 className="font-heading font-semibold text-lg mb-2">
+                      Видео 1
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Пример работы шефмонтажа
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-xl transition-all group">
+                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                    <Icon name="Image" size={64} className="text-muted-foreground" />
+                  </div>
+                  <CardContent className="p-6">
+                    <h4 className="font-heading font-semibold text-lg mb-2">
+                      Видео 2
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Пример работы шефмонтажа
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-xl transition-all group">
+                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
+                    <Icon name="Image" size={64} className="text-muted-foreground" />
+                  </div>
+                  <CardContent className="p-6">
+                    <h4 className="font-heading font-semibold text-lg mb-2">
+                      Видео 3
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Пример работы шефмонтажа
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
 
             <Card className="p-8 bg-gradient-to-br from-primary to-accent/20 text-white text-center">
               <h3 className="text-2xl font-heading font-bold mb-4">

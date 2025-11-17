@@ -4,139 +4,91 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
-import { useState } from "react";
 
 const Catalog = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("all");
-
   const categories = [
-    { id: "all", name: "Все оборудование" },
-    { id: "pile-hammers", name: "Сваебойные молоты" },
-    { id: "pile-machines", name: "Сваебойные машины" },
-    { id: "drilling", name: "Буровые машины" },
-    { id: "vibro-crane", name: "Вибропогружатели крановые" },
-    { id: "vibro-excavator", name: "Вибропогружатели экскаваторные" },
-    { id: "masts", name: "Копровые мачты" }
-  ];
-
-  const equipment = [
     {
-      id: 1,
-      category: "masts",
-      title: "Копровые мачты KGS серия МК",
-      description: "Копровые мачты для кранов - универсальное оборудование для забивки свай",
+      id: "masts",
+      title: "Копровые мачты KGS",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
-      features: ["Крановый тип", "Высокая производительность", "Надёжная конструкция"]
+      items: [
+        { name: "Мачты копровые крановые серия МК", description: "Универсальное оборудование для забивки свай" }
+      ]
     },
     {
-      id: 2,
-      category: "pile-hammers",
-      title: "Yongan серия YC",
-      description: "Гидравлические сваебойные молоты с высокой энергией удара",
+      id: "pile-hammers",
+      title: "Сваебойные молоты",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Гидравлический привод", "Высокая энергия удара", "Экологичность"]
+      items: [
+        { name: "Молоты гидравлические Yongan (серия YC)", description: "Высокая энергия удара" },
+        { name: "Молоты дизельные трубчатые Starke (серия HD)", description: "Надёжная конструкция" },
+        { name: "Молоты дизельные штанговые Dongtai Juli (серия DD)", description: "Эффективная забивка свай" }
+      ]
     },
     {
-      id: 3,
-      category: "pile-hammers",
-      title: "Starke серия HD",
-      description: "Дизельные трубчатые сваебойные молоты надёжной конструкции",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Дизельный привод", "Трубчатая конструкция", "Простота обслуживания"]
-    },
-    {
-      id: 4,
-      category: "pile-hammers",
-      title: "Dongtai Juli серия DD",
-      description: "Дизельные штанговые молоты для эффективной забивки свай",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Штанговая конструкция", "Надёжность", "Универсальность"]
-    },
-    {
-      id: 5,
-      category: "pile-machines",
-      title: "STARKE серия LH",
-      description: "Сваебойные установки для профессионального применения",
+      id: "pile-machines",
+      title: "Сваебойные машины",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
-      features: ["Полный цикл работ", "Высокая мобильность", "Автоматизация"]
+      items: [
+        { name: "Сваебойные установки STARKE (серия LH)", description: "Для профессионального применения" },
+        { name: "Шагающие сваебойные установки JuLi (серия KLB)", description: "Повышенная проходимость" }
+      ]
     },
     {
-      id: 6,
-      category: "pile-machines",
-      title: "JuLi серия KLB",
-      description: "Шагающие сваебойные установки повышенной проходимости",
+      id: "drilling",
+      title: "Буровые машины",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
-      features: ["Шагающая база", "Повышенная проходимость", "Устойчивость"]
+      items: [
+        { name: "Гидравлическая буровая машина JINT (серия SH)", description: "Точность бурения" },
+        { name: "Гидравлическая буровая машина JINT (серия SD)", description: "Универсальное применение" },
+        { name: "Горизонтальная буровая машина JuLi (серия JL)", description: "Высокая точность" }
+      ]
     },
     {
-      id: 7,
-      category: "drilling",
-      title: "JINT серия SH",
-      description: "Гидравлические буровые машины для лидерного бурения",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
-      features: ["Гидравлическая система", "Точность бурения", "Большая глубина"]
-    },
-    {
-      id: 8,
-      category: "drilling",
-      title: "JINT серия SD",
-      description: "Гидравлические буровые установки универсального применения",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
-      features: ["Универсальность", "Производительность", "Надёжность"]
-    },
-    {
-      id: 9,
-      category: "drilling",
-      title: "JuLi серия JL",
-      description: "Горизонтально-направленные буровые установки",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
-      features: ["Горизонтальное бурение", "Высокая точность", "Мощность"]
-    },
-    {
-      id: 10,
-      category: "vibro-crane",
-      title: "Yongan серия YZ",
-      description: "Гидравлические крановые вибропогружатели высокой мощности",
+      id: "vibro-crane",
+      title: "Вибропогружатели крановые",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Гидравлический привод", "Высокая частота", "Эффективность"]
+      items: [
+        { name: "Вибропогружатели гидравлические крановые Yongan (серия YZ)", description: "Высокая мощность" },
+        { name: "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)", description: "Модернизированная версия" },
+        { name: "Вибропогружатели электрические крановые Yongan (серия DZJ)", description: "Экономичность" }
+      ]
     },
     {
-      id: 11,
-      category: "vibro-crane",
-      title: "Yongan серия YZ-VM",
-      description: "Модернизированные гидравлические вибропогружатели",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Улучшенная конструкция", "Повышенная надёжность", "Производительность"]
-    },
-    {
-      id: 12,
-      category: "vibro-crane",
-      title: "Yongan серия DZJ",
-      description: "Электрические крановые вибропогружатели",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
-      features: ["Электрический привод", "Экономичность", "Простота эксплуатации"]
-    },
-    {
-      id: 13,
-      category: "vibro-excavator",
-      title: "Серия SG",
-      description: "Гидравлические экскаваторные вибропогружатели с боковым зажимом",
+      id: "vibro-excavator",
+      title: "Вибропогружатели экскаваторные",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
-      features: ["Боковой зажим", "Универсальность", "Быстрая установка"]
+      items: [
+        { name: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)", description: "Универсальность" },
+        { name: "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)", description: "Устойчивость" }
+      ]
     },
     {
-      id: 14,
-      category: "vibro-excavator",
-      title: "Серия VH",
-      description: "Гидравлические экскаваторные вибропогружатели с нижним зажимом",
+      id: "heads",
+      title: "Наголовники",
       image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
-      features: ["Нижний зажим", "Устойчивость", "Точность погружения"]
+      items: [
+        { name: "Свайные наголовники от KGS", description: "Для различных типов свай" }
+      ]
+    },
+    {
+      id: "cutters",
+      title: "Сваескусыватели",
+      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
+      items: [
+        { name: "Сваескусыватели для круглых свай", description: "Эффективное срезание" },
+        { name: "Сваескусыватели для квадратных свай", description: "Точность обработки" }
+      ]
+    },
+    {
+      id: "jacks",
+      title: "Домкраты",
+      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
+      items: [
+        { name: "Домкраты для извлечения свай", description: "Мощное гидравлическое оборудование" }
+      ]
     }
   ];
-
-  const filteredEquipment = selectedCategory === "all" 
-    ? equipment 
-    : equipment.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen">
@@ -152,7 +104,6 @@ const Catalog = () => {
             </Link>
             
             <nav className="hidden md:flex items-center space-x-6">
-              <Link to="/" className="text-white/90 hover:text-accent transition-colors text-sm">Главная</Link>
               <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
               <Link to="/catalog" className="text-accent transition-colors text-sm font-medium">Оборудование</Link>
               <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
@@ -178,7 +129,7 @@ const Catalog = () => {
                 8 (800) 600-74-65
               </a>
               <Button size="sm" className="btn-gradient text-white hidden md:block">
-                Заказать звонок
+                Получить каталог
               </Button>
               <MobileMenu currentPath="/catalog" />
             </div>
@@ -192,168 +143,86 @@ const Catalog = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Каталог оборудования
+              Полный каталог
             </Badge>
-<h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               Каталог оборудования
             </h1>
-            <p className="text-white/80 text-lg leading-relaxed">
-              ООО «КГС» — лидер рынка в сфере поставок современного оборудования и техники для строительства свайных фундаментов на территории России и стран СНГ
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              Широкий ассортимент техники для строительства свайных фундаментов от ведущих производителей
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 bg-white border-b sticky top-16 z-40">
-        <div className="container mx-auto px-4">
-          <div className="flex overflow-x-auto gap-2 pb-2 scrollbar-hide">
-            {categories.map((cat) => (
-              <Button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                variant={selectedCategory === cat.id ? "default" : "outline"}
-                className={selectedCategory === cat.id ? "btn-gradient text-white whitespace-nowrap" : "whitespace-nowrap"}
-                size="sm"
-              >
-                {cat.name}
-              </Button>
-            ))}
+            
+            <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl">
+              <Icon name="Download" className="mr-2" size={20} />
+              Получить каталог
+            </Button>
           </div>
         </div>
       </section>
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredEquipment.map((item) => (
-              <Card key={item.id} className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="font-heading font-bold text-xl mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">{item.description}</p>
-                  <div className="space-y-2 mb-4">
-                    {item.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={16} />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
+          {categories.map((category, categoryIndex) => (
+            <div key={category.id} className={`mb-16 ${categoryIndex !== 0 ? 'pt-16 border-t' : ''}`}>
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">
+                  {category.title}
+                </h2>
+                <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white">
+                  Подробнее
+                  <Icon name="ArrowRight" className="ml-2" size={18} />
+                </Button>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {category.items.map((item, itemIndex) => (
+                  <Card key={itemIndex} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={category.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="font-heading font-semibold text-lg mb-2 line-clamp-2">{item.name}</h3>
+                      <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
+                      <div className="flex gap-2">
+                        <Button variant="outline" className="flex-1 border-accent text-accent hover:bg-accent hover:text-white text-sm">
+                          Подробнее
+                        </Button>
+                        <Button className="flex-1 btn-gradient text-white text-sm">
+                          Запросить цену
+                        </Button>
                       </div>
-                    ))}
-                  </div>
-                  <div className="flex gap-2">
-                    <Button className="btn-gradient text-white flex-1">
-                      Подробнее
-                    </Button>
-                    <Button variant="outline" className="flex-1">
-                      Запросить цену
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-8 text-center text-primary">
-              Наш ассортимент
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Получите полный каталог оборудования
             </h2>
-            
-            <div className="space-y-3 mb-8 text-muted-foreground">
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Свайные молоты различных типов (гидравлические, дизельные штанговые и трубчатые)</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Вибропогружатели крановые (с нормальной частотой и вариабельные, гидравлические и электрические)</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Экскаваторные вибропогружатели с гуськом и боковым зажимом</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Копровые мачты кранового типа для молотов и бурового вращателя</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Сваебойные машины (копры)</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Машины статического вдавливания (сваевдавливающие)</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Буровые машины</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Сваескусыватели</span>
-              </p>
-              <p className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span>Свайные наголовники</span>
-              </p>
-            </div>
-
-            <h3 className="text-2xl font-heading font-bold mb-6 text-primary">
-              Комплексное обслуживание от нашей компании включает:
-            </h3>
-            
-            <div className="grid md:grid-cols-2 gap-4 mb-12">
-              <div className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span className="text-muted-foreground">Профессиональные консультации по подбору оборудования и техники</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span className="text-muted-foreground">Организацию доставки любым удобным способом до строительной площадки заказчика</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span className="text-muted-foreground">Полное таможенное оформление грузов</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span className="text-muted-foreground">Шефмонтажные работы непосредственно на объекте</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                <span className="text-muted-foreground">Сервисное обслуживание и обеспечение запасными частями</span>
-              </div>
-            </div>
-
-            <p className="text-muted-foreground text-center text-lg mb-8">
-              Мы предлагаем полный цикл услуг под ключ, обеспечивая наших клиентов всем необходимым для успешной реализации строительных проектов.
+            <p className="text-muted-foreground text-lg mb-8">
+              Свяжитесь с нами для получения подробной информации о технических характеристиках и ценах
             </p>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-accent/10 to-primary/10 p-8 rounded-lg border-l-4 border-accent text-center">
-                <h3 className="text-2xl font-heading font-bold mb-4 text-primary">Получить каталог</h3>
-                <p className="text-muted-foreground mb-6">Полный каталог оборудования с техническими характеристиками и ценами</p>
-                <Button size="lg" className="btn-gradient text-white w-full">
-                  Скачать каталог
-                </Button>
-              </div>
-              
-              <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-lg border-l-4 border-primary text-center">
-                <h3 className="text-2xl font-heading font-bold mb-4 text-primary">Консультация специалиста</h3>
-                <p className="text-muted-foreground mb-6">Поможем подобрать оптимальное решение для вашего проекта</p>
-                <Button size="lg" className="btn-gradient-reverse text-white w-full">
-                  Получить консультацию
-                </Button>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="btn-gradient text-white">
+                <Icon name="Download" className="mr-2" size={20} />
+                Получить каталог
+              </Button>
+              <Button size="lg" className="btn-gradient-reverse text-white">
+                <Icon name="MessageCircle" className="mr-2" size={20} />
+                Получить консультацию
+              </Button>
             </div>
           </div>
         </div>
@@ -361,22 +230,25 @@ const Catalog = () => {
 
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <img 
-                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
-                alt="КГС Логотип"
-                className="h-12 w-auto mb-4"
-              />
-              <p className="text-white/70 text-sm mb-4">
-                Поставка буровой и спецтехники из Китая с 2015 года
+              <div className="flex items-center space-x-2 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                  alt="КГС Логотип"
+                  className="h-16 w-auto"
+                />
+              </div>
+              <p className="text-white/70 text-sm">
+                Производство и поставка оборудования для свайных фундаментов
               </p>
             </div>
 
             <div>
-              <h3 className="font-heading font-bold text-lg mb-4">Продукция</h3>
+              <h3 className="font-heading font-bold text-lg mb-4">Каталог</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/catalog" className="text-white/70 hover:text-accent transition-colors">Буровое оборудование</Link></li>
+                <li><a href="#masts" className="text-white/70 hover:text-accent transition-colors">Копровые мачты</a></li>
+                <li><a href="#pile-hammers" className="text-white/70 hover:text-accent transition-colors">Сваебойные молоты</a></li>
                 <li><Link to="/catalog" className="text-white/70 hover:text-accent transition-colors">Спецтехника</Link></li>
                 <li><Link to="/parts" className="text-white/70 hover:text-accent transition-colors">Запчасти</Link></li>
               </ul>
