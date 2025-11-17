@@ -5,9 +5,12 @@ import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
+import { CartButton } from "@/components/CartButton";
+import { useCart } from "@/components/CartContext";
 import { useState } from "react";
 
 const Parts = () => {
+  const { addToCart } = useCart();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -58,6 +61,7 @@ const Parts = () => {
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
                 8 (800) 600-74-65
               </a>
+              <CartButton />
               <Button size="sm" className="btn-gradient text-white hidden md:block">
                 Заказать звонок
               </Button>
@@ -229,7 +233,10 @@ const Parts = () => {
                   <p className="text-lg font-bold text-accent mb-4">
                     Цена: {part.price}
                   </p>
-                  <Button className="w-full btn-gradient text-white">
+                  <Button 
+                    className="w-full btn-gradient text-white"
+                    onClick={() => addToCart({ id: part.id, title: part.title, price: part.price })}
+                  >
                     Добавить в корзину
                   </Button>
                 </CardContent>
