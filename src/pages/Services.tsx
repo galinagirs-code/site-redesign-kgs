@@ -54,7 +54,7 @@ const Services = () => {
             
             <nav className="hidden md:flex items-center space-x-6">
               <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
-              <a href="/#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
+              <Link to="/catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Оборудование</Link>
               <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
               <Link to="/services" className="text-accent transition-colors text-sm font-medium">Услуги</Link>
               <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>

@@ -15,7 +15,7 @@ export const MobileMenu = ({ currentPath = '' }: MobileMenuProps) => {
 
   const navLinks = [
     { to: '/about', label: 'О компании' },
-    { to: '/#catalog', label: 'Каталог' },
+    { to: '/catalog', label: 'Оборудование' },
     { to: '/parts', label: 'Запчасти' },
     { to: '/services', label: 'Услуги' },
     { to: '/production', label: 'Производство и доставка' },

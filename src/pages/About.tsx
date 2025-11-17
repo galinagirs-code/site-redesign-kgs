@@ -175,7 +175,7 @@ const About = () => {
             
             <nav className="hidden md:flex items-center space-x-6">
               <Link to="/about" className="text-accent transition-colors text-sm font-medium">О компании</Link>
-              <a href="/#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
+              <Link to="/catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Оборудование</Link>
               <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
               <Link to="/services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</Link>
               <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
@@ -269,19 +269,23 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-heading font-bold mb-6">
-                Миссия компании
-              </h2>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Подбирать оптимальное оборудование и запчасти для надёжного, эффективного и своевременного решения ваших проектов.
-              </p>
+              <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-6 rounded-lg mb-6 border-l-4 border-accent">
+                <h2 className="text-3xl font-heading font-bold mb-4 text-primary">
+                  Миссия компании
+                </h2>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Подбирать оптимальное оборудование и запчасти для надёжного, эффективного и своевременного решения ваших проектов.
+                </p>
+              </div>
               
-              <h3 className="text-3xl font-heading font-bold mb-6">
-                Цель компании
-              </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Обеспечивать российский и СНГ-рынки высококачественным оборудованием для строительства фундаментов по оптимальным ценам и выстраивать долгосрочные, взаимовыгодные отношения с клиентами.
-              </p>
+              <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-lg border-l-4 border-primary">
+                <h3 className="text-3xl font-heading font-bold mb-4 text-primary">
+                  Цель компании
+                </h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  Обеспечивать российский и СНГ-рынки высококачественным оборудованием для строительства фундаментов по оптимальным ценам и выстраивать долгосрочные, взаимовыгодные отношения с клиентами.
+                </p>
+              </div>
             </div>
             <div className="relative">
               <img 
@@ -293,8 +297,8 @@ const About = () => {
             </div>
           </div>
 
-          <Card className="p-8 bg-gradient-to-br from-primary/5 to-accent/5">
-            <h3 className="text-3xl font-heading font-bold mb-4 text-center">
+          <Card className="p-8 bg-gradient-to-br from-accent/10 to-primary/10 border-l-4 border-accent">
+            <h3 className="text-3xl font-heading font-bold mb-4 text-center text-primary">
               Задачи компании
             </h3>
             <p className="text-muted-foreground mb-6 text-center">
@@ -376,6 +380,63 @@ const About = () => {
                 </ul>
               </div>
             </div>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Наши партнеры
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Официальные представители ведущих мировых производителей
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
+              <div className="text-center">
+                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Award" className="text-accent" size={40} />
+                </div>
+                <h3 className="font-heading font-bold text-xl mb-2">JULI</h3>
+                <p className="text-muted-foreground text-sm">
+                  Dongtai Juli Machinery Manufacturing Co., Ltd — производитель сваебойного и бурового оборудования
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
+              <div className="text-center">
+                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Award" className="text-accent" size={40} />
+                </div>
+                <h3 className="font-heading font-bold text-xl mb-2">STARKE</h3>
+                <p className="text-muted-foreground text-sm">
+                  Starke Machinery — ведущий производитель сваебойных установок и дизельных молотов
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
+              <div className="text-center">
+                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Award" className="text-accent" size={40} />
+                </div>
+                <h3 className="font-heading font-bold text-xl mb-2">YONGAN</h3>
+                <p className="text-muted-foreground text-sm">
+                  Yongan Machinery — специализация на вибропогружателях и гидравлических молотах
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          <Card className="p-6 bg-gradient-to-br from-primary/5 to-accent/5 text-center">
+            <p className="text-muted-foreground">
+              <strong className="text-foreground">Официальный статус дилера</strong> позволяет нам предлагать оригинальное оборудование по лучшим ценам с полной гарантией производителя
+            </p>
           </Card>
         </div>
       </section>

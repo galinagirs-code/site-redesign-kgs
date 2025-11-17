@@ -93,7 +93,7 @@ const Index = () => {
             
             <nav className="hidden md:flex items-center space-x-6">
               <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
-              <a href="#catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Каталог</a>
+              <Link to="/catalog" className="text-white/90 hover:text-accent transition-colors text-sm">Оборудование</Link>
               <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
               <Link to="/services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</Link>
               <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
@@ -117,9 +117,17 @@ const Index = () => {
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
+        <div className="absolute inset-0 md:hidden">
+          <img 
+            src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg"
+            alt="Оборудование для свайных работ"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        
         <div className="container mx-auto px-4 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+            <div className="animate-fade-in relative z-10">
               <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
                 12+ лет на рынке
               </Badge>
@@ -197,7 +205,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg"
                 alt="Производство КГС"
-                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover animate-subtle-zoom"
               />
             </div>
             <div className="space-y-6">
@@ -266,7 +274,7 @@ const Index = () => {
                   <img 
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 animate-subtle-zoom"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
