@@ -8,6 +8,7 @@ import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const Index = () => {
   const equipment = [
@@ -73,10 +74,33 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "350+", label: "Клиентов по России и СНГ" },
-    { value: "60+", label: "Выполненных шефмонтажей" },
-    { value: "10+", label: "Лет опыта команды" },
-    { value: "130+", label: "Единиц поставленной техники" }
+    { value: 350, label: "Клиентов по России и СНГ" },
+    { value: 60, label: "Выполненных шефмонтажей" },
+    { value: 10, label: "Лет опыта команды" },
+    { value: 130, label: "Единиц поставленной техники" }
+  ];
+
+  const principles = [
+    {
+      icon: "ShieldCheck",
+      title: "Гарантия качества и соблюдение сроков",
+      description: "Мы берём на себя обязательства по контролю выполнения заказа на каждом этапе"
+    },
+    {
+      icon: "DollarSign",
+      title: "Оптимальные цены на оборудование",
+      description: "Прямые дилерские отношения с производителями позволяют предложить приемлемые цены"
+    },
+    {
+      icon: "Users",
+      title: "Индивидуальный подход к клиенту",
+      description: "Приоритетный принцип работы нашей компании — индивидуальный подход к каждому клиенту"
+    },
+    {
+      icon: "Award",
+      title: "Гарантия на оборудование",
+      description: "Радость от низкой цены длится мгновение, а разочарование от низкого качества длится годами!"
+    }
   ];
 
   return (
@@ -201,7 +225,11 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <div className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-accent mb-1 md:mb-2">{stat.value}</div>
+                <AnimatedCounter 
+                  end={stat.value} 
+                  suffix="+" 
+                  className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-accent mb-1 md:mb-2"
+                />
                 <div className="text-xs md:text-sm text-muted-foreground leading-tight">{stat.label}</div>
               </div>
             ))}
@@ -263,6 +291,27 @@ const Index = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-12 md:mt-16">
+            <h3 className="text-2xl md:text-3xl font-heading font-bold text-center mb-8">
+              Принципы, которыми мы руководствуемся в работе
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {principles.map((principle, index) => (
+                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                  <div className="bg-accent/10 w-14 h-14 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Icon name={principle.icon} className="text-accent" size={28} />
+                  </div>
+                  <h4 className="font-heading font-semibold text-center mb-3 text-base md:text-lg">
+                    {principle.title}
+                  </h4>
+                  <p className="text-muted-foreground text-center text-sm leading-relaxed">
+                    {principle.description}
+                  </p>
+                </Card>
+              ))}
             </div>
           </div>
 

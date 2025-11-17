@@ -47,7 +47,10 @@ export const MobileMenu = ({ currentPath = '' }: MobileMenuProps) => {
                   <Link
                     key={link.to}
                     to={link.to}
-                    onClick={closeMenu}
+                    onClick={() => {
+                      closeMenu();
+                      setTimeout(() => window.scrollTo(0, 0), 100);
+                    }}
                     className={`text-white/90 hover:text-accent transition-colors py-2 px-3 rounded ${
                       currentPath === link.to ? 'text-accent font-medium bg-accent/10' : ''
                     }`}

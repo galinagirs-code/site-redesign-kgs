@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ConsultationButton } from "@/components/ConsultationButton";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const About = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -98,10 +99,10 @@ const About = () => {
   ];
 
   const achievements = [
-    { value: "350+", label: "Клиентов" },
-    { value: "60+", label: "Шефмонтажей" },
-    { value: "130+", label: "Единиц техники" },
-    { value: "10+", label: "Лет опыта" }
+    { value: 350, label: "Клиентов" },
+    { value: 60, label: "Шефмонтажей" },
+    { value: 130, label: "Единиц техники" },
+    { value: 10, label: "Лет опыта" }
   ];
 
   const projects = [
@@ -228,13 +229,15 @@ const About = () => {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
             {achievements.map((stat, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
-                <div className="text-4xl md:text-5xl font-heading font-bold text-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground">{stat.label}</div>
+              <Card key={index} className="text-center p-4 md:p-6 hover:shadow-lg transition-shadow">
+                <AnimatedCounter 
+                  end={stat.value} 
+                  suffix="+" 
+                  className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-2"
+                />
+                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
               </Card>
             ))}
           </div>
