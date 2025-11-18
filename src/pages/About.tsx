@@ -42,33 +42,33 @@ const About = () => {
   const values = [
     {
       icon: "ShieldCheck",
-      title: "Гарантия качества",
-      description: "Контроль выполнения заказа на каждом этапе. Оборудование поставляется напрямую с заводов с сертификатами качества"
+      title: "Гарантия качества и соблюдение сроков",
+      description: "Мы берём на себя ответственность за контроль выполнения заказа на каждом этапе — от консультации в подборе техники до её ввода в эксплуатацию"
     },
     {
       icon: "DollarSign",
-      title: "Оптимальные цены",
-      description: "Прямые контракты с производителями позволяют предложить выгодные цены и полный цикл обслуживания"
+      title: "Оптимальные цены на оборудование",
+      description: "Прямые контракты и дилерские соглашения с ведущими производителями позволяют предложить самые выгодные цены"
     },
     {
       icon: "Users",
-      title: "Индивидуальный подход",
-      description: "Каждый клиент получает решение, максимально соответствующее его требованиям и задачам"
+      title: "Индивидуальный подход к клиенту",
+      description: "Главный принцип нашей работы — индивидуальный подход к каждому клиенту"
     },
     {
       icon: "Package",
-      title: "Широкий ассортимент",
-      description: "Обширный выбор техники и комплектующих для сокращения сроков поставки"
+      title: "Широкий ассортимент оборудования",
+      description: "Обширный выбор техники и комплектующих позволяет подобрать оптимальное решение под любые задачи и сократить сроки поставки"
     },
     {
       icon: "Wrench",
-      title: "Техобслуживание",
-      description: "Ремонт и обслуживание европейского и китайского оборудования квалифицированными специалистами"
+      title: "Техническое обслуживание оборудования",
+      description: "Техническое обслуживание и ремонт свайных машин, буровых установок, ударных молотов, вибропогружателей, обсадных столов и навесного оборудования от ведущих производителей"
     },
     {
       icon: "Award",
-      title: "Гарантия на оборудование",
-      description: "Гарантийное и постгарантийное обслуживание на всём сроке эксплуатации техники"
+      title: "Постпродажный сервис",
+      description: "Постгарантийное обслуживание и техническая поддержка на всём сроке эксплуатации оборудования"
     }
   ];
 
@@ -254,13 +254,12 @@ const About = () => {
                   <strong className="text-foreground">КоперГруппСервис</strong> специализируется на производстве и поставках оборудования для забивки свай и лидерного бурения. Мы изготавливаем копровые мачты кранового и экскаваторного типа, а также производим расходные и запасные части: свайные наголовники для гидравлических и дизельных молотов, захваты молота по направляющим, крепления, шнеки и другие металлоконструкции по вашим чертежам.
                 </p>
                 <p>
-                  Мы поставляем высококачественное импортное оборудование из стран Азии и Турции, сотрудничая с известными мировыми производителями. За годы работы нам удалось выстроить долгосрочные и надёжные партнёрские отношения с лидерами рынка.
+                  Организуем поставку высококачественного импортного оборудования из стран Азии и Турции, сотрудничая с известными мировыми производителями. За годы работы нам удалось выстроить долгосрочные и надежные партнерские отношения с лидерами рынка.
                 </p>
                 <p>
-                  Помимо поставок техники, мы предлагаем <strong className="text-foreground">полный спектр профессиональных услуг:</strong>
+                  Помимо поставок техники, КГС предлагает полный спектр профессиональных услуг:
                 </p>
                 <ul className="grid md:grid-cols-2 gap-3 ml-6">
-
                   <li className="flex items-start space-x-2">
                     <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
                     <span>Техническое обслуживание и профилактику оборудования</span>
@@ -271,7 +270,7 @@ const About = () => {
                   </li>
                   <li className="flex items-start space-x-2">
                     <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                    <span>Диагностику и ремонт импортного и отечественного оборудования</span>
+                    <span>Диагностику и ремонт сваебойного и бурового оборудования, как импортного, так и отечественного производства</span>
                   </li>
                 </ul>
                 <p>
@@ -325,7 +324,7 @@ const About = () => {
                 "Доставка техники на объект заказчика",
                 "Шефмонтаж и запуск оборудования",
                 "Обучение операторов",
-                "Сервисное и послепродажное обслуживание"
+                "Сервисное и постпродажное обслуживание"
               ].map((task, index) => (
                 <div key={index} className="flex items-start space-x-3 bg-white p-4 rounded-lg">
                   <div className="bg-accent/10 p-2 rounded">
@@ -362,96 +361,7 @@ const About = () => {
             ))}
           </div>
 
-          <Card className="mt-12 p-8 bg-primary text-white max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="bg-white/10 p-6 rounded-lg flex-shrink-0">
-                <Icon name="Headphones" className="text-accent" size={48} />
-              </div>
-              <div>
-                <h3 className="text-2xl font-heading font-bold mb-3">
-                  Послепродажное обслуживание
-                </h3>
-                <p className="text-white/90 mb-4">
-                  Мы заботимся о вашей технике на каждом этапе её эксплуатации
-                </p>
-                <ul className="space-y-2 text-sm text-white/80">
-                  <li className="flex items-start space-x-2">
-                    <Icon name="Check" className="text-accent flex-shrink-0 mt-0.5" size={16} />
-                    <span><strong>Надёжный сервис</strong> — качественное обслуживание приобретённой техники</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <Icon name="Check" className="text-accent flex-shrink-0 mt-0.5" size={16} />
-                    <span><strong>Максимальная эффективность</strong> — расширение возможностей и настройка систем</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <Icon name="Check" className="text-accent flex-shrink-0 mt-0.5" size={16} />
-                    <span><strong>Снижение рисков</strong> — минимизация простоев и финансовых потерь</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <Icon name="Check" className="text-accent flex-shrink-0 mt-0.5" size={16} />
-                    <span><strong>Быстрая доступность</strong> — необходимые запчасти всегда в наличии</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </section>
 
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Наши партнеры
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Официальные представители ведущих мировых производителей
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
-              <div className="text-center">
-                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Award" className="text-accent" size={40} />
-                </div>
-                <h3 className="font-heading font-bold text-xl mb-2">JULI</h3>
-                <p className="text-muted-foreground text-sm">
-                  Dongtai Juli Machinery Manufacturing Co., Ltd — производитель сваебойного и бурового оборудования
-                </p>
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
-              <div className="text-center">
-                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Award" className="text-accent" size={40} />
-                </div>
-                <h3 className="font-heading font-bold text-xl mb-2">STARKE</h3>
-                <p className="text-muted-foreground text-sm">
-                  Starke Machinery — ведущий производитель сваебойных установок и дизельных молотов
-                </p>
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-xl transition-all hover:-translate-y-1">
-              <div className="text-center">
-                <div className="bg-accent/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Award" className="text-accent" size={40} />
-                </div>
-                <h3 className="font-heading font-bold text-xl mb-2">YONGAN</h3>
-                <p className="text-muted-foreground text-sm">
-                  Yongan Machinery — специализация на вибропогружателях и гидравлических молотах
-                </p>
-              </div>
-            </Card>
-          </div>
-
-          <Card className="p-6 bg-gradient-to-br from-primary/5 to-accent/5 text-center">
-            <p className="text-muted-foreground">
-              <strong className="text-foreground">Официальный статус дилера</strong> позволяет нам предлагать оригинальное оборудование по лучшим ценам с полной гарантией производителя
-            </p>
-          </Card>
         </div>
       </section>
 
@@ -770,10 +680,10 @@ const About = () => {
             <Card className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-primary">
-                  Работаем по всей России
+                  Работаем по всей России и в странах СНГ
                 </h2>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                  Поставим оборудование и запчасти в любой город России
+                  Поставим оборудование и запчасти в любую точку
                 </p>
               </div>
 
