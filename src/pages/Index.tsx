@@ -54,17 +54,22 @@ const Index = () => {
     {
       icon: "Wrench",
       title: "Шефмонтаж и пусконаладка оборудования",
-      description: "Шефмонтаж и пусконаладка оборудования по всей территории России и стран СНГ"
+      description: "Профессиональная установка и настройка оборудования"
     },
     {
       icon: "Settings",
       title: "Техническое обслуживание",
-      description: "Техническое обслуживание и ремонт сваебойной, буровой техники и навесного оборудования"
+      description: "Регулярное обслуживание и ремонт техники"
+    },
+    {
+      icon: "GraduationCap",
+      title: "Консультация и обучение",
+      description: "Обучение персонала работе с оборудованием"
     },
     {
       icon: "ShieldCheck",
-      title: "Гарантия",
-      description: "Гарантия сроком 12 месяцев с момента поставки оборудования и постгарантийное обслуживание"
+      title: "Гарантийное и постгарантийное обслуживание",
+      description: "Полная поддержка на всех этапах эксплуатации"
     }
   ];
 
@@ -173,7 +178,7 @@ const Index = () => {
                 Оборудование и машины для строительства свайных фундаментов
               </h1>
               <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
-                Производство, поставка и сервис. Прямые поставки с Заводов-изготовителей и собственное производство.
+                Производство, поставка и сервис
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 mb-6 md:mb-8">
@@ -405,32 +410,32 @@ const Index = () => {
                 Производство
               </Badge>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Собственный цех в Екатеринбурге
+                Производственный цех
               </h2>
               <p className="text-white/80 text-lg mb-6">
-                Производственная площадка оснащена современным оборудованием для изготовления металлоконструкций любой сложности.
+                Производственная площадка «КоперГруппСервис» находится в г. Берёзовский, Свердловская область (за ЕКАДом) и оснащена всем необходимым для выполнения сложных производственных задач.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={20} />
-                  <span>Станок плазменной резки ЧПУ 2,5×6 м</span>
+                  <span>2 производственных цеха площадью 1000 и 1800 кв.м.</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={20} />
-                  <span>Фрезерный и токарный станки с ЧПУ</span>
+                  <span>2 станка плазменной резки с ЧПУ 2,5 × 6,0 м</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={20} />
-                  <span>Четыре сварочных поста</span>
+                  <span>12 сварочных постов (полуавтомат)</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={20} />
-                  <span>Кран-балка грузоподъёмностью 5 тонн</span>
+                  <span>Фрезерные и токарные станки с ЧПУ</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={20} />
-                  <span>Площадь цеха 250 м²</span>
+                  <span>Кран-балки грузоподъёмностью 5 т.</span>
                 </div>
               </div>
 

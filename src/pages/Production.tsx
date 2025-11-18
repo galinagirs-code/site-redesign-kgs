@@ -26,10 +26,9 @@ const Production = () => {
   ];
 
   const advantages = [
-    "Оперативно выпускаем оборудование разной сложности",
-    "Производим запасные и расходные части",
-    "Выполняем заказы в сжатые сроки",
-    "Обеспечиваем строгий контроль качества на каждом этапе"
+    "Инженерный отдел",
+    "Производственный участок",
+    "Сервисные инженеры"
   ];
 
   const machtCapabilities = [
@@ -196,24 +195,18 @@ const Production = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-center">
-              Полный цикл производства навесного оборудования
+              Производственный цех
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Одним из ключевых направлений деятельности компании является полный цикл производства оборудования для фундаментостроения, а также изготовление металлоконструкций любой сложности по чертежам заказчика.
-              </p>
-              <p>
-                Мы создаём решения, соответствующие техническим нормам, инженерным требованиям и задачам конкретного проекта.
-              </p>
-              <p className="font-semibold text-foreground">
-                Наш опыт позволяет нам воплощать даже самые сложные инженерные идеи, если они не противоречат законам физики и требованиям безопасности.
+                Производственная площадка «КоперГруппСервис» находится в г. Берёзовский, Свердловская область (за ЕКАДом) и оснащена всем необходимым для выполнения сложных производственных задач.
               </p>
             </div>
           </div>
 
           <div className="mb-16">
             <h3 className="text-2xl font-heading font-bold mb-8 text-center">
-              Работа компании — полный цикл
+              Производственные мощности
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {capabilities.map((item, index) => (
@@ -233,24 +226,38 @@ const Production = () => {
           </div>
 
           <Card className="p-8 md:p-12 bg-gradient-to-br from-primary/5 to-accent/5 mb-16">
-            <div className="flex items-start space-x-4 mb-6">
-              <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                <Icon name="MapPin" className="text-accent" size={32} />
-              </div>
-              <div>
-                <h3 className="text-2xl font-heading font-bold mb-4">
-                  Екатеринбург — центр металлургии России
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Наше производство расположено в Екатеринбурге — центре металлургии России. Это позволяет:
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {advantages.map((advantage, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                      <span className="text-sm">{advantage}</span>
-                    </div>
-                  ))}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-heading font-bold text-center">
+                Наши возможности позволяют изготавливать как стандартные, так и индивидуальные металлоконструкции:
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">2 производственных цеха площадью 1000 и 1800 кв.м.</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">2 станка плазменной резки с ЧПУ 2,5 × 6,0 м</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">12 сварочных постов (полуавтомат)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">Фрезерные станки с ЧПУ</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">Токарные станки с ЧПУ</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">Гибочные станки</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
+                  <span className="text-sm">Кран-балки грузоподъёмностью 5 т.</span>
                 </div>
               </div>
             </div>
