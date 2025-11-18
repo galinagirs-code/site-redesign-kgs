@@ -177,8 +177,8 @@ const Index = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
                 Оборудование и машины для строительства свайных фундаментов
               </h1>
-              <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 leading-relaxed">
-                Производство, поставка и сервис
+              <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 leading-relaxed uppercase font-semibold">
+                ПРОИЗВОДСТВО, ПОСТАВКА И СЕРВИС
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 mb-6 md:mb-8">
@@ -205,7 +205,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
-                  <span className="text-white/90 text-xs sm:text-sm">Своё производство</span>
+                  <span className="text-white/90 text-xs sm:text-sm">Собственное производство</span>
                 </div>
               </div>
             </div>
@@ -264,9 +264,9 @@ const Index = () => {
                   <Icon name="Award" className="text-accent" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-lg mb-2">Официальные поставки</h3>
+                  <h3 className="font-heading font-semibold text-lg mb-2">Поставка импортного оборудования</h3>
                   <p className="text-muted-foreground">
-                    Прямые дилерские каналы с ведущими заводами Китая и Турции
+                    Сотрудничество с ведущими производителями Китая и Турции
                   </p>
                 </div>
               </div>
@@ -385,8 +385,7 @@ const Index = () => {
                 <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name={service.icon} className="text-accent" size={32} />
                 </div>
-                <h3 className="font-heading font-semibold text-lg mb-2">{service.title}</h3>
-                <p className="text-muted-foreground text-sm">{service.description}</p>
+                <h3 className="font-heading font-semibold text-lg">{service.title}</h3>
               </Card>
             ))}
           </div>
@@ -585,7 +584,7 @@ const Index = () => {
                 />
               </div>
               <p className="text-white/70 text-xs md:text-sm">
-                Производство и поставка оборудования для свайных фундаментов
+                Производство и поставка оборудования для строительства свайных фундаментов
               </p>
             </div>
 
