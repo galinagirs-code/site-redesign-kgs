@@ -177,9 +177,11 @@ const Index = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
                 Оборудование и машины для строительства свайных фундаментов
               </h1>
-              <p className="text-white/80 text-base md:text-lg mb-4 md:mb-6 leading-relaxed uppercase font-semibold">
-                ПРОИЗВОДСТВО, ПОСТАВКА, СЕРВИС
-              </p>
+              <div className="mb-4 md:mb-6">
+                <p className="text-accent text-lg md:text-xl lg:text-2xl font-bold tracking-wider">
+                  ПРОИЗВОДСТВО • ПОСТАВКА • СЕРВИС
+                </p>
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-3 mb-6 md:mb-8">
                 <a href="#contact" className="w-full sm:w-auto">
@@ -374,9 +376,6 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Наши услуги</h2>
-            <p className="text-muted-foreground text-lg">
-              Комплексное обслуживание от профессиональной команды
-            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -411,9 +410,6 @@ const Index = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
                 Производственный цех
               </h2>
-              <p className="text-white/80 text-lg mb-6">
-                Производственная площадка «КоперГруппСервис» находится в г. Берёзовский, Свердловская область (за ЕКАДом) и оснащена всем необходимым для выполнения сложных производственных задач.
-              </p>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
