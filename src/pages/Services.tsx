@@ -7,37 +7,27 @@ import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
 const Services = () => {
-  const supervisionSteps = [
-    "Выезд на объект и проведение настройки и пусконаладки спецтехники с тестированием в различных режимах",
-    "Предоставление квалифицированных консультаций по монтажу оборудования",
-    "Согласование с заказчиком режимов работы оборудования и вспомогательной оснастки",
-    "Определение объема работ, типа и количества привлекаемой техники",
-    "Полноценный шефмонтаж сваебойного оборудования по всей России",
-    "Контроль монтажа гидравлики, электрики и навесного оборудования",
-    "Инструктаж обслуживающего персонала по правильной эксплуатации техники",
-    "Сдача оборудования заказчику и совместное тестирование всех функций"
+  const supervisionProcesses = [
+    "Выезжают на объект и проводят настройку и пусконаладку спецтехники, включая тестирование в различных режимах эксплуатации",
+    "Предоставляют квалифицированные консультации по монтажу оборудования. Согласовывают с заказчиком объем работ, тип и количество привлекаемой техники",
+    "Проводят шефмонтаж сваебойного оборудования по всей России и странах СНГ",
+    "Контролируют монтаж и качество установочных и пусконаладочных работ, инструктируют операторов и механиков по вопросам правильной эксплуатации техники",
+    "Сдают оборудование заказчику и совместно с ним тестируют работу всех основных функций спецтехники в рабочих режимах"
   ];
 
   const supervisionBenefits = [
-    { icon: "UserCheck", title: "Профессиональный монтаж", description: "Под контролем опытных инженеров" },
+    { icon: "UserCheck", title: "Профессиональный монтаж", description: "Под контролем инженеров" },
     { icon: "Settings", title: "Точная настройка", description: "Тестирование в рабочих режимах" },
     { icon: "GraduationCap", title: "Инструктаж персонала", description: "По эксплуатации и обслуживанию" },
-    { icon: "Award", title: "Соответствие стандартам", description: "Требованиям завода-изготовителя" },
+    { icon: "Award", title: "Соответствие стандартам", description: "Завода-изготовителя" },
     { icon: "Zap", title: "Бесперебойная работа", description: "Техники с первого запуска" }
   ];
 
   const maintenanceServices = [
     { icon: "Wrench", title: "Диагностика и ремонт", description: "Сваебойной и буровой техники" },
     { icon: "HardHat", title: "Шефмонтаж оборудования", description: "Поставляемого нашей компанией" },
-    { icon: "Users", title: "Обучение специалистов", description: "Операторов и механиков на месте" },
-    { icon: "MessageSquare", title: "Техконсультации", description: "По обслуживанию и эксплуатации" }
-  ];
-
-  const guaranteeFeatures = [
-    { icon: "Calendar", text: "Гарантия до 4 месяцев на выполненные работы" },
-    { icon: "RotateCcw", text: "Повторный ремонт бесплатно в гарантийный период" },
-    { icon: "ShieldCheck", text: "Контроль качества на каждом этапе" },
-    { icon: "MapPin", text: "Сервис по всей России и в странах СНГ" }
+    { icon: "Users", title: "Обучение и консультация", description: "Операторов и механиков на месте эксплуатации" },
+    { icon: "MessageSquare", title: "Консультации", description: "По техническому обслуживанию и эксплуатации" }
   ];
 
   return (
@@ -106,19 +96,25 @@ const Services = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="#supervision" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
               >
-                Шефмонтаж оборудования
+                Шефмонтаж и пусконаладка оборудования
               </a>
               <a 
                 href="#maintenance" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
               >
                 Техническое обслуживание
               </a>
               <a 
+                href="#training" 
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
+              >
+                Консультация и обучение
+              </a>
+              <a 
                 href="#guarantee" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-8 py-4 rounded-lg transition-all text-lg font-bold shadow-lg hover:shadow-xl"
+                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
               >
                 Гарантия
               </a>
@@ -127,7 +123,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section id="supervision" className="py-16 md:py-24">
+      <section id="supervision" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -137,151 +133,81 @@ const Services = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 Шефмонтаж и пусконаладка оборудования
               </h2>
-              <p className="text-xl text-muted-foreground mb-2">
+              <p className="text-xl text-accent font-semibold mb-4">
                 Безупречная установка — надёжная работа вашей техники!
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России.
               </p>
             </div>
 
-            <Card className="p-8 mb-8">
-              <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
-                <p>
-                  Одной из наиболее востребованных услуг нашей компании является <strong className="text-foreground">шефмонтаж</strong>, который гарантирует бесперебойную работу сваебойной техники, буровых установок, ударных молотов и другого оборудования при правильной установке и эксплуатации.
-                </p>
-                <p>
-                  <strong className="text-foreground">Шефмонтаж</strong> — это процесс установки оборудования под контролем опытного инженерного специалиста. Благодаря этой услуге заказчики могут быть уверены в:
-                </p>
-                <div className="grid md:grid-cols-3 gap-4 my-6">
-                  <div className="bg-accent/5 p-4 rounded-lg border border-accent/20">
-                    <Icon name="CheckCircle2" className="text-accent mb-2" size={24} />
-                    <p className="text-sm font-medium">Правильности монтажа и настройки всех элементов</p>
-                  </div>
-                  <div className="bg-accent/5 p-4 rounded-lg border border-accent/20">
-                    <Icon name="Award" className="text-accent mb-2" size={24} />
-                    <p className="text-sm font-medium">Соблюдении стандартов завода-изготовителя</p>
-                  </div>
-                  <div className="bg-accent/5 p-4 rounded-lg border border-accent/20">
-                    <Icon name="Package" className="text-accent mb-2" size={24} />
-                    <p className="text-sm font-medium">Наличии всех необходимых комплектующих</p>
-                  </div>
-                </div>
-              </div>
+            <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
+              <p>
+                Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
+              </p>
+              <p>
+                Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
+              </p>
+              <p>
+                <strong className="text-foreground">Шефмонтаж</strong> — это процесс установки оборудования под контролем опытного инженерного специалиста. Благодаря этой услуге заказчики могут быть уверены в:
+              </p>
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start">
+                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                  <span>правильности монтажа и настройки всех элементов оборудования;</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                  <span>соблюдении стандартов эксплуатации завода-изготовителя;</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                  <span>наличии всех необходимых комплектующих.</span>
+                </li>
+              </ul>
+            </div>
 
-              <div className="bg-primary/5 p-6 rounded-lg mb-8">
-                <h3 className="font-heading font-semibold text-xl mb-4">
-                  Что включает шефмонтаж и пусконаладка:
-                </h3>
-                <div className="space-y-3">
-                  {supervisionSteps.map((step, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 text-xs font-bold">
-                        {index + 1}
-                      </div>
-                      <span className="text-sm">{step}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <h3 className="font-heading font-semibold text-2xl mb-6 text-center">
-                Что вы получаете:
+            <Card className="p-8 mb-10">
+              <h3 className="text-xl font-heading font-bold mb-6">
+                Шефмонтаж и пусконаладка включают целый ряд производственных процессов, в рамках которых наши специалисты:
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="space-y-4">
+                {supervisionProcesses.map((step, index) => (
+                  <div key={index} className="flex items-start space-x-4 group">
+                    <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
+                      {index + 1}
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <div className="mb-10">
+              <h3 className="text-2xl font-heading font-bold mb-6 text-center">Что вы получаете:</h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {supervisionBenefits.map((benefit, index) => (
-                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                    <div className="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                      <Icon name={benefit.icon} className="text-accent" size={24} />
+                  <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
+                    <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Icon name={benefit.icon} className="text-accent" size={32} />
                     </div>
                     <h4 className="font-heading font-semibold mb-2">{benefit.title}</h4>
                     <p className="text-sm text-muted-foreground">{benefit.description}</p>
                   </Card>
                 ))}
               </div>
-
-              <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-6 rounded-lg border border-accent/30">
-                <p className="text-sm text-muted-foreground mb-4">
-                  Наши сервисные инженеры — это специалисты с многолетним опытом, которые знают все тонкости наладки и настройки сложного оборудования, строго соблюдая действующие стандарты и нормативы.
-                </p>
-                <p className="font-semibold text-lg">
-                  КоперГруппСервис — гарант надёжного старта вашей техники.
-                </p>
-              </div>
-            </Card>
-
-            <div className="mt-12">
-              <h3 className="text-2xl font-heading font-bold mb-6 text-center">
-                Фотогалерея работ
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <Card className="overflow-hidden hover:shadow-xl transition-all group">
-                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                    <Icon name="Image" size={64} className="text-muted-foreground" />
-                  </div>
-                  <CardContent className="p-6">
-                    <h4 className="font-heading font-semibold text-lg mb-2">
-                      Видео 1
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      Пример работы шефмонтажа
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="overflow-hidden hover:shadow-xl transition-all group">
-                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                    <Icon name="Image" size={64} className="text-muted-foreground" />
-                  </div>
-                  <CardContent className="p-6">
-                    <h4 className="font-heading font-semibold text-lg mb-2">
-                      Видео 2
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      Пример работы шефмонтажа
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="overflow-hidden hover:shadow-xl transition-all group">
-                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
-                    <Icon name="Image" size={64} className="text-muted-foreground" />
-                  </div>
-                  <CardContent className="p-6">
-                    <h4 className="font-heading font-semibold text-lg mb-2">
-                      Видео 3
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      Пример работы шефмонтажа
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
 
-            <Card className="p-8 bg-gradient-to-br from-primary to-accent/20 text-white text-center">
-              <h3 className="text-2xl font-heading font-bold mb-4">
-                Свяжитесь с нами уже сегодня
-              </h3>
-              <div className="space-y-3 mb-6">
-                <p className="text-lg">
-                  <Icon name="Phone" className="inline mr-2" size={20} />
-                  Горячая линия: <a href="tel:88006007465" className="font-bold hover:text-accent transition-colors">8 (800) 600-74-65</a>
-                </p>
-                <p className="text-lg">
-                  <Icon name="Mail" className="inline mr-2" size={20} />
-                  E-mail: <a href="mailto:info@kgs-ural.ru" className="font-bold hover:text-accent transition-colors">info@kgs-ural.ru</a>
-                </p>
-              </div>
-              <Button size="lg" className="btn-gradient text-white font-medium">
-                Заказать шефмонтаж
-              </Button>
+            <Card className="p-8 bg-accent/5">
+              <p className="text-muted-foreground leading-relaxed text-center">
+                Наши сервисные инженеры — это специалисты с многолетним опытом работы, которые знают все тонкости наладки и настройки сложного оборудования, строго соблюдая действующие стандарты и нормативы.
+              </p>
+              <p className="text-lg font-semibold text-center mt-4">
+                КоперГруппСервис — гарант надёжного старта вашей техники.
+              </p>
             </Card>
           </div>
         </div>
       </section>
 
-      <section id="maintenance" className="py-16 md:py-24 bg-muted/30">
+      <section id="maintenance" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -291,166 +217,167 @@ const Services = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 Обслуживание спецтехники и оборудования
               </h2>
-              <p className="text-xl text-muted-foreground mb-2">
+              <p className="text-xl text-accent font-semibold">
                 Надёжный сервис для вашей техники
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Качественное техническое обслуживание — залог долгой и бесперебойной работы спецтехники
               </p>
             </div>
 
-            <Card className="p-8 mb-8">
-              <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
-                <p>
-                  В современных условиях сервис может успешно функционировать только при наличии опытных специалистов и профессионального диагностического оборудования.
-                </p>
-                <p>
-                  Именно поэтому в компании <strong className="text-foreground">КоперГруппСервис</strong> большое внимание уделяется подготовке персонала — наши инженеры регулярно проходят обучение и повышение квалификации, в том числе на заводах-изготовителях оборудования.
-                </p>
-                <div className="bg-accent/5 p-6 rounded-lg border border-accent/20 my-6">
-                  <p className="font-semibold text-foreground text-center text-lg">
-                    Постоянный спрос на услуги наших сервисных инженеров — лучшее подтверждение высокого качества обслуживания и доверия клиентов.
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
+              <p className="text-lg">
+                Качественное техническое обслуживание — залог долгой и бесперебойной работы сваебойной, буровой техники и навесного оборудования.
+              </p>
+              <p>
+                В современных условиях сервис может успешно функционировать только при наличии опытных специалистов и профессионального диагностического оборудования. Именно поэтому в компании КоперГруппСервис большое внимание уделяется подготовке персонала — наши инженеры регулярно проходят обучение и повышение квалификации, в том числе на заводах-изготовителях оборудования.
+              </p>
+            </div>
 
-              <h3 className="font-heading font-semibold text-2xl mb-6 text-center">
-                Что мы делаем:
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="mb-10">
+              <h3 className="text-2xl font-heading font-bold mb-6">Что мы делаем:</h3>
+              <div className="grid sm:grid-cols-2 gap-6">
                 {maintenanceServices.map((service, index) => (
                   <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                        <Icon name={service.icon} className="text-accent" size={28} />
+                      <div className="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name={service.icon} className="text-accent" size={24} />
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-lg mb-2">{service.title}</h4>
+                        <h4 className="font-heading font-semibold mb-2">{service.title}</h4>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
                     </div>
                   </Card>
                 ))}
               </div>
+            </div>
 
-              <div className="bg-primary/5 p-6 rounded-lg mb-8">
-                <h3 className="font-heading font-semibold text-xl mb-4 flex items-center">
-                  <Icon name="AlertCircle" className="text-accent mr-3" size={24} />
-                  Почему важно обучение:
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Неподготовленный оператор может допустить ошибки, которые приведут к неисправностям или аварийным ситуациям. Обучение механиков и операторов позволяет избежать поломок, повысить безопасность и продлить срок службы оборудования.
-                </p>
-                <p className="font-medium">
-                  Наши специалисты знают специфику каждой модели техники и умеют находить решение даже в нестандартных ситуациях.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-6 rounded-lg border border-accent/30">
-                <h3 className="font-heading font-semibold text-xl mb-3">
-                  Надёжность, подтверждённая опытом
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
-                </p>
-                <p className="font-semibold text-lg">
-                  КоперГруппСервис — ваш надёжный партнёр в обслуживании сваебойной и буровой техники.
-                </p>
-              </div>
-            </Card>
-
-            <Card className="p-8 bg-gradient-to-br from-primary to-accent/20 text-white text-center">
-              <h3 className="text-2xl font-heading font-bold mb-4">
-                Свяжитесь с нами уже сегодня
-              </h3>
-              <div className="space-y-3 mb-6">
-                <p className="text-lg">
-                  <Icon name="Phone" className="inline mr-2" size={20} />
-                  Горячая линия: <a href="tel:88006007465" className="font-bold hover:text-accent transition-colors">8 (800) 600-74-65</a>
-                </p>
-                <p className="text-lg">
-                  <Icon name="Mail" className="inline mr-2" size={20} />
-                  E-mail: <a href="mailto:info@kgs-ural.ru" className="font-bold hover:text-accent transition-colors">info@kgs-ural.ru</a>
-                </p>
-              </div>
-              <Button size="lg" className="btn-gradient text-white font-medium">
-                Заказать обслуживание техники
-              </Button>
+            <Card className="p-8 bg-accent/5">
+              <h3 className="text-xl font-heading font-bold mb-4 text-center">Надёжность, подтверждённая опытом</h3>
+              <p className="text-muted-foreground leading-relaxed text-center">
+                За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
+              </p>
+              <p className="text-lg font-semibold text-center mt-4">
+                КоперГруппСервис — ваш надёжный партнёр в обслуживании сваебойной и буровой техники.
+              </p>
             </Card>
           </div>
         </div>
       </section>
 
-      <section id="guarantee" className="py-16 md:py-24">
+      <section id="training" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/50">
-                Гарантия качества
+                Консультация и обучение
               </Badge>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Гарантия на спецтехнику и оборудование
+                Консультации по техническому обслуживанию и правильной эксплуатации техники
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Надёжность, подтверждённая гарантией
-              </p>
             </div>
 
             <Card className="p-8 mb-8">
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Компания <strong className="text-foreground">КоперГруппСервис</strong> ответственно подходит к каждому этапу ремонта и обслуживания спецтехники. Мы гарантируем надёжность всех выполненных сервисных работ и уверенность клиентов в результате.
+              <h3 className="text-xl font-heading font-bold mb-4">Почему важно обучение:</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Неподготовленный оператор может допустить ошибки, которые приведут к неисправностям или аварийным ситуациям. Обучение механиков и операторов позволяет избежать поломок, повысить безопасность и продлить срок службы оборудования.
               </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Наши специалисты знают специфику каждой модели техники и умеют находить решение даже в нестандартных ситуациях.
+              </p>
+            </Card>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                {guaranteeFeatures.map((feature, index) => (
-                  <Card key={index} className="p-6 bg-accent/5 border-accent/20 hover:shadow-lg transition-shadow">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                        <Icon name={feature.icon} className="text-accent" size={28} />
-                      </div>
-                      <p className="font-medium text-lg">{feature.text}</p>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="GraduationCap" className="text-accent" size={32} />
+                </div>
+                <h4 className="font-heading font-semibold mb-2">Обучение операторов</h4>
+                <p className="text-sm text-muted-foreground">На месте эксплуатации техники</p>
+              </Card>
 
-              <div className="bg-primary/5 p-6 rounded-lg mb-6">
-                <p className="text-muted-foreground text-center italic">
-                  Подобные случаи крайне редки, но мы считаем важным, чтобы наши клиенты чувствовали полную защиту и уверенность после обслуживания техники.
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MessageSquare" className="text-accent" size={32} />
+                </div>
+                <h4 className="font-heading font-semibold mb-2">Консультации</h4>
+                <p className="text-sm text-muted-foreground">По эксплуатации и обслуживанию</p>
+              </Card>
+
+              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="ShieldCheck" className="text-accent" size={32} />
+                </div>
+                <h4 className="font-heading font-semibold mb-2">Повышение безопасности</h4>
+                <p className="text-sm text-muted-foreground">Предотвращение аварийных ситуаций</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guarantee" className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-primary/90 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
+                Гарантийное обслуживание
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                Надёжность, подтверждённая гарантией
+              </h2>
+            </div>
+
+            <Card className="p-8 mb-8 bg-white/10 border-white/20 text-white">
+              <div className="space-y-6 leading-relaxed">
+                <p className="text-lg font-semibold text-accent">
+                  «КоперГруппСервис» предоставляет гарантию сроком 12 месяцев с момента поставки оборудования (за исключением расходных материалов).
                 </p>
-              </div>
-
-              <div className="bg-gradient-to-r from-accent/10 to-primary/10 p-6 rounded-lg border border-accent/30">
-                <p className="text-muted-foreground mb-3">
-                  Мы работаем по всей России и в странах СНГ, обеспечивая профессиональный сервис, ремонт и диагностику строительного оборудования.
+                <p>
+                  Мы работаем по всей России и в странах СНГ, обеспечивая профессиональный сервис, ремонт и диагностику оборудования для фундаментостроения.
                 </p>
-                <p className="font-semibold text-lg">
+                <p className="text-lg font-semibold">
                   КоперГруппСервис — надёжный партнёр и гарантия бесперебойной работы вашей техники.
                 </p>
               </div>
             </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-primary to-accent/20 text-white text-center">
-              <h3 className="text-2xl font-heading font-bold mb-4">
-                Свяжитесь с нами
-              </h3>
-              <div className="space-y-3 mb-6">
-                <p className="text-lg">
-                  <Icon name="Phone" className="inline mr-2" size={20} />
-                  Горячая линия: <a href="tel:88006007465" className="font-bold hover:text-accent transition-colors">8 (800) 600-74-65</a>
-                </p>
-                <p className="text-lg">
-                  <Icon name="Mail" className="inline mr-2" size={20} />
-                  E-mail: <a href="mailto:info@kgs-ural.ru" className="font-bold hover:text-accent transition-colors">info@kgs-ural.ru</a>
-                </p>
+            <Card className="p-8 bg-white text-gray-900">
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <Icon name="Mail" className="text-accent" size={32} />
+                <div className="text-center md:text-left">
+                  <p className="text-sm text-muted-foreground mb-1">Связь с сервисным менеджером</p>
+                  <a href="mailto:service@kgs-ural.ru" className="text-xl font-semibold text-accent hover:underline">
+                    service@kgs-ural.ru
+                  </a>
+                </div>
               </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="p-8 md:p-12 text-center bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20">
+              <h2 className="text-3xl font-heading font-bold mb-4">
+                Нужна консультация?
+              </h2>
+              <p className="text-muted-foreground mb-8 text-lg">
+                Свяжитесь с нами для обсуждения деталей и получения коммерческого предложения
+              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="btn-gradient text-white font-medium">
-                  Узнать о гарантийных условиях
-                </Button>
-                <Button size="lg" className="btn-gradient-reverse text-white">
-                  Оставить заявку на сервис
-                </Button>
+                <Link to="/contact">
+                  <Button size="lg" className="btn-gradient text-white w-full sm:w-auto">
+                    Связаться с нами
+                    <Icon name="ArrowRight" className="ml-2" size={18} />
+                  </Button>
+                </Link>
+                <a href="tel:88006007465">
+                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white w-full sm:w-auto">
+                    <Icon name="Phone" className="mr-2" size={18} />
+                    8 (800) 600-74-65
+                  </Button>
+                </a>
               </div>
             </Card>
           </div>
@@ -461,67 +388,56 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img 
-                  src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
-                  alt="КГС Логотип"
-                  className="h-16 w-auto"
-                />
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-16 w-auto mb-4"
+              />
               <p className="text-white/70 text-sm">
-                Производство и поставка оборудования для строительства свайных фундаментов
+                Производство и поставка сваебойного оборудования по всей России
               </p>
             </div>
-
+            
             <div>
-              <h4 className="font-heading font-semibold mb-4">Каталог</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li><a href="/#catalog" className="hover:text-accent transition-colors">Сваебойные молоты</a></li>
-                <li><a href="/#catalog" className="hover:text-accent transition-colors">Буровые установки</a></li>
-                <li><a href="/#catalog" className="hover:text-accent transition-colors">Копровые мачты</a></li>
-                <li><Link to="/parts" className="hover:text-accent transition-colors">Запчасти</Link></li>
-              </ul>
+              <h3 className="font-heading font-semibold mb-4">Навигация</h3>
+              <nav className="space-y-2">
+                <Link to="/about" className="block text-white/70 hover:text-accent transition-colors text-sm">О компании</Link>
+                <Link to="/catalog" className="block text-white/70 hover:text-accent transition-colors text-sm">Оборудование</Link>
+                <Link to="/parts" className="block text-white/70 hover:text-accent transition-colors text-sm">Запчасти</Link>
+                <Link to="/services" className="block text-accent font-medium transition-colors text-sm">Услуги</Link>
+              </nav>
             </div>
-
+            
             <div>
-              <h4 className="font-heading font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li><a href="#supervision" className="hover:text-accent transition-colors">Шефмонтаж</a></li>
-                <li><a href="#maintenance" className="hover:text-accent transition-colors">Сервис и ремонт</a></li>
-                <li><a href="#guarantee" className="hover:text-accent transition-colors">Гарантия</a></li>
-                <li><Link to="/production" className="hover:text-accent transition-colors">Производство и доставка</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold mb-4">О компании</h4>
-              <ul className="space-y-2 text-sm text-white/70">
-                <li><Link to="/about" className="hover:text-accent transition-colors">О нас</Link></li>
-                <li><Link to="/contact" className="hover:text-accent transition-colors">Контакты</Link></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Новости</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-              <p>© 2025 КоперГруппСервис. Все права защищены.</p>
-              <div className="flex items-center space-x-4">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={20} />
+              <h3 className="font-heading font-semibold mb-4">Контакты</h3>
+              <div className="space-y-2 text-sm">
+                <a href="tel:88006007465" className="block text-white/70 hover:text-accent transition-colors">
+                  8 (800) 600-74-65
                 </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="Send" size={20} />
-                </a>
-                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="Share2" size={20} />
-                </a>
-                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="Video" size={20} />
+                <a href="mailto:service@kgs-ural.ru" className="block text-white/70 hover:text-accent transition-colors">
+                  service@kgs-ural.ru
                 </a>
               </div>
-              <p>ИНН: 6670440671 | ОГРН: 1169658096189</p>
             </div>
+            
+            <div>
+              <h3 className="font-heading font-semibold mb-4">Мы в соцсетях</h3>
+              <div className="flex space-x-4">
+                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="MessageCircle" size={20} />
+                </a>
+                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Send" size={20} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-white/10 pt-8 text-center text-white/60 text-sm">
+            <p>&copy; {new Date().getFullYear()} КоперГруппСервис. Все права защищены.</p>
           </div>
         </div>
       </footer>
