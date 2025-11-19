@@ -381,9 +381,9 @@ const Contact = () => {
             <div>
               <h4 className="font-heading font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-sm text-white/70">
-                <li><Link to="/services" className="hover:text-accent transition-colors">Шефмонтаж</Link></li>
-                <li><Link to="/services" className="hover:text-accent transition-colors">Сервис и ремонт</Link></li>
-                <li><a href="/#services" className="hover:text-accent transition-colors">Инжиниринг</a></li>
+                <li><Link to="/services" className="hover:text-accent transition-colors">Шефмонтаж и пусконаладка оборудования</Link></li>
+                <li><Link to="/services" className="hover:text-accent transition-colors">Техническое обслуживание и обучение</Link></li>
+                <li><Link to="/services" className="hover:text-accent transition-colors">Гарантия</Link></li>
                 <li><Link to="/production" className="hover:text-accent transition-colors">Производство и доставка</Link></li>
               </ul>
             </div>

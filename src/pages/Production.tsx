@@ -565,12 +565,12 @@ const Production = () => {
             </div>
             
             <div>
-              <h4 className="font-heading font-bold mb-4">Меню</h4>
+              <h4 className="font-heading font-bold mb-4">Услуги</h4>
               <nav className="space-y-2">
-                <Link to="/about" className="block text-white/70 hover:text-accent transition-colors text-sm">О компании</Link>
-                <Link to="/catalog" className="block text-white/70 hover:text-accent transition-colors text-sm">Оборудование</Link>
-                <Link to="/parts" className="block text-white/70 hover:text-accent transition-colors text-sm">Запчасти</Link>
-                <Link to="/services" className="block text-white/70 hover:text-accent transition-colors text-sm">Услуги</Link>
+                <Link to="/services" className="block text-white/70 hover:text-accent transition-colors text-sm">Шефмонтаж и пусконаладка оборудования</Link>
+                <Link to="/services" className="block text-white/70 hover:text-accent transition-colors text-sm">Техническое обслуживание и обучение</Link>
+                <Link to="/services" className="block text-white/70 hover:text-accent transition-colors text-sm">Гарантия</Link>
+                <Link to="/production" className="block text-white/70 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
               </nav>
             </div>
 

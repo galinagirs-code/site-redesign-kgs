@@ -364,12 +364,12 @@ const Parts = () => {
             </div>
 
             <div>
-              <h3 className="font-heading font-bold text-lg mb-4">Компания</h3>
+              <h3 className="font-heading font-bold text-lg mb-4">Услуги</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/about" className="text-white/70 hover:text-accent transition-colors">О нас</Link></li>
-                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Услуги</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Шефмонтаж и пусконаладка оборудования</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Техническое обслуживание и обучение</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Гарантия</Link></li>
                 <li><Link to="/production" className="text-white/70 hover:text-accent transition-colors">Производство и доставка</Link></li>
-                <li><a href="#" className="text-white/70 hover:text-accent transition-colors">Новости</a></li>
               </ul>
             </div>
 
