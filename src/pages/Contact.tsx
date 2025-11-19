@@ -8,8 +8,42 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
 const Contact = () => {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "КоперГруппСервис",
+      "url": "https://kgs-ural.ru",
+      "logo": "https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+7-800-600-74-65",
+          "contactType": "customer service",
+          "email": "service@kgs-ural.ru",
+          "availableLanguage": "Russian",
+          "areaServed": ["RU", "KZ", "BY"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+7-912-241-03-18",
+          "contactType": "sales",
+          "email": "sales2@kgs-ural.ru",
+          "availableLanguage": "Russian"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Екатеринбург",
+        "addressCountry": "RU"
+      }
+    }
+  };
+
   const team = [
     {
       name: "Евгений Анатольевич Селезнев",
@@ -43,6 +77,7 @@ const Contact = () => {
         ogTitle="Контакты КГС"
         ogDescription="Свяжитесь с нами: 8 (800) 600-74-65, бесплатная консультация по оборудованию."
       />
+      <SchemaOrg data={contactSchema} />
       <ScrollToTop />
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">

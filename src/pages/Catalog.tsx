@@ -6,8 +6,74 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
 const Catalog = () => {
+  const catalogSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Каталог сваебойного оборудования",
+    "description": "Широкий выбор оборудования для свайных работ",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Копровые мачты",
+          "description": "Мачты копровые крановые и экскаваторные для забивки свай",
+          "category": "Свайное оборудование",
+          "brand": {
+            "@type": "Brand",
+            "name": "KGS"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Сваебойные молоты",
+          "description": "Гидравлические и дизельные молоты для забивки свай",
+          "category": "Свайное оборудование",
+          "brand": {
+            "@type": "Brand",
+            "name": "Yongan, Starke"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Буровые установки",
+          "description": "Оборудование для лидерного бурения под сваи",
+          "category": "Буровое оборудование",
+          "brand": {
+            "@type": "Brand",
+            "name": "JINT, JuLi"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Вибропогружатели",
+          "description": "Высокочастотное оборудование для погружения свай",
+          "category": "Свайное оборудование",
+          "brand": {
+            "@type": "Brand",
+            "name": "ICE"
+          }
+        }
+      }
+    ]
+  };
+
   const categories = [
     {
       id: "masts",
@@ -102,6 +168,7 @@ const Catalog = () => {
         ogTitle="Каталог сваебойного оборудования КГС"
         ogDescription="Широкий выбор оборудования для свайных работ. Прямые поставки, доступные цены, гарантия качества."
       />
+      <SchemaOrg data={catalogSchema} />
       <ScrollToTop />
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">

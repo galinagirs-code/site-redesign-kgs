@@ -10,8 +10,39 @@ import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { SEO } from "@/components/SEO";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
 const Index = () => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "КоперГруппСервис",
+    "alternateName": "КГС",
+    "url": "https://kgs-ural.ru",
+    "logo": "https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png",
+    "description": "Производство и поставка сваебойного оборудования, буровых установок, копровых мачт. Шефмонтаж и техобслуживание по всей России и СНГ.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Екатеринбург",
+      "addressCountry": "RU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+7-800-600-74-65",
+      "contactType": "customer service",
+      "email": "service@kgs-ural.ru",
+      "availableLanguage": "Russian"
+    },
+    "sameAs": [
+      "https://vk.com/kgsural",
+      "https://wa.me/79122410318",
+      "https://t.me/+79122410318"
+    ],
+    "foundingDate": "2013",
+    "areaServed": ["RU", "KZ", "BY"],
+    "knowsAbout": ["сваебойное оборудование", "копровые мачты", "буровые установки", "шефмонтаж"]
+  };
+
   const equipment = [
     {
       id: 1,
@@ -117,6 +148,7 @@ const Index = () => {
         canonical="https://kgs-ural.ru/"
         ogImage="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/og-image-1763364751842.png"
       />
+      <SchemaOrg data={organizationSchema} />
       <ScrollToTop />
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">

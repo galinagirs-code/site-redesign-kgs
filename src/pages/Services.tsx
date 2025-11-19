@@ -6,8 +6,59 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
+import { SchemaOrg } from "@/components/SchemaOrg";
 
 const Services = () => {
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Шефмонтаж и техническое обслуживание сваебойного оборудования",
+    "provider": {
+      "@type": "Organization",
+      "name": "КоперГруппСервис",
+      "url": "https://kgs-ural.ru"
+    },
+    "areaServed": ["RU", "KZ", "BY"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги по обслуживанию сваебойного оборудования",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Шефмонтаж и пусконаладка оборудования",
+            "description": "Профессиональная установка и настройка сваебойного оборудования на объекте"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Техническое обслуживание и ремонт",
+            "description": "Диагностика, ремонт и обслуживание сваебойной и буровой техники"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Обучение персонала",
+            "description": "Обучение операторов и механиков работе с оборудованием"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Гарантийное обслуживание",
+            "description": "Гарантийное и постгарантийное обслуживание оборудования"
+          }
+        }
+      ]
+    }
+  };
+
   const supervisionProcesses = [
     "Выезжают на объект и проводят настройку и пусконаладку спецтехники, включая тестирование в различных режимах эксплуатации",
     "Предоставляют квалифицированные консультации по монтажу оборудования. Согласовывают с заказчиком объем работ, тип и количество привлекаемой техники",
@@ -41,6 +92,7 @@ const Services = () => {
         ogTitle="Шефмонтаж и обслуживание сваебойного оборудования"
         ogDescription="Профессиональный шефмонтаж, пусконаладка и техобслуживание сваебойной техники. Гарантия качества."
       />
+      <SchemaOrg data={servicesSchema} />
       <ScrollToTop />
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">
