@@ -244,7 +244,7 @@ const Services = () => {
               </div>
             </div>
 
-            <Card className="p-8 bg-accent/5">
+            <Card className="p-8 bg-accent/5 mb-10">
               <h3 className="text-xl font-heading font-bold mb-4 text-center">Надёжность, подтверждённая опытом</h3>
               <p className="text-muted-foreground leading-relaxed text-center">
                 За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
@@ -253,11 +253,8 @@ const Services = () => {
                 КоперГруппСервис — ваш надёжный партнёр в обслуживании сваебойной и буровой техники.
               </p>
             </Card>
-          </div>
-        </div>
-      </section>
 
-            <div className="mt-10">
+            <div>
               <h3 className="text-2xl font-heading font-bold mb-6 text-center">Консультации и обучение персонала</h3>
               <Card className="p-8">
                 <h4 className="text-xl font-heading font-bold mb-4">Почему важно обучение:</h4>
