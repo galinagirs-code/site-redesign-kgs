@@ -193,9 +193,17 @@ const Services = () => {
               <p className="text-muted-foreground leading-relaxed text-center">
                 Наши сервисные инженеры — это специалисты с многолетним опытом работы, которые знают все тонкости наладки и настройки сложного оборудования, строго соблюдая действующие стандарты и нормативы.
               </p>
-              <p className="text-lg font-semibold text-center mt-4">
+              <p className="text-lg font-semibold text-center mt-4 mb-6">
                 КоперГруппСервис — гарант надёжного старта вашей техники.
               </p>
+              <div className="flex justify-center">
+                <a href="mailto:service@kgs-ural.ru">
+                  <Button size="lg" className="btn-gradient text-white">
+                    <Icon name="Mail" className="mr-2" size={20} />
+                    Связаться с сервисным менеджером
+                  </Button>
+                </a>
+              </div>
             </Card>
           </div>
         </div>
@@ -282,7 +290,7 @@ const Services = () => {
               </h2>
             </div>
 
-            <Card className="p-8 mb-8 bg-white/10 border-white/20 text-white">
+            <Card className="p-8 bg-white/10 border-white/20 text-white">
               <div className="space-y-6 leading-relaxed">
                 <p className="text-lg font-semibold text-accent">
                   «КоперГруппСервис» предоставляет гарантию сроком 12 месяцев с момента поставки оборудования (за исключением расходных материалов).
@@ -295,15 +303,6 @@ const Services = () => {
                 </p>
               </div>
             </Card>
-
-            <div className="flex justify-center">
-              <a href="mailto:service@kgs-ural.ru">
-                <Button size="lg" className="btn-gradient text-white">
-                  <Icon name="Mail" className="mr-2" size={20} />
-                  Связаться с сервисным менеджером
-                </Button>
-              </a>
-            </div>
           </div>
         </div>
       </section>
