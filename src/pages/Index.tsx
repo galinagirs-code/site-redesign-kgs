@@ -220,7 +220,7 @@ const Index = () => {
         
         <div className="absolute inset-0 md:hidden">
           <img 
-            src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
+            src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
             alt="Оборудование для свайных работ"
             className="w-full h-full object-cover opacity-20"
             style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
@@ -274,7 +274,7 @@ const Index = () => {
             <div className="relative hidden md:block">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
+                  src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
                   alt="Оборудование для свайных работ"
                   className="w-full h-[500px] object-cover"
                   style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
@@ -316,7 +316,7 @@ const Index = () => {
             <div className="relative flex justify-center items-center py-8">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/files/48a22c93-3bc9-4376-85db-a9cce87f72aa.jpg"
+                  src="https://cdn.poehali.dev/files/12380744-a7fe-41fd-bdf6-111626a8e562.jpeg"
                   alt="Производство КГС"
                   className="w-full max-w-[500px] h-auto object-cover rounded-lg"
                   style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
