@@ -205,7 +205,6 @@ const Index = () => {
             src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
             alt="Оборудование для свайных работ"
             className="w-full h-full object-cover opacity-20"
-            style={{maskImage: 'radial-gradient(ellipse at center, black 50%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 50%, transparent 100%)'}}
           />
         </div>
         
@@ -259,8 +258,8 @@ const Index = () => {
                   src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
                   alt="Оборудование для свайных работ"
                   className="w-full h-[500px] object-cover animate-subtle-zoom"
-                  style={{maskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)'}}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>
             </div>
           </div>
@@ -295,12 +294,14 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/files/cee105d7-570b-45f1-be95-8caedd45336a.jpg"
-                alt="Производство КГС"
-                className="rounded-lg shadow-lg w-full h-[400px] object-cover animate-subtle-zoom"
-                style={{maskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)'}}
-              />
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/files/cee105d7-570b-45f1-be95-8caedd45336a.jpg"
+                  alt="Производство КГС"
+                  className="w-full h-[400px] object-cover animate-subtle-zoom"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
+              </div>
             </div>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
