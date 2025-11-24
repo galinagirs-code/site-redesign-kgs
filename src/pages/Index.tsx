@@ -202,9 +202,10 @@ const Index = () => {
         
         <div className="absolute inset-0 md:hidden">
           <img 
-            src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg"
+            src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
             alt="Оборудование для свайных работ"
             className="w-full h-full object-cover opacity-20"
+            style={{maskImage: 'radial-gradient(ellipse at center, black 50%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 50%, transparent 100%)'}}
           />
         </div>
         
@@ -255,11 +256,11 @@ const Index = () => {
             <div className="relative hidden md:block">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg"
+                  src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
                   alt="Оборудование для свайных работ"
                   className="w-full h-[500px] object-cover animate-subtle-zoom"
+                  style={{maskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)'}}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
               </div>
             </div>
           </div>
@@ -293,11 +294,12 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-            <div>
+            <div className="relative">
               <img 
-                src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg"
+                src="https://cdn.poehali.dev/files/cee105d7-570b-45f1-be95-8caedd45336a.jpg"
                 alt="Производство КГС"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover animate-subtle-zoom"
+                style={{maskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 60%, transparent 100%)'}}
               />
             </div>
             <div className="space-y-6">
