@@ -694,11 +694,11 @@ const About = () => {
                 </h2>
               </div>
 
-              <div className="relative aspect-[3/2] md:aspect-[16/9] bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg overflow-hidden">
+              <div className="relative rounded-lg overflow-hidden">
                 <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Map_of_Russia_-_Russian_Federation.svg/2560px-Map_of_Russia_-_Russian_Federation.svg.png"
+                  src="https://cdn.poehali.dev/files/c303aac5-f3c8-40b2-9068-21102f6898b2.png"
                   alt="Карта России - география работы КГС"
-                  className="w-full h-full object-contain p-4"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </Card>
