@@ -135,7 +135,7 @@ const Catalog = () => {
     {
       id: "heads",
       title: "Наголовники",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
+      image: "https://cdn.poehali.dev/files/c346ee1e-85cd-4a45-9fdd-ef20566cb191.png",
       items: [
         { name: "Свайные наголовники от KGS", description: "Для различных типов свай" }
       ]
@@ -143,7 +143,7 @@ const Catalog = () => {
     {
       id: "cutters",
       title: "Сваескусыватели",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
+      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
       items: [
         { name: "Сваескусыватели для круглых свай", description: "Эффективное срезание" },
         { name: "Сваескусыватели для квадратных свай", description: "Точность обработки" }
@@ -152,7 +152,7 @@ const Catalog = () => {
     {
       id: "jacks",
       title: "Домкраты",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
+      image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png",
       items: [
         { name: "Домкраты для извлечения свай", description: "Мощное гидравлическое оборудование" }
       ]
@@ -277,14 +277,13 @@ const Catalog = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {category.items.map((item, itemIndex) => (
-                  <Card key={itemIndex} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="relative h-40 md:h-48 overflow-hidden">
+                  <Card key={itemIndex} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
+                    <div className="relative aspect-square overflow-hidden bg-white">
                       <img 
                         src={category.image}
                         alt={item.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
                     <CardContent className="p-4 md:p-6">
                       <h3 className="font-heading font-semibold text-base md:text-lg mb-2 line-clamp-2">{item.name}</h3>

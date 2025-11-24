@@ -79,6 +79,24 @@ const Index = () => {
       title: "Вибропогружатели экскаваторные",
       description: "Навесное оборудование для экскаваторов",
       image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png"
+    },
+    {
+      id: 7,
+      title: "Наголовники",
+      description: "Свайные наголовники от KGS для различных типов свай",
+      image: "https://cdn.poehali.dev/files/c346ee1e-85cd-4a45-9fdd-ef20566cb191.png"
+    },
+    {
+      id: 8,
+      title: "Сваескусыватели",
+      description: "Для круглых и квадратных свай",
+      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png"
+    },
+    {
+      id: 9,
+      title: "Домкраты",
+      description: "Мощное гидравлическое оборудование для извлечения свай",
+      image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png"
     }
   ];
 
@@ -258,8 +276,8 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
                   alt="Оборудование для свайных работ"
-                  className="w-full h-[500px] object-cover animate-subtle-zoom"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)', maskImage: 'radial-gradient(ellipse at center, black 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 70%, transparent 100%)'}}
+                  className="w-full h-[500px] object-cover"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>
@@ -296,22 +314,13 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="relative flex justify-center items-center py-8">
-              <div className="relative" style={{
-                transform: 'perspective(1000px) rotateY(-5deg)',
-                transition: 'transform 0.3s ease'
-              }}>
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
                   src="https://cdn.poehali.dev/files/48a22c93-3bc9-4376-85db-a9cce87f72aa.jpg"
                   alt="Производство КГС"
-                  className="w-full max-w-[500px] h-auto object-contain rounded-lg"
-                  style={{
-                    filter: 'brightness(0.9) contrast(1.1) saturate(1.15)',
-                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.1)',
-                    maskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)',
-                    WebkitMaskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)'
-                  }}
+                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
-                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] h-8 bg-black/20 blur-xl rounded-full"></div>
               </div>
             </div>
             <div className="space-y-6">
@@ -393,14 +402,13 @@ const Index = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {equipment.map((item) => (
-              <Card key={item.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="relative h-48 overflow-hidden">
+              <Card key={item.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
+                <div className="relative aspect-square overflow-hidden bg-white">
                   <img 
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 animate-subtle-zoom"
+                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
                 <CardContent className="p-4 md:p-6">
                   <h3 className="font-heading font-semibold text-lg md:text-xl mb-2">{item.title}</h3>
