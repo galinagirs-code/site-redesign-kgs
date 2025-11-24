@@ -298,12 +298,12 @@ const Index = () => {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://cdn.poehali.dev/files/cee105d7-570b-45f1-be95-8caedd45336a.jpg"
+                  src="https://cdn.poehali.dev/files/48a22c93-3bc9-4376-85db-a9cce87f72aa.jpg"
                   alt="Производство КГС"
-                  className="w-full h-[400px] object-cover animate-subtle-zoom"
+                  className="w-full h-[400px] object-contain bg-gray-50"
                   style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg pointer-events-none"></div>
               </div>
             </div>
             <div className="space-y-6">
