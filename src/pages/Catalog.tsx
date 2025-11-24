@@ -79,7 +79,7 @@ const Catalog = () => {
     {
       id: "masts",
       title: "Копровые мачты KGS",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
+      image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
       items: [
         { name: "Мачты копровые крановые серия МК", description: "Универсальное оборудование для забивки свай" }
       ]
@@ -87,7 +87,7 @@ const Catalog = () => {
     {
       id: "pile-hammers",
       title: "Сваебойные молоты",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
+      image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
       items: [
         { name: "Молоты гидравлические Yongan (серия YC)", description: "Высокая энергия удара" },
         { name: "Молоты дизельные трубчатые Starke (серия HD)", description: "Надёжная конструкция" },
@@ -97,7 +97,7 @@ const Catalog = () => {
     {
       id: "pile-machines",
       title: "Сваебойные машины",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
+      image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
       items: [
         { name: "Сваебойные установки STARKE (серия LH)", description: "Для профессионального применения" },
         { name: "Шагающие сваебойные установки JuLi (серия KLB)", description: "Повышенная проходимость" }
@@ -106,7 +106,7 @@ const Catalog = () => {
     {
       id: "drilling",
       title: "Буровые машины",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg",
+      image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png",
       items: [
         { name: "Гидравлическая буровая машина JINT (серия SH)", description: "Точность бурения" },
         { name: "Гидравлическая буровая машина JINT (серия SD)", description: "Универсальное применение" },
@@ -116,7 +116,7 @@ const Catalog = () => {
     {
       id: "vibro-crane",
       title: "Вибропогружатели крановые",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg",
+      image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png",
       items: [
         { name: "Вибропогружатели гидравлические крановые Yongan (серия YZ)", description: "Высокая мощность" },
         { name: "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)", description: "Модернизированная версия" },
@@ -126,7 +126,7 @@ const Catalog = () => {
     {
       id: "vibro-excavator",
       title: "Вибропогружатели экскаваторные",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg",
+      image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png",
       items: [
         { name: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)", description: "Универсальность" },
         { name: "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)", description: "Устойчивость" }

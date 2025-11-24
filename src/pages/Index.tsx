@@ -46,39 +46,39 @@ const Index = () => {
   const equipment = [
     {
       id: 1,
-      title: "Сваебойные молоты",
-      description: "Гидравлические и дизельные молоты для забивки свай",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg"
+      title: "Копровые мачты KGS",
+      description: "Кранового и экскаваторного типа",
+      image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
     },
     {
       id: 2,
-      title: "Буровые установки",
-      description: "Оборудование для лидерного бурения",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg"
+      title: "Сваебойные молоты",
+      description: "Гидравлические и дизельные молоты для забивки свай",
+      image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
     },
     {
       id: 3,
-      title: "Копровые мачты",
-      description: "Кранового и экскаваторного типа",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg"
+      title: "Сваебойные машины",
+      description: "Самоходные машины для забивки свай",
+      image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png"
     },
     {
       id: 4,
-      title: "Вибропогружатели",
-      description: "Высокочастотное оборудование для погружения свай",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/f641c2ee-f411-4bee-b2e9-96127d7fee2b.jpg"
+      title: "Буровые машины",
+      description: "Оборудование для лидерного бурения",
+      image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png"
     },
     {
       id: 5,
-      title: "Навесное оборудование",
-      description: "Захваты, наголовники, металлоконструкции",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg"
+      title: "Вибропогружатели крановые",
+      description: "Высокочастотное оборудование для погружения свай",
+      image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png"
     },
     {
       id: 6,
-      title: "Запасные части",
-      description: "Комплектующие для всех типов оборудования",
-      image: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg"
+      title: "Вибропогружатели экскаваторные",
+      description: "Навесное оборудование для экскаваторов",
+      image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png"
     }
   ];
 
