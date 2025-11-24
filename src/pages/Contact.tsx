@@ -324,44 +324,7 @@ const Contact = () => {
             </Card>
           </div>
 
-          <div className="mb-16">
-            <h2 className="text-3xl font-heading font-bold text-center mb-8">Наш офис на карте</h2>
-            <div className="relative rounded-lg overflow-hidden h-[500px] shadow-2xl max-w-6xl mx-auto">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=1169658096189&ll=60.597474%2C56.838011&pt=60.597474,56.838011,pm2rdm"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                className="border-0"
-                title="Карта офиса КГС"
-              />
-            </div>
 
-            <Card className="mt-8 p-8 bg-gradient-to-br from-primary to-accent/20 text-white max-w-4xl mx-auto">
-              <div className="text-center">
-                <h3 className="text-2xl font-heading font-bold mb-4">
-                  Как добраться
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6 text-sm">
-                  <div>
-                    <Icon name="Car" className="text-accent mx-auto mb-2" size={32} />
-                    <p className="font-semibold mb-1">На автомобиле</p>
-                    <p className="text-white/80">Удобная парковка рядом с офисом</p>
-                  </div>
-                  <div>
-                    <Icon name="Bus" className="text-accent mx-auto mb-2" size={32} />
-                    <p className="font-semibold mb-1">Общественный транспорт</p>
-                    <p className="text-white/80">Остановка в 5 минутах ходьбы</p>
-                  </div>
-                  <div>
-                    <Icon name="Navigation" className="text-accent mx-auto mb-2" size={32} />
-                    <p className="font-semibold mb-1">Навигатор</p>
-                    <p className="text-white/80">Координаты для GPS-навигации</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
 
           <div>
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Реквизиты</h2>

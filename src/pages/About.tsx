@@ -694,7 +694,7 @@ const About = () => {
                 </h2>
               </div>
 
-              <div className="relative rounded-lg overflow-hidden">
+              <div className="relative rounded-lg overflow-hidden animate-fade-in" style={{animationDelay: '200ms'}}>
                 <img 
                   src="https://cdn.poehali.dev/files/c303aac5-f3c8-40b2-9068-21102f6898b2.png"
                   alt="Карта России - география работы КГС"
@@ -770,100 +770,90 @@ const About = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="space-y-6">
-              <Card className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="MapPin" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">Адрес офиса</h3>
-                    <p className="text-muted-foreground mb-3">
-                      г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Card className="p-6">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-accent/10 p-4 rounded-lg">
+                  <Icon name="MapPin" className="text-accent" size={32} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-2">Адрес офиса</h3>
+                  <p className="text-muted-foreground text-sm mb-3">
+                    г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    <strong>График работы:</strong><br />
+                    Пн–Пт: 09:00 — 18:00
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-accent/10 p-4 rounded-lg">
+                  <Icon name="Phone" className="text-accent" size={32} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-2">Телефоны</h3>
+                  <div className="space-y-2 text-sm">
+                    <p>
+                      <a href="tel:88006007465" className="text-primary hover:text-accent transition-colors font-medium">
+                        8 (800) 600-74-65
+                      </a>
+                      <br />
+                      <span className="text-xs text-muted-foreground">бесплатно</span>
                     </p>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>График работы:</strong><br />
-                      Пн–Пт: 09:00 — 18:00
+                    <p>
+                      <a href="tel:+73433467475" className="text-primary hover:text-accent transition-colors font-medium">
+                        +7 (343) 346-74-75
+                      </a>
+                      <br />
+                      <span className="text-xs text-muted-foreground">офис</span>
                     </p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Phone" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">Телефоны</h3>
-                    <div className="space-y-2 text-muted-foreground">
-                      <p>
-                        <a href="tel:88006007465" className="hover:text-accent transition-colors">
-                          8 (800) 600-74-65
-                        </a>
-                        <span className="text-sm"> — бесплатно</span>
-                      </p>
-                      <p>
-                        <a href="tel:+73433467475" className="hover:text-accent transition-colors">
-                          +7 (343) 346-74-75
-                        </a>
-                        <span className="text-sm"> — офис</span>
-                      </p>
-                      <p>
-                        <a href="tel:+79122410318" className="hover:text-accent transition-colors">
-                          +7 (912) 241-03-18
-                        </a>
-                        <span className="text-sm"> — WhatsApp</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Mail" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">Email</h3>
-                    <a 
-                      href="mailto:info@kgs-ural.ru"
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      info@kgs-ural.ru
-                    </a>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Factory" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">Производственный цех</h3>
-                    <p className="text-muted-foreground">
-                      г. Берёзовский, Свердловская область<br />
-                      (за ЕКАДом)
+                    <p>
+                      <a href="tel:+79122410318" className="text-primary hover:text-accent transition-colors font-medium">
+                        +7 (912) 241-03-18
+                      </a>
+                      <br />
+                      <span className="text-xs text-muted-foreground">WhatsApp</span>
                     </p>
                   </div>
                 </div>
-              </Card>
-            </div>
+              </div>
+            </Card>
 
-            <div className="relative rounded-lg overflow-hidden h-[600px] shadow-xl">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=1169658096189&ll=60.597474%2C56.838011&pt=60.597474,56.838011,pm2rdm"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                className="border-0"
-                title="Карта офиса КГС"
-              />
-            </div>
+            <Card className="p-6">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-accent/10 p-4 rounded-lg">
+                  <Icon name="Mail" className="text-accent" size={32} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-2">Email</h3>
+                  <a 
+                    href="mailto:info@kgs-ural.ru"
+                    className="text-primary hover:text-accent transition-colors text-sm font-medium"
+                  >
+                    info@kgs-ural.ru
+                  </a>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="bg-accent/10 p-4 rounded-lg">
+                  <Icon name="Factory" className="text-accent" size={32} />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-2">Производство</h3>
+                  <p className="text-muted-foreground text-sm">
+                    г. Берёзовский, Свердловская область<br />
+                    (за ЕКАДом)
+                  </p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
