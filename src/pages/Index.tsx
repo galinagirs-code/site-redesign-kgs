@@ -202,9 +202,10 @@ const Index = () => {
         
         <div className="absolute inset-0 md:hidden">
           <img 
-            src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
+            src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
             alt="Оборудование для свайных работ"
             className="w-full h-full object-cover opacity-20"
+            style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
           />
         </div>
         
@@ -253,11 +254,12 @@ const Index = () => {
             </div>
 
             <div className="relative hidden md:block">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl aspect-square max-h-[500px]">
                 <img 
-                  src="https://cdn.poehali.dev/files/d011bc36-b0d4-4d26-8962-ed86c139bdce.jpg"
+                  src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
                   alt="Оборудование для свайных работ"
-                  className="w-full h-[500px] object-cover animate-subtle-zoom"
+                  className="w-full h-full object-cover animate-subtle-zoom"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>
@@ -294,11 +296,12 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="relative">
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <div className="relative rounded-lg overflow-hidden shadow-lg aspect-square max-h-[400px]">
                 <img 
                   src="https://cdn.poehali.dev/files/cee105d7-570b-45f1-be95-8caedd45336a.jpg"
                   alt="Производство КГС"
-                  className="w-full h-[400px] object-cover animate-subtle-zoom"
+                  className="w-full h-full object-cover animate-subtle-zoom"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>
