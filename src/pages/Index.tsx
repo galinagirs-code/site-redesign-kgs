@@ -295,15 +295,21 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-            <div className="relative">
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <div className="relative flex justify-center items-center py-8">
+              <div className="relative" style={{
+                transform: 'perspective(1000px) rotateY(-5deg)',
+                transition: 'transform 0.3s ease'
+              }}>
                 <img 
                   src="https://cdn.poehali.dev/files/48a22c93-3bc9-4376-85db-a9cce87f72aa.jpg"
                   alt="Производство КГС"
-                  className="w-full h-[400px] object-contain bg-gray-50"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  className="w-full max-w-[500px] h-auto object-contain rounded-lg"
+                  style={{
+                    filter: 'brightness(0.9) contrast(1.1) saturate(1.15)',
+                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.1)'
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg pointer-events-none"></div>
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] h-8 bg-black/20 blur-xl rounded-full"></div>
               </div>
             </div>
             <div className="space-y-6">
