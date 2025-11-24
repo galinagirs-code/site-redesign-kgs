@@ -259,7 +259,7 @@ const Index = () => {
                   src="https://cdn.poehali.dev/files/4f417949-2719-4f29-b2bd-99af372a90d1.jpg"
                   alt="Оборудование для свайных работ"
                   className="w-full h-[500px] object-cover animate-subtle-zoom"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)', maskImage: 'radial-gradient(ellipse at center, black 70%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 70%, transparent 100%)'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>
@@ -306,7 +306,9 @@ const Index = () => {
                   className="w-full max-w-[500px] h-auto object-contain rounded-lg"
                   style={{
                     filter: 'brightness(0.9) contrast(1.1) saturate(1.15)',
-                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.1)'
+                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.1)',
+                    maskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse at center, black 75%, transparent 100%)'
                   }}
                 />
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] h-8 bg-black/20 blur-xl rounded-full"></div>
