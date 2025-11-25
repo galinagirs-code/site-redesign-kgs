@@ -84,7 +84,7 @@ const Index = () => {
       id: 7,
       title: "Наголовники",
       description: "Свайные наголовники от KGS для различных типов свай",
-      image: "https://cdn.poehali.dev/files/c346ee1e-85cd-4a45-9fdd-ef20566cb191.png"
+      image: "https://cdn.poehali.dev/files/8b9b3d58-143d-43f3-930c-2fa8a43eed35.png"
     },
     {
       id: 8,
@@ -316,7 +316,7 @@ const Index = () => {
             <div className="relative flex justify-center items-center py-8">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/files/12380744-a7fe-41fd-bdf6-111626a8e562.jpeg"
+                  src="https://cdn.poehali.dev/files/8c3796cc-a524-4f33-9530-7c050d6bfc36.png"
                   alt="Производство КГС"
                   className="w-full max-w-[500px] h-auto object-cover rounded-lg"
                   style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
@@ -505,9 +505,10 @@ const Index = () => {
 
             <div className="relative">
               <img 
-                src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/409c5f64-ba5d-4fa6-ba0b-315c94eea0dc.jpg"
+                src="https://cdn.poehali.dev/files/805c61e5-954d-4ae8-970f-72dcb93e3e67.png"
                 alt="Производственный цех"
                 className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
+                style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
               />
             </div>
           </div>

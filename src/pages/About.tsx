@@ -96,7 +96,7 @@ const About = () => {
     {
       name: "Артур Фирдависович Муталлапов",
       position: "Сервисный инженер",
-      email: "sales3@kgs-ural.ru",
+      email: "service@kgs-ural.ru",
       description: "Обеспечивает техническую поддержку, диагностику и ремонт оборудования"
     }
   ];
@@ -315,8 +315,8 @@ const About = () => {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/files/472a2e56-23bd-40f8-a4ab-d1e547710c45.jpeg"
-                  alt="Производство КГС"
+                  src="https://cdn.poehali.dev/files/805c61e5-954d-4ae8-970f-72dcb93e3e67.png"
+                  alt="Производственный цех КГС"
                   className="w-full h-[400px] object-cover"
                   style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
