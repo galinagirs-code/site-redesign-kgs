@@ -135,7 +135,7 @@ const Catalog = () => {
     {
       id: "heads",
       title: "Наголовники",
-      image: "https://cdn.poehali.dev/files/d04a0004-3a91-4aca-b627-35623efec73c.png",
+      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
       items: [
         { name: "Свайные наголовники от KGS", description: "Для различных типов свай" }
       ]

@@ -556,10 +556,9 @@ const About = () => {
 
           <div className="relative rounded-lg overflow-hidden h-[400px]">
             <img 
-              src="https://cdn.poehali.dev/files/8ea32827-221f-4e7d-829d-2381be50e169.png"
+              src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg"
               alt="Производственный цех КГС"
               className="w-full h-full object-cover"
-              style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
               <div className="p-8 text-white">
