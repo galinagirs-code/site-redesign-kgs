@@ -219,7 +219,7 @@ const Index = () => {
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
-        <div className="absolute inset-0 md:hidden">
+        <div className="absolute inset-0">
           <img 
             src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
             alt="Оборудование для свайных работ"
@@ -229,7 +229,7 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl">
             <div className="animate-fade-in relative z-10">
               <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
                 10+ лет на рынке
@@ -269,18 +269,6 @@ const Index = () => {
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
                   <span className="text-white/90 text-xs sm:text-sm">Собственное производство</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="relative hidden md:block">
-              <div className="image-hero relative">
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
-                  alt="Оборудование для свайных работ"
-                  variant="hero"
-                  className="h-[500px]"
-                />
-                <div className="absolute inset-0 bg-primary/70 rounded-2xl"></div>
               </div>
             </div>
           </div>
