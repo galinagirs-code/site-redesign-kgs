@@ -84,7 +84,7 @@ const Index = () => {
       id: 7,
       title: "Наголовники",
       description: "Свайные наголовники от KGS для различных типов свай",
-      image: "https://cdn.poehali.dev/files/8b9b3d58-143d-43f3-930c-2fa8a43eed35.png"
+      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png"
     },
     {
       id: 8,

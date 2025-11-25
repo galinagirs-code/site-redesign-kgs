@@ -315,12 +315,12 @@ const About = () => {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/files/805c61e5-954d-4ae8-970f-72dcb93e3e67.png"
+                  src="https://cdn.poehali.dev/files/1f5915a9-5020-4a3c-8149-d748d8290557.jpeg"
                   alt="Производственный цех КГС"
                   className="w-full h-[400px] object-cover"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  style={{filter: 'brightness(1.05) contrast(1.08) saturate(1.1)'}}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent rounded-lg"></div>
               </div>
             </div>
           </div>
