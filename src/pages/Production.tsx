@@ -349,11 +349,11 @@ const Production = () => {
               </CardContent>
             </Card>
 
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+            <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
                 alt="Копровая мачта КГС на строительной площадке"
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
             </div>
           </div>
@@ -451,11 +451,11 @@ const Production = () => {
               </div>
             </div>
 
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl mb-8">
+            <div className="rounded-lg overflow-hidden shadow-xl mb-8">
               <img 
                 src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
                 alt="Буровая установка КГС в работе"
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
             </div>
 
@@ -523,11 +523,11 @@ const Production = () => {
               Как мы организуем доставку
             </h3>
 
-            <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl mb-12">
+            <div className="rounded-lg overflow-hidden shadow-xl mb-12">
               <img 
                 src="https://cdn.poehali.dev/files/225a7f96-3dff-4504-8322-b9d15c29318a.jpeg"
                 alt="Приём и проверка оборудования КГС на складе"
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
             </div>
 
