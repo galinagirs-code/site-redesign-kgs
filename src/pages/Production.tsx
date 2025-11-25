@@ -523,6 +523,14 @@ const Production = () => {
               Как мы организуем доставку
             </h3>
 
+            <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl mb-12">
+              <img 
+                src="https://cdn.poehali.dev/files/225a7f96-3dff-4504-8322-b9d15c29318a.jpeg"
+                alt="Приём и проверка оборудования КГС на складе"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
             <div className="space-y-6 mb-12">
               {deliverySteps.map((step, index) => (
                 <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
