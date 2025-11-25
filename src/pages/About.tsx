@@ -556,18 +556,32 @@ const About = () => {
 
           <div className="relative rounded-lg overflow-hidden h-[400px]">
             <img 
-              src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg"
-              alt="Производственный цех КГС"
+              src="https://cdn.poehali.dev/files/e825f574-fcc6-4a55-8056-7205c261116b.png"
+              alt="Производственный цех КГС — копровые мачты с логотипом компании"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
               <div className="p-8 text-white">
                 <h3 className="text-2xl font-heading font-bold mb-2">
-                  Современное оборудование для качественного производства
+                  Производственная площадка — г. Берёзовский, Свердловская область
                 </h3>
-                <p className="text-white/90">
-                  Оснащение цеха позволяет выполнять сложные производственные задачи любой сложности
-                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-white/90 text-sm">
+                  <div>
+                    <p className="font-semibold mb-1">Производственные мощности:</p>
+                    <ul className="space-y-0.5">
+                      <li>• 2 цеха: 1000 и 1800 кв.м.</li>
+                      <li>• 2 станка плазменной резки с ЧПУ</li>
+                      <li>• 12 сварочных постов</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul className="space-y-0.5">
+                      <li>• Фрезерные и токарные станки с ЧПУ</li>
+                      <li>• Кран-балки грузоподъёмностью 5 т</li>
+                      <li>• Склад запчастей</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
