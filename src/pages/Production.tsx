@@ -311,52 +311,57 @@ const Production = () => {
 
       <section id="masts" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <Badge className="mb-4 bg-accent/10 text-accent border-accent/30">
               Копровые мачты
             </Badge>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
               Копровые мачты для кранов и экскаваторов
             </h2>
-            <h3 className="text-xl font-semibold text-primary mb-6">
-              Универсальность оборудования — наш приоритет
-            </h3>
-            <div className="prose prose-lg max-w-none text-gray-700 mb-8">
-              <p>
-                Для расширения возможностей строительной техники мы предлагаем копровые мачты для кранов и экскаваторов.
-              </p>
-              <p>
-                Устанавливая мачту на базовую машину, вы получаете оборудование, способное выполнять:
-              </p>
-            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">
+                  Универсальность оборудования — наш приоритет
+                </h3>
+                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
+                  <p>
+                    Для расширения возможностей строительной техники мы предлагаем копровые мачты для кранов и экскаваторов.
+                  </p>
+                  <p>
+                    Устанавливая мачту на базовую машину, вы получаете оборудование, способное выполнять:
+                  </p>
+                </div>
 
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              {machtCapabilities.map((capability, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 flex items-center space-x-3">
-                    <Icon name="CheckCircle2" size={24} className="text-accent flex-shrink-0" />
-                    <span className="text-gray-800 font-medium">{capability}</span>
+                <div className="space-y-3 mb-8">
+                  {machtCapabilities.map((capability, index) => (
+                    <Card key={index} className="hover:shadow-lg transition-shadow">
+                      <CardContent className="p-4 flex items-center space-x-3">
+                        <Icon name="CheckCircle2" size={24} className="text-accent flex-shrink-0" />
+                        <span className="text-gray-800 font-medium">{capability}</span>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30">
+                  <CardContent className="p-6">
+                    <p className="text-gray-700 text-lg">
+                      Это позволяет использовать уже имеющуюся технику в новых задачах без покупки нового оборудования, снижая затраты заказчика.
+                    </p>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
+              </div>
 
-            <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 mb-8">
-              <CardContent className="p-8">
-                <p className="text-gray-700 text-lg">
-                  Это позволяет использовать уже имеющуюся технику в новых задачах без покупки нового оборудования, снижая затраты заказчика.
-                </p>
-              </CardContent>
-            </Card>
-
-            <div className="relative flex justify-center items-center py-8">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
-                  alt="Копровая мачта КГС на строительной площадке"
-                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
-                />
+              <div className="relative flex justify-center items-start">
+                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
+                  <img 
+                    src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
+                    alt="Копровая мачта КГС на строительной площадке"
+                    className="w-full h-auto object-cover rounded-lg"
+                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -412,60 +417,65 @@ const Production = () => {
 
       <section id="engineering" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <Badge className="mb-4 bg-accent/10 text-accent border-accent/30">
               Проектирование
             </Badge>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
               Проектирование бурового и свайного оборудования
             </h2>
-            <h3 className="text-xl font-semibold text-primary mb-6">
-              Комплексное проектирование оборудования под ваши задачи
-            </h3>
-            <div className="prose prose-lg max-w-none text-gray-700 mb-8">
-              <p>
-                Проектирование начинается с формирования технического задания на основе опросного листа.
-              </p>
-              <p>Затем создаётся технический проект, учитывающий:</p>
-            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">
+                  Комплексное проектирование оборудования под ваши задачи
+                </h3>
+                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
+                  <p>
+                    Проектирование начинается с формирования технического задания на основе опросного листа.
+                  </p>
+                  <p>Затем создаётся технический проект, учитывающий:</p>
+                </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
-              {projectingConsiderations.map((item, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-4 flex items-start space-x-3">
-                    <Icon name="FileText" size={20} className="text-accent flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">{item}</span>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                <div className="space-y-3 mb-8">
+                  {projectingConsiderations.map((item, index) => (
+                    <Card key={index} className="hover:shadow-lg transition-shadow">
+                      <CardContent className="p-4 flex items-start space-x-3">
+                        <Icon name="FileText" size={20} className="text-accent flex-shrink-0 mt-1" />
+                        <span className="text-gray-700">{item}</span>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
 
-            <div className="mb-8">
-              <h4 className="text-xl font-semibold text-primary mb-4">Результат проектирования:</h4>
-              <div className="grid md:grid-cols-2 gap-4">
-                {projectingResults.map((result, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-primary">
-                    <CardContent className="p-4 flex items-start space-x-3">
-                      <Icon name="Award" size={20} className="text-primary flex-shrink-0 mt-1" />
-                      <span className="text-gray-700 font-medium">{result}</span>
-                    </CardContent>
-                  </Card>
-                ))}
+                <div className="mb-8">
+                  <h4 className="text-xl font-semibold text-primary mb-4">Результат проектирования:</h4>
+                  <div className="space-y-3">
+                    {projectingResults.map((result, index) => (
+                      <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-primary">
+                        <CardContent className="p-4 flex items-start space-x-3">
+                          <Icon name="Award" size={20} className="text-primary flex-shrink-0 mt-1" />
+                          <span className="text-gray-700 font-medium">{result}</span>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative flex justify-center items-start">
+                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
+                  <img 
+                    src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
+                    alt="Буровая установка КГС в работе"
+                    className="w-full h-auto object-cover rounded-lg"
+                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="relative flex justify-center items-center py-8 mb-8">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
-                  alt="Буровая установка КГС в работе"
-                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
-                />
-              </div>
-            </div>
-
-            <div className="space-y-8">
+            <div className="space-y-8 mt-12">
               <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
@@ -509,7 +519,7 @@ const Production = () => {
 
       <section id="delivery" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
               Доставка
             </Badge>
@@ -529,43 +539,45 @@ const Production = () => {
               Как мы организуем доставку
             </h3>
 
-            <div className="relative flex justify-center items-center py-8 mb-12">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/files/9939d4a2-596f-42a8-bd32-20b9f1140f5d.jpeg"
-                  alt="Приём и проверка оборудования КГС на складе"
-                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
-                />
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
+              <div className="space-y-6">
+                {deliverySteps.map((step, index) => (
+                  <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                          {step.number}
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-xl font-semibold text-primary mb-4">{step.title}</h4>
+                          <ul className="space-y-2">
+                            {step.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="flex items-start space-x-2">
+                                <Icon name="ChevronRight" size={20} className="text-accent flex-shrink-0 mt-0.5" />
+                                <span className="text-gray-700">{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          {step.note && (
+                            <p className="mt-3 text-sm text-gray-600 italic">* {step.note}</p>
+                          )}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-            </div>
 
-            <div className="space-y-6 mb-12">
-              {deliverySteps.map((step, index) => (
-                <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                        {step.number}
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-xl font-semibold text-primary mb-4">{step.title}</h4>
-                        <ul className="space-y-2">
-                          {step.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className="flex items-start space-x-2">
-                              <Icon name="ChevronRight" size={20} className="text-accent flex-shrink-0 mt-0.5" />
-                              <span className="text-gray-700">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        {step.note && (
-                          <p className="mt-3 text-sm text-gray-600 italic">* {step.note}</p>
-                        )}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+              <div className="relative flex justify-center items-start">
+                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
+                  <img 
+                    src="https://cdn.poehali.dev/files/9939d4a2-596f-42a8-bd32-20b9f1140f5d.jpeg"
+                    alt="Приём и проверка оборудования КГС на складе"
+                    className="w-full h-auto object-cover rounded-lg"
+                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  />
+                </div>
+              </div>
             </div>
 
             <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20 mb-8">
