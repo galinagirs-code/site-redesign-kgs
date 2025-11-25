@@ -280,7 +280,7 @@ const Index = () => {
                   variant="hero"
                   className="h-[500px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-2xl"></div>
+                <div className="absolute inset-0 bg-primary/70 rounded-2xl"></div>
               </div>
             </div>
           </div>
