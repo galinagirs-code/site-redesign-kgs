@@ -272,12 +272,11 @@ const Index = () => {
             </div>
 
             <div className="relative hidden md:block">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+              <div className="image-hero">
                 <img 
                   src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
                   alt="Оборудование для свайных работ"
                   className="w-full h-[500px] object-cover"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
               </div>

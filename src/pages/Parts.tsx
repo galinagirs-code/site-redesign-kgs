@@ -127,11 +127,11 @@ const Parts = () => {
                   Мы также развиваем альтернативные каналы поставок качественных аналоговых запчастей, позволяя владельцам импортной строительной техники получать надёжные детали по доступной цене, без простоев и задержек.
                 </p>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="image-card">
                 <img 
                   src="https://cdn.poehali.dev/files/89177cd4-9abe-4e8c-b6c0-56edc1b3b581.png"
                   alt="Гидравлические цилиндры и запчасти для сваебойного оборудования"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </div>
