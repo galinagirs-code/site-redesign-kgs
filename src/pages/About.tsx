@@ -556,7 +556,7 @@ const About = () => {
 
           <div className="relative rounded-lg overflow-hidden h-[400px]">
             <img 
-              src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/d0357e51-fc69-4bd7-9feb-b9f4924208f0.jpg"
+              src="https://cdn.poehali.dev/files/52fcd7c2-e097-4db7-8169-0f69bff0a6f6.png"
               alt="Производственный цех КГС"
               className="w-full h-full object-cover"
             />
