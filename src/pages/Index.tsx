@@ -292,6 +292,51 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+        
+        <div className="absolute inset-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/files/331d1fdd-e021-440e-aa08-e3438ebd4b31.jpg"
+            alt="Производственный цех КГС"
+            className="w-full h-full object-cover opacity-20"
+            style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-3xl">
+            <div className="animate-fade-in relative z-10">
+              <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
+                Собственное производство
+              </Badge>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
+                Производственный цех
+              </h2>
+              <div className="mb-6 md:mb-8">
+                <p className="text-accent text-lg md:text-xl font-bold tracking-wider mb-4">
+                  СОВРЕМЕННОЕ ОБОРУДОВАНИЕ • ОПЫТНЫЕ СПЕЦИАЛИСТЫ
+                </p>
+                <div className="space-y-2 text-white/90">
+                  <p className="text-base md:text-lg">• 2 производственных цеха площадью 1000 и 1800 кв.м.</p>
+                  <p className="text-base md:text-lg">• 2 станка плазменной резки с ЧПУ 2,5 × 6,0 м</p>
+                  <p className="text-base md:text-lg">• 12 сварочных постов (полуавтомат)</p>
+                  <p className="text-base md:text-lg">• Фрезерные и токарные станки с ЧПУ</p>
+                  <p className="text-base md:text-lg">• Кран-балки грузоподъёмностью 5 т.</p>
+                </div>
+              </div>
+
+              <Link to="/production">
+                <Button size="lg" className="btn-gradient-reverse text-white font-medium w-full sm:w-auto">
+                  Подробнее о производстве
+                  <Icon name="ArrowRight" className="ml-2" size={18} />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
