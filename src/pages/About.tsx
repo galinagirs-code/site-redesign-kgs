@@ -313,13 +313,16 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="relative">
-              <div className="relative">
-                <OptimizedImage
+            <div className="relative overflow-hidden rounded-xl">
+              <div className="relative h-[400px]">
+                <img
                   src="https://cdn.poehali.dev/files/1f5915a9-5020-4a3c-8149-d748d8290557.jpeg"
                   alt="Производственный цех КГС"
-                  variant="content"
-                  className="h-[400px]"
+                  className="absolute inset-0 w-full h-full object-cover object-left-top shadow-xl"
+                  style={{
+                    filter: 'brightness(0.96) contrast(1.08) saturate(1.12)',
+                    objectPosition: '25% center'
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent rounded-xl"></div>
               </div>
