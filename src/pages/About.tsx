@@ -554,7 +554,7 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden h-[500px]">
+          <div className="relative rounded-lg overflow-hidden h-[400px]">
             <img 
               src="https://cdn.poehali.dev/files/e825f574-fcc6-4a55-8056-7205c261116b.png"
               alt="Производственный цех КГС — копровые мачты с логотипом компании"
