@@ -11,6 +11,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const Index = () => {
   const organizationSchema = {
@@ -272,13 +273,14 @@ const Index = () => {
             </div>
 
             <div className="relative hidden md:block">
-              <div className="image-hero">
-                <img 
+              <div className="image-hero relative">
+                <OptimizedImage
                   src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
                   alt="Оборудование для свайных работ"
-                  className="w-full h-[500px] object-cover"
+                  variant="hero"
+                  className="h-[500px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>
@@ -313,12 +315,11 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div className="relative flex justify-center items-center py-8">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
+              <div className="max-w-[500px] w-full">
+                <OptimizedImage
                   src="https://cdn.poehali.dev/files/8c3796cc-a524-4f33-9530-7c050d6bfc36.png"
                   alt="Производство КГС"
-                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
-                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                  variant="content"
                 />
               </div>
             </div>
@@ -403,10 +404,11 @@ const Index = () => {
             {equipment.map((item) => (
               <Card key={item.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
                 <div className="relative aspect-square overflow-hidden bg-white">
-                  <img 
+                  <OptimizedImage
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    variant="card"
+                    className="h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardContent className="p-4 md:p-6">

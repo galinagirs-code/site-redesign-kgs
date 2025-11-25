@@ -8,6 +8,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const Catalog = () => {
   const catalogSchema = {
@@ -279,10 +280,11 @@ const Catalog = () => {
                 {category.items.map((item, itemIndex) => (
                   <Card key={itemIndex} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
                     <div className="relative aspect-square overflow-hidden bg-white">
-                      <img 
+                      <OptimizedImage
                         src={category.image}
                         alt={item.name}
-                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                        variant="card"
+                        className="h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <CardContent className="p-4 md:p-6">

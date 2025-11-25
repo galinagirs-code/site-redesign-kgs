@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const Production = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -354,12 +355,11 @@ const Production = () => {
               </div>
 
               <div className="relative flex justify-center items-start">
-                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
-                  <img 
+                <div className="sticky top-24">
+                  <OptimizedImage
                     src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
                     alt="Копровая мачта КГС на строительной площадке"
-                    className="w-full h-auto object-cover rounded-lg"
-                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                    variant="content"
                   />
                 </div>
               </div>
@@ -464,12 +464,11 @@ const Production = () => {
               </div>
 
               <div className="relative flex justify-center items-start">
-                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
-                  <img 
+                <div className="sticky top-24">
+                  <OptimizedImage
                     src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
                     alt="Буровая установка КГС в работе"
-                    className="w-full h-auto object-cover rounded-lg"
-                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                    variant="content"
                   />
                 </div>
               </div>
@@ -569,12 +568,11 @@ const Production = () => {
               </div>
 
               <div className="relative flex justify-center items-start">
-                <div className="relative rounded-lg overflow-hidden shadow-2xl sticky top-24">
-                  <img 
+                <div className="sticky top-24">
+                  <OptimizedImage
                     src="https://cdn.poehali.dev/files/9939d4a2-596f-42a8-bd32-20b9f1140f5d.jpeg"
                     alt="Приём и проверка оборудования КГС на складе"
-                    className="w-full h-auto object-cover rounded-lg"
-                    style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                    variant="content"
                   />
                 </div>
               </div>

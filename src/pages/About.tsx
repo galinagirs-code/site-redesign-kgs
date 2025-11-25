@@ -10,6 +10,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const About = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -313,14 +314,14 @@ const About = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
-                <img 
+              <div className="relative">
+                <OptimizedImage
                   src="https://cdn.poehali.dev/files/1f5915a9-5020-4a3c-8149-d748d8290557.jpeg"
                   alt="Производственный цех КГС"
-                  className="w-full h-[400px] object-cover"
-                  style={{filter: 'brightness(1.05) contrast(1.08) saturate(1.1)'}}
+                  variant="content"
+                  className="h-[400px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent rounded-xl"></div>
               </div>
             </div>
           </div>
@@ -393,11 +394,12 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group">
-              <div className="relative aspect-[4/3]">
-                <img 
+              <div className="relative aspect-[4/3] bg-white">
+                <OptimizedImage
                   src="https://cdn.poehali.dev/files/5e0971fa-3d0b-4041-a860-aef1bb88b334.JPG"
                   alt="Дилерский сертификат Dongtai Juli Machinery"
-                  className="w-full h-full object-contain bg-white"
+                  variant="gallery"
+                  className="h-full object-contain"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
               </div>
@@ -422,11 +424,12 @@ const About = () => {
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group">
-              <div className="relative aspect-[4/3]">
-                <img 
+              <div className="relative aspect-[4/3] bg-white">
+                <OptimizedImage
                   src="https://cdn.poehali.dev/files/90b2ed09-d639-473d-9f73-cdc948b93674.jpg"
                   alt="Сертификат дилера Dongtai Juli (русская версия)"
-                  className="w-full h-full object-contain bg-white"
+                  variant="gallery"
+                  className="h-full object-contain"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
               </div>
