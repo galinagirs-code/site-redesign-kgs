@@ -554,22 +554,12 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="image-card relative h-[400px]">
+          <div className="image-card relative h-[500px]">
             <img 
-              src="https://cdn.poehali.dev/files/e825f574-fcc6-4a55-8056-7205c261116b.png"
-              alt="Производственный цех КГС — копровые мачты с логотипом компании"
+              src="https://cdn.poehali.dev/files/d4e6ffb4-9dc1-4fbc-a063-b5ed2f2a456a.png"
+              alt="Производственный цех КГС — синие металлоконструкции с логотипом"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
-              <div className="p-8 text-white">
-                <h3 className="text-2xl font-heading font-bold mb-2">
-                  Современное оборудование для качественного производства
-                </h3>
-                <p className="text-white/90">
-                  Оснащение цеха позволяет выполнять сложные производственные задачи любой сложности
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
