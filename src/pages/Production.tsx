@@ -349,12 +349,15 @@ const Production = () => {
               </CardContent>
             </Card>
 
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
-                alt="Копровая мачта КГС на строительной площадке"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative flex justify-center items-center py-8">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
+                  alt="Копровая мачта КГС на строительной площадке"
+                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -451,12 +454,15 @@ const Production = () => {
               </div>
             </div>
 
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl mb-8">
-              <img 
-                src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
-                alt="Буровая установка КГС в работе"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative flex justify-center items-center py-8 mb-8">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
+                  alt="Буровая установка КГС в работе"
+                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                />
+              </div>
             </div>
 
             <div className="space-y-8">
@@ -522,6 +528,17 @@ const Production = () => {
             <h3 className="text-2xl font-heading font-bold text-primary mb-8">
               Как мы организуем доставку
             </h3>
+
+            <div className="relative flex justify-center items-center py-8 mb-12">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/files/9939d4a2-596f-42a8-bd32-20b9f1140f5d.jpeg"
+                  alt="Приём и проверка оборудования КГС на складе"
+                  className="w-full max-w-[500px] h-auto object-cover rounded-lg"
+                  style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                />
+              </div>
+            </div>
 
             <div className="space-y-6 mb-12">
               {deliverySteps.map((step, index) => (
