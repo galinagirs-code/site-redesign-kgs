@@ -313,18 +313,15 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-xl">
-              <div className="relative h-[400px]">
+            <div className="relative overflow-hidden rounded-xl shadow-2xl">
+              <div className="relative h-[400px] bg-gradient-to-br from-gray-100 to-gray-200">
                 <img
-                  src="https://cdn.poehali.dev/files/1f5915a9-5020-4a3c-8149-d748d8290557.jpeg"
-                  alt="Производственный цех КГС"
-                  className="absolute inset-0 w-full h-full object-cover object-left-top shadow-xl"
-                  style={{
-                    filter: 'brightness(0.96) contrast(1.08) saturate(1.12)',
-                    objectPosition: '25% center'
-                  }}
+                  src="https://cdn.poehali.dev/files/b2739ffa-d9fc-44a3-b7c5-52ed13ed11a6.png"
+                  alt="Копровая мачта КГС - производство"
+                  className="w-full h-full object-contain"
+                  style={{filter: 'brightness(0.96) contrast(1.08) saturate(1.12)'}}
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent rounded-xl"></div>
               </div>
             </div>
           </div>
@@ -560,17 +557,14 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="relative h-[500px] overflow-hidden rounded-xl shadow-2xl">
-            <div className="absolute inset-0">
-              <img 
-                src="https://cdn.poehali.dev/files/ab7fbd27-3278-4fef-90af-a0b84490d2ae.png"
-                alt="Производственный цех КГС — копровые мачты с логотипом"
-                className="w-full h-full object-cover opacity-20"
-                style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary/90 flex items-end">
-              <div className="p-8 text-white relative z-10">
+          <div className="image-card relative h-[500px]">
+            <img 
+              src="https://cdn.poehali.dev/files/d4e6ffb4-9dc1-4fbc-a063-b5ed2f2a456a.png"
+              alt="Производственный цех КГС — синие металлоконструкции с логотипом"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
+              <div className="p-8 text-white">
                 <h3 className="text-2xl font-heading font-bold mb-2">
                   Современное оборудование для качественного производства
                 </h3>
