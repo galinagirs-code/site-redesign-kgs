@@ -280,7 +280,26 @@ const Index = () => {
                   variant="hero"
                   className="h-[500px]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent rounded-2xl"></div>
+                
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-white/20">
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3">
+                      Оборудование для свайных работ
+                    </h3>
+                    <p className="text-muted-foreground text-sm md:text-base mb-4">
+                      Копровые мачты, буровые установки, сваебойные молоты и комплектующие
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge className="bg-accent/10 text-accent border-accent/30">
+                        Собственное производство
+                      </Badge>
+                      <Badge className="bg-primary/10 text-primary border-primary/30">
+                        Прямые поставки
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
