@@ -570,8 +570,8 @@ const Production = () => {
               <div className="relative flex justify-center items-start">
                 <div className="sticky top-24">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/9939d4a2-596f-42a8-bd32-20b9f1140f5d.jpeg"
-                    alt="Приём и проверка оборудования КГС на складе"
+                    src="https://cdn.poehali.dev/files/92c0ecbe-37f3-45c4-a293-a6f6e3ce0331.png"
+                    alt="Доставка оборудования КГС - погрузка вибропогружателя"
                     variant="content"
                   />
                 </div>
