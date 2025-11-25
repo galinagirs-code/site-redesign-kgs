@@ -223,8 +223,8 @@ const Index = () => {
           <img 
             src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
             alt="Оборудование для свайных работ"
-            className="w-full h-full object-cover opacity-20"
-            style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+            className="w-full h-full object-cover opacity-20 animate-fade-in"
+            style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)', animationDuration: '1.5s'}}
           />
         </div>
         
