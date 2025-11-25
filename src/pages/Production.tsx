@@ -341,13 +341,21 @@ const Production = () => {
               ))}
             </div>
 
-            <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30">
+            <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 mb-8">
               <CardContent className="p-8">
                 <p className="text-gray-700 text-lg">
                   Это позволяет использовать уже имеющуюся технику в новых задачах без покупки нового оборудования, снижая затраты заказчика.
                 </p>
               </CardContent>
             </Card>
+
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
+                alt="Копровая мачта КГС на строительной площадке"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -441,6 +449,14 @@ const Production = () => {
                   </Card>
                 ))}
               </div>
+            </div>
+
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl mb-8">
+              <img 
+                src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
+                alt="Буровая установка КГС в работе"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <div className="space-y-8">
