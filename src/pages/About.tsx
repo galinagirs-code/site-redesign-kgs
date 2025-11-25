@@ -557,17 +557,13 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="relative overflow-hidden rounded-xl shadow-2xl">
-            <div className="relative h-[500px] bg-gradient-to-br from-gray-100 to-gray-200">
-              <img
-                src="https://cdn.poehali.dev/files/53467c61-f6ae-4972-a26c-16de8da68b2d.png"
-                alt="Копровая мачта KGS — синяя металлоконструкция с белым логотипом"
-                className="w-full h-full object-contain"
-                style={{filter: 'brightness(0.96) contrast(1.08) saturate(1.12)'}}
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end pointer-events-none">
+          <div className="image-card relative h-[500px]">
+            <img 
+              src="https://cdn.poehali.dev/files/53467c61-f6ae-4972-a26c-16de8da68b2d.png"
+              alt="Копровая мачта KGS — синяя металлоконструкция с белым логотипом"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
               <div className="p-8 text-white">
                 <h3 className="text-2xl font-heading font-bold mb-2">
                   Современное оборудование для качественного производства
