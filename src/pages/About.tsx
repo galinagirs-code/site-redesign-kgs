@@ -560,6 +560,16 @@ const About = () => {
               alt="Производственный цех КГС — синие металлоконструкции с логотипом"
               className="w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
+              <div className="p-8 text-white">
+                <h3 className="text-2xl font-heading font-bold mb-2">
+                  Современное оборудование для качественного производства
+                </h3>
+                <p className="text-white/90">
+                  Оснащение цеха позволяет выполнять сложные производственные задачи любой сложности
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
