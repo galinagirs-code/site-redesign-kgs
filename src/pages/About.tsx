@@ -560,14 +560,17 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="image-card relative h-[500px]">
-            <img 
-              src="https://cdn.poehali.dev/files/d4e6ffb4-9dc1-4fbc-a063-b5ed2f2a456a.png"
-              alt="Производственный цех КГС — синие металлоконструкции с логотипом"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
-              <div className="p-8 text-white">
+          <div className="relative h-[500px] overflow-hidden rounded-xl shadow-2xl">
+            <div className="absolute inset-0">
+              <img 
+                src="https://cdn.poehali.dev/files/ab7fbd27-3278-4fef-90af-a0b84490d2ae.png"
+                alt="Производственный цех КГС — копровые мачты с логотипом"
+                className="w-full h-full object-cover opacity-20"
+                style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary/90 flex items-end">
+              <div className="p-8 text-white relative z-10">
                 <h3 className="text-2xl font-heading font-bold mb-2">
                   Современное оборудование для качественного производства
                 </h3>
