@@ -502,12 +502,11 @@ const Index = () => {
               </Link>
             </div>
 
-            <div className="relative">
+            <div className="image-card relative">
               <img 
-                src="https://cdn.poehali.dev/files/805c61e5-954d-4ae8-970f-72dcb93e3e67.png"
-                alt="Производственный цех"
-                className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
-                style={{filter: 'brightness(0.9) contrast(1.1) saturate(1.15)'}}
+                src="https://cdn.poehali.dev/files/391e64b3-d138-42c6-a71d-7e719277c66e.jpeg"
+                alt="Производственный цех с готовыми синими деталями"
+                className="w-full h-[500px] object-cover"
               />
             </div>
           </div>
