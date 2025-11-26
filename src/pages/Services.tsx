@@ -236,18 +236,30 @@ const Services = () => {
             </div>
 
             <Card className="p-8 mb-10">
-              <h3 className="text-xl font-heading font-bold mb-6">
-                Шефмонтаж и пусконаладка включают целый ряд производственных процессов, в рамках которых наши специалисты:
-              </h3>
-              <div className="space-y-4">
-                {supervisionProcesses.map((step, index) => (
-                  <div key={index} className="flex items-start space-x-4 group">
-                    <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
-                      {index + 1}
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
+              <div className="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                  <h3 className="text-xl font-heading font-bold mb-6">
+                    Шефмонтаж и пусконаладка включают целый ряд производственных процессов, в рамках которых наши специалисты:
+                  </h3>
+                  <div className="space-y-4">
+                    {supervisionProcesses.map((step, index) => (
+                      <div key={index} className="flex items-start space-x-4 group">
+                        <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
+                          {index + 1}
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+                
+                <div className="rounded-xl overflow-hidden shadow-lg border-4 border-accent/20">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e7d27159-aa9c-45f5-a78b-f5d819a0b308.jpg"
+                    alt="Процесс шефмонтажа сваебойного оборудования"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </Card>
 
