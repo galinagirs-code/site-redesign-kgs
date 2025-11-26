@@ -300,43 +300,57 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
-              <p className="text-lg">
-                Качественное техническое обслуживание — залог долгой и бесперебойной работы сваебойной, буровой техники и навесного оборудования.
-              </p>
-              <p>
-                В современных условиях сервис может успешно функционировать только при наличии опытных специалистов и профессионального диагностического оборудования. Именно поэтому в компании КоперГруппСервис большое внимание уделяется подготовке персонала — наши инженеры регулярно проходят обучение и повышение квалификации, в том числе на заводах-изготовителях оборудования.
-              </p>
-            </div>
+            <div className="grid lg:grid-cols-2 gap-8 items-start mb-10">
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
+                <p className="text-lg">
+                  Качественное техническое обслуживание — залог долгой и бесперебойной работы сваебойной, буровой техники и навесного оборудования.
+                </p>
+                <p>
+                  В современных условиях сервис может успешно функционировать только при наличии опытных специалистов и профессионального диагностического оборудования. Именно поэтому в компании КоперГруппСервис большое внимание уделяется подготовке персонала — наши инженеры регулярно проходят обучение и повышение квалификации, в том числе на заводах-изготовителях оборудования.
+                </p>
 
-            <div className="mb-10">
-              <h3 className="text-2xl font-heading font-bold mb-6">Что мы делаем:</h3>
-              <div className="grid sm:grid-cols-2 gap-6">
-                {maintenanceServices.map((service, index) => (
-                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon name={service.icon} className="text-accent" size={24} />
-                      </div>
-                      <div>
-                        <h4 className="font-heading font-semibold mb-2">{service.title}</h4>
-                        <p className="text-sm text-muted-foreground">{service.description}</p>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
+                <div>
+                  <h3 className="text-2xl font-heading font-bold mb-6">Что мы делаем:</h3>
+                  <div className="grid gap-4">
+                    {maintenanceServices.map((service, index) => (
+                      <Card key={index} className="p-4 hover:shadow-lg transition-shadow">
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-accent/10 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Icon name={service.icon} className="text-accent" size={20} />
+                          </div>
+                          <div>
+                            <h4 className="font-heading font-semibold mb-1">{service.title}</h4>
+                            <p className="text-sm text-muted-foreground">{service.description}</p>
+                          </div>
+                        </div>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
+
+                <Card className="p-6 bg-accent/5">
+                  <h3 className="text-xl font-heading font-bold mb-3">Надёжность, подтверждённая опытом</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-3">
+                    За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
+                  </p>
+                  <p className="text-lg font-semibold">
+                    КоперГруппСервис — ваш надёжный партнёр в обслуживании сваебойной и буровой техники.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="lg:sticky lg:top-24">
+                <Card className="overflow-hidden p-2 bg-gradient-to-br from-primary/5 to-accent/5">
+                  <div className="relative rounded-lg overflow-hidden aspect-[3/4] shadow-lg">
+                    <img 
+                      src="https://cdn.poehali.dev/files/8ae33331-780b-4a38-a75c-c46f19440710.jpg"
+                      alt="Сваебойная и буровая техника КоперГруппСервис"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </Card>
               </div>
             </div>
-
-            <Card className="p-8 bg-accent/5 mb-10">
-              <h3 className="text-xl font-heading font-bold mb-4 text-center">Надёжность, подтверждённая опытом</h3>
-              <p className="text-muted-foreground leading-relaxed text-center">
-                За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
-              </p>
-              <p className="text-lg font-semibold text-center mt-4">
-                КоперГруппСервис — ваш надёжный партнёр в обслуживании сваебойной и буровой техники.
-              </p>
-            </Card>
 
             <div>
               <h3 className="text-2xl font-heading font-bold mb-6 text-center">Консультации и обучение персонала</h3>
