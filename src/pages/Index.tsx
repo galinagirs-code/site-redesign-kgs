@@ -494,8 +494,8 @@ const Index = () => {
 
             <div className="image-card relative">
               <img 
-                src="https://cdn.poehali.dev/files/b8538469-faad-4326-8ae8-5a6f76e33a80.png"
-                alt="Производственный цех с готовыми синими деталями"
+                src="https://cdn.poehali.dev/files/a32d619e-9cc4-4ca5-bfa4-bc285b9fe2f7.png"
+                alt="Производственный цех с готовой копровой мачтой"
                 className="w-full h-[500px] object-cover"
               />
             </div>
