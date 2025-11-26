@@ -301,8 +301,8 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
-            <div className="relative flex justify-center items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="relative flex justify-center items-center py-8">
               <div className="max-w-[500px] w-full">
                 <OptimizedImage
                   src="https://cdn.poehali.dev/files/8c3796cc-a524-4f33-9530-7c050d6bfc36.png"
