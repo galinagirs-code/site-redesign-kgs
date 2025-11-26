@@ -79,7 +79,7 @@ const Services = () => {
   const maintenanceServices = [
     { icon: "Wrench", title: "Диагностика и ремонт", description: "Сваебойной и буровой техники" },
     { icon: "HardHat", title: "Шефмонтаж оборудования", description: "Поставляемого нашей компанией" },
-    { icon: "Users", title: "Обучение и консультация", description: "Операторов и механиков на месте эксплуатации" },
+    { icon: "GraduationCap", title: "Обучение", description: "Операторов и механиков на месте эксплуатации" },
     { icon: "MessageSquare", title: "Консультации", description: "По техническому обслуживанию и эксплуатации" }
   ];
 
