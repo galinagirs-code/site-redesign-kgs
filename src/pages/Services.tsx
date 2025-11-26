@@ -188,38 +188,50 @@ const Services = () => {
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/50">
                 Шефмонтаж оборудования
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Шефмонтаж и пусконаладка оборудования
-              </h2>
-              <p className="text-xl text-accent font-semibold mb-4">
-                Безупречная установка — надёжная работа вашей техники!
-              </p>
             </div>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
-              <p>
-                Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
-              </p>
-              <p>
-                Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
-              </p>
-              <p>
-                <strong className="text-foreground">Шефмонтаж</strong> — это процесс установки оборудования под контролем опытного инженерного специалиста. Благодаря этой услуге заказчики могут быть уверены в:
-              </p>
-              <ul className="space-y-2 ml-6">
-                <li className="flex items-start">
-                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                  <span>правильности монтажа и настройки всех элементов оборудования;</span>
-                </li>
-                <li className="flex items-start">
-                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                  <span>соблюдении стандартов эксплуатации завода-изготовителя;</span>
-                </li>
-                <li className="flex items-start">
-                  <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                  <span>наличии всех необходимых комплектующих.</span>
-                </li>
-              </ul>
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
+              <div className="space-y-6">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                  Шефмонтаж и пусконаладка оборудования
+                </h2>
+                <p className="text-xl text-accent font-semibold">
+                  Безупречная установка — надёжная работа вашей техники!
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
+                </p>
+                <div>
+                  <p className="text-muted-foreground leading-relaxed mb-3">
+                    <strong className="text-foreground">Шефмонтаж</strong> — это процесс установки оборудования под контролем опытного инженерного специалиста. Благодаря этой услуге заказчики могут быть уверены в:
+                  </p>
+                  <ul className="space-y-2 ml-6">
+                    <li className="flex items-start">
+                      <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span className="text-muted-foreground">правильности монтажа и настройки всех элементов оборудования;</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span className="text-muted-foreground">соблюдении стандартов эксплуатации завода-изготовителя;</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
+                      <span className="text-muted-foreground">наличии всех необходимых комплектующих.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="rounded-xl overflow-hidden shadow-xl border-4 border-accent/20">
+                <img 
+                  src="https://cdn.poehali.dev/files/88f01299-6295-4f4d-943f-84df014ee381.jpg"
+                  alt="Шефмонтаж сваебойного оборудования"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
 
             <Card className="p-8 mb-10">
