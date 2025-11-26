@@ -188,18 +188,31 @@ const Services = () => {
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/50">
                 Шефмонтаж оборудования
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Шефмонтаж и пусконаладка оборудования
-              </h2>
-              <p className="text-xl text-accent font-semibold mb-4">
-                Безупречная установка — надёжная работа вашей техники!
-              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
+              <div className="space-y-6">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                  Шефмонтаж и пусконаладка оборудования
+                </h2>
+                <p className="text-xl text-accent font-semibold">
+                  Безупречная установка — надёжная работа вашей техники!
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
+                </p>
+              </div>
+              
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="https://cdn.poehali.dev/files/fc77effb-9c0a-4e06-9249-4afe8897ff76.jpg"
+                  alt="Шефмонтаж сваебойного оборудования"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
-              <p>
-                Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
-              </p>
               <p>
                 Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
               </p>
