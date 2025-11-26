@@ -568,10 +568,15 @@ const Production = () => {
               </div>
 
               <div className="relative flex justify-center items-start">
-                <div className="sticky top-24">
+                <div className="sticky top-24 space-y-6">
                   <OptimizedImage
                     src="https://cdn.poehali.dev/files/92c0ecbe-37f3-45c4-a293-a6f6e3ce0331.png"
                     alt="Доставка оборудования КГС - погрузка вибропогружателя"
+                    variant="content"
+                  />
+                  <OptimizedImage
+                    src="https://cdn.poehali.dev/files/289547a4-6aca-4992-b7c0-716fa7088b55.png"
+                    alt="Доставка оборудования КГС - подготовка к отправке"
                     variant="content"
                   />
                 </div>
