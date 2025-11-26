@@ -492,7 +492,9 @@ const Index = () => {
               </Link>
             </div>
 
-            <div className="image-card relative">
+            <div className="image-card relative overflow-hidden rounded-lg">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <img 
                 src="https://cdn.poehali.dev/files/a32d619e-9cc4-4ca5-bfa4-bc285b9fe2f7.png"
                 alt="Производственный цех с готовой копровой мачтой"
