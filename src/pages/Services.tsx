@@ -188,31 +188,18 @@ const Services = () => {
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/50">
                 Шефмонтаж оборудования
               </Badge>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
-              <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                  Шефмонтаж и пусконаладка оборудования
-                </h2>
-                <p className="text-xl text-accent font-semibold">
-                  Безупречная установка — надёжная работа вашей техники!
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
-                </p>
-              </div>
-              
-              <div className="rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="https://cdn.poehali.dev/files/fc77effb-9c0a-4e06-9249-4afe8897ff76.jpg"
-                  alt="Шефмонтаж сваебойного оборудования"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Шефмонтаж и пусконаладка оборудования
+              </h2>
+              <p className="text-xl text-accent font-semibold mb-4">
+                Безупречная установка — надёжная работа вашей техники!
+              </p>
             </div>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed mb-10">
+              <p>
+                Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
+              </p>
               <p>
                 Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
               </p>
@@ -236,30 +223,18 @@ const Services = () => {
             </div>
 
             <Card className="p-8 mb-10">
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                <div>
-                  <h3 className="text-xl font-heading font-bold mb-6">
-                    Шефмонтаж и пусконаладка включают целый ряд производственных процессов, в рамках которых наши специалисты:
-                  </h3>
-                  <div className="space-y-4">
-                    {supervisionProcesses.map((step, index) => (
-                      <div key={index} className="flex items-start space-x-4 group">
-                        <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
-                          {index + 1}
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
-                      </div>
-                    ))}
+              <h3 className="text-xl font-heading font-bold mb-6">
+                Шефмонтаж и пусконаладка включают целый ряд производственных процессов, в рамках которых наши специалисты:
+              </h3>
+              <div className="space-y-4">
+                {supervisionProcesses.map((step, index) => (
+                  <div key={index} className="flex items-start space-x-4 group">
+                    <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
+                      {index + 1}
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
                   </div>
-                </div>
-                
-                <div className="rounded-xl overflow-hidden shadow-lg border-4 border-accent/20">
-                  <img 
-                    src="https://cdn.poehali.dev/files/e7d27159-aa9c-45f5-a78b-f5d819a0b308.jpg"
-                    alt="Процесс шефмонтажа сваебойного оборудования"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                ))}
               </div>
             </Card>
 

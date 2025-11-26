@@ -116,7 +116,7 @@ const Parts = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
               Запчасти для вашей техники — быстро, надёжно, точно в срок!
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
                   В КоперГруппСервис мы заботимся о вашей технике на каждом этапе её эксплуатации. Одним из ключевых элементов нашей поддержки является оперативная поставка запасных частей и расходных материалов.
