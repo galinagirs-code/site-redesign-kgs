@@ -225,13 +225,15 @@ const Services = () => {
                 </div>
               </div>
               
-              <div className="rounded-xl overflow-hidden shadow-xl border-4 border-accent/20">
-                <img 
-                  src="https://cdn.poehali.dev/files/88f01299-6295-4f4d-943f-84df014ee381.jpg"
-                  alt="Шефмонтаж сваебойного оборудования"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
+              <Card className="overflow-hidden p-2 bg-gradient-to-br from-primary/5 to-accent/5">
+                <div className="relative rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/files/88f01299-6295-4f4d-943f-84df014ee381.jpg"
+                    alt="Шефмонтаж сваебойного оборудования"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </Card>
             </div>
 
             <Card className="p-8 mb-10">
