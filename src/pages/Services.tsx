@@ -188,16 +188,16 @@ const Services = () => {
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/50">
                 Шефмонтаж оборудования
               </Badge>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Шефмонтаж и пусконаладка оборудования
+              </h2>
+              <p className="text-xl text-accent font-semibold mb-4">
+                Безупречная установка — надёжная работа вашей техники!
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
               <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold">
-                  Шефмонтаж и пусконаладка оборудования
-                </h2>
-                <p className="text-xl text-accent font-semibold">
-                  Безупречная установка — надёжная работа вашей техники!
-                </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
                 </p>
