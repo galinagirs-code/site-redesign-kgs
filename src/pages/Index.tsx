@@ -297,7 +297,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">О компании КГС</h2>
             <p className="text-muted-foreground text-base md:text-lg">
-              Мы — команда профессионалов с опытом работы более 10 лет, специализирующаяся на поставке и производстве оборудования для строительства свайных фундаментов.
+              Мы — команда профессионалов с более чем 10-летним опытом в поставке и производстве оборудования для строительства свайных фундаментов.
             </p>
           </div>
 
@@ -494,7 +494,7 @@ const Index = () => {
 
             <div className="image-card relative">
               <img 
-                src="https://cdn.poehali.dev/files/391e64b3-d138-42c6-a71d-7e719277c66e.jpeg"
+                src="https://cdn.poehali.dev/files/b8538469-faad-4326-8ae8-5a6f76e33a80.png"
                 alt="Производственный цех с готовыми синими деталями"
                 className="w-full h-[500px] object-cover"
               />
