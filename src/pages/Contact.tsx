@@ -31,7 +31,6 @@ const Contact = () => {
         },
         {
           "@type": "ContactPoint",
-          "telephone": "+7-912-241-03-18",
           "contactType": "sales",
           "email": "sales2@kgs-ural.ru",
           "availableLanguage": "Russian"
@@ -52,7 +51,7 @@ const Contact = () => {
       email: "info@kgs-ural.ru"
     },
     {
-      name: "Ольга Александровна Жирова",
+      name: "Ольга Александровна Тапинюк",
       position: "Исполнительный директор ООО «КГС»",
       email: "zhirova@kgs-ural.ru"
     },
@@ -103,10 +102,7 @@ const Contact = () => {
 
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-3">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={18} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Send" size={18} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
@@ -174,12 +170,14 @@ const Contact = () => {
                       </div>
                       <div>
                         <a 
-                          href="tel:+79122410318" 
+                          href="https://t.me/kgs_ural" 
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-lg font-medium text-primary hover:text-accent transition-colors"
                         >
-                          +7 (912) 241-03-18
+                          @kgs_ural
                         </a>
-                        <p className="text-sm text-muted-foreground">WhatsApp / Telegram</p>
+                        <p className="text-sm text-muted-foreground">Telegram</p>
                       </div>
                     </div>
                   </div>
@@ -193,12 +191,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <h2 className="text-2xl font-heading font-bold mb-4">E-mail</h2>
-                    <a 
-                      href="mailto:info@kgs-ural.ru"
-                      className="text-lg font-medium text-primary hover:text-accent transition-colors"
-                    >
-                      info@kgs-ural.ru
-                    </a>
+                    <div className="space-y-2">
+                      <a 
+                        href="mailto:info@kgs-ural.ru"
+                        className="text-lg font-medium text-primary hover:text-accent transition-colors block"
+                      >
+                        info@kgs-ural.ru
+                      </a>
+                      <a 
+                        href="mailto:service@kgs-ural.ru"
+                        className="text-lg font-medium text-primary hover:text-accent transition-colors block"
+                      >
+                        service@kgs-ural.ru
+                      </a>
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -211,10 +217,7 @@ const Contact = () => {
                   <div>
                     <h2 className="text-2xl font-heading font-bold mb-4">Мы в соцсетях</h2>
                     <div className="flex items-center space-x-4">
-                      <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
-                        <Icon name="MessageCircle" size={32} />
-                      </a>
-                      <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                      <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                         <Icon name="Send" size={32} />
                       </a>
                       <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">

@@ -36,8 +36,7 @@ const Index = () => {
     },
     "sameAs": [
       "https://vk.com/kgsural",
-      "https://wa.me/79122410318",
-      "https://t.me/+79122410318"
+      "https://t.me/kgs_ural"
     ],
     "foundingDate": "2013",
     "areaServed": ["RU", "KZ", "BY"],
@@ -192,10 +191,7 @@ const Index = () => {
 
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-3">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={18} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Send" size={18} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
@@ -496,8 +492,8 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <img 
-                src="https://cdn.poehali.dev/files/a32d619e-9cc4-4ca5-bfa4-bc285b9fe2f7.png"
-                alt="Производственный цех с готовой копровой мачтой"
+                src="https://cdn.poehali.dev/files/37b0f5b8-34ec-4ba1-b0d5-754bd7ea6682.png"
+                alt="Производственный цех КГС"
                 className="w-full h-[500px] object-cover"
               />
             </div>
@@ -672,10 +668,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
               <p>© 2025 КоперГруппСервис. Все права защищены.</p>
               <div className="flex items-center space-x-4">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={20} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
                   <Icon name="Send" size={20} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">

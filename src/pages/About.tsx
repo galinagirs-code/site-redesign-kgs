@@ -83,7 +83,7 @@ const About = () => {
       description: "Руководит стратегическим развитием компании и ключевыми направлениями бизнеса"
     },
     {
-      name: "Ольга Александровна Жирова",
+      name: "Ольга Александровна Тапинюк",
       position: "Исполнительный директор",
       email: "zhirova@kgs-ural.ru",
       description: "Отвечает за операционное управление и координацию всех подразделений компании"
@@ -200,10 +200,7 @@ const About = () => {
 
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-3">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={18} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Send" size={18} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
@@ -815,11 +812,11 @@ const About = () => {
                       <span className="text-xs text-muted-foreground">офис</span>
                     </p>
                     <p>
-                      <a href="tel:+79122410318" className="text-primary hover:text-accent transition-colors font-medium">
-                        +7 (912) 241-03-18
+                      <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors font-medium">
+                        @kgs_ural
                       </a>
                       <br />
-                      <span className="text-xs text-muted-foreground">WhatsApp</span>
+                      <span className="text-xs text-muted-foreground">Telegram</span>
                     </p>
                   </div>
                 </div>
@@ -833,12 +830,20 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold mb-2">Email</h3>
-                  <a 
-                    href="mailto:info@kgs-ural.ru"
-                    className="text-primary hover:text-accent transition-colors text-sm font-medium"
-                  >
-                    info@kgs-ural.ru
-                  </a>
+                  <div className="space-y-1">
+                    <a 
+                      href="mailto:info@kgs-ural.ru"
+                      className="text-primary hover:text-accent transition-colors text-sm font-medium block"
+                    >
+                      info@kgs-ural.ru
+                    </a>
+                    <a 
+                      href="mailto:service@kgs-ural.ru"
+                      className="text-primary hover:text-accent transition-colors text-sm font-medium block"
+                    >
+                      service@kgs-ural.ru
+                    </a>
+                  </div>
                 </div>
               </div>
             </Card>
