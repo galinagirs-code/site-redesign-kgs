@@ -5,13 +5,15 @@ interface OptimizedImageProps {
   alt: string;
   className?: string;
   variant?: 'hero' | 'card' | 'content' | 'logo' | 'gallery';
+  showWatermark?: boolean;
 }
 
 export const OptimizedImage = ({ 
   src, 
   alt, 
   className = '', 
-  variant = 'content' 
+  variant = 'content',
+  showWatermark = true
 }: OptimizedImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -54,6 +56,15 @@ export const OptimizedImage = ({
         onLoad={() => setIsLoaded(true)}
         loading="lazy"
       />
+      {showWatermark && variant !== 'logo' && (
+        <div className="absolute bottom-4 right-4 opacity-40 hover:opacity-60 transition-opacity pointer-events-none">
+          <img 
+            src="https://cdn.poehali.dev/files/584417ee-f78b-4041-a7fe-8b33469a6007.png"
+            alt="KGS"
+            className="w-20 h-auto drop-shadow-lg"
+          />
+        </div>
+      )}
     </div>
   );
 };

@@ -12,6 +12,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 
 const Index = () => {
   const organizationSchema = {
@@ -216,7 +217,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
         <div className="absolute inset-0">
-          <img 
+          <ImageWithWatermark 
             src="https://cdn.poehali.dev/files/478ad401-ddf3-4936-9a52-2fcda59d6718.jpeg"
             alt="Оборудование для свайных работ"
             className="w-full h-full object-cover opacity-20"
@@ -491,7 +492,7 @@ const Index = () => {
             <div className="image-card relative overflow-hidden rounded-lg">
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
-              <img 
+              <ImageWithWatermark 
                 src="https://cdn.poehali.dev/files/7b918167-7b85-4cdc-9ebc-adc84a1f749c.png"
                 alt="Производственный цех КГС"
                 className="w-full h-[500px] object-cover"
