@@ -492,7 +492,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <img 
-                src="https://cdn.poehali.dev/files/37b0f5b8-34ec-4ba1-b0d5-754bd7ea6682.png"
+                src="https://cdn.poehali.dev/files/7b918167-7b85-4cdc-9ebc-adc84a1f749c.png"
                 alt="Производственный цех КГС"
                 className="w-full h-[500px] object-cover"
               />
@@ -569,10 +569,10 @@ const Index = () => {
                         {" "}— офис
                       </p>
                       <p className="text-muted-foreground">
-                        <a href="tel:+79122410318" className="hover:text-accent transition-colors">
-                          +7 (912) 241-03-18
+                        <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                          @kgs_ural
                         </a>
-                        {" "}— WhatsApp
+                        {" "}— Telegram
                       </p>
                     </div>
                   </div>
