@@ -1019,9 +1019,10 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Готовы начать сотрудничество?
             </h2>
-            <p className="text-white/80 text-lg">
+            <p className="text-white/80 text-lg mb-8">
               Свяжитесь с нами для получения консультации или каталога оборудования
             </p>
+            <ConsultationButton size="lg" variant="outline" className="border-white text-white hover:bg-white/10" />
           </div>
         </div>
       </section>
