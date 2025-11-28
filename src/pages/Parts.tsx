@@ -33,7 +33,7 @@ const Parts = () => {
     { 
       id: 1, 
       title: "Болт стопорный DD", 
-      description: "Высококачественный стопорный болт для дизельных молотов DD", 
+      description: "Болт стопорный DD", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/36504fa2-8632-4283-b92e-8ad46d2af755.png",
@@ -43,7 +43,7 @@ const Parts = () => {
     { 
       id: 2, 
       title: "Болт топливный DD 35 JL", 
-      description: "Топливный болт для дизельного молота DD 35 модификации JL", 
+      description: "Болт топливный DD 35 JL", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/8af8f619-cc06-478b-a77e-59f560203308.png",
@@ -52,8 +52,8 @@ const Parts = () => {
     },
     { 
       id: 3, 
-      title: "Болт топливный DD 35 JW", 
-      description: "Топливный болт для дизельного молота DD 35 модификации JW", 
+      title: "Болт топливный DD 35", 
+      description: "Болт топливный DD 35", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/f4502c35-b11c-475f-9041-89281f84db21.png",
@@ -63,7 +63,7 @@ const Parts = () => {
     { 
       id: 4, 
       title: "Ось крюка DD 35 JL", 
-      description: "Ось крюка для дизельного молота DD 35 модификации JL", 
+      description: "Ось крюка DD 35 JL", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/6daf1e56-b15d-4a8b-a8b8-e35bc963dd6c.jpg",
@@ -73,7 +73,7 @@ const Parts = () => {
     { 
       id: 5, 
       title: "Ось крюка DD 35 JW", 
-      description: "Ось крюка для дизельного молота DD 35 модификации JW", 
+      description: "Ось крюка DD 35 JW", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
@@ -83,7 +83,7 @@ const Parts = () => {
     { 
       id: 6, 
       title: "Ось реверса DD 25", 
-      description: "Ось реверса для дизельного молота DD 25", 
+      description: "Ось реверса DD 25", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/f65e7e04-0d4a-4bd8-884e-eebfe0b715b3.png",
@@ -93,7 +93,7 @@ const Parts = () => {
     { 
       id: 7, 
       title: "Пружина скользящая JW", 
-      description: "Пружина скользящая для дизельного молота модификации JW", 
+      description: "Пружина скользящая JW", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/774f08d1-2ba2-4d1d-bb14-50401563de11.jpg",
@@ -103,7 +103,7 @@ const Parts = () => {
     { 
       id: 8, 
       title: "Ротор DD - 25 Dнар 52мм", 
-      description: "Ротор для дизельного молота DD-25 с наружным диаметром 52мм", 
+      description: "Ротор DD - 25 Dнар 52мм", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/aaa67ac4-54d7-4c60-8521-044f2a4fd0da.jpg",
@@ -447,7 +447,7 @@ const Parts = () => {
                 className="h-12 w-auto mb-4"
               />
               <p className="text-white/70 text-sm mb-4">
-                Поставка буровой и спецтехники из Китая с 2015 года
+                Производство и поставка оборудования для строительства свайных фундаментов
               </p>
             </div>
 
