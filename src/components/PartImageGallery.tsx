@@ -33,7 +33,7 @@ export const PartImageGallery = ({ images, alt }: PartImageGalleryProps) => {
         src={images[currentIndex]}
         alt={`${alt} - фото ${currentIndex + 1}`}
         variant="content"
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover"
       />
 
       {images.length > 1 && (
