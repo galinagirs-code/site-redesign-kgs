@@ -42,8 +42,8 @@ const Parts = () => {
     },
     { 
       id: 2, 
-      title: "Болт топливный DD 35 JL", 
-      description: "Болт топливный DD 35 JL", 
+      title: "Болт топливный DD-35 JL", 
+      description: "Болт топливный DD-35 JL", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/8af8f619-cc06-478b-a77e-59f560203308.png",
@@ -52,8 +52,8 @@ const Parts = () => {
     },
     { 
       id: 4, 
-      title: "Ось крюка DD 35 JL", 
-      description: "Ось крюка DD 35 JL", 
+      title: "Ось крюка DD-35 JL", 
+      description: "Ось крюка DD-35 JL", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/6daf1e56-b15d-4a8b-a8b8-e35bc963dd6c.jpg",
@@ -62,8 +62,8 @@ const Parts = () => {
     },
     { 
       id: 5, 
-      title: "Ось крюка DD 35 JW", 
-      description: "Ось крюка DD 35 JW", 
+      title: "Ось крюка DD-35 JW", 
+      description: "Ось крюка DD-35 JW", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
@@ -82,8 +82,8 @@ const Parts = () => {
     },
     { 
       id: 8, 
-      title: "Ротор DD - 25 Dнар 52мм", 
-      description: "Ротор DD - 25 Dнар 52мм", 
+      title: "Ротор DD-25 Dнар-52мм", 
+      description: "Ротор DD-25 Dнар-52мм", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/aaa67ac4-54d7-4c60-8521-044f2a4fd0da.jpg",
