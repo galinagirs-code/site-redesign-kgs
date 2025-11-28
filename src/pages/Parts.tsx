@@ -334,27 +334,29 @@ const Parts = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {parts.map((part) => (
-              <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+              <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col h-full">
                 <PartImageGallery 
                   images={part.images || []} 
                   alt={part.title}
                 />
-                <CardContent className="p-6 flex-1 flex flex-col">
+                <CardContent className="p-6 flex flex-col flex-1">
                   <h3 className="font-heading font-bold text-xl mb-3 text-primary">
                     {part.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 flex-1">
+                  <p className="text-muted-foreground mb-4 text-sm">
                     {part.description}
                   </p>
-                  <p className="text-lg font-bold text-accent mb-4">
-                    Цена: {part.price}
-                  </p>
-                  <Button 
-                    className="w-full btn-gradient text-white"
-                    onClick={() => addToCart({ id: part.id, title: part.title, price: part.price })}
-                  >
-                    Добавить в корзину
-                  </Button>
+                  <div className="mt-auto">
+                    <p className="text-lg font-bold text-accent mb-4">
+                      Цена: {part.price}
+                    </p>
+                    <Button 
+                      className="w-full btn-gradient text-white"
+                      onClick={() => addToCart({ id: part.id, title: part.title, price: part.price })}
+                    >
+                      Добавить в корзину
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
