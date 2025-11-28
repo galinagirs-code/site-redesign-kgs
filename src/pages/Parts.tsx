@@ -36,7 +36,7 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/36504fa2-8632-4283-b92e-8ad46d2af755.png",
+        "https://cdn.poehali.dev/files/55192a29-a147-455e-b92b-c978224f9866.png",
         "https://cdn.poehali.dev/files/4ccfcf30-8894-4e5d-8820-767897864751.png"
       ]
     },
@@ -56,7 +56,7 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/8a85bf89-c536-40d4-95ae-162a69da2a19.jpg",
+        "https://cdn.poehali.dev/files/3330209d-a8ea-49b0-b6e8-b8f33377593e.jpg",
         "https://cdn.poehali.dev/files/a079ce66-1e0e-42c0-8750-93101e641f9a.jpg"
       ]
     },
@@ -510,7 +510,10 @@ const Parts = () => {
                   <Icon name="Video" size={20} />
                 </a>
               </div>
-              <p>ИНН: 6670440671 | ОГРН: 1169658096189</p>
+              <div className="flex gap-4">
+                <a href="#" className="hover:text-accent transition-colors">Политика конфиденциальности</a>
+                <a href="#" className="hover:text-accent transition-colors">Политика cookie</a>
+              </div>
             </div>
           </div>
         </div>

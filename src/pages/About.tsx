@@ -675,14 +675,9 @@ const About = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">
+            <p className="text-muted-foreground">
               Более 60 успешно реализованных проектов по всей России и странам СНГ
             </p>
-            <Link to="/#contact">
-              <Button className="btn-gradient-reverse text-white">
-                Обсудить ваш проект
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
@@ -870,6 +865,35 @@ const About = () => {
       </section>
 
       <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Наша команда
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              За качество работы и индивидуальный подход к каждому клиенту отвечают опытные специалисты, которые всегда готовы помочь в подборе оборудования и решении технических вопросов
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {team.map((member, index) => (
+              <Card key={index} className="border border-primary/10 shadow-md hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h3 className="font-heading font-bold text-lg text-primary mb-2">{member.name}</h3>
+                  <Badge variant="outline" className="mb-3">{member.position}</Badge>
+                  <p className="text-sm text-muted-foreground mb-4">{member.description}</p>
+                  <a href={`mailto:${member.email}`} className="text-accent hover:underline text-sm flex items-center">
+                    <Icon name="Mail" size={14} className="mr-2" />
+                    {member.email}
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
@@ -1107,7 +1131,10 @@ const About = () => {
                   <Icon name="Video" size={20} />
                 </a>
               </div>
-              <p>ИНН: 6670440671 | ОГРН: 1169658096189</p>
+              <div className="flex gap-4">
+                <a href="#" className="hover:text-accent transition-colors">Политика конфиденциальности</a>
+                <a href="#" className="hover:text-accent transition-colors">Политика cookie</a>
+              </div>
             </div>
           </div>
         </div>

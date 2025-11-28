@@ -428,7 +428,10 @@ const Contact = () => {
                   <Icon name="Video" size={20} />
                 </a>
               </div>
-              <p>ИНН: 6670440671 | ОГРН: 1169658096189</p>
+              <div className="flex gap-4">
+                <a href="#" className="hover:text-accent transition-colors">Политика конфиденциальности</a>
+                <a href="#" className="hover:text-accent transition-colors">Политика cookie</a>
+              </div>
             </div>
           </div>
         </div>
