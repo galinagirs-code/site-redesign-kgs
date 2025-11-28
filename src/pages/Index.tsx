@@ -198,6 +198,9 @@ const Index = () => {
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Share2" size={18} />
                 </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
+                </a>
               </div>
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
                 8 (800) 600-74-65
@@ -508,8 +511,7 @@ const Index = () => {
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Получите консультацию</h2>
               <p className="text-muted-foreground text-base md:text-lg">
-                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время<br />
-                Email: <a href="mailto:service@kgs-ural.ru" className="text-accent hover:underline">service@kgs-ural.ru</a>
+                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
               </p>
             </div>
 
@@ -587,12 +589,22 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold mb-2">Email</h3>
-                      <a 
-                        href="mailto:info@kgs-ural.ru"
-                        className="text-muted-foreground hover:text-accent transition-colors"
-                      >
-                        info@kgs-ural.ru
-                      </a>
+                      <p className="text-muted-foreground mb-1">
+                        <a 
+                          href="mailto:info@kgs-ural.ru"
+                          className="hover:text-accent transition-colors"
+                        >
+                          info@kgs-ural.ru
+                        </a>
+                      </p>
+                      <p className="text-muted-foreground">
+                        <a 
+                          href="mailto:service@kgs-ural.ru"
+                          className="hover:text-accent transition-colors"
+                        >
+                          service@kgs-ural.ru
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </Card>

@@ -12,6 +12,7 @@ import { useState } from "react";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { PartImageGallery } from "@/components/PartImageGallery";
 
 const Parts = () => {
   const { addToCart } = useCart();
@@ -101,6 +102,9 @@ const Parts = () => {
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Share2" size={18} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
                 </a>
               </div>
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
@@ -280,24 +284,16 @@ const Parts = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {parts.map((part) => (
-              <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden">
-                {part.images && part.images.length > 0 ? (
-                  <OptimizedImage
-                    src={part.images[0]}
-                    alt={part.title}
-                    variant="content"
-                    className="w-full h-64 object-contain bg-white"
-                  />
-                ) : (
-                  <div className="bg-gray-200 h-64 flex items-center justify-center">
-                    <Icon name="Package" size={64} className="text-gray-400" />
-                  </div>
-                )}
-                <CardContent className="p-6">
+              <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+                <PartImageGallery 
+                  images={part.images || []} 
+                  alt={part.title}
+                />
+                <CardContent className="p-6 flex-1 flex flex-col">
                   <h3 className="font-heading font-bold text-xl mb-3 text-primary">
                     {part.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 flex-1">
                     {part.description}
                   </p>
                   <p className="text-lg font-bold text-accent mb-4">

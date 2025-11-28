@@ -200,6 +200,9 @@ const Production = () => {
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
                   <Icon name="Share2" size={18} />
                 </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
+                </a>
               </div>
               <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
                 8 (800) 600-74-65
