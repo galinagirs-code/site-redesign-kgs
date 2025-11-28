@@ -33,7 +33,7 @@ const Parts = () => {
     { 
       id: 1, 
       title: "Болт стопорный DD", 
-      description: "Болт стопорный DD", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/36504fa2-8632-4283-b92e-8ad46d2af755.png",
@@ -43,7 +43,7 @@ const Parts = () => {
     { 
       id: 2, 
       title: "Болт топливный DD-35 JL", 
-      description: "Болт топливный DD-35 JL", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/8af8f619-cc06-478b-a77e-59f560203308.png",
@@ -51,9 +51,29 @@ const Parts = () => {
       ]
     },
     { 
+      id: 3, 
+      title: "Болт топливный DD-35 JW", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/79a1ffc1-2047-4616-9e5c-effde727c180.jpg",
+        "https://cdn.poehali.dev/files/07a0eb99-fa06-425f-8575-f5bad7fc6a57.jpg"
+      ]
+    },
+    { 
       id: 4, 
+      title: "Ось реверса DD-25", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/47022ea8-c596-45ff-b449-9c992975b331.jpg",
+        "https://cdn.poehali.dev/files/bf91e2bd-effb-4a32-89c3-6764fcdfeda7.jpg"
+      ]
+    },
+    { 
+      id: 5, 
       title: "Ось крюка DD-35 JL", 
-      description: "Ось крюка DD-35 JL", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/6daf1e56-b15d-4a8b-a8b8-e35bc963dd6c.jpg",
@@ -61,9 +81,9 @@ const Parts = () => {
       ]
     },
     { 
-      id: 5, 
+      id: 6, 
       title: "Ось крюка DD-35 JW", 
-      description: "Ось крюка DD-35 JW", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
@@ -73,7 +93,7 @@ const Parts = () => {
     { 
       id: 7, 
       title: "Пружина скользящая JW", 
-      description: "Пружина скользящая JW", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/774f08d1-2ba2-4d1d-bb14-50401563de11.jpg",
@@ -83,7 +103,7 @@ const Parts = () => {
     { 
       id: 8, 
       title: "Ротор DD-25 Dнар-52мм", 
-      description: "Ротор DD-25 Dнар-52мм", 
+      description: "", 
       price: "По запросу",
       images: [
         "https://cdn.poehali.dev/files/aaa67ac4-54d7-4c60-8521-044f2a4fd0da.jpg",
@@ -323,9 +343,11 @@ const Parts = () => {
                   <h3 className="font-heading font-bold text-xl mb-3 text-primary">
                     {part.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 text-sm">
-                    {part.description}
-                  </p>
+                  {part.description && (
+                    <p className="text-muted-foreground mb-4 text-sm">
+                      {part.description}
+                    </p>
+                  )}
                   <div className="mt-auto">
                     <p className="text-lg font-bold text-accent mb-4">
                       Цена: {part.price}
