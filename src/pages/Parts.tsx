@@ -56,8 +56,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/79a1ffc1-2047-4616-9e5c-effde727c180.jpg",
-        "https://cdn.poehali.dev/files/07a0eb99-fa06-425f-8575-f5bad7fc6a57.jpg"
+        "https://cdn.poehali.dev/files/b31a1858-e08b-41e9-a747-9865d4bfbde9.jpg",
+        "https://cdn.poehali.dev/files/2da8c57f-725b-4e6a-8443-9f97728bc6a5.jpg"
       ]
     },
     { 
