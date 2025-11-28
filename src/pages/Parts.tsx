@@ -60,6 +60,56 @@ const Parts = () => {
         "https://cdn.poehali.dev/files/1956a5ce-f4b2-448d-8da5-fe272d0ba0ff.png"
       ]
     },
+    { 
+      id: 4, 
+      title: "Ось крюка DD 35 JL", 
+      description: "Ось крюка для дизельного молота DD 35 модификации JL", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/6daf1e56-b15d-4a8b-a8b8-e35bc963dd6c.jpg",
+        "https://cdn.poehali.dev/files/55767240-b4e4-4912-bba4-4ba998628c1c.jpg"
+      ]
+    },
+    { 
+      id: 5, 
+      title: "Ось крюка DD 35 JW", 
+      description: "Ось крюка для дизельного молота DD 35 модификации JW", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
+        "https://cdn.poehali.dev/files/7ebaeebd-b3ae-479e-a755-0e91fbec2b98.jpg"
+      ]
+    },
+    { 
+      id: 6, 
+      title: "Ось реверса DD 25", 
+      description: "Ось реверса для дизельного молота DD 25", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/f65e7e04-0d4a-4bd8-884e-eebfe0b715b3.png",
+        "https://cdn.poehali.dev/files/2e212936-3a55-434c-af18-913388e3aaae.png"
+      ]
+    },
+    { 
+      id: 7, 
+      title: "Пружина скользящая JW", 
+      description: "Пружина скользящая для дизельного молота модификации JW", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/774f08d1-2ba2-4d1d-bb14-50401563de11.jpg",
+        "https://cdn.poehali.dev/files/4558f5df-01de-47e5-b7f2-5c706af72342.jpg"
+      ]
+    },
+    { 
+      id: 8, 
+      title: "Ротор DD - 25 Dнар 52мм", 
+      description: "Ротор для дизельного молота DD-25 с наружным диаметром 52мм", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/aaa67ac4-54d7-4c60-8521-044f2a4fd0da.jpg",
+        "https://cdn.poehali.dev/files/d8c285e2-0c4f-4d5a-836b-bb61873fce6b.jpg"
+      ]
+    },
   ];
 
   return (
