@@ -61,6 +61,11 @@ const Contact = () => {
       email: "sales2@kgs-ural.ru"
     },
     {
+      name: "Анна Викторовна Семенова",
+      position: "Менеджер по продажам ООО «КГС»",
+      email: "sales4@kgs-ural.ru"
+    },
+    {
       name: "Артур Фирдависович Муталлапов",
       position: "Сервисный инженер ООО «КГС»",
       email: "service@kgs-ural.ru"
