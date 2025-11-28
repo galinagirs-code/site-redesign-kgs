@@ -645,10 +645,7 @@ const Production = () => {
             <div>
               <h4 className="font-heading font-bold mb-4">Мы в соцсетях</h4>
               <div className="flex space-x-4">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={20} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
                   <Icon name="Send" size={20} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">

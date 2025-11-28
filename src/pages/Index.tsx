@@ -508,7 +508,8 @@ const Index = () => {
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Получите консультацию</h2>
               <p className="text-muted-foreground text-base md:text-lg">
-                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
+                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время<br />
+                Email: <a href="mailto:service@kgs-ural.ru" className="text-accent hover:underline">service@kgs-ural.ru</a>
               </p>
             </div>
 

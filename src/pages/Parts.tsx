@@ -29,12 +29,36 @@ const Parts = () => {
   };
 
   const parts = [
-    { id: 1, title: "Запчасть 1", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
-    { id: 2, title: "Запчасть 2", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
-    { id: 3, title: "Запчасть 3", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
-    { id: 4, title: "Запчасть 4", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
-    { id: 5, title: "Запчасть 5", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
-    { id: 6, title: "Запчасть 6", description: "Описание запчасти и её технические характеристики", price: "По запросу" },
+    { 
+      id: 1, 
+      title: "Болт стопорный DD", 
+      description: "Высококачественный стопорный болт для дизельных молотов DD", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/36504fa2-8632-4283-b92e-8ad46d2af755.png",
+        "https://cdn.poehali.dev/files/4ccfcf30-8894-4e5d-8820-767897864751.png"
+      ]
+    },
+    { 
+      id: 2, 
+      title: "Болт топливный DD 35 JL", 
+      description: "Топливный болт для дизельного молота DD 35 модификации JL", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/8af8f619-cc06-478b-a77e-59f560203308.png",
+        "https://cdn.poehali.dev/files/88f2c716-ad5e-4e99-9387-acdcc9c4dfed.png"
+      ]
+    },
+    { 
+      id: 3, 
+      title: "Болт топливный DD 35 JW", 
+      description: "Топливный болт для дизельного молота DD 35 модификации JW", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/f4502c35-b11c-475f-9041-89281f84db21.png",
+        "https://cdn.poehali.dev/files/1956a5ce-f4b2-448d-8da5-fe272d0ba0ff.png"
+      ]
+    },
   ];
 
   return (
@@ -257,9 +281,18 @@ const Parts = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {parts.map((part) => (
               <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <Icon name="Package" size={64} className="text-gray-400" />
-                </div>
+                {part.images && part.images.length > 0 ? (
+                  <OptimizedImage
+                    src={part.images[0]}
+                    alt={part.title}
+                    variant="content"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                ) : (
+                  <div className="bg-gray-200 h-64 flex items-center justify-center">
+                    <Icon name="Package" size={64} className="text-gray-400" />
+                  </div>
+                )}
                 <CardContent className="p-6">
                   <h3 className="font-heading font-bold text-xl mb-3 text-primary">
                     {part.title}
@@ -414,10 +447,7 @@ const Parts = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
               <p>© 2025 КоперГруппСервис. Все права защищены.</p>
               <div className="flex items-center space-x-4">
-                <a href="https://wa.me/79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
-                  <Icon name="MessageCircle" size={20} />
-                </a>
-                <a href="https://t.me/+79122410318" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
                   <Icon name="Send" size={20} />
                 </a>
                 <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-accent transition-colors">
