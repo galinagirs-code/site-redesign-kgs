@@ -740,12 +740,8 @@ const About = () => {
               </Card>
             ))}
           </div>
-
-          <div className="mt-12 text-center">
-            <ConsultationButton size="lg" />
-          </div>
           
-          <Card className="mt-8 p-6 bg-gradient-to-br from-accent/5 to-primary/5 max-w-2xl mx-auto text-center">
+          <Card className="mt-12 p-6 bg-gradient-to-br from-accent/5 to-primary/5 max-w-2xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-3 mb-3">
               <Icon name="Mail" className="text-accent" size={24} />
               <h3 className="font-heading font-semibold text-lg">По вопросам рекламы и сотрудничества</h3>
@@ -1023,21 +1019,9 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Готовы начать сотрудничество?
             </h2>
-            <p className="text-white/80 text-lg mb-8">
+            <p className="text-white/80 text-lg">
               Свяжитесь с нами для получения консультации или каталога оборудования
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/#contact">
-                <Button size="lg" className="btn-gradient-reverse text-white font-medium">
-                  Получить консультацию
-                </Button>
-              </Link>
-              <Link to="/">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                  Вернуться на главную
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
