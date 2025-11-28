@@ -881,16 +881,16 @@ const About = () => {
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "Работаем с КГС уже 3 года. Отличное качество оборудования, всегда в срок. 
-                Шефмонтаж прошёл без проблем, инженеры очень грамотные."
+                "Работаем с КГС уже 3 года. Отличное качество оборудования, поставка всегда в срок. 
+                Запчасти всегда в наличии, отправляют быстро."
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ООО "СтройТех"</div>
-                  <div className="text-xs text-muted-foreground">Москва</div>
+                  <div className="font-semibold text-sm">Денис С.</div>
+                  <div className="text-xs text-muted-foreground">г. Москва</div>
                 </div>
               </div>
             </Card>
@@ -904,16 +904,16 @@ const About = () => {
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "Заказывали буровую установку и сваебойный молот. Цена ниже конкурентов, 
-                качество на высоте. Техподдержка всегда на связи."
+                "Заказывали крановую мачту, молот и вращатель. Лучшая цена, качество на высоте. 
+                Сервисник приехал и провел шефмонтаж от и до. Техподдержка всегда на связи."
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ООО "ФундаментСтрой"</div>
-                  <div className="text-xs text-muted-foreground">Санкт-Петербург</div>
+                  <div className="font-semibold text-sm">Дмитрий А.</div>
+                  <div className="text-xs text-muted-foreground">г. Симферополь</div>
                 </div>
               </div>
             </Card>
@@ -927,16 +927,16 @@ const About = () => {
                 </div>
               </div>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                "Быстрая доставка в Казахстан, все документы оформили правильно. 
+                "Быстрая доставка в Калининград, все документы оформили правильно. 
                 Рекомендуем как надёжного поставщика оборудования."
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ТОО "КазСтрой"</div>
-                  <div className="text-xs text-muted-foreground">Алматы, Казахстан</div>
+                  <div className="font-semibold text-sm">Максим А.</div>
+                  <div className="text-xs text-muted-foreground">г. Калининград</div>
                 </div>
               </div>
             </Card>
@@ -955,11 +955,11 @@ const About = () => {
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ООО "УралФундамент"</div>
-                  <div className="text-xs text-muted-foreground">Екатеринбург</div>
+                  <div className="font-semibold text-sm">Даниил М.</div>
+                  <div className="text-xs text-muted-foreground">г. Москва</div>
                 </div>
               </div>
             </Card>
@@ -978,11 +978,11 @@ const About = () => {
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ООО "СибирьСтрой"</div>
-                  <div className="text-xs text-muted-foreground">Новосибирск</div>
+                  <div className="font-semibold text-sm">Игорь М.</div>
+                  <div className="text-xs text-muted-foreground">г. Пенза</div>
                 </div>
               </div>
             </Card>
@@ -1001,11 +1001,11 @@ const About = () => {
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Icon name="Building2" className="text-primary" size={20} />
+                  <Icon name="User" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">ЗАО "ВолгаСваи"</div>
-                  <div className="text-xs text-muted-foreground">Самара</div>
+                  <div className="font-semibold text-sm">Александр Л.</div>
+                  <div className="text-xs text-muted-foreground">г. Набережные Челны</div>
                 </div>
               </div>
             </Card>
