@@ -348,9 +348,12 @@ const Parts = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
-              Оформление заказа
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4 text-center">
+              Не нашли нужную запчасть в каталоге?
             </h2>
+            <p className="text-center text-muted-foreground text-lg mb-8">
+              Оставьте заявку — менеджер «КоперГруппСервис» свяжется с вами и поможет подобрать оптимальное решение под ваши задачи.
+            </p>
             <Card>
               <CardContent className="p-6 md:p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
