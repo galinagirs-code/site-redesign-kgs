@@ -51,16 +51,6 @@ const Parts = () => {
       ]
     },
     { 
-      id: 3, 
-      title: "Болт топливный DD 35", 
-      description: "Болт топливный DD 35", 
-      price: "По запросу",
-      images: [
-        "https://cdn.poehali.dev/files/f4502c35-b11c-475f-9041-89281f84db21.png",
-        "https://cdn.poehali.dev/files/1956a5ce-f4b2-448d-8da5-fe272d0ba0ff.png"
-      ]
-    },
-    { 
       id: 4, 
       title: "Ось крюка DD 35 JL", 
       description: "Ось крюка DD 35 JL", 
@@ -78,16 +68,6 @@ const Parts = () => {
       images: [
         "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
         "https://cdn.poehali.dev/files/7ebaeebd-b3ae-479e-a755-0e91fbec2b98.jpg"
-      ]
-    },
-    { 
-      id: 6, 
-      title: "Ось реверса DD 25", 
-      description: "Ось реверса DD 25", 
-      price: "По запросу",
-      images: [
-        "https://cdn.poehali.dev/files/f65e7e04-0d4a-4bd8-884e-eebfe0b715b3.png",
-        "https://cdn.poehali.dev/files/2e212936-3a55-434c-af18-913388e3aaae.png"
       ]
     },
     { 
