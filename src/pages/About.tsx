@@ -1022,7 +1022,7 @@ const About = () => {
             <p className="text-white/80 text-lg mb-8">
               Свяжитесь с нами для получения консультации или каталога оборудования
             </p>
-            <ConsultationButton size="lg" variant="outline" className="border-white text-white hover:bg-white/10" />
+            <ConsultationButton size="lg" className="btn-gradient-reverse" />
           </div>
         </div>
       </section>
