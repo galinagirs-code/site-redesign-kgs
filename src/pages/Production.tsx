@@ -305,6 +305,15 @@ const Production = () => {
                 </div>
               </CardContent>
             </Card>
+            
+            <div className="mt-8 rounded-lg overflow-hidden">
+              <OptimizedImage
+                src="https://cdn.poehali.dev/files/0e4eb50d-5afd-4176-96cd-cedd837ed88d.png"
+                alt="Производственный цех КГС на Урале"
+                variant="content"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
