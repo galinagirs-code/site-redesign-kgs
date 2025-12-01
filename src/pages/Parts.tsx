@@ -36,8 +36,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/55192a29-a147-455e-b92b-c978224f9866.png",
-        "https://cdn.poehali.dev/files/4ccfcf30-8894-4e5d-8820-767897864751.png"
+        "https://cdn.poehali.dev/files/273b92c6-057a-4bf6-9304-4dd2f700ac35.jpg",
+        "https://cdn.poehali.dev/files/a23ff6d2-4db0-4c0b-8f5d-ff1ac0c20b83.png"
       ]
     },
     { 
@@ -46,8 +46,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/8af8f619-cc06-478b-a77e-59f560203308.png",
-        "https://cdn.poehali.dev/files/88f2c716-ad5e-4e99-9387-acdcc9c4dfed.png"
+        "https://cdn.poehali.dev/files/32af66c6-c443-4364-a23e-c0c9fb773232.jpg",
+        "https://cdn.poehali.dev/files/3e1eb0ab-d51b-4381-bdea-45dee0270ac5.jpg"
       ]
     },
     { 
@@ -56,8 +56,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/3330209d-a8ea-49b0-b6e8-b8f33377593e.jpg",
-        "https://cdn.poehali.dev/files/a079ce66-1e0e-42c0-8750-93101e641f9a.jpg"
+        "https://cdn.poehali.dev/files/2222961a-5e49-48c5-b658-23549757c244.jpg",
+        "https://cdn.poehali.dev/files/e12c4352-ad00-47d2-8c5c-74a8b4c74a7b.png"
       ]
     },
     { 
@@ -66,8 +66,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/47022ea8-c596-45ff-b449-9c992975b331.jpg",
-        "https://cdn.poehali.dev/files/bf91e2bd-effb-4a32-89c3-6764fcdfeda7.jpg"
+        "https://cdn.poehali.dev/files/c13ae105-4e06-48f1-b0a3-1055212c971e.png",
+        "https://cdn.poehali.dev/files/71d9278f-f622-4c86-a856-fcec9c72bbf7.png"
       ]
     },
     { 
@@ -76,18 +76,18 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/6daf1e56-b15d-4a8b-a8b8-e35bc963dd6c.jpg",
-        "https://cdn.poehali.dev/files/55767240-b4e4-4912-bba4-4ba998628c1c.jpg"
+        "https://cdn.poehali.dev/files/cf7670d9-b190-4829-8d30-190bc85bc53f.jpg",
+        "https://cdn.poehali.dev/files/84c6ad4e-7fa9-442b-af09-94cc9cfe72c1.jpg"
       ]
     },
     { 
       id: 6, 
-      title: "Ось крюка DD-35 JW", 
+      title: "Трубка топливная DD 25 JL", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/bb9d8e50-7914-4e2d-954f-fcb8574af3b8.jpg",
-        "https://cdn.poehali.dev/files/7ebaeebd-b3ae-479e-a755-0e91fbec2b98.jpg"
+        "https://cdn.poehali.dev/files/33a1a386-397a-4286-9fef-1f30c939e30b.jpg",
+        "https://cdn.poehali.dev/files/5c8c34da-37b5-41d9-a363-3bbad715a7b5.jpg"
       ]
     },
     { 
