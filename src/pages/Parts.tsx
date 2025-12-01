@@ -62,32 +62,31 @@ const Parts = () => {
     },
     { 
       id: 4, 
-      title: "Ось реверса DD-25", 
+      title: "Кривошип DD 25 JL", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/c13ae105-4e06-48f1-b0a3-1055212c971e.png",
-        "https://cdn.poehali.dev/files/71d9278f-f622-4c86-a856-fcec9c72bbf7.png"
+        "https://cdn.poehali.dev/files/b9a35e42-41f7-4204-884c-ce6c0d1bb668.jpg",
+        "https://cdn.poehali.dev/files/bac0fa02-8788-49b6-b230-366724bb8545.jpg"
       ]
     },
     { 
       id: 5, 
-      title: "Ось крюка DD-35 JL", 
+      title: "Насос топливный DD 25", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/cf7670d9-b190-4829-8d30-190bc85bc53f.jpg",
-        "https://cdn.poehali.dev/files/84c6ad4e-7fa9-442b-af09-94cc9cfe72c1.jpg"
+        "https://cdn.poehali.dev/files/9cba9c0b-bb36-4152-8117-3a8e96bd57e0.jpg",
+        "https://cdn.poehali.dev/files/047fdeb8-045a-409d-a44d-797cd5d7b56c.jpg"
       ]
     },
     { 
       id: 6, 
-      title: "Трубка топливная DD 25 JL", 
+      title: "Палец ударный DD 25", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/33a1a386-397a-4286-9fef-1f30c939e30b.jpg",
-        "https://cdn.poehali.dev/files/5c8c34da-37b5-41d9-a363-3bbad715a7b5.jpg"
+        "https://cdn.poehali.dev/files/6f56cbab-dae2-4cf2-b35b-03acdc21fdf6.jpg"
       ]
     },
     { 
