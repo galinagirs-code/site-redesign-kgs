@@ -66,8 +66,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/b9a35e42-41f7-4204-884c-ce6c0d1bb668.jpg",
-        "https://cdn.poehali.dev/files/bac0fa02-8788-49b6-b230-366724bb8545.jpg"
+        "https://cdn.poehali.dev/files/bac0fa02-8788-49b6-b230-366724bb8545.jpg",
+        "https://cdn.poehali.dev/files/b9a35e42-41f7-4204-884c-ce6c0d1bb668.jpg"
       ]
     },
     { 
@@ -91,22 +91,32 @@ const Parts = () => {
     },
     { 
       id: 7, 
-      title: "Пружина скользящая JW", 
+      title: "Ось крюка DD-35 JL", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/774f08d1-2ba2-4d1d-bb14-50401563de11.jpg",
-        "https://cdn.poehali.dev/files/4558f5df-01de-47e5-b7f2-5c706af72342.jpg"
+        "https://cdn.poehali.dev/files/5cb7eef2-63d8-4020-b38a-febcbd3aac8c.jpg",
+        "https://cdn.poehali.dev/files/f9e0d3ef-aa78-4731-835c-39fedfbc5fd7.jpg"
       ]
     },
     { 
       id: 8, 
-      title: "Ротор DD-25 Dнар-52мм", 
+      title: "Ось крюка DD-35 JW", 
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/aaa67ac4-54d7-4c60-8521-044f2a4fd0da.jpg",
-        "https://cdn.poehali.dev/files/d8c285e2-0c4f-4d5a-836b-bb61873fce6b.jpg"
+        "https://cdn.poehali.dev/files/be5a3b2c-61b7-417e-b511-bd52fc53a051.jpg",
+        "https://cdn.poehali.dev/files/db6f3071-1e84-46a7-bee3-88c91a236fd9.jpg"
+      ]
+    },
+    { 
+      id: 9, 
+      title: "Ось реверса DD-25", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/8d023b43-dfc6-490c-9137-7d4dc29c0834.png",
+        "https://cdn.poehali.dev/files/71d9278f-f622-4c86-a856-fcec9c72bbf7.png"
       ]
     },
   ];
