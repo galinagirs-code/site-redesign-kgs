@@ -496,7 +496,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-primary via-transparent to-primary opacity-30 z-10 pointer-events-none"></div>
               <ImageWithWatermark 
-                src="https://cdn.poehali.dev/files/7b918167-7b85-4cdc-9ebc-adc84a1f749c.png"
+                src="https://cdn.poehali.dev/files/659f2e6b-375e-43a9-849a-527f54ee4b64.png"
                 alt="Производственный цех КГС"
                 className="w-full h-[500px] object-cover"
               />
