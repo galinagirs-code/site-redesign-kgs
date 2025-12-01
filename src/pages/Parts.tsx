@@ -119,6 +119,35 @@ const Parts = () => {
         "https://cdn.poehali.dev/files/71d9278f-f622-4c86-a856-fcec9c72bbf7.png"
       ]
     },
+    { 
+      id: 10, 
+      title: "Пружина скользящая JW", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/afe0c5af-b62a-4ece-85be-4d1955d259e9.jpg",
+        "https://cdn.poehali.dev/files/1722d3ed-8537-4c9d-9cf7-1d178a101c5e.jpg"
+      ]
+    },
+    { 
+      id: 11, 
+      title: "Ротор DD-25 Dнар-52мм", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/8bffec89-b4fd-4c8a-8c90-316daf83283c.jpg",
+        "https://cdn.poehali.dev/files/0a56c79f-6c16-4c58-ab4f-a6cd3c5c4790.jpg"
+      ]
+    },
+    { 
+      id: 12, 
+      title: "Трубка топливная DD 25 JL", 
+      description: "", 
+      price: "По запросу",
+      images: [
+        "https://cdn.poehali.dev/files/d06c7dd9-b221-4644-a265-ccaf77398108.jpg"
+      ]
+    },
   ];
 
   return (
