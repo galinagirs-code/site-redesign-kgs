@@ -32,7 +32,7 @@ const Parts = () => {
   const parts = [
     { 
       id: 1, 
-      title: "Болт стопорный DD", 
+      title: "Болт стопорный DD/HD", 
       description: "", 
       price: "По запросу",
       images: [
@@ -42,7 +42,7 @@ const Parts = () => {
     },
     { 
       id: 2, 
-      title: "Болт топливный DD-35 JL", 
+      title: "Болт топливный DD/HD-35 JL", 
       description: "", 
       price: "По запросу",
       images: [
@@ -52,7 +52,7 @@ const Parts = () => {
     },
     { 
       id: 3, 
-      title: "Болт топливный DD-35 JW", 
+      title: "Болт топливный DD/HD-35 JW", 
       description: "", 
       price: "По запросу",
       images: [
@@ -62,7 +62,7 @@ const Parts = () => {
     },
     { 
       id: 4, 
-      title: "Кривошип DD 25 JL", 
+      title: "Кривошип DD-25 JL", 
       description: "", 
       price: "По запросу",
       images: [
@@ -72,7 +72,7 @@ const Parts = () => {
     },
     { 
       id: 5, 
-      title: "Насос топливный DD 25", 
+      title: "Насос топливный DD/HD-25", 
       description: "", 
       price: "По запросу",
       images: [
@@ -82,7 +82,7 @@ const Parts = () => {
     },
     { 
       id: 6, 
-      title: "Палец ударный DD 25", 
+      title: "Палец ударный DD/HD-25", 
       description: "", 
       price: "По запросу",
       images: [
@@ -111,7 +111,7 @@ const Parts = () => {
     },
     { 
       id: 9, 
-      title: "Ось реверса DD-25", 
+      title: "Ось реверса DD/HD-25", 
       description: "", 
       price: "По запросу",
       images: [
@@ -131,7 +131,7 @@ const Parts = () => {
     },
     { 
       id: 11, 
-      title: "Ротор DD-25 Dнар-52мм", 
+      title: "Ротор DD/HD-25 Dнар-52мм", 
       description: "", 
       price: "По запросу",
       images: [
@@ -141,7 +141,7 @@ const Parts = () => {
     },
     { 
       id: 12, 
-      title: "Трубка топливная DD 25 JL", 
+      title: "Трубка топливная DD-25 JL", 
       description: "", 
       price: "По запросу",
       images: [
