@@ -36,8 +36,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/1335ddfd-533e-45f5-9955-cf14d62f61e9.png",
-        "https://cdn.poehali.dev/files/89f9e275-4b1e-4ba5-9dda-afb3d6e51158.jpg"
+        "https://cdn.poehali.dev/files/9eb91020-f1d3-4fbe-afe9-5e58e73fd04c.png",
+        "https://cdn.poehali.dev/files/0de2c672-9b30-468f-8e9f-f0b127ff37dc.jpg"
       ]
     },
     { 
@@ -46,8 +46,8 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/1603ef8e-c9d9-4874-b918-8e72dcdb0315.jpg",
-        "https://cdn.poehali.dev/files/2ed0d6d1-3063-4da8-bb70-c511303bc89f.jpg"
+        "https://cdn.poehali.dev/files/649a8393-6d4b-4c39-bd78-c535418744b3.jpg",
+        "https://cdn.poehali.dev/files/65cca3e6-537f-40a9-9568-1d984d472eeb.jpg"
       ]
     },
     { 
@@ -56,8 +56,7 @@ const Parts = () => {
       description: "", 
       price: "По запросу",
       images: [
-        "https://cdn.poehali.dev/files/7a52f301-faf0-43b2-b583-2a5a41da2fa8.jpg",
-        "https://cdn.poehali.dev/files/e12c4352-ad00-47d2-8c5c-74a8b4c74a7b.png"
+        "https://cdn.poehali.dev/files/35962be4-c42b-4a6b-9862-eef83c1c2cd4.jpg"
       ]
     },
     { 
