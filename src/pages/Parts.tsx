@@ -20,6 +20,8 @@ const Parts = () => {
     name: "",
     phone: "",
     email: "",
+    hammerType: "",
+    manufacturer: "",
     comment: ""
   });
 
@@ -463,8 +465,34 @@ const Parts = () => {
                   </div>
 
                   <div>
+                    <label htmlFor="hammerType" className="block text-sm font-medium text-primary mb-2">
+                      На какой молот?
+                    </label>
+                    <Input
+                      id="hammerType"
+                      type="text"
+                      value={formData.hammerType}
+                      onChange={(e) => setFormData({ ...formData, hammerType: e.target.value })}
+                      placeholder="Укажите тип молота"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="manufacturer" className="block text-sm font-medium text-primary mb-2">
+                      Какой завод-изготовитель?
+                    </label>
+                    <Input
+                      id="manufacturer"
+                      type="text"
+                      value={formData.manufacturer}
+                      onChange={(e) => setFormData({ ...formData, manufacturer: e.target.value })}
+                      placeholder="Укажите завод-изготовитель"
+                    />
+                  </div>
+
+                  <div>
                     <label htmlFor="comment" className="block text-sm font-medium text-primary mb-2">
-                      Комментарий к заказу
+                      Дополнительный комментарий
                     </label>
                     <Textarea
                       id="comment"

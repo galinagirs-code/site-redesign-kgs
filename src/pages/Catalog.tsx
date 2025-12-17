@@ -356,14 +356,7 @@ const Catalog = () => {
       models: [
         "Домкраты для извлечения свай"
       ],
-      questions: [
-        {
-          question: "Диаметр сваи?"
-        },
-        {
-          question: "Глубина забивания?"
-        }
-      ]
+      questions: []
     }
   ];
 
