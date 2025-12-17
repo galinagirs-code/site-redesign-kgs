@@ -381,10 +381,10 @@ const Catalog = () => {
                   Позвонить нам
                 </Button>
               </a>
-              <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <a href="mailto:info@kgs-ural.ru" className="inline-block">
                 <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 w-full sm:w-auto">
-                  <Icon name="Send" className="mr-2" size={20} />
-                  Написать в Telegram
+                  <Icon name="Mail" className="mr-2" size={20} />
+                  Отправить сообщение
                 </Button>
               </a>
             </div>

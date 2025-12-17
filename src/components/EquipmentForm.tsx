@@ -224,6 +224,21 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
               />
             </div>
 
+            <div className="flex items-start gap-2 text-xs text-muted-foreground border-t pt-4">
+              <input
+                type="checkbox"
+                id={`consent-${categoryId}`}
+                required
+                className="mt-1 cursor-pointer"
+              />
+              <label htmlFor={`consent-${categoryId}`} className="cursor-pointer">
+                Я согласен на обработку персональных данных в соответствии с{' '}
+                <a href="/privacy" target="_blank" className="text-accent hover:underline">
+                  политикой конфиденциальности
+                </a>
+              </label>
+            </div>
+
             <div className="flex gap-2 pt-2">
               <Button 
                 type="submit" 
