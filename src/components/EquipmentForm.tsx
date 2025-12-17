@@ -6,9 +6,23 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
+interface SubField {
+  label: string;
+  placeholder: string;
+}
+
+interface ColumnField {
+  label: string;
+  placeholder: string;
+}
+
 interface Question {
   question: string;
   options?: string[];
+  subfields?: SubField[];
+  columns?: ColumnField[];
+  conditionalFields?: Record<string, SubField[]>;
+  multiline?: boolean;
 }
 
 interface EquipmentFormProps {
@@ -184,19 +198,87 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
                     <Label htmlFor={`question-${categoryId}-${idx}`} className="text-sm">
                       {q.question}
                     </Label>
+                    
                     {q.options && q.options.length > 0 ? (
-                      <select
+                      <>
+                        <select
+                          id={`question-${categoryId}-${idx}`}
+                          value={formData.answers[idx] || ''}
+                          onChange={(e) => handleAnswerChange(idx, e.target.value)}
+                          className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                        >
+                          <option value="">-- Выберите --</option>
+                          {q.options.map((option, optIdx) => (
+                            <option key={optIdx} value={option}>{option}</option>
+                          ))}
+                          <option value="Другое (укажу в комментарии)">Другое (укажу в комментарии)</option>
+                        </select>
+                        
+                        {q.conditionalFields && formData.answers[idx] && q.conditionalFields[formData.answers[idx]] && (
+                          <div className="mt-2 space-y-2 pl-4 border-l-2 border-accent/30">
+                            {q.conditionalFields[formData.answers[idx]].map((field, fieldIdx) => (
+                              <div key={fieldIdx}>
+                                <Label className="text-xs text-muted-foreground">{field.label}</Label>
+                                <Input
+                                  type="text"
+                                  placeholder={field.placeholder}
+                                  onChange={(e) => {
+                                    const currentAnswer = formData.answers[idx] || '';
+                                    const updatedAnswer = `${currentAnswer} | ${field.label}: ${e.target.value}`;
+                                    handleAnswerChange(idx, updatedAnswer);
+                                  }}
+                                  className="mt-1"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </>
+                    ) : q.subfields && q.subfields.length > 0 ? (
+                      <div className="mt-2 space-y-2">
+                        {q.subfields.map((field, fieldIdx) => (
+                          <div key={fieldIdx}>
+                            <Label className="text-xs text-muted-foreground">{field.label}</Label>
+                            <Input
+                              type="text"
+                              placeholder={field.placeholder}
+                              onChange={(e) => {
+                                const answers = formData.answers[idx]?.split(' | ') || [];
+                                answers[fieldIdx] = `${field.label}: ${e.target.value}`;
+                                handleAnswerChange(idx, answers.join(' | '));
+                              }}
+                              className="mt-1"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    ) : q.columns && q.columns.length > 0 ? (
+                      <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2">
+                        {q.columns.map((field, fieldIdx) => (
+                          <div key={fieldIdx}>
+                            <Label className="text-xs text-muted-foreground">{field.label}</Label>
+                            <Input
+                              type="text"
+                              placeholder={field.placeholder}
+                              onChange={(e) => {
+                                const answers = formData.answers[idx]?.split(' | ') || [];
+                                answers[fieldIdx] = `${field.label}: ${e.target.value}`;
+                                handleAnswerChange(idx, answers.join(' | '));
+                              }}
+                              className="mt-1"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    ) : q.multiline ? (
+                      <Textarea
                         id={`question-${categoryId}-${idx}`}
                         value={formData.answers[idx] || ''}
                         onChange={(e) => handleAnswerChange(idx, e.target.value)}
-                        className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                      >
-                        <option value="">-- Выберите --</option>
-                        {q.options.map((option, optIdx) => (
-                          <option key={optIdx} value={option}>{option}</option>
-                        ))}
-                        <option value="Другое (укажу в комментарии)">Другое (укажу в комментарии)</option>
-                      </select>
+                        placeholder="Ваш комментарий..."
+                        rows={3}
+                        className="mt-1 resize-none"
+                      />
                     ) : (
                       <Input
                         id={`question-${categoryId}-${idx}`}
@@ -229,43 +311,30 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
                 type="checkbox"
                 id={`consent-${categoryId}`}
                 required
-                className="mt-1 cursor-pointer"
+                className="mt-1"
               />
-              <label htmlFor={`consent-${categoryId}`} className="cursor-pointer">
-                Я согласен на обработку персональных данных в соответствии с{' '}
-                <a href="/privacy" target="_blank" className="text-accent hover:underline">
-                  политикой конфиденциальности
-                </a>
+              <label htmlFor={`consent-${categoryId}`}>
+                Согласен на обработку персональных данных
               </label>
             </div>
 
-            <div className="flex gap-2 pt-2">
-              <Button 
-                type="submit" 
-                disabled={isSubmitting}
-                className="flex-1 btn-gradient text-white"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Icon name="Loader2" className="mr-2 animate-spin" size={18} />
-                    Отправка...
-                  </>
-                ) : (
-                  <>
-                    <Icon name="Send" className="mr-2" size={18} />
-                    Отправить заявку
-                  </>
-                )}
-              </Button>
-              <Button 
-                type="button"
-                variant="outline"
-                onClick={() => setIsOpen(false)}
-                disabled={isSubmitting}
-              >
-                Отмена
-              </Button>
-            </div>
+            <Button 
+              type="submit" 
+              disabled={isSubmitting}
+              className="w-full btn-gradient text-white"
+            >
+              {isSubmitting ? (
+                <>
+                  <Icon name="Loader2" className="mr-2 animate-spin" size={18} />
+                  Отправка...
+                </>
+              ) : (
+                <>
+                  <Icon name="Send" className="mr-2" size={18} />
+                  Отправить заявку
+                </>
+              )}
+            </Button>
           </form>
         )}
       </CardContent>
