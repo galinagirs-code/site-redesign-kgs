@@ -9,6 +9,7 @@ import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { EquipmentForm } from "@/components/EquipmentForm";
 
 const Catalog = () => {
   const catalogSchema = {
@@ -55,6 +56,11 @@ const Catalog = () => {
       image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
       models: [
         "Мачты копровые крановые серия МК"
+      ],
+      questions: [
+        "На какую базовую машину будете навешивать?",
+        "Какие сваи планируете забивать?",
+        "Требуется ли наконечник?"
       ]
     },
     {
@@ -65,6 +71,13 @@ const Catalog = () => {
         "Молоты гидравлические Yongan (серия YC)",
         "Молоты дизельные трубчатые Starke (серия HD)",
         "Молоты дизельные штанговые Dongtai Juli (серия DD)"
+      ],
+      questions: [
+        "Какой молот требуется?",
+        "На какую мачту планируете навешивать?",
+        "Какие сваи планируете забивать?",
+        "Какие требуются захваты?",
+        "Требуется ли наконечник?"
       ]
     },
     {
@@ -74,6 +87,10 @@ const Catalog = () => {
       models: [
         "Сваебойные установки STARKE (серия LH)",
         "Шагающие сваебойные установки JuLi (серия KLB)"
+      ],
+      questions: [
+        "Какие будут грунты?",
+        "Какое сечение свай?"
       ]
     },
     {
@@ -84,6 +101,11 @@ const Catalog = () => {
         "Гидравлическая буровая машина JINT (серия SH)",
         "Гидравлическая буровая машина JINT (серия SD)",
         "Горизонтальная буровая машина JuLi (серия JL)"
+      ],
+      questions: [
+        "Диаметр бурения?",
+        "Глубина бурения?",
+        "Грузоподъемность базовой машины?"
       ]
     },
     {
@@ -94,6 +116,11 @@ const Catalog = () => {
         "Вибропогружатели гидравлические крановые Yongan (серия YZ)",
         "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)",
         "Вибропогружатели электрические крановые Yongan (серия DZJ)"
+      ],
+      questions: [
+        "На какую базовую машину будете навешивать?",
+        "Если кран - грузоподъемность?",
+        "Какое сечение свай?"
       ]
     },
     {
@@ -103,6 +130,11 @@ const Catalog = () => {
       models: [
         "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)",
         "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)"
+      ],
+      questions: [
+        "На какую базовую машину будете навешивать?",
+        "Какое сечение свай?",
+        "Глубина погружения?"
       ]
     },
     {
@@ -111,6 +143,11 @@ const Catalog = () => {
       image: "https://cdn.poehali.dev/files/6eb82e17-2842-459f-beb1-c9c6d3c96e32.png",
       models: [
         "Свайные наголовники от KGS"
+      ],
+      questions: [
+        "На какой молот?",
+        "Какой завод-изготовитель?",
+        "Какое сечение свай?"
       ]
     },
     {
@@ -120,6 +157,10 @@ const Catalog = () => {
       models: [
         "Сваескусыватели для круглых свай",
         "Сваескусыватели для квадратных свай"
+      ],
+      questions: [
+        "Сваескусыватель для квадратных или круглых свай?",
+        "Какое сечение свай?"
       ]
     },
     {
@@ -128,6 +169,10 @@ const Catalog = () => {
       image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png",
       models: [
         "Домкраты для извлечения свай"
+      ],
+      questions: [
+        "Диаметр сваи?",
+        "Глубина забивания?"
       ]
     }
   ];
@@ -238,22 +283,18 @@ const Catalog = () => {
                   <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => (
                       <li key={idx}>
-                        <a 
-                          href="#contact" 
-                          className="text-sm md:text-base text-muted-foreground hover:text-accent transition-colors flex items-start group"
-                        >
-                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
+                        <span className="text-sm md:text-base text-muted-foreground flex items-start">
+                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60" />
                           <span className="leading-snug">{model}</span>
-                        </a>
+                        </span>
                       </li>
                     ))}
                   </ul>
-                  <a href="#contact" className="block">
-                    <Button className="w-full btn-gradient text-white">
-                      <Icon name="MessageCircle" className="mr-2" size={18} />
-                      Получить консультацию
-                    </Button>
-                  </a>
+                  <EquipmentForm 
+                    categoryTitle={category.title}
+                    categoryId={category.id}
+                    questions={category.questions || []}
+                  />
                 </CardContent>
               </Card>
             ))}
