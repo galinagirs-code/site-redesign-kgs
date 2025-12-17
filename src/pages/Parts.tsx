@@ -424,7 +424,7 @@ const Parts = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
-                      Имя
+                      Имя <span className="text-red-500">*</span>
                     </label>
                     <Input
                       id="name"
@@ -438,7 +438,7 @@ const Parts = () => {
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
-                      Телефон
+                      Телефон <span className="text-red-500">*</span>
                     </label>
                     <Input
                       id="phone"
@@ -452,7 +452,7 @@ const Parts = () => {
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
-                      Email
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <Input
                       id="email"
@@ -473,7 +473,7 @@ const Parts = () => {
                       type="text"
                       value={formData.hammerType}
                       onChange={(e) => setFormData({ ...formData, hammerType: e.target.value })}
-                      placeholder="Укажите тип молота"
+                      placeholder="Укажите тип молота (необязательно)"
                     />
                   </div>
 
@@ -486,7 +486,7 @@ const Parts = () => {
                       type="text"
                       value={formData.manufacturer}
                       onChange={(e) => setFormData({ ...formData, manufacturer: e.target.value })}
-                      placeholder="Укажите завод-изготовитель"
+                      placeholder="Укажите завод-изготовитель (необязательно)"
                     />
                   </div>
 

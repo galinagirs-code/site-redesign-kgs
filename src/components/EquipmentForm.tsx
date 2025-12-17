@@ -153,7 +153,9 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <Label htmlFor={`name-${categoryId}`}>Ваше имя *</Label>
+              <Label htmlFor={`name-${categoryId}`}>
+                Ваше имя <span className="text-red-500">*</span>
+              </Label>
               <Input
                 id={`name-${categoryId}`}
                 type="text"
@@ -166,7 +168,9 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
             </div>
 
             <div>
-              <Label htmlFor={`phone-${categoryId}`}>Телефон *</Label>
+              <Label htmlFor={`phone-${categoryId}`}>
+                Телефон <span className="text-red-500">*</span>
+              </Label>
               <Input
                 id={`phone-${categoryId}`}
                 type="tel"
@@ -179,13 +183,16 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
             </div>
 
             <div>
-              <Label htmlFor={`email-${categoryId}`}>Email</Label>
+              <Label htmlFor={`email-${categoryId}`}>
+                Email <span className="text-red-500">*</span>
+              </Label>
               <Input
                 id={`email-${categoryId}`}
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 placeholder="example@mail.ru"
+                required
                 className="mt-1"
               />
             </div>
