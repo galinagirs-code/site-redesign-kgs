@@ -53,64 +53,82 @@ const Catalog = () => {
       id: "masts",
       title: "Копровые мачты KGS",
       image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
-      description: "Мачты копровые крановые серия МК. Универсальное оборудование для забивки свай",
-      link: "#contact"
+      models: [
+        "Мачты копровые крановые серия МК"
+      ]
     },
     {
       id: "pile-hammers",
       title: "Сваебойные молоты",
       image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
-      description: "Молоты гидравлические Yongan, дизельные трубчатые Starke, дизельные штанговые Dongtai Juli",
-      link: "#contact"
+      models: [
+        "Молоты гидравлические Yongan (серия YC)",
+        "Молоты дизельные трубчатые Starke (серия HD)",
+        "Молоты дизельные штанговые Dongtai Juli (серия DD)"
+      ]
     },
     {
       id: "pile-machines",
       title: "Сваебойные машины",
       image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
-      description: "Сваебойные установки STARKE серия LH. Шагающие сваебойные установки JuLi серия KLB",
-      link: "#contact"
+      models: [
+        "Сваебойные установки STARKE (серия LH)",
+        "Шагающие сваебойные установки JuLi (серия KLB)"
+      ]
     },
     {
       id: "drilling",
       title: "Буровые машины",
       image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png",
-      description: "Гидравлическая буровая машина JINT серия SH, SD. Горизонтальная буровая машина JuLi серия JL",
-      link: "#contact"
+      models: [
+        "Гидравлическая буровая машина JINT (серия SH)",
+        "Гидравлическая буровая машина JINT (серия SD)",
+        "Горизонтальная буровая машина JuLi (серия JL)"
+      ]
     },
     {
       id: "vibro-crane",
       title: "Вибропогружатели крановые",
       image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png",
-      description: "Вибропогружатели гидравлические и электрические крановые Yongan серия YZ, YZ-VM, DZJ",
-      link: "#contact"
+      models: [
+        "Вибропогружатели гидравлические крановые Yongan (серия YZ)",
+        "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)",
+        "Вибропогружатели электрические крановые Yongan (серия DZJ)"
+      ]
     },
     {
       id: "vibro-excavator",
       title: "Вибропогружатели экскаваторные",
       image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png",
-      description: "Гидравлические экскаваторные вибропогружатели с боковым зажимом SG. С нижним зажимом VH",
-      link: "#contact"
+      models: [
+        "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)",
+        "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)"
+      ]
     },
     {
       id: "heads",
       title: "Наголовники",
       image: "https://cdn.poehali.dev/files/6eb82e17-2842-459f-beb1-c9c6d3c96e32.png",
-      description: "Свайные наголовники от KGS для различных типов свай",
-      link: "#contact"
+      models: [
+        "Свайные наголовники от KGS"
+      ]
     },
     {
       id: "cutters",
       title: "Сваескусыватели",
       image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
-      description: "Сваескусыватели для круглых и квадратных свай",
-      link: "#contact"
+      models: [
+        "Сваескусыватели для круглых свай",
+        "Сваескусыватели для квадратных свай"
+      ]
     },
     {
       id: "jacks",
       title: "Домкраты",
       image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png",
-      description: "Домкраты для извлечения свай. Мощное гидравлическое оборудование",
-      link: "#contact"
+      models: [
+        "Домкраты для извлечения свай"
+      ]
     }
   ];
 
@@ -203,33 +221,34 @@ const Catalog = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {categories.map((category) => (
-              <a 
-                key={category.id}
-                href={category.link}
-                className="group block"
-              >
-                <Card className="overflow-hidden h-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white border-2 border-transparent hover:border-accent/20">
-                  <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 relative">
-                    <OptimizedImage
-                      src={category.image}
-                      alt={category.title}
-                      variant="card"
-                      className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 right-4 bg-accent text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Icon name="ArrowRight" size={20} />
-                    </div>
-                  </div>
-                  <CardContent className="p-6">
-                    <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                      {category.title}
-                    </h2>
-                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                      {category.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </a>
+              <Card key={category.id} className="overflow-hidden h-full hover:shadow-2xl transition-all duration-300 bg-white border-2 border-primary/10">
+                <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 relative">
+                  <OptimizedImage
+                    src={category.image}
+                    alt={category.title}
+                    variant="card"
+                    className="w-full h-full object-contain p-6"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">
+                    {category.title}
+                  </h2>
+                  <ul className="space-y-2">
+                    {category.models.map((model, idx) => (
+                      <li key={idx}>
+                        <a 
+                          href="#contact" 
+                          className="text-sm md:text-base text-muted-foreground hover:text-accent transition-colors flex items-start group"
+                        >
+                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
+                          <span className="leading-snug">{model}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
