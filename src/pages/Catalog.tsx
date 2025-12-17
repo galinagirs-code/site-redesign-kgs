@@ -76,9 +76,11 @@ const Catalog = () => {
           question: "Параметры свай и бурения",
           columns: [
             { label: "Сечение свай, диаметр трубы?", placeholder: "Укажите сечение" },
-            { label: "Диаметр бурения?", placeholder: "Укажите диаметр" },
-            { label: "Длина сваи?", placeholder: "Укажите длину" }
+            { label: "Диаметр бурения?", placeholder: "Укажите диаметр" }
           ]
+        },
+        {
+          question: "Длина сваи"
         },
         {
           question: "Глубина работ",
@@ -410,7 +412,7 @@ const Catalog = () => {
             <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
               Полный каталог оборудования
             </Badge>
-            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
             </h1>
 
