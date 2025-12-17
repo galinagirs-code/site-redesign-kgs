@@ -413,9 +413,11 @@ const Catalog = () => {
               Полный каталог оборудования
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
+              КоперГруппСервис — Лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов
             </h1>
-
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8">
+              Работаем по всей России и странам СНГ
+            </p>
             
             <a href="#contact" className="block sm:inline-block">
               <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl w-full sm:w-auto">
