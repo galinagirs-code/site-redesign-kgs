@@ -195,7 +195,7 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
                         {q.options.map((option, optIdx) => (
                           <option key={optIdx} value={option}>{option}</option>
                         ))}
-                        <option value="other">Другое (укажу в комментарии)</option>
+                        <option value="Другое">Другое</option>
                       </select>
                     ) : (
                       <Input
