@@ -174,15 +174,27 @@ const Catalog = () => {
 
       <Breadcrumbs items={[{ label: 'Каталог оборудования', path: '/catalog' }]} />
 
-      <section className="pt-24 pb-12 bg-gradient-to-br from-primary via-primary to-primary/90">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
+      <section className="relative pt-16 pb-16 md:pt-24 md:pb-24 bg-gradient-to-br from-primary via-primary to-primary/90">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+        
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in">
+            <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
+              Полный каталог
+            </Badge>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
               Каталог оборудования
             </h1>
-            <p className="text-white/80 text-base md:text-lg mb-6">
+            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
               Широкий ассортимент техники для строительства свайных фундаментов от ведущих производителей
             </p>
+            
+            <a href="#contact" className="block sm:inline-block">
+              <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl w-full sm:w-auto">
+                <Icon name="Download" className="mr-2" size={20} />
+                Получить каталог
+              </Button>
+            </a>
           </div>
         </div>
       </section>
