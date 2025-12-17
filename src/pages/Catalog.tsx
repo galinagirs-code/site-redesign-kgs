@@ -308,8 +308,11 @@ const Catalog = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
               Каталог оборудования
             </h1>
-            <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-              Широкий ассортимент техники для строительства свайных фундаментов от ведущих производителей
+            <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-3 font-medium">
+              КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
+            </p>
+            <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+              Широкий ассортимент техники от ведущих производителей
             </p>
             
             <a href="#contact" className="block sm:inline-block">
