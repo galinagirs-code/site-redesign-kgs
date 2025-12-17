@@ -151,7 +151,7 @@ const Catalog = () => {
       questions: [
         {
           question: "На какую базовую машину будете навешивать?",
-          options: ["Кран", "Экскаватор", "Другое"]
+          options: ["Кран", "Экскаватор", "Другое (укажу в комментарии)"]
         },
         {
           question: "Если кран - грузоподъемность?"
@@ -172,7 +172,7 @@ const Catalog = () => {
       questions: [
         {
           question: "На какую базовую машину будете навешивать?",
-          options: ["Экскаватор 20-25т", "Экскаватор 30-35т", "Другое"]
+          options: ["Экскаватор 20-25т", "Экскаватор 30-35т", "Другое (укажу в комментарии)"]
         },
         {
           question: "Какое сечение свай?"
@@ -305,12 +305,9 @@ const Catalog = () => {
             <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
               Полный каталог оборудования
             </Badge>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              Каталог оборудования
-            </h1>
-            <p className="text-white/95 text-xl md:text-2xl leading-relaxed mb-8 md:mb-10 font-medium max-w-3xl mx-auto">
+            <h1 className="text-white/95 text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-8 md:mb-10 font-medium max-w-3xl mx-auto">
               КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
-            </p>
+            </h1>
             
             <a href="#contact" className="block sm:inline-block">
               <Button size="lg" className="btn-gradient-reverse text-white font-medium shadow-xl w-full sm:w-auto">
