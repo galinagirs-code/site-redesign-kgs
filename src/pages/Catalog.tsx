@@ -222,12 +222,13 @@ const Catalog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {categories.map((category) => (
               <Card key={category.id} className="overflow-hidden h-full hover:shadow-2xl transition-all duration-300 bg-white border-2 border-primary/10">
-                <div className="aspect-[4/3] overflow-hidden bg-gradient-to-br from-muted/30 to-muted/10 relative">
+                <div className="aspect-[4/3] overflow-hidden bg-white relative">
                   <OptimizedImage
                     src={category.image}
                     alt={category.title}
-                    variant="card"
-                    className="w-full h-full object-contain p-6"
+                    variant="hero"
+                    className="w-full h-full object-cover"
+                    showWatermark={false}
                   />
                 </div>
                 <CardContent className="p-6">
