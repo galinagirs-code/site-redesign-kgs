@@ -235,7 +235,7 @@ const Catalog = () => {
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">
                     {category.title}
                   </h2>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => (
                       <li key={idx}>
                         <a 
@@ -248,6 +248,12 @@ const Catalog = () => {
                       </li>
                     ))}
                   </ul>
+                  <a href="#contact" className="block">
+                    <Button className="w-full btn-gradient text-white">
+                      <Icon name="MessageCircle" className="mr-2" size={18} />
+                      Получить консультацию
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
