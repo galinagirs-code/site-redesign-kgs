@@ -27,10 +27,10 @@ export const OptimizedImage = ({
 
   const imageFilters: Record<string, React.CSSProperties> = {
     hero: {
-      filter: 'brightness(1.02) contrast(1.15) saturate(1.15) sharpen(1.2)',
+      filter: 'brightness(0.96) contrast(1.08) saturate(1.12)',
     },
     card: {
-      filter: 'brightness(1.0) contrast(1.12) saturate(1.12) sharpen(1.1)',
+      filter: 'brightness(0.97) contrast(1.06) saturate(1.08)',
     },
     content: {
       filter: 'brightness(0.96) contrast(1.08) saturate(1.12)',
