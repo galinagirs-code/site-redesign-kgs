@@ -6,10 +6,15 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
+interface Question {
+  question: string;
+  options?: string[];
+}
+
 interface EquipmentFormProps {
   categoryTitle: string;
   categoryId: string;
-  questions: string[];
+  questions: Question[];
 }
 
 export const EquipmentForm = ({ categoryTitle, categoryId, questions }: EquipmentFormProps) => {
@@ -18,7 +23,7 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
     name: '',
     phone: '',
     email: '',
-    question: '',
+    answers: {} as Record<number, string>,
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,13 +36,23 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
-      setFormData({ name: '', phone: '', email: '', question: '', message: '' });
+      setFormData({ name: '', phone: '', email: '', answers: {}, message: '' });
       
       setTimeout(() => {
         setSubmitStatus('idle');
         setIsOpen(false);
       }, 3000);
     }, 1000);
+  };
+
+  const handleAnswerChange = (questionIndex: number, value: string) => {
+    setFormData({
+      ...formData,
+      answers: {
+        ...formData.answers,
+        [questionIndex]: value
+      }
+    });
   };
 
   if (!isOpen) {
@@ -57,7 +72,7 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between">
           <CardTitle className="text-lg font-heading text-primary">
-            Консультация по категории: {categoryTitle}
+            Консультация: {categoryTitle}
           </CardTitle>
           <button 
             onClick={() => setIsOpen(false)}
@@ -117,30 +132,49 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
             </div>
 
             {questions.length > 0 && (
-              <div>
-                <Label htmlFor={`question-${categoryId}`}>Выберите вопрос или задайте свой</Label>
-                <select
-                  id={`question-${categoryId}`}
-                  value={formData.question}
-                  onChange={(e) => setFormData({ ...formData, question: e.target.value })}
-                  className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                >
-                  <option value="">-- Выберите вопрос --</option>
-                  {questions.map((q, idx) => (
-                    <option key={idx} value={q}>{q}</option>
-                  ))}
-                </select>
+              <div className="space-y-4 pt-2 border-t">
+                <p className="text-sm font-medium text-primary">Ответьте на вопросы:</p>
+                {questions.map((q, idx) => (
+                  <div key={idx}>
+                    <Label htmlFor={`question-${categoryId}-${idx}`} className="text-sm">
+                      {q.question}
+                    </Label>
+                    {q.options && q.options.length > 0 ? (
+                      <select
+                        id={`question-${categoryId}-${idx}`}
+                        value={formData.answers[idx] || ''}
+                        onChange={(e) => handleAnswerChange(idx, e.target.value)}
+                        className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                      >
+                        <option value="">-- Выберите --</option>
+                        {q.options.map((option, optIdx) => (
+                          <option key={optIdx} value={option}>{option}</option>
+                        ))}
+                        <option value="other">Другое (укажу в комментарии)</option>
+                      </select>
+                    ) : (
+                      <Input
+                        id={`question-${categoryId}-${idx}`}
+                        type="text"
+                        value={formData.answers[idx] || ''}
+                        onChange={(e) => handleAnswerChange(idx, e.target.value)}
+                        placeholder="Ваш ответ..."
+                        className="mt-1"
+                      />
+                    )}
+                  </div>
+                ))}
               </div>
             )}
 
             <div>
-              <Label htmlFor={`message-${categoryId}`}>Ваш вопрос или комментарий</Label>
+              <Label htmlFor={`message-${categoryId}`}>Дополнительный комментарий</Label>
               <Textarea
                 id={`message-${categoryId}`}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                placeholder="Опишите ваш вопрос или требования к оборудованию..."
-                rows={4}
+                placeholder="Любая дополнительная информация..."
+                rows={3}
                 className="mt-1 resize-none"
               />
             </div>
