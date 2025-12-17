@@ -301,18 +301,15 @@ const Catalog = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Полный каталог
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
+              Полный каталог оборудования
             </Badge>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               Каталог оборудования
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-3 font-medium">
+            <p className="text-white/95 text-xl md:text-2xl leading-relaxed mb-8 md:mb-10 font-medium max-w-3xl mx-auto">
               КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
-            </p>
-            <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-              Широкий ассортимент техники от ведущих производителей
             </p>
             
             <a href="#contact" className="block sm:inline-block">
