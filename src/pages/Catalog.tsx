@@ -305,11 +305,11 @@ const Catalog = () => {
             <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
               Полный каталог оборудования
             </Badge>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              Каталог оборудования
-            </h1>
-            <p className="text-white/95 text-xl md:text-2xl leading-relaxed mb-8 md:mb-10 font-medium max-w-3xl mx-auto">
+            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
               КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов в России и странах СНГ
+            </h1>
+            <p className="text-xl text-accent font-semibold mb-4">
+              Широкий выбор оборудования для свайных работ!
             </p>
             
             <a href="#contact" className="block sm:inline-block">
@@ -343,10 +343,13 @@ const Catalog = () => {
                   <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => (
                       <li key={idx}>
-                        <span className="text-sm md:text-base text-muted-foreground flex items-start">
-                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60" />
-                          <span className="leading-snug">{model}</span>
-                        </span>
+                        <a 
+                          href="#contact"
+                          className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
+                        >
+                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
+                          <span className="leading-snug group-hover:underline">{model}</span>
+                        </a>
                       </li>
                     ))}
                   </ul>
