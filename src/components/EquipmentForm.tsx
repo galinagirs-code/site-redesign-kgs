@@ -33,7 +33,33 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
     e.preventDefault();
     setIsSubmitting(true);
     
-    setTimeout(() => {
+    try {
+      const answersFormatted: Record<string, string> = {};
+      questions.forEach((q, idx) => {
+        if (formData.answers[idx]) {
+          answersFormatted[q.question] = formData.answers[idx];
+        }
+      });
+      
+      const response = await fetch('https://functions.poehali.dev/42cc9223-1a3f-4324-bb49-552f02311b0f', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          category: categoryTitle,
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          answers: answersFormatted,
+          message: formData.message
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error('Ошибка отправки');
+      }
+      
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', phone: '', email: '', answers: {}, message: '' });
@@ -42,7 +68,15 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
         setSubmitStatus('idle');
         setIsOpen(false);
       }, 3000);
-    }, 1000);
+    } catch (error) {
+      console.error('Ошибка отправки заявки:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 3000);
+    }
   };
 
   const handleAnswerChange = (questionIndex: number, value: string) => {
@@ -90,6 +124,17 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">Заявка отправлена!</h3>
             <p className="text-muted-foreground">Мы свяжемся с вами в ближайшее время</p>
+          </div>
+        ) : submitStatus === 'error' ? (
+          <div className="text-center py-8">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+              <Icon name="AlertCircle" className="text-red-600" size={32} />
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">Ошибка отправки</h3>
+            <p className="text-muted-foreground mb-4">Попробуйте позже или свяжитесь с нами по телефону</p>
+            <Button onClick={() => setSubmitStatus('idle')} variant="outline">
+              Попробовать снова
+            </Button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
