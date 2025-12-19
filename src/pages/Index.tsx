@@ -231,43 +231,21 @@ const Index = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">
             <div className="animate-fade-in relative z-10">
-              <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-                10+ лет на рынке
-              </Badge>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 md:mb-6 leading-tight">
-                Оборудование и машины для строительства свайных фундаментов
-              </h1>
-              <div className="mb-4 md:mb-6">
-                <p className="text-accent text-lg md:text-xl lg:text-2xl font-bold tracking-wider">
-                  ПРОИЗВОДСТВО • ПОСТАВКА • СЕРВИС
-                </p>
+              <div className="mb-8 md:mb-12">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-8 md:mb-12 leading-tight">
+                  Оборудование и машины для строительства свайных фундаментов
+                </h1>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-3 mb-6 md:mb-8">
-                <a href="#contact" className="w-full sm:w-auto">
-                  <Button size="lg" className="btn-gradient-reverse text-white font-medium w-full sm:w-auto">
-                    Получить каталог
-                  </Button>
-                </a>
-                <a href="#contact" className="w-full sm:w-auto">
-                  <Button size="lg" className="btn-gradient-reverse text-white font-medium w-full sm:w-auto">
-                    Запросить консультацию
-                  </Button>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
-                <div className="flex items-center space-x-2">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
-                  <span className="text-white/90 text-xs sm:text-sm">350+ клиентов</span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+                <div className="flex flex-col items-start space-y-1">
+                  <span className="text-accent text-2xl md:text-3xl lg:text-4xl font-bold">350+ клиентов</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
-                  <span className="text-white/90 text-xs sm:text-sm">Прямые поставки</span>
+                <div className="flex flex-col items-start space-y-1">
+                  <span className="text-accent text-2xl md:text-3xl lg:text-4xl font-bold">Прямые поставки</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
-                  <span className="text-white/90 text-xs sm:text-sm">Собственное производство</span>
+                <div className="flex flex-col items-start space-y-1">
+                  <span className="text-accent text-2xl md:text-3xl lg:text-4xl font-bold">Собственное производство</span>
                 </div>
               </div>
             </div>
