@@ -398,7 +398,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-2xl mx-auto mb-12">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group">
               <div className="relative aspect-[4/3] bg-white">
                 <OptimizedImage
@@ -423,36 +423,6 @@ const About = () => {
                       <p>• Право продажи дизельных свайных молотов и запчастей</p>
                       <p>• Территория: вся Россия</p>
                       <p>• Действителен до: 24 июня 2027</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer group">
-              <div className="relative aspect-[4/3] bg-white">
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/90b2ed09-d639-473d-9f73-cdc948b93674.jpg"
-                  alt="Сертификат дилера Dongtai Juli (русская версия)"
-                  variant="gallery"
-                  className="h-full object-contain"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
-              </div>
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-3">
-                  <div className="bg-accent/10 p-2 rounded-lg flex-shrink-0">
-                    <Icon name="FileCheck" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">Сертификат дилера (русская версия)</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Официальный дистрибьютор тайваньской Juli Machinery Manufacturing Co., Ltd
-                    </p>
-                    <div className="text-xs text-muted-foreground space-y-1">
-                      <p>• Право продажи направляющих стержней марки Juli</p>
-                      <p>• Дилерская сеть и принадлежности</p>
-                      <p>• Срок действия: до 24 июня 2027</p>
                     </div>
                   </div>
                 </div>
