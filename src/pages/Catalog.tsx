@@ -413,10 +413,10 @@ const Catalog = () => {
               Полный каталог оборудования
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              Оборудование: Поставка, производство и сервис оборудования для строительства свайных фундаментов
+              КоперГруппСервис — Лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов
             </h1>
-            <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8">
-              КоперГруппСервис предлагает комплексные решения для проектов по выполнению свайных работ — от подбора техники до поставки запасных частей и полного технического обслуживания оборудования.
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8">
+              Работаем по всей России и странам СНГ
             </p>
             
             <a href="#contact" className="block sm:inline-block">
@@ -477,9 +477,13 @@ const Catalog = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold mb-8 text-center text-primary">
+              Поставка, производство и сервис оборудования для строительства свайных фундаментов
+            </h2>
+            
             <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
               <p>
-                Наш ассортимент включает широкий спектр специализированной техники для выполнения свайных работ любой сложности.
+                КоперГруппСервис предлагает комплексные решения для выполнения свайных работ — от подбора техники и оборудования до поставки запасных частей и полного технического сопровождения проектов.
               </p>
             </div>
 
@@ -491,75 +495,57 @@ const Catalog = () => {
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Свайные молоты различных типов</strong> — гидравлические, дизельные штанговые и трубчатые
+                    <strong>Свайные молоты</strong> — гидравлические, дизельные штанговые и трубчатые
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Вибропогружатели крановые</strong> — с нормальной частотой и вариабельные, гидравлические и электрические
+                    <strong>Вибропогружатели</strong> — крановые (нормальной и вариабельной частоты), гидравлические, электрические, экскаваторные, с боковым зажимом
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Экскаваторные вибропогружатели</strong> — с гуськом и боковым зажимом
+                    <strong>Свайное и копровое оборудование</strong> — копровые мачты, сваебойные машины, установки статического вдавливания, буровые машины
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Копровые мачты</strong> — кранового типа для молотов и бурового вращателя
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Сваебойные машины</strong> — копры
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Машины статического вдавливания</strong> — сваевдавливающие
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Буровые машины</strong>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Сваескусыватели</strong>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Свайные наголовники</strong>
+                    <strong>Навесное оборудование и оснастка</strong> — сваескусыватели, свайные наголовники, комплектующие
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-primary/5 rounded-lg p-6 md:p-8">
+            <div className="bg-muted/30 rounded-lg p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
-                Комплексное обслуживание
+                Сервис и поставка
               </h3>
               <div className="space-y-4 text-muted-foreground">
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <p>
-                    Профессиональные консультации по подбору оборудования и техники
+                    Поставка вибропогружателей, свайных молотов и навесного оборудования
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <p>
-                    Организация доставки любым удобным способом (ж/д, морским или автомобильным транспортом) до строительной площадки заказчика
+                    Изготовление копровых мачт кранового и экскаваторного типа, производство расходных и запасных частей
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Профессиональные консультации по подбору оборудования
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Организация доставки любым удобным способом (железнодорожным, морским или автомобильным транспортом) непосредственно на строительную площадку
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -571,22 +557,10 @@ const Catalog = () => {
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <p>
-                    Шефмонтажные работы непосредственно на объекте
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <p>
-                    Сервисное обслуживание и обеспечение запасными частями
+                    Сервисное обслуживание и выполнение шефмонтажных работ на объекте
                   </p>
                 </div>
               </div>
-            </div>
-            
-            <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-accent/5 to-primary/5 rounded-lg border-l-4 border-accent">
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed text-center">
-                Мы предлагаем полный цикл услуг под ключ, обеспечивая наших клиентов всем необходимым для успешной реализации строительных проектов.
-              </p>
             </div>
           </div>
         </div>
