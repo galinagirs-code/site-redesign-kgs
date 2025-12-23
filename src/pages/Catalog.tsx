@@ -522,13 +522,13 @@ const Catalog = () => {
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Сваебойные машины</strong> — копры
+                    <strong>Сваебойные машины (копры)</strong>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Машины статического вдавливания</strong> — сваевдавливающие
+                    <strong>Машины статического вдавливания (сваевдавливающие)</strong>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
