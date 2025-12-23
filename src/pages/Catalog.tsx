@@ -429,19 +429,7 @@ const Catalog = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold mb-8 text-center text-primary">
-              Поставка, производство и сервис оборудования для строительства свайных фундаментов
-            </h2>
-            
-            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-              <p>
-                КоперГруппСервис предлагает комплексные решения для выполнения свайных работ — от подбора техники и оборудования до поставки запасных частей и полного технического сопровождения проектов.
-              </p>
-            </div>
+      {/* About Section - moved after catalog */}
 
             <div className="bg-muted/30 rounded-lg p-6 md:p-8 mb-8">
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
@@ -549,6 +537,99 @@ const Catalog = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold mb-8 text-center text-primary">
+              Поставка, производство и сервис оборудования для строительства свайных фундаментов
+            </h2>
+            
+            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
+              <p>
+                КоперГруппСервис предлагает комплексные решения для выполнения свайных работ — от подбора техники и оборудования до поставки запасных частей и полного технического сопровождения проектов.
+              </p>
+            </div>
+
+            <div className="bg-muted/30 rounded-lg p-6 md:p-8 mb-8">
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
+                Ассортимент оборудования
+              </h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Свайные молоты</strong> — гидравлические, дизельные штанговые и трубчатые
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Вибропогружатели</strong> — крановые (нормальной и вариабельной частоты), гидравлические, электрические, экскаваторные, с боковым зажимом
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Свайное и копровое оборудование</strong> — копровые мачты, сваебойные машины, установки статического вдавливания, буровые машины
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Навесное оборудование и оснастка</strong> — сваескусыватели, свайные наголовники, комплектующие
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-muted/30 rounded-lg p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
+                Сервис и поставка
+              </h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Поставка вибропогружателей, свайных молотов и навесного оборудования
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Изготовление копровых мачт кранового и экскаваторного типа, производство расходных и запасных частей
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Профессиональные консультации по подбору оборудования
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Организация доставки любым удобным способом (железнодорожным, морским или автомобильным транспортом) непосредственно на строительную площадку
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Полное таможенное оформление грузов
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <p>
+                    Сервисное обслуживание и выполнение шефмонтажных работ на объекте
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
