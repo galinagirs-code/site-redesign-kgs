@@ -404,6 +404,90 @@ const Catalog = () => {
 
       <Breadcrumbs items={[{ label: 'Каталог оборудования', path: '/catalog' }]} />
 
+      {/* About Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-8 text-center text-primary">
+              КоперГруппСервис — лидер рынка свайного оборудования
+            </h2>
+            
+            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
+              <p>
+                КоперГруппСервис — один из лидеров рынка в сфере поставок, производства и сервисного обслуживания оборудования для строительства свайных фундаментов на территории России и стран СНГ.
+              </p>
+              <p>
+                Компания предлагает комплексные решения для выполнения свайных работ — от подбора техники до поставки запасных частей и технического сопровождения проектов.
+              </p>
+            </div>
+
+            <div className="bg-muted/30 rounded-lg p-6 md:p-8 mb-8">
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
+                Ассортимент оборудования
+              </h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Свайные молоты</strong> — гидравлические, дизельные штанговые и трубчатые
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Вибропогружатели</strong> — крановые (нормальной и вариабельной частоты), гидравлические, электрические, экскаваторные, с боковым зажимом
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Свайное и копровое оборудование</strong> — копровые мачты, сваебойные машины, установки статического вдавливания, буровые машины
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <div>
+                    <strong>Навесное оборудование и оснастка</strong> — сваескусыватели, свайные наголовники, комплектующие
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-primary/5 rounded-lg p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
+                Сервис и поставка
+              </h3>
+              <div className="space-y-4 text-muted-foreground">
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Поставка вибропогружателей, свайных молотов и навесного оборудования</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Изготовление копровых мачт кранового и экскаваторного типа, производство расходных и запасных частей</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Профессиональные консультации по подбору оборудования</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Организация доставки любым удобным способом (железнодорожным, морским или автомобильным транспортом) непосредственно на строительную площадку</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Полное таможенное оформление грузов</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
+                  <span>Сервисное обслуживание и выполнение шефмонтажных работ на объекте</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative pt-16 pb-16 md:pt-24 md:pb-24 bg-gradient-to-br from-primary via-primary to-primary/90">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
