@@ -433,7 +433,7 @@ const Catalog = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-8 text-center text-primary">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold mb-8 text-center text-primary">
               КоперГруппСервис - поставка, производство и сервис оборудования для строительства свайных фундаментов
             </h2>
             
