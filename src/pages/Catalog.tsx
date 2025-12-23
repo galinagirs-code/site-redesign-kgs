@@ -429,75 +429,7 @@ const Catalog = () => {
         </div>
       </section>
 
-      {/* About Section - moved after catalog */}
-
-            <div className="bg-muted/30 rounded-lg p-6 md:p-8 mb-8">
-              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
-                Ассортимент оборудования
-              </h3>
-              <div className="space-y-4 text-muted-foreground">
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Свайные молоты</strong> — гидравлические, дизельные штанговые и трубчатые
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Вибропогружатели</strong> — крановые (нормальной и вариабельной частоты), гидравлические, электрические, экскаваторные, с боковым зажимом
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Свайное и копровое оборудование</strong> — копровые мачты, сваебойные машины, установки статического вдавливания, буровые машины
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <div>
-                    <strong>Навесное оборудование и оснастка</strong> — сваескусыватели, свайные наголовники, комплектующие
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-primary/5 rounded-lg p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
-                Сервис и поставка
-              </h3>
-              <div className="space-y-4 text-muted-foreground">
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Поставка вибропогружателей, свайных молотов и навесного оборудования</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Изготовление копровых мачт кранового и экскаваторного типа, производство расходных и запасных частей</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Профессиональные консультации по подбору оборудования</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Организация доставки любым удобным способом (железнодорожным, морским или автомобильным транспортом) непосредственно на строительную площадку</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Полное таможенное оформление грузов</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
-                  <span>Сервисное обслуживание и выполнение шефмонтажных работ на объекте</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Catalog Equipment Grid */}
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
