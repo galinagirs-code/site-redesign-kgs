@@ -69,18 +69,18 @@ const Services = () => {
   ];
 
   const supervisionBenefits = [
-    { icon: "UserCheck", title: "Профессиональный монтаж", description: "Под контролем инженеров" },
-    { icon: "Settings", title: "Точная настройка", description: "Тестирование в рабочих режимах" },
-    { icon: "GraduationCap", title: "Инструктаж персонала", description: "По эксплуатации и обслуживанию" },
-    { icon: "Award", title: "Соответствие стандартам", description: "Завода-изготовителя" },
-    { icon: "Zap", title: "Бесперебойная работа", description: "Техники с первого запуска" }
+    { icon: "UserCheck", title: "Профессиональный монтаж", description: "под контролем инженеров" },
+    { icon: "Settings", title: "Точная настройка", description: "и тестирование в рабочих режимах" },
+    { icon: "GraduationCap", title: "Инструктаж персонала", description: "по эксплуатации и обслуживанию" },
+    { icon: "Award", title: "Соответствие стандартам", description: "завода-изготовителя" },
+    { icon: "Zap", title: "Бесперебойная работа", description: "техники с первого запуска" }
   ];
 
   const maintenanceServices = [
-    { icon: "Wrench", title: "Диагностика и ремонт", description: "Сваебойной и буровой техники" },
-    { icon: "HardHat", title: "Шефмонтаж оборудования", description: "Поставляемого нашей компанией" },
-    { icon: "GraduationCap", title: "Обучение", description: "Операторов и механиков на месте эксплуатации" },
-    { icon: "MessageSquare", title: "Консультации", description: "По техническому обслуживанию и эксплуатации" }
+    { icon: "Wrench", title: "Диагностика и ремонт", description: "сваебойной и буровой техники" },
+    { icon: "HardHat", title: "Шефмонтаж оборудования", description: "поставляемого нашей компанией" },
+    { icon: "GraduationCap", title: "Обучение", description: "операторов и механиков на месте эксплуатации" },
+    { icon: "MessageSquare", title: "Консультации", description: "по техническому обслуживанию и эксплуатации" }
   ];
 
   return (
