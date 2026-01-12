@@ -449,17 +449,30 @@ const Catalog = () => {
                     {category.title}
                   </h2>
                   <ul className="space-y-2 mb-6">
-                    {category.models.map((model, idx) => (
-                      <li key={idx}>
-                        <a 
-                          href="#contact"
-                          className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
-                        >
-                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
-                          <span className="leading-snug group-hover:underline">{model}</span>
-                        </a>
-                      </li>
-                    ))}
+                    {category.models.map((model, idx) => {
+                      const isKoprovyeMachty = category.id === "masts" && model === "Мачты копровые крановые серия МК";
+                      return (
+                        <li key={idx}>
+                          {isKoprovyeMachty ? (
+                            <Link 
+                              to="/catalog/machty-koprovye"
+                              className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
+                            >
+                              <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
+                              <span className="leading-snug group-hover:underline">{model}</span>
+                            </Link>
+                          ) : (
+                            <a 
+                              href="#contact"
+                              className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
+                            >
+                              <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
+                              <span className="leading-snug group-hover:underline">{model}</span>
+                            </a>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                   <EquipmentForm 
                     categoryTitle={category.title}
