@@ -535,7 +535,7 @@ const Production = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 mb-12">
               <p>
-                ООО «КоперГруппСервис» обеспечивает покупателю быструю, надёжную и безопасную доставку оборудования и спецтехники — от проверки товара у производителя до выгрузки на объекте заказчика.
+                КоперГруппСервис обеспечивает покупателю быструю, надёжную и безопасную доставку оборудования и спецтехники — от проверки товара у производителя до выгрузки на объекте заказчика.
               </p>
               <p>
                 Мы берём на себя все этапы логистики и таможенного оформления.
@@ -578,13 +578,13 @@ const Production = () => {
               <div className="relative flex justify-center items-start">
                 <div className="sticky top-24 space-y-6">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/92c0ecbe-37f3-45c4-a293-a6f6e3ce0331.png"
-                    alt="Доставка оборудования КГС - погрузка вибропогружателя"
+                    src="https://cdn.poehali.dev/files/Доставка 1.png"
+                    alt="Доставка оборудования КГС - оборудование в контейнере"
                     variant="content"
                   />
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/289547a4-6aca-4992-b7c0-716fa7088b55.png"
-                    alt="Доставка оборудования КГС - подготовка к отправке"
+                    src="https://cdn.poehali.dev/files/Молот DD-35.png"
+                    alt="Доставка оборудования КГС - молот DD-35 готов к отправке"
                     variant="content"
                   />
                 </div>
