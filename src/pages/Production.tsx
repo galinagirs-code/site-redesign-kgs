@@ -546,7 +546,7 @@ const Production = () => {
               Как мы организуем доставку
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div className="space-y-6">
                 {deliverySteps.map((step, index) => (
                   <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
@@ -575,19 +575,17 @@ const Production = () => {
                 ))}
               </div>
 
-              <div className="relative flex justify-center items-center">
-                <div className="sticky top-24 space-y-6 w-full">
-                  <OptimizedImage
-                    src="https://cdn.poehali.dev/files/Доставка 1.png"
-                    alt="Доставка оборудования КГС - оборудование в контейнере"
-                    variant="content"
-                  />
-                  <OptimizedImage
-                    src="https://cdn.poehali.dev/files/Молот DD-35.png"
-                    alt="Доставка оборудования КГС - молот DD-35 готов к отправке"
-                    variant="content"
-                  />
-                </div>
+              <div className="flex flex-col justify-center space-y-6">
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/Доставка 1.png"
+                  alt="Доставка оборудования КГС - оборудование в контейнере"
+                  variant="content"
+                />
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/Молот DD-35.png"
+                  alt="Доставка оборудования КГС - молот DD-35 готов к отправке"
+                  variant="content"
+                />
               </div>
             </div>
 
