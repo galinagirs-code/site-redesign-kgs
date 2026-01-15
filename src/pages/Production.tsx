@@ -328,7 +328,7 @@ const Production = () => {
               Копровые мачты для кранов и экскаваторов
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Универсальность оборудования — наш приоритет
@@ -362,14 +362,12 @@ const Production = () => {
                 </Card>
               </div>
 
-              <div className="relative flex justify-center items-start">
-                <div className="sticky top-24">
-                  <OptimizedImage
-                    src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
-                    alt="Копровая мачта КГС на строительной площадке"
-                    variant="content"
-                  />
-                </div>
+              <div className="flex justify-center items-center">
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/4d0cadd2-2090-4394-8567-6bc41cf0a4f7.jpeg"
+                  alt="Копровая мачта КГС на строительной площадке"
+                  variant="content"
+                />
               </div>
             </div>
           </div>
@@ -433,7 +431,7 @@ const Production = () => {
               Проектирование бурового и свайного оборудования
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Комплексное проектирование оборудования под ваши задачи
@@ -471,14 +469,12 @@ const Production = () => {
                 </div>
               </div>
 
-              <div className="relative flex justify-center items-start">
-                <div className="sticky top-24">
-                  <OptimizedImage
-                    src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
-                    alt="Буровая установка КГС в работе"
-                    variant="content"
-                  />
-                </div>
+              <div className="flex justify-center items-center">
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg"
+                  alt="Буровая установка КГС в работе"
+                  variant="content"
+                />
               </div>
             </div>
 
