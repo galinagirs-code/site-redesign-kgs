@@ -575,8 +575,8 @@ const Production = () => {
                 ))}
               </div>
 
-              <div className="relative flex justify-center items-start">
-                <div className="sticky top-24 space-y-6">
+              <div className="relative flex justify-center items-center">
+                <div className="sticky top-24 space-y-6 w-full">
                   <OptimizedImage
                     src="https://cdn.poehali.dev/files/Доставка 1.png"
                     alt="Доставка оборудования КГС - оборудование в контейнере"
