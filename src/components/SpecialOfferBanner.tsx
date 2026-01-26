@@ -13,27 +13,38 @@ export const SpecialOfferBanner = () => {
           <CardContent className="p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
-                <a 
-                  href="https://kgs-special-offer.ru" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block hover:opacity-90 transition-opacity"
-                >
-                  <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                  <a 
+                    href="https://kgs-special-offer.ru" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block hover:scale-105 transition-transform"
+                  >
                     <Badge className="bg-accent text-white text-xs md:text-sm px-3 py-1 animate-pulse cursor-pointer">
                       Специальное предложение
                     </Badge>
-                    <Icon name="Sparkles" className="text-accent animate-bounce" size={20} />
+                  </a>
+                  <Icon name="Sparkles" className="text-accent animate-bounce" size={20} />
+                </div>
+                
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-4 leading-tight">
+                  Оборудование в наличии
+                </h3>
+                
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-sm md:text-base">
+                  <div className="flex items-center gap-2">
+                    <Icon name="TrendingDown" className="text-accent flex-shrink-0" size={18} />
+                    <span className="text-primary font-medium">Специальные цены</span>
                   </div>
-                  
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-3 leading-tight">
-                    Оборудование в наличии
-                  </h3>
-                  
-                  <p className="text-base md:text-lg text-primary/80 font-medium">
-                    Специальные цены · Быстрая отгрузка
-                  </p>
-                </a>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Zap" className="text-accent flex-shrink-0" size={18} />
+                    <span className="text-primary font-medium">Быстрая отгрузка</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Truck" className="text-accent flex-shrink-0" size={18} />
+                    <span className="text-primary font-medium">Доставка по РФ и СНГ</span>
+                  </div>
+                </div>
               </div>
               
               <div className="w-full md:w-auto">
