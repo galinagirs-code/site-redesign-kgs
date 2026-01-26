@@ -26,13 +26,13 @@ export const SpecialOfferBanner = () => {
                   <Icon name="Sparkles" className="text-accent animate-bounce" size={24} />
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-4 leading-tight">
-                  Оборудование в наличии
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight">
+                  Оборудование в наличии по специальным ценам
                 </h3>
                 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-sm md:text-base">
                   <div className="flex items-center gap-2">
-                    <Icon name="TrendingDown" className="text-accent flex-shrink-0" size={18} />
+                    <Icon name="BadgePercent" className="text-accent flex-shrink-0" size={18} />
                     <span className="text-primary font-medium">Выгодные условия</span>
                   </div>
                   <div className="flex items-center gap-2">
