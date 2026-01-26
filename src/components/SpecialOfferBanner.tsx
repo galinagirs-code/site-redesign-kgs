@@ -26,7 +26,7 @@ export const SpecialOfferBanner = () => {
                 </div>
                 
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight">
-                  Оборудование в наличии по специальным ценам
+                  Оборудование в наличии
                 </h3>
                 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-sm md:text-base">
