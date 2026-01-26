@@ -19,9 +19,9 @@ export const SpecialOfferBanner = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all">
+                    <Badge className="bg-accent/20 text-accent border-accent/50">
                       Специальное предложение
-                    </Button>
+                    </Badge>
                   </a>
                 </div>
                 
