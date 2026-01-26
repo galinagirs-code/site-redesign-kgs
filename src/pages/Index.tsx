@@ -13,6 +13,7 @@ import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { ImageWithWatermark } from "@/components/ImageWithWatermark";
+import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
 
 const Index = () => {
   const organizationSchema = {
@@ -291,6 +292,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <SpecialOfferBanner />
 
       <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">

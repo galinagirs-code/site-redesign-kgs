@@ -10,6 +10,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { EquipmentForm } from "@/components/EquipmentForm";
+import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
 
 const Catalog = () => {
   const catalogSchema = {
@@ -428,6 +429,8 @@ const Catalog = () => {
           </div>
         </div>
       </section>
+
+      <SpecialOfferBanner />
 
       {/* Catalog Equipment Grid */}
       <section className="py-12 md:py-16 bg-background">
