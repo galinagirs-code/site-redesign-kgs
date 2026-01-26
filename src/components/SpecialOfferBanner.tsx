@@ -19,7 +19,7 @@ export const SpecialOfferBanner = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <Badge className="bg-accent/20 text-accent border-accent/50">
+                    <Badge className="bg-accent/20 text-accent border-accent/50 text-base md:text-lg px-4 py-2 font-bold">
                       Специальное предложение
                     </Badge>
                   </a>
