@@ -13,7 +13,7 @@ export const SpecialOfferBanner = () => {
           <CardContent className="p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+                <div className="flex items-center justify-center md:justify-start mb-4">
                   <a 
                     href="https://kgs-special-offer.ru" 
                     target="_blank" 
@@ -23,7 +23,6 @@ export const SpecialOfferBanner = () => {
                       Специальное предложение
                     </Button>
                   </a>
-                  <Icon name="Sparkles" className="text-accent animate-bounce" size={24} />
                 </div>
                 
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight">
