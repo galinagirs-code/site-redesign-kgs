@@ -13,18 +13,18 @@ export const SpecialOfferBanner = () => {
           <CardContent className="p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                   <a 
                     href="https://kgs-special-offer.ru" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block hover:scale-105 transition-transform"
+                    className="inline-block hover:scale-110 transition-transform"
                   >
-                    <Badge className="bg-accent text-white text-xs md:text-sm px-3 py-1 animate-pulse cursor-pointer">
-                      Специальное предложение
+                    <Badge className="bg-accent text-white text-base md:text-lg px-5 py-2.5 animate-pulse cursor-pointer font-bold shadow-lg">
+                      🔥 Специальное предложение
                     </Badge>
                   </a>
-                  <Icon name="Sparkles" className="text-accent animate-bounce" size={20} />
+                  <Icon name="Sparkles" className="text-accent animate-bounce" size={24} />
                 </div>
                 
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-4 leading-tight">
