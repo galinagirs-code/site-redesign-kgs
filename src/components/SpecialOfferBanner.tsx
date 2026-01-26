@@ -57,7 +57,7 @@ export const SpecialOfferBanner = () => {
                     className="btn-gradient text-white font-bold text-lg w-full md:w-auto shadow-lg hover:shadow-xl transition-all"
                   >
                     <Icon name="ExternalLink" className="mr-2" size={20} />
-                    Смотреть предложения
+                    Подробнее
                   </Button>
                 </a>
               </div>
