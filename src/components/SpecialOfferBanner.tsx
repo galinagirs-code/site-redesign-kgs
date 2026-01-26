@@ -23,10 +23,10 @@ export const SpecialOfferBanner = () => {
                       Специальное предложение
                     </Button>
                   </a>
-
+                  <Icon name="Sparkles" className="text-accent animate-bounce" size={24} />
                 </div>
                 
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight uppercase">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight">
                   Оборудование в наличии по специальным ценам
                 </h3>
                 
