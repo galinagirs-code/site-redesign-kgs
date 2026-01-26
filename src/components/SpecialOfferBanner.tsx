@@ -19,7 +19,7 @@ export const SpecialOfferBanner = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    <Button className="btn-gradient text-white font-bold text-base md:text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all">
+                    <Button size="lg" className="btn-gradient text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all">
                       Специальное предложение
                     </Button>
                   </a>
