@@ -18,11 +18,10 @@ export const SpecialOfferBanner = () => {
                     href="https://kgs-special-offer.ru" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block hover:scale-110 transition-transform"
                   >
-                    <Badge className="bg-accent text-white text-base md:text-lg px-5 py-2.5 animate-pulse cursor-pointer font-bold shadow-lg">
-                      🔥 Специальное предложение
-                    </Badge>
+                    <Button className="btn-gradient text-white font-bold text-base md:text-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all">
+                      Специальное предложение
+                    </Button>
                   </a>
                   <Icon name="Sparkles" className="text-accent animate-bounce" size={24} />
                 </div>
@@ -34,7 +33,7 @@ export const SpecialOfferBanner = () => {
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-sm md:text-base">
                   <div className="flex items-center gap-2">
                     <Icon name="TrendingDown" className="text-accent flex-shrink-0" size={18} />
-                    <span className="text-primary font-medium">Специальные цены</span>
+                    <span className="text-primary font-medium">Выгодные условия</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Zap" className="text-accent flex-shrink-0" size={18} />
