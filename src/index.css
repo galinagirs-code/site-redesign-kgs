@@ -238,4 +238,8 @@
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
   }
+
+  .catalog-image {
+    filter: hue-rotate(10deg) saturate(1.2) brightness(1.05);
+  }
 }
