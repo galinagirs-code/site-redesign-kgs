@@ -431,7 +431,7 @@ const Index = () => {
                     src={item.image}
                     alt={item.title}
                     variant="card"
-                    className="h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    className={`h-full object-contain group-hover:scale-105 transition-transform duration-300 ${item.id === 7 || item.id === 8 || item.id === 9 ? 'p-0' : 'p-4'}`}
                   />
                 </div>
                 <CardContent className="p-4 md:p-6">

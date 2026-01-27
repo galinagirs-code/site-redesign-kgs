@@ -433,7 +433,7 @@ const Catalog = () => {
                     src={category.image}
                     alt={category.title}
                     variant="card"
-                    className="h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    className={`h-full object-contain group-hover:scale-105 transition-transform duration-300 ${category.id === 'pile-pressing' || category.id === 'cutters' || category.id === 'jacks' ? 'p-0' : 'p-4'}`}
                   />
                 </div>
                 <CardContent className="p-6">
