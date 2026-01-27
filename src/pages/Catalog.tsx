@@ -302,7 +302,7 @@ const Catalog = () => {
     {
       id: "pile-pressing",
       title: "Сваевдавливающие установки",
-      image: "https://cdn.poehali.dev/files/7197a804-36bd-4f44-b6b1-ab325952d0e5.png",
+      image: "https://cdn.poehali.dev/files/876e67f7-de30-453a-ae1b-6d5bbb60e863.png",
       models: [
         "Сваевдавливающая установка JULI (серия YZS)"
       ],
