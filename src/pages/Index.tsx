@@ -49,56 +49,88 @@ const Index = () => {
     {
       id: 1,
       title: "Мачты копровые",
-      description: "Мачты копровые крановые (серия МК), Мачты копровые экскаваторные (Китай), Мачты копровые экскаваторные (Россия)",
-      image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
+      image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
+      models: [
+        "Мачты копровые крановые (серия МК)",
+        "Мачты копровые экскаваторные (Китай)",
+        "Мачты копровые экскаваторные (Россия)"
+      ]
     },
     {
       id: 2,
       title: "Сваебойные молоты",
-      description: "Молоты гидравлические DongHao, Молоты дизельные трубчатые STARKE, Молоты дизельные трубчатые SEMW, Молоты дизельные штанговые JULI, Свайные наголовники",
-      image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+      image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
+      models: [
+        "Молоты гидравлические DongHao",
+        "Молоты дизельные трубчатые STARKE",
+        "Молоты дизельные трубчатые SEMW",
+        "Молоты дизельные штанговые JULI",
+        "Свайные наголовники"
+      ]
     },
     {
       id: 3,
       title: "Сваебойные машины",
-      description: "Сваебойные установки STARKE (серия LH), Шагающие сваебойные установки JULI (серия KLB), КБУРГ",
-      image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png"
+      image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
+      models: [
+        "Сваебойные установки STARKE (серия LH)",
+        "Шагающие сваебойные установки JULI (серия KLB)",
+        "КБУРГ"
+      ]
     },
     {
       id: 4,
       title: "Буровые машины",
-      description: "Гидравлическая буровая машина JINT (серия SH), Гидравлическая буровая машина JINT (серия SD), Горизонтальная буровая машина JULI (серия JL)",
-      image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png"
+      image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png",
+      models: [
+        "Гидравлическая буровая машина JINT (серия SH)",
+        "Гидравлическая буровая машина JINT (серия SD)",
+        "Горизонтальная буровая машина JULI (серия JL)"
+      ]
     },
     {
       id: 5,
       title: "Вибропогружатели крановые",
-      description: "Вибропогружатели электрические крановые",
-      image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png"
+      image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png",
+      models: [
+        "Вибропогружатели электрические крановые"
+      ]
     },
     {
       id: 6,
       title: "Вибропогружатели экскаваторные",
-      description: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS), с нижним зажимом (серия S), Удлинённая стрела для экскаватора, Быстросъёмное соединение (квик-каплер)",
-      image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png"
+      image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png",
+      models: [
+        "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)",
+        "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)",
+        "Удлинённая стрела для экскаватора",
+        "Быстросъёмное соединение (квик-каплер)"
+      ]
     },
     {
       id: 7,
       title: "Сваевдавливающие установки",
-      description: "Сваевдавливающая установка JULI (серия YZS)",
-      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png"
+      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png",
+      models: [
+        "Сваевдавливающая установка JULI (серия YZS)"
+      ]
     },
     {
       id: 8,
       title: "Сваескусыватели",
-      description: "Сваескусыватели для круглых свай, Сваескусыватели для квадратных свай",
-      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png"
+      image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
+      models: [
+        "Сваескусыватели для круглых свай",
+        "Сваескусыватели для квадратных свай"
+      ]
     },
     {
       id: 9,
       title: "Домкраты",
-      description: "Домкраты для извлечения свай",
-      image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png"
+      image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png",
+      models: [
+        "Домкраты для извлечения свай"
+      ]
     }
   ];
 
@@ -403,8 +435,20 @@ const Index = () => {
                   />
                 </div>
                 <CardContent className="p-4 md:p-6">
-                  <h3 className="font-heading font-semibold text-lg md:text-xl mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm md:text-base mb-4">{item.description}</p>
+                  <h3 className="font-heading font-semibold text-lg md:text-xl mb-4">{item.title}</h3>
+                  <ul className="space-y-2 mb-6">
+                    {item.models.map((model, idx) => (
+                      <li key={idx}>
+                        <a 
+                          href="#contact"
+                          className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group/item"
+                        >
+                          <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover/item:text-accent" />
+                          <span className="leading-snug group-hover/item:underline">{model}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                   <Link to="/catalog">
                     <Button variant="outline" className="w-full group/btn border-accent text-accent hover:bg-accent hover:text-white">
                       Подробнее
