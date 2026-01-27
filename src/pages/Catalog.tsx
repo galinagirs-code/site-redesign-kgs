@@ -434,6 +434,7 @@ const Catalog = () => {
                     src={category.image}
                     alt={category.title}
                     className={`h-full w-full object-contain group-hover:scale-105 transition-transform duration-300 ${category.id === 'pile-pressing' || category.id === 'cutters' || category.id === 'jacks' ? 'p-0' : 'p-4'}`}
+                    watermarkPosition={category.id === 'pile-pressing' ? 'bottom-2 right-4' : 'bottom-4 right-4'}
                   />
                 </div>
                 <CardContent className="p-6">

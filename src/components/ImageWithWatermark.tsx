@@ -3,13 +3,15 @@ interface ImageWithWatermarkProps {
   alt: string;
   className?: string;
   showWatermark?: boolean;
+  watermarkPosition?: string;
 }
 
 export const ImageWithWatermark = ({ 
   src, 
   alt, 
   className = '',
-  showWatermark = true
+  showWatermark = true,
+  watermarkPosition = 'bottom-4 right-4'
 }: ImageWithWatermarkProps) => {
   return (
     <div className="relative">
@@ -19,7 +21,7 @@ export const ImageWithWatermark = ({
         className={className}
       />
       {showWatermark && (
-        <div className="absolute bottom-4 right-4 opacity-40 hover:opacity-60 transition-opacity pointer-events-none">
+        <div className={`absolute ${watermarkPosition} opacity-40 hover:opacity-60 transition-opacity pointer-events-none`}>
           <img 
             src="https://cdn.poehali.dev/files/584417ee-f78b-4041-a7fe-8b33469a6007.png"
             alt="KGS"
