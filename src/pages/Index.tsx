@@ -427,11 +427,10 @@ const Index = () => {
             {equipment.map((item) => (
               <Card key={item.id} className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
                 <div className="relative aspect-square overflow-hidden bg-white">
-                  <OptimizedImage
+                  <ImageWithWatermark
                     src={item.image}
                     alt={item.title}
-                    variant="card"
-                    className={`h-full object-contain group-hover:scale-105 transition-transform duration-300 ${item.id === 7 || item.id === 8 || item.id === 9 ? 'p-0' : 'p-4'}`}
+                    className={`h-full w-full object-contain group-hover:scale-105 transition-transform duration-300 ${item.id === 7 || item.id === 8 || item.id === 9 ? 'p-0' : 'p-4'}`}
                   />
                 </div>
                 <CardContent className="p-4 md:p-6">

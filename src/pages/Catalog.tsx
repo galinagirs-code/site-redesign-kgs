@@ -9,6 +9,7 @@ import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 import { EquipmentForm } from "@/components/EquipmentForm";
 import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
 
@@ -429,11 +430,10 @@ const Catalog = () => {
             {categories.map((category) => (
               <Card key={category.id} className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
                 <div className="relative aspect-square overflow-hidden bg-white">
-                  <OptimizedImage
+                  <ImageWithWatermark
                     src={category.image}
                     alt={category.title}
-                    variant="card"
-                    className={`h-full object-contain group-hover:scale-105 transition-transform duration-300 ${category.id === 'pile-pressing' || category.id === 'cutters' || category.id === 'jacks' ? 'p-0' : 'p-4'}`}
+                    className={`h-full w-full object-contain group-hover:scale-105 transition-transform duration-300 ${category.id === 'pile-pressing' || category.id === 'cutters' || category.id === 'jacks' ? 'p-0' : 'p-4'}`}
                   />
                 </div>
                 <CardContent className="p-6">
