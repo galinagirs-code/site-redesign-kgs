@@ -75,7 +75,7 @@ const Index = () => {
       models: [
         "Сваебойные установки STARKE (серия LH)",
         "Шагающие сваебойные установки JULI (серия KLB)",
-        "Сваебойные установки КБУРГ"
+        "Сваебойная установка КБУРГ"
       ]
     },
     {
@@ -91,7 +91,7 @@ const Index = () => {
     {
       id: 5,
       title: "Вибропогружатели крановые",
-      image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png",
+      image: "https://cdn.poehali.dev/files/20e2dbf3-1009-4b9d-83ab-9ceac3ef4216.png",
       models: [
         "Вибропогружатели гидравлические крановые Yongan (серия YZ)",
         "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)",
