@@ -226,14 +226,6 @@ const Catalog = () => {
       ],
       questions: [
         {
-          question: "На какую базовую машину будете навешивать?",
-          options: ["Экскаватор", "Кран"]
-        },
-        {
-          question: "Если кран",
-          options: ["Электрический", "Гидравлический"]
-        },
-        {
           question: "Грузоподъемность базовой машины?"
         },
         {
@@ -309,7 +301,7 @@ const Catalog = () => {
     {
       id: "pile-pressing",
       title: "Сваевдавливающие установки",
-      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png",
+      image: "https://cdn.poehali.dev/files/7197a804-36bd-4f44-b6b1-ab325952d0e5.png",
       models: [
         "Сваевдавливающая установка JULI (серия YZS)"
       ],
