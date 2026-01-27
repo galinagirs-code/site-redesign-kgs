@@ -271,8 +271,8 @@ const Catalog = () => {
       models: [
         "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)",
         "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)",
-        "Гидравлические экскаваторные вибропогружатели с удлинённой стрелой",
-        "Гидравлические экскаваторные вибропогружатели с быстросъёмным соединением (квик-каплер)"
+        "Удлинённая стрела для экскаватора",
+        "Быстросъёмное соединение (квик-каплер)"
       ],
       questions: [
         {
@@ -307,6 +307,35 @@ const Catalog = () => {
       ]
     },
     {
+      id: "pile-pressing",
+      title: "Сваевдавливающие установки",
+      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png",
+      models: [
+        "Сваевдавливающая установка JULI (серия YZS)"
+      ],
+      questions: [
+        {
+          question: "Сечение свай, длина свайного элемента?"
+        },
+        {
+          question: "Глубина вдавливания?"
+        },
+        {
+          question: "Какие будут грунты?"
+        },
+        {
+          question: "Требуется ли шефмонтаж?",
+          options: ["Да", "Нет"]
+        },
+        {
+          question: "Когда планируется закупка (объект)?"
+        },
+        {
+          question: "В какой город осуществлять доставку?"
+        }
+      ]
+    },
+    {
       id: "cutters",
       title: "Сваескусыватели",
       image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
@@ -331,37 +360,6 @@ const Catalog = () => {
         "Домкраты для извлечения свай"
       ],
       questions: []
-    },
-    {
-      id: "pile-pressing",
-      title: "Сваевдавливающие установки JULI",
-      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png",
-      models: [
-        "Сваевдавливающая установка JULI (серия YZS-180)",
-        "Сваевдавливающая установка JULI (серия YZS-240)",
-        "Сваевдавливающая установка JULI (серия YZS-360)"
-      ],
-      questions: [
-        {
-          question: "Сечение свай, длина свайного элемента?"
-        },
-        {
-          question: "Глубина вдавливания?"
-        },
-        {
-          question: "Какие будут грунты?"
-        },
-        {
-          question: "Требуется ли шефмонтаж?",
-          options: ["Да", "Нет"]
-        },
-        {
-          question: "Когда планируется закупка (объект)?"
-        },
-        {
-          question: "В какой город осуществлять доставку?"
-        }
-      ]
     }
   ];
 
@@ -457,14 +455,13 @@ const Catalog = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {categories.map((category) => (
-              <Card key={category.id} className="overflow-hidden h-full hover:shadow-2xl transition-all duration-300 bg-white border-2 border-primary/10">
-                <div className="aspect-[4/3] overflow-hidden bg-white relative group">
+              <Card key={category.id} className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
+                <div className="relative aspect-square overflow-hidden bg-white">
                   <OptimizedImage
                     src={category.image}
                     alt={category.title}
-                    variant="hero"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 catalog-image"
-                    showWatermark={false}
+                    variant="card"
+                    className="h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardContent className="p-6">

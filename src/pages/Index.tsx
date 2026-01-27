@@ -48,56 +48,56 @@ const Index = () => {
   const equipment = [
     {
       id: 1,
-      title: "Копровые мачты KGS",
-      description: "Кранового и экскаваторного типа",
+      title: "Мачты копровые",
+      description: "Мачты копровые крановые (серия МК), Мачты копровые экскаваторные (Китай), Мачты копровые экскаваторные (Россия)",
       image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
     },
     {
       id: 2,
       title: "Сваебойные молоты",
-      description: "Гидравлические и дизельные молоты для забивки свай",
+      description: "Молоты гидравлические DongHao, Молоты дизельные трубчатые STARKE, Молоты дизельные трубчатые SEMW, Молоты дизельные штанговые JULI, Свайные наголовники",
       image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
     },
     {
       id: 3,
       title: "Сваебойные машины",
-      description: "Самоходные машины для забивки свай",
+      description: "Сваебойные установки STARKE (серия LH), Шагающие сваебойные установки JULI (серия KLB), КБУРГ",
       image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png"
     },
     {
       id: 4,
       title: "Буровые машины",
-      description: "Оборудование для лидерного бурения",
+      description: "Гидравлическая буровая машина JINT (серия SH), Гидравлическая буровая машина JINT (серия SD), Горизонтальная буровая машина JULI (серия JL)",
       image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png"
     },
     {
       id: 5,
       title: "Вибропогружатели крановые",
-      description: "Высокочастотное оборудование для погружения свай",
+      description: "Вибропогружатели электрические крановые",
       image: "https://cdn.poehali.dev/files/d148e800-1448-4288-bda0-4d9ffa4bcc8a.png"
     },
     {
       id: 6,
       title: "Вибропогружатели экскаваторные",
-      description: "Навесное оборудование для экскаваторов",
+      description: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS), с нижним зажимом (серия S), Удлинённая стрела для экскаватора, Быстросъёмное соединение (квик-каплер)",
       image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png"
     },
     {
       id: 7,
-      title: "Наголовники",
-      description: "Свайные наголовники от KGS для различных типов свай",
-      image: "https://cdn.poehali.dev/files/6eb82e17-2842-459f-beb1-c9c6d3c96e32.png"
+      title: "Сваевдавливающие установки",
+      description: "Сваевдавливающая установка JULI (серия YZS)",
+      image: "https://cdn.poehali.dev/files/1ae9275c-07fe-4d96-894d-285350ab6cbd.png"
     },
     {
       id: 8,
       title: "Сваескусыватели",
-      description: "Для круглых и квадратных свай",
+      description: "Сваескусыватели для круглых свай, Сваескусыватели для квадратных свай",
       image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png"
     },
     {
       id: 9,
       title: "Домкраты",
-      description: "Мощное гидравлическое оборудование для извлечения свай",
+      description: "Домкраты для извлечения свай",
       image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png"
     }
   ];
