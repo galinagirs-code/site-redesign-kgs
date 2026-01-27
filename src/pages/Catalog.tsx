@@ -262,7 +262,7 @@ const Catalog = () => {
     {
       id: "vibro-excavator",
       title: "Вибропогружатели экскаваторные",
-      image: "https://cdn.poehali.dev/files/9de47f8e-82f1-49ce-b46a-09736cce72a3.png",
+      image: "https://cdn.poehali.dev/files/50844e20-7f61-4ca9-ae48-a9e319b3c7a9.png",
       models: [
         "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)",
         "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)",
