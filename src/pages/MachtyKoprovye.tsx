@@ -247,7 +247,7 @@ const MachtyKoprovye = () => {
                 Фотогалерея
               </a>
               <a href="#consultation" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
-                Получить консультацию
+                Оставить заявку
               </a>
             </div>
           </div>
