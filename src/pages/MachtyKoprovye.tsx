@@ -237,11 +237,11 @@ const MachtyKoprovye = () => {
               Мачты копровые крановые (серия МК)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <a href="#description" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
-                Описание
-              </a>
               <a href="#variants" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Варианты копровых мачт серии МК
+              </a>
+              <a href="#description" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
+                Описание
               </a>
               <a href="#gallery" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Фотогалерея
@@ -249,6 +249,114 @@ const MachtyKoprovye = () => {
               <a href="#consultation" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Получить консультацию
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="variants" className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="animate-fade-in">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+                Варианты копровых мачт серии МК
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                {variants.map((variant, index) => (
+                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-xl font-heading font-bold text-primary">
+                          {variant.name}
+                        </h3>
+                        <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                          {variant.type}
+                        </Badge>
+                      </div>
+                      
+                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                        {variant.specs.map((spec, idx) => (
+                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-gray-700">{spec.label}</span>
+                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                          </div>
+                        ))}
+                        
+                        {expandedVariant === variant.name && (
+                          <>
+                            {variant.detailedSpecs.map((spec, idx) => (
+                              <div key={idx} className={spec.indent ? "flex justify-between items-center py-1 border-b border-gray-200 last:border-0 ml-4" : "flex justify-between items-center py-1 border-b border-gray-200 last:border-0"}>
+                                {spec.value ? (
+                                  <>
+                                    <span className="text-sm text-gray-700">{spec.label}</span>
+                                    <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                                  </>
+                                ) : (
+                                  <span className="text-sm font-bold text-primary mt-2">{spec.label}</span>
+                                )}
+                              </div>
+                            ))}
+                          </>
+                        )}
+                      </div>
+
+                      <div className="flex flex-col gap-2 mt-4">
+                        <Button 
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                          className="w-full"
+                        >
+                          {expandedVariant === variant.name ? (
+                            <>
+                              <Icon name="ChevronUp" size={16} className="mr-2" />
+                              Скрыть характеристики
+                            </>
+                          ) : (
+                            <>
+                              <Icon name="ChevronDown" size={16} className="mr-2" />
+                              Подробнее
+                            </>
+                          )}
+                        </Button>
+                        <a href="#consultation" className="block">
+                          <Button className="btn-gradient text-white w-full" size="sm">
+                            <Icon name="MessageSquare" size={16} className="mr-2" />
+                            Получить консультацию
+                          </Button>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <Card className="border-2 border-accent/20 bg-gradient-to-br from-accent/5 to-transparent">
+                <CardContent className="p-8 text-center">
+                  <h3 className="text-xl font-heading font-bold text-primary mb-4">
+                    Нужна консультация по выбору мачты?
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Оставьте заявку и наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <Button 
+                      className="btn-gradient text-white"
+                      onClick={() => setShowConsultationForm(true)}
+                    >
+                      <Icon name="FileText" size={18} className="mr-2" />
+                      Оставить заявку
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <Link to="/catalog">
+                        <Icon name="ArrowLeft" size={18} className="mr-2" />
+                        Вернуться в каталог
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -373,116 +481,6 @@ const MachtyKoprovye = () => {
           </div>
         </div>
       </section>
-
-      <section id="variants" className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="animate-fade-in">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-                Варианты копровых мачт серии МК
-              </h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {variants.map((variant, index) => (
-                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
-                    <CardContent className="p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-xl font-heading font-bold text-primary">
-                          {variant.name}
-                        </h3>
-                        <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
-                          {variant.type}
-                        </Badge>
-                      </div>
-                      
-                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
-                        {variant.specs.map((spec, idx) => (
-                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
-                          </div>
-                        ))}
-                        
-                        {expandedVariant === variant.name && (
-                          <>
-                            {variant.detailedSpecs.map((spec, idx) => (
-                              <div key={idx} className={spec.indent ? "flex justify-between items-center py-1 border-b border-gray-200 last:border-0 ml-4" : "flex justify-between items-center py-1 border-b border-gray-200 last:border-0"}>
-                                {spec.value ? (
-                                  <>
-                                    <span className="text-sm text-gray-700">{spec.label}</span>
-                                    <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
-                                  </>
-                                ) : (
-                                  <span className="text-sm font-bold text-primary mt-2">{spec.label}</span>
-                                )}
-                              </div>
-                            ))}
-                          </>
-                        )}
-                      </div>
-
-                      <div className="flex flex-col gap-2 mt-4">
-                        <Button 
-                          variant="outline"
-                          size="sm"
-                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                          className="w-full"
-                        >
-                          {expandedVariant === variant.name ? (
-                            <>
-                              <Icon name="ChevronUp" size={16} className="mr-2" />
-                              Скрыть характеристики
-                            </>
-                          ) : (
-                            <>
-                              <Icon name="ChevronDown" size={16} className="mr-2" />
-                              Подробнее
-                            </>
-                          )}
-                        </Button>
-                        <a href="#consultation" className="block">
-                          <Button className="btn-gradient text-white w-full" size="sm">
-                            <Icon name="MessageSquare" size={16} className="mr-2" />
-                            Получить консультацию
-                          </Button>
-                        </a>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-
-              <Card className="border-2 border-accent/20 bg-gradient-to-br from-accent/5 to-transparent">
-                <CardContent className="p-8 text-center">
-                  <h3 className="text-xl font-heading font-bold text-primary mb-4">
-                    Нужна консультация по выбору мачты?
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    Оставьте заявку и наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-4">
-                    <Button 
-                      className="btn-gradient text-white"
-                      onClick={() => setShowConsultationForm(true)}
-                    >
-                      <Icon name="FileText" size={18} className="mr-2" />
-                      Оставить заявку
-                    </Button>
-                    <Button variant="outline" asChild>
-                      <Link to="/catalog">
-                        <Icon name="ArrowLeft" size={18} className="mr-2" />
-                        Вернуться в каталог
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 
       <section id="gallery" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
