@@ -524,7 +524,7 @@ const Catalog = () => {
                   </h2>
                   <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => {
-                      const isKoprovyeMachty = category.id === "masts" && model === "Мачты копровые крановые серия МК";
+                      const isKoprovyeMachty = category.id === "masts" && model === "Мачты копровые крановые (серия МК Россия)";
                       return (
                         <li key={idx}>
                           {isKoprovyeMachty ? (

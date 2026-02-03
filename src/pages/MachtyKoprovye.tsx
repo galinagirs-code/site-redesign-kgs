@@ -9,8 +9,30 @@ import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { useState } from "react";
 
 const MachtyKoprovye = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const galleryImages = [
+    {
+      url: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
+      title: "Копровая мачта МК в работе"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/0e4eb50d-5afd-4176-96cd-cedd837ed88d.png",
+      title: "Производство копровых мачт КГС"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/d8c30d2a-b0e0-4b54-89b9-a26cf30c24cc.png",
+      title: "Монтаж копровой мачты на объекте"
+    },
+    {
+      url: "https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg",
+      title: "Копровая установка в работе"
+    }
+  ];
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -304,6 +326,67 @@ const MachtyKoprovye = () => {
           </div>
         </div>
       </section>
+
+      <section id="gallery" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
+              Фотогалерея
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Копровые мачты серии МК в производстве и на объектах
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {galleryImages.map((image, index) => (
+                <Card 
+                  key={index} 
+                  className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                  onClick={() => setSelectedImage(image.url)}
+                >
+                  <div className="relative aspect-video overflow-hidden bg-gray-100">
+                    <OptimizedImage
+                      src={image.url}
+                      alt={image.title}
+                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                      <Icon 
+                        name="Maximize2" 
+                        size={32} 
+                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  </div>
+                  <CardContent className="p-4">
+                    <p className="text-sm text-gray-700 font-medium">{image.title}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors p-2 hover:bg-white/10 rounded-full"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Закрыть"
+          >
+            <Icon name="X" size={32} />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="Увеличенное изображение" 
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+      )}
 
       <footer className="bg-primary text-white py-12 md:py-16">
         <div className="container mx-auto px-4">
