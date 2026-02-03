@@ -15,26 +15,6 @@ import { useState } from "react";
 const MachtyKoprovye = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
-  const [showConsultationForm, setShowConsultationForm] = useState<string | null>(null);
-
-  const galleryImages = [
-    {
-      url: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
-      title: "Копровая мачта МК в работе"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/0e4eb50d-5afd-4176-96cd-cedd837ed88d.png",
-      title: "Производство копровых мачт КГС"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/d8c30d2a-b0e0-4b54-89b9-a26cf30c24cc.png",
-      title: "Монтаж копровой мачты на объекте"
-    },
-    {
-      url: "https://cdn.poehali.dev/files/5bdd34b4-6fba-4783-85d8-e4801f75ad94.jpeg",
-      title: "Копровая установка в работе"
-    }
-  ];
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -274,6 +254,9 @@ const MachtyKoprovye = () => {
               <a href="#variants" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Варианты копровых мачт серии МК
               </a>
+              <a href="#gallery" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
+                Фотогалерея
+              </a>
               <a href="#consultation" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Получить консультацию
               </a>
@@ -291,7 +274,7 @@ const MachtyKoprovye = () => {
             <Card className="border-none shadow-xl mb-12 animate-fade-in">
               <CardContent className="p-6 md:p-10">
                 <h3 className="text-2xl font-heading font-bold text-primary mb-6">Копровая мачта МК KGS</h3>
-                <div className="prose prose-lg max-w-none space-y-6">
+                <div className="space-y-6">
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Назначение и возможности</h4>
                     <p className="text-muted-foreground leading-relaxed">
@@ -321,11 +304,11 @@ const MachtyKoprovye = () => {
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Ключевые преимущества</h4>
                     <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li><strong>Быстрый демонтаж</strong> — мачта легко снимается, при этом базовая машина полностью сохраняет свои штатные функции.</li>
-                      <li><strong>Экономическая эффективность</strong> — переоборудование гусеничного крана в сваебойную или буровую установку позволяет задействовать технику, которая ранее простаивала без работы.</li>
-                      <li><strong>Универсальность</strong> — возможность переоборудовать в короткие сроки сваебойную установку на базе крана, обратно в кран.</li>
-                      <li><strong>Оптимальные цены</strong> — использование оборудования KGS позволяет получить полноповоротную сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</li>
-                      <li><strong>Простота эксплуатации</strong> — оборудование отличается удобством управления и обслуживания.</li>
+                      <li className="leading-relaxed"><span className="font-semibold text-primary">Быстрый демонтаж</span> — мачта легко снимается, при этом базовая машина полностью сохраняет свои штатные функции.</li>
+                      <li className="leading-relaxed"><span className="font-semibold text-primary">Экономическая эффективность</span> — переоборудование гусеничного крана в сваебойную или буровую установку позволяет задействовать технику, которая ранее простаивала без работы.</li>
+                      <li className="leading-relaxed"><span className="font-semibold text-primary">Универсальность</span> — возможность переоборудовать в короткие сроки сваебойную установку на базе крана, обратно в кран.</li>
+                      <li className="leading-relaxed"><span className="font-semibold text-primary">Оптимальные цены</span> — использование оборудования KGS позволяет получить полноповоротную сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</li>
+                      <li className="leading-relaxed"><span className="font-semibold text-primary">Простота эксплуатации</span> — оборудование отличается удобством управления и обслуживания.</li>
                     </ul>
                   </div>
 
@@ -433,51 +416,20 @@ const MachtyKoprovye = () => {
                       </div>
 
                       {expandedVariant === variant.name && (
-                        <div className="space-y-2 mb-4 p-4 bg-gray-50 rounded-lg animate-fade-in">
-                          <h4 className="font-semibold text-primary mb-3 text-sm">Полные характеристики:</h4>
+                        <div className="space-y-2 mb-4 p-6 bg-gray-50 rounded-lg animate-fade-in">
+                          <h4 className="font-heading font-bold text-lg text-primary mb-4">Полные характеристики:</h4>
                           {variant.detailedSpecs.map((spec, idx) => (
-                            <div key={idx} className={spec.indent ? "ml-4" : ""}>
+                            <div key={idx} className={spec.indent ? "ml-6" : ""}>
                               {spec.value ? (
-                                <div className="flex justify-between items-start gap-2 text-xs">
-                                  <span className="text-muted-foreground">{spec.label}</span>
-                                  <span className="font-medium text-gray-800 text-right">{spec.value}</span>
+                                <div className="flex justify-between py-1">
+                                  <span className="text-muted-foreground text-sm">{spec.label}</span>
+                                  <span className="font-medium text-primary text-sm">{spec.value}</span>
                                 </div>
                               ) : (
-                                <p className="font-semibold text-primary text-xs mt-2">{spec.label}</p>
+                                <p className="font-semibold text-primary mt-4 mb-1">{spec.label}</p>
                               )}
                             </div>
                           ))}
-                        </div>
-                      )}
-
-                      {showConsultationForm === variant.name && (
-                        <div className="mt-4 p-4 bg-accent/5 rounded-lg border border-accent/20 animate-fade-in">
-                          <EquipmentForm 
-                            categoryTitle={`Мачта ${variant.name}`}
-                            categoryId="masts"
-                            questions={[
-                              {
-                                question: "Модель базовой машины?"
-                              },
-                              {
-                                question: "Что планируете навешивать?"
-                              },
-                              {
-                                question: "Когда планируется закупка?"
-                              },
-                              {
-                                question: "В какой город осуществлять доставку?"
-                              }
-                            ]}
-                          />
-                          <Button 
-                            variant="outline" 
-                            size="sm"
-                            onClick={() => setShowConsultationForm(null)}
-                            className="w-full mt-2"
-                          >
-                            Свернуть форму
-                          </Button>
                         </div>
                       )}
 
@@ -500,14 +452,12 @@ const MachtyKoprovye = () => {
                             </>
                           )}
                         </Button>
-                        <Button 
-                          className="btn-gradient text-white w-full"
-                          size="sm"
-                          onClick={() => setShowConsultationForm(showConsultationForm === variant.name ? null : variant.name)}
-                        >
-                          <Icon name="MessageSquare" size={16} className="mr-2" />
-                          Получить консультацию
-                        </Button>
+                        <a href="#consultation" className="block">
+                          <Button className="btn-gradient text-white w-full" size="sm">
+                            <Icon name="MessageSquare" size={16} className="mr-2" />
+                            Получить консультацию
+                          </Button>
+                        </a>
                       </div>
                     </CardContent>
                   </Card>
@@ -543,6 +493,19 @@ const MachtyKoprovye = () => {
 
 
 
+      <section id="gallery" className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+              Фотогалерея
+            </h2>
+            <div className="text-center text-muted-foreground">
+              <p className="text-lg">Фотографии будут добавлены в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="consultation" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -550,11 +513,8 @@ const MachtyKoprovye = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                    Получить консультацию
+                    Консультация: Мачты копровые
                   </h2>
-                  <p className="text-muted-foreground text-lg">
-                    Наши специалисты помогут подобрать оптимальную модель копровой мачты под ваши задачи
-                  </p>
                 </div>
                 <EquipmentForm 
                   categoryTitle="Мачты копровые"
