@@ -549,52 +549,6 @@ const Catalog = () => {
                     })}
                   </ul>
                   
-                  {category.description && (
-                    <details className="mb-6 group">
-                      <summary className="cursor-pointer text-sm font-medium text-primary hover:text-accent transition-colors flex items-center justify-between py-2 border-t border-b border-muted">
-                        <span>Подробное описание</span>
-                        <Icon name="ChevronDown" size={18} className="transition-transform group-open:rotate-180" />
-                      </summary>
-                      <div className="mt-4 space-y-4 text-sm text-muted-foreground max-h-96 overflow-y-auto pr-2">
-                        <h3 className="text-lg font-bold text-primary">{category.description.title}</h3>
-                        {category.description.sections.map((section, idx) => (
-                          <div key={idx} className="space-y-2">
-                            {section.heading && (
-                              <h4 className="font-semibold text-primary">{section.heading}</h4>
-                            )}
-                            {section.text && (
-                              <p className="whitespace-pre-line">{section.text}</p>
-                            )}
-                            {section.list && (
-                              <ul className="list-disc pl-5 space-y-1">
-                                {section.list.map((item, i) => (
-                                  <li key={i}>{item}</li>
-                                ))}
-                              </ul>
-                            )}
-                            {section.orderedList && (
-                              <ol className="list-decimal pl-5 space-y-1">
-                                {section.orderedList.map((item, i) => (
-                                  <li key={i}>{item}</li>
-                                ))}
-                              </ol>
-                            )}
-                            {section.additionalText && (
-                              <p className="whitespace-pre-line mt-2">{section.additionalText}</p>
-                            )}
-                            {section.additionalList && (
-                              <ul className="list-disc pl-5 space-y-1 mt-2">
-                                {section.additionalList.map((item, i) => (
-                                  <li key={i}>{item}</li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </details>
-                  )}
-                  
                   <EquipmentForm 
                     categoryTitle={category.title}
                     categoryId={category.id}
