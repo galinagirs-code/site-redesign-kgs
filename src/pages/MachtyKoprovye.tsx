@@ -458,7 +458,7 @@ const MachtyKoprovye = () => {
                     Нужна консультация по выбору мачты?
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    Наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
+                    Оставьте заявку и наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
                     <Button 
@@ -503,15 +503,6 @@ const MachtyKoprovye = () => {
             <div className="max-w-3xl mx-auto">
               <Card className="border-2 border-accent/20 shadow-xl">
                 <CardContent className="p-8 md:p-12">
-                  <div className="mb-6">
-                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
-                      Консультация: Мачты копровые
-                    </h2>
-                    <p className="text-center text-muted-foreground">
-                      Заполните форму, и наш специалист свяжется с вами
-                    </p>
-                  </div>
-
                   <EquipmentForm 
                     categoryTitle="Мачты копровые"
                     categoryId="masts"
