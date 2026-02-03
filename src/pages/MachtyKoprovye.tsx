@@ -14,6 +14,8 @@ import { useState } from "react";
 
 const MachtyKoprovye = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
+  const [showConsultationForm, setShowConsultationForm] = useState<string | null>(null);
 
   const galleryImages = [
     {
@@ -58,6 +60,20 @@ const MachtyKoprovye = () => {
         { label: "Длина погружаемой сваи", value: "12 м" },
         { label: "Максимальное сечение сваи", value: "400 × 400 мм" },
         { label: "Масса навесного оборудования", value: "не более 16 т" }
+      ],
+      detailedSpecs: [
+        { label: "Длина погружаемой сваи, м", value: "12" },
+        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В/Сx⌀D, мм", value: "330×⌀70" },
+        { label: "Типы применяемых молотов", value: "" },
+        { label: "Дизельные трубчатые", value: "HD-19", indent: true },
+        { label: "Дизельные штанговые", value: "DD-18 / DD-25", indent: true },
+        { label: "Гидравлические", value: "HHP-4", indent: true },
+        { label: "Масса навесного оборудования, не более, т", value: "16" }
       ]
     },
     {
@@ -67,6 +83,20 @@ const MachtyKoprovye = () => {
         { label: "Длина погружаемой сваи", value: "14 м" },
         { label: "Максимальное сечение сваи", value: "400 × 400 мм" },
         { label: "Масса навесного оборудования", value: "не более 18 т" }
+      ],
+      detailedSpecs: [
+        { label: "Длина погружаемой сваи, м", value: "14" },
+        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В/Сx⌀D, мм", value: "330×⌀70" },
+        { label: "Типы применяемых молотов", value: "" },
+        { label: "Дизельные трубчатые", value: "HD-25", indent: true },
+        { label: "Дизельные штанговые", value: "DD-25 / DD-35", indent: true },
+        { label: "Гидравлические", value: "HHP-5", indent: true },
+        { label: "Масса навесного оборудования, не более, т", value: "18" }
       ]
     },
     {
@@ -76,6 +106,20 @@ const MachtyKoprovye = () => {
         { label: "Длина погружаемой сваи", value: "16 м" },
         { label: "Максимальное сечение сваи", value: "400 × 400 мм" },
         { label: "Масса навесного оборудования", value: "не более 19 т" }
+      ],
+      detailedSpecs: [
+        { label: "Длина погружаемой сваи, м", value: "16" },
+        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В/Сx⌀D, мм", value: "330×⌀70" },
+        { label: "Типы применяемых молотов", value: "" },
+        { label: "Дизельные трубчатые", value: "HD-30", indent: true },
+        { label: "Дизельные штанговые", value: "DD-35 / DD-45", indent: true },
+        { label: "Гидравлические", value: "HHP-5", indent: true },
+        { label: "Масса навесного оборудования, не более, т", value: "19" }
       ]
     },
     {
@@ -85,6 +129,20 @@ const MachtyKoprovye = () => {
         { label: "Глубина бурения", value: "12 м" },
         { label: "Максимальный диаметр бурения", value: "600 мм" },
         { label: "Масса навесного оборудования", value: "не более 10 т" }
+      ],
+      detailedSpecs: [
+        { label: "Глубина бурения, м", value: "12" },
+        { label: "Максимальный диаметр бурения, мм", value: "600" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Макс. крутящий момент на буровом инструменте, кгс×м", value: "3700" },
+        { label: "Частота вращения выходного вала редуктора, об/мин", value: "31,6" },
+        { label: "Масса привода, кг", value: "1550" },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В / Сx⌀D, мм", value: "365×⌀70 / 650×⌀102" },
+        { label: "Типы применяемых вращателей", value: "СО2МП" },
+        { label: "Масса навесного оборудования, не более, т", value: "10" }
       ]
     },
     {
@@ -94,6 +152,20 @@ const MachtyKoprovye = () => {
         { label: "Глубина бурения", value: "14 м" },
         { label: "Максимальный диаметр бурения", value: "600 мм" },
         { label: "Масса навесного оборудования", value: "не более 12 т" }
+      ],
+      detailedSpecs: [
+        { label: "Глубина бурения, м", value: "14" },
+        { label: "Максимальный диаметр бурения, мм", value: "600" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Макс. крутящий момент на буровом инструменте, кгс×м", value: "3700" },
+        { label: "Частота вращения выходного вала редуктора, об/мин", value: "31,6" },
+        { label: "Масса привода, кг", value: "1550" },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В / Сx⌀D, мм", value: "365×⌀70 / 650×⌀102" },
+        { label: "Типы применяемых вращателей", value: "СО2МП" },
+        { label: "Масса навесного оборудования, не более, т", value: "12" }
       ]
     },
     {
@@ -103,6 +175,20 @@ const MachtyKoprovye = () => {
         { label: "Глубина бурения", value: "16 м" },
         { label: "Максимальный диаметр бурения", value: "600 мм" },
         { label: "Масса навесного оборудования", value: "не более 14 т" }
+      ],
+      detailedSpecs: [
+        { label: "Глубина бурения, м", value: "16" },
+        { label: "Максимальный диаметр бурения, мм", value: "600" },
+        { label: "Рабочие наклоны мачты, не более", value: "" },
+        { label: "Вперед-назад, град", value: "4", indent: true },
+        { label: "Влево-вправо, град", value: "4", indent: true },
+        { label: "Макс. крутящий момент на буровом инструменте, кгс×м", value: "3700" },
+        { label: "Частота вращения выходного вала редуктора, об/мин", value: "31,6" },
+        { label: "Масса привода, кг", value: "1550" },
+        { label: "Изменение вылета мачты не более, м", value: "1" },
+        { label: "Ширина направляющих мачты Ах⌀В / Сx⌀D, мм", value: "365×⌀70 / 650×⌀102" },
+        { label: "Типы применяемых вращателей", value: "СО2МП" },
+        { label: "Масса навесного оборудования, не более, т", value: "14" }
       ]
     }
   ];
@@ -187,9 +273,6 @@ const MachtyKoprovye = () => {
               </a>
               <a href="#variants" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Варианты копровых мачт серии МК
-              </a>
-              <a href="#gallery" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
-                Фотогалерея
               </a>
               <a href="#consultation" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
                 Получить консультацию
@@ -340,13 +423,91 @@ const MachtyKoprovye = () => {
                         </Badge>
                       </div>
                       
-                      <div className="space-y-3">
+                      <div className="space-y-3 mb-4">
                         {variant.specs.map((spec, idx) => (
                           <div key={idx} className="border-l-2 border-accent/30 pl-3">
                             <p className="text-xs text-muted-foreground mb-1">{spec.label}</p>
                             <p className="font-medium text-gray-800">{spec.value}</p>
                           </div>
                         ))}
+                      </div>
+
+                      {expandedVariant === variant.name && (
+                        <div className="space-y-2 mb-4 p-4 bg-gray-50 rounded-lg animate-fade-in">
+                          <h4 className="font-semibold text-primary mb-3 text-sm">Полные характеристики:</h4>
+                          {variant.detailedSpecs.map((spec, idx) => (
+                            <div key={idx} className={spec.indent ? "ml-4" : ""}>
+                              {spec.value ? (
+                                <div className="flex justify-between items-start gap-2 text-xs">
+                                  <span className="text-muted-foreground">{spec.label}</span>
+                                  <span className="font-medium text-gray-800 text-right">{spec.value}</span>
+                                </div>
+                              ) : (
+                                <p className="font-semibold text-primary text-xs mt-2">{spec.label}</p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {showConsultationForm === variant.name && (
+                        <div className="mt-4 p-4 bg-accent/5 rounded-lg border border-accent/20 animate-fade-in">
+                          <EquipmentForm 
+                            categoryTitle={`Мачта ${variant.name}`}
+                            categoryId="masts"
+                            questions={[
+                              {
+                                question: "Модель базовой машины?"
+                              },
+                              {
+                                question: "Что планируете навешивать?"
+                              },
+                              {
+                                question: "Когда планируется закупка?"
+                              },
+                              {
+                                question: "В какой город осуществлять доставку?"
+                              }
+                            ]}
+                          />
+                          <Button 
+                            variant="outline" 
+                            size="sm"
+                            onClick={() => setShowConsultationForm(null)}
+                            className="w-full mt-2"
+                          >
+                            Свернуть форму
+                          </Button>
+                        </div>
+                      )}
+
+                      <div className="flex flex-col gap-2 mt-4">
+                        <Button 
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                          className="w-full"
+                        >
+                          {expandedVariant === variant.name ? (
+                            <>
+                              <Icon name="ChevronUp" size={16} className="mr-2" />
+                              Скрыть характеристики
+                            </>
+                          ) : (
+                            <>
+                              <Icon name="ChevronDown" size={16} className="mr-2" />
+                              Подробнее
+                            </>
+                          )}
+                        </Button>
+                        <Button 
+                          className="btn-gradient text-white w-full"
+                          size="sm"
+                          onClick={() => setShowConsultationForm(showConsultationForm === variant.name ? null : variant.name)}
+                        >
+                          <Icon name="MessageSquare" size={16} className="mr-2" />
+                          Получить консультацию
+                        </Button>
                       </div>
                     </CardContent>
                   </Card>
@@ -380,66 +541,7 @@ const MachtyKoprovye = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
-              Фотогалерея
-            </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Копровые мачты серии МК в производстве и на объектах
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              {galleryImages.map((image, index) => (
-                <Card 
-                  key={index} 
-                  className="overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
-                  onClick={() => setSelectedImage(image.url)}
-                >
-                  <div className="relative aspect-video overflow-hidden bg-gray-100">
-                    <OptimizedImage
-                      src={image.url}
-                      alt={image.title}
-                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                      <Icon 
-                        name="Maximize2" 
-                        size={32} 
-                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity"
-                      />
-                    </div>
-                  </div>
-                  <CardContent className="p-4">
-                    <p className="text-sm text-gray-700 font-medium">{image.title}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setSelectedImage(null)}
-        >
-          <button 
-            className="absolute top-4 right-4 text-white hover:text-accent transition-colors p-2 hover:bg-white/10 rounded-full"
-            onClick={() => setSelectedImage(null)}
-            aria-label="Закрыть"
-          >
-            <Icon name="X" size={32} />
-          </button>
-          <img 
-            src={selectedImage} 
-            alt="Увеличенное изображение" 
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
-      )}
 
       <section id="consultation" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
