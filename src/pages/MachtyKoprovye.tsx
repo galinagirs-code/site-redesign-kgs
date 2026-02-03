@@ -42,8 +42,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 16 т" }
       ],
       detailedSpecs: [
-        { label: "Длина погружаемой сваи, м", value: "12" },
-        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -65,8 +63,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 18 т" }
       ],
       detailedSpecs: [
-        { label: "Длина погружаемой сваи, м", value: "14" },
-        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -88,8 +84,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 19 т" }
       ],
       detailedSpecs: [
-        { label: "Длина погружаемой сваи, м", value: "16" },
-        { label: "Максимальное сечение погружаемой сваи, мм", value: "400×400" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -111,8 +105,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 10 т" }
       ],
       detailedSpecs: [
-        { label: "Глубина бурения, м", value: "12" },
-        { label: "Максимальный диаметр бурения, мм", value: "600" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -134,8 +126,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 12 т" }
       ],
       detailedSpecs: [
-        { label: "Глубина бурения, м", value: "14" },
-        { label: "Максимальный диаметр бурения, мм", value: "600" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -157,8 +147,6 @@ const MachtyKoprovye = () => {
         { label: "Масса навесного оборудования", value: "не более 14 т" }
       ],
       detailedSpecs: [
-        { label: "Глубина бурения, м", value: "16" },
-        { label: "Максимальный диаметр бурения, мм", value: "600" },
         { label: "Рабочие наклоны мачты, не более", value: "" },
         { label: "Вперед-назад, град", value: "4", indent: true },
         { label: "Влево-вправо, град", value: "4", indent: true },
@@ -413,25 +401,24 @@ const MachtyKoprovye = () => {
                             <p className="font-medium text-gray-800">{spec.value}</p>
                           </div>
                         ))}
+                        
+                        {expandedVariant === variant.name && (
+                          <>
+                            {variant.detailedSpecs.map((spec, idx) => (
+                              <div key={idx} className={spec.indent ? "border-l-2 border-accent/30 pl-3 ml-4" : "border-l-2 border-accent/30 pl-3"}>
+                                {spec.value ? (
+                                  <>
+                                    <p className="text-xs text-muted-foreground mb-1">{spec.label}</p>
+                                    <p className="font-medium text-gray-800">{spec.value}</p>
+                                  </>
+                                ) : (
+                                  <p className="text-xs font-semibold text-primary mt-2 mb-1">{spec.label}</p>
+                                )}
+                              </div>
+                            ))}
+                          </>
+                        )}
                       </div>
-
-                      {expandedVariant === variant.name && (
-                        <div className="space-y-2 mb-4 p-6 bg-gray-50 rounded-lg animate-fade-in">
-                          <h4 className="font-heading font-bold text-lg text-primary mb-4">Полные характеристики:</h4>
-                          {variant.detailedSpecs.map((spec, idx) => (
-                            <div key={idx} className={spec.indent ? "ml-6" : ""}>
-                              {spec.value ? (
-                                <div className="flex justify-between py-1">
-                                  <span className="text-muted-foreground text-sm">{spec.label}</span>
-                                  <span className="font-medium text-primary text-sm">{spec.value}</span>
-                                </div>
-                              ) : (
-                                <p className="font-semibold text-primary mt-4 mb-1">{spec.label}</p>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      )}
 
                       <div className="flex flex-col gap-2 mt-4">
                         <Button 
@@ -473,10 +460,12 @@ const MachtyKoprovye = () => {
                     Наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
-                    <Button className="btn-gradient text-white">
-                      <Icon name="Phone" size={18} className="mr-2" />
-                      Заказать консультацию
-                    </Button>
+                    <a href="#consultation">
+                      <Button className="btn-gradient text-white">
+                        <Icon name="Phone" size={18} className="mr-2" />
+                        Получить консультацию
+                      </Button>
+                    </a>
                     <Button variant="outline" asChild>
                       <Link to="/catalog">
                         <Icon name="ArrowLeft" size={18} className="mr-2" />
@@ -511,11 +500,7 @@ const MachtyKoprovye = () => {
           <div className="max-w-3xl mx-auto">
             <Card className="border-2 border-accent/20 shadow-xl">
               <CardContent className="p-8 md:p-12">
-                <div className="text-center mb-8">
-                  <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                    Консультация: Мачты копровые
-                  </h2>
-                </div>
+
                 <EquipmentForm 
                   categoryTitle="Мачты копровые"
                   categoryId="masts"
