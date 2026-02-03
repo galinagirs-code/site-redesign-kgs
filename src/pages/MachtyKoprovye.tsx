@@ -15,6 +15,7 @@ import { useState } from "react";
 const MachtyKoprovye = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
+  const [showConsultationForm, setShowConsultationForm] = useState(false);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -460,12 +461,13 @@ const MachtyKoprovye = () => {
                     Наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
                   </p>
                   <div className="flex flex-wrap justify-center gap-4">
-                    <a href="#consultation">
-                      <Button className="btn-gradient text-white">
-                        <Icon name="Phone" size={18} className="mr-2" />
-                        Получить консультацию
-                      </Button>
-                    </a>
+                    <Button 
+                      className="btn-gradient text-white"
+                      onClick={() => setShowConsultationForm(true)}
+                    >
+                      <Icon name="FileText" size={18} className="mr-2" />
+                      Оставить заявку
+                    </Button>
                     <Button variant="outline" asChild>
                       <Link to="/catalog">
                         <Icon name="ArrowLeft" size={18} className="mr-2" />
@@ -482,7 +484,7 @@ const MachtyKoprovye = () => {
 
 
 
-      <section id="gallery" className="py-16 md:py-24 bg-gray-50">
+      <section id="gallery" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
@@ -495,46 +497,56 @@ const MachtyKoprovye = () => {
         </div>
       </section>
 
-      <section id="consultation" className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <Card className="border-2 border-accent/20 shadow-xl">
-              <CardContent className="p-8 md:p-12">
+      {showConsultationForm && (
+        <section id="consultation" className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <Card className="border-2 border-accent/20 shadow-xl">
+                <CardContent className="p-8 md:p-12">
+                  <div className="mb-6">
+                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
+                      Консультация: Мачты копровые
+                    </h2>
+                    <p className="text-center text-muted-foreground">
+                      Заполните форму, и наш специалист свяжется с вами
+                    </p>
+                  </div>
 
-                <EquipmentForm 
-                  categoryTitle="Мачты копровые"
-                  categoryId="masts"
-                  questions={[
-                    {
-                      question: "На какую базовую машину будете навешивать?",
-                      options: ["Экскаватор", "Кран"]
-                    },
-                    {
-                      question: "Модель базовой машины?"
-                    },
-                    {
-                      question: "Что планируете навешивать?",
-                      columns: [
-                        { label: "Молот - какой?", placeholder: "Укажите молот" },
-                        { label: "Вращатель - какой?", placeholder: "Укажите вращатель" }
-                      ]
-                    },
-                    {
-                      question: "Длина сваи"
-                    },
-                    {
-                      question: "Когда планируется закупка (объект)?"
-                    },
-                    {
-                      question: "В какой город осуществлять доставку?"
-                    }
-                  ]}
-                />
-              </CardContent>
-            </Card>
+                  <EquipmentForm 
+                    categoryTitle="Мачты копровые"
+                    categoryId="masts"
+                    questions={[
+                      {
+                        question: "На какую базовую машину будете навешивать?",
+                        options: ["Экскаватор", "Кран"]
+                      },
+                      {
+                        question: "Модель базовой машины?"
+                      },
+                      {
+                        question: "Что планируете навешивать?",
+                        columns: [
+                          { label: "Молот - какой?", placeholder: "Укажите молот" },
+                          { label: "Вращатель - какой?", placeholder: "Укажите вращатель" }
+                        ]
+                      },
+                      {
+                        question: "Длина сваи"
+                      },
+                      {
+                        question: "Когда планируется закупка (объект)?"
+                      },
+                      {
+                        question: "В какой город осуществлять доставку?"
+                      }
+                    ]}
+                  />
+                </CardContent>
+              </Card>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <footer className="bg-primary text-white py-12 md:py-16">
         <div className="container mx-auto px-4">
