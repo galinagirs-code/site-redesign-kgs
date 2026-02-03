@@ -394,25 +394,25 @@ const MachtyKoprovye = () => {
                         </Badge>
                       </div>
                       
-                      <div className="space-y-3 mb-4">
+                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
-                          <div key={idx} className="border-l-2 border-accent/30 pl-3">
-                            <p className="text-sm text-muted-foreground mb-1">{spec.label}</p>
-                            <p className="font-medium text-gray-800 text-base">{spec.value}</p>
+                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-gray-700">{spec.label}</span>
+                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
                           </div>
                         ))}
                         
                         {expandedVariant === variant.name && (
                           <>
                             {variant.detailedSpecs.map((spec, idx) => (
-                              <div key={idx} className={spec.indent ? "border-l-2 border-accent/30 pl-3 ml-4" : "border-l-2 border-accent/30 pl-3"}>
+                              <div key={idx} className={spec.indent ? "flex justify-between items-center py-1 border-b border-gray-200 last:border-0 ml-4" : "flex justify-between items-center py-1 border-b border-gray-200 last:border-0"}>
                                 {spec.value ? (
                                   <>
-                                    <p className="text-sm text-muted-foreground mb-1">{spec.label}</p>
-                                    <p className="font-medium text-gray-800 text-base">{spec.value}</p>
+                                    <span className="text-sm text-gray-700">{spec.label}</span>
+                                    <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
                                   </>
                                 ) : (
-                                  <p className="text-sm font-semibold text-primary mt-2 mb-1">{spec.label}</p>
+                                  <span className="text-sm font-bold text-primary mt-2">{spec.label}</span>
                                 )}
                               </div>
                             ))}
@@ -451,7 +451,30 @@ const MachtyKoprovye = () => {
                 ))}
               </div>
 
-
+              <Card className="border-2 border-accent/20 bg-gradient-to-br from-accent/5 to-transparent">
+                <CardContent className="p-8 text-center">
+                  <h3 className="text-xl font-heading font-bold text-primary mb-4">
+                    Нужна консультация по выбору мачты?
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <a href="#consultation">
+                      <Button className="btn-gradient text-white">
+                        <Icon name="Phone" size={18} className="mr-2" />
+                        Получить консультацию
+                      </Button>
+                    </a>
+                    <Button variant="outline" asChild>
+                      <Link to="/catalog">
+                        <Icon name="ArrowLeft" size={18} className="mr-2" />
+                        Вернуться в каталог
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
