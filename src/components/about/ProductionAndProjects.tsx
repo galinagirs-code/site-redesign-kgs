@@ -178,8 +178,8 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
 
           <div className="image-card relative h-[500px]">
             <img 
-              src="https://cdn.poehali.dev/files/3c245578-40e1-4a71-814f-cc9457bd9769.jpg"
-              alt="Производство копровых мачт — готовые изделия в цехе"
+              src="https://cdn.poehali.dev/files/53467c61-f6ae-4972-a26c-16de8da68b2d.png"
+              alt="Копровая мачта KGS — синяя металлоконструкция с белым логотипом"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/70 to-transparent flex items-end">
