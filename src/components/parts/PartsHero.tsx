@@ -12,10 +12,10 @@ export const PartsHero = () => {
             Оригинальные и аналоговые запчасти — в наличии в Екатеринбурге и под заказ
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="#catalog" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
+            <a href="#catalog" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
               Каталог запчастей
             </a>
-            <a href="#order" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
+            <a href="#order" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
               Оставить заявку
             </a>
           </div>

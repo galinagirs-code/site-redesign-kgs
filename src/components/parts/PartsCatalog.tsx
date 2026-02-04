@@ -185,9 +185,13 @@ export const PartsCatalog = () => {
                   </p>
                   <Button 
                     className="w-full btn-gradient text-white"
-                    onClick={() => addToCart({ id: part.id, title: part.title, price: part.price })}
+                    onClick={() => {
+                      const subject = encodeURIComponent(`Запрос запчасти: ${part.title}`);
+                      const body = encodeURIComponent(`Здравствуйте!\n\nХочу заказать запчасть:\n\nНазвание: ${part.title}\nЦена: ${part.price}\n\nПожалуйста, свяжитесь со мной для уточнения деталей заказа.`);
+                      window.location.href = `mailto:service@kgs-ural.ru?subject=${subject}&body=${body}`;
+                    }}
                   >
-                    Добавить в корзину
+                    Оставить заявку
                   </Button>
                 </div>
               </CardContent>
