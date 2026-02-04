@@ -5,10 +5,13 @@ export const PartsHero = () => {
       
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 leading-tight">
             Запчасти
           </h1>
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8">
+            Оригинальные и аналоговые запчасти — в наличии в Екатеринбурге и под заказ
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
             <a href="#catalog" className="px-4 py-2 bg-white/10 hover:bg-accent hover:text-white text-white rounded-lg transition-all hover:scale-105 text-sm backdrop-blur-sm border border-white/20">
               Каталог запчастей
             </a>
