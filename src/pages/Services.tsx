@@ -160,19 +160,19 @@ const Services = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="#supervision" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
+                className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium"
               >
                 Шефмонтаж и пусконаладка оборудования
               </a>
               <a 
                 href="#maintenance" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
+                className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium"
               >
                 Техническое обслуживание и обучение
               </a>
               <a 
                 href="#guarantee" 
-                className="bg-white/10 hover:bg-accent/20 border-2 border-white/30 hover:border-accent/70 text-white px-6 py-3 rounded-lg transition-all text-sm md:text-base font-bold shadow-lg hover:shadow-xl"
+                className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium"
               >
                 Гарантия
               </a>
