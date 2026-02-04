@@ -604,7 +604,7 @@ const Catalog = () => {
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
-                    <strong>Копровые мачты кранового типа</strong> — для молотов и бурового вращателя
+                    <strong>Копровые мачты кранового и экскаваторного типа</strong> — для молотов и бурового вращателя
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
