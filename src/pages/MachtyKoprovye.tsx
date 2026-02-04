@@ -365,12 +365,9 @@ const MachtyKoprovye = () => {
       <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
-              Общая информация
-            </h2>
             <Card className="border-none shadow-xl mb-12 animate-fade-in">
               <CardContent className="p-6 md:p-10">
-                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Копровая мачта МК KGS</h3>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">Копровая мачта МК KGS</h2>
                 <div className="space-y-6">
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Назначение и возможности</h4>
@@ -488,8 +485,81 @@ const MachtyKoprovye = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
               Фотогалерея
             </h2>
-            <div className="text-center text-muted-foreground">
-              <p className="text-lg">Фотографии будут добавлены в ближайшее время</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div 
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2b460a56-3a42-4079-a756-88087a092bd3.png')}
+              >
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/2b460a56-3a42-4079-a756-88087a092bd3.png"
+                  alt="Монтаж крановой мачты г. Сасово"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Сасово</p>
+                </div>
+              </div>
+
+              <div 
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/68df293b-53a7-4932-bd60-36437d60be60.png')}
+              >
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/68df293b-53a7-4932-bd60-36437d60be60.png"
+                  alt="Монтаж крановой мачты г. Кемерово"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Кемерово</p>
+                </div>
+              </div>
+
+              <div 
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2a2d6e50-48b5-48a7-b8aa-0f664fcaa6dd.png')}
+              >
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/2a2d6e50-48b5-48a7-b8aa-0f664fcaa6dd.png"
+                  alt="Монтаж крановой мачты г. Сасово 2"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Сасово</p>
+                </div>
+              </div>
+
+              <div 
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/f5e26a31-154a-4b26-8cda-ddaf61511994.png')}
+              >
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/f5e26a31-154a-4b26-8cda-ddaf61511994.png"
+                  alt="Монтаж крановой мачты г. Симферополь 2"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
+                </div>
+              </div>
+
+              <div 
+                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/3f496d09-1eeb-4735-ad82-bb050eeefed5.png')}
+              >
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/3f496d09-1eeb-4735-ad82-bb050eeefed5.png"
+                  alt="Монтаж крановой мачты г. Симферополь"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -539,6 +609,26 @@ const MachtyKoprovye = () => {
                   />
             </div>
           </div>
+        </div>
+      )}
+
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-[70] flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <Icon name="X" size={32} />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="Фото в полном размере"
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
 
