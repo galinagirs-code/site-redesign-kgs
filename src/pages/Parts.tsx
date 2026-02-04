@@ -61,9 +61,6 @@ const Parts = () => {
                 8 (800) 600-74-65
               </a>
               <CartButton />
-              <Button size="sm" className="btn-gradient text-white hidden md:block">
-                Заказать звонок
-              </Button>
               <MobileMenu currentPath="/parts" />
             </div>
           </div>
@@ -74,8 +71,8 @@ const Parts = () => {
 
       <PartsHero />
       <PartsDescription />
-      <PartsOrderForm />
       <PartsCatalog />
+      <PartsOrderForm />
 
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">

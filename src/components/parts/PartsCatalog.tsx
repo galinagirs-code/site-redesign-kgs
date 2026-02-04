@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PartImageGallery } from "@/components/PartImageGallery";
 import { useCart } from "@/components/CartContext";
+import { Input } from "@/components/ui/input";
+import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const parts = [
   { 
@@ -129,15 +132,39 @@ const parts = [
 
 export const PartsCatalog = () => {
   const { addToCart } = useCart();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredParts = parts.filter(part =>
+    part.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <section id="catalog" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
           Запчасти в наличии
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {parts.map((part) => (
+        
+        <div className="max-w-md mx-auto mb-12">
+          <div className="relative">
+            <Icon name="Search" size={20} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Поиск по названию запчасти..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10"
+            />
+          </div>
+        </div>
+
+        {filteredParts.length === 0 ? (
+          <p className="text-center text-muted-foreground text-lg py-12">
+            Запчасти не найдены. Попробуйте изменить запрос.
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {filteredParts.map((part) => (
             <Card key={part.id} className="hover:shadow-lg transition-shadow overflow-hidden flex flex-col h-full">
               <PartImageGallery 
                 images={part.images || []} 
@@ -167,6 +194,7 @@ export const PartsCatalog = () => {
             </Card>
           ))}
         </div>
+        )}
       </div>
     </section>
   );
