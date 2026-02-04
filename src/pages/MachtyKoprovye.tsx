@@ -241,7 +241,7 @@ const MachtyKoprovye = () => {
                 Варианты копровых мачт серии МК
               </a>
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Описание
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
@@ -346,7 +346,7 @@ const MachtyKoprovye = () => {
                       onClick={() => setShowConsultationForm(true)}
                     >
                       <Icon name="FileText" size={18} className="mr-2" />
-                      Оставить заявку
+                      Получить консультацию
                     </Button>
                     <Button variant="outline" asChild>
                       <Link to="/catalog">
@@ -366,7 +366,7 @@ const MachtyKoprovye = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
-              Описание
+              Общая информация
             </h2>
             <Card className="border-none shadow-xl mb-12 animate-fade-in">
               <CardContent className="p-6 md:p-10">
@@ -496,13 +496,20 @@ const MachtyKoprovye = () => {
       </section>
 
       {showConsultationForm && (
-        <section id="consultation" className="py-16 md:py-24 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <Card className="border-2 border-accent/20 shadow-xl">
-                <CardContent className="p-8 md:p-12">
-                  <EquipmentForm 
-                    categoryTitle="Мачты копровые"
+        <div className="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div className="sticky top-0 bg-white p-4 border-b flex items-center justify-between">
+              <h3 className="font-heading font-semibold text-lg">Консультация: Мачты копровые</h3>
+              <button 
+                onClick={() => setShowConsultationForm(false)}
+                className="text-muted-foreground hover:text-primary"
+              >
+                <Icon name="X" size={24} />
+              </button>
+            </div>
+            <div className="p-4">
+              <EquipmentForm 
+                categoryTitle="Мачты копровые"
                     categoryId="masts"
                     questions={[
                       {
@@ -530,11 +537,9 @@ const MachtyKoprovye = () => {
                       }
                     ]}
                   />
-                </CardContent>
-              </Card>
             </div>
           </div>
-        </section>
+        </div>
       )}
 
       <footer className="bg-primary text-white py-12 md:py-16">
