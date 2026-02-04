@@ -563,21 +563,6 @@ const MachtyKoprovye = () => {
 
               <div 
                 className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
-                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/72d05adb-1bbb-489c-ad7f-fde2db3448bd.png')}
-              >
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/72d05adb-1bbb-489c-ad7f-fde2db3448bd.png"
-                  alt="Монтаж крановой мачты г. Симферополь"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
-                </div>
-              </div>
-
-              <div 
-                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
                 onClick={() => setSelectedImage('https://cdn.poehali.dev/files/09f1dfda-ef11-484b-8f45-f495d4be5717.png')}
               >
                 <OptimizedImage
@@ -627,21 +612,6 @@ const MachtyKoprovye = () => {
               >
                 <OptimizedImage
                   src="https://cdn.poehali.dev/files/4d74004f-7262-4827-8067-117372582faa.png"
-                  alt="Монтаж крановой мачты МК 16С г. Пенза"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты МК 16С г. Пенза</p>
-                </div>
-              </div>
-
-              <div 
-                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
-                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/51f06b5d-a22b-4b90-ad20-df190b96ce38.png')}
-              >
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/51f06b5d-a22b-4b90-ad20-df190b96ce38.png"
                   alt="Монтаж крановой мачты МК 16С г. Пенза"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
