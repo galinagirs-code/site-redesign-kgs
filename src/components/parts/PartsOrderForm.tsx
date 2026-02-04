@@ -29,9 +29,6 @@ export const PartsOrderForm = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-primary">
                 Свяжитесь с нами
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-                Если у вас возникли вопросы или нужна помощь с выбором запчастей, свяжитесь с нами уже сегодня — наш менеджер подберёт оптимальное решение именно для вашей техники.
-              </p>
               <p className="text-lg font-medium text-muted-foreground">
                 КоперГруппСервис — надёжный партнёр в обслуживании вашей техники.
               </p>
@@ -46,10 +43,7 @@ export const PartsOrderForm = () => {
                 <a href="tel:88006007465" className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors block mb-2">
                   8 (800) 600-74-65
                 </a>
-                <p className="text-sm text-muted-foreground mb-4">Звонок по России бесплатный</p>
-                <Button size="lg" className="btn-gradient text-white w-full">
-                  Заказать звонок
-                </Button>
+                <p className="text-sm text-muted-foreground">Звонок по России бесплатный</p>
               </div>
 
               <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-lg border-l-4 border-primary text-center">
