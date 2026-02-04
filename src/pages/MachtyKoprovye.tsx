@@ -492,12 +492,12 @@ const MachtyKoprovye = () => {
               >
                 <OptimizedImage
                   src="https://cdn.poehali.dev/files/2b460a56-3a42-4079-a756-88087a092bd3.png"
-                  alt="Монтаж крановой мачты г. Сасово"
+                  alt="Монтаж крановой мачты г. Симферополь"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Сасово</p>
+                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
                 </div>
               </div>
 
