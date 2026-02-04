@@ -533,16 +533,16 @@ const MachtyKoprovye = () => {
 
               <div 
                 className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
-                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/f5e26a31-154a-4b26-8cda-ddaf61511994.png')}
+                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/3c245578-40e1-4a71-814f-cc9457bd9769.jpg')}
               >
                 <OptimizedImage
-                  src="https://cdn.poehali.dev/files/f5e26a31-154a-4b26-8cda-ddaf61511994.png"
-                  alt="Монтаж крановой мачты г. Симферополь"
+                  src="https://cdn.poehali.dev/files/3c245578-40e1-4a71-814f-cc9457bd9769.jpg"
+                  alt="Производство копровых мачт"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
+                  <p className="text-white text-sm font-medium">Производство копровых мачт</p>
                 </div>
               </div>
 
