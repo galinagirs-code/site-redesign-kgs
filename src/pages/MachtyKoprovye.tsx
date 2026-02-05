@@ -492,21 +492,6 @@ const MachtyKoprovye = () => {
 
               <div 
                 className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
-                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/cbe2c885-eef0-45db-b3e0-541043dff83e.png')}
-              >
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/cbe2c885-eef0-45db-b3e0-541043dff83e.png"
-                  alt="Монтаж крановой мачты г. Кемерово"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Кемерово</p>
-                </div>
-              </div>
-
-              <div 
-                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
                 onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2bcdb5cc-5dd3-430d-95f7-e6fc89359026.png')}
               >
                 <OptimizedImage
@@ -640,20 +625,6 @@ const MachtyKoprovye = () => {
                 </div>
               </div>
 
-              <div 
-                className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer group aspect-square"
-                onClick={() => setSelectedImage('https://cdn.poehali.dev/files/7723023b-0aef-4b21-8608-a110e70c9c2b.png')}
-              >
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/7723023b-0aef-4b21-8608-a110e70c9c2b.png"
-                  alt="Монтаж крановой мачты г. Симферополь"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white text-sm font-medium">Монтаж крановой мачты г. Симферополь</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
