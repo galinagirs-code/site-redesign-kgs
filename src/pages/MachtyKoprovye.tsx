@@ -565,6 +565,40 @@ const MachtyKoprovye = () => {
         </div>
       </section>
 
+      {/* Consultation CTA */}
+      <section className="py-16 md:py-24 bg-primary text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Нужна консультация по выбору мачты?
+            </h2>
+            <p className="text-white/90 text-lg mb-8">
+              Оставьте заявку и наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg" 
+                onClick={() => setShowConsultationForm(true)}
+                className="bg-accent hover:bg-accent/90 text-white"
+              >
+                <Icon name="MessageCircle" className="mr-2" size={20} />
+                Получить консультацию
+              </Button>
+              <Link to="/catalog">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="bg-white/10 text-white border-white/30 hover:bg-white/20 w-full"
+                >
+                  <Icon name="ArrowLeft" className="mr-2" size={20} />
+                  Вернуться в каталог
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {showConsultationForm && (
         <div className="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4">
           <div className="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
