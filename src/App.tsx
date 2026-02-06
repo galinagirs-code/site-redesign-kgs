@@ -20,6 +20,27 @@ import VibropogruzateliKranovye from "./pages/VibropogruzateliKranovye";
 import VibropogruzateliEkskavatornye from "./pages/VibropogruzateliEkskavatornye";
 import Svaeskusyvateli from "./pages/Svaeskusyvateli";
 import Domkraty from "./pages/Domkraty";
+import MolotyYonganYC from "./pages/MolotyYonganYC";
+import MolotyStarkeHD from "./pages/MolotyStarkeHD";
+import MolotyDongtaiDD from "./pages/MolotyDongtaiDD";
+import SvajnyeNagolovniki from "./pages/SvajnyeNagolovniki";
+import StarkeLH from "./pages/StarkeLH";
+import JuliKLB from "./pages/JuliKLB";
+import Kburg from "./pages/Kburg";
+import JintSH from "./pages/JintSH";
+import JintSD from "./pages/JintSD";
+import JuliJL from "./pages/JuliJL";
+import YonganYZ from "./pages/YonganYZ";
+import YonganYZVM from "./pages/YonganYZVM";
+import YonganDZJ from "./pages/YonganDZJ";
+import VibroSG from "./pages/VibroSG";
+import VibroVH from "./pages/VibroVH";
+import UdlinennayaStrela from "./pages/UdlinennayaStrela";
+import KvikKapler from "./pages/KvikKapler";
+import JuliYZS from "./pages/JuliYZS";
+import SvaeskusyvateliKruglye from "./pages/SvaeskusyvateliKruglye";
+import SvaeskusyvateliKvadratnye from "./pages/SvaeskusyvateliKvadratnye";
+import DomkratyIzvlecheniya from "./pages/DomkratyIzvlecheniya";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -47,6 +68,27 @@ const App = () => (
           <Route path="/catalog/vibropogružateli-ekskavatornye" element={<VibropogruzateliEkskavatornye />} />
           <Route path="/catalog/svaeskusyvateli" element={<Svaeskusyvateli />} />
           <Route path="/catalog/domkraty" element={<Domkraty />} />
+          <Route path="/catalog/moloty-yongan-yc" element={<MolotyYonganYC />} />
+          <Route path="/catalog/moloty-starke-hd" element={<MolotyStarkeHD />} />
+          <Route path="/catalog/moloty-dongtai-dd" element={<MolotyDongtaiDD />} />
+          <Route path="/catalog/svajnye-nagolovniki" element={<SvajnyeNagolovniki />} />
+          <Route path="/catalog/starke-lh" element={<StarkeLH />} />
+          <Route path="/catalog/juli-klb" element={<JuliKLB />} />
+          <Route path="/catalog/kburg" element={<Kburg />} />
+          <Route path="/catalog/jint-sh" element={<JintSH />} />
+          <Route path="/catalog/jint-sd" element={<JintSD />} />
+          <Route path="/catalog/juli-jl" element={<JuliJL />} />
+          <Route path="/catalog/yongan-yz" element={<YonganYZ />} />
+          <Route path="/catalog/yongan-yz-vm" element={<YonganYZVM />} />
+          <Route path="/catalog/yongan-dzj" element={<YonganDZJ />} />
+          <Route path="/catalog/vibro-sg" element={<VibroSG />} />
+          <Route path="/catalog/vibro-vh" element={<VibroVH />} />
+          <Route path="/catalog/udlinennaya-strela" element={<UdlinennayaStrela />} />
+          <Route path="/catalog/kvik-kapler" element={<KvikKapler />} />
+          <Route path="/catalog/juli-yzs" element={<JuliYZS />} />
+          <Route path="/catalog/svaeskusyvateli-kruglye" element={<SvaeskusyvateliKruglye />} />
+          <Route path="/catalog/svaeskusyvateli-kvadratnye" element={<SvaeskusyvateliKvadratnye />} />
+          <Route path="/catalog/domkraty-izvlecheniya" element={<DomkratyIzvlecheniya />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

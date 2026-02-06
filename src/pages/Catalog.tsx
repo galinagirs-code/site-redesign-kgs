@@ -899,24 +899,56 @@ const Catalog = () => {
                   </h2>
                   <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => {
-                      const categoryRoutes: Record<string, string> = {
-                        "masts": "/catalog/machty-koprovye",
-                        "pile-hammers": "/catalog/svaebojnye-moloty",
-                        "pile-machines": "/catalog/svaebojnye-mashiny",
-                        "drilling": "/catalog/burovye-mashiny",
-                        "vibro-crane": "/catalog/vibropogružateli-kranovye",
-                        "vibro-excavator": "/catalog/vibropogružateli-ekskаvatornye",
-                        "cutters": "/catalog/svaeskusyvateli",
-                        "jacks": "/catalog/domkraty"
+                      const modelRoutes: Record<string, Record<number, string>> = {
+                        "masts": {
+                          0: "/catalog/machty-koprovye"
+                        },
+                        "pile-hammers": {
+                          0: "/catalog/moloty-yongan-yc",
+                          1: "/catalog/moloty-starke-hd",
+                          2: "/catalog/moloty-dongtai-dd",
+                          3: "/catalog/svajnye-nagolovniki"
+                        },
+                        "pile-machines": {
+                          0: "/catalog/starke-lh",
+                          1: "/catalog/juli-klb",
+                          2: "/catalog/kburg"
+                        },
+                        "drilling": {
+                          0: "/catalog/jint-sh",
+                          1: "/catalog/jint-sd",
+                          2: "/catalog/juli-jl"
+                        },
+                        "vibro-crane": {
+                          0: "/catalog/yongan-yz",
+                          1: "/catalog/yongan-yz-vm",
+                          2: "/catalog/yongan-dzj"
+                        },
+                        "vibro-excavator": {
+                          0: "/catalog/vibro-sg",
+                          1: "/catalog/vibro-vh",
+                          2: "/catalog/udlinennaya-strela",
+                          3: "/catalog/kvik-kapler"
+                        },
+                        "pile-pressing": {
+                          0: "/catalog/juli-yzs"
+                        },
+                        "cutters": {
+                          0: "/catalog/svaeskusyvateli-kruglye",
+                          1: "/catalog/svaeskusyvateli-kvadratnye"
+                        },
+                        "jacks": {
+                          0: "/catalog/domkraty-izvlecheniya"
+                        }
                       };
                       
-                      const hasDetailPage = categoryRoutes[category.id] && idx === 0;
+                      const modelRoute = modelRoutes[category.id]?.[idx];
                       
                       return (
                         <li key={idx}>
-                          {hasDetailPage ? (
+                          {modelRoute ? (
                             <Link 
-                              to={categoryRoutes[category.id]}
+                              to={modelRoute}
                               className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
                             >
                               <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
