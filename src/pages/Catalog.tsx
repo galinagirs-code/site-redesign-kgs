@@ -12,6 +12,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 import { EquipmentForm } from "@/components/EquipmentForm";
 import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
+import { useState } from "react";
 
 const Catalog = () => {
   const catalogSchema = {
@@ -789,6 +790,8 @@ const Catalog = () => {
     }
   ];
 
+  const [selectedCategory, setSelectedCategory] = useState<typeof categories[0] | null>(null);
+
   return (
     <div className="min-h-screen">
       <SEO 
@@ -921,6 +924,17 @@ const Catalog = () => {
                     })}
                   </ul>
                   
+                  {category.description && (
+                    <Button
+                      variant="outline"
+                      className="w-full mb-4"
+                      onClick={() => setSelectedCategory(category)}
+                    >
+                      <Icon name="Info" size={16} className="mr-2" />
+                      Подробнее об оборудовании
+                    </Button>
+                  )}
+                  
                   <EquipmentForm 
                     categoryTitle={category.title}
                     categoryId={category.id}
@@ -932,6 +946,99 @@ const Catalog = () => {
           </div>
         </div>
       </section>
+
+      {/* Category Details Modal */}
+      {selectedCategory && selectedCategory.description && (
+        <div 
+          className="fixed inset-0 bg-black/70 z-[60] flex items-center justify-center p-4 overflow-y-auto"
+          onClick={() => setSelectedCategory(null)}
+        >
+          <div 
+            className="bg-white rounded-lg max-w-5xl w-full my-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 bg-white p-6 border-b flex items-center justify-between rounded-t-lg z-10">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary">
+                {selectedCategory.description.title}
+              </h2>
+              <button 
+                onClick={() => setSelectedCategory(null)}
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Icon name="X" size={28} />
+              </button>
+            </div>
+            
+            <div className="p-6 md:p-10 max-h-[70vh] overflow-y-auto">
+              <div className="space-y-8">
+                {selectedCategory.description.sections.map((section, idx) => (
+                  <div key={idx}>
+                    <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-4">
+                      {section.heading}
+                    </h3>
+                    
+                    {section.text && (
+                      <p className="text-muted-foreground leading-relaxed mb-4 whitespace-pre-line">
+                        {section.text}
+                      </p>
+                    )}
+                    
+                    {section.list && (
+                      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                        {section.list.map((item, itemIdx) => (
+                          <li key={itemIdx} className="leading-relaxed">{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                    
+                    {section.additionalText && (
+                      <p className="text-muted-foreground leading-relaxed mt-4 mb-4 whitespace-pre-line">
+                        {section.additionalText}
+                      </p>
+                    )}
+                    
+                    {section.additionalList && (
+                      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                        {section.additionalList.map((item, itemIdx) => (
+                          <li key={itemIdx} className="leading-relaxed">{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                    
+                    {section.orderedList && (
+                      <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+                        {section.orderedList.map((item, itemIdx) => (
+                          <li key={itemIdx} className="leading-relaxed">{item}</li>
+                        ))}
+                      </ol>
+                    )}
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-8 pt-6 border-t flex flex-col sm:flex-row gap-4">
+                <Button 
+                  className="btn-gradient text-white flex-1"
+                  onClick={() => {
+                    setSelectedCategory(null);
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  <Icon name="MessageCircle" className="mr-2" size={20} />
+                  Получить консультацию
+                </Button>
+                <Button 
+                  variant="outline"
+                  className="flex-1"
+                  onClick={() => setSelectedCategory(null)}
+                >
+                  Закрыть
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* About Section */}
       <section className="py-16 md:py-24 bg-white">
