@@ -13,6 +13,13 @@ import Services from "./pages/Services";
 import Parts from "./pages/Parts";
 import Catalog from "./pages/Catalog";
 import MachtyKoprovye from "./pages/MachtyKoprovye";
+import SvaebojnyeMoloty from "./pages/SvaebojnyeMoloty";
+import SvaebojnyeMashiny from "./pages/SvaebojnyeMashiny";
+import BurovyeMashiny from "./pages/BurovyeMashiny";
+import VibropogruzateliKranovye from "./pages/VibropogruzateliKranovye";
+import VibropogruzateliEkskavatornye from "./pages/VibropogruzateliEkskavatornye";
+import Svaeskusyvateli from "./pages/Svaeskusyvateli";
+import Domkraty from "./pages/Domkraty";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +40,13 @@ const App = () => (
           <Route path="/parts" element={<Parts />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/catalog/machty-koprovye" element={<MachtyKoprovye />} />
+          <Route path="/catalog/svaebojnye-moloty" element={<SvaebojnyeMoloty />} />
+          <Route path="/catalog/svaebojnye-mashiny" element={<SvaebojnyeMashiny />} />
+          <Route path="/catalog/burovye-mashiny" element={<BurovyeMashiny />} />
+          <Route path="/catalog/vibropogružateli-kranovye" element={<VibropogruzateliKranovye />} />
+          <Route path="/catalog/vibropogružateli-ekskavatornye" element={<VibropogruzateliEkskavatornye />} />
+          <Route path="/catalog/svaeskusyvateli" element={<Svaeskusyvateli />} />
+          <Route path="/catalog/domkraty" element={<Domkraty />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

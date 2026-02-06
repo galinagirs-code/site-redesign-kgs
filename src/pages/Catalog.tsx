@@ -899,12 +899,24 @@ const Catalog = () => {
                   </h2>
                   <ul className="space-y-2 mb-6">
                     {category.models.map((model, idx) => {
-                      const isKoprovyeMachty = category.id === "masts" && model === "Мачты копровые крановые (серия МК Россия)";
+                      const categoryRoutes: Record<string, string> = {
+                        "masts": "/catalog/machty-koprovye",
+                        "pile-hammers": "/catalog/svaebojnye-moloty",
+                        "pile-machines": "/catalog/svaebojnye-mashiny",
+                        "drilling": "/catalog/burovye-mashiny",
+                        "vibro-crane": "/catalog/vibropogružateli-kranovye",
+                        "vibro-excavator": "/catalog/vibropogružateli-ekskаvatornye",
+                        "cutters": "/catalog/svaeskusyvateli",
+                        "jacks": "/catalog/domkraty"
+                      };
+                      
+                      const hasDetailPage = categoryRoutes[category.id] && idx === 0;
+                      
                       return (
                         <li key={idx}>
-                          {isKoprovyeMachty ? (
+                          {hasDetailPage ? (
                             <Link 
-                              to="/catalog/machty-koprovye"
+                              to={categoryRoutes[category.id]}
                               className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
                             >
                               <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
