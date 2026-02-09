@@ -15,6 +15,7 @@ import { useState } from "react";
 const MolotyDongtaiDD = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showConsultationForm, setShowConsultationForm] = useState(false);
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -37,6 +38,275 @@ const MolotyDongtaiDD = () => {
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+  ];
+
+  const variants = [
+    {
+      name: "DD-18",
+      specs: [
+        { label: "Масса ударной части", value: "1,8 т" },
+        { label: "Максимальная энергия", value: "43 кДж" },
+        { label: "Количество ударов в минуту", value: "40–60" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "1,8" },
+        { label: "Максимальный ход цилиндра, м", value: "2,1" },
+        { label: "Количество ударов в минуту", value: "40–60" },
+        { label: "Максимальная энергия, кДж", value: "43" },
+        { label: "Расход топлива, л/час", value: "6" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "596" },
+        { label: "Максимальный вес сваи, т", value: "5" },
+        { label: "Коэффициент компрессии", value: "18" },
+        { label: "Масса молота, кг", value: "3300" }
+      ]
+    },
+    {
+      name: "DD-25",
+      specs: [
+        { label: "Масса ударной части", value: "2,5 т" },
+        { label: "Максимальная энергия", value: "57,5 кДж" },
+        { label: "Количество ударов в минуту", value: "40–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "2,5" },
+        { label: "Максимальный ход цилиндра, м", value: "2,5" },
+        { label: "Количество ударов в минуту", value: "40–50" },
+        { label: "Максимальная энергия, кДж", value: "57,5" },
+        { label: "Расход топлива, л/час", value: "10" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "968" },
+        { label: "Максимальный вес сваи, т", value: "6" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "4600" }
+      ]
+    },
+    {
+      name: "DD-30",
+      specs: [
+        { label: "Масса ударной части", value: "3,0 т" },
+        { label: "Максимальная энергия", value: "73,5 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "3,0" },
+        { label: "Максимальный ход цилиндра, м", value: "2,7" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "73,5" },
+        { label: "Расход топлива, л/час", value: "11" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "1109" },
+        { label: "Максимальный вес сваи, т", value: "6,5" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "5000" }
+      ]
+    },
+    {
+      name: "DD-35",
+      specs: [
+        { label: "Масса ударной части", value: "3,5 т" },
+        { label: "Максимальная энергия", value: "89,6 кДж" },
+        { label: "Количество ударов в минуту", value: "40–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "3,5" },
+        { label: "Максимальный ход цилиндра, м", value: "2,8" },
+        { label: "Количество ударов в минуту", value: "40–50" },
+        { label: "Максимальная энергия, кДж", value: "89,6" },
+        { label: "Расход топлива, л/час", value: "12" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "1250" },
+        { label: "Максимальный вес сваи, т", value: "7" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "6100" }
+      ]
+    },
+    {
+      name: "DD-45",
+      specs: [
+        { label: "Масса ударной части", value: "4,5 т" },
+        { label: "Максимальная энергия", value: "120 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "4,5" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "120" },
+        { label: "Расход топлива, л/час", value: "14,5" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "1430" },
+        { label: "Максимальный вес сваи, т", value: "9" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "7380" }
+      ]
+    },
+    {
+      name: "DD-55",
+      specs: [
+        { label: "Масса ударной части", value: "5,5 т" },
+        { label: "Максимальная энергия", value: "157 кДж" },
+        { label: "Количество ударов в минуту", value: "45–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "5,5" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "45–50" },
+        { label: "Максимальная энергия, кДж", value: "157" },
+        { label: "Расход топлива, л/час", value: "16,5" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "1690" },
+        { label: "Максимальный вес сваи, т", value: "13" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "10000" }
+      ]
+    },
+    {
+      name: "DD-65",
+      specs: [
+        { label: "Масса ударной части", value: "6,5 т" },
+        { label: "Максимальная энергия", value: "189 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "6,5" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "189" },
+        { label: "Расход топлива, л/час", value: "18" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "1980" },
+        { label: "Максимальный вес сваи, т", value: "16" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "13000" }
+      ]
+    },
+    {
+      name: "DD-75",
+      specs: [
+        { label: "Масса ударной части", value: "7,5 т" },
+        { label: "Максимальная энергия", value: "226 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "7,5" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "226" },
+        { label: "Расход топлива, л/час", value: "19" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "2280" },
+        { label: "Максимальный вес сваи, т", value: "18,5" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "14500" }
+      ]
+    },
+    {
+      name: "DD-85",
+      specs: [
+        { label: "Масса ударной части", value: "8,5 т" },
+        { label: "Максимальная энергия", value: "250 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "8,5" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "250" },
+        { label: "Расход топлива, л/час", value: "20" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "2560" },
+        { label: "Максимальный вес сваи, т", value: "22" },
+        { label: "Коэффициент компрессии", value: "22" },
+        { label: "Масса молота, кг", value: "16500" }
+      ]
+    },
+    {
+      name: "DD-103",
+      specs: [
+        { label: "Масса ударной части", value: "10,3 т" },
+        { label: "Максимальная энергия", value: "309 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "10,3" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "309" },
+        { label: "Расход топлива, л/час", value: "24" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "2950" },
+        { label: "Максимальный вес сваи, т", value: "30" },
+        { label: "Коэффициент компрессии", value: "24" },
+        { label: "Масса молота, кг", value: "18000" }
+      ]
+    },
+    {
+      name: "DD-128",
+      specs: [
+        { label: "Масса ударной части", value: "12,8 т" },
+        { label: "Максимальная энергия", value: "398 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "12,8" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "398" },
+        { label: "Расход топлива, л/час", value: "28" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "3460" },
+        { label: "Максимальный вес сваи, т", value: "38" },
+        { label: "Коэффициент компрессии", value: "28" },
+        { label: "Масса молота, кг", value: "22000" }
+      ]
+    },
+    {
+      name: "DD-160",
+      specs: [
+        { label: "Масса ударной части", value: "16 т" },
+        { label: "Максимальная энергия", value: "455 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "16" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "455" },
+        { label: "Расход топлива, л/час", value: "40" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "3970" },
+        { label: "Максимальный вес сваи, т", value: "48" },
+        { label: "Коэффициент компрессии", value: "28" },
+        { label: "Масса молота, кг", value: "28700" }
+      ]
+    },
+    {
+      name: "DD-180",
+      specs: [
+        { label: "Масса ударной части", value: "18 т" },
+        { label: "Максимальная энергия", value: "549 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "18" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "549" },
+        { label: "Расход топлива, л/час", value: "48" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "4510" },
+        { label: "Максимальный вес сваи, т", value: "55" },
+        { label: "Коэффициент компрессии", value: "30" },
+        { label: "Масса молота, кг", value: "35000" }
+      ]
+    },
+    {
+      name: "DD-200",
+      specs: [
+        { label: "Масса ударной части", value: "20 т" },
+        { label: "Максимальная энергия", value: "603 кДж" },
+        { label: "Количество ударов в минуту", value: "35–50" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "20" },
+        { label: "Максимальный ход цилиндра, м", value: "3" },
+        { label: "Количество ударов в минуту", value: "35–50" },
+        { label: "Максимальная энергия, кДж", value: "603" },
+        { label: "Расход топлива, л/час", value: "51" },
+        { label: "Сила взрыва при воздействии на сваю, кН", value: "4750" },
+        { label: "Максимальный вес сваи, т", value: "60" },
+        { label: "Коэффициент компрессии", value: "30" },
+        { label: "Масса молота, кг", value: "39000" }
+      ]
+    }
   ];
 
   const questions = [
@@ -158,6 +428,9 @@ const MolotyDongtaiDD = () => {
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Описание оборудования
               </a>
+              <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Характеристики
+              </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
               </a>
@@ -179,29 +452,43 @@ const MolotyDongtaiDD = () => {
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">О производителе и оборудовании</h4>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Дизельный штанговый молот, произведенный компанией Dongtai Juli Machinery Manufacturing Co., LTD в Китае, отличается большой мощностью и стабильным качеством. Он завоевал хорошую репутацию и пользуется стабильным спросом во всем мире!
+                      Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
                     </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-2">
+                      Это свойство достигается благодаря:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                      <li className="leading-relaxed">Эффективной системе воздушного охлаждения с высокой теплоотдачей</li>
+                      <li className="leading-relaxed">Современной системе подачи топлива</li>
+                      <li className="leading-relaxed">Компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</li>
+                    </ul>
                     <p className="text-muted-foreground leading-relaxed">
-                      Самой современной продукцией является штанговый дизельный молот серии DD, производимый на основе многолетнего опыта и передовых технологий других китайских и иностранных компаний. Используя принцип и технологии дизельного двигателя, настоящие молоты имеют возможность непрерывно и эффективно работать длительное время. Это свойство достигается благодаря высокой теплоотдаче воздушного охлаждения, передовой системе подачи топлива. Также его конструкция очень компактна и удобна в эксплуатации. Штанговый дизельный молот серии DD колоссально превосходит отечественные аналоги.
+                      По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">Преимущества гидравлических ударных молотов Dongtai Juli DD</h4>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Преимущества дизельных молотов Dongtai Juli DD</h4>
                     <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li className="leading-relaxed">Энергия удара на 70-80% больше, чем у молотов российского производства с таким же весом ударной части</li>
-                      <li className="leading-relaxed">Высокая компрессия по сравнению с российскими аналогами</li>
-                      <li className="leading-relaxed">Высокая мощность и низкий расход топлива</li>
-                      <li className="leading-relaxed">Большой срок службы</li>
-                      <li className="leading-relaxed">Хорошая теплоотдача, которая увеличивает производительность</li>
+                      <li className="leading-relaxed">Энергия удара на 70–80% выше, чем у российских молотов с аналогичной массой ударной части</li>
+                      <li className="leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами</li>
+                      <li className="leading-relaxed">Высокая мощность при низком расходе топлива</li>
+                      <li className="leading-relaxed">Длительный срок службы</li>
+                      <li className="leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">Предназначение молота Dongtai Juli DD</h4>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Dongtai Juli DD</h4>
                     <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                       <li className="leading-relaxed">Погружение деревянных и железобетонных свай</li>
-                      <li className="leading-relaxed">Строительство свайного фундамента</li>
+                      <li className="leading-relaxed">Устройство свайных фундаментов</li>
                       <li className="leading-relaxed">Погружение металлических труб</li>
                       <li className="leading-relaxed">Погружение шпунта Ларсена</li>
                     </ul>
@@ -209,6 +496,62 @@ const MolotyDongtaiDD = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="variants" className="py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
+              Варианты дизельных штанговых молотов Dongtai Juli серии DD
+            </h2>
+            <div className="space-y-4">
+              {variants.map((variant) => (
+                <Card key={variant.name} className="border-primary/20 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div 
+                      className="flex items-center justify-between cursor-pointer"
+                      onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                    >
+                      <div className="flex-1">
+                        <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
+                          Характеристики Dongtai Juli {variant.name}
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          {variant.specs.map((spec, index) => (
+                            <div key={index} className="text-sm">
+                              <span className="text-muted-foreground">{spec.label}:</span>
+                              <span className="font-medium text-primary ml-2">{spec.value}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <Icon 
+                          name={expandedVariant === variant.name ? "chevron-up" : "chevron-down"} 
+                          className="h-6 w-6 text-primary" 
+                        />
+                      </div>
+                    </div>
+
+                    {expandedVariant === variant.name && (
+                      <div className="mt-6 pt-6 border-t border-gray-200 animate-fade-in">
+                        <h4 className="text-lg font-semibold text-primary mb-4">Полные технические характеристики</h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {variant.detailedSpecs.map((spec, index) => (
+                            <div key={index} className="flex justify-between text-sm py-2 border-b border-gray-100">
+                              <span className="text-muted-foreground">{spec.label}</span>
+                              <span className="font-medium text-primary">{spec.value}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
