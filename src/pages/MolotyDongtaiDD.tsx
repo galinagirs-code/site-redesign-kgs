@@ -425,11 +425,11 @@ const MolotyDongtaiDD = () => {
               Молоты дизельные штанговые Dongtai Juli (серия DD)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Описание оборудования
-              </a>
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Характеристики
+                Варианты дизельных штанговых молотов серии DD
+              </a>
+              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
@@ -437,6 +437,79 @@ const MolotyDongtaiDD = () => {
               <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="variants" className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="animate-fade-in">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+                Варианты дизельных штанговых молотов Dongtai Juli серии DD
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                {variants.map((variant, index) => (
+                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-xl font-heading font-bold text-primary">
+                          {variant.name}
+                        </h3>
+                      </div>
+                      
+                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                        {variant.specs.map((spec, idx) => (
+                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-gray-700">{spec.label}</span>
+                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                          </div>
+                        ))}
+                        
+                        {expandedVariant === variant.name && (
+                          <>
+                            {variant.detailedSpecs.map((spec, idx) => (
+                              <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                                <span className="text-sm text-gray-700">{spec.label}</span>
+                                <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                              </div>
+                            ))}
+                          </>
+                        )}
+                      </div>
+
+                      <div className="flex flex-col gap-2 mt-4">
+                        <Button 
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                          className="w-full"
+                        >
+                          {expandedVariant === variant.name ? (
+                            <>
+                              <Icon name="ChevronUp" size={16} className="mr-2" />
+                              Скрыть характеристики
+                            </>
+                          ) : (
+                            <>
+                              <Icon name="ChevronDown" size={16} className="mr-2" />
+                              Подробнее
+                            </>
+                          )}
+                        </Button>
+                        <a href="#consultation" className="block">
+                          <Button className="btn-gradient text-white w-full" size="sm">
+                            <Icon name="MessageSquare" size={16} className="mr-2" />
+                            Получить консультацию
+                          </Button>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -496,62 +569,6 @@ const MolotyDongtaiDD = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      <section id="variants" className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
-              Варианты дизельных штанговых молотов Dongtai Juli серии DD
-            </h2>
-            <div className="space-y-4">
-              {variants.map((variant) => (
-                <Card key={variant.name} className="border-primary/20 hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6">
-                    <div 
-                      className="flex items-center justify-between cursor-pointer"
-                      onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                    >
-                      <div className="flex-1">
-                        <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                          Характеристики Dongtai Juli {variant.name}
-                        </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          {variant.specs.map((spec, index) => (
-                            <div key={index} className="text-sm">
-                              <span className="text-muted-foreground">{spec.label}:</span>
-                              <span className="font-medium text-primary ml-2">{spec.value}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <Icon 
-                          name={expandedVariant === variant.name ? "chevron-up" : "chevron-down"} 
-                          className="h-6 w-6 text-primary" 
-                        />
-                      </div>
-                    </div>
-
-                    {expandedVariant === variant.name && (
-                      <div className="mt-6 pt-6 border-t border-gray-200 animate-fade-in">
-                        <h4 className="text-lg font-semibold text-primary mb-4">Полные технические характеристики</h4>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {variant.detailedSpecs.map((spec, index) => (
-                            <div key={index} className="flex justify-between text-sm py-2 border-b border-gray-100">
-                              <span className="text-muted-foreground">{spec.label}</span>
-                              <span className="font-medium text-primary">{spec.value}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
         </div>
       </section>
