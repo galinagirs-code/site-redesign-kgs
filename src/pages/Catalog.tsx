@@ -298,7 +298,7 @@ const Catalog = () => {
         "Молоты гидравлические DongHao",
         "Молоты дизельные трубчатые STARKE",
         "Молоты дизельные трубчатые SEMW",
-        "Молоты дизельные штанговые JULI",
+        "Молоты дизельные штанговые Dongtai Juli (серия DD)",
         "Свайные наголовники"
       ],
       questions: [
@@ -592,7 +592,7 @@ const Catalog = () => {
     {
       id: "vibro-excavator",
       title: "Вибропогружатели экскаваторные",
-      image: "https://cdn.poehali.dev/files/13ba18a0-5a88-4fdd-b4d0-100edce8c335.png",
+      image: "https://cdn.poehali.dev/files/30238ac7-d520-4ac9-b734-b58e1ac1ad95.png",
       description: {
         title: "Вибропогружатели экскаваторные",
         sections: [
