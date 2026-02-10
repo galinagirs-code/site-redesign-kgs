@@ -873,7 +873,7 @@ const Catalog = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
-              Полный каталог оборудования
+              Каталог оборудования
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               КоперГруппСервис — лидер рынка по поставкам современного оборудования и техники для строительства свайных фундаментов

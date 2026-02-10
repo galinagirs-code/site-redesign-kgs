@@ -231,11 +231,8 @@ const MachtyKoprovye = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Серия МК
-            </Badge>
-            <h2 className="text-2xl md:text-3xl font-heading font-semibold text-white/90 mb-3">
               Мачты копровые крановые
-            </h2>
+            </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Мачты копровые крановые (серия МК)
             </h1>
@@ -343,164 +340,130 @@ const MachtyKoprovye = () => {
 
       <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Копровая мачта МК KGS</h2>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-              <div className="space-y-8">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Target" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Назначение и возможности</h4>
-                      <p className="text-muted-foreground leading-relaxed">
-                        Копровая мачта — это направляющий элемент для навесного оборудования, который существенно расширяет функциональные возможности базовой строительной техники. Она позволяет эффективно использовать имеющиеся машины для выполнения свайных и буровых работ без потери их основного назначения.
-                      </p>
-                    </div>
-                  </div>
+            <div className="space-y-12">
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Производство и качество</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Производственные мощности ООО «КГС» (г. Екатеринбург) позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика. При проектировании и производстве применяются технологии ведущих европейских производителей, а также комплектующие гидросистем и систем управления европейского производства. Это обеспечивает высокое качество, надёжность и длительный срок службы оборудования.
+                </p>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Truck" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Монтаж на базовую технику</h4>
-                      <p className="text-muted-foreground mb-2">Копровая мачта устанавливается на следующие типы машин:</p>
-                      <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
-                        <li>монтажные гусеничные краны</li>
-                        <li>экскаваторы</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Ключевые преимущества</h3>
+                <ul className="space-y-4 text-lg text-gray-700">
+                  <li className="leading-relaxed">
+                    <strong className="text-primary">Быстрый демонтаж</strong> — мачта легко снимается, при этом базовая машина полностью сохраняет свои штатные функции.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-primary">Экономическая эффективность</strong> — переоборудование гусеничного крана в сваебойную или буровую установку позволяет задействовать технику, которая ранее простаивала без работы.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-primary">Универсальность</strong> — возможность переоборудовать в короткие сроки сваебойную установку на базе крана, обратно в кран.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-primary">Оптимальные цены</strong> — использование оборудования KGS позволяет получить полноповоротную сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-primary">Простота эксплуатации</strong> — оборудование отличается удобством управления и обслуживания.
+                  </li>
+                </ul>
+              </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Package" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Совместимое навесное оборудование</h4>
-                      <p className="text-muted-foreground mb-2">Универсальная конструкция мачты позволяет использовать различные виды рабочего оборудования:</p>
-                      <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
-                        <li>сваебойные молоты для забивки свай</li>
-                        <li>вращатели для буровых работ</li>
-                        <li>оборудование для лидерного бурения</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="bg-white rounded-lg p-8 shadow-lg lg:order-1">
+                  <h3 className="text-2xl font-heading font-bold text-primary mb-4">Назначение и возможности</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Копровая мачта — это направляющий элемент для навесного оборудования, который существенно расширяет функциональные возможности базовой строительной техники. Она позволяет эффективно использовать имеющиеся машины для выполнения свайных и буровых работ без потери их основного назначения.
+                  </p>
+                  
+                  <h4 className="text-xl font-semibold text-primary mb-3 mt-6">Монтаж на базовую технику</h4>
+                  <p className="text-lg text-gray-700 mb-3">Копровая мачта устанавливается на следующие типы машин:</p>
+                  <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                    <li>монтажные гусеничные краны</li>
+                    <li>экскаваторы</li>
+                  </ul>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Award" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Ключевые преимущества</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li className="leading-relaxed"><span className="font-semibold text-primary">Быстрый демонтаж</span> — мачта легко снимается, при этом базовая машина полностью сохраняет свои штатные функции.</li>
-                      <li className="leading-relaxed"><span className="font-semibold text-primary">Экономическая эффективность</span> — переоборудование гусеничного крана в сваебойную или буровую установку позволяет задействовать технику, которая ранее простаивала без работы.</li>
-                      <li className="leading-relaxed"><span className="font-semibold text-primary">Универсальность</span> — возможность переоборудовать в короткие сроки сваебойную установку на базе крана, обратно в кран.</li>
-                      <li className="leading-relaxed"><span className="font-semibold text-primary">Оптимальные цены</span> — использование оборудования KGS позволяет получить полноповоротную сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</li>
-                      <li className="leading-relaxed"><span className="font-semibold text-primary">Простота эксплуатации</span> — оборудование отличается удобством управления и обслуживания.</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <h4 className="text-xl font-semibold text-primary mb-3 mt-6">Совместимое навесное оборудование</h4>
+                  <p className="text-lg text-gray-700 mb-3">Универсальная конструкция мачты позволяет использовать различные виды рабочего оборудования:</p>
+                  <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                    <li>сваебойные молоты для забивки свай</li>
+                    <li>вращатели для буровых работ</li>
+                    <li>оборудование для лидерного бурения</li>
+                  </ul>
+                </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Factory" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Производство и качество</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Производственные мощности ООО «КГС» (г. Екатеринбург) позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика. При проектировании и производстве применяются технологии ведущих европейских производителей, а также комплектующие гидросистем и систем управления европейского производства. Это обеспечивает высокое качество, надёжность и длительный срок службы оборудования.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="MapPin" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Области применения</h4>
-                    <p className="text-muted-foreground mb-2">Копровая мачта МК применяется для:</p>
-                    <ul className="list-disc pl-6 space-y-1 text-muted-foreground mb-4">
-                      <li>забивки железобетонных свай, труб и шпунта</li>
-                      <li>устройства буронабивных свай</li>
-                      <li>лидерного бурения скважин под ж/б сваи</li>
-                    </ul>
-                    <p className="text-muted-foreground mb-2">Оборудование используется при строительстве фундаментов (нулевой цикл) в следующих отраслях:</p>
-                    <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
-                      <li>ПГС — промышленное и гражданское строительство (заводы, жилые дома, офисные здания и др.)</li>
-                      <li>Нефтегазовая отрасль — строительство наземных трубопроводов, НПЗ и ГПЗ</li>
-                      <li>Мостостроение — малые искусственные сооружения (эстакады, транспортные переходы)</li>
-                      <li>Энергетика — линейное строительство ЛЭП, подстанции</li>
-                    </ul>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Settings" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Принцип работы копровой мачты МК</h4>
-                    <p className="text-muted-foreground mb-2">Копровая мачта МК KGS представляет собой металлоконструкцию, обеспечивающую:</p>
-                    <ul className="list-disc pl-6 space-y-1 text-muted-foreground mb-4">
-                      <li>перемещение сваи и рабочего оборудования</li>
-                      <li>точное центрирование по оси</li>
-                      <li>наведение сваи на точку погружения</li>
-                    </ul>
-                    <p className="text-muted-foreground mb-3">Крепление мачты осуществляется с помощью специальных устройств (цапф) и раскосов.</p>
-                    <p className="text-muted-foreground mb-2">Копровая установка (гусеничный кран + мачта):</p>
-                    <ol className="list-decimal pl-6 space-y-1 text-muted-foreground">
-                      <li>Поднимает сваю.</li>
-                      <li>Подвозит или подтаскивает её к месту установки.</li>
-                      <li>Устанавливает сваю в проектное положение.</li>
-                      <li>Выполняет погружение сваи в грунт с помощью сваебойного оборудования.</li>
-                      <li>Перемещается к месту установки следующей сваи.</li>
-                    </ol>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                      <Icon name="Joystick" className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-semibold text-primary mb-3">Управление копровой мачтой</h4>
-                    <p className="text-muted-foreground mb-3">
-                      Управление копровой мачтой осуществляется оператором из кабины крана с помощью пульта управления.
-                    </p>
-                    <p className="text-muted-foreground mb-2">
-                      При нажатии кнопок пульта срабатывают электромагнитные клапаны распределителя, открывая необходимые гидролинии:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-1 text-muted-foreground mb-4">
-                      <li>цилиндров коррекции</li>
-                      <li>цилиндра опоры мачты</li>
-                    </ul>
-                    <p className="text-muted-foreground mb-2">
-                      Остальные операции выполняются стандартными органами управления крана:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
-                      <li>главной лебёдкой</li>
-                      <li>вспомогательной лебёдкой</li>
-                      <li>поворотом платформы</li>
-                      <li>ходом крана</li>
-                      <li>подъёмом и опусканием стрелы</li>
-                    </ul>
-                    </div>
+                <div className="lg:order-2">
+                  <div className="aspect-square rounded-lg overflow-hidden bg-white shadow-xl">
+                    <OptimizedImage
+                      src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
+                      alt="Мачты копровые крановые серия МК"
+                      className="w-full h-full object-contain p-6"
+                    />
                   </div>
                 </div>
-              
-              <div className="lg:sticky lg:top-24 h-fit">
-                <div className="aspect-square rounded-lg overflow-hidden bg-white shadow-xl">
-                  <OptimizedImage
-                    src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
-                    alt="Мачты копровые крановые серия МК"
-                    className="w-full h-full object-contain p-6"
-                  />
-                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Области применения</h3>
+                <p className="text-lg text-gray-700 mb-4">Копровая мачта МК применяется для:</p>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+                  <li>забивки железобетонных свай, труб и шпунта</li>
+                  <li>устройства буронабивных свай</li>
+                  <li>лидерного бурения скважин под ж/б сваи</li>
+                </ul>
+                <p className="text-lg text-gray-700 mb-4">Оборудование используется при строительстве фундаментов (нулевой цикл) в следующих отраслях:</p>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li><strong>ПГС</strong> — промышленное и гражданское строительство (заводы, жилые дома, офисные здания и др.)</li>
+                  <li><strong>Нефтегазовая отрасль</strong> — строительство наземных трубопроводов, НПЗ и ГПЗ</li>
+                  <li><strong>Мостостроение</strong> — малые искусственные сооружения (эстакады, транспортные переходы)</li>
+                  <li><strong>Энергетика</strong> — линейное строительство ЛЭП, подстанции</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Принцип работы копровой мачты МК</h3>
+                <p className="text-lg text-gray-700 mb-4">Копровая мачта МК KGS представляет собой металлоконструкцию, обеспечивающую:</p>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+                  <li>перемещение сваи и рабочего оборудования</li>
+                  <li>точное центрирование по оси</li>
+                  <li>наведение сваи на точку погружения</li>
+                </ul>
+                <p className="text-lg text-gray-700 mb-6">Крепление мачты осуществляется с помощью специальных устройств (цапф) и раскосов.</p>
+                <p className="text-lg text-gray-700 mb-4"><strong>Копровая установка (гусеничный кран + мачта):</strong></p>
+                <ol className="list-decimal pl-6 space-y-2 text-lg text-gray-700">
+                  <li>Поднимает сваю.</li>
+                  <li>Подвозит или подтаскивает её к месту установки.</li>
+                  <li>Устанавливает сваю в проектное положение.</li>
+                  <li>Выполняет погружение сваи в грунт с помощью сваебойного оборудования.</li>
+                  <li>Перемещается к месту установки следующей сваи.</li>
+                </ol>
+              </div>
+
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-heading font-bold text-primary mb-6">Управление копровой мачтой</h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  Управление копровой мачтой осуществляется оператором из кабины крана с помощью пульта управления.
+                </p>
+                <p className="text-lg text-gray-700 mb-4">
+                  При нажатии кнопок пульта срабатывают электромагнитные клапаны распределителя, открывая необходимые гидролинии:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+                  <li>цилиндров коррекции</li>
+                  <li>цилиндра опоры мачты</li>
+                </ul>
+                <p className="text-lg text-gray-700 mb-4">
+                  Остальные операции выполняются стандартными органами управления крана:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li>главной лебёдкой</li>
+                  <li>вспомогательной лебёдкой</li>
+                  <li>поворотом платформы</li>
+                  <li>ходом крана</li>
+                  <li>подъёмом и опусканием стрелы</li>
+                </ul>
               </div>
             </div>
           </div>
