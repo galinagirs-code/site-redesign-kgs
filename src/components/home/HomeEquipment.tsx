@@ -8,7 +8,7 @@ const equipment = [
   {
     id: 1,
     title: "Мачты копровые",
-    image: "https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png",
+    image: "https://cdn.poehali.dev/files/4afbaf5b-8523-4c15-a79a-dd073b2720be.png",
     models: [
       "Мачты копровые крановые (серия МК Россия)",
       "Мачты копровые экскаваторные (серия MSX Россия)",
@@ -30,7 +30,7 @@ const equipment = [
   {
     id: 3,
     title: "Сваебойные машины",
-    image: "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
+    image: "https://cdn.poehali.dev/files/dc56ba91-4566-419f-ad64-d9d462fcd770.png",
     models: [
       "Сваебойные установки STARKE (серия LH)",
       "Шагающие сваебойные установки JULI (серия KLB)",
@@ -40,7 +40,7 @@ const equipment = [
   {
     id: 4,
     title: "Буровые машины",
-    image: "https://cdn.poehali.dev/files/f0763622-3011-4803-ae06-6ec6db9aa3ce.png",
+    image: "https://cdn.poehali.dev/files/d6969695-9ea3-4575-ae46-0100d7ffa85f.png",
     models: [
       "Гидравлическая буровая машина JINT (серия SH)",
       "Гидравлическая буровая машина JINT (серия SD)",
@@ -50,7 +50,7 @@ const equipment = [
   {
     id: 5,
     title: "Вибропогружатели крановые",
-    image: "https://cdn.poehali.dev/files/20e2dbf3-1009-4b9d-83ab-9ceac3ef4216.png",
+    image: "https://cdn.poehali.dev/files/de50e8f1-befe-4b9f-947b-27da44f35736.png",
     models: [
       "Вибропогружатели гидравлические крановые Yongan (серия YZ)",
       "Вибропогружатели гидравлические крановые Yongan (серия YZ-VM)",
@@ -60,7 +60,7 @@ const equipment = [
   {
     id: 6,
     title: "Вибропогружатели экскаваторные",
-    image: "https://cdn.poehali.dev/files/50844e20-7f61-4ca9-ae48-a9e319b3c7a9.png",
+    image: "https://cdn.poehali.dev/files/13ba18a0-5a88-4fdd-b4d0-100edce8c335.png",
     models: [
       "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)",
       "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)",
