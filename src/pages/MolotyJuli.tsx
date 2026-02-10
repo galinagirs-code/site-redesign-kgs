@@ -14,7 +14,6 @@ import { useState } from "react";
 
 const MolotyJuli = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [showConsultationForm, setShowConsultationForm] = useState(false);
   const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   const productSchema = {
@@ -256,7 +255,7 @@ const MolotyJuli = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <SEO 
         title="Молоты дизельные штанговые Dongtai Juli (серия DD) | KGS"
         description="Дизельные штанговые молоты Dongtai Juli серии DD для забивки свай. Энергия удара на 70-80% больше российских аналогов. Высокая мощность, низкий расход топлива."
@@ -273,201 +272,323 @@ const MolotyJuli = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="https://cdn.poehali.dev/files/5c1db9e3-d3bc-4fef-9e97-4e9fc1e1f1fc.png" 
-                alt="KGS Logo" 
-                className="h-8 w-auto"
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-12 w-auto"
               />
             </Link>
             
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-white/90 hover:text-white transition-colors">
-                Главная
-              </Link>
-              <Link to="/catalog" className="text-white hover:text-white transition-colors">
-                Оборудование
-              </Link>
-              <Link to="/about" className="text-white/90 hover:text-white transition-colors">
-                О компании
-              </Link>
-              <Link to="/contact" className="text-white/90 hover:text-white transition-colors">
-                Контакты
-              </Link>
+            <nav className="hidden md:flex items-center space-x-6">
+              <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
+              <Link to="/catalog" className="text-accent transition-colors text-sm font-medium">Оборудование</Link>
+              <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
+              <Link to="/services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</Link>
+              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
+              <a href="#" className="text-white/90 hover:text-accent transition-colors text-sm">Новости</a>
+              <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+73432888845" className="text-white hover:text-accent transition-colors">
-                +7 (343) 288-88-45
+            <div className="flex items-center space-x-4">
+              <div className="hidden lg:flex items-center space-x-3">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Send" size={18} />
+                </a>
+                <a href="https://vk.com/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={18} />
+                </a>
+              </div>
+              <a href="tel:+78003006587" className="hidden lg:flex items-center text-white text-sm">
+                <Icon name="Phone" className="mr-2" size={16} />
+                +7 (800) 300-65-87
               </a>
+              <MobileMenu currentPath="/catalog/moloty-juli" />
             </div>
-
-            <MobileMenu />
           </div>
         </div>
       </header>
 
-      <main className="pt-16">
-        <div className="bg-gradient-to-br from-primary via-primary/95 to-secondary py-12">
-          <div className="container mx-auto px-4">
-            <Breadcrumbs 
-              items={[
-                { label: "Главная", href: "/" },
-                { label: "Каталог", href: "/catalog" },
-                { label: "Сваебойные молоты", href: "/catalog/svaebojnye-moloty" },
-                { label: "Молоты дизельные штанговые Dongtai Juli (серия DD)" }
-              ]}
-            />
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-4">
-              Молоты дизельные штанговые Dongtai Juli (серия DD)
+      <Breadcrumbs items={[
+        { label: 'Каталог', path: '/catalog' },
+        { label: 'Сваебойные молоты', path: '/catalog' },
+        { label: 'Молоты дизельные штанговые Dongtai Juli (серия DD)', path: '/catalog/moloty-juli' }
+      ]} />
+
+      <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+        
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-4xl mx-auto">
+            <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
+              Дизельные штанговые молоты
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+              Дизельные штанговые молоты Dongtai Juli серии DD
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl">
-              Дизельные штанговые молоты серии DD для забивки свай различных типов
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed">
+              Энергия удара на 70-80% больше российских аналогов. Высокая мощность и низкий расход топлива
             </p>
           </div>
         </div>
+      </section>
 
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-              <div>
-                <div className="aspect-square rounded-lg overflow-hidden bg-muted mb-4">
-                  <OptimizedImage
-                    src={galleryImages[0]}
-                    alt="Молоты дизельные штанговые Dongtai Juli"
-                    className="w-full h-full object-contain p-8"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-                  Дизельные штанговые молоты
-                </Badge>
-                <h2 className="text-3xl font-bold mb-4">О молотах Dongtai Juli</h2>
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground mb-4">
-                    Дизельный штанговый молот производства Dongtai Juli Machinery Manufacturing Co., LTD (Китай) отличается большой мощностью и стабильным качеством. Серия DD — самая современная продукция, производимая на основе многолетнего опыта и передовых технологий.
-                  </p>
-                  <h3 className="text-xl font-semibold mb-3">Преимущества молотов серии DD:</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start">
-                      <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Энергия удара на 70-80% больше, чем у молотов российского производства с таким же весом ударной части</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Высокая компрессия по сравнению с российскими аналогами</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Высокая мощность и низкий расход топлива</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Большой срок службы</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Хорошая теплоотдача, увеличивающая производительность</span>
-                    </li>
-                  </ul>
-                </div>
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="space-y-8">
+              <div className="aspect-square rounded-lg overflow-hidden bg-white p-8 shadow-lg">
+                <OptimizedImage
+                  src={galleryImages[0]}
+                  alt="Молоты дизельные штанговые Dongtai Juli серии DD"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-center">Модели молотов Dongtai Juli серии DD</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {variants.map((variant) => (
-                  <Card key={variant.name} className="hover:shadow-lg transition-shadow">
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-4 text-primary">{variant.name}</h3>
-                      <div className="space-y-2 mb-4">
-                        {variant.specs.map((spec, idx) => (
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-heading font-bold mb-6 text-primary">
+                  О производителе и оборудовании
+                </h2>
+                <div className="prose prose-lg max-w-none space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed font-medium">
+                    Это свойство достигается благодаря:
+                  </p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start text-muted-foreground">
+                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
+                      <span>Эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
+                    </li>
+                    <li className="flex items-start text-muted-foreground">
+                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
+                      <span>Современной системе подачи топлива</span>
+                    </li>
+                    <li className="flex items-start text-muted-foreground">
+                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
+                      <span>Компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</span>
+                    </li>
+                  </ul>
+                  <p className="text-muted-foreground leading-relaxed font-medium">
+                    По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <div className="bg-muted/30 rounded-lg p-8 md:p-12">
+              <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
+                Преимущества дизельных молотов Dongtai Juli DD
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Zap" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Энергия удара на 70–80% выше</h3>
+                    <p className="text-muted-foreground text-sm">Чем у российских молотов с аналогичной массой ударной части</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Gauge" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Высокая степень компрессии</h3>
+                    <p className="text-muted-foreground text-sm">По сравнению с отечественными аналогами</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Fuel" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Высокая мощность</h3>
+                    <p className="text-muted-foreground text-sm">При низком расходе топлива</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Clock" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Длительный срок службы</h3>
+                    <p className="text-muted-foreground text-sm">Надежная конструкция и качественные материалы</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name="Wind" className="text-accent" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Эффективная теплоотдача</h3>
+                    <p className="text-muted-foreground text-sm">Повышающая общую производительность оборудования</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
+              Модели молотов Dongtai Juli серии DD
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {variants.map((variant) => (
+                <Card key={variant.name} className="hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-2xl font-bold text-primary">{variant.name}</h3>
+                    </div>
+                    
+                    <div className="space-y-3 mb-4">
+                      {variant.specs.map((spec, idx) => (
+                        <div key={idx} className="flex justify-between items-start text-sm border-b border-muted pb-2">
+                          <span className="text-muted-foreground">{spec.label}:</span>
+                          <span className="font-medium text-right">{spec.value}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full group"
+                      onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                    >
+                      {expandedVariant === variant.name ? 'Скрыть' : 'Все характеристики'}
+                      <Icon 
+                        name={expandedVariant === variant.name ? "ChevronUp" : "ChevronDown"} 
+                        className="ml-2 group-hover:translate-y-1 transition-transform" 
+                        size={16} 
+                      />
+                    </Button>
+
+                    {expandedVariant === variant.name && (
+                      <div className="mt-4 pt-4 border-t space-y-2 animate-fade-in">
+                        {variant.detailedSpecs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between text-sm">
                             <span className="text-muted-foreground">{spec.label}:</span>
                             <span className="font-medium">{spec.value}</span>
                           </div>
                         ))}
                       </div>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="w-full"
-                        onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                      >
-                        {expandedVariant === variant.name ? 'Скрыть характеристики' : 'Все характеристики'}
-                        <Icon name={expandedVariant === variant.name ? "ChevronUp" : "ChevronDown"} className="ml-2" size={16} />
-                      </Button>
-                      {expandedVariant === variant.name && (
-                        <div className="mt-4 pt-4 border-t space-y-2">
-                          {variant.detailedSpecs.map((spec, idx) => (
-                            <div key={idx} className="flex justify-between text-sm">
-                              <span className="text-muted-foreground">{spec.label}:</span>
-                              <span className="font-medium">{spec.value}</span>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-muted/30 rounded-lg p-8">
-              <h2 className="text-2xl font-bold mb-6 text-center">Получить консультацию</h2>
-              <p className="text-center text-muted-foreground mb-8">
-                Заполните форму, и наши специалисты помогут подобрать оптимальную модель молота Dongtai Juli для ваших задач
-              </p>
-              <EquipmentForm 
-                equipmentType="Молоты дизельные штанговые Dongtai Juli (DD)"
-                questions={questions}
-              />
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
-        </section>
-      </main>
 
-      <footer className="bg-primary text-white py-12">
+          <div className="mb-16">
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-8 md:p-12">
+              <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
+                Назначение молотов Dongtai Juli DD
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div className="flex items-start space-x-4">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Погружение деревянных и железобетонных свай</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Устройство свайных фундаментов</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Погружение металлических труб</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
+                  <p className="text-muted-foreground">Погружение шпунта Ларсена</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-muted/30 rounded-lg p-8 md:p-12">
+            <h2 className="text-3xl font-heading font-bold mb-6 text-primary text-center">
+              Получить консультацию по выбору молота
+            </h2>
+            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Заполните форму, и наши специалисты помогут подобрать оптимальную модель молота Dongtai Juli для ваших задач
+            </p>
+            <EquipmentForm 
+              categoryTitle="Молоты дизельные штанговые Dongtai Juli (серия DD)"
+              categoryId="moloty-juli"
+              questions={questions}
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-primary text-white py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">О компании</h3>
-              <p className="text-white/80 text-sm">
-                КоперГруппСервис — лидер рынка по поставкам современного оборудования для строительства свайных фундаментов
+              <img 
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-12 w-auto mb-4"
+              />
+              <p className="text-white/70 text-sm">
+                Надёжный поставщик сваебойного оборудования
               </p>
             </div>
+
             <div>
-              <h3 className="font-bold text-lg mb-4">Контакты</h3>
+              <h3 className="font-heading font-bold mb-4 text-accent">Навигация</h3>
+              <nav className="space-y-2">
+                <Link to="/about" className="block text-white/70 hover:text-accent transition-colors text-sm">О компании</Link>
+                <Link to="/catalog" className="block text-white/70 hover:text-accent transition-colors text-sm">Оборудование</Link>
+                <Link to="/parts" className="block text-white/70 hover:text-accent transition-colors text-sm">Запчасти</Link>
+                <Link to="/services" className="block text-white/70 hover:text-accent transition-colors text-sm">Услуги</Link>
+              </nav>
+            </div>
+
+            <div>
+              <h3 className="font-heading font-bold mb-4 text-accent">Контакты</h3>
               <div className="space-y-2 text-sm">
-                <p className="text-white/80">
-                  <Icon name="Phone" className="inline mr-2" size={16} />
-                  +7 (343) 288-88-45
-                </p>
-                <p className="text-white/80">
-                  <Icon name="Mail" className="inline mr-2" size={16} />
+                <a href="tel:+78003006587" className="block text-white/70 hover:text-accent transition-colors">
+                  +7 (800) 300-65-87
+                </a>
+                <a href="mailto:info@kgs-ural.ru" className="block text-white/70 hover:text-accent transition-colors">
                   info@kgs-ural.ru
-                </p>
+                </a>
               </div>
             </div>
+
             <div>
-              <h3 className="font-bold text-lg mb-4">Навигация</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/catalog" className="text-white/80 hover:text-white transition-colors">Каталог</Link></li>
-                <li><Link to="/about" className="text-white/80 hover:text-white transition-colors">О компании</Link></li>
-                <li><Link to="/contact" className="text-white/80 hover:text-white transition-colors">Контакты</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Оборудование</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/catalog/svaebojnye-moloty" className="text-white/80 hover:text-white transition-colors">Сваебойные молоты</Link></li>
-                <li><Link to="/catalog/machty-koprovye" className="text-white/80 hover:text-white transition-colors">Мачты копровые</Link></li>
-              </ul>
+              <h3 className="font-heading font-bold mb-4 text-accent">Мы в соцсетях</h3>
+              <div className="flex space-x-4">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Send" size={24} />
+                </a>
+                <a href="https://vk.com/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={24} />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="border-t border-white/10 pt-8 text-center text-sm text-white/60">
-            <p>&copy; 2024 КоперГруппСервис. Все права защищены.</p>
+
+          <div className="border-t border-white/10 pt-8 text-center">
+            <p className="text-white/50 text-xs md:text-sm">
+              © 2024 ООО «КГС». Все права защищены.
+            </p>
           </div>
         </div>
       </footer>

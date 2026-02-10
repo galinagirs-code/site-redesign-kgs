@@ -17,18 +17,6 @@ const equipment = [
   },
   {
     id: 2,
-    title: "Сваебойные молоты",
-    image: "https://cdn.poehali.dev/files/fcde3461-5a8e-4e03-95e8-6be812d06a47.jpg",
-    models: [
-      "Молоты гидравлические DongHao (серия DYH)",
-      "Молоты дизельные трубчатые STARKE (серия HD)",
-      "Молоты дизельные трубчатые SEMW (серия D)",
-      "Молоты дизельные штанговые Dongtai Juli (серия DD)",
-      "Свайные наголовники"
-    ]
-  },
-  {
-    id: 3,
     title: "Сваебойные машины",
     image: "https://cdn.poehali.dev/files/dc56ba91-4566-419f-ad64-d9d462fcd770.png",
     models: [
@@ -38,13 +26,25 @@ const equipment = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     title: "Буровые машины",
     image: "https://cdn.poehali.dev/files/d6969695-9ea3-4575-ae46-0100d7ffa85f.png",
     models: [
       "Гидравлическая буровая машина JINT (серия SH)",
       "Гидравлическая буровая машина JINT (серия SD)",
       "Горизонтальная буровая машина JULI (серия JL)"
+    ]
+  },
+  {
+    id: 4,
+    title: "Сваебойные молоты",
+    image: "https://cdn.poehali.dev/files/fcde3461-5a8e-4e03-95e8-6be812d06a47.jpg",
+    models: [
+      "Молоты гидравлические DongHao (серия DYH)",
+      "Молоты дизельные трубчатые STARKE (серия HD)",
+      "Молоты дизельные трубчатые SEMW (серия D)",
+      "Молоты дизельные штанговые Dongtai Juli (серия DD)",
+      "Свайные наголовники"
     ]
   },
   {
