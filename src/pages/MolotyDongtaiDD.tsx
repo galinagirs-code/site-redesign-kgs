@@ -444,12 +444,12 @@ const MolotyDongtaiDD = () => {
 
       <section className="py-8 md:py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl bg-white">
               <OptimizedImage 
                 src="https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
                 alt="Молоты дизельные штанговые Dongtai Juli серия DD"
-                className="w-full h-auto"
+                className="w-full h-full object-contain p-8"
               />
             </div>
           </div>
