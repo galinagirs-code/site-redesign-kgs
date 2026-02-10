@@ -898,7 +898,10 @@ const Catalog = () => {
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {categories.map((category) => (
+            {(() => {
+              const order = ["masts", "pile-machines", "drilling", "pile-hammers", "vibro-crane", "vibro-excavator", "pile-pressing", "cutters", "jacks"];
+              return [...categories].sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+            })().map((category) => (
               <Card key={category.id} className="overflow-hidden h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white shadow-md">
                 <div className="relative aspect-square overflow-hidden bg-white">
                   <ImageWithWatermark
