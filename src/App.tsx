@@ -20,9 +20,10 @@ import VibropogruzateliKranovye from "./pages/VibropogruzateliKranovye";
 import VibropogruzateliEkskavatornye from "./pages/VibropogruzateliEkskavatornye";
 import Svaeskusyvateli from "./pages/Svaeskusyvateli";
 import Domkraty from "./pages/Domkraty";
-import MolotyYonganYC from "./pages/MolotyYonganYC";
+import MolotyDongHao from "./pages/MolotyDongHao";
 import MolotyStarkeHD from "./pages/MolotyStarkeHD";
-import MolotyDongtaiDD from "./pages/MolotyDongtaiDD";
+import MolotySEMW from "./pages/MolotySEMW";
+import MolotyJuli from "./pages/MolotyJuli";
 import SvajnyeNagolovniki from "./pages/SvajnyeNagolovniki";
 import StarkeLH from "./pages/StarkeLH";
 import JuliKLB from "./pages/JuliKLB";
@@ -68,9 +69,10 @@ const App = () => (
           <Route path="/catalog/vibropogružateli-ekskavatornye" element={<VibropogruzateliEkskavatornye />} />
           <Route path="/catalog/svaeskusyvateli" element={<Svaeskusyvateli />} />
           <Route path="/catalog/domkraty" element={<Domkraty />} />
-          <Route path="/catalog/moloty-yongan-yc" element={<MolotyYonganYC />} />
+          <Route path="/catalog/moloty-donghao" element={<MolotyDongHao />} />
           <Route path="/catalog/moloty-starke-hd" element={<MolotyStarkeHD />} />
-          <Route path="/catalog/moloty-dongtai-dd" element={<MolotyDongtaiDD />} />
+          <Route path="/catalog/moloty-semw" element={<MolotySEMW />} />
+          <Route path="/catalog/moloty-juli" element={<MolotyJuli />} />
           <Route path="/catalog/svajnye-nagolovniki" element={<SvajnyeNagolovniki />} />
           <Route path="/catalog/starke-lh" element={<StarkeLH />} />
           <Route path="/catalog/juli-klb" element={<JuliKLB />} />

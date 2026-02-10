@@ -919,10 +919,11 @@ const Catalog = () => {
                           0: "/catalog/machty-koprovye"
                         },
                         "pile-hammers": {
-                          0: "/catalog/moloty-yongan-yc",
+                          0: "/catalog/moloty-donghao",
                           1: "/catalog/moloty-starke-hd",
-                          2: "/catalog/moloty-dongtai-dd",
-                          3: "/catalog/svajnye-nagolovniki"
+                          2: "/catalog/moloty-semw",
+                          3: "/catalog/moloty-juli",
+                          4: "/catalog/svajnye-nagolovniki"
                         },
                         "pile-machines": {
                           0: "/catalog/starke-lh",
