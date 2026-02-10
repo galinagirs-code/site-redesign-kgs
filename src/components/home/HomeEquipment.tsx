@@ -18,7 +18,7 @@ const equipment = [
   {
     id: 2,
     title: "Сваебойные молоты",
-    image: "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
+    image: "https://cdn.poehali.dev/files/fcde3461-5a8e-4e03-95e8-6be812d06a47.jpg",
     models: [
       "Молоты гидравлические DongHao",
       "Молоты дизельные трубчатые STARKE",
