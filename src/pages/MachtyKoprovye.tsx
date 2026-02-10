@@ -231,8 +231,11 @@ const MachtyKoprovye = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Мачты копровые крановые
+              Серия МК
             </Badge>
+            <h2 className="text-2xl md:text-3xl font-heading font-semibold text-white/90 mb-3">
+              Мачты копровые крановые
+            </h2>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Мачты копровые крановые (серия МК)
             </h1>
@@ -340,13 +343,12 @@ const MachtyKoprovye = () => {
 
       <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Копровая мачта МК KGS</h2>
             
-            {/* Блоки с информацией */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                  <Card className="p-6 hover:shadow-xl transition-shadow">
-                    <div className="flex items-start space-x-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+              <div className="space-y-8">
+                  <div className="flex items-start space-x-4">
                     <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
                       <Icon name="Target" className="text-accent" size={24} />
                     </div>
@@ -491,16 +493,13 @@ const MachtyKoprovye = () => {
                   </div>
                 </div>
               
-              {/* Фото в центре */}
-              <div className="my-12">
-                <div className="max-w-4xl mx-auto">
-                  <div className="relative rounded-2xl overflow-hidden bg-white shadow-2xl">
-                    <OptimizedImage
-                      src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
-                      alt="Мачты копровые крановые серия МК"
-                      className="w-full h-full object-contain p-8"
-                    />
-                  </div>
+              <div className="lg:sticky lg:top-24 h-fit">
+                <div className="aspect-square rounded-lg overflow-hidden bg-white shadow-xl">
+                  <OptimizedImage
+                    src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
+                    alt="Мачты копровые крановые серия МК"
+                    className="w-full h-full object-contain p-6"
+                  />
                 </div>
               </div>
             </div>
