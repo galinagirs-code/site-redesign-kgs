@@ -290,8 +290,8 @@ const MachtyKoprovye = () => {
                 </div>
               </div>
 
-              <div className="lg:sticky lg:top-24">
-                <div className="aspect-square rounded-lg overflow-hidden bg-gray-50 shadow-xl">
+              <div className="flex items-center justify-center">
+                <div className="aspect-square rounded-lg overflow-hidden bg-gray-50 shadow-xl max-w-md">
                   <OptimizedImage
                     src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
                     alt="Мачты копровые крановые серия МК"
@@ -327,9 +327,9 @@ const MachtyKoprovye = () => {
                       
                       <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
-                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-base text-gray-700">{spec.label}</span>
-                            <span className="text-base font-semibold text-gray-900">{spec.value}</span>
+                          <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-base text-gray-700 flex-1">{spec.label}</span>
+                            <span className="text-base font-semibold text-gray-900 text-right ml-4">{spec.value}</span>
                           </div>
                         ))}
                         
@@ -389,6 +389,7 @@ const MachtyKoprovye = () => {
       <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Общая информация</h2>
             <div className="space-y-12">
               <div className="bg-white rounded-lg p-8 shadow-lg">
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">Назначение и возможности</h3>

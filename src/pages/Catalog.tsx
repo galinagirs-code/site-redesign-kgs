@@ -987,17 +987,6 @@ const Catalog = () => {
                     })}
                   </ul>
                   
-                  {category.description && (
-                    <Button
-                      variant="outline"
-                      className="w-full mb-4"
-                      onClick={() => setSelectedCategory(category)}
-                    >
-                      <Icon name="Info" size={16} className="mr-2" />
-                      Подробнее об оборудовании
-                    </Button>
-                  )}
-                  
                   <EquipmentForm 
                     categoryTitle={category.title}
                     categoryId={category.id}
