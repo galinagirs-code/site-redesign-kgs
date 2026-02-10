@@ -15,6 +15,7 @@ import { useState } from "react";
 const MolotyStarkeHD = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showConsultationForm, setShowConsultationForm] = useState(false);
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -37,6 +38,162 @@ const MolotyStarkeHD = () => {
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
     "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+  ];
+
+  const variants = [
+    {
+      name: "HD-19",
+      specs: [
+        { label: "Масса ударной части", value: "1,9 т" },
+        { label: "Энергия удара", value: "40 кДж" },
+        { label: "Частота ударов", value: "40–55 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "1,9" },
+        { label: "Энергия удара, кДж", value: "40" },
+        { label: "Частота ударов, уд/мин", value: "40–55" },
+        { label: "Расход топлива, л/час", value: "5–7" },
+        { label: "Вес молота, кг", value: "3800" },
+        { label: "Длина молота, мм", value: "4200" },
+        { label: "Диаметр цилиндра, мм", value: "400" }
+      ]
+    },
+    {
+      name: "HD-25",
+      specs: [
+        { label: "Масса ударной части", value: "2,5 т" },
+        { label: "Энергия удара", value: "52 кДж" },
+        { label: "Частота ударов", value: "40–50 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "2,5" },
+        { label: "Энергия удара, кДж", value: "52" },
+        { label: "Частота ударов, уд/мин", value: "40–50" },
+        { label: "Расход топлива, л/час", value: "7–9" },
+        { label: "Вес молота, кг", value: "4900" },
+        { label: "Длина молота, мм", value: "4600" },
+        { label: "Диаметр цилиндра, мм", value: "450" }
+      ]
+    },
+    {
+      name: "HD-30",
+      specs: [
+        { label: "Масса ударной части", value: "3,0 т" },
+        { label: "Энергия удара", value: "65 кДж" },
+        { label: "Частота ударов", value: "35–50 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "3,0" },
+        { label: "Энергия удара, кДж", value: "65" },
+        { label: "Частота ударов, уд/мин", value: "35–50" },
+        { label: "Расход топлива, л/час", value: "8–11" },
+        { label: "Вес молота, кг", value: "5700" },
+        { label: "Длина молота, мм", value: "4900" },
+        { label: "Диаметр цилиндра, мм", value: "500" }
+      ]
+    },
+    {
+      name: "HD-40",
+      specs: [
+        { label: "Масса ударной части", value: "4,0 т" },
+        { label: "Энергия удара", value: "88 кДж" },
+        { label: "Частота ударов", value: "35–50 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "4,0" },
+        { label: "Энергия удара, кДж", value: "88" },
+        { label: "Частота ударов, уд/мин", value: "35–50" },
+        { label: "Расход топлива, л/час", value: "10–13" },
+        { label: "Вес молота, кг", value: "7200" },
+        { label: "Длина молота, мм", value: "5300" },
+        { label: "Диаметр цилиндра, мм", value: "550" }
+      ]
+    },
+    {
+      name: "HD-50",
+      specs: [
+        { label: "Масса ударной части", value: "5,0 т" },
+        { label: "Энергия удара", value: "110 кДж" },
+        { label: "Частота ударов", value: "30–45 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "5,0" },
+        { label: "Энергия удара, кДж", value: "110" },
+        { label: "Частота ударов, уд/мин", value: "30–45" },
+        { label: "Расход топлива, л/час", value: "12–15" },
+        { label: "Вес молота, кг", value: "8800" },
+        { label: "Длина молота, мм", value: "5700" },
+        { label: "Диаметр цилиндра, мм", value: "600" }
+      ]
+    },
+    {
+      name: "HD-60",
+      specs: [
+        { label: "Масса ударной части", value: "6,0 т" },
+        { label: "Энергия удара", value: "135 кДж" },
+        { label: "Частота ударов", value: "30–45 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "6,0" },
+        { label: "Энергия удара, кДж", value: "135" },
+        { label: "Частота ударов, уд/мин", value: "30–45" },
+        { label: "Расход топлива, л/час", value: "14–17" },
+        { label: "Вес молота, кг", value: "10500" },
+        { label: "Длина молота, мм", value: "6100" },
+        { label: "Диаметр цилиндра, мм", value: "650" }
+      ]
+    },
+    {
+      name: "HD-80",
+      specs: [
+        { label: "Масса ударной части", value: "8,0 т" },
+        { label: "Энергия удара", value: "180 кДж" },
+        { label: "Частота ударов", value: "28–42 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "8,0" },
+        { label: "Энергия удара, кДж", value: "180" },
+        { label: "Частота ударов, уд/мин", value: "28–42" },
+        { label: "Расход топлива, л/час", value: "16–20" },
+        { label: "Вес молота, кг", value: "13800" },
+        { label: "Длина молота, мм", value: "6800" },
+        { label: "Диаметр цилиндра, мм", value: "720" }
+      ]
+    },
+    {
+      name: "HD-100",
+      specs: [
+        { label: "Масса ударной части", value: "10 т" },
+        { label: "Энергия удара", value: "225 кДж" },
+        { label: "Частота ударов", value: "25–40 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "10" },
+        { label: "Энергия удара, кДж", value: "225" },
+        { label: "Частота ударов, уд/мин", value: "25–40" },
+        { label: "Расход топлива, л/час", value: "18–23" },
+        { label: "Вес молота, кг", value: "17000" },
+        { label: "Длина молота, мм", value: "7400" },
+        { label: "Диаметр цилиндра, мм", value: "800" }
+      ]
+    },
+    {
+      name: "HD-120",
+      specs: [
+        { label: "Масса ударной части", value: "12 т" },
+        { label: "Энергия удара", value: "270 кДж" },
+        { label: "Частота ударов", value: "25–38 уд/мин" }
+      ],
+      detailedSpecs: [
+        { label: "Масса ударной части, т", value: "12" },
+        { label: "Энергия удара, кДж", value: "270" },
+        { label: "Частота ударов, уд/мин", value: "25–38" },
+        { label: "Расход топлива, л/час", value: "20–25" },
+        { label: "Вес молота, кг", value: "20000" },
+        { label: "Длина молота, мм", value: "8000" },
+        { label: "Диаметр цилиндра, мм", value: "880" }
+      ]
+    }
   ];
 
   const questions = [
@@ -84,11 +241,11 @@ const MolotyStarkeHD = () => {
     <div className="min-h-screen">
       <SEO 
         title="Молоты дизельные трубчатые Starke (серия HD) | KGS"
-        description="Дизельные трубчатые молоты Starke серии HD. Энергия удара на 30-50% больше штанговых аналогов. Регулировка силы удара без остановки молота."
-        keywords="дизельные молоты, молоты Starke, серия HD, трубчатые молоты, сваебойные молоты, забивка свай"
+        description="Дизельные трубчатые молоты Starke серии HD. Энергия удара на 30-50% больше штанговых молотов. Регулировка силы удара в процессе работы без остановки."
+        keywords="дизельные молоты, молоты Starke, серия HD, трубчатые молоты, забивка свай, сваебойное оборудование"
         canonical="https://kgs-ural.ru/catalog/moloty-starke-hd"
-        ogTitle="Молоты дизельные трубчатые Starke (серия HD) - мощное оборудование для свайных работ"
-        ogDescription="Дизельные трубчатые молоты Starke HD. Оптимальное соотношение массы и силы удара, экономия топлива, простая система охлаждения."
+        ogTitle="Молоты дизельные трубчатые Starke (серия HD) - мощное оборудование для забивки свай"
+        ogDescription="Дизельные трубчатые молоты Starke HD с высокой энергией удара и экономичным расходом топлива. Оптимальное соотношение цены и качества."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
@@ -97,236 +254,339 @@ const MolotyStarkeHD = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="https://cdn.poehali.dev/files/e28d33a0-39b3-47ca-8f8d-54ccfc65a97b.svg"
-                alt="КоперГруппСервис"
-                className="h-8 w-auto"
-              />
+              <img src="https://cdn.poehali.dev/files/4a8cdfcd-d84b-4bda-b7ca-c8ca1ab6a835.svg" alt="KGS" className="h-8" />
             </Link>
             
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/catalog" className="text-white/90 hover:text-white transition-colors">
-                Каталог
-              </Link>
-              <Link to="/services" className="text-white/90 hover:text-white transition-colors">
-                Услуги
-              </Link>
-              <Link to="/about" className="text-white/90 hover:text-white transition-colors">
-                О компании
-              </Link>
-              <Link to="/contacts" className="text-white/90 hover:text-white transition-colors">
-                Контакты
-              </Link>
+            <nav className="hidden lg:flex items-center space-x-8">
+              <Link to="/" className="text-white/80 hover:text-accent transition-colors">Главная</Link>
+              <Link to="/catalog" className="text-white hover:text-accent transition-colors">Оборудование</Link>
+              <Link to="/services" className="text-white/80 hover:text-accent transition-colors">Услуги</Link>
+              <Link to="/production" className="text-white/80 hover:text-accent transition-colors">Производство</Link>
+              <Link to="/about" className="text-white/80 hover:text-accent transition-colors">О компании</Link>
+              <Link to="/contact" className="text-white/80 hover:text-accent transition-colors">Контакты</Link>
             </nav>
-
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+73432888499" className="text-white/90 hover:text-white transition-colors">
-                +7 343 288-84-99
+            
+            <div className="flex items-center space-x-4">
+              <div className="hidden lg:flex items-center space-x-3">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Send" size={18} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={18} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
+                </a>
+              </div>
+              <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
+                8 (800) 600-74-65
               </a>
+              <Button size="sm" className="btn-gradient text-white hidden md:block">
+                Заказать звонок
+              </Button>
+              <MobileMenu currentPath="/catalog/moloty-starke-hd" />
             </div>
-
-            <MobileMenu />
           </div>
         </div>
       </header>
 
-      <main className="pt-16">
-        <div className="container mx-auto px-4 py-8">
-          <Breadcrumbs 
-            items={[
-              { label: "Главная", href: "/" },
-              { label: "Каталог", href: "/catalog" },
-              { label: "Сваебойные молоты", href: "/catalog#pile-hammers" },
-              { label: "Молоты дизельные трубчатые Starke (серия HD)" }
-            ]}
-          />
+      <Breadcrumbs items={[
+        { label: 'Оборудование', path: '/catalog' },
+        { label: 'Молоты дизельные трубчатые Starke серия HD', path: '/catalog/moloty-starke-hd' }
+      ]} />
 
-          <div className="grid lg:grid-cols-2 gap-8 mt-8">
-            <div>
-              <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 mb-4">
-                <OptimizedImage
-                  src={selectedImage || galleryImages[0]}
-                  alt="Молоты дизельные трубчатые Starke (серия HD)"
-                  className="w-full h-full object-contain"
-                />
-              </div>
+      <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+        
+        <div className="container mx-auto px-4 relative">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
+              Серия HD
+            </Badge>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
+              Молоты дизельные трубчатые Starke (серия HD)
+            </h1>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Варианты дизельных трубчатых молотов HD
+              </a>
+              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
+              </a>
+              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Фотогалерея
+              </a>
+              <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 md:py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <OptimizedImage 
+                src="https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+                alt="Молоты дизельные трубчатые Starke серия HD"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="variants" className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="animate-fade-in">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+                Варианты дизельных трубчатых молотов серии HD
+              </h2>
               
-              <div className="grid grid-cols-4 gap-4">
-                {galleryImages.map((image, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSelectedImage(image)}
-                    className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                      selectedImage === image || (!selectedImage && index === 0)
-                        ? 'border-primary'
-                        : 'border-gray-200 hover:border-gray-300'
-                    }`}
-                  >
-                    <OptimizedImage
-                      src={image}
-                      alt={`Вид ${index + 1}`}
-                      className="w-full h-full object-contain"
-                    />
-                  </button>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                {variants.map((variant, index) => (
+                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-xl font-heading font-bold text-primary">
+                          {variant.name}
+                        </h3>
+                      </div>
+                      
+                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                        {variant.specs.map((spec, idx) => (
+                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-gray-700">{spec.label}</span>
+                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                          </div>
+                        ))}
+                        
+                        {expandedVariant === variant.name && (
+                          <>
+                            {variant.detailedSpecs.map((spec, idx) => (
+                              <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                                <span className="text-sm text-gray-700">{spec.label}</span>
+                                <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                              </div>
+                            ))}
+                          </>
+                        )}
+                      </div>
+
+                      <div className="flex flex-col gap-2 mt-4">
+                        <Button 
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                          className="w-full"
+                        >
+                          {expandedVariant === variant.name ? (
+                            <>
+                              <Icon name="ChevronUp" size={16} className="mr-2" />
+                              Скрыть характеристики
+                            </>
+                          ) : (
+                            <>
+                              <Icon name="ChevronDown" size={16} className="mr-2" />
+                              Подробнее
+                            </>
+                          )}
+                        </Button>
+                        <a href="#consultation" className="block">
+                          <Button className="btn-gradient text-white w-full" size="sm">
+                            <Icon name="MessageSquare" size={16} className="mr-2" />
+                            Получить консультацию
+                          </Button>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div>
-              <Badge className="mb-4">Сваебойные молоты</Badge>
-              <h1 className="text-3xl font-bold mb-4">Молоты дизельные трубчатые Starke (серия HD)</h1>
-              
-              <div className="prose max-w-none mb-6">
-                <h2 className="text-xl font-semibold mb-3">Дизельные трубчатые молоты Starke (серия HD)</h2>
-                <p className="text-gray-600 mb-4">
-                  Дизельные трубчатые молоты для забивки свай работают по принципу дизельного двигателя, обеспечивая непрерывную высокоэффективную работу. Используется независимая технология принудительной смазки насоса, значительно увеличивающая срок службы.
-                </p>
-                <p className="text-gray-600 mb-4">
-                  Применение: установка железобетонных свай, свай из стальных труб, прямых и морских свай, наклонных свай.
-                </p>
+      <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <Card className="border-none shadow-xl mb-12 animate-fade-in">
+              <CardContent className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">Дизельные трубчатые молоты Starke серии HD</h2>
+                
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-primary mb-4">Принцип работы</h3>
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      Дизельные трубчатые молоты для забивки свай работают по принципу дизельного двигателя, обеспечивая непрерывную высокоэффективную работу. Используется независимая технология принудительной смазки насоса, значительно увеличивающая срок службы оборудования.
+                    </p>
+                    <p className="text-lg leading-relaxed text-muted-foreground mt-4">
+                      Применение: установка железобетонных свай, свай из стальных труб, прямых и морских свай, наклонных свай.
+                    </p>
+                  </div>
 
-                <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества молотов Starke HD</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Энергия удара на 30-50% больше, чем у штанговых молотов с аналогичными параметрами</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Оптимальное соотношение массы ударной части и силы удара — экономия топлива</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Регулировка силы удара в процессе работы без остановки молота</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Простая система воздушного охлаждения</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Ниже стоимость по сравнению с гидравлическими молотами</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Прочность, надежность, простота в эксплуатации и обслуживании</span>
-                  </li>
-                </ul>
-              </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Преимущества молотов Starke HD</h4>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li className="leading-relaxed">Энергия удара на 30-50% больше, чем у штанговых молотов с аналогичными параметрами</li>
+                      <li className="leading-relaxed">Оптимальное соотношение массы ударной части и силы удара — экономия топлива</li>
+                      <li className="leading-relaxed">Регулировка силы удара в процессе работы без остановки молота</li>
+                      <li className="leading-relaxed">Простая система воздушного охлаждения</li>
+                      <li className="leading-relaxed">Ниже стоимость по сравнению с гидравлическими молотами</li>
+                      <li className="leading-relaxed">Прочность, надежность, простота в эксплуатации и обслуживании</li>
+                      <li className="leading-relaxed">Длительный срок службы благодаря принудительной смазке</li>
+                    </ul>
+                  </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="flex-1"
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Starke HD</h4>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li className="leading-relaxed">Погружение железобетонных свай</li>
+                      <li className="leading-relaxed">Устройство свайных фундаментов из стальных труб</li>
+                      <li className="leading-relaxed">Забивка прямых свай</li>
+                      <li className="leading-relaxed">Установка морских свай</li>
+                      <li className="leading-relaxed">Погружение наклонных свай</li>
+                      <li className="leading-relaxed">Погружение шпунта Ларсена</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+              Фотогалерея
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="relative group cursor-pointer rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02]"
+                  onClick={() => setSelectedImage(image)}
+                >
+                  <OptimizedImage 
+                    src={image}
+                    alt={`Молоты дизельные трубчатые Starke HD - фото ${index + 1}`}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300 flex items-center justify-center">
+                    <Icon name="ZoomIn" className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={48} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 animate-fade-in"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-7xl max-h-[90vh]">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute -top-12 right-0 text-white hover:text-accent"
+              onClick={() => setSelectedImage(null)}
+            >
+              <Icon name="X" size={32} />
+            </Button>
+            <img
+              src={selectedImage}
+              alt="Увеличенное изображение"
+              className="max-w-full max-h-[85vh] object-contain rounded-lg"
+            />
+          </div>
+        </div>
+      )}
+
+      <section id="consultation" className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in">
+              <Badge className="mb-4 bg-accent/10 text-accent border-accent/30">
+                Консультация специалиста
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Подбор дизельного трубчатого молота Starke
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Заполните форму, и наш специалист поможет подобрать оптимальную модель молота для ваших задач
+              </p>
+            </div>
+
+            {!showConsultationForm ? (
+              <div className="text-center">
+                <Button
+                  size="lg"
+                  className="btn-gradient text-white text-lg px-8 py-6"
                   onClick={() => setShowConsultationForm(true)}
                 >
+                  <Icon name="MessageSquare" size={24} className="mr-3" />
                   Получить консультацию
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="flex-1"
-                  asChild
-                >
-                  <a href="tel:+73432888499">
-                    <Icon name="phone" className="w-5 h-5 mr-2" />
-                    Позвонить
-                  </a>
-                </Button>
+              </div>
+            ) : (
+              <Card className="border-none shadow-2xl animate-fade-in">
+                <CardContent className="p-8">
+                  <EquipmentForm 
+                    equipmentType="Молоты дизельные трубчатые Starke (серия HD)"
+                    questions={questions}
+                    onClose={() => setShowConsultationForm(false)}
+                  />
+                </CardContent>
+              </Card>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-primary text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">КоперГруппСервис</h3>
+              <p className="text-white/80">Производство и поставка сваебойного оборудования</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Контакты</h4>
+              <div className="space-y-2 text-white/80">
+                <p>Телефон: 8 (800) 600-74-65</p>
+                <p>Email: info@kgs-ural.ru</p>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Мы в соцсетях</h4>
+              <div className="flex space-x-4">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Send" size={24} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={24} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={24} />
+                </a>
               </div>
             </div>
           </div>
-
-          <Card className="mt-12">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">Получить консультацию</h2>
-              <EquipmentForm 
-                equipmentType="Молоты дизельные трубчатые Starke (серия HD)"
-                questions={questions}
-              />
-            </CardContent>
-          </Card>
-        </div>
-      </main>
-
-      <footer className="bg-gray-900 text-white py-12 mt-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <img 
-                src="https://cdn.poehali.dev/files/e28d33a0-39b3-47ca-8f8d-54ccfc65a97b.svg"
-                alt="КоперГруппСервис"
-                className="h-8 w-auto mb-4"
-              />
-              <p className="text-gray-400 text-sm">
-                Поставка свайного оборудования и спецтехники
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Навигация</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/catalog" className="text-gray-400 hover:text-white transition-colors">Каталог</Link></li>
-                <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Услуги</Link></li>
-                <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">О компании</Link></li>
-                <li><Link to="/contacts" className="text-gray-400 hover:text-white transition-colors">Контакты</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Контакты</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <a href="tel:+73432888499" className="hover:text-white transition-colors">
-                    +7 343 288-84-99
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:kgs@kgs-ural.ru" className="hover:text-white transition-colors">
-                    kgs@kgs-ural.ru
-                  </a>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Юридическая информация</h3>
-              <p className="text-sm text-gray-400">
-                ООО "КоперГруппСервис"<br />
-                ИНН: 6686113105<br />
-                ОГРН: 1196658042503
-              </p>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
-            © 2024 КоперГруппСервис. Все права защищены.
+          <div className="border-t border-white/10 pt-8 text-center text-white/60">
+            <p>&copy; {new Date().getFullYear()} КоперГруппСервис. Все права защищены.</p>
           </div>
         </div>
       </footer>
-
-      {showConsultationForm && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <Card className="w-full max-w-2xl max-h-[90vh] overflow-y-auto">
-            <CardContent className="p-8">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold">Получить консультацию</h2>
-                <button 
-                  onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
-                >
-                  <Icon name="x" className="w-6 h-6" />
-                </button>
-              </div>
-              <EquipmentForm 
-                equipmentType="Молоты дизельные трубчатые Starke (серия HD)"
-                questions={questions}
-                onSuccess={() => setShowConsultationForm(false)}
-              />
-            </CardContent>
-          </Card>
-        </div>
-      )}
     </div>
   );
 };
