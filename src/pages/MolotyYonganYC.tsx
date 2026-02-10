@@ -3,16 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { EquipmentForm } from "@/components/EquipmentForm";
-import { EquipmentHeader } from "@/components/equipment/EquipmentHeader";
-import { EquipmentVariantsSection } from "@/components/equipment/EquipmentVariantsSection";
-import { EquipmentGallerySection } from "@/components/equipment/EquipmentGallerySection";
-import { EquipmentFooter } from "@/components/equipment/EquipmentFooter";
 import { useState } from "react";
 
 const MolotyYonganYC = () => {
