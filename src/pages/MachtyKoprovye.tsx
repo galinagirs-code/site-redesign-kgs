@@ -254,6 +254,20 @@ const MachtyKoprovye = () => {
         </div>
       </section>
 
+      <section className="py-8 md:py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <OptimizedImage 
+                src="https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
+                alt="Мачты копровые крановые серия МК"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="variants" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
