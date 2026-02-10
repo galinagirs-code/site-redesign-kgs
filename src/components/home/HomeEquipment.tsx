@@ -71,7 +71,7 @@ const equipment = [
   {
     id: 7,
     title: "Сваевдавливающие установки",
-    image: "https://cdn.poehali.dev/files/876e67f7-de30-453a-ae1b-6d5bbb60e863.png",
+    image: "https://cdn.poehali.dev/files/8274ba00-30ca-4dfc-9bbb-8ecdaf684819.png",
     models: [
       "Сваевдавливающая установка JULI (серия YZS)"
     ]
@@ -79,7 +79,7 @@ const equipment = [
   {
     id: 8,
     title: "Сваескусыватели",
-    image: "https://cdn.poehali.dev/files/80fab017-44fa-4d20-8ea0-2a2996b71c1f.png",
+    image: "https://cdn.poehali.dev/files/c2c6ca8b-f3f3-4575-b4d8-70ed1fa7605c.png",
     models: [
       "Сваескусыватели для круглых свай",
       "Сваескусыватели для квадратных свай"
@@ -88,7 +88,7 @@ const equipment = [
   {
     id: 9,
     title: "Домкраты",
-    image: "https://cdn.poehali.dev/files/5cf49725-e360-435c-8968-e7a658e38518.png",
+    image: "https://cdn.poehali.dev/files/ab3f1f78-2a63-452b-a488-858a9da00782.png",
     models: [
       "Домкраты для извлечения свай"
     ]

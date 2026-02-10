@@ -20,8 +20,8 @@ const MolotyJuli = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Молоты дизельные штанговые JULI",
-    "description": "Дизельные штанговые молоты JULI серии DD. Энергия удара на 70-80% больше российских аналогов. Высокая мощность и низкий расход топлива.",
+    "name": "Молоты дизельные штанговые Dongtai Juli (серия DD)",
+    "description": "Дизельные штанговые молоты Dongtai Juli серии DD. Энергия удара на 70-80% больше российских аналогов. Высокая мощность и низкий расход топлива.",
     "brand": {
       "@type": "Brand",
       "name": "Dongtai Juli"
@@ -258,12 +258,12 @@ const MolotyJuli = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="Молоты дизельные штанговые JULI | KGS"
-        description="Дизельные штанговые молоты JULI серии DD для забивки свай. Энергия удара на 70-80% больше российских аналогов. Высокая мощность, низкий расход топлива."
-        keywords="молоты juli, дизельные штанговые молоты, молот dd, молот для свай juli"
+        title="Молоты дизельные штанговые Dongtai Juli (серия DD) | KGS"
+        description="Дизельные штанговые молоты Dongtai Juli серии DD для забивки свай. Энергия удара на 70-80% больше российских аналогов. Высокая мощность, низкий расход топлива."
+        keywords="молоты juli, дизельные штанговые молоты, молот dd, молот для свай juli, dongtai juli"
         canonical="https://kgs-ural.ru/catalog/moloty-juli"
-        ogTitle="Молоты дизельные штанговые JULI - мощное оборудование для забивки свай"
-        ogDescription="Дизельные штанговые молоты JULI с энергией удара на 70-80% больше российских аналогов."
+        ogTitle="Молоты дизельные штанговые Dongtai Juli (DD) - мощное оборудование"
+        ogDescription="Дизельные штанговые молоты Dongtai Juli с энергией удара на 70-80% больше российских аналогов."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
@@ -313,11 +313,11 @@ const MolotyJuli = () => {
                 { label: "Главная", href: "/" },
                 { label: "Каталог", href: "/catalog" },
                 { label: "Сваебойные молоты", href: "/catalog/svaebojnye-moloty" },
-                { label: "Молоты дизельные штанговые JULI" }
+                { label: "Молоты дизельные штанговые Dongtai Juli (серия DD)" }
               ]}
             />
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-4">
-              Молоты дизельные штанговые JULI
+              Молоты дизельные штанговые Dongtai Juli (серия DD)
             </h1>
             <p className="text-xl text-white/90 max-w-3xl">
               Дизельные штанговые молоты серии DD для забивки свай различных типов
@@ -332,7 +332,7 @@ const MolotyJuli = () => {
                 <div className="aspect-square rounded-lg overflow-hidden bg-muted mb-4">
                   <OptimizedImage
                     src={galleryImages[0]}
-                    alt="Молоты дизельные штанговые JULI"
+                    alt="Молоты дизельные штанговые Dongtai Juli"
                     className="w-full h-full object-contain p-8"
                   />
                 </div>
@@ -342,12 +342,12 @@ const MolotyJuli = () => {
                 <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
                   Дизельные штанговые молоты
                 </Badge>
-                <h2 className="text-3xl font-bold mb-4">О молотах JULI</h2>
+                <h2 className="text-3xl font-bold mb-4">О молотах Dongtai Juli</h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground mb-4">
                     Дизельный штанговый молот производства Dongtai Juli Machinery Manufacturing Co., LTD (Китай) отличается большой мощностью и стабильным качеством. Серия DD — самая современная продукция, производимая на основе многолетнего опыта и передовых технологий.
                   </p>
-                  <h3 className="text-xl font-semibold mb-3">Преимущества молотов JULI:</h3>
+                  <h3 className="text-xl font-semibold mb-3">Преимущества молотов серии DD:</h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start">
                       <Icon name="Check" className="mr-2 mt-1 text-accent flex-shrink-0" size={20} />
@@ -375,7 +375,7 @@ const MolotyJuli = () => {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-3xl font-bold mb-6 text-center">Модели молотов JULI серии DD</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">Модели молотов Dongtai Juli серии DD</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {variants.map((variant) => (
                   <Card key={variant.name} className="hover:shadow-lg transition-shadow">
@@ -417,10 +417,10 @@ const MolotyJuli = () => {
             <div className="bg-muted/30 rounded-lg p-8">
               <h2 className="text-2xl font-bold mb-6 text-center">Получить консультацию</h2>
               <p className="text-center text-muted-foreground mb-8">
-                Заполните форму, и наши специалисты помогут подобрать оптимальную модель молота JULI для ваших задач
+                Заполните форму, и наши специалисты помогут подобрать оптимальную модель молота Dongtai Juli для ваших задач
               </p>
               <EquipmentForm 
-                equipmentType="Молоты дизельные штанговые JULI"
+                equipmentType="Молоты дизельные штанговые Dongtai Juli (DD)"
                 questions={questions}
               />
             </div>
