@@ -33,7 +33,10 @@ const MolotyJuli = () => {
   };
 
   const galleryImages = [
-    "https://cdn.poehali.dev/files/34555c97-b564-4a8a-96f6-c2d485d0d5da.jpg"
+    "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
+    "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
+    "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png",
+    "https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
   ];
 
   const variants = [

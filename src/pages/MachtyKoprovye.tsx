@@ -254,95 +254,15 @@ const MachtyKoprovye = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-background">
+      <section className="py-8 md:py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="space-y-8">
-              <div className="aspect-square rounded-lg overflow-hidden bg-white p-8 shadow-lg">
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/eb7819dd-21cf-4aaf-b332-9fefc66e1ecc.png"
-                  alt="Мачты копровые крановые серия МК"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-heading font-bold mb-6 text-primary">
-                  О производителе и оборудовании
-                </h2>
-                <div className="prose prose-lg max-w-none space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Копровые мачты серии МК производства ООО «КГС» (г. Екатеринбург) — это надежное навесное оборудование для гусеничных кранов грузоподъемностью 25-36 тонн, которое превращает обычный кран в полноценную сваебойную или буровую установку.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Производственные мощности компании позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика. При проектировании и производстве применяются технологии ведущих европейских производителей, а также комплектующие гидросистем и систем управления европейского производства.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed font-medium">
-                    Это обеспечивает высокое качество, надёжность и длительный срок службы оборудования при стоимости в 10-20 раз ниже импортных аналогов.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-16">
-            <div className="bg-muted/30 rounded-lg p-8 md:p-12">
-              <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
-                Преимущества копровых мачт серии МК
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="DollarSign" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Экономия средств</h3>
-                    <p className="text-muted-foreground text-sm">Стоимость в 10-20 раз ниже импортных аналогов</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Wrench" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Быстрый демонтаж</h3>
-                    <p className="text-muted-foreground text-sm">Мачта легко снимается, кран сохраняет свои функции</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Settings" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Универсальность</h3>
-                    <p className="text-muted-foreground text-sm">Работа с молотами, вращателями, буровым оборудованием</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Award" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Европейское качество</h3>
-                    <p className="text-muted-foreground text-sm">Технологии и комплектующие ведущих производителей</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Users" className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Простота эксплуатации</h3>
-                    <p className="text-muted-foreground text-sm">Удобство управления и обслуживания</p>
-                  </div>
-                </div>
-              </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl bg-white">
+              <OptimizedImage 
+                src="https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
+                alt="Мачты копровые крановые серия МК"
+                className="w-full h-full object-contain p-8"
+              />
             </div>
           </div>
         </div>
