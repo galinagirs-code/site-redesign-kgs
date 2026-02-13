@@ -80,9 +80,9 @@ const JuliInfoSection = () => {
                 <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                   <li>Энергия удара на <strong>70–80% выше</strong> российских аналогов</li>
                   <li>Коэффициент компрессии до <strong>22</strong> (против 12–14 у аналогов)</li>
-                  <li>Диапазон моделей от <strong>1,8 до 10 т</strong> массы ударной части</li>
-                  <li>Расход топлива от <strong>6 до 27 л/час</strong></li>
-                  <li>Частота ударов <strong>30–60 уд/мин</strong></li>
+                  <li>Диапазон моделей от <strong>1,8 до 20 т</strong> массы ударной части</li>
+                  <li>Расход топлива от <strong>6 до 51 л/час</strong></li>
+                  <li>Частота ударов <strong>35–60 уд/мин</strong></li>
                 </ul>
               </CardContent>
             </Card>

@@ -11,6 +11,7 @@ import { useState } from "react";
 import JuliHeroSection from "@/components/juli/JuliHeroSection";
 import JuliVariantsSection from "@/components/juli/JuliVariantsSection";
 import JuliInfoSection from "@/components/juli/JuliInfoSection";
+import JuliGallerySection from "@/components/juli/JuliGallerySection";
 
 const MolotyJuli = () => {
   const [showConsultationForm, setShowConsultationForm] = useState(false);
@@ -97,6 +98,7 @@ const MolotyJuli = () => {
       <JuliHeroSection />
       <JuliVariantsSection />
       <JuliInfoSection />
+      <JuliGallerySection />
 
       <section id="consultation" className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4">

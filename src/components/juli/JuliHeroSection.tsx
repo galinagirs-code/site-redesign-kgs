@@ -23,6 +23,9 @@ const JuliHeroSection = () => {
               <a href="#info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
               </a>
+              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Фотогалерея
+              </a>
               <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
               </a>
@@ -34,7 +37,7 @@ const JuliHeroSection = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">Дизельные штанговые молоты Dongtai Juli</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">О производителе и оборудовании</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
@@ -42,12 +45,15 @@ const JuliHeroSection = () => {
                   Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий.
+                  Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Используя принцип и технологии дизельного двигателя, молоты серии DD обеспечивают непрерывную и эффективную работу длительное время благодаря:
+                  Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
                 </p>
-                <div className="space-y-3">
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+                  Это свойство достигается благодаря:
+                </p>
+                <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
                     <span className="text-base md:text-lg text-primary">эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
@@ -58,15 +64,18 @@ const JuliHeroSection = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">компактной и продуманной конструкции, удобной в эксплуатации</span>
+                    <span className="text-base md:text-lg text-primary">компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</span>
                   </div>
                 </div>
+                <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
+                  По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
+                </p>
               </div>
 
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+                    src="https://cdn.poehali.dev/files/e0bf2c5a-73ef-4997-8542-4f43893a8796.jpg"
                     alt="Молоты дизельные штанговые Dongtai Juli серии DD"
                     className="w-full h-full object-contain p-6"
                   />
@@ -75,7 +84,7 @@ const JuliHeroSection = () => {
             </div>
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Преимущества молотов Dongtai Juli DD</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Преимущества дизельных молотов Dongtai Juli DD</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -84,7 +93,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Энергия удара +70–80%</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">По сравнению с российскими молотами с аналогичной массой ударной части.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Энергия удара на 70–80 % выше, чем у российских молотов с аналогичной массой ударной части.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -93,7 +102,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Высокая компрессия</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая степень компрессии обеспечивает стабильную и мощную работу молота.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -102,7 +111,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Низкий расход топлива</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая мощность при экономном потреблении дизельного топлива.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая мощность при низком расходе топлива.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -120,7 +129,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Эффективная теплоотдача</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Система воздушного охлаждения повышает общую производительность оборудования.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования.</p>
                 </div>
               </div>
             </div>
