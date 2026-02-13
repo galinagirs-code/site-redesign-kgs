@@ -6,7 +6,7 @@ const MachtyDescriptionSection = () => {
     <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-12 text-center">Общая информация</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Общая информация</h2>
           
           <Card className="border-none shadow-lg mb-6">
             <CardContent className="p-6 md:p-8">
@@ -14,7 +14,7 @@ const MachtyDescriptionSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Info" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Назначение и возможности</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и возможности</h3>
               </div>
               <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
                 Копровая мачта — это направляющий элемент для навесного оборудования, который существенно расширяет функциональные возможности базовой строительной техники. Она позволяет эффективно использовать имеющиеся машины для выполнения свайных и буровых работ без потери их основного назначения.
@@ -47,7 +47,7 @@ const MachtyDescriptionSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <Icon name="Target" size={20} className="text-accent" />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Области применения</h3>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Области применения</h3>
                 </div>
                 <p className="text-primary mb-3 text-base md:text-lg">Копровая мачта МК применяется для:</p>
                 <ul className="list-disc pl-5 space-y-1.5 text-primary mb-4 text-base md:text-lg">
@@ -55,7 +55,7 @@ const MachtyDescriptionSection = () => {
                   <li>устройства буронабивных свай</li>
                   <li>лидерного бурения скважин под ж/б сваи</li>
                 </ul>
-                <p className="text-primary mb-3 text-base md:text-lg">Используется при строительстве фундаментов в отраслях:</p>
+                <p className="text-primary mb-3 text-base md:text-lg">Используется при строительстве фундаментов (нулевой цикл):</p>
                 <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                   <li><strong>ПГС</strong> — заводы, жилые дома, офисные здания</li>
                   <li><strong>Нефтегазовая отрасль</strong> — трубопроводы, НПЗ и ГПЗ</li>
@@ -71,7 +71,7 @@ const MachtyDescriptionSection = () => {
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <Icon name="Cog" size={20} className="text-accent" />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Принцип работы</h3>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
                 </div>
                 <p className="text-primary mb-3 text-base md:text-lg">Копровая мачта МК KGS — металлоконструкция, обеспечивающая:</p>
                 <ul className="list-disc pl-5 space-y-1.5 text-primary mb-4 text-base md:text-lg">
@@ -98,7 +98,7 @@ const MachtyDescriptionSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Gamepad2" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">Управление копровой мачтой</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Управление копровой мачтой</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg">
                 Управление осуществляется оператором из кабины крана с помощью пульта управления.

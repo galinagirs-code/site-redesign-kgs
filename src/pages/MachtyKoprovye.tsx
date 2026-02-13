@@ -104,7 +104,7 @@ const MachtyKoprovye = () => {
       <section className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Нужна консультация по выбору мачты?
             </h2>
             <p className="text-white/90 text-base md:text-lg mb-8">

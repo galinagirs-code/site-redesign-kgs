@@ -141,7 +141,7 @@ const MachtyVariantsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="animate-fade-in">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
               Варианты копровых мачт серии МК
             </h2>
             
@@ -150,7 +150,7 @@ const MachtyVariantsSection = () => {
                 <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary">
+                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
                         {variant.name}
                       </h3>
                       <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
