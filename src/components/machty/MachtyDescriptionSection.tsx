@@ -6,7 +6,7 @@ const MachtyDescriptionSection = () => {
     <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Общая информация</h2>
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
           
           <Card className="border-none shadow-lg mb-6">
             <CardContent className="p-6 md:p-8">
@@ -101,7 +101,7 @@ const MachtyDescriptionSection = () => {
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Управление копровой мачтой</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg">
-                Управление осуществляется оператором из кабины крана с помощью пульта управления.
+                Управление осуществляется оператором из кабины крана с помощью пульта управления. При нажатии кнопок пульта срабатывают электромагнитные клапаны распределителя, открывая необходимые гидролинии:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">

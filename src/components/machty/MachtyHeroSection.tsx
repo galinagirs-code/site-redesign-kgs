@@ -13,20 +13,20 @@ const MachtyHeroSection = () => {
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
               Мачты копровые крановые
             </Badge>
-            <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Мачты копровые крановые (серия МК)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base md:text-lg font-medium">
+              <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Варианты копровых мачт серии МК
               </a>
-              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base md:text-lg font-medium">
+              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
               </a>
-              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base md:text-lg font-medium">
+              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
               </a>
-              <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base md:text-lg font-medium">
+              <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
               </a>
             </div>
@@ -37,9 +37,9 @@ const MachtyHeroSection = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4 text-center">Копровая мачта МК KGS</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">Копровая мачта МК KGS</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Производственные мощности ООО «КГС» (г. Екатеринбург) позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика.
@@ -75,7 +75,7 @@ const MachtyHeroSection = () => {
             </div>
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">Ключевые преимущества МК KGS</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Ключевые преимущества МК KGS</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
