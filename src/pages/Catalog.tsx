@@ -920,7 +920,8 @@ const Catalog = () => {
                       const modelRoutes: Record<string, Record<number, string>> = {
                         "masts": {
                           0: "/catalog/machty-koprovye",
-                          1: "/catalog/machty-ms-ex"
+                          1: "/catalog/machty-ms-ex",
+                          2: "/catalog/machty-kitay"
                         },
                         "pile-hammers": {
                           0: "/catalog/moloty-donghao",
