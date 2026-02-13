@@ -1,89 +1,92 @@
+import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
-import { EquipmentForm } from "@/components/EquipmentForm";
-
-const questions = [
-  {
-    question: "Какой молот требуется?",
-    options: ["Дизельный штанговый", "Дизельный трубчатый", "Гидравлический"]
-  },
-  {
-    question: "На какую машину планируете навешивать?"
-  },
-  {
-    question: "Какие сваи планируете забивать?",
-    subfields: [
-      { label: "Сечение", placeholder: "Укажите сечение свай" },
-      { label: "Длина", placeholder: "Укажите длину свай" }
-    ]
-  },
-  {
-    question: "Какие требуются захваты?",
-    options: ["Круглые", "Квадратные", "Плоские", "Под изготовление"]
-  },
-  {
-    question: "Какой грунт?"
-  },
-  {
-    question: "Требуется ли наголовник?",
-    options: ["Да", "Нет"],
-    conditionalFields: {
-      "Да": [
-        { label: "Какой наголовник", placeholder: "Укажите тип наголовника" },
-        { label: "Сечение", placeholder: "Укажите сечение" }
-      ]
-    }
-  },
-  {
-    question: "Требуется ли шефмонтаж?",
-    options: ["Да", "Нет"]
-  },
-  {
-    question: "В какой город осуществлять доставку?"
-  }
-];
 
 const JuliInfoSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section id="info" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="mb-16">
-          <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg p-8 md:p-12">
-            <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
-              Назначение молотов Dongtai Juli DD
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              <div className="flex items-start space-x-4">
-                <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Погружение деревянных и железобетонных свай</p>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
+          
+          <Card className="border-none shadow-lg mb-6">
+            <CardContent className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Target" size={20} className="text-accent" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение молотов Dongtai Juli DD</h3>
               </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Устройство свайных фундаментов</p>
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                Дизельные штанговые молоты серии DD предназначены для погружения свай различных типов при устройстве фундаментов:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Виды погружаемых элементов</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                    <li>Железобетонные сваи</li>
+                    <li>Деревянные сваи</li>
+                    <li>Металлические трубы</li>
+                    <li>Шпунт Ларсена</li>
+                  </ul>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Области применения</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                    <li>Устройство свайных фундаментов</li>
+                    <li>Промышленное и гражданское строительство</li>
+                    <li>Мостостроение и эстакады</li>
+                    <li>Энергетические объекты</li>
+                  </ul>
+                </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Погружение металлических труб</p>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={24} />
-                <p className="text-muted-foreground">Погружение шпунта Ларсена</p>
-              </div>
-            </div>
-          </div>
-        </div>
+            </CardContent>
+          </Card>
 
-        <div className="bg-muted/30 rounded-lg p-8 md:p-12">
-          <h2 className="text-3xl font-heading font-bold mb-6 text-primary text-center">
-            Получить консультацию по выбору молота
-          </h2>
-          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Заполните форму, и наши специалисты помогут подобрать оптимальную модель молота Dongtai Juli для ваших задач
-          </p>
-          <EquipmentForm 
-            categoryTitle="Молоты дизельные штанговые Dongtai Juli (серия DD)"
-            categoryId="moloty-juli"
-            questions={questions}
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Cog" size={20} className="text-accent" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
+                </div>
+                <p className="text-primary mb-3 text-base md:text-lg leading-relaxed">
+                  Молоты серии DD работают по принципу дизельного двигателя. Ударная часть (поршень) поднимается и при падении сжимает воздушно-топливную смесь в цилиндре.
+                </p>
+                <p className="text-primary mb-3 text-base md:text-lg">В результате происходит:</p>
+                <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                  <li>Воспламенение топливной смеси</li>
+                  <li>Ударное воздействие на сваю</li>
+                  <li>Подброс ударной части вверх для следующего цикла</li>
+                </ol>
+                <p className="text-primary mt-3 text-base md:text-lg leading-relaxed">
+                  Цикл повторяется автоматически до полного погружения сваи в грунт.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Info" size={20} className="text-accent" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Технические особенности</h3>
+                </div>
+                <p className="text-primary mb-3 text-base md:text-lg leading-relaxed">
+                  По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                  <li>Энергия удара на <strong>70–80% выше</strong> российских аналогов</li>
+                  <li>Коэффициент компрессии до <strong>22</strong> (против 12–14 у аналогов)</li>
+                  <li>Диапазон моделей от <strong>1,8 до 10 т</strong> массы ударной части</li>
+                  <li>Расход топлива от <strong>6 до 27 л/час</strong></li>
+                  <li>Частота ударов <strong>30–60 уд/мин</strong></li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

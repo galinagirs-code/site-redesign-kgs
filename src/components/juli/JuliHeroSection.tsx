@@ -9,127 +9,118 @@ const JuliHeroSection = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-accent/20 text-accent border-accent/50 text-sm">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+            <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
               Дизельные штанговые молоты
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              Дизельные штанговые молоты Dongtai Juli серии DD
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
+              Дизельные штанговые молоты Dongtai Juli (серия DD)
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed">
-              Энергия удара на 70-80% больше российских аналогов. Высокая мощность и низкий расход топлива
-            </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Модели молотов серии DD
+              </a>
+              <a href="#info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
+              </a>
+              <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Оставить заявку
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-background">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="space-y-8">
-              <div className="aspect-square rounded-lg overflow-hidden bg-white p-8 shadow-lg">
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
-                  alt="Молоты дизельные штанговые Dongtai Juli серии DD"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">Дизельные штанговые молоты Dongtai Juli</h2>
 
-            <div className="space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
-                <h2 className="text-3xl font-heading font-bold mb-6 text-primary">
-                  О производителе и оборудовании
-                </h2>
-                <div className="prose prose-lg max-w-none space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed font-medium">
-                    Это свойство достигается благодаря:
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start text-muted-foreground">
-                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
-                    </li>
-                    <li className="flex items-start text-muted-foreground">
-                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Современной системе подачи топлива</span>
-                    </li>
-                    <li className="flex items-start text-muted-foreground">
-                      <Icon name="Check" className="mr-3 mt-1 text-accent flex-shrink-0" size={20} />
-                      <span>Компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</span>
-                    </li>
-                  </ul>
-                  <p className="text-muted-foreground leading-relaxed font-medium">
-                    По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
-                  </p>
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                  Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
+                </p>
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                  Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий.
+                </p>
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                  Используя принцип и технологии дизельного двигателя, молоты серии DD обеспечивают непрерывную и эффективную работу длительное время благодаря:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">современной системе подачи топлива</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">компактной и продуманной конструкции, удобной в эксплуатации</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center">
+                <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
+                  <OptimizedImage
+                    src="https://cdn.poehali.dev/files/16c24c8b-1514-4151-aa7d-7e2641f3e449.png"
+                    alt="Молоты дизельные штанговые Dongtai Juli серии DD"
+                    className="w-full h-full object-contain p-6"
+                  />
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="mb-16">
-            <div className="bg-muted/30 rounded-lg p-8 md:p-12">
-              <h2 className="text-3xl font-heading font-bold mb-8 text-primary text-center">
-                Преимущества дизельных молотов Dongtai Juli DD
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Zap" className="text-accent" size={24} />
+            <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Преимущества молотов Dongtai Juli DD</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-white rounded-xl p-5 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Zap" size={20} className="text-accent" />
+                    </div>
+                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Энергия удара +70–80%</h4>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Энергия удара на 70–80% выше</h3>
-                    <p className="text-muted-foreground text-sm">Чем у российских молотов с аналогичной массой ударной части</p>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">По сравнению с российскими молотами с аналогичной массой ударной части.</p>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Gauge" className="text-accent" size={24} />
+                <div className="bg-white rounded-xl p-5 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Gauge" size={20} className="text-accent" />
+                    </div>
+                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Высокая компрессия</h4>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Высокая степень компрессии</h3>
-                    <p className="text-muted-foreground text-sm">По сравнению с отечественными аналогами</p>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая степень компрессии обеспечивает стабильную и мощную работу молота.</p>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Fuel" className="text-accent" size={24} />
+                <div className="bg-white rounded-xl p-5 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Fuel" size={20} className="text-accent" />
+                    </div>
+                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Низкий расход топлива</h4>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Высокая мощность</h3>
-                    <p className="text-muted-foreground text-sm">При низком расходе топлива</p>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая мощность при экономном потреблении дизельного топлива.</p>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Clock" className="text-accent" size={24} />
+                <div className="bg-white rounded-xl p-5 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Clock" size={20} className="text-accent" />
+                    </div>
+                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Длительный срок службы</h4>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Длительный срок службы</h3>
-                    <p className="text-muted-foreground text-sm">Надежная конструкция и качественные материалы</p>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Надёжная конструкция и качественные материалы обеспечивают долговечность.</p>
                 </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
-                    <Icon name="Wind" className="text-accent" size={24} />
+                <div className="bg-white rounded-xl p-5 shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name="Wind" size={20} className="text-accent" />
+                    </div>
+                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Эффективная теплоотдача</h4>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Эффективная теплоотдача</h3>
-                    <p className="text-muted-foreground text-sm">Повышающая общую производительность оборудования</p>
-                  </div>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Система воздушного охлаждения повышает общую производительность оборудования.</p>
                 </div>
               </div>
             </div>
