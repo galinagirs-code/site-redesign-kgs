@@ -63,7 +63,7 @@ const MachtyKitayContent = () => {
             </div>
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Общая информация</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Конструкция</h3>
               <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                 Мачта представляет собой металлическую конструкцию с направляющими и усиленным оголовком.
               </p>

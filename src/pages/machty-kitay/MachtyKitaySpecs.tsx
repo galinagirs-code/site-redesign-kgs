@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { useState } from "react";
-import { technicalSpecs, constructionElements, galleryImages, schemaImage } from "./MachtyKitayData";
+import { technicalSpecs, galleryImages, schemaImage } from "./MachtyKitayData";
 
 const MachtyKitaySpecs = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -64,24 +64,6 @@ const MachtyKitaySpecs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
-
-            <div className="max-w-4xl mx-auto mb-10">
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                Мачта представляет собой металлическую конструкцию с направляющими и усиленным оголовком.
-              </p>
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В состав конструкции входят:</p>
-              <div className="space-y-3 mb-6">
-                {constructionElements.map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">{item}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
-                Установка производится на экскаваторную базу с подключением к гидравлической системе машины.
-              </p>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Card className="border-none shadow-lg">
