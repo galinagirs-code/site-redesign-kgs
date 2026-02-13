@@ -15,18 +15,7 @@ const galleryImages = [
     src: "https://cdn.poehali.dev/files/2bcdb5cc-5dd3-430d-95f7-e6fc89359026.png",
     alt: "Монтаж крановой мачты МК 16С г. Пенза",
   },
-  {
-    src: "https://cdn.poehali.dev/files/07e6f96e-9a84-4cc9-ac78-e20a1f2e12e7.png",
-    alt: "Монтаж крановой мачты МК 16С г. Пенза",
-  },
-  {
-    src: "https://cdn.poehali.dev/files/34b60bc0-e900-4d10-8522-dcb3a7b28d10.png",
-    alt: "Монтаж крановой мачты МК 16С г. Пенза",
-  },
-  {
-    src: "https://cdn.poehali.dev/files/28ab404e-05ab-418d-bdb8-9a00a4f1b5a7.png",
-    alt: "Монтаж крановой мачты г. Симферополь",
-  },
+
   {
     src: "https://cdn.poehali.dev/files/f5e26a31-154a-4b26-8cda-ddaf61511994.png",
     alt: "Монтаж крановой мачты г. Симферополь",
