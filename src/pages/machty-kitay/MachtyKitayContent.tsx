@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { schemaImage } from "./MachtyKitayData";
 
@@ -64,63 +63,28 @@ const MachtyKitayContent = () => {
             </div>
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Ключевые преимущества</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Ruler" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Высота 20,8 м</h4>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Конструктивное исполнение</h3>
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                Мачта представляет собой пространственную металлическую ферменную конструкцию с направляющими и усиленным оголовком.
+              </p>
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В состав конструкции входят:</p>
+              <div className="space-y-3 mb-6">
+                {[
+                  "Мачта повышенной жёсткости",
+                  "Опорный узел крепления к базовой машине",
+                  "2 гидроцилиндра регулировки наклона",
+                  "Гидроцилиндр для подъёма и опускания шасси",
+                  "2 лебёдки по 4 т",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">{item}</span>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Общая высота мачты 20 850 мм позволяет работать с длинными сваями на крупных объектах.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Shield" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Повышенная жёсткость</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Пространственная ферменная конструкция с усиленным оголовком обеспечивает устойчивость при работе.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Weight" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">2 лебёдки по 4 т</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Две лебёдки грузоподъёмностью 4 тонны каждая для подъёма свай и рабочего оборудования.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Settings" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Гидрорегулировка</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Гидравлическая регулировка наклона двумя цилиндрами для точного позиционирования сваи.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="DollarSign" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Выгодная цена</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Китайское производство позволяет предложить конкурентоспособную стоимость при высоком качестве исполнения.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Wrench" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Простой монтаж</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Установка на экскаваторную базу с подключением к штатной гидравлической системе машины.</p>
-                </div>
+                ))}
               </div>
+              <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
+                Установка производится на экскаваторную базу с подключением к гидравлической системе машины.
+              </p>
             </div>
           </div>
         </div>
