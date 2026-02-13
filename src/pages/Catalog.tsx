@@ -919,7 +919,8 @@ const Catalog = () => {
                     {category.models.map((model, idx) => {
                       const modelRoutes: Record<string, Record<number, string>> = {
                         "masts": {
-                          0: "/catalog/machty-koprovye"
+                          0: "/catalog/machty-koprovye",
+                          1: "/catalog/machty-ms-ex"
                         },
                         "pile-hammers": {
                           0: "/catalog/moloty-donghao",
