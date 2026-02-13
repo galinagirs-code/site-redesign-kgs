@@ -259,33 +259,6 @@ const MachtyKoprovye = () => {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4 text-center">Копровая мачта МК KGS</h2>
 
-            <div className="max-w-4xl mx-auto mb-12">
-              <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
-                <h3 className="text-2xl font-heading font-bold text-primary mb-4">Назначение и возможности</h3>
-                <p className="text-lg text-primary leading-relaxed mb-6">
-                  Копровая мачта — это направляющий элемент для навесного оборудования, который существенно расширяет функциональные возможности базовой строительной техники. Она позволяет эффективно использовать имеющиеся машины для выполнения свайных и буровых работ без потери их основного назначения.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Монтаж на базовую технику</h4>
-                    <p className="text-primary mb-2">Копровая мачта устанавливается на:</p>
-                    <ul className="list-disc pl-5 space-y-1 text-primary">
-                      <li>гусеничные краны</li>
-                      <li>экскаваторы</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Совместимое навесное оборудование</h4>
-                    <ul className="list-disc pl-5 space-y-1 text-primary">
-                      <li>сваебойные молоты для забивки свай</li>
-                      <li>вращатели для буровых работ</li>
-                      <li>оборудование для лидерного бурения</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
               <div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">Производство и качество</h3>
@@ -462,6 +435,39 @@ const MachtyKoprovye = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">Общая информация</h2>
+            
+            <Card className="border-none shadow-lg mb-6">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Info" size={20} className="text-accent" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold text-primary">Назначение и возможности</h3>
+                </div>
+                <p className="text-primary mb-6 text-lg leading-relaxed">
+                  Копровая мачта — это направляющий элемент для навесного оборудования, который существенно расширяет функциональные возможности базовой строительной техники. Она позволяет эффективно использовать имеющиеся машины для выполнения свайных и буровых работ без потери их основного назначения.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-gray-50 rounded-xl p-5">
+                    <h4 className="text-primary font-semibold mb-2">Монтаж на базовую технику</h4>
+                    <p className="text-primary mb-2">Копровая мачта устанавливается на:</p>
+                    <ul className="list-disc pl-5 space-y-1.5 text-primary">
+                      <li>гусеничные краны</li>
+                      <li>экскаваторы</li>
+                    </ul>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-5">
+                    <h4 className="text-primary font-semibold mb-2">Совместимое навесное оборудование</h4>
+                    <ul className="list-disc pl-5 space-y-1.5 text-primary">
+                      <li>сваебойные молоты для забивки свай</li>
+                      <li>вращатели для буровых работ</li>
+                      <li>оборудование для лидерного бурения</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <Card className="border-none shadow-lg">
                 <CardContent className="p-6 md:p-8">
