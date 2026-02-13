@@ -321,47 +321,6 @@ const MachtyMsEx = () => {
               </div>
             </div>
 
-            <div className="max-w-4xl mx-auto mb-12">
-              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Особенности конструкции</h3>
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты MS-EX работают:</p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary"><strong>с гидромолотом</strong> — для забивки свай</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary"><strong>с вращателем</strong> — для лидерного бурения глубиной до 14 м и диаметром до 500 мм, в том числе в труднодоступных местах</span>
-                </div>
-              </div>
-
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Конструктивно мачта состоит из:</p>
-              <div className="space-y-3 mb-6">
-                {["секций с направляющими", "оголовка", "крепёжных элементов", "гидроузлов", "системы управления"].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В зависимости от исполнения мачта комплектуется:</p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary"><strong>захватом для свай</strong> (сваебойное исполнение)</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary"><strong>люнетом</strong> (буровое исполнение)</span>
-                </div>
-              </div>
-
-              <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
-                Оборудование совместимо с российскими и импортными экскаваторами.
-              </p>
-            </div>
-
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Ключевые преимущества</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -438,20 +397,18 @@ const MachtyMsEx = () => {
 
             <div className="flex justify-center gap-3 mb-8">
               <Button
-                variant={activeTab === "piling" ? "default" : "outline"}
-                onClick={() => { setActiveTab("piling"); setExpandedVariant(null); }}
-                className={activeTab === "piling" ? "btn-gradient text-white" : ""}
-              >
-                <Icon name="ArrowDown" size={16} className="mr-2" />
-                Сваебойное исполнение
-              </Button>
-              <Button
                 variant={activeTab === "drilling" ? "default" : "outline"}
                 onClick={() => { setActiveTab("drilling"); setExpandedVariant(null); }}
                 className={activeTab === "drilling" ? "btn-gradient text-white" : ""}
               >
-                <Icon name="CircleDot" size={16} className="mr-2" />
                 Буровое исполнение
+              </Button>
+              <Button
+                variant={activeTab === "piling" ? "default" : "outline"}
+                onClick={() => { setActiveTab("piling"); setExpandedVariant(null); }}
+                className={activeTab === "piling" ? "btn-gradient text-white" : ""}
+              >
+                Сваебойное исполнение
               </Button>
             </div>
 
@@ -668,6 +625,52 @@ const MachtyMsEx = () => {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Особенности конструкции */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Особенности конструкции</h2>
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты MS-EX работают:</p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start gap-3">
+                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                <span className="text-base md:text-lg text-primary"><strong>с гидромолотом</strong> — для забивки свай</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                <span className="text-base md:text-lg text-primary"><strong>с вращателем</strong> — для лидерного бурения глубиной до 14 м и диаметром до 500 мм, в том числе в труднодоступных местах</span>
+              </div>
+            </div>
+
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Конструктивно мачта состоит из:</p>
+            <div className="space-y-3 mb-6">
+              {["секций с направляющими", "оголовка", "крепёжных элементов", "гидроузлов", "системы управления"].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                  <span className="text-base md:text-lg text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В зависимости от исполнения мачта комплектуется:</p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start gap-3">
+                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                <span className="text-base md:text-lg text-primary"><strong>захватом для свай</strong> (сваебойное исполнение)</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                <span className="text-base md:text-lg text-primary"><strong>люнетом</strong> (буровое исполнение)</span>
+              </div>
+            </div>
+
+            <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
+              Оборудование совместимо с российскими и импортными экскаваторами.
+            </p>
           </div>
         </div>
       </section>
