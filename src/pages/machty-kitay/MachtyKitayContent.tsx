@@ -20,8 +20,8 @@ const MachtyKitayContent = () => {
               <a href="#specs" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Технические характеристики
               </a>
-              <a href="#construction" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Конструкция
+              <a href="#info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
@@ -63,9 +63,9 @@ const MachtyKitayContent = () => {
             </div>
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Конструктивное исполнение</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Общая информация</h3>
               <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                Мачта представляет собой пространственную металлическую ферменную конструкцию с направляющими и усиленным оголовком.
+                Мачта представляет собой металлическую конструкцию с направляющими и усиленным оголовком.
               </p>
               <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В состав конструкции входят:</p>
               <div className="space-y-3 mb-6">
@@ -73,8 +73,8 @@ const MachtyKitayContent = () => {
                   "Мачта повышенной жёсткости",
                   "Опорный узел крепления к базовой машине",
                   "2 гидроцилиндра регулировки наклона",
-                  "Гидроцилиндр для подъёма и опускания шасси",
-                  "2 лебёдки по 4 т",
+                  "Гидроцилиндр для подъема и опускания шасси",
+                  "2 лебедки по 4т",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>

@@ -59,15 +59,15 @@ const MachtyKitaySpecs = () => {
         </div>
       </section>
 
-      {/* Конструктивное исполнение */}
-      <section id="construction" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      {/* Общая информация */}
+      <section id="info" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Конструктивное исполнение</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
             <div className="max-w-4xl mx-auto mb-10">
               <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                Мачта представляет собой пространственную металлическую ферменную конструкцию с направляющими и усиленным оголовком.
+                Мачта представляет собой металлическую конструкцию с направляющими и усиленным оголовком.
               </p>
               <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В состав конструкции входят:</p>
               <div className="space-y-3 mb-6">
