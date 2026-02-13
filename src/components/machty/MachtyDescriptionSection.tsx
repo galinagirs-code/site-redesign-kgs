@@ -109,6 +109,7 @@ const MachtyDescriptionSection = () => {
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>цилиндров коррекции</li>
                     <li>цилиндра опоры мачты</li>
+                    <li>цилиндров захватов мачты</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
