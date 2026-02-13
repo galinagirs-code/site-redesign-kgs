@@ -270,7 +270,7 @@ const MachtyMsEx = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Копровые мачты экскаваторные
+              Мачты копровые экскаваторные
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Мачты копровые экскаваторные (серия MS-EX)
@@ -540,19 +540,15 @@ const MachtyMsEx = () => {
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
-                  <Icon name="Building2" size={28} className="text-accent mx-auto mb-2" />
                   <span className="text-base text-primary font-medium">Здания</span>
                 </div>
                 <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
-                  <Icon name="Landmark" size={28} className="text-accent mx-auto mb-2" />
                   <span className="text-base text-primary font-medium">Мосты</span>
                 </div>
                 <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
-                  <Icon name="Pipette" size={28} className="text-accent mx-auto mb-2" />
                   <span className="text-base text-primary font-medium">Нефтепроводы</span>
                 </div>
                 <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
-                  <Icon name="Factory" size={28} className="text-accent mx-auto mb-2" />
                   <span className="text-base text-primary font-medium">Промышленные объекты</span>
                 </div>
               </div>
@@ -560,28 +556,20 @@ const MachtyMsEx = () => {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="RefreshCw" size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Переоборудование</h3>
-                </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Переоборудование</h3>
                 <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
                   Экскаваторная база сохраняет свои функции. В зависимости от задач машина может использоваться как:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="bg-gray-50 rounded-xl p-5 text-center">
-                    <Icon name="Shovel" size={32} className="text-accent mx-auto mb-3" />
                     <h4 className="text-primary font-semibold text-base md:text-lg">Экскаватор</h4>
                     <p className="text-muted-foreground text-sm mt-1">Основная функция базовой машины</p>
                   </div>
                   <div className="bg-gray-50 rounded-xl p-5 text-center">
-                    <Icon name="ArrowDown" size={32} className="text-accent mx-auto mb-3" />
                     <h4 className="text-primary font-semibold text-base md:text-lg">Сваебойная установка</h4>
                     <p className="text-muted-foreground text-sm mt-1">Полноповоротная забивка свай</p>
                   </div>
                   <div className="bg-gray-50 rounded-xl p-5 text-center">
-                    <Icon name="CircleDot" size={32} className="text-accent mx-auto mb-3" />
                     <h4 className="text-primary font-semibold text-base md:text-lg">Буровая установка</h4>
                     <p className="text-muted-foreground text-sm mt-1">Лидерное бурение до 14 м</p>
                   </div>
