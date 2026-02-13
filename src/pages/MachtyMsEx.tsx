@@ -481,30 +481,7 @@ const MachtyMsEx = () => {
               })}
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4 text-center">Области применения</h3>
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4 text-center">
-                Копровое оборудование применяется при строительстве:
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                  <Icon name="Building2" size={28} className="text-accent mx-auto mb-2" />
-                  <span className="text-base text-primary font-medium">Здания</span>
-                </div>
-                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                  <Icon name="Landmark" size={28} className="text-accent mx-auto mb-2" />
-                  <span className="text-base text-primary font-medium">Мосты</span>
-                </div>
-                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                  <Icon name="Pipette" size={28} className="text-accent mx-auto mb-2" />
-                  <span className="text-base text-primary font-medium">Нефтепроводы</span>
-                </div>
-                <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                  <Icon name="Factory" size={28} className="text-accent mx-auto mb-2" />
-                  <span className="text-base text-primary font-medium">Промышленные объекты</span>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -515,7 +492,73 @@ const MachtyMsEx = () => {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
-            <Card className="border-none shadow-lg mb-6">
+            <div className="max-w-4xl mx-auto mb-10">
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Особенности конструкции</h3>
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты MS-EX работают:</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                  <span className="text-base md:text-lg text-primary"><strong>с гидромолотом</strong> — для забивки свай</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                  <span className="text-base md:text-lg text-primary"><strong>с вращателем</strong> — для лидерного бурения глубиной до 14 м и диаметром до 500 мм, в том числе в труднодоступных местах</span>
+                </div>
+              </div>
+
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Конструктивно мачта состоит из:</p>
+              <div className="space-y-3 mb-6">
+                {["секций с направляющими", "оголовка", "крепёжных элементов", "гидроузлов", "системы управления"].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В зависимости от исполнения мачта комплектуется:</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                  <span className="text-base md:text-lg text-primary"><strong>захватом для свай</strong> (сваебойное исполнение)</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                  <span className="text-base md:text-lg text-primary"><strong>люнетом</strong> (буровое исполнение)</span>
+                </div>
+              </div>
+
+              <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
+                Оборудование совместимо с российскими и импортными экскаваторами.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto mb-10">
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Области применения</h3>
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+                Копровое оборудование применяется при строительстве:
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
+                  <Icon name="Building2" size={28} className="text-accent mx-auto mb-2" />
+                  <span className="text-base text-primary font-medium">Здания</span>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
+                  <Icon name="Landmark" size={28} className="text-accent mx-auto mb-2" />
+                  <span className="text-base text-primary font-medium">Мосты</span>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
+                  <Icon name="Pipette" size={28} className="text-accent mx-auto mb-2" />
+                  <span className="text-base text-primary font-medium">Нефтепроводы</span>
+                </div>
+                <div className="bg-white rounded-xl p-4 text-center shadow-sm border">
+                  <Icon name="Factory" size={28} className="text-accent mx-auto mb-2" />
+                  <span className="text-base text-primary font-medium">Промышленные объекты</span>
+                </div>
+              </div>
+            </div>
+
+            <Card className="border-none shadow-lg">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -548,129 +591,6 @@ const MachtyMsEx = () => {
                 </p>
               </CardContent>
             </Card>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="DollarSign" size={20} className="text-accent" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Экономичность</h3>
-                  </div>
-                  <p className="text-primary mb-3 text-base md:text-lg leading-relaxed">
-                    Мачты MS-EX (KGS) в среднем <strong>до 4 раз дешевле</strong> импортных аналогов при сопоставимом качестве.
-                  </p>
-                  <p className="text-primary text-base md:text-lg leading-relaxed">
-                    При сравнении покупки новой импортной сваебойной машины с приобретением экскаватора и мачты MS-EX экономия может составлять <strong>от 3 до 5 раз</strong>.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Wrench" size={20} className="text-accent" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Доступность обслуживания</h3>
-                  </div>
-                  <ul className="space-y-2 text-primary text-base md:text-lg">
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent font-bold mt-0.5">&#10004;</span>
-                      <span>Низкие эксплуатационные затраты</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent font-bold mt-0.5">&#10004;</span>
-                      <span>Наличие запасных частей на складе</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent font-bold mt-0.5">&#10004;</span>
-                      <span>Мобильная сервисная служба KGS</span>
-                    </li>
-                  </ul>
-                  <p className="text-primary mt-3 text-base md:text-lg leading-relaxed">
-                    Это существенно снижает стоимость и время обслуживания оборудования.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Shield" size={20} className="text-accent" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Надёжность</h3>
-                  </div>
-                  <p className="text-primary text-base md:text-lg leading-relaxed">
-                    В конструкции используются комплектующие известных мировых производителей. Оборудование адаптировано к российским условиям эксплуатации и рассчитано на длительную интенсивную работу.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-none shadow-lg">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Monitor" size={20} className="text-accent" />
-                    </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Простота эксплуатации</h3>
-                  </div>
-                  <p className="text-primary text-base md:text-lg leading-relaxed">
-                    Продуманная система управления, звуковая и световая сигнализация обеспечивают удобство и безопасность работы оператора непосредственно из кабины.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Особенности конструкции */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Особенности конструкции</h2>
-            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты MS-EX работают:</p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                <span className="text-base md:text-lg text-primary"><strong>с гидромолотом</strong> — для забивки свай</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                <span className="text-base md:text-lg text-primary"><strong>с вращателем</strong> — для лидерного бурения глубиной до 14 м и диаметром до 500 мм, в том числе в труднодоступных местах</span>
-              </div>
-            </div>
-
-            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Конструктивно мачта состоит из:</p>
-            <div className="space-y-3 mb-6">
-              {["секций с направляющими", "оголовка", "крепёжных элементов", "гидроузлов", "системы управления"].map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">В зависимости от исполнения мачта комплектуется:</p>
-            <div className="space-y-3 mb-6">
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                <span className="text-base md:text-lg text-primary"><strong>захватом для свай</strong> (сваебойное исполнение)</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                <span className="text-base md:text-lg text-primary"><strong>люнетом</strong> (буровое исполнение)</span>
-              </div>
-            </div>
-
-            <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
-              Оборудование совместимо с российскими и импортными экскаваторами.
-            </p>
           </div>
         </div>
       </section>
