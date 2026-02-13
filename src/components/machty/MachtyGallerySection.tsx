@@ -45,7 +45,7 @@ const MachtyGallerySection = () => {
       <section id="gallery" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-12 text-center">
               Фотогалерея
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -62,7 +62,7 @@ const MachtyGallerySection = () => {
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <p className="text-white text-sm font-medium">{image.alt}</p>
+                    <p className="text-white text-base md:text-lg font-medium">{image.alt}</p>
                   </div>
                 </div>
               ))}
