@@ -33,7 +33,7 @@ const VibroSG = () => {
   };
 
   const galleryImages = [
-    "https://cdn.poehali.dev/files/8d5ff46f-c1e3-455c-b4bb-8e35f5ef25aa.png",
+    "https://cdn.poehali.dev/files/15229d1d-d65c-45a6-b826-53c849a41ca6.jpg",
     "https://cdn.poehali.dev/files/8d5ff46f-c1e3-455c-b4bb-8e35f5ef25aa.png",
     "https://cdn.poehali.dev/files/8d5ff46f-c1e3-455c-b4bb-8e35f5ef25aa.png",
     "https://cdn.poehali.dev/files/8d5ff46f-c1e3-455c-b4bb-8e35f5ef25aa.png"

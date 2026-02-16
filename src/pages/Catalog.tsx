@@ -592,7 +592,7 @@ const Catalog = () => {
     {
       id: "vibro-excavator",
       title: "Вибропогружатели экскаваторные",
-      image: "https://cdn.poehali.dev/files/30238ac7-d520-4ac9-b734-b58e1ac1ad95.png",
+      image: "https://cdn.poehali.dev/files/15229d1d-d65c-45a6-b826-53c849a41ca6.jpg",
       description: {
         title: "Вибропогружатели экскаваторные",
         sections: [
