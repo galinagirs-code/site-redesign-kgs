@@ -19,8 +19,8 @@ const VibroSG = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)",
-    "description": "Гидравлические экскаваторные вибропогружатели серии SG с боковым зажимом для экскаваторов 18-40 тонн.",
+    "name": "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)",
+    "description": "Гидравлические экскаваторные вибропогружатели серии CS с боковым зажимом для экскаваторов 18-40 тонн.",
     "brand": {
       "@type": "Brand",
       "name": "KGS"
@@ -53,7 +53,7 @@ const VibroSG = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO title="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG) | KGS" description="Вибропогружатели серии SG с боковым зажимом для экскаваторов 18-40 тонн. Удобство работы, лучший обзор, возможность работы в ограниченном пространстве." keywords="вибропогружатели, серия SG, боковой зажим, экскаваторные вибропогружатели" canonical="https://kgs-ural.ru/catalog/vibro-sg" ogTitle="Вибропогружатели серии SG с боковым зажимом" ogDescription="Экскаваторные вибропогружатели SG для погружения шпунтовых свай, труб, железобетонных свай." />
+      <SEO title="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS) | KGS" description="Вибропогружатели серии CS с боковым зажимом для экскаваторов 18-40 тонн. Удобство работы, лучший обзор, возможность работы в ограниченном пространстве." keywords="вибропогружатели, серия CS, боковой зажим, экскаваторные вибропогружатели" canonical="https://kgs-ural.ru/catalog/vibro-sg" ogTitle="Вибропогружатели серии CS с боковым зажимом" ogDescription="Экскаваторные вибропогружатели CS для погружения шпунтовых свай, труб, железобетонных свай." />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
       
@@ -75,12 +75,12 @@ const VibroSG = () => {
 
       <main className="pt-16">
         <div className="container mx-auto px-4 py-8">
-          <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Каталог", href: "/catalog" }, { label: "Вибропогружатели экскаваторные", href: "/catalog#excavator-vibro-drivers" }, { label: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)" }]} />
+          <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Каталог", href: "/catalog" }, { label: "Вибропогружатели экскаваторные", href: "/catalog#excavator-vibro-drivers" }, { label: "Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)" }]} />
 
           <div className="grid lg:grid-cols-2 gap-8 mt-8">
             <div>
               <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 mb-4">
-                <OptimizedImage src={selectedImage || galleryImages[0]} alt="Вибропогружатели серии SG" className="w-full h-full object-contain" />
+                <OptimizedImage src={selectedImage || galleryImages[0]} alt="Вибропогружатели серии CS" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-4 gap-4">
                 {galleryImages.map((image, index) => (
@@ -93,14 +93,14 @@ const VibroSG = () => {
 
             <div>
               <Badge className="mb-4">Вибропогружатели экскаваторные</Badge>
-              <h1 className="text-3xl font-bold mb-4">Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)</h1>
+              <h1 className="text-3xl font-bold mb-4">Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)</h1>
               
               <div className="prose max-w-none mb-6">
-                <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия SG</h2>
-                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии SG — профессиональное оборудование с боковым зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы с грузоподъемностью от 18 до 40 тонн.</p>
+                <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия CS</h2>
+                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии CS — профессиональное оборудование с боковым зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы с грузоподъемностью от 18 до 40 тонн.</p>
                 <p className="text-gray-600 mb-4">Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, забивки деревянных свай, анкеров, а также уплотнения бетона.</p>
 
-                <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии SG (боковой зажим)</h3>
+                <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии CS (боковой зажим)</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Боковое расположение зажима обеспечивает удобство работы и лучший обзор</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Возможность работы в ограниченном пространстве</span></li>
@@ -120,7 +120,7 @@ const VibroSG = () => {
           <Card className="mt-12">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-6">Получить консультацию</h2>
-              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)" questions={questions} />
+              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)" questions={questions} />
             </CardContent>
           </Card>
         </div>
@@ -146,7 +146,7 @@ const VibroSG = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-gray-600"><Icon name="x" className="w-6 h-6" /></button>
               </div>
-              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
+              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
             </CardContent>
           </Card>
         </div>
