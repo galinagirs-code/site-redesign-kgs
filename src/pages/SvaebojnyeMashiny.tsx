@@ -19,7 +19,7 @@ const SvaebojnyeMashiny = () => {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Сваебойные машины",
-    "description": "Сваебойные установки STARKE и шагающие копровые установки JuLi для выполнения свайных работ любой сложности.",
+    "description": "Сваебойные установки STARKE и шагающие копровые установки Dongtai Juli для выполнения свайных работ любой сложности.",
     "brand": {
       "@type": "Brand",
       "name": "KGS"
@@ -65,12 +65,12 @@ const SvaebojnyeMashiny = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Сваебойные машины STARKE и JuLi | KGS"
-        description="Сваебойные установки на базе экскаватора STARKE серии LH и шагающие копровые установки JuLi серии KLB. Высокая производительность и надежность."
+        title="Сваебойные машины STARKE и Dongtai Juli | KGS"
+        description="Сваебойные установки на базе экскаватора STARKE серии LH и шагающие копровые установки Dongtai Juli серии KLB. Высокая производительность и надежность."
         keywords="сваебойные машины, копровые установки, шагающие установки, сваебойная установка, установка для свай"
         canonical="https://kgs-ural.ru/catalog/pile-machines"
         ogTitle="Сваебойные машины - мощное оборудование для свайных работ"
-        ogDescription="Установки STARKE и JuLi для забивки свай. Высокая мощность, надежность и производительность."
+        ogDescription="Установки STARKE и Dongtai Juli для забивки свай. Высокая мощность, надежность и производительность."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
@@ -191,13 +191,13 @@ const SvaebojnyeMashiny = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-primary mb-6">
-                    Шагающие сваебойные установки JuLi (серия KLB)
+                    Шагающие сваебойные установки Dongtai Juli (серия KLB)
                   </h2>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Шагающие копровые установки JuLi серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
+                    Шагающие копровые установки Dongtai Juli серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
                   </p>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Гидравлические шагающие установки JULI серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
+                    Гидравлические шагающие установки Dongtai Juli серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
@@ -327,7 +327,7 @@ const SvaebojnyeMashiny = () => {
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Шагающие установки JuLi (серия KLB)</span>
+                      <span className="text-sm">Шагающие установки Dongtai Juli (серия KLB)</span>
                     </li>
                   </ul>
                 </CardContent>

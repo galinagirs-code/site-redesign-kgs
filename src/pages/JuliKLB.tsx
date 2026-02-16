@@ -19,16 +19,16 @@ const JuliKLB = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Шагающие сваебойные установки JULI (серия KLB)",
-    "description": "Гидравлические шагающие установки JULI серии KLB для свайных работ и лидерного бурения. Низкое удельное давление на грунт, высокая устойчивость, многофункциональность.",
+    "name": "Шагающие сваебойные установки Dongtai Juli (серия KLB)",
+    "description": "Гидравлические шагающие установки Dongtai Juli серии KLB для свайных работ и лидерного бурения. Низкое удельное давление на грунт, высокая устойчивость, многофункциональность.",
     "brand": {
       "@type": "Brand",
-      "name": "JULI"
+      "name": "Dongtai Juli"
     },
     "category": "Сваебойные машины",
     "manufacturer": {
       "@type": "Organization",
-      "name": "JULI"
+      "name": "Dongtai Juli"
     }
   };
 
@@ -66,12 +66,12 @@ const JuliKLB = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Шагающие сваебойные установки JULI (серия KLB) | KGS"
-        description="Гидравлические шагающие установки JULI KLB для свайных работ. Низкое давление на грунт, высокая устойчивость, многофункциональность."
-        keywords="шагающие установки, JULI, серия KLB, копровые установки, свайные работы, лидерное бурение"
+        title="Шагающие сваебойные установки Dongtai Juli (серия KLB) | KGS"
+        description="Гидравлические шагающие установки Dongtai Juli KLB для свайных работ. Низкое давление на грунт, высокая устойчивость, многофункциональность."
+        keywords="шагающие установки, Dongtai Juli, серия KLB, копровые установки, свайные работы, лидерное бурение"
         canonical="https://kgs-ural.ru/catalog/juli-klb"
-        ogTitle="Шагающие сваебойные установки JULI (серия KLB) - многофункциональное оборудование"
-        ogDescription="Копровые установки JULI KLB с дизель-молотом, гидромолотом, вибропогружателем или буровым станком."
+        ogTitle="Шагающие сваебойные установки Dongtai Juli (серия KLB) - многофункциональное оборудование"
+        ogDescription="Копровые установки Dongtai Juli KLB с дизель-молотом, гидромолотом, вибропогружателем или буровым станком."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
@@ -120,7 +120,7 @@ const JuliKLB = () => {
               { label: "Главная", href: "/" },
               { label: "Каталог", href: "/catalog" },
               { label: "Сваебойные машины", href: "/catalog#pile-machines" },
-              { label: "Шагающие сваебойные установки JULI (серия KLB)" }
+              { label: "Шагающие сваебойные установки Dongtai Juli (серия KLB)" }
             ]}
           />
 
@@ -129,7 +129,7 @@ const JuliKLB = () => {
               <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 mb-4">
                 <OptimizedImage
                   src={selectedImage || galleryImages[0]}
-                  alt="Шагающие сваебойные установки JULI (серия KLB)"
+                  alt="Шагающие сваебойные установки Dongtai Juli (серия KLB)"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -157,15 +157,15 @@ const JuliKLB = () => {
 
             <div>
               <Badge className="mb-4">Сваебойные машины</Badge>
-              <h1 className="text-3xl font-bold mb-4">Шагающие сваебойные установки JULI (серия KLB)</h1>
+              <h1 className="text-3xl font-bold mb-4">Шагающие сваебойные установки Dongtai Juli (серия KLB)</h1>
               
               <div className="prose max-w-none mb-6">
-                <h2 className="text-xl font-semibold mb-3">Шагающие копровые установки JuLi (серия KLB)</h2>
+                <h2 className="text-xl font-semibold mb-3">Шагающие копровые установки Dongtai Juli (серия KLB)</h2>
                 <p className="text-gray-600 mb-4">
-                  Шагающие копровые установки JuLi серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
+                  Шагающие копровые установки Dongtai Juli серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Гидравлические шагающие установки JULI серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
+                  Гидравлические шагающие установки Dongtai Juli серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Оснащение копровых установок</h3>
@@ -240,7 +240,7 @@ const JuliKLB = () => {
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-6">Получить консультацию</h2>
               <EquipmentForm 
-                equipmentType="Шагающие сваебойные установки JULI (серия KLB)"
+                equipmentType="Шагающие сваебойные установки Dongtai Juli (серия KLB)"
                 questions={questions}
               />
             </CardContent>
@@ -318,7 +318,7 @@ const JuliKLB = () => {
                 </button>
               </div>
               <EquipmentForm 
-                equipmentType="Шагающие сваебойные установки JULI (серия KLB)"
+                equipmentType="Шагающие сваебойные установки Dongtai Juli (серия KLB)"
                 questions={questions}
                 onSuccess={() => setShowConsultationForm(false)}
               />

@@ -21,7 +21,7 @@ const equipment = [
     image: "https://cdn.poehali.dev/files/dc56ba91-4566-419f-ad64-d9d462fcd770.png",
     models: [
       "Сваебойные установки STARKE (серия LH)",
-      "Шагающие сваебойные установки JULI (серия KLB)",
+      "Шагающие сваебойные установки Dongtai Juli (серия KLB)",
       "Сваебойная установка КБУРГ"
     ]
   },
@@ -32,7 +32,7 @@ const equipment = [
     models: [
       "Гидравлическая буровая машина JINT (серия SH)",
       "Гидравлическая буровая машина JINT (серия SD)",
-      "Горизонтальная буровая машина JULI (серия JL)"
+      "Горизонтальная буровая машина Dongtai Juli (серия JL)"
     ]
   },
   {
@@ -73,7 +73,7 @@ const equipment = [
     title: "Сваевдавливающие установки",
     image: "https://cdn.poehali.dev/files/8274ba00-30ca-4dfc-9bbb-8ecdaf684819.png",
     models: [
-      "Сваевдавливающая установка JULI (серия YZS)"
+      "Сваевдавливающая установка Dongtai Juli (серия YZS)"
     ]
   },
   {

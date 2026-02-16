@@ -19,7 +19,7 @@ const BurovyeMashiny = () => {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Буровые машины",
-    "description": "Гидравлические буровые машины JINT серий SH и SD, горизонтально-направленные буровые установки JuLi для строительства фундаментов.",
+    "description": "Гидравлические буровые машины JINT серий SH и SD, горизонтально-направленные буровые установки Dongtai Juli для строительства фундаментов.",
     "brand": {
       "@type": "Brand",
       "name": "KGS"
@@ -63,12 +63,12 @@ const BurovyeMashiny = () => {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Буровые машины JINT и JuLi | KGS"
-        description="Гидравлические буровые машины JINT серий SH и SD, горизонтально-направленные установки JuLi. Высокая производительность для строительства фундаментов."
+        title="Буровые машины JINT и Dongtai Juli | KGS"
+        description="Гидравлические буровые машины JINT серий SH и SD, горизонтально-направленные установки Dongtai Juli. Высокая производительность для строительства фундаментов."
         keywords="буровые машины, гидравлические буровые, буровые установки, бурение свай, роторное бурение, JINT"
         canonical="https://kgs-ural.ru/catalog/drilling"
         ogTitle="Буровые машины - надежное оборудование для глубокого бурения"
-        ogDescription="Буровые машины JINT и JuLi с международным уровнем качества. Идеальное оборудование для фундаментостроения."
+        ogDescription="Буровые машины JINT и Dongtai Juli с международным уровнем качества. Идеальное оборудование для фундаментостроения."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
@@ -241,10 +241,10 @@ const BurovyeMashiny = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-primary mb-6">
-                    Горизонтальные буровые машины JuLi (серия JL)
+                    Горизонтальные буровые машины Dongtai Juli (серия JL)
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Горизонтально-направленные буровые установки JuLi серии JL широко используются для строительства железных дорог, дорог, укрепления рек, центра города, других ограниченных для строительства районов, для строительства водопроводов, угольного газа, электроники, телекоммуникаций, природного газа.
+                    Горизонтально-направленные буровые установки Dongtai Juli серии JL широко используются для строительства железных дорог, дорог, укрепления рек, центра города, других ограниченных для строительства районов, для строительства водопроводов, угольного газа, электроники, телекоммуникаций, природного газа.
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
@@ -352,7 +352,7 @@ const BurovyeMashiny = () => {
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Горизонтальная буровая машина JuLi (серия JL)</span>
+                      <span className="text-sm">Горизонтальная буровая машина Dongtai Juli (серия JL)</span>
                     </li>
                   </ul>
                 </CardContent>

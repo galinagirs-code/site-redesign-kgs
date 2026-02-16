@@ -42,7 +42,7 @@ const JintSD = () => {
   const questions = [
     {
       question: "Какая буровая машина нужна?",
-      options: ["JINT (серия SH)", "JINT (серия SD)", "JuLi (серия JL - горизонтальная)"]
+      options: ["JINT (серия SH)", "JINT (серия SD)", "Dongtai Juli (серия JL - горизонтальная)"]
     },
     {
       question: "Какой диаметр бурения требуется?"

@@ -74,7 +74,7 @@ const VibropogruzateliEkskavatornye = () => {
     <div className="min-h-screen">
       <SEO 
         title="Вибропогружатели экскаваторные | KGS"
-        description="Гидравлические экскаваторные вибропогружатели серий SG и VH с боковым и нижним зажимом. Удлинённые стрелы и быстросъёмные соединения для экскаваторов."
+        description="Гидравлические экскаваторные вибропогружатели серий SG и S с боковым и нижним зажимом. Удлинённые стрелы и быстросъёмные соединения для экскаваторов."
         keywords="вибропогружатели экскаваторные, вибропогружатель на экскаватор, боковой зажим, нижний зажим, навесное для экскаватора"
         canonical="https://kgs-ural.ru/catalog/vibro-excavator"
         ogTitle="Вибропогружатели экскаваторные - универсальное навесное оборудование"
@@ -185,17 +185,17 @@ const VibropogruzateliEkskavatornye = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-primary mb-6">
-                    Гидравлические экскаваторные вибропогружатели серия VH
+                    Гидравлические экскаваторные вибропогружатели серия S
                   </h2>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Гидравлический экскаваторный вибропогружатель серии VH — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.
+                    Гидравлический экскаваторный вибропогружатель серии S — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.
                   </p>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     Нижний зажим обеспечивает особенно эффективную работу при погружении длинных свайных элементов и работе на объектах с ограниченной высотой.
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
-                    Преимущества серии VH (нижний зажим)
+                    Преимущества серии S (нижний зажим)
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
@@ -324,7 +324,7 @@ const VibropogruzateliEkskavatornye = () => {
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)</span>
+                      <span className="text-sm">Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />

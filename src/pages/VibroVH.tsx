@@ -19,8 +19,8 @@ const VibroVH = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)",
-    "description": "Гидравлические экскаваторные вибропогружатели серии VH с нижним зажимом для экскаваторов.",
+    "name": "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)",
+    "description": "Гидравлические экскаваторные вибропогружатели серии S с нижним зажимом для экскаваторов.",
     "brand": { "@type": "Brand", "name": "KGS" },
     "category": "Вибропогружатели экскаваторные",
     "manufacturer": { "@type": "Organization", "name": "КоперГруппСервис" }
@@ -32,7 +32,7 @@ const VibroVH = () => {
 
   return (
     <div className="min-h-screen">
-      <SEO title="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH) | KGS" description="Вибропогружатели серии VH с нижним зажимом. Идеально для работы с длинными элементами и в условиях ограниченной высоты." keywords="вибропогружатели, серия VH, нижний зажим, экскаваторные вибропогружатели" canonical="https://kgs-ural.ru/catalog/vibro-vh" ogTitle="Вибропогружатели серии VH с нижним зажимом" ogDescription="Экскаваторные вибропогружатели VH для погружения длинных свайных элементов." />
+      <SEO title="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S) | KGS" description="Вибропогружатели серии S с нижним зажимом. Идеально для работы с длинными элементами и в условиях ограниченной высоты." keywords="вибропогружатели, серия S, нижний зажим, экскаваторные вибропогружатели" canonical="https://kgs-ural.ru/catalog/vibro-vh" ogTitle="Вибропогружатели серии S с нижним зажимом" ogDescription="Экскаваторные вибропогружатели S для погружения длинных свайных элементов." />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
       
@@ -54,12 +54,12 @@ const VibroVH = () => {
 
       <main className="pt-16">
         <div className="container mx-auto px-4 py-8">
-          <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Каталог", href: "/catalog" }, { label: "Вибропогружатели экскаваторные", href: "/catalog#excavator-vibro-drivers" }, { label: "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)" }]} />
+          <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Каталог", href: "/catalog" }, { label: "Вибропогружатели экскаваторные", href: "/catalog#excavator-vibro-drivers" }, { label: "Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)" }]} />
 
           <div className="grid lg:grid-cols-2 gap-8 mt-8">
             <div>
               <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 mb-4">
-                <OptimizedImage src={selectedImage || galleryImages[0]} alt="Вибропогружатели серии VH" className="w-full h-full object-contain" />
+                <OptimizedImage src={selectedImage || galleryImages[0]} alt="Вибропогружатели серии S" className="w-full h-full object-contain" />
               </div>
               <div className="grid grid-cols-4 gap-4">
                 {galleryImages.map((image, index) => (
@@ -72,14 +72,14 @@ const VibroVH = () => {
 
             <div>
               <Badge className="mb-4">Вибропогружатели экскаваторные</Badge>
-              <h1 className="text-3xl font-bold mb-4">Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)</h1>
+              <h1 className="text-3xl font-bold mb-4">Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)</h1>
               
               <div className="prose max-w-none mb-6">
-                <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия VH</h2>
-                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии VH — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.</p>
+                <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия S</h2>
+                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии S — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.</p>
                 <p className="text-gray-600 mb-4">Нижний зажим обеспечивает особенно эффективную работу при погружении длинных свайных элементов и работе на объектах с ограниченной высотой.</p>
 
-                <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии VH (нижний зажим)</h3>
+                <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии S (нижний зажим)</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Нижнее расположение зажима идеально для работы с длинными элементами</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Возможность работы в условиях ограниченной высоты</span></li>
@@ -99,7 +99,7 @@ const VibroVH = () => {
           <Card className="mt-12">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-6">Получить консультацию</h2>
-              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)" questions={questions} />
+              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)" questions={questions} />
             </CardContent>
           </Card>
         </div>
@@ -125,7 +125,7 @@ const VibroVH = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-gray-600"><Icon name="x" className="w-6 h-6" /></button>
               </div>
-              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия VH)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
+              <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
             </CardContent>
           </Card>
         </div>
