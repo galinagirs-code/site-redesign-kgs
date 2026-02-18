@@ -22,18 +22,14 @@ const MachtyDescriptionSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Монтаж на базовую технику</h4>
-                  <p className="text-primary mb-2 text-base md:text-lg">Копровая мачта устанавливается на:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>гусеничные краны</li>
-                    <li>экскаваторы</li>
-                  </ul>
+                  <p className="text-primary text-base md:text-lg">Копровая мачта устанавливается на гусеничные краны</p>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Совместимое навесное оборудование</h4>
+                  <p className="text-primary mb-2 text-base md:text-lg">Универсальная конструкция мачты позволяет использовать различные виды рабочего оборудования:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>сваебойные молоты для забивки свай</li>
                     <li>вращатели для буровых работ</li>
-                    <li>оборудование для лидерного бурения</li>
                   </ul>
                 </div>
               </div>
@@ -50,17 +46,9 @@ const MachtyDescriptionSection = () => {
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Области применения</h3>
                 </div>
                 <p className="text-primary mb-3 text-base md:text-lg">Копровая мачта МК применяется для:</p>
-                <ul className="list-disc pl-5 space-y-1.5 text-primary mb-4 text-base md:text-lg">
+                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                   <li>забивки железобетонных свай, труб и шпунта</li>
                   <li>устройства буронабивных свай</li>
-                  <li>лидерного бурения скважин под ж/б сваи</li>
-                </ul>
-                <p className="text-primary mb-3 text-base md:text-lg">Используется при строительстве фундаментов (нулевой цикл):</p>
-                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                  <li><strong>ПГС</strong> — заводы, жилые дома, офисные здания</li>
-                  <li><strong>Нефтегазовая отрасль</strong> — трубопроводы, НПЗ и ГПЗ</li>
-                  <li><strong>Мостостроение</strong> — эстакады, транспортные переходы</li>
-                  <li><strong>Энергетика</strong> — ЛЭП, подстанции</li>
                 </ul>
               </CardContent>
             </Card>
@@ -100,8 +88,11 @@ const MachtyDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Управление копровой мачтой</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg">
-                Управление осуществляется оператором из кабины крана с помощью пульта управления. При нажатии кнопок пульта срабатывают электромагнитные клапаны распределителя, открывая необходимые гидролинии:
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                Управление копровой мачтой осуществляется оператором из кабины крана с помощью пульта управления.
+              </p>
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                При нажатии кнопок пульта срабатывают электромагнитные клапаны распределителя, открывая необходимые гидролинии:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
@@ -113,12 +104,11 @@ const MachtyDescriptionSection = () => {
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Стандартные органы управления крана:</p>
+                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Остальные операции выполняются стандартными органами управления крана:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>главная и вспомогательная лебёдки</li>
-                    <li>поворот платформы</li>
-                    <li>ход крана</li>
-                    <li>подъём и опускание стрелы</li>
+                    <li>главной лебёдкой</li>
+                    <li>вспомогательной лебёдкой</li>
+                    <li>подъёмом и опусканием стрелы</li>
                   </ul>
                 </div>
               </div>
