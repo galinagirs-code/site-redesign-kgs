@@ -12,6 +12,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 import { EquipmentForm } from "@/components/EquipmentForm";
 import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
+import { MessengerLinks } from "@/components/MessengerLinks";
 import { useState } from "react";
 
 const Catalog = () => {
@@ -1227,13 +1228,13 @@ const Catalog = () => {
               Получить консультацию
             </Badge>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-4">
-              Нужна консультация?
+              Получите консультацию
             </h2>
             <p className="text-white/80 text-base md:text-lg mb-8">
-              Свяжитесь с нами для получения подробной информации о любой категории оборудования
+              Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+78003006587" className="inline-block">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+              <a href="tel:88006007465" className="inline-block">
                 <Button size="lg" className="btn-gradient-reverse text-white w-full sm:w-auto">
                   <Icon name="Phone" className="mr-2" size={20} />
                   Позвонить нам
@@ -1245,6 +1246,34 @@ const Catalog = () => {
                   Отправить сообщение
                 </Button>
               </a>
+            </div>
+            <div className="border-t border-white/20 pt-8">
+              <p className="font-heading font-bold text-white text-base mb-1">Нужен быстрый ответ?</p>
+              <p className="text-white/70 text-sm mb-4">Напишите менеджеру напрямую в</p>
+              <div className="flex gap-3 justify-center">
+                <a
+                  href="https://max.ru/u/f9LHodD0cOIP8_25Pol0FgGthbuYFvPpONLlW4R8sdoUUmuprdyzEwbPSy0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg bg-white/15 hover:bg-white/25 border border-white/30"
+                >
+                  <Icon name="MessageCircle" size={18} />
+                  MAX
+                </a>
+                <a
+                  href="https://t.me/kgs_ural"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg bg-accent hover:bg-accent/90"
+                >
+                  <Icon name="Send" size={18} />
+                  Telegram
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-1.5 mt-3">
+                <Icon name="Clock" size={14} className="text-white/60" />
+                <span className="text-white/60 text-sm">Ответим в течение 5 минут</span>
+              </div>
             </div>
           </div>
         </div>
