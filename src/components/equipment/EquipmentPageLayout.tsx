@@ -227,7 +227,7 @@ export const EquipmentPageLayout = ({
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Комментарий</label>
-                    <Textarea placeholder="Расскажите о вашем проекте..." rows={4} />
+                    <Textarea placeholder="Укажите детали запроса..." rows={4} />
                   </div>
                   <div className="flex items-start space-x-3">
                     <Checkbox id={`privacy-${formCategoryId}`} className="mt-1" />
@@ -265,10 +265,6 @@ export const EquipmentPageLayout = ({
                       <p className="text-muted-foreground text-sm md:text-base">
                         <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a>
                         {" "}— офис
-                      </p>
-                      <p className="text-muted-foreground mt-2 text-sm md:text-base">
-                        <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@kgs_ural</a>
-                        {" "}— Telegram
                       </p>
                     </div>
                   </div>

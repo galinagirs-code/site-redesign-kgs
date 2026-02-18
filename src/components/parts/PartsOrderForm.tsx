@@ -70,7 +70,7 @@ export const PartsOrderForm = () => {
                   <Textarea
                     value={formData.comment}
                     onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
-                    placeholder="Расскажите о вашем проекте..."
+                    placeholder="Укажите детали запроса..."
                     rows={4}
                   />
                 </div>
@@ -110,10 +110,6 @@ export const PartsOrderForm = () => {
                     <p className="text-muted-foreground text-sm md:text-base">
                       <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a>
                       {" "}— офис
-                    </p>
-                    <p className="text-muted-foreground mt-2 text-sm md:text-base">
-                      <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@kgs_ural</a>
-                      {" "}— Telegram
                     </p>
                   </div>
                 </div>

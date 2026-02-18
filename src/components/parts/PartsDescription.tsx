@@ -8,21 +8,54 @@ export const PartsDescription = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
               Запчасти для вашей техники — быстро, надёжно, точно в срок!
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                <p>
-                  В КоперГруппСервис мы заботимся о вашей технике на каждом этапе её эксплуатации. Оперативная поставка запчастей и расходных материалов является одним из ключевых элементов нашей поддержки.
-                </p>
-                <p>
-                  Для максимальной скорости доставки мы организовали склад в Екатеринбурге, где всегда в наличии наиболее востребованные позиции.
-                </p>
-                <p>
-                  Мы также развиваем альтернативные каналы поставок качественных аналоговых запчастей, позволяя владельцам импортной строительной техники получать надёжные детали по доступной цене, без простоев и задержек.
-                </p>
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="space-y-6">
+                <Card className="border-l-4 border-l-accent hover:shadow-lg transition-shadow">
+                  <CardContent className="p-5 flex items-start space-x-4">
+                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                      <Icon name="Shield" size={24} className="text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-base mb-1 text-primary">Забота на каждом этапе</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Оперативная поставка запчастей и расходных материалов — ключевой элемент нашей поддержки вашей техники.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
+                  <CardContent className="p-5 flex items-start space-x-4">
+                    <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                      <Icon name="Warehouse" size={24} className="text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-base mb-1 text-primary">Склад в Екатеринбурге</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Наиболее востребованные позиции всегда в наличии — минимальное время ожидания.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-l-4 border-l-accent hover:shadow-lg transition-shadow">
+                  <CardContent className="p-5 flex items-start space-x-4">
+                    <div className="bg-accent/10 p-3 rounded-lg flex-shrink-0">
+                      <Icon name="RefreshCw" size={24} className="text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-bold text-base mb-1 text-primary">Качественные аналоги</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Альтернативные каналы поставок надёжных деталей для импортной техники — по доступной цене, без простоев.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
+
               <div>
                 <OptimizedImage
                   src="https://cdn.poehali.dev/files/89177cd4-9abe-4e8c-b6c0-56edc1b3b581.png"
@@ -98,3 +131,5 @@ export const PartsDescription = () => {
     </>
   );
 };
+
+export default PartsDescription;

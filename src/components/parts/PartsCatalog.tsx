@@ -183,16 +183,11 @@ export const PartsCatalog = () => {
                   <p className="text-lg font-bold text-accent mb-4">
                     Цена: {part.price}
                   </p>
-                  <Button 
-                    className="w-full btn-gradient text-white"
-                    onClick={() => {
-                      const subject = encodeURIComponent(`Запрос запчасти: ${part.title}`);
-                      const body = encodeURIComponent(`Здравствуйте!\n\nХочу заказать запчасть:\n\nНазвание: ${part.title}\nЦена: ${part.price}\n\nПожалуйста, свяжитесь со мной для уточнения деталей заказа.`);
-                      window.location.href = `mailto:service@kgs-ural.ru?subject=${subject}&body=${body}`;
-                    }}
-                  >
-                    Оставить заявку
-                  </Button>
+                  <a href="#order">
+                    <Button className="w-full btn-gradient text-white">
+                      Оставить заявку
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
