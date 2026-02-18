@@ -28,7 +28,7 @@ export const ProductionCycle = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
             Полный цикл производства навесного оборудования
           </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+          <div className="prose prose-lg max-w-none text-primary space-y-4">
             <p>
               Одним из ключевых направлений деятельности компании является полный цикл производства оборудования для фундаментостроения, а также изготовление металлоконструкций любой сложности по чертежам заказчика.
             </p>
@@ -52,7 +52,7 @@ export const ProductionCycle = () => {
                   <Icon name={item.icon} size={24} className="text-white" />
                 </div>
                 <h3 className="text-xl font-heading font-bold text-primary mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export const ProductionCycle = () => {
                   <h3 className="text-xl font-heading font-bold text-primary mb-3">
                     Производство на Урале
                   </h3>
-                  <p className="text-gray-700">
+                  <p className="text-primary">
                     Наше производство расположено на Урале — в центре металлургической промышленности России, что позволяет минимизировать логистические расходы, сокращать сроки поставок и предлагать максимально выгодные условия для наших клиентов.
                   </p>
                 </div>

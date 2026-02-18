@@ -15,7 +15,7 @@ export const PartsHero = () => {
             <a href="#catalog" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
               Каталог запчастей
             </a>
-            <a href="#order" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+            <a href="#contact" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
               Оставить заявку
             </a>
           </div>

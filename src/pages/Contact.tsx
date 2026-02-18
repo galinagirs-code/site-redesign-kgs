@@ -1,8 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -10,7 +7,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { MessengerLinks } from "@/components/MessengerLinks";
+import ConsultationSection from "@/components/ConsultationSection";
 
 const Contact = () => {
   const contactSchema = {
@@ -147,104 +144,10 @@ const Contact = () => {
         </div>
       </section>
 
+      <ConsultationSection />
+
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto mb-16">
-            <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-              <Card className="p-4 md:p-6">
-                <h2 className="text-2xl font-heading font-bold mb-6">Форма обратной связи</h2>
-                <form className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">Ваше имя</label>
-                    <Input placeholder="Иван Иванов" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">Телефон</label>
-                    <Input placeholder="+7 (___) ___-__-__" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">E-mail</label>
-                    <Input placeholder="email@example.com" type="email" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">Комментарий / вопрос</label>
-                    <Textarea placeholder="Опишите ваш вопрос или задачу..." rows={3} />
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Checkbox id="privacy" className="mt-1" />
-                    <label 
-                      htmlFor="privacy" 
-                      className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
-                    >
-                      Я согласен на обработку персональных данных в соответствии с{" "}
-                      <a href="#" className="text-primary hover:text-accent underline">
-                        политикой конфиденциальности
-                      </a>
-                    </label>
-                  </div>
-                  <Button className="w-full btn-gradient text-white" size="lg">
-                    Отправить сообщение
-                  </Button>
-                </form>
-              </Card>
-
-              <Card className="p-4 md:p-6 flex flex-col justify-center">
-                <MessengerLinks />
-              </Card>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8">
-              <Card className="p-4 md:p-5">
-                <div className="flex items-start space-x-3">
-                  <div className="bg-accent/10 p-2 rounded-lg flex-shrink-0">
-                    <Icon name="Phone" className="text-accent" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-1 text-sm">Телефоны</h3>
-                    <p className="text-muted-foreground text-sm">
-                      <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a> — бесплатно
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a> — офис
-                    </p>
-                  </div>
-                </div>
-              </Card>
-              <Card className="p-4 md:p-5">
-                <div className="flex items-start space-x-3">
-                  <div className="bg-accent/10 p-2 rounded-lg flex-shrink-0">
-                    <Icon name="Mail" className="text-accent" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-1 text-sm">Email</h3>
-                    <p className="text-muted-foreground text-sm">
-                      <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      <a href="mailto:service@kgs-ural.ru" className="hover:text-accent transition-colors">service@kgs-ural.ru</a>
-                    </p>
-                  </div>
-                </div>
-              </Card>
-              <Card className="p-4 md:p-5">
-                <div className="flex items-start space-x-3">
-                  <div className="bg-accent/10 p-2 rounded-lg flex-shrink-0">
-                    <Icon name="MapPin" className="text-accent" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-1 text-sm">Адрес офиса</h3>
-                    <p className="text-muted-foreground text-sm">
-                      г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
-                    </p>
-                    <p className="text-muted-foreground text-xs mt-1">
-                      Пн–Пт: 09:00 — 18:00
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-
           <div className="mb-16">
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Сотрудники компании</h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">

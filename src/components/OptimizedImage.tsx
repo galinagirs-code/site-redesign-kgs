@@ -58,11 +58,11 @@ export const OptimizedImage = ({
         loading="lazy"
       />
       {showWatermark && variant !== 'logo' && (
-        <div className="absolute bottom-4 right-4 opacity-40 hover:opacity-60 transition-opacity pointer-events-none">
+        <div className="absolute inset-0 flex items-center justify-center opacity-30 pointer-events-none">
           <img 
             src="https://cdn.poehali.dev/files/584417ee-f78b-4041-a7fe-8b33469a6007.png"
             alt="KGS"
-            className="w-20 h-auto drop-shadow-lg"
+            className="w-24 h-auto drop-shadow-lg"
           />
         </div>
       )}

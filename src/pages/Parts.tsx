@@ -9,7 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PartsHero } from "@/components/parts/PartsHero";
 import { PartsDescription } from "@/components/parts/PartsDescription";
 import { PartsCatalog } from "@/components/parts/PartsCatalog";
-import { PartsOrderForm } from "@/components/parts/PartsOrderForm";
+import ConsultationSection from "@/components/ConsultationSection";
 
 const Parts = () => {
   return (
@@ -72,7 +72,7 @@ const Parts = () => {
       <PartsHero />
       <PartsDescription />
       <PartsCatalog />
-      <PartsOrderForm />
+      <ConsultationSection />
 
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">

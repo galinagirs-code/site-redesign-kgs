@@ -99,7 +99,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Комплексное проектирование оборудования под ваши задачи
                 </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
+                <div className="prose prose-lg max-w-none text-primary mb-8">
                   <p>
                     Проектирование начинается с формирования технического задания на основе опросного листа.
                   </p>
@@ -111,7 +111,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <CardContent className="p-4 flex items-start space-x-3">
                         <Icon name="FileText" size={20} className="text-accent flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
+                        <span className="text-primary">{item}</span>
                       </CardContent>
                     </Card>
                   ))}
@@ -124,7 +124,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                       <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-primary">
                         <CardContent className="p-4 flex items-start space-x-3">
                           <Icon name="Award" size={20} className="text-primary flex-shrink-0 mt-1" />
-                          <span className="text-gray-700 font-medium">{result}</span>
+                          <span className="text-primary font-medium">{result}</span>
                         </CardContent>
                       </Card>
                     ))}
@@ -147,7 +147,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                     Компания «КоперГруппСервис»
                   </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed">
+                  <p className="text-primary text-lg leading-relaxed">
                     КоперГруппСервис — это инженерная экспертиза, современное производство и практический опыт, позволяющие создавать универсальное, надёжное и экономически выгодное оборудование для фундаментного строения.
                   </p>
                 </CardContent>
@@ -192,7 +192,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
               Доставка оборудования
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 mb-12">
+            <div className="prose prose-lg max-w-none text-primary mb-12">
               <p>
                 КоперГруппСервис обеспечивает покупателю быструю, надёжную и безопасную доставку оборудования и спецтехники — от проверки товара у производителя до выгрузки на объекте заказчика.
               </p>
@@ -217,12 +217,12 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                             {step.items.map((item, itemIndex) => (
                               <li key={itemIndex} className="flex items-start space-x-2">
                                 <Icon name="ChevronRight" size={20} className="text-accent flex-shrink-0 mt-0.5" />
-                                <span className="text-gray-700">{item}</span>
+                                <span className="text-primary">{item}</span>
                               </li>
                             ))}
                           </ul>
                           {step.note && (
-                            <p className="mt-3 text-sm text-gray-600 italic">* {step.note}</p>
+                            <p className="mt-3 text-sm text-muted-foreground italic">* {step.note}</p>
                           )}
                         </div>
                       </div>
@@ -255,7 +255,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                     <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                       Гарантия сохранности и своевременности
                     </h3>
-                    <p className="text-gray-700 text-lg leading-relaxed">
+                    <p className="text-primary text-lg leading-relaxed">
                       Полная ответственность за груз, страхование и постоянный контроль на всех этапах — от склада производителя до вашего объекта.
                     </p>
                   </div>

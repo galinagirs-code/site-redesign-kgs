@@ -44,7 +44,7 @@ export const MastsAndModernization = () => {
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Универсальность оборудования — наш приоритет
                 </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
+                <div className="prose prose-lg max-w-none text-primary mb-8">
                   <p>
                     Для расширения возможностей строительной техники мы предлагаем копровые мачты для кранов и экскаваторов.
                   </p>
@@ -58,7 +58,7 @@ export const MastsAndModernization = () => {
                     <Card key={index} className="hover:shadow-lg transition-shadow">
                       <CardContent className="p-4 flex items-center space-x-3">
                         <Icon name="CheckCircle2" size={24} className="text-accent flex-shrink-0" />
-                        <span className="text-gray-800 font-medium">{capability}</span>
+                        <span className="text-primary font-medium">{capability}</span>
                       </CardContent>
                     </Card>
                   ))}
@@ -108,7 +108,7 @@ export const MastsAndModernization = () => {
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Оптимальные технические решения по модернизации
                 </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
+                <div className="prose prose-lg max-w-none text-primary mb-8">
                   <p>
                     КоперГруппСервис разрабатывает и реализует проекты по модернизации кранов и экскаваторов, превращая простаивающие машины в полноценные сваебойные или буровые установки.
                   </p>
@@ -124,7 +124,7 @@ export const MastsAndModernization = () => {
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-4 flex items-start space-x-3">
                     <Icon name="Settings" size={20} className="text-accent flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">{factor}</span>
+                    <span className="text-primary">{factor}</span>
                   </CardContent>
                 </Card>
               ))}
@@ -137,7 +137,7 @@ export const MastsAndModernization = () => {
                   <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-accent">
                     <CardContent className="p-4 flex items-start space-x-3">
                       <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
-                      <span className="text-gray-700">{benefit}</span>
+                      <span className="text-primary">{benefit}</span>
                     </CardContent>
                   </Card>
                 ))}

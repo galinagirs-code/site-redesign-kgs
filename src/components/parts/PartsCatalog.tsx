@@ -183,7 +183,7 @@ export const PartsCatalog = () => {
                   <p className="text-lg font-bold text-accent mb-4">
                     Цена: {part.price}
                   </p>
-                  <a href="#order">
+                  <a href="#contact">
                     <Button className="w-full btn-gradient text-white">
                       Оставить заявку
                     </Button>

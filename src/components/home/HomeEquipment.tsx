@@ -114,7 +114,7 @@ export const HomeEquipment = () => {
                   src={item.image}
                   alt={item.title}
                   className={`h-full w-full object-contain group-hover:scale-105 transition-transform duration-300 ${item.id === 7 || item.id === 8 || item.id === 9 ? 'p-0' : 'p-4'}`}
-                  watermarkPosition={item.id === 7 ? 'bottom-2 right-4' : 'bottom-4 right-4'}
+
                 />
               </div>
               <CardContent className="p-4 md:p-6">
