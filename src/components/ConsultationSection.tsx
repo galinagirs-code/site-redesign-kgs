@@ -84,7 +84,7 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
                   <Textarea
                     value={formData.comment}
                     onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
-                    placeholder="Расскажите о вашем проекте..."
+                    placeholder=""
                     rows={4}
                     className="border-border"
                   />

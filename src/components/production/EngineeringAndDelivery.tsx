@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
@@ -77,11 +76,7 @@ const deliverySteps = [
   }
 ];
 
-interface EngineeringAndDeliveryProps {
-  onOpenDialog: () => void;
-}
-
-export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryProps) => {
+export const EngineeringAndDelivery = () => {
   return (
     <>
       <section id="engineering" className="py-16 md:py-24 bg-gray-50">
@@ -144,40 +139,13 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
             <div className="space-y-8 mt-12">
               <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-heading font-bold text-primary mb-4">
-                    Компания «КоперГруппСервис»
-                  </h3>
                   <p className="text-primary text-lg leading-relaxed">
-                    КоперГруппСервис — это инженерная экспертиза, современное производство и практический опыт, позволяющие создавать универсальное, надёжное и экономически выгодное оборудование для фундаментного строения.
+                    КоперГруппСервис — это инженерная экспертиза, современное производство и практический опыт, позволяющие создавать универсальное, надёжное и экономически выгодное оборудование для фундаментного строения
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-primary to-primary/90 text-white">
-                <CardContent className="p-8">
-                  <h4 className="text-2xl font-heading font-bold mb-4">
-                    Готовы обсудить задачу или рассчитать стоимость оборудования?
-                  </h4>
-                  <p className="text-white/90 text-lg mb-6">
-                    Оставьте заявку — менеджер «КоперГруппСервис» свяжется с вами, уточнит технические требования и предложит оптимальное решение под ваш проект.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button 
-                      onClick={onOpenDialog}
-                      className="bg-accent hover:bg-accent/90 text-white"
-                    >
-                      Отправить заявку
-                    </Button>
-                    <Button 
-                      onClick={onOpenDialog}
-                      variant="outline" 
-                      className="bg-white/10 hover:bg-white/20 text-white border-white/30"
-                    >
-                      Получить консультацию
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+
             </div>
           </div>
         </div>
@@ -240,17 +208,13 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                   alt="Молот DD-35 в контейнере - доставка оборудования КГС"
                   variant="content"
                 />
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/6d225031-02bf-4cbb-a521-75a7c80f2334.png"
-                  alt="Доставка оборудования КГС - в контейнере"
-                  variant="content"
-                />
+
               </div>
             </div>
 
             <div className="max-w-4xl mt-12 space-y-4">
               <p className="text-primary text-base md:text-lg leading-relaxed">
-                Благодаря многолетнему опыту работы с оборудованием для свайного фундаментостроения и надежным партнерам, «КоперГруппСервис» обеспечивает своим клиентам быстрые и надёжные поставки техники.
+                Благодаря многолетнему опыту работы с оборудованием для свайного фундаментостроения и надежным партнерам, КоперГруппСервис обеспечивает своим клиентам быстрые и надёжные поставки техники.
               </p>
               <p className="text-primary text-base md:text-lg leading-relaxed">
                 Оптимизированные маршруты, отработанные процессы и прямое взаимодействие с производителями позволяют организовать доставку в минимальные сроки и на выгодных условиях.

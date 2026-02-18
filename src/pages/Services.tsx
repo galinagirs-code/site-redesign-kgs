@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -11,6 +15,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 
 const Services = () => {
+  const [isServiceFormOpen, setIsServiceFormOpen] = useState(false);
+  const [serviceForm, setServiceForm] = useState({ name: "", phone: "", email: "" });
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -276,13 +282,45 @@ const Services = () => {
                 КоперГруппСервис — гарант надёжного старта вашей техники.
               </p>
               <div className="flex justify-center">
-                <a href="mailto:service@kgs-ural.ru">
-                  <Button size="lg" className="btn-gradient text-white">
-                    <Icon name="Mail" className="mr-2" size={20} />
-                    Связаться с сервисным менеджером
-                  </Button>
-                </a>
+                <Button size="lg" className="btn-gradient text-white" onClick={() => setIsServiceFormOpen(true)}>
+                  <Icon name="FileText" className="mr-2" size={20} />
+                  Оставить заявку сервисному инженеру
+                </Button>
               </div>
+
+              <Dialog open={isServiceFormOpen} onOpenChange={setIsServiceFormOpen}>
+                <DialogContent className="sm:max-w-[440px]">
+                  <DialogHeader>
+                    <DialogTitle className="text-xl font-heading font-bold text-primary">
+                      Заявка сервисному инженеру
+                    </DialogTitle>
+                  </DialogHeader>
+                  <form onSubmit={(e) => { e.preventDefault(); console.log("Service form:", serviceForm); setIsServiceFormOpen(false); }} className="space-y-4">
+                    <div>
+                      <label className="text-sm font-semibold mb-1.5 block text-primary">ФИО<span className="text-red-500">*</span></label>
+                      <Input value={serviceForm.name} onChange={(e) => setServiceForm({ ...serviceForm, name: e.target.value })} placeholder="Иван Иванов" required />
+                    </div>
+                    <div>
+                      <label className="text-sm font-semibold mb-1.5 block text-primary">Телефон<span className="text-red-500">*</span></label>
+                      <Input type="tel" value={serviceForm.phone} onChange={(e) => setServiceForm({ ...serviceForm, phone: e.target.value })} placeholder="+7 (___) ___-__-__" required />
+                    </div>
+                    <div>
+                      <label className="text-sm font-semibold mb-1.5 block text-primary">Email<span className="text-red-500">*</span></label>
+                      <Input type="email" value={serviceForm.email} onChange={(e) => setServiceForm({ ...serviceForm, email: e.target.value })} placeholder="email@example.com" required />
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Checkbox id="privacy-service" className="mt-1" />
+                      <label htmlFor="privacy-service" className="text-xs text-muted-foreground leading-relaxed cursor-pointer">
+                        Я согласен на обработку персональных данных в соответствии с{" "}
+                        <a href="#" className="text-primary hover:text-accent underline">политикой конфиденциальности</a>
+                      </label>
+                    </div>
+                    <Button type="submit" className="w-full btn-gradient-reverse text-white uppercase tracking-wider font-bold">
+                      Отправить заявку
+                    </Button>
+                  </form>
+                </DialogContent>
+              </Dialog>
             </Card>
           </div>
         </div>
@@ -386,7 +424,7 @@ const Services = () => {
             <Card className="p-8 bg-white/10 border-white/20 text-white">
               <div className="space-y-6 leading-relaxed">
                 <p className="text-lg font-semibold text-accent">
-                  «КоперГруппСервис» предоставляет гарантию сроком 12 месяцев с момента поставки оборудования (за исключением расходных материалов).
+                  КоперГруппСервис предоставляет гарантию сроком 12 месяцев с момента поставки оборудования (за исключением расходных материалов).
                 </p>
                 <p>
                   Мы работаем по всей России и в странах СНГ, обеспечивая профессиональный сервис, ремонт и диагностику оборудования для фундаментостроения.

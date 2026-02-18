@@ -73,7 +73,7 @@ const Production = () => {
       <ProductionHero />
       <ProductionCycle />
       <MastsAndModernization />
-      <EngineeringAndDelivery onOpenDialog={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} />
+      <EngineeringAndDelivery />
 
       <ConsultationSection />
 
