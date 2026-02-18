@@ -13,6 +13,10 @@ import { EquipmentHeader } from "./EquipmentHeader";
 import { EquipmentVariantsSection } from "./EquipmentVariantsSection";
 import { EquipmentGallerySection } from "./EquipmentGallerySection";
 import { EquipmentFooter } from "./EquipmentFooter";
+import { MessengerLinks } from "@/components/MessengerLinks";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { ReactNode, useState } from "react";
 
 interface BreadcrumbItem {
@@ -196,61 +200,118 @@ export const EquipmentPageLayout = ({
         altPrefix={galleryAltPrefix}
       />
 
-      <section id="consultation" className="py-16 md:py-24 bg-primary text-white">
+      <section id="consultation" className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              {consultationTitle}
-            </h2>
-            <p className="text-white/90 text-lg mb-8">
-              {consultationDescription}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                onClick={() => setShowConsultationForm(true)}
-                className="bg-accent hover:bg-accent/90 text-white"
-              >
-                <Icon name="MessageCircle" className="mr-2" size={20} />
-                Получить консультацию
-              </Button>
-              <Link to="/catalog">
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="bg-white/10 text-white border-white/30 hover:bg-white/20 w-full"
-                >
-                  <Icon name="ArrowLeft" className="mr-2" size={20} />
-                  Вернуться в каталог
-                </Button>
-              </Link>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Получите консультацию</h2>
+              <p className="text-muted-foreground text-base md:text-lg">
+                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              <Card className="p-4 md:p-6">
+                <form className="space-y-4">
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Ваше имя <span className="text-red-500">*</span></label>
+                    <Input placeholder="Иван Иванов" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Телефон <span className="text-red-500">*</span></label>
+                    <Input placeholder="+7 (___) ___-__-__" type="tel" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Email <span className="text-red-500">*</span></label>
+                    <Input placeholder="email@example.com" type="email" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Комментарий</label>
+                    <Textarea placeholder="Расскажите о вашем проекте..." rows={4} />
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Checkbox id={`privacy-${formCategoryId}`} className="mt-1" />
+                    <label
+                      htmlFor={`privacy-${formCategoryId}`}
+                      className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                    >
+                      Я согласен на обработку персональных данных в соответствии с{" "}
+                      <a href="#" className="text-primary hover:text-accent underline">
+                        политикой конфиденциальности
+                      </a>
+                    </label>
+                  </div>
+                  <Button type="submit" className="w-full btn-gradient-reverse text-white">
+                    Отправить заявку
+                    <Icon name="Send" className="ml-2" size={16} />
+                  </Button>
+
+                  <MessengerLinks />
+                </form>
+              </Card>
+
+              <div className="space-y-4 md:space-y-6">
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="Phone" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Телефоны</h3>
+                      <p className="text-muted-foreground mb-1 text-sm md:text-base">
+                        <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a>
+                        {" "}— бесплатно
+                      </p>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a>
+                        {" "}— офис
+                      </p>
+                      <p className="text-muted-foreground mt-2 text-sm md:text-base">
+                        <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@kgs_ural</a>
+                        {" "}— Telegram
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="Mail" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Email</h3>
+                      <p className="text-muted-foreground mb-1 text-sm md:text-base">
+                        <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
+                      </p>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        <a href="mailto:service@kgs-ural.ru" className="hover:text-accent transition-colors">service@kgs-ural.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="MapPin" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Адрес офиса</h3>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
+                      </p>
+                      <p className="text-xs md:text-sm text-muted-foreground mt-2">
+                        Пн–Пт: 09:00 — 18:00
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {showConsultationForm && (
-        <div className="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
-            <div className="sticky top-0 bg-white p-4 border-b flex items-center justify-between">
-              <h3 className="font-heading font-semibold text-lg">Консультация: {formCategoryTitle}</h3>
-              <button 
-                onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Icon name="X" size={24} />
-              </button>
-            </div>
-            <div className="p-4">
-              <EquipmentForm 
-                categoryTitle={formCategoryTitle}
-                categoryId={formCategoryId}
-                questions={formQuestions}
-              />
-            </div>
-          </div>
-        </div>
-      )}
 
       {selectedImage && (
         <div 
