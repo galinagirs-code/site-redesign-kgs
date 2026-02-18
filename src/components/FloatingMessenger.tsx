@@ -16,7 +16,7 @@ const FloatingMessenger = () => {
 
   if (isDismissed) {
     return (
-      <div className="fixed bottom-6 right-6 z-[55] flex flex-col gap-3">
+      <div className="fixed bottom-6 left-6 z-[55] flex flex-col gap-3">
         <a
           href="https://max.ru/u/f9LHodD0cOIP8_25Pol0FgGthbuYFvPpONLlW4R8sdoUUmuprdyzEwbPSy0"
           target="_blank"
@@ -40,7 +40,7 @@ const FloatingMessenger = () => {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-[55] animate-fade-in">
+    <div className="fixed bottom-6 left-6 z-[55] animate-fade-in">
       <div className="bg-white rounded-2xl shadow-2xl border border-border/50 p-5 w-[280px] relative">
         <button
           onClick={() => setIsDismissed(true)}

@@ -400,35 +400,6 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Card className="p-8 md:p-12 text-center bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20">
-              <h2 className="text-3xl font-heading font-bold mb-4">
-                Нужна консультация?
-              </h2>
-              <p className="text-muted-foreground mb-8 text-lg">
-                Свяжитесь с нами уже сегодня
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact">
-                  <Button size="lg" className="btn-gradient text-white w-full sm:w-auto">
-                    Связаться с нами
-                    <Icon name="ArrowRight" className="ml-2" size={18} />
-                  </Button>
-                </Link>
-                <a href="tel:88006007465">
-                  <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white w-full sm:w-auto">
-                    <Icon name="Phone" className="mr-2" size={18} />
-                    8 (800) 600-74-65
-                  </Button>
-                </a>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       <ConsultationSection />
 
       <footer className="bg-primary text-white py-12">

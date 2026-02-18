@@ -96,7 +96,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
             
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-6">
+                <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-6">
                   Комплексное проектирование оборудования под ваши задачи
                 </h3>
                 <div className="prose prose-lg max-w-none text-primary mb-8">
@@ -118,7 +118,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                 </div>
 
                 <div className="mb-8">
-                  <h4 className="text-xl font-semibold text-primary mb-4">Результат проектирования:</h4>
+                  <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-4">Результат проектирования:</h4>
                   <div className="space-y-3">
                     {projectingResults.map((result, index) => (
                       <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-primary">
@@ -190,25 +190,14 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
               Доставка
             </Badge>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
-              Доставка оборудования и спецтехники в минимальные сроки
+              Доставка оборудования
             </h2>
-            <div className="max-w-4xl mb-12 space-y-4">
-              <p className="text-primary text-base md:text-lg leading-relaxed">
-                Благодаря многолетнему опыту работы с оборудованием для свайного фундаментостроения и надежным партнерам, «КоперГруппСервис» обеспечивает своим клиентам быстрые и надёжные поставки техники.
-              </p>
-              <p className="text-primary text-base md:text-lg leading-relaxed">
-                Оптимизированные маршруты, отработанные процессы и прямое взаимодействие с производителями позволяют организовать доставку в минимальные сроки и на выгодных условиях.
-              </p>
-              <p className="text-primary text-base md:text-lg leading-relaxed">
-                Мы полностью берём на себя все этапы — от проверки оборудования и подготовки документов до таможенного сопровождения, транспортировки и обеспечения сохранности груза.
-              </p>
-              <p className="text-primary text-base md:text-lg leading-relaxed font-semibold">
-                КоперГруппСервис — когда важны точность, надёжность и ответственность за результат.
-              </p>
-            </div>
+            <p className="text-primary text-base md:text-lg leading-relaxed mb-8 max-w-4xl">
+              КоперГруппСервис обеспечивает покупателю быструю, надёжную и безопасную доставку оборудования и спецтехники — от проверки товара у производителя до выгрузки на объекте заказчика.
+            </p>
 
-            <h3 className="text-2xl font-heading font-bold text-primary mb-8">
-              Как мы организуем доставку
+            <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-8">
+              Как мы организуем доставку:
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
@@ -221,7 +210,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                           {step.number}
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-xl font-semibold text-primary mb-4">{step.title}</h4>
+                          <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-4">{step.title}</h4>
                           <ul className="space-y-2">
                             {step.items.map((item, itemIndex) => (
                               <li key={itemIndex} className="flex items-start space-x-2">
@@ -247,8 +236,8 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                   variant="content"
                 />
                 <OptimizedImage
-                  src="https://cdn.poehali.dev/files/Доставка 2.png"
-                  alt="Доставка оборудования КГС - транспортировка"
+                  src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/14d7e65a-e0bf-4141-aee9-0e4afbda4cd1.png"
+                  alt="Молот DD-35 в контейнере - доставка оборудования КГС"
                   variant="content"
                 />
                 <OptimizedImage
@@ -257,6 +246,21 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                   variant="content"
                 />
               </div>
+            </div>
+
+            <div className="max-w-4xl mt-12 space-y-4">
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Благодаря многолетнему опыту работы с оборудованием для свайного фундаментостроения и надежным партнерам, «КоперГруппСервис» обеспечивает своим клиентам быстрые и надёжные поставки техники.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Оптимизированные маршруты, отработанные процессы и прямое взаимодействие с производителями позволяют организовать доставку в минимальные сроки и на выгодных условиях.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Мы полностью берём на себя все этапы — от проверки оборудования и подготовки документов до таможенного сопровождения, транспортировки и обеспечения сохранности груза.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed font-semibold">
+                КоперГруппСервис — когда важны точность, надёжность и ответственность за результат.
+              </p>
             </div>
           </div>
         </div>

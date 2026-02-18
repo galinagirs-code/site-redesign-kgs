@@ -41,7 +41,7 @@ export const MastsAndModernization = () => {
             
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-6">
+                <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-6">
                   Универсальность оборудования — наш приоритет
                 </h3>
                 <p className="text-primary text-base md:text-lg leading-relaxed mb-4">
@@ -92,15 +92,15 @@ export const MastsAndModernization = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
               Модернизация техники для забивки свай
             </h2>
-            <h3 className="text-xl font-semibold text-primary mb-6">
+            <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-6">
               Оптимальные технические решения по модернизации
             </h3>
 
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8 max-w-4xl">
-              Компания «КоперГруппСервис» модернизирует краны и экскаваторы, превращая простаивающие машины в полноценные сваебойные или буровые установки.
+            <p className="text-primary text-base md:text-lg leading-relaxed mb-8 max-w-4xl">
+              КоперГруппСервис разрабатывает и реализует проекты по модернизации кранов и экскаваторов, с помощью которых, простаивающие машины переоборудуются в полноценные сваебойные или буровые установки.
             </p>
 
-            <h4 className="text-xl font-semibold text-primary mb-4">При модернизации учитываем:</h4>
+            <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-4">При модернизации учитываем:</h4>
             <div className="grid md:grid-cols-2 gap-4 mb-10">
               {modernizationFactors.map((factor, index) => (
                 <Card key={index} className="border border-border hover:shadow-lg transition-shadow">
@@ -112,7 +112,7 @@ export const MastsAndModernization = () => {
               ))}
             </div>
 
-            <h4 className="text-xl font-semibold text-primary mb-4">Преимущества модернизации:</h4>
+            <h4 className="text-lg md:text-xl font-heading font-semibold text-primary mb-4">Преимущества модернизации:</h4>
             <div className="space-y-3">
               {modernizationBenefits.map((benefit, index) => (
                 <Card key={index} className="border border-border hover:shadow-lg transition-shadow border-l-4 border-l-accent">
