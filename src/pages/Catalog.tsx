@@ -13,6 +13,9 @@ import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 import { EquipmentForm } from "@/components/EquipmentForm";
 import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
 import { MessengerLinks } from "@/components/MessengerLinks";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
 
 const Catalog = () => {
@@ -1221,58 +1224,113 @@ const Catalog = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-16 md:py-20 bg-gradient-to-br from-primary via-primary to-primary/90">
+      <section id="contact" className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Получить консультацию
-            </Badge>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-4">
-              Получите консультацию
-            </h2>
-            <p className="text-white/80 text-base md:text-lg mb-8">
-              Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <a href="tel:88006007465" className="inline-block">
-                <Button size="lg" className="btn-gradient-reverse text-white w-full sm:w-auto">
-                  <Icon name="Phone" className="mr-2" size={20} />
-                  Позвонить нам
-                </Button>
-              </a>
-              <a href="mailto:info@kgs-ural.ru" className="inline-block">
-                <Button size="lg" variant="outline" className="bg-white/10 text-white border-white/30 hover:bg-white/20 w-full sm:w-auto">
-                  <Icon name="Mail" className="mr-2" size={20} />
-                  Отправить сообщение
-                </Button>
-              </a>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Получите консультацию</h2>
+              <p className="text-muted-foreground text-base md:text-lg">
+                Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
+              </p>
             </div>
-            <div className="border-t border-white/20 pt-8">
-              <p className="font-heading font-bold text-white text-base mb-1">Нужен быстрый ответ?</p>
-              <p className="text-white/70 text-sm mb-4">Напишите менеджеру напрямую в</p>
-              <div className="flex gap-3 justify-center">
-                <a
-                  href="https://max.ru/u/f9LHodD0cOIP8_25Pol0FgGthbuYFvPpONLlW4R8sdoUUmuprdyzEwbPSy0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg bg-white/15 hover:bg-white/25 border border-white/30"
-                >
-                  <Icon name="MessageCircle" size={18} />
-                  MAX
-                </a>
-                <a
-                  href="https://t.me/kgs_ural"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg bg-accent hover:bg-accent/90"
-                >
-                  <Icon name="Send" size={18} />
-                  Telegram
-                </a>
-              </div>
-              <div className="flex items-center justify-center gap-1.5 mt-3">
-                <Icon name="Clock" size={14} className="text-white/60" />
-                <span className="text-white/60 text-sm">Ответим в течение 5 минут</span>
+
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              <Card className="p-4 md:p-6">
+                <form className="space-y-4">
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Ваше имя <span className="text-red-500">*</span></label>
+                    <Input placeholder="Иван Иванов" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Телефон <span className="text-red-500">*</span></label>
+                    <Input placeholder="+7 (___) ___-__-__" type="tel" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Email <span className="text-red-500">*</span></label>
+                    <Input placeholder="email@example.com" type="email" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Комментарий</label>
+                    <Textarea placeholder="Расскажите о вашем проекте..." rows={4} />
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Checkbox id="privacy-catalog" className="mt-1" />
+                    <label
+                      htmlFor="privacy-catalog"
+                      className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                    >
+                      Я согласен на обработку персональных данных в соответствии с{" "}
+                      <a href="#" className="text-primary hover:text-accent underline">
+                        политикой конфиденциальности
+                      </a>
+                    </label>
+                  </div>
+                  <Button type="submit" className="w-full btn-gradient-reverse text-white">
+                    Отправить заявку
+                    <Icon name="Send" className="ml-2" size={16} />
+                  </Button>
+
+                  <MessengerLinks />
+                </form>
+              </Card>
+
+              <div className="space-y-4 md:space-y-6">
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="Phone" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Телефоны</h3>
+                      <p className="text-muted-foreground mb-1 text-sm md:text-base">
+                        <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a>
+                        {" "}— бесплатно
+                      </p>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a>
+                        {" "}— офис
+                      </p>
+                      <p className="text-muted-foreground mt-2 text-sm md:text-base">
+                        <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@kgs_ural</a>
+                        {" "}— Telegram
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="Mail" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Email</h3>
+                      <p className="text-muted-foreground mb-1 text-sm md:text-base">
+                        <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
+                      </p>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        <a href="mailto:service@kgs-ural.ru" className="hover:text-accent transition-colors">service@kgs-ural.ru</a>
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 md:p-6">
+                  <div className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-accent/10 p-2 md:p-3 rounded-lg">
+                      <Icon name="MapPin" className="text-accent" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold mb-1 md:mb-2 text-sm md:text-base">Адрес офиса</h3>
+                      <p className="text-muted-foreground text-sm md:text-base">
+                        г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
+                      </p>
+                      <p className="text-xs md:text-sm text-muted-foreground mt-2">
+                        Пн–Пт: 09:00 — 18:00
+                      </p>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>
