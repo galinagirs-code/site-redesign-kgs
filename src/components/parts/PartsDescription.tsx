@@ -21,7 +21,7 @@ export const PartsDescription = () => {
                     <div>
                       <h3 className="font-heading font-bold text-base mb-1 text-primary">Забота на каждом этапе</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Оперативная поставка запчастей и расходных материалов — ключевой элемент нашей поддержки вашей техники.
+                        В КоперГруппСервис мы заботимся о вашей технике на каждом этапе её эксплуатации. Оперативная поставка запчастей и расходных материалов является одним из ключевых элементов нашей поддержки.
                       </p>
                     </div>
                   </CardContent>
@@ -35,7 +35,7 @@ export const PartsDescription = () => {
                     <div>
                       <h3 className="font-heading font-bold text-base mb-1 text-primary">Склад в Екатеринбурге</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Наиболее востребованные позиции всегда в наличии — минимальное время ожидания.
+                        Для максимальной скорости доставки мы организовали склад в Екатеринбурге, где всегда в наличии наиболее востребованные позиции.
                       </p>
                     </div>
                   </CardContent>
@@ -49,7 +49,7 @@ export const PartsDescription = () => {
                     <div>
                       <h3 className="font-heading font-bold text-base mb-1 text-primary">Качественные аналоги</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Альтернативные каналы поставок надёжных деталей для импортной техники — по доступной цене, без простоев.
+                        Мы также развиваем альтернативные каналы поставок качественных аналоговых запчастей, позволяя владельцам импортной строительной техники получать надёжные детали по доступной цене, без простоев и задержек.
                       </p>
                     </div>
                   </CardContent>
