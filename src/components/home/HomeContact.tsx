@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 export const HomeContact = () => {
   return (
@@ -54,6 +55,8 @@ export const HomeContact = () => {
                     Отправить заявку
                     <Icon name="Send" className="ml-2" size={16} />
                   </Button>
+
+                  <MessengerLinks />
                 </form>
               </Card>
 

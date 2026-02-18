@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 interface SubField {
   label: string;
@@ -342,6 +343,8 @@ export const EquipmentForm = ({ categoryTitle, categoryId, questions }: Equipmen
                 </>
               )}
             </Button>
+
+            <MessengerLinks compact />
           </form>
         )}
       </CardContent>

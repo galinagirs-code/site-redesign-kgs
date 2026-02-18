@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 export const PartsOrderForm = () => {
   const [formData, setFormData] = useState({
@@ -160,6 +161,8 @@ export const PartsOrderForm = () => {
                   <Button type="submit" className="w-full btn-gradient text-white text-lg py-6">
                     Отправить заявку
                   </Button>
+
+                  <MessengerLinks />
                 </form>
               </CardContent>
             </Card>

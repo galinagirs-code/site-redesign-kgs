@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 interface ConsultationButtonProps {
   variant?: "default" | "outline" | "gradient";
@@ -102,6 +103,8 @@ export const ConsultationButton = ({ variant = "default", size = "default", clas
               Отмена
             </Button>
           </div>
+
+          <MessengerLinks />
         </form>
       </DialogContent>
     </Dialog>

@@ -14,6 +14,7 @@ import Icon from "@/components/ui/icon";
 import { useCart } from "@/components/CartContext";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 export const CartButton = () => {
   const { cart, removeFromCart, updateQuantity, clearCart, cartCount } = useCart();
@@ -146,6 +147,8 @@ export const CartButton = () => {
               <Button type="submit" className="w-full btn-gradient text-white">
                 Отправить заявку
               </Button>
+
+              <MessengerLinks compact />
             </form>
           </div>
         )}

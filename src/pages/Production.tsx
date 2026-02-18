@@ -14,6 +14,7 @@ import { ProductionHero } from "@/components/production/ProductionHero";
 import { ProductionCycle } from "@/components/production/ProductionCycle";
 import { MastsAndModernization } from "@/components/production/MastsAndModernization";
 import { EngineeringAndDelivery } from "@/components/production/EngineeringAndDelivery";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 const Production = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -267,6 +268,8 @@ const Production = () => {
                 </>
               )}
             </Button>
+
+            <MessengerLinks />
           </form>
         </DialogContent>
       </Dialog>

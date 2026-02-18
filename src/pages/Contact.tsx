@@ -10,6 +10,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { MessengerLinks } from "@/components/MessengerLinks";
 
 const Contact = () => {
   const contactSchema = {
@@ -292,6 +293,8 @@ const Contact = () => {
                 <Button className="w-full btn-gradient text-white h-12" size="lg">
                   Отправить сообщение
                 </Button>
+
+                <MessengerLinks />
               </form>
             </Card>
           </div>
