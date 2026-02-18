@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ConsultationSection from "@/components/ConsultationSection";
+import Icon from "@/components/ui/icon";
 
 export const HomeContact = () => {
   return (
