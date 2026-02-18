@@ -21,10 +21,7 @@ export const MessengerLinks = ({ compact = false }: MessengerLinksProps) => {
           className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg"
           style={{ background: 'linear-gradient(135deg, #6B3FA0, #8B5CF6)' }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" fill="white" fillOpacity="0.25"/>
-            <circle cx="12" cy="12" r="5" fill="white"/>
-          </svg>
+          <img src="https://cdn.poehali.dev/files/fee1ea21-57e7-4af9-9bba-a186df621e05.png" alt="MAX" className="h-5 w-auto" />
           MAX
         </a>
         <a
@@ -34,7 +31,7 @@ export const MessengerLinks = ({ compact = false }: MessengerLinksProps) => {
           className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg"
           style={{ background: 'linear-gradient(135deg, #2AABEE, #229ED9)' }}
         >
-          <Icon name="Send" size={18} />
+          <img src="https://cdn.poehali.dev/files/8d7cb5dd-5893-4a3a-9448-4b7e575f2939.png" alt="Telegram" className="h-5 w-auto" />
           Telegram
         </a>
       </div>
