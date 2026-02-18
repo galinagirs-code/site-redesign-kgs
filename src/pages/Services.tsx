@@ -8,6 +8,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import ConsultationSection from "@/components/ConsultationSection";
 
 const Services = () => {
   const servicesSchema = {
@@ -427,6 +428,8 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      <ConsultationSection />
 
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">

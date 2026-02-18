@@ -66,8 +66,8 @@ export const MastsAndModernization = () => {
 
                 <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30">
                   <CardContent className="p-6">
-                    <p className="text-gray-700 text-lg">
-                      Это позволяет одной машине заменить несколько видов спецтехники и значительно сократить затраты на реализацию проектов.
+                    <p className="text-primary text-lg">
+                      Это позволяет использовать уже имеющуюся технику в новых задачах без покупки нового оборудования, снижая затраты заказчика.
                     </p>
                   </CardContent>
                 </Card>
@@ -75,8 +75,8 @@ export const MastsAndModernization = () => {
 
               <div className="flex justify-center items-center">
                 <OptimizedImage
-                  src="https://cdn.poehali.dev/files/f50bcd3e-120c-4036-9648-3b8a985947a3.png"
-                  alt="Копровая мачта КГС"
+                  src="https://cdn.poehali.dev/files/42a4a533-f2e0-42a5-97b3-c47368e3c3fd.jpeg"
+                  alt="Производство копровых мачт КГС"
                   variant="content"
                 />
               </div>
@@ -92,7 +92,7 @@ export const MastsAndModernization = () => {
               Модернизация
             </Badge>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
-              Модернизация строительной техники
+              Модернизация техники для забивки свай
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
@@ -106,17 +106,14 @@ export const MastsAndModernization = () => {
 
               <div className="order-1 md:order-2">
                 <h3 className="text-xl font-semibold text-primary mb-6">
-                  Адаптируем технику под ваши задачи
+                  Оптимальные технические решения по модернизации
                 </h3>
                 <div className="prose prose-lg max-w-none text-gray-700 mb-8">
                   <p>
-                    Модернизация техники — это комплекс мер по улучшению характеристик базовой машины для выполнения специализированных задач.
+                    КоперГруппСервис разрабатывает и реализует проекты по модернизации кранов и экскаваторов, превращая простаивающие машины в полноценные сваебойные или буровые установки.
                   </p>
                   <p>
-                    Мы адаптируем имеющуюся у заказчика технику под задачи строительства свайных фундаментов.
-                  </p>
-                  <p>
-                    В каждом проекте инженеры оценивают возможность модернизации, учитывая:
+                    При модернизации учитываем:
                   </p>
                 </div>
               </div>

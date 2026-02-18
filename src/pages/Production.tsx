@@ -1,54 +1,17 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ProductionHero } from "@/components/production/ProductionHero";
 import { ProductionCycle } from "@/components/production/ProductionCycle";
 import { MastsAndModernization } from "@/components/production/MastsAndModernization";
 import { EngineeringAndDelivery } from "@/components/production/EngineeringAndDelivery";
-import { MessengerLinks } from "@/components/MessengerLinks";
+import ConsultationSection from "@/components/ConsultationSection";
 
 const Production = () => {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log('Форма отправлена:', formData);
-      setSubmitStatus('success');
-      setFormData({ name: '', phone: '', email: '', message: '' });
-      setTimeout(() => {
-        setIsDialogOpen(false);
-        setSubmitStatus('idle');
-      }, 2000);
-    } catch (error) {
-      console.error('Ошибка отправки:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen">
       <SEO 
@@ -110,7 +73,9 @@ const Production = () => {
       <ProductionHero />
       <ProductionCycle />
       <MastsAndModernization />
-      <EngineeringAndDelivery onOpenDialog={() => setIsDialogOpen(true)} />
+      <EngineeringAndDelivery onOpenDialog={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} />
+
+      <ConsultationSection />
 
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">
@@ -166,113 +131,6 @@ const Production = () => {
           </div>
         </div>
       </footer>
-
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[500px]">
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-heading font-bold text-primary">
-              Оставить заявку
-            </DialogTitle>
-            <DialogDescription>
-              Заполните форму, и наш менеджер свяжется с вами в ближайшее время
-            </DialogDescription>
-          </DialogHeader>
-          <form onSubmit={handleSubmit} className="space-y-4 mt-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                Имя *
-              </label>
-              <Input
-                id="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="Введите ваше имя"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                Телефон *
-              </label>
-              <Input
-                id="phone"
-                type="tel"
-                required
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="+7 (___) ___-__-__"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                Email
-              </label>
-              <Input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                placeholder="example@mail.ru"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                Сообщение
-              </label>
-              <Textarea
-                id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                placeholder="Опишите ваш запрос"
-                rows={4}
-                className="w-full"
-              />
-            </div>
-            
-            {submitStatus === 'success' && (
-              <Card className="bg-green-50 border-green-200">
-                <CardContent className="p-4 flex items-center space-x-2 text-green-700">
-                  <Icon name="CheckCircle2" size={20} />
-                  <span>Заявка успешно отправлена!</span>
-                </CardContent>
-              </Card>
-            )}
-            
-            {submitStatus === 'error' && (
-              <Card className="bg-red-50 border-red-200">
-                <CardContent className="p-4 flex items-center space-x-2 text-red-700">
-                  <Icon name="AlertCircle" size={20} />
-                  <span>Произошла ошибка. Попробуйте позже.</span>
-                </CardContent>
-              </Card>
-            )}
-
-            <Button 
-              type="submit" 
-              className="w-full btn-gradient text-white"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? (
-                <>
-                  <Icon name="Loader2" className="mr-2 animate-spin" size={18} />
-                  Отправка...
-                </>
-              ) : (
-                <>
-                  <Icon name="Send" className="mr-2" size={18} />
-                  Отправить заявку
-                </>
-              )}
-            </Button>
-
-            <MessengerLinks />
-          </form>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };

@@ -6,14 +6,12 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { EquipmentForm } from "@/components/EquipmentForm";
-import { useState } from "react";
+import ConsultationSection from "@/components/ConsultationSection";
 import MachtyMsExContent from "./machty-ms-ex/MachtyMsExContent";
 import MachtyMsExVariants from "./machty-ms-ex/MachtyMsExVariants";
 import MachtyMsExInfoGallery from "./machty-ms-ex/MachtyMsExInfoGallery";
 
 const MachtyMsEx = () => {
-  const [showConsultationForm, setShowConsultationForm] = useState(false);
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -90,83 +88,9 @@ const MachtyMsEx = () => {
       <MachtyMsExVariants />
       <MachtyMsExInfoGallery />
 
-      {/* CTA */}
-      <section id="consultation" className="py-16 md:py-24 bg-primary text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6">
-              Нужна консультация по выбору мачты MS-EX?
-            </h2>
-            <p className="text-white/90 text-base md:text-lg mb-8">
-              Оставьте заявку и наши специалисты помогут подобрать оптимальную модель под ваши задачи и базовую машину
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                onClick={() => setShowConsultationForm(true)}
-                className="bg-accent hover:bg-accent/90 text-white"
-              >
-                <Icon name="MessageCircle" className="mr-2" size={20} />
-                Получить консультацию
-              </Button>
-              <Link to="/catalog">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-white/10 text-white border-white/30 hover:bg-white/20 w-full"
-                >
-                  <Icon name="ArrowLeft" className="mr-2" size={20} />
-                  Вернуться в каталог
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
-      {showConsultationForm && (
-        <div className="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
-            <div className="sticky top-0 bg-white p-4 border-b flex items-center justify-between">
-              <h3 className="font-heading font-semibold text-lg">Консультация: Мачты MS-EX</h3>
-              <button
-                onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Icon name="X" size={24} />
-              </button>
-            </div>
-            <div className="p-4">
-              <EquipmentForm
-                categoryTitle="Мачты копровые экскаваторные (серия MS-EX)"
-                categoryId="machty-ms-ex"
-                questions={[
-                  {
-                    question: "Какой вариант исполнения интересует?",
-                    options: ["На жёсткой раме", "На стреле", "Нужна консультация"],
-                  },
-                  { question: "Модель экскаватора?" },
-                  {
-                    question: "Что планируете навешивать?",
-                    options: ["Гидромолот (забивка свай)", "Вращатель (бурение)", "И молот, и вращатель"],
-                  },
-                  {
-                    question: "Какие сваи планируете забивать?",
-                    columns: [
-                      { label: "Сечение", placeholder: "Укажите сечение свай" },
-                      { label: "Длина", placeholder: "Укажите длину свай" },
-                    ],
-                  },
-                  { question: "Когда планируется закупка (объект)?" },
-                  { question: "В какой город осуществлять доставку?" },
-                ]}
-              />
-            </div>
-          </div>
-        </div>
-      )}
 
-      {/* Footer */}
       <footer className="bg-primary text-white py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">

@@ -45,7 +45,7 @@ const MsExHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Копровые мачты MS-EX — это направляющее навесное оборудование, устанавливаемое на экскаватор для расширения его функционала. С их помощью базовая машина превращается в полноповоротную установку для забивки свай, буровых и фундаментных работ.
+                  Копровые мачты MS-EX — это направляющее навесное оборудование, устанавливаемое на экскаватор для расширения его функционала. С его помощью базовая машина переоборудуется в полноповоротную установку для забивки свай, буровых и фундаментных работ.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed">
                   Благодаря надёжной конструкции, гидравлическим цилиндрам и системе электроуправления из кабины оператора все операции выполняются точно, безопасно и эффективно.
@@ -134,7 +134,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Универсальность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Превращение экскаватора в полноповоротную копровую машину и обратно — без изменения базовой конструкции.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоснащение экскаватора в полноповоротную копровую машину и обратно — без изменения базовой конструкции.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">

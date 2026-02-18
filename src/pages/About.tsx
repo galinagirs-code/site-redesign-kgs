@@ -7,6 +7,7 @@ import { ConsultationButton } from "@/components/ConsultationButton";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import ConsultationSection from "@/components/ConsultationSection";
 import { AboutHero } from "@/components/about/AboutHero";
 import { CompanyInfo } from "@/components/about/CompanyInfo";
 import { TeamAndPartners } from "@/components/about/TeamAndPartners";
@@ -80,6 +81,8 @@ const About = () => {
         selectedProject={selectedProject}
         setSelectedProject={setSelectedProject}
       />
+
+      <ConsultationSection />
 
       <footer className="bg-primary text-white py-12 md:py-16">
         <div className="container mx-auto px-4">
