@@ -189,12 +189,21 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
               Доставка
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
-              Доставка оборудования
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
+              Доставка оборудования и спецтехники в минимальные сроки
             </h2>
-            <div className="prose prose-lg max-w-none text-primary mb-12">
-              <p>
-                КоперГруппСервис обеспечивает покупателю быструю, надёжную и безопасную доставку оборудования и спецтехники — от проверки товара у производителя до выгрузки на объекте заказчика.
+            <div className="max-w-4xl mb-12 space-y-4">
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Благодаря многолетнему опыту работы с оборудованием для свайного фундаментостроения и надежным партнерам, «КоперГруппСервис» обеспечивает своим клиентам быстрые и надёжные поставки техники.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Оптимизированные маршруты, отработанные процессы и прямое взаимодействие с производителями позволяют организовать доставку в минимальные сроки и на выгодных условиях.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed">
+                Мы полностью берём на себя все этапы — от проверки оборудования и подготовки документов до таможенного сопровождения, транспортировки и обеспечения сохранности груза.
+              </p>
+              <p className="text-primary text-base md:text-lg leading-relaxed font-semibold">
+                КоперГруппСервис — когда важны точность, надёжность и ответственность за результат.
               </p>
             </div>
 
@@ -202,7 +211,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
               Как мы организуем доставку
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div className="space-y-6">
                 {deliverySteps.map((step, index) => (
                   <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent">
@@ -231,7 +240,7 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                 ))}
               </div>
 
-              <div className="flex flex-col justify-center space-y-6">
+              <div className="flex flex-col justify-center space-y-6 sticky top-24">
                 <OptimizedImage
                   src="https://cdn.poehali.dev/files/Доставка 1.png"
                   alt="Доставка оборудования КГС - проверка на заводе"
@@ -242,26 +251,13 @@ export const EngineeringAndDelivery = ({ onOpenDialog }: EngineeringAndDeliveryP
                   alt="Доставка оборудования КГС - транспортировка"
                   variant="content"
                 />
+                <OptimizedImage
+                  src="https://cdn.poehali.dev/files/6d225031-02bf-4cbb-a521-75a7c80f2334.png"
+                  alt="Доставка оборудования КГС - в контейнере"
+                  variant="content"
+                />
               </div>
             </div>
-
-            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-2 border-primary/20">
-              <CardContent className="p-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <Icon name="ShieldCheck" size={32} className="text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-4">
-                      Гарантия сохранности и своевременности
-                    </h3>
-                    <p className="text-primary text-lg leading-relaxed">
-                      Полная ответственность за груз, страхование и постоянный контроль на всех этапах — от склада производителя до вашего объекта.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

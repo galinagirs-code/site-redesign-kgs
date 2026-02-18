@@ -6,7 +6,11 @@ import { Checkbox } from "@/components/ui/checkbox";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 
-const ConsultationSection = () => {
+interface ConsultationSectionProps {
+  reversed?: boolean;
+}
+
+const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -33,7 +37,7 @@ const ConsultationSection = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <Card className="p-6 md:p-8 border border-border">
+            <Card className={`p-6 md:p-8 border border-border ${reversed ? 'md:order-2' : ''}`}>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <label className="text-sm font-semibold mb-2 block text-primary">
@@ -103,7 +107,7 @@ const ConsultationSection = () => {
               </form>
             </Card>
 
-            <div className="flex flex-col gap-4 md:gap-5">
+            <div className={`flex flex-col gap-4 md:gap-5 ${reversed ? 'md:order-1' : ''}`}>
               <Card className="p-5 md:p-6 border border-border">
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -114,11 +118,8 @@ const ConsultationSection = () => {
                     <p className="text-muted-foreground text-sm mb-1">
                       <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a> — бесплатно
                     </p>
-                    <p className="text-muted-foreground text-sm mb-1">
-                      <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a> — офис
-                    </p>
                     <p className="text-muted-foreground text-sm">
-                      <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">@kgs_ural</a> — Telegram
+                      <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a> — офис
                     </p>
                   </div>
                 </div>
@@ -154,6 +155,31 @@ const ConsultationSection = () => {
                     <p className="text-muted-foreground text-sm">
                       Пн–Пт: 09:00 — 18:00
                     </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-5 md:p-6 border border-border">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Share2" className="text-accent" size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold mb-2 text-primary">Мы в социальных сетях</h3>
+                    <div className="flex items-center gap-3 mt-1">
+                      <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-accent/20 transition-colors" title="RuTube">
+                        <Icon name="Video" className="text-primary" size={18} />
+                      </a>
+                      <a href="https://vk.com/club187384782" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-accent/20 transition-colors" title="ВКонтакте">
+                        <Icon name="Share2" className="text-primary" size={18} />
+                      </a>
+                      <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-accent/20 transition-colors" title="Telegram">
+                        <Icon name="Send" className="text-primary" size={18} />
+                      </a>
+                      <a href="https://max.ru/id6670440671_biz" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center hover:bg-accent/20 transition-colors" title="MAX">
+                        <Icon name="MessageCircle" className="text-primary" size={18} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </Card>

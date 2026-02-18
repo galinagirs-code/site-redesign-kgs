@@ -144,7 +144,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <ConsultationSection />
+      <ConsultationSection reversed />
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">

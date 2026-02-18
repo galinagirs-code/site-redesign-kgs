@@ -5,7 +5,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 
 const machtCapabilities = [
   "Бурение",
-  "Забивка свай"
+  "Забивку свай"
 ];
 
 const modernizationFactors = [
@@ -44,14 +44,12 @@ export const MastsAndModernization = () => {
                 <h3 className="text-xl font-semibold text-primary mb-6">
                   Универсальность оборудования — наш приоритет
                 </h3>
-                <div className="prose prose-lg max-w-none text-primary mb-8">
-                  <p>
-                    Для расширения возможностей строительной техники мы предлагаем копровые мачты для кранов и экскаваторов.
-                  </p>
-                  <p>
-                    Устанавливая мачту на базовую машину, вы получаете оборудование, способное выполнять:
-                  </p>
-                </div>
+                <p className="text-primary text-base md:text-lg leading-relaxed mb-4">
+                  Для расширения возможностей строительной техники мы предлагаем копровые мачты для кранов и экскаваторов.
+                </p>
+                <p className="text-primary text-base md:text-lg leading-relaxed mb-6">
+                  Устанавливая мачту на базовую машину, вы получаете оборудование, способное выполнять:
+                </p>
 
                 <div className="space-y-3 mb-8">
                   {machtCapabilities.map((capability, index) => (
@@ -91,57 +89,39 @@ export const MastsAndModernization = () => {
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">
               Модернизация
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">
               Модернизация техники для забивки свай
             </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-              <div className="flex justify-center items-center order-2 md:order-1">
-                <OptimizedImage
-                  src="https://cdn.poehali.dev/files/d8c30d2a-b0e0-4b54-89b9-a26cf30c24cc.png"
-                  alt="Модернизация строительной техники КГС"
-                  variant="content"
-                />
-              </div>
+            <h3 className="text-xl font-semibold text-primary mb-6">
+              Оптимальные технические решения по модернизации
+            </h3>
 
-              <div className="order-1 md:order-2">
-                <h3 className="text-xl font-semibold text-primary mb-6">
-                  Оптимальные технические решения по модернизации
-                </h3>
-                <div className="prose prose-lg max-w-none text-primary mb-8">
-                  <p>
-                    КоперГруппСервис разрабатывает и реализует проекты по модернизации кранов и экскаваторов, превращая простаивающие машины в полноценные сваебойные или буровые установки.
-                  </p>
-                  <p>
-                    При модернизации учитываем:
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8 max-w-4xl">
+              Компания «КоперГруппСервис» модернизирует краны и экскаваторы, превращая простаивающие машины в полноценные сваебойные или буровые установки.
+            </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            <h4 className="text-xl font-semibold text-primary mb-4">При модернизации учитываем:</h4>
+            <div className="grid md:grid-cols-2 gap-4 mb-10">
               {modernizationFactors.map((factor, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardContent className="p-4 flex items-start space-x-3">
-                    <Icon name="Settings" size={20} className="text-accent flex-shrink-0 mt-1" />
+                <Card key={index} className="border border-border hover:shadow-lg transition-shadow">
+                  <CardContent className="p-4 flex items-center space-x-3">
+                    <Icon name="Settings" size={20} className="text-accent flex-shrink-0" />
                     <span className="text-primary">{factor}</span>
                   </CardContent>
                 </Card>
               ))}
             </div>
 
-            <div className="mb-8">
-              <h4 className="text-xl font-semibold text-primary mb-4">Преимущества модернизации:</h4>
-              <div className="space-y-3">
-                {modernizationBenefits.map((benefit, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-accent">
-                    <CardContent className="p-4 flex items-start space-x-3">
-                      <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
-                      <span className="text-primary">{benefit}</span>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+            <h4 className="text-xl font-semibold text-primary mb-4">Преимущества модернизации:</h4>
+            <div className="space-y-3">
+              {modernizationBenefits.map((benefit, index) => (
+                <Card key={index} className="border border-border hover:shadow-lg transition-shadow border-l-4 border-l-accent">
+                  <CardContent className="p-4 flex items-start space-x-3">
+                    <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
+                    <span className="text-primary">{benefit}</span>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>

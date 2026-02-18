@@ -12,7 +12,32 @@ const FloatingMessenger = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (!isVisible || isDismissed) return null;
+  if (!isVisible) return null;
+
+  if (isDismissed) {
+    return (
+      <div className="fixed bottom-6 right-6 z-[55] flex flex-col gap-3">
+        <a
+          href="https://max.ru/u/f9LHodD0cOIP8_25Pol0FgGthbuYFvPpONLlW4R8sdoUUmuprdyzEwbPSy0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:scale-110 transition-all hover:shadow-xl"
+          title="MAX"
+        >
+          <Icon name="MessageCircle" size={22} />
+        </a>
+        <a
+          href="https://t.me/kgs_ural"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center shadow-lg hover:scale-110 transition-all hover:shadow-xl"
+          title="Telegram"
+        >
+          <Icon name="Send" size={22} />
+        </a>
+      </div>
+    );
+  }
 
   return (
     <div className="fixed bottom-6 right-6 z-[55] animate-fade-in">
