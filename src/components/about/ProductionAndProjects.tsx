@@ -5,34 +5,6 @@ import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { Link } from "react-router-dom";
 
-const milestones = [
-  {
-    year: "2013",
-    title: "Основание компании",
-    description: "Начало деятельности в сфере поставок оборудования для свайных работ"
-  },
-  {
-    year: "2015",
-    title: "Первые прямые поставки",
-    description: "Налажены прямые поставки с ведущими производителями Китая"
-  },
-  {
-    year: "2018",
-    title: "Открытие производства",
-    description: "Запущен собственный производственный цех в Екатеринбурге"
-  },
-  {
-    year: "2020",
-    title: "Расширение географии",
-    description: "Выход на рынки Казахстана и стран СНГ"
-  },
-  {
-    year: "2023",
-    title: "350+ клиентов",
-    description: "Достигнут рубеж в 350 довольных клиентов по России и СНГ"
-  }
-];
-
 const projects = [
   {
     id: 1,
@@ -192,41 +164,6 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Вехи развития компании
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Путь от небольшой торговой компании до ведущего производителя
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="flex gap-6 mb-8 last:mb-0 group">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                    {milestone.year}
-                  </div>
-                </div>
-                <Card className="flex-1 hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                      {milestone.title}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {milestone.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
           </div>
         </div>
       </section>
