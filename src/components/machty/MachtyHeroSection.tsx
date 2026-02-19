@@ -42,7 +42,7 @@ const MachtyHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Производственные мощности ООО «КГС» (г. Екатеринбург) позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика.
+                  Производственные мощности КоперГруппСервис (ООО «КГС») в г. Екатеринбурге позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   В производстве применяются проверенные комплектующие гидросистем и систем управления, что обеспечивает:
@@ -111,7 +111,7 @@ const MachtyHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Оптимальные цены</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Использование оборудования KGS позволяет получить сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Использование оборудования КоперГруппСервис позволяет получить сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">

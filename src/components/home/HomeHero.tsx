@@ -172,7 +172,7 @@ export const HomeHero = () => {
       <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">О компании КГС</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">О компании КоперГруппСервис</h2>
             <p className="text-muted-foreground text-base md:text-lg">
               Мы — команда профессионалов с более чем 10-летним опытом в поставке и производстве оборудования для строительства свайных фундаментов.
             </p>
