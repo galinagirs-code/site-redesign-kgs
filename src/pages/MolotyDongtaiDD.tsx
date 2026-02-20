@@ -456,12 +456,70 @@ const MolotyDongtaiDD = () => {
         </div>
       </section>
 
+      <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <Card className="border-none shadow-xl mb-12 animate-fade-in">
+              <CardContent className="p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">Дизельные штанговые молоты Dongtai Juli серии DD</h2>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-3">О производителе и оборудовании</h4>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-2">
+                      Это свойство достигается благодаря:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                      <li className="leading-relaxed">Эффективной системе воздушного охлаждения с высокой теплоотдачей</li>
+                      <li className="leading-relaxed">Современной системе подачи топлива</li>
+                      <li className="leading-relaxed">Компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</li>
+                    </ul>
+                    <p className="text-muted-foreground leading-relaxed">
+                      По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Преимущества дизельных молотов Dongtai Juli DD</h4>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li className="leading-relaxed">Энергия удара на 70–80% выше, чем у российских молотов с аналогичной массой ударной части</li>
+                      <li className="leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами</li>
+                      <li className="leading-relaxed">Высокая мощность при низком расходе топлива</li>
+                      <li className="leading-relaxed">Длительный срок службы</li>
+                      <li className="leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Dongtai Juli DD</h4>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li className="leading-relaxed">Погружение деревянных и железобетонных свай</li>
+                      <li className="leading-relaxed">Устройство свайных фундаментов</li>
+                      <li className="leading-relaxed">Погружение металлических труб</li>
+                      <li className="leading-relaxed">Погружение шпунта Ларсена</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="variants" className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-in">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-                Варианты дизельных штанговых молотов Dongtai Juli серии DD
+                Модели молотов Dongtai Juli серии DD
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -525,64 +583,6 @@ const MolotyDongtaiDD = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <Card className="border-none shadow-xl mb-12 animate-fade-in">
-              <CardContent className="p-6 md:p-10">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">Дизельные штанговые молоты Dongtai Juli серии DD</h2>
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">О производителе и оборудовании</h4>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed mb-2">
-                      Это свойство достигается благодаря:
-                    </p>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
-                      <li className="leading-relaxed">Эффективной системе воздушного охлаждения с высокой теплоотдачей</li>
-                      <li className="leading-relaxed">Современной системе подачи топлива</li>
-                      <li className="leading-relaxed">Компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</li>
-                    </ul>
-                    <p className="text-muted-foreground leading-relaxed">
-                      По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">Преимущества дизельных молотов Dongtai Juli DD</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li className="leading-relaxed">Энергия удара на 70–80% выше, чем у российских молотов с аналогичной массой ударной части</li>
-                      <li className="leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами</li>
-                      <li className="leading-relaxed">Высокая мощность при низком расходе топлива</li>
-                      <li className="leading-relaxed">Длительный срок службы</li>
-                      <li className="leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Dongtai Juli DD</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                      <li className="leading-relaxed">Погружение деревянных и железобетонных свай</li>
-                      <li className="leading-relaxed">Устройство свайных фундаментов</li>
-                      <li className="leading-relaxed">Погружение металлических труб</li>
-                      <li className="leading-relaxed">Погружение шпунта Ларсена</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
