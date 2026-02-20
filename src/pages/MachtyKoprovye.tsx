@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import MachtyHeroSection from "@/components/machty/MachtyHeroSection";
 import MachtyVariantsSection from "@/components/machty/MachtyVariantsSection";
+import MachtyBenefitsSection from "@/components/machty/MachtyBenefitsSection";
 import MachtyDescriptionSection from "@/components/machty/MachtyDescriptionSection";
 import MachtyGallerySection from "@/components/machty/MachtyGallerySection";
 
@@ -94,6 +95,7 @@ const MachtyKoprovye = () => {
 
       <MachtyHeroSection />
       <MachtyVariantsSection />
+      <MachtyBenefitsSection />
       <MachtyDescriptionSection />
       <MachtyGallerySection />
 
