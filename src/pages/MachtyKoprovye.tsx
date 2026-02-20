@@ -93,8 +93,8 @@ const MachtyKoprovye = () => {
       ]} />
 
       <MachtyHeroSection />
-      <MachtyDescriptionSection />
       <MachtyVariantsSection />
+      <MachtyDescriptionSection />
       <MachtyGallerySection />
 
       <ConsultationSection />

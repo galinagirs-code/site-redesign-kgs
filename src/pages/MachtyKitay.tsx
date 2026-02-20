@@ -85,8 +85,8 @@ const MachtyKitay = () => {
         { label: "Мачты копровые экскаваторные (Китай)", path: "/catalog/machty-kitay" },
       ]} />
 
-      <MachtyKitaySpecs />
       <MachtyKitayContent />
+      <MachtyKitaySpecs />
 
       {/* CTA */}
       <section id="consultation" className="py-16 md:py-24 bg-primary text-white">
