@@ -33,12 +33,12 @@ const MachtyHeroSection = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">Копровая мачта МК KGS</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">Копровая мачта МК KGS</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Производственные мощности КоперГруппСервис (ООО «КГС») в г. Екатеринбурге позволяют изготавливать копровые мачты с учётом индивидуальных требований заказчика.
