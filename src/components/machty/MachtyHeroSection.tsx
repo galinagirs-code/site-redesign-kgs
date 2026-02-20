@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
 const MachtyHeroSection = () => {
@@ -74,56 +73,6 @@ const MachtyHeroSection = () => {
               </div>
             </div>
 
-            <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Ключевые преимущества МК KGS</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Zap" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Быстрый демонтаж</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачта легко снимается, при этом базовая машина полностью сохраняет свои штатные функции.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="TrendingUp" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Экономическая эффективность</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоборудование гусеничного крана в сваебойную или буровую установку позволяет задействовать технику, которая ранее простаивала без работы.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="RefreshCw" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Универсальность</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Быстрое переоборудование: кран &#8660; сваебойная или буровая установка.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="BadgeRussianRuble" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Оптимальные цены</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Копровая мачта МК KGS позволяет получить сваебойную или буровую установку, которая в 10–20 раз дешевле импортных аналогов.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Settings" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Простота эксплуатации</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Оборудование отличается удобством управления и обслуживания.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
