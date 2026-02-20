@@ -154,7 +154,7 @@ const MsExVariantsSection = () => {
   const filteredTables = allTables.filter(t => t.type === activeTab);
 
   return (
-    <section id="variants" className="py-16 md:py-24 bg-gray-50">
+    <section id="variants" className="py-10 md:py-14 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="animate-fade-in">

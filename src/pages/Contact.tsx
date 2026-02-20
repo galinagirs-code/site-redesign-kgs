@@ -129,7 +129,7 @@ const Contact = () => {
 
       <Breadcrumbs items={[{ label: 'Контакты', path: '/contact' }]} />
 
-      <section className="relative pt-16 pb-16 md:pt-24 md:pb-24 bg-gradient-to-br from-primary via-primary to-primary/90">
+      <section className="relative pt-14 pb-10 md:pt-16 md:pb-12 bg-gradient-to-br from-primary via-primary to-primary/90">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
         <div className="container mx-auto px-4 relative">
@@ -146,7 +146,7 @@ const Contact = () => {
 
       <ConsultationSection reversed />
 
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Сотрудники компании</h2>

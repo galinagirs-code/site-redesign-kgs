@@ -97,7 +97,7 @@ const equipment = [
 
 export const HomeEquipment = () => {
   return (
-    <section id="equipment" className="py-16 md:py-24 bg-muted/30">
+    <section id="equipment" className="py-10 md:py-14 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Наше оборудование</h2>

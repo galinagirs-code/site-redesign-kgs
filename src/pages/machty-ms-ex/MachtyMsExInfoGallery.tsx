@@ -10,7 +10,7 @@ const MachtyMsExInfoGallery = () => {
   return (
     <>
       {/* Общая информация */}
-      <section id="info" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section id="info" className="py-10 md:py-14 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
@@ -99,7 +99,7 @@ const MachtyMsExInfoGallery = () => {
 
       {/* Фотогалерея */}
       {galleryImages.length === 0 ? (
-        <section id="gallery" className="py-16 md:py-24 bg-white">
+        <section id="gallery" className="py-10 md:py-14 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
@@ -113,7 +113,7 @@ const MachtyMsExInfoGallery = () => {
           </div>
         </section>
       ) : (
-        <section id="gallery" className="py-16 md:py-24 bg-white">
+        <section id="gallery" className="py-10 md:py-14 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">

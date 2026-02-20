@@ -9,58 +9,8 @@ const MachtyKitaySpecs = () => {
 
   return (
     <>
-      {/* Технические характеристики */}
-      <section id="specs" className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Технические характеристики
-            </h2>
-
-            <Card className="border-none shadow-lg mb-8">
-              <CardContent className="p-0">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="bg-primary text-white">
-                        <th className="text-left py-3 px-6 font-medium text-sm md:text-base">Параметр</th>
-                        <th className="text-left py-3 px-6 font-medium text-sm md:text-base">Значение</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {technicalSpecs.map((spec, idx) => (
-                        <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                          <td className="py-3 px-6 text-primary text-sm md:text-base">{spec.label}</td>
-                          <td className="py-3 px-6 font-semibold text-primary text-sm md:text-base">{spec.value}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center">
-              <div
-                className="max-w-lg w-full rounded-2xl overflow-hidden bg-gray-900 shadow-xl cursor-pointer"
-                onClick={() => setSelectedImage(schemaImage)}
-              >
-                <OptimizedImage
-                  src={schemaImage}
-                  alt="Схема копровой мачты (Китай) с размерами"
-                  className="w-full h-auto object-contain p-4"
-                />
-                <div className="px-4 pb-4 text-center">
-                  <p className="text-white/70 text-sm">Нажмите для увеличения</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Общая информация */}
-      <section id="info" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section id="info" className="py-10 md:py-14 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
@@ -107,7 +57,7 @@ const MachtyKitaySpecs = () => {
 
       {/* Фотогалерея */}
       {galleryImages.length === 0 ? (
-        <section id="gallery" className="py-16 md:py-24 bg-white">
+        <section id="gallery" className="py-10 md:py-14 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
@@ -121,10 +71,10 @@ const MachtyKitaySpecs = () => {
           </div>
         </section>
       ) : (
-        <section id="gallery" className="py-16 md:py-24 bg-white">
+        <section id="gallery" className="py-10 md:py-14 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
                 Фотогалерея
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

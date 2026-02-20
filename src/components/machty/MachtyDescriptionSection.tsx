@@ -44,32 +44,26 @@ const MachtyDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Области применения и принцип работы</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p className="text-primary mb-3 text-base font-medium">Копровая мачта МК применяется для:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base mb-4">
-                    <li>забивки железобетонных свай, труб и шпунта</li>
-                    <li>устройства буронабивных свай</li>
-                  </ul>
-                  <p className="text-primary mb-2 text-base font-medium">Копровая мачта МК KGS — металлоконструкция, обеспечивающая:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>перемещение сваи и рабочего оборудования</li>
-                    <li>точное центрирование по оси</li>
-                    <li>наведение сваи на точку погружения</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-primary mb-3 text-base">Крепление мачты осуществляется с помощью специальных устройств (цапф) и раскосов.</p>
-                  <p className="text-primary font-medium mb-2 text-base">Копровая установка (кран + мачта):</p>
-                  <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base">
-                    <li>Поднимает сваю</li>
-                    <li>Подвозит или подтаскивает к месту установки</li>
-                    <li>Устанавливает сваю в проектное положение</li>
-                    <li>Погружает сваю в грунт сваебойным оборудованием</li>
-                    <li>Перемещается к следующей свае</li>
-                  </ol>
-                </div>
-              </div>
+              <p className="text-primary mb-2 text-base font-medium">Копровая мачта МК применяется для:</p>
+              <ul className="list-disc pl-5 space-y-1 text-primary text-base mb-4">
+                <li>забивки железобетонных свай, труб и шпунта</li>
+                <li>устройства буронабивных свай</li>
+              </ul>
+              <p className="text-primary mb-2 text-base font-medium">Копровая мачта МК KGS — металлоконструкция, обеспечивающая:</p>
+              <ul className="list-disc pl-5 space-y-1 text-primary text-base mb-4">
+                <li>перемещение сваи и рабочего оборудования</li>
+                <li>точное центрирование по оси</li>
+                <li>наведение сваи на точку погружения</li>
+              </ul>
+              <p className="text-primary mb-2 text-base">Крепление мачты осуществляется с помощью специальных устройств (цапф) и раскосов.</p>
+              <p className="text-primary font-medium mb-2 text-base">Копровая установка (кран + мачта):</p>
+              <ol className="list-decimal pl-5 space-y-1 text-primary text-base">
+                <li>Поднимает сваю</li>
+                <li>Подвозит или подтаскивает к месту установки</li>
+                <li>Устанавливает сваю в проектное положение</li>
+                <li>Погружает сваю в грунт сваебойным оборудованием</li>
+                <li>Перемещается к следующей свае</li>
+              </ol>
             </CardContent>
           </Card>
 

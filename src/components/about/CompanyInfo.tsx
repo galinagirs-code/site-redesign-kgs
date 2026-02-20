@@ -45,7 +45,7 @@ const tasks = [
 
 export const CompanyInfo = () => {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-10 md:py-14">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto mb-16">
           <Card className="p-8 md:p-12 bg-gradient-to-br from-white to-muted/30">

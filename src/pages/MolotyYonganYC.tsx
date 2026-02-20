@@ -295,7 +295,7 @@ const MolotyYonganYC = () => {
         { label: 'Молоты гидравлические Yongan серия YC', path: '/catalog/moloty-yongan-yc' }
       ]} />
 
-      <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90">
+      <section className="relative pt-14 pb-8 md:pt-16 md:pb-10 bg-gradient-to-br from-primary via-primary to-primary/90">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         
         <div className="container mx-auto px-4 relative">
@@ -338,7 +338,7 @@ const MolotyYonganYC = () => {
         </div>
       </section>
 
-      <section id="variants" className="py-16 md:py-24 bg-gray-50">
+      <section id="variants" className="py-10 md:py-14 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="animate-fade-in">
@@ -411,12 +411,12 @@ const MolotyYonganYC = () => {
         </div>
       </section>
 
-      <section id="description" className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+      <section id="description" className="py-10 md:py-14 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Card className="border-none shadow-xl mb-12 animate-fade-in">
               <CardContent className="p-6 md:p-10">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">Гидравлические молоты Yongan серии YC</h2>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6 text-center">Гидравлические молоты Yongan серии YC</h2>
                 
                 <div className="space-y-8">
                   <div>
@@ -461,10 +461,10 @@ const MolotyYonganYC = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-16 md:py-24 bg-white">
+      <section id="gallery" className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6 text-center">
               Фотогалерея
             </h2>
             
@@ -513,7 +513,7 @@ const MolotyYonganYC = () => {
         </div>
       )}
 
-      <section id="consultation" className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+      <section id="consultation" className="py-10 md:py-14 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">

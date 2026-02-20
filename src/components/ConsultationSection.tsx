@@ -24,7 +24,7 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/30">
+    <section id="contact" className="py-10 md:py-14 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 md:mb-12">

@@ -29,7 +29,7 @@ const modernizationBenefits = [
 export const MastsAndModernization = () => {
   return (
     <>
-      <section id="masts" className="py-16 md:py-24 bg-gray-50">
+      <section id="masts" className="py-10 md:py-14 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <Badge className="mb-4 bg-accent/10 text-accent border-accent/30">
@@ -83,7 +83,7 @@ export const MastsAndModernization = () => {
         </div>
       </section>
 
-      <section id="modernization" className="py-16 md:py-24">
+      <section id="modernization" className="py-10 md:py-14">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/30">

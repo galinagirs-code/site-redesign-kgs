@@ -5,10 +5,10 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 export const PartsDescription = () => {
   return (
     <>
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6 text-center">
               Запчасти для вашей техники — быстро, надёжно, точно в срок!
             </h2>
             <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -60,9 +60,9 @@ export const PartsDescription = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-10 md:py-14 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-6 text-center">
             Почему выбирают нас
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">

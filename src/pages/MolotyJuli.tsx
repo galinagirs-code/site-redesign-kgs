@@ -100,7 +100,7 @@ const MolotyJuli = () => {
       <JuliInfoSection />
       <JuliGallerySection />
 
-      <section id="consultation" className="py-16 md:py-24 bg-primary text-white">
+      <section id="consultation" className="py-10 md:py-14 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6">
