@@ -16,10 +16,10 @@ const MachtyMsExVariants = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
-            Варианты исполнения мачт MS-EX
+            Варианты исполнения мачт МКБЭ
           </h2>
           <p className="text-muted-foreground text-center mb-8 text-base md:text-lg">
-            Значения указаны: на стреле / на жёсткой раме
+            МКБЭ-1 (на стреле) / МКБЭ-2 (на жёсткой раме)
           </p>
 
           <div className="flex justify-center gap-3 mb-8">

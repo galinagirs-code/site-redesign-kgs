@@ -17,7 +17,7 @@ const MachtyMsExInfoGallery = () => {
 
             <div className="max-w-4xl mx-auto mb-10">
               <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Особенности конструкции</h3>
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты MS-EX работают:</p>
+              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">Мачты серии МКБЭ работают:</p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
                   <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>

@@ -14,7 +14,7 @@ const MachtyMsExContent = () => {
               Мачты копровые экскаваторные
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Мачты копровые экскаваторные (серия MS-EX)
+              Мачты копровые экскаваторные (серия МКБЭ)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
@@ -39,23 +39,23 @@ const MachtyMsExContent = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">
-              Мачты копровые экскаваторные (серия MS-EX)
+              Мачты копровые экскаваторные (серия МКБЭ)
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Копровые мачты MS-EX — это направляющее навесное оборудование, устанавливаемое на экскаватор для расширения его функционала. С его помощью базовая машина переоборудуется в полноповоротную установку для забивки свай, буровых и фундаментных работ.
+                  Мачта МКБЭ — это навесное копрово-бурильное оборудование, устанавливаемое на гусеничный экскаватор. Позволяет превратить стандартный экскаватор в полноповоротную установку для забивки свай и лидерного бурения без изменения базовой конструкции машины.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed">
-                  Благодаря надёжной конструкции, гидравлическим цилиндрам и системе электроуправления из кабины оператора все операции выполняются точно, безопасно и эффективно.
+                  Серия МКБЭ выпускается в двух исполнениях: <strong>МКБЭ-1</strong> (навесная на стреле экскаватора) и <strong>МКБЭ-2</strong> (многофункциональная, на жёсткой раме). Оборудование совместимо с российскими и импортными экскаваторами массой от 20 т.
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
                     src="https://cdn.poehali.dev/files/105d2bb4-29a9-4951-a811-b3e5257a0cf9.png"
-                    alt="Мачты копровые экскаваторные серии MS-EX"
+                    alt="Мачты копровые экскаваторные серии МКБЭ"
                     className="w-full h-full object-contain p-6"
                   />
                 </div>
@@ -72,7 +72,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Универсальность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоснащение экскаватора в полноповоротную копровую машину и обратно — без изменения базовой конструкции.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Превращает экскаватор в полноповоротную копровую или буровую машину и обратно — без изменения базовой конструкции.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -81,7 +81,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Экономия до 4 раз</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачты MS-EX в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачты МКБЭ в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве и российском производстве.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -90,7 +90,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Быстрое переоборудование</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоборудование в сваебойную установку — от 2–3 часов (на стреле) до 1–2 смен (на жёсткой раме).</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">МКБЭ-1 монтируется за 2–3 часа (на стреле), МКБЭ-2 на жёсткой раме — за 1–2 рабочие смены.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -99,7 +99,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Надёжность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Комплектующие надежных производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Комплектующие надёжных производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
