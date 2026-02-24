@@ -69,7 +69,7 @@ const MachtyMkbeHero = () => {
           <div className="max-w-5xl mx-auto">
 
             {/* Таблица слева, фото справа */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
               <div>
                 <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Технические характеристики МКБЭ / МКБЭ-2</h2>
                 <div className="overflow-x-auto rounded-xl shadow border border-gray-100 mb-4">
@@ -101,12 +101,14 @@ const MachtyMkbeHero = () => {
 
               </div>
 
-              <div className="rounded-2xl overflow-hidden bg-gray-50 shadow-xl aspect-square">
-                <OptimizedImage
-                  src={pageImage}
-                  alt="Мачты копровые экскаваторные серия МКБЭ"
-                  className="w-full h-full object-contain p-6"
-                />
+              <div className="flex items-center justify-center">
+                <div className="rounded-2xl overflow-hidden bg-gray-50 shadow-xl w-full aspect-square">
+                  <OptimizedImage
+                    src={pageImage}
+                    alt="Мачты копровые экскаваторные серия МКБЭ"
+                    className="w-full h-full object-contain p-6"
+                  />
+                </div>
               </div>
             </div>
 
