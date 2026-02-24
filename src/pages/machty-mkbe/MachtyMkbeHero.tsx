@@ -85,7 +85,7 @@ const MachtyMkbeHero = () => {
             {/* Таблица слева, фото справа */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
               <div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Сравнение моделей</h2>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Технические характеристики МКБЭ / МКБЭ-2</h2>
                 <div className="overflow-x-auto rounded-xl shadow border border-gray-100 mb-6">
                   <table className="w-full">
                     <thead>
