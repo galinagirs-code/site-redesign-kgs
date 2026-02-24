@@ -138,7 +138,7 @@ const MachtyMkbeHero = () => {
             </div>
 
             {/* Карточка МКБЭ */}
-            <Card id="mkbe" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl mb-6">
+            <Card id="mkbe" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl mb-6 bg-gray-50">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
@@ -165,7 +165,7 @@ const MachtyMkbeHero = () => {
                   className="w-full mb-3 text-accent hover:text-accent/80"
                 >
                   <Icon name={openCard === "mkbe" ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
-                  {openCard === "mkbe" ? "Скрыть характеристики" : "Подробнее"}
+                  {openCard === "mkbe" ? "Свернуть описание" : "Развернуть описание"}
                 </Button>
 
                 {openCard === "mkbe" && (
@@ -247,7 +247,7 @@ const MachtyMkbeHero = () => {
             </Card>
 
             {/* Карточка МКБЭ-2 */}
-            <Card id="mkbe2" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+            <Card id="mkbe2" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl bg-gray-50">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
@@ -274,7 +274,7 @@ const MachtyMkbeHero = () => {
                   className="w-full mb-3 text-accent hover:text-accent/80"
                 >
                   <Icon name={openCard === "mkbe2" ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
-                  {openCard === "mkbe2" ? "Скрыть характеристики" : "Подробнее"}
+                  {openCard === "mkbe2" ? "Свернуть описание" : "Развернуть описание"}
                 </Button>
 
                 {openCard === "mkbe2" && (
