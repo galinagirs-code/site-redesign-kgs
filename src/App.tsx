@@ -15,6 +15,7 @@ import Catalog from "./pages/Catalog";
 import MachtyKoprovye from "./pages/MachtyKoprovye";
 import MachtyMsEx from "./pages/MachtyMsEx";
 import MachtyKitay from "./pages/MachtyKitay";
+import MachtyMkbe from "./pages/MachtyMkbe";
 import SvaebojnyeMoloty from "./pages/SvaebojnyeMoloty";
 import SvaebojnyeMashiny from "./pages/SvaebojnyeMashiny";
 import BurovyeMashiny from "./pages/BurovyeMashiny";
@@ -67,6 +68,7 @@ const App = () => (
           <Route path="/catalog/machty-koprovye" element={<MachtyKoprovye />} />
           <Route path="/catalog/machty-ms-ex" element={<MachtyMsEx />} />
           <Route path="/catalog/machty-kitay" element={<MachtyKitay />} />
+          <Route path="/catalog/machty-mkbe" element={<MachtyMkbe />} />
           <Route path="/catalog/svaebojnye-moloty" element={<SvaebojnyeMoloty />} />
           <Route path="/catalog/svaebojnye-mashiny" element={<SvaebojnyeMashiny />} />
           <Route path="/catalog/burovye-mashiny" element={<BurovyeMashiny />} />
