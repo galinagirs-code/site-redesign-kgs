@@ -131,9 +131,8 @@ const MachtyMkbeHero = () => {
                     <Badge className="bg-accent/20 text-accent border-accent/50 text-xs">Мачта копрово-бурильная</Badge>
                   </div>
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
-                    Мачта копрово-бурильная серии МКБЭ
+                    Мачта копрово-бурильная экскаваторного типа (серии МКБЭ)
                   </h2>
-                  <p className="text-sm text-muted-foreground mt-0.5">(мачта бурильная экскаваторного типа)</p>
                 </div>
                 <Icon
                   name={openCard === "mkbe" ? "ChevronUp" : "ChevronDown"}
@@ -251,9 +250,8 @@ const MachtyMkbeHero = () => {
                     <Badge className="bg-accent/20 text-accent border-accent/50 text-xs">Многофункциональная</Badge>
                   </div>
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
-                    Многофункциональная МКБЭ-2
+                    Мачта копрово-бурильная на экскаваторе (серия МКБЭ-2)
                   </h2>
-                  <p className="text-sm text-muted-foreground mt-0.5">(мачта копрово-бурильная на экскаваторе)</p>
                 </div>
                 <Icon
                   name={openCard === "mkbe2" ? "ChevronUp" : "ChevronDown"}
