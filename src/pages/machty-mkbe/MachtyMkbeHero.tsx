@@ -79,11 +79,11 @@ const MachtyMkbeHero = () => {
                         <th className="text-left py-3 px-4 font-heading font-semibold text-base">Параметр</th>
                         <th className="text-center py-3 px-4 font-heading font-bold text-base">
                           <span className="block text-accent">МКБЭ</span>
-                          <span className="text-white/70 text-xs font-normal">мачта бурильная</span>
+                          <span className="text-white/70 text-xs font-normal">Мачта копрово-бурильная экскаваторного типа</span>
                         </th>
                         <th className="text-center py-3 px-4 font-heading font-bold text-base">
                           <span className="block text-accent">МКБЭ-2</span>
-                          <span className="text-white/70 text-xs font-normal">многофункциональная</span>
+                          <span className="text-white/70 text-xs font-normal">Мачта копрово-бурильная на экскаваторе</span>
                         </th>
                       </tr>
                     </thead>
@@ -98,20 +98,7 @@ const MachtyMkbeHero = () => {
                     </tbody>
                   </table>
                 </div>
-                <div className="flex gap-3">
-                  <a href="#mkbe" className="flex-1">
-                    <Button variant="ghost" size="sm" className="w-full text-accent hover:text-accent/80">
-                      <Icon name="ChevronDown" size={16} className="mr-1" />
-                      Подробнее о МКБЭ
-                    </Button>
-                  </a>
-                  <a href="#mkbe2" className="flex-1">
-                    <Button variant="ghost" size="sm" className="w-full text-accent hover:text-accent/80">
-                      <Icon name="ChevronDown" size={16} className="mr-1" />
-                      Подробнее о МКБЭ-2
-                    </Button>
-                  </a>
-                </div>
+
               </div>
 
               <div className="rounded-2xl overflow-hidden bg-gray-50 shadow-xl aspect-square">
