@@ -86,9 +86,6 @@ const MachtyMkbeSection = () => {
                 </div>
               </div>
 
-              <p className="text-base text-primary leading-relaxed mb-4">
-                Уникальная конструкция навесного оборудования российского производства для гусеничных экскаваторов. Имеет Декларацию соответствия ЕАЭС.
-              </p>
               <a href="#consultation">
                 <Button className="btn-gradient text-white w-full sm:w-auto">
                   <Icon name="MessageSquare" size={16} className="mr-2" />

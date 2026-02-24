@@ -82,12 +82,6 @@ const MachtyMkbe2Section = () => {
                 </div>
               </div>
 
-              <div className="p-4 bg-accent/10 rounded-xl mb-5 border border-accent/20">
-                <p className="text-sm font-semibold text-primary">
-                  🏆 Первая отечественная разработка, обеспечивающая одновременное использование сваебойного и бурильного оборудования на одной мачте
-                </p>
-              </div>
-
               <a href="#consultation">
                 <Button className="btn-gradient text-white w-full sm:w-auto">
                   <Icon name="MessageSquare" size={16} className="mr-2" />
