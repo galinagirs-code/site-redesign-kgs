@@ -8,8 +8,6 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import MachtyMkbeHero from "./machty-mkbe/MachtyMkbeHero";
-import MachtyMkbeSection from "./machty-mkbe/MachtyMkbeSection";
-import MachtyMkbe2Section from "./machty-mkbe/MachtyMkbe2Section";
 
 const MachtyMkbe = () => {
   const productSchema = {
@@ -84,8 +82,6 @@ const MachtyMkbe = () => {
       ]} />
 
       <MachtyMkbeHero />
-      <MachtyMkbeSection />
-      <MachtyMkbe2Section />
 
       {/* Фотогалерея */}
       <section id="gallery" className="py-10 md:py-14 bg-white">
