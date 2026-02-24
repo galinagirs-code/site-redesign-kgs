@@ -86,7 +86,7 @@ const MachtyMkbeHero = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
               <div>
                 <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Технические характеристики МКБЭ / МКБЭ-2</h2>
-                <div className="overflow-x-auto rounded-xl shadow border border-gray-100 mb-6">
+                <div className="overflow-x-auto rounded-xl shadow border border-gray-100 mb-4">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-primary text-white">
@@ -111,6 +111,20 @@ const MachtyMkbeHero = () => {
                       ))}
                     </tbody>
                   </table>
+                </div>
+                <div className="flex gap-3">
+                  <a href="#mkbe" className="flex-1">
+                    <Button variant="ghost" size="sm" className="w-full text-accent hover:text-accent/80">
+                      <Icon name="ChevronDown" size={16} className="mr-1" />
+                      Подробнее о МКБЭ
+                    </Button>
+                  </a>
+                  <a href="#mkbe2" className="flex-1">
+                    <Button variant="ghost" size="sm" className="w-full text-accent hover:text-accent/80">
+                      <Icon name="ChevronDown" size={16} className="mr-1" />
+                      Подробнее о МКБЭ-2
+                    </Button>
+                  </a>
                 </div>
               </div>
 
