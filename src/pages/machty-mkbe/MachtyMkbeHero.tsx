@@ -19,9 +19,9 @@ import {
 } from "./MachtyMkbeData";
 
 const CheckItem = ({ text }: { text: string }) => (
-  <div className="flex items-start gap-2">
+  <div className="flex items-start gap-3">
     <span className="text-accent font-bold mt-0.5 flex-shrink-0">✓</span>
-    <span className="text-sm text-primary leading-snug">{text}</span>
+    <span className="text-base text-primary">{text}</span>
   </div>
 );
 
@@ -45,16 +45,6 @@ const MachtyMkbeHero = () => {
 
   const toggleSection = (key: SubKey) => setOpenSection(openSection === key ? null : key);
   const toggleSection2 = (key: Sub2Key) => setOpenSection2(openSection2 === key ? null : key);
-
-  const DetailRow = ({ label, isOpen, onToggle }: { label: string; isOpen: boolean; onToggle: () => void }) => (
-    <button
-      className="w-full flex items-center justify-between py-3 px-5 text-left hover:bg-gray-50 transition-colors border-t border-gray-100"
-      onClick={onToggle}
-    >
-      <span className="text-sm font-semibold text-primary">{label}</span>
-      <Icon name={isOpen ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground flex-shrink-0 ml-2" />
-    </button>
-  );
 
   return (
     <>
@@ -87,247 +77,246 @@ const MachtyMkbeHero = () => {
         </div>
       </section>
 
-      {/* Таблица + фото */}
+      {/* Таблица + фото + карточки */}
       <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
 
             {/* Таблица слева, фото справа */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
               <div>
-                <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-4">Сравнение моделей</h2>
-                <div className="overflow-x-auto rounded-xl shadow border border-gray-100">
+                <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4">Сравнение моделей</h2>
+                <div className="overflow-x-auto rounded-xl shadow border border-gray-100 mb-6">
                   <table className="w-full">
                     <thead>
                       <tr className="bg-primary text-white">
-                        <th className="text-left py-3 px-4 font-heading font-semibold text-sm">Параметр</th>
-                        <th className="text-center py-3 px-3 font-heading font-bold text-sm">
+                        <th className="text-left py-3 px-4 font-heading font-semibold text-base">Параметр</th>
+                        <th className="text-center py-3 px-4 font-heading font-bold text-base">
                           <span className="block text-accent">МКБЭ</span>
+                          <span className="text-white/70 text-xs font-normal">мачта бурильная</span>
                         </th>
-                        <th className="text-center py-3 px-3 font-heading font-bold text-sm">
+                        <th className="text-center py-3 px-4 font-heading font-bold text-base">
                           <span className="block text-accent">МКБЭ-2</span>
+                          <span className="text-white/70 text-xs font-normal">многофункциональная</span>
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       {compareRows.map((row, idx) => (
                         <tr key={idx} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                          <td className="py-2.5 px-4 text-primary text-sm">{row.label}</td>
-                          <td className="py-2.5 px-3 text-center font-semibold text-primary text-sm">{row.mkbe}</td>
-                          <td className="py-2.5 px-3 text-center font-semibold text-primary text-sm">{row.mkbe2}</td>
+                          <td className="py-2.5 px-4 text-primary text-base">{row.label}</td>
+                          <td className="py-2.5 px-4 text-center font-semibold text-primary text-base">{row.mkbe}</td>
+                          <td className="py-2.5 px-4 text-center font-semibold text-primary text-base">{row.mkbe2}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
-                <div className="flex gap-3 mt-5">
-                  <a href="#mkbe" onClick={() => setOpenCard("mkbe")}>
-                    <Button className="btn-gradient text-white" size="sm">
-                      <Icon name="ChevronDown" size={15} className="mr-1.5" />
-                      Подробнее о МКБЭ
-                    </Button>
-                  </a>
-                  <a href="#mkbe2" onClick={() => setOpenCard("mkbe2")}>
-                    <Button className="btn-gradient text-white" size="sm">
-                      <Icon name="ChevronDown" size={15} className="mr-1.5" />
-                      Подробнее о МКБЭ-2
-                    </Button>
-                  </a>
-                </div>
               </div>
 
-              <div className="rounded-2xl overflow-hidden bg-gray-50 shadow-xl">
+              <div className="rounded-2xl overflow-hidden bg-gray-50 shadow-xl aspect-square">
                 <OptimizedImage
                   src={pageImage}
                   alt="Мачты копровые экскаваторные серия МКБЭ"
                   className="w-full h-full object-contain p-6"
-                  style={{ aspectRatio: "1 / 1" }}
                 />
               </div>
             </div>
 
             {/* Карточка МКБЭ */}
-            <Card id="mkbe" className="border-2 border-gray-200 shadow-md mb-5 overflow-hidden transition-all duration-300">
-              {/* Шапка карточки — всегда видна */}
-              <div
-                className="flex items-start gap-5 p-6 cursor-pointer hover:bg-gray-50 transition-colors"
-                onClick={() => toggleCard("mkbe")}
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge className="bg-accent/20 text-accent border-accent/50 text-xs">Мачта копрово-бурильная</Badge>
-                  </div>
-                  <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-2">
+            <Card id="mkbe" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl mb-6">
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
                     Мачта копрово-бурильная экскаваторного типа (серии МКБЭ)
                   </h2>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Навесное оборудование российского производства для гусеничных экскаваторов от 22 т. Декларация соответствия ЕАЭС.
-                  </p>
-                  {/* Тех. характеристики — всегда видны */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5">
-                    {mkbeSpecs.map((row, idx) => (
-                      <div key={idx} className="flex justify-between items-baseline gap-2 border-b border-gray-100 pb-1.5">
-                        <span className="text-sm text-muted-foreground leading-snug">{row.label}</span>
-                        <span className="text-sm font-bold text-primary whitespace-nowrap flex-shrink-0">{row.value}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 flex-shrink-0 ml-4">
+                    бурильная
+                  </Badge>
                 </div>
-                <div className="flex-shrink-0 pt-1">
-                  <div className="flex items-center gap-1.5 text-accent text-sm font-medium">
-                    <span>{openCard === "mkbe" ? "Свернуть" : "Подробнее"}</span>
-                    <Icon name={openCard === "mkbe" ? "ChevronUp" : "ChevronDown"} size={18} className="text-accent" />
-                  </div>
-                </div>
-              </div>
 
-              {/* Раскрываемый контент */}
-              {openCard === "mkbe" && (
-                <div className="animate-fade-in border-t border-gray-100">
-                  <div className="p-6 bg-gray-50">
-                    <p className="text-base text-primary leading-relaxed mb-4">
-                      Мачта копрово-бурильная серии МКБЭ предназначена для установки на гусеничные экскаваторы отечественного и импортного производства массой от 22 тонн.
+                <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                  {mkbeSpecs.map((row, idx) => (
+                    <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                      <span className="text-base text-gray-700 flex-1">{row.label}</span>
+                      <span className="text-base font-semibold text-gray-900 text-right ml-4">{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => toggleCard("mkbe")}
+                  className="w-full mb-3 text-accent hover:text-accent/80"
+                >
+                  <Icon name={openCard === "mkbe" ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
+                  {openCard === "mkbe" ? "Скрыть характеристики" : "Подробнее"}
+                </Button>
+
+                {openCard === "mkbe" && (
+                  <div className="border-t pt-4 mb-4 animate-fade-in space-y-4">
+                    <p className="text-base text-primary leading-relaxed">
+                      Мачта копрово-бурильная серии МКБЭ предназначена для установки на гусеничные экскаваторы отечественного и импортного производства массой от 22 тонн. Оборудование прошло сертификацию в соответствии с требованиями ТР ТС и имеет Декларацию соответствия ЕАЭС.
                     </p>
-                    <p className="text-sm font-semibold text-primary mb-2">Применяется для:</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 mb-5">
-                      {mkbePurpose.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                    <div>
+                      <p className="text-base font-semibold text-primary mb-2">Применяется для:</p>
+                      <div className="space-y-2">
+                        {mkbePurpose.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                      </div>
                     </div>
-                    <a href="#consultation">
-                      <Button className="btn-gradient text-white" size="sm">
-                        <Icon name="MessageSquare" size={15} className="mr-2" />
-                        Запросить коммерческое предложение
-                      </Button>
-                    </a>
+
+                    <div className="space-y-1">
+                      <button onClick={() => toggleSection("equipment")} className="w-full flex items-center justify-between py-2 text-left border-b border-gray-200">
+                        <span className="text-base font-semibold text-primary">Комплектация и оборудование</span>
+                        <Icon name={openSection === "equipment" ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground" />
+                      </button>
+                      {openSection === "equipment" && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-3 animate-fade-in">
+                          <div>
+                            <p className="text-base font-semibold text-primary mb-2">Сваебойное оборудование</p>
+                            <p className="text-base text-muted-foreground mb-2">Молоты российского и импортного производства:</p>
+                            <div className="space-y-2">
+                              {mkbePilingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                            </div>
+                          </div>
+                          <div>
+                            <p className="text-base font-semibold text-primary mb-2">Бурильное оборудование</p>
+                            <div className="space-y-2 mb-3">
+                              {mkbeDrillingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                            </div>
+                            <p className="text-base text-muted-foreground mb-2">По согласованию с заказчиком:</p>
+                            <div className="space-y-2">
+                              {mkbeOptionalEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      <button onClick={() => toggleSection("construction")} className="w-full flex items-center justify-between py-2 text-left border-b border-gray-200">
+                        <span className="text-base font-semibold text-primary">Конструкция</span>
+                        <Icon name={openSection === "construction" ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground" />
+                      </button>
+                      {openSection === "construction" && (
+                        <div className="py-3 animate-fade-in space-y-3">
+                          <p className="text-base text-primary">Мачта — сварная прямоугольная коробчатая конструкция, усиленная по всей длине диафрагмами жёсткости. Направляющие выполнены из круглых или профильных труб.</p>
+                          <p className="text-base font-semibold text-primary">На мачте установлены:</p>
+                          <div className="space-y-2">
+                            {mkbeConstructionElements.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                          </div>
+                          <p className="text-base text-primary">Передвижение каретки — цепным механизмом (планетарный редуктор РДЦ-800, усилие 8 т) либо системой «гидроцилиндр – полиспаст». Мачта не требует дополнительного оборудования для монтажа.</p>
+                        </div>
+                      )}
+
+                      <button onClick={() => toggleSection("principle")} className="w-full flex items-center justify-between py-2 text-left border-b border-gray-200">
+                        <span className="text-base font-semibold text-primary">Принцип работы</span>
+                        <Icon name={openSection === "principle" ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground" />
+                      </button>
+                      {openSection === "principle" && (
+                        <div className="py-3 animate-fade-in">
+                          <div className="space-y-2">
+                            {mkbeWorkPrinciple.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
+                )}
 
-                  <DetailRow label="Комплектация и оборудование" isOpen={openSection === "equipment"} onToggle={() => toggleSection("equipment")} />
-                  {openSection === "equipment" && (
-                    <div className="px-6 pb-5 animate-fade-in">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
-                        <div>
-                          <p className="text-sm font-semibold text-primary mb-2">Сваебойное оборудование</p>
-                          <p className="text-xs text-muted-foreground mb-2">Молоты российского и импортного производства:</p>
-                          <div className="space-y-1.5">
-                            {mkbePilingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                          </div>
-                        </div>
-                        <div>
-                          <p className="text-sm font-semibold text-primary mb-2">Бурильное оборудование</p>
-                          <div className="space-y-1.5 mb-3">
-                            {mkbeDrillingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                          </div>
-                          <p className="text-xs text-muted-foreground mb-2">По согласованию с заказчиком:</p>
-                          <div className="space-y-1.5">
-                            {mkbeOptionalEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  <DetailRow label="Конструкция" isOpen={openSection === "construction"} onToggle={() => toggleSection("construction")} />
-                  {openSection === "construction" && (
-                    <div className="px-6 pb-5 animate-fade-in space-y-3 mt-4">
-                      <p className="text-sm text-primary">Мачта — сварная прямоугольная коробчатая конструкция, усиленная по всей длине диафрагмами жёсткости. Направляющие выполнены из круглых или профильных труб.</p>
-                      <p className="text-sm font-semibold text-primary">На мачте установлены:</p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                        {mkbeConstructionElements.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                      </div>
-                      <p className="text-sm text-primary">Передвижение каретки — цепным механизмом (планетарный редуктор РДЦ-800, усилие 8 т) либо системой «гидроцилиндр – полиспаст». Мачта не требует дополнительного оборудования для монтажа.</p>
-                    </div>
-                  )}
-
-                  <DetailRow label="Принцип работы" isOpen={openSection === "principle"} onToggle={() => toggleSection("principle")} />
-                  {openSection === "principle" && (
-                    <div className="px-6 pb-5 animate-fade-in mt-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                        {mkbeWorkPrinciple.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
+                <a href="#consultation">
+                  <Button className="btn-gradient text-white w-full">
+                    <Icon name="MessageSquare" size={16} className="mr-2" />
+                    Получить консультацию
+                  </Button>
+                </a>
+              </CardContent>
             </Card>
 
             {/* Карточка МКБЭ-2 */}
-            <Card id="mkbe2" className="border-2 border-gray-200 shadow-md overflow-hidden transition-all duration-300">
-              <div
-                className="flex items-start gap-5 p-6 cursor-pointer hover:bg-gray-50 transition-colors"
-                onClick={() => toggleCard("mkbe2")}
-              >
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge className="bg-accent/20 text-accent border-accent/50 text-xs">Многофункциональная</Badge>
-                  </div>
-                  <h2 className="text-xl md:text-2xl font-heading font-bold text-primary mb-2">
+            <Card id="mkbe2" className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
                     Мачта копрово-бурильная на экскаваторе (серия МКБЭ-2)
                   </h2>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Первая отечественная разработка с одновременным использованием молота и вращателя на одной мачте.
-                  </p>
-                  {/* Тех. характеристики — всегда видны */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5">
-                    {mkbe2Specs.map((row, idx) => (
-                      <div key={idx} className={`flex justify-between items-baseline gap-2 border-b border-gray-100 pb-1.5 ${row.label === "Углы наклона" ? "sm:col-span-2" : ""}`}>
-                        <span className="text-sm text-muted-foreground leading-snug">{row.label}</span>
-                        <span className="text-sm font-bold text-primary whitespace-nowrap flex-shrink-0">{row.value}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 flex-shrink-0 ml-4">
+                    многофункциональная
+                  </Badge>
                 </div>
-                <div className="flex-shrink-0 pt-1">
-                  <div className="flex items-center gap-1.5 text-accent text-sm font-medium">
-                    <span>{openCard === "mkbe2" ? "Свернуть" : "Подробнее"}</span>
-                    <Icon name={openCard === "mkbe2" ? "ChevronUp" : "ChevronDown"} size={18} className="text-accent" />
-                  </div>
-                </div>
-              </div>
 
-              {openCard === "mkbe2" && (
-                <div className="animate-fade-in border-t border-gray-100">
-                  <div className="p-6 bg-gray-50">
-                    <p className="text-sm font-semibold text-primary mb-2">Конструкция предусматривает два ряда направляющих:</p>
-                    <div className="space-y-2 mb-5">
-                      <div className="flex items-start gap-3">
-                        <span className="w-5 h-5 rounded-full bg-accent text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-                        <span className="text-sm text-primary">Для установки молота (дизельного или гидравлического).</span>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <span className="w-5 h-5 rounded-full bg-accent text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                        <span className="text-sm text-primary">Для установки вращателя (гидравлического или электрического).</span>
+                <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                  {mkbe2Specs.map((row, idx) => (
+                    <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                      <span className="text-base text-gray-700 flex-1">{row.label}</span>
+                      <span className="text-base font-semibold text-gray-900 text-right ml-4">{row.value}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => toggleCard("mkbe2")}
+                  className="w-full mb-3 text-accent hover:text-accent/80"
+                >
+                  <Icon name={openCard === "mkbe2" ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
+                  {openCard === "mkbe2" ? "Скрыть характеристики" : "Подробнее"}
+                </Button>
+
+                {openCard === "mkbe2" && (
+                  <div className="border-t pt-4 mb-4 animate-fade-in space-y-4">
+                    <p className="text-base text-primary leading-relaxed">
+                      Первая отечественная разработка, обеспечивающая совместное использование сваебойного и бурильного оборудования на одной мачте.
+                    </p>
+                    <div>
+                      <p className="text-base font-semibold text-primary mb-2">Конструкция предусматривает два ряда направляющих:</p>
+                      <div className="space-y-2">
+                        <div className="flex items-start gap-3">
+                          <span className="w-6 h-6 rounded-full bg-accent text-white text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+                          <span className="text-base text-primary">Для установки молота (дизельного или гидравлического).</span>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="w-6 h-6 rounded-full bg-accent text-white text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                          <span className="text-base text-primary">Для установки вращателя (гидравлического или электрического).</span>
+                        </div>
                       </div>
                     </div>
-                    <a href="#consultation">
-                      <Button className="btn-gradient text-white" size="sm">
-                        <Icon name="MessageSquare" size={15} className="mr-2" />
-                        Запросить коммерческое предложение
-                      </Button>
-                    </a>
+
+                    <div className="space-y-1">
+                      <button onClick={() => toggleSection2("composition")} className="w-full flex items-center justify-between py-2 text-left border-b border-gray-200">
+                        <span className="text-base font-semibold text-primary">Состав мачты МКБЭ-2</span>
+                        <Icon name={openSection2 === "composition" ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground" />
+                      </button>
+                      {openSection2 === "composition" && (
+                        <div className="py-3 animate-fade-in space-y-2">
+                          {mkbe2Composition.map((item, idx) => <CheckItem key={idx} text={item} />)}
+                          <p className="text-base text-primary mt-3">Подъём и опускание молота и сваи — грузовыми лебёдками. Перемещение гидравлического вращателя — гидроцилиндром с системой полиспастов (усилие 19 тонн). По желанию заказчика — цепной механизм перемещения вращателя.</p>
+                        </div>
+                      )}
+
+                      <button onClick={() => toggleSection2("service")} className="w-full flex items-center justify-between py-2 text-left border-b border-gray-200">
+                        <span className="text-base font-semibold text-primary">Гарантийное и постгарантийное обслуживание</span>
+                        <Icon name={openSection2 === "service" ? "ChevronUp" : "ChevronDown"} size={16} className="text-muted-foreground" />
+                      </button>
+                      {openSection2 === "service" && (
+                        <div className="py-3 animate-fade-in space-y-2">
+                          <CheckItem text="Гарантийное обслуживание в течение установленного срока" />
+                          <CheckItem text="Постгарантийное обслуживание и сервисная поддержка" />
+                          <CheckItem text="Возможны изменения конструкции по техническому заданию" />
+                          <CheckItem text="Доставка по РФ и СНГ" />
+                        </div>
+                      )}
+                    </div>
                   </div>
+                )}
 
-                  <DetailRow label="Состав мачты МКБЭ-2" isOpen={openSection2 === "composition"} onToggle={() => toggleSection2("composition")} />
-                  {openSection2 === "composition" && (
-                    <div className="px-6 pb-5 animate-fade-in mt-4">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 mb-4">
-                        {mkbe2Composition.map((item, idx) => <CheckItem key={idx} text={item} />)}
-                      </div>
-                      <p className="text-sm text-primary">Подъём и опускание молота и сваи — грузовыми лебёдками. Перемещение гидравлического вращателя — гидроцилиндром с системой полиспастов (усилие 19 тонн). По желанию заказчика — цепной механизм перемещения вращателя.</p>
-                    </div>
-                  )}
-
-                  <DetailRow label="Гарантийное и постгарантийное обслуживание" isOpen={openSection2 === "service"} onToggle={() => toggleSection2("service")} />
-                  {openSection2 === "service" && (
-                    <div className="px-6 pb-5 animate-fade-in mt-4">
-                      <div className="space-y-1.5">
-                        <CheckItem text="Гарантийное обслуживание в течение установленного срока" />
-                        <CheckItem text="Постгарантийное обслуживание и сервисная поддержка" />
-                        <CheckItem text="Возможны изменения конструкции по техническому заданию" />
-                        <CheckItem text="Доставка по РФ и СНГ" />
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
+                <a href="#consultation">
+                  <Button className="btn-gradient text-white w-full">
+                    <Icon name="MessageSquare" size={16} className="mr-2" />
+                    Получить консультацию
+                  </Button>
+                </a>
+              </CardContent>
             </Card>
 
           </div>
