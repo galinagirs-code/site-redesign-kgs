@@ -178,15 +178,15 @@ const SvajnyeNagolovniki = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Свайные наголовники</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Свайные наголовники — важный элемент свайного оборудования, который устанавливается на верхнюю часть сваи для защиты её от разрушения при ударах молота и равномерного распределения ударной нагрузки.
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Наголовники изготавливаются из высокопрочной стали и оснащаются специальными вкладышами (амортизирующими подушками), которые гасят ударную волну и предотвращают повреждение бетона и арматуры.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Типы свайных наголовников</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Для круглых свай — различных диаметров</span>
@@ -206,7 +206,7 @@ const SvajnyeNagolovniki = () => {
                 </ul>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Функции наголовников</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Защита головы сваи от разрушения</span>
@@ -234,7 +234,7 @@ const SvajnyeNagolovniki = () => {
                 </ul>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Конструкция наголовника</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Стандартный наголовник состоит из стального корпуса с внутренней полостью под сваю, амортизирующей подушки (обычно из твердых пород дерева или специального композитного материала) и системы крепления. Некоторые модели оснащены механизмом центрирования для точной установки на сваю.
                 </p>
               </div>
@@ -338,7 +338,7 @@ const SvajnyeNagolovniki = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

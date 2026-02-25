@@ -167,12 +167,12 @@ const YonganYZVM = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Вибропогружатели серия YZ-VM</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Модели серии YZ-VM — гидравлические вибропогружатели с зажимом, специально разработанные для применения на кранах. Используются для забивки и извлечения шпунтовых свай, стальных труб, балок и свай других типов на строительных площадках морских сооружений, мостов, дамб, причалов, эстакад, подземных переходов и других строительных объектов.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Конструктивные особенности YZ-VM</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Модели серии VM имеют встроенный зажим для удержания свайных элементов, что делает их универсальным решением для различных типов строительства. Зажимной механизм обеспечивает надежную фиксацию элементов во время работы.
                 </p>
               </div>
@@ -276,7 +276,7 @@ const YonganYZVM = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

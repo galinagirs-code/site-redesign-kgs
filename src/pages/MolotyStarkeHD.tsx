@@ -359,8 +359,8 @@ const MolotyStarkeHD = () => {
                       <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                            <span className="text-sm text-primary">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary">{spec.value}</span>
                           </div>
                         ))}
                         
@@ -368,8 +368,8 @@ const MolotyStarkeHD = () => {
                           <>
                             {variant.detailedSpecs.map((spec, idx) => (
                               <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                                <span className="text-sm text-gray-700">{spec.label}</span>
-                                <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                                <span className="text-sm text-primary">{spec.label}</span>
+                                <span className="text-sm font-semibold text-primary">{spec.value}</span>
                               </div>
                             ))}
                           </>
@@ -421,17 +421,17 @@ const MolotyStarkeHD = () => {
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-2xl font-semibold text-primary mb-4">Принцип работы</h3>
-                    <p className="text-lg leading-relaxed text-muted-foreground">
+                    <p className="text-lg leading-relaxed text-primary">
                       Дизельные трубчатые молоты для забивки свай работают по принципу дизельного двигателя, обеспечивая непрерывную высокоэффективную работу. Используется независимая технология принудительной смазки насоса, значительно увеличивающая срок службы оборудования.
                     </p>
-                    <p className="text-lg leading-relaxed text-muted-foreground mt-4">
+                    <p className="text-lg leading-relaxed text-primary mt-4">
                       Применение: установка железобетонных свай, свай из стальных труб, прямых и морских свай, наклонных свай.
                     </p>
                   </div>
 
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Преимущества молотов Starke HD</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Энергия удара на 30-50% больше, чем у штанговых молотов с аналогичными параметрами</li>
                       <li className="leading-relaxed">Оптимальное соотношение массы ударной части и силы удара — экономия топлива</li>
                       <li className="leading-relaxed">Регулировка силы удара в процессе работы без остановки молота</li>
@@ -444,7 +444,7 @@ const MolotyStarkeHD = () => {
 
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Starke HD</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Погружение железобетонных свай</li>
                       <li className="leading-relaxed">Устройство свайных фундаментов из стальных труб</li>
                       <li className="leading-relaxed">Забивка прямых свай</li>
@@ -522,7 +522,7 @@ const MolotyStarkeHD = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
                 Подбор дизельного трубчатого молота Starke
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary">
                 Заполните форму, и наш специалист поможет подобрать оптимальную модель молота для ваших задач
               </p>
             </div>

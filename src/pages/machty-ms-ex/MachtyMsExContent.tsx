@@ -72,7 +72,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Универсальность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Превращает экскаватор в полноповоротную копровую или буровую машину и обратно — без изменения базовой конструкции.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Превращает экскаватор в полноповоротную копровую или буровую машину и обратно — без изменения базовой конструкции.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -81,7 +81,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Экономия до 4 раз</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачты МКБЭ в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве и российском производстве.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Мачты МКБЭ в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве и российском производстве.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -90,7 +90,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Быстрое переоборудование</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">МКБЭ-1 монтируется за 2–3 часа (на стреле), МКБЭ-2 на жёсткой раме — за 1–2 рабочие смены.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">МКБЭ-1 монтируется за 2–3 часа (на стреле), МКБЭ-2 на жёсткой раме — за 1–2 рабочие смены.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -99,7 +99,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Надёжность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Комплектующие надёжных производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Комплектующие надёжных производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -108,7 +108,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Доступное обслуживание</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Низкие эксплуатационные затраты, наличие запчастей на складе, мобильная сервисная служба KGS.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Низкие эксплуатационные затраты, наличие запчастей на складе, мобильная сервисная служба KGS.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -117,7 +117,7 @@ const MachtyMsExContent = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Удобная транспортировка</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачта складывается в транспортное положение на экскаваторную базу, снижая затраты при перебазировке.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Мачта складывается в транспортное положение на экскаваторную базу, снижая затраты при перебазировке.</p>
                 </div>
               </div>
             </div>

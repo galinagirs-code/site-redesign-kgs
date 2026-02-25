@@ -205,28 +205,28 @@ const Services = () => {
 
             <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
               <div className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-primary leading-relaxed">
                   Мы выполняем шефмонтаж и пусконаладку оборудования по всей территории России и стран СНГ.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-primary leading-relaxed">
                   Одной из наиболее востребованных услуг нашей компании является шефмонтаж, который гарантирует бесперебойную работу сваебойного оборудования, буровых установок, ударных молотов и другого оборудования для правильной установки и эксплуатации.
                 </p>
                 <div>
-                  <p className="text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-primary leading-relaxed mb-3">
                     <strong className="text-foreground">Шефмонтаж</strong> — это процесс установки оборудования под контролем опытного инженерного специалиста. Благодаря этой услуге заказчики могут быть уверены в:
                   </p>
                   <ul className="space-y-2 ml-6">
                     <li className="flex items-start">
                       <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                      <span className="text-muted-foreground">правильности монтажа и настройки всех элементов оборудования;</span>
+                      <span className="text-primary">правильности монтажа и настройки всех элементов оборудования;</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                      <span className="text-muted-foreground">соблюдении стандартов эксплуатации завода-изготовителя;</span>
+                      <span className="text-primary">соблюдении стандартов эксплуатации завода-изготовителя;</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="CheckCircle2" className="text-accent mr-2 mt-1 flex-shrink-0" size={18} />
-                      <span className="text-muted-foreground">наличии всех необходимых комплектующих.</span>
+                      <span className="text-primary">наличии всех необходимых комплектующих.</span>
                     </li>
                   </ul>
                 </div>
@@ -253,7 +253,7 @@ const Services = () => {
                     <div className="bg-accent/10 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
                       {index + 1}
                     </div>
-                    <p className="text-muted-foreground leading-relaxed pt-1">{step}</p>
+                    <p className="text-primary leading-relaxed pt-1">{step}</p>
                   </div>
                 ))}
               </div>
@@ -268,14 +268,14 @@ const Services = () => {
                       <Icon name={benefit.icon} className="text-accent" size={32} />
                     </div>
                     <h4 className="font-heading font-semibold mb-2">{benefit.title}</h4>
-                    <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                    <p className="text-sm text-primary">{benefit.description}</p>
                   </Card>
                 ))}
               </div>
             </div>
 
             <Card className="p-8 bg-accent/5">
-              <p className="text-muted-foreground leading-relaxed text-center">
+              <p className="text-primary leading-relaxed text-center">
                 Наши сервисные инженеры — это специалисты с многолетним опытом работы, которые знают все тонкости наладки и настройки сложного оборудования, строго соблюдая действующие стандарты и нормативы.
               </p>
               <p className="text-lg font-semibold text-center mt-4 mb-6">
@@ -310,7 +310,7 @@ const Services = () => {
                     </div>
                     <div className="flex items-start space-x-3">
                       <Checkbox id="privacy-service" className="mt-1" />
-                      <label htmlFor="privacy-service" className="text-xs text-muted-foreground leading-relaxed cursor-pointer">
+                      <label htmlFor="privacy-service" className="text-xs text-primary leading-relaxed cursor-pointer">
                         Я согласен на обработку персональных данных в соответствии с{" "}
                         <a href="#" className="text-primary hover:text-accent underline">политикой конфиденциальности</a>
                       </label>
@@ -342,7 +342,7 @@ const Services = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 items-start mb-10">
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-primary leading-relaxed">
                 <p className="text-lg">
                   Качественное техническое обслуживание — залог долгой и бесперебойной работы сваебойной, буровой техники и навесного оборудования.
                 </p>
@@ -361,7 +361,7 @@ const Services = () => {
                           </div>
                           <div>
                             <h4 className="font-heading font-semibold mb-1">{service.title}</h4>
-                            <p className="text-sm text-muted-foreground">{service.description}</p>
+                            <p className="text-sm text-primary">{service.description}</p>
                           </div>
                         </div>
                       </Card>
@@ -371,7 +371,7 @@ const Services = () => {
 
                 <Card className="p-6 bg-accent/5">
                   <h3 className="text-xl font-heading font-bold mb-3">Надёжность, подтверждённая опытом</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-primary leading-relaxed mb-3">
                     За годы работы мы выстроили прочные партнёрские отношения с крупными поставщиками оригинальных комплектующих. Это позволяет нам использовать качественные детали от заводов-изготовителей и поддерживать высокий уровень сервиса.
                   </p>
                   <p className="text-lg font-semibold">
@@ -397,10 +397,10 @@ const Services = () => {
               <h3 className="text-2xl font-heading font-bold mb-6 text-center">Консультации и обучение персонала</h3>
               <Card className="p-8">
                 <h4 className="text-xl font-heading font-bold mb-4">Почему важно обучение:</h4>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="text-primary leading-relaxed mb-4">
                   Неподготовленный оператор может допустить ошибки, которые приведут к неисправностям или аварийным ситуациям. Обучение механиков и операторов позволяет избежать поломок, повысить безопасность и продлить срок службы оборудования.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-primary leading-relaxed">
                   Наши специалисты знают специфику каждой модели техники и умеют находить решение даже в нестандартных ситуациях.
                 </p>
               </Card>

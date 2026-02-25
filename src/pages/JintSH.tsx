@@ -160,17 +160,17 @@ const JintSH = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">О производителе JINT</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Shanghai Jintai Construction Machinery Co., Ltd. — китайская государственная компания, основанная в 1921 году. С 1996 по 2003 год работала совместно с немецкой компанией Bauer, производя немецкую технику. Это обеспечило высокий уровень качества и использование передовых технологий.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Гидравлические буровые машины JINT (серия SH)</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Гидравлическая буровая машина JINT серии SH представляет собой "новый тип буровых установок с большой треугольной структурой", сочетающий современные технологии и процессы гидравлического бурового оборудования.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии SH</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Простота эксплуатации</span>
@@ -190,7 +190,7 @@ const JintSH = () => {
                 </ul>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Области применения серии SH</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Строительство высотных зданий</span>
@@ -309,7 +309,7 @@ const JintSH = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

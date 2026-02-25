@@ -133,7 +133,7 @@ const Domkraty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Назначение домкратов для извлечения свай
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Домкраты для извлечения свай — специализированное гидравлическое оборудование, предназначенное для выдергивания забитых свай из грунта. Применяются в случаях, когда необходимо демонтировать временные сваи, исправить ошибки при забивке или извлечь сваи для повторного использования.
                   </p>
                 </CardContent>
@@ -144,7 +144,7 @@ const Domkraty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Принцип работы
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Гидравлический домкрат устанавливается на оголовок сваи и с помощью мощного гидравлического усилия производит постепенное извлечение сваи из грунта. Процесс осуществляется поэтапно с перехватом сваи до полного извлечения.
                   </p>
                 </CardContent>
@@ -158,27 +158,27 @@ const Domkraty = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокое тяговое усилие для извлечения свай из плотных грунтов</span>
+                      <span className="text-primary">Высокое тяговое усилие для извлечения свай из плотных грунтов</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Точный контроль процесса извлечения</span>
+                      <span className="text-primary">Точный контроль процесса извлечения</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Возможность работы в стесненных условиях</span>
+                      <span className="text-primary">Возможность работы в стесненных условиях</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Сохранность сваи при извлечении для повторного использования</span>
+                      <span className="text-primary">Сохранность сваи при извлечении для повторного использования</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Компактные размеры оборудования</span>
+                      <span className="text-primary">Компактные размеры оборудования</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Надежность и долговечность конструкции</span>
+                      <span className="text-primary">Надежность и долговечность конструкции</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -192,23 +192,23 @@ const Domkraty = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Демонтаж временных ограждений из шпунтовых свай</span>
+                      <span className="text-primary">Демонтаж временных ограждений из шпунтовых свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Исправление ошибок при неправильной забивке свай</span>
+                      <span className="text-primary">Исправление ошибок при неправильной забивке свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Извлечение свай для повторного использования</span>
+                      <span className="text-primary">Извлечение свай для повторного использования</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Работы по реконструкции и демонтажу объектов</span>
+                      <span className="text-primary">Работы по реконструкции и демонтажу объектов</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Извлечение труб и столбов</span>
+                      <span className="text-primary">Извлечение труб и столбов</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -222,23 +222,23 @@ const Domkraty = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Шпунтовые сваи различных профилей</span>
+                      <span className="text-primary">Шпунтовые сваи различных профилей</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Стальные трубные сваи</span>
+                      <span className="text-primary">Стальные трубные сваи</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Железобетонные сваи</span>
+                      <span className="text-primary">Железобетонные сваи</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Деревянные сваи</span>
+                      <span className="text-primary">Деревянные сваи</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Металлические столбы и опоры</span>
+                      <span className="text-primary">Металлические столбы и опоры</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -249,10 +249,10 @@ const Domkraty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Технические особенности
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Домкраты оснащены мощными гидравлическими цилиндрами, обеспечивающими необходимое усилие для преодоления сопротивления грунта. Система управления позволяет точно регулировать скорость и усилие извлечения.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Конструкция предусматривает возможность работы с различными типами свай благодаря системе сменных захватов и адаптеров. Компактные размеры позволяют использовать оборудование в условиях ограниченного пространства.
                   </p>
                 </CardContent>
@@ -290,7 +290,7 @@ const Domkraty = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -304,7 +304,7 @@ const Domkraty = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -313,7 +313,7 @@ const Domkraty = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -417,7 +417,7 @@ const Domkraty = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

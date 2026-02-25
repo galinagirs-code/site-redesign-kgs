@@ -70,8 +70,8 @@ const Privacy = () => {
               Политика конфиденциальности
             </h1>
             
-            <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
-              <p className="text-sm text-muted-foreground/70">
+            <div className="prose prose-lg max-w-none space-y-6 text-primary">
+              <p className="text-sm text-primary/70">
                 Последнее обновление: {new Date().toLocaleDateString('ru-RU')}
               </p>
 

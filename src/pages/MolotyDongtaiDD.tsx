@@ -477,8 +477,8 @@ const MolotyDongtaiDD = () => {
                       <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                            <span className="text-sm text-primary">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary">{spec.value}</span>
                           </div>
                         ))}
                         
@@ -486,8 +486,8 @@ const MolotyDongtaiDD = () => {
                           <>
                             {variant.detailedSpecs.map((spec, idx) => (
                               <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                                <span className="text-sm text-gray-700">{spec.label}</span>
-                                <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                                <span className="text-sm text-primary">{spec.label}</span>
+                                <span className="text-sm font-semibold text-primary">{spec.value}</span>
                               </div>
                             ))}
                           </>
@@ -542,10 +542,10 @@ const MolotyDongtaiDD = () => {
                     </div>
                     <h4 className="text-lg font-heading font-bold text-primary">О производителе</h4>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <p className="text-primary text-sm leading-relaxed mb-3">
                     Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
                   </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-primary text-sm leading-relaxed">
                     Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
                   </p>
                 </CardContent>
@@ -559,7 +559,7 @@ const MolotyDongtaiDD = () => {
                     </div>
                     <h4 className="text-lg font-heading font-bold text-primary">Принцип работы</h4>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                  <p className="text-primary text-sm leading-relaxed mb-3">
                     Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время. Это свойство достигается благодаря:
                   </p>
                   <ul className="space-y-2 mb-3">
@@ -570,7 +570,7 @@ const MolotyDongtaiDD = () => {
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-accent font-bold mt-0.5 flex-shrink-0">✔</span>
-                        <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                        <span className="text-sm text-primary leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -598,7 +598,7 @@ const MolotyDongtaiDD = () => {
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-accent font-bold mt-0.5 flex-shrink-0">✔</span>
-                        <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                        <span className="text-sm text-primary leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -622,7 +622,7 @@ const MolotyDongtaiDD = () => {
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-accent font-bold mt-0.5 flex-shrink-0">✔</span>
-                        <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                        <span className="text-sm text-primary leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -702,7 +702,7 @@ const MolotyDongtaiDD = () => {
               <h3 className="font-heading font-semibold text-lg">Консультация: Молоты Dongtai Juli DD</h3>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-primary"
+                className="text-primary hover:text-primary"
               >
                 <Icon name="X" size={24} />
               </button>

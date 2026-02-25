@@ -160,10 +160,10 @@ const Kburg = () => {
               <h1 className="text-3xl font-bold mb-4">Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов</h1>
               
               <div className="prose max-w-none mb-6">
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов предназначена для выполнения свайных работ любой сложности. Надежное и производительное оборудование для профессионального использования.
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Для получения подробной информации о характеристиках, стоимости и сроках поставки, пожалуйста, свяжитесь с нашими специалистами.
                 </p>
               </div>
@@ -267,7 +267,7 @@ const Kburg = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

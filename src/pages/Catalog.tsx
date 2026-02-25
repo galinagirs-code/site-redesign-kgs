@@ -971,7 +971,7 @@ const Catalog = () => {
                           {modelRoute ? (
                             <Link 
                               to={modelRoute}
-                              className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
+                              className="text-sm md:text-base text-primary hover:text-primary flex items-start transition-colors cursor-pointer group"
                             >
                               <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
                               <span className="leading-snug group-hover:underline">{model}</span>
@@ -979,7 +979,7 @@ const Catalog = () => {
                           ) : (
                             <a 
                               href="#contact"
-                              className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group"
+                              className="text-sm md:text-base text-primary hover:text-primary flex items-start transition-colors cursor-pointer group"
                             >
                               <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover:text-accent" />
                               <span className="leading-snug group-hover:underline">{model}</span>
@@ -1018,7 +1018,7 @@ const Catalog = () => {
               </h2>
               <button 
                 onClick={() => setSelectedCategory(null)}
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-primary hover:text-primary transition-colors"
               >
                 <Icon name="X" size={28} />
               </button>
@@ -1033,13 +1033,13 @@ const Catalog = () => {
                     </h3>
                     
                     {section.text && (
-                      <p className="text-muted-foreground leading-relaxed mb-4 whitespace-pre-line">
+                      <p className="text-primary leading-relaxed mb-4 whitespace-pre-line">
                         {section.text}
                       </p>
                     )}
                     
                     {section.list && (
-                      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <ul className="list-disc pl-6 space-y-2 text-primary">
                         {section.list.map((item, itemIdx) => (
                           <li key={itemIdx} className="leading-relaxed">{item}</li>
                         ))}
@@ -1047,13 +1047,13 @@ const Catalog = () => {
                     )}
                     
                     {section.additionalText && (
-                      <p className="text-muted-foreground leading-relaxed mt-4 mb-4 whitespace-pre-line">
+                      <p className="text-primary leading-relaxed mt-4 mb-4 whitespace-pre-line">
                         {section.additionalText}
                       </p>
                     )}
                     
                     {section.additionalList && (
-                      <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <ul className="list-disc pl-6 space-y-2 text-primary">
                         {section.additionalList.map((item, itemIdx) => (
                           <li key={itemIdx} className="leading-relaxed">{item}</li>
                         ))}
@@ -1061,7 +1061,7 @@ const Catalog = () => {
                     )}
                     
                     {section.orderedList && (
-                      <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+                      <ol className="list-decimal pl-6 space-y-2 text-primary">
                         {section.orderedList.map((item, itemIdx) => (
                           <li key={itemIdx} className="leading-relaxed">{item}</li>
                         ))}
@@ -1103,7 +1103,7 @@ const Catalog = () => {
               Поставка, производство и сервис оборудования для строительства свайных фундаментов
             </h2>
             
-            <div className="space-y-6 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
+            <div className="space-y-6 text-primary text-base md:text-lg leading-relaxed mb-8">
               <p>
                 КоперГруппСервис предлагает комплексные решения для проектов по выполнению свайных работ — от подбора техники до поставки запасных частей и полного технического обслуживания оборудования.
               </p>
@@ -1116,7 +1116,7 @@ const Catalog = () => {
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
                 Ассортимент оборудования
               </h3>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-primary">
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <div>
@@ -1178,7 +1178,7 @@ const Catalog = () => {
               <h3 className="text-xl md:text-2xl font-heading font-bold mb-6 text-primary">
                 Комплексное обслуживание от нашей компании включает:
               </h3>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-primary">
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={20} />
                   <p>
@@ -1213,7 +1213,7 @@ const Catalog = () => {
             </div>
             
             <div className="mt-8 p-6 md:p-8 bg-gradient-to-br from-accent/5 to-primary/5 rounded-lg border-l-4 border-accent">
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed text-center font-medium">
+              <p className="text-primary text-base md:text-lg leading-relaxed text-center font-medium">
                 Мы предлагаем полный цикл услуг под ключ, обеспечивая наших клиентов всем необходимым для успешной реализации строительных проектов.
               </p>
             </div>

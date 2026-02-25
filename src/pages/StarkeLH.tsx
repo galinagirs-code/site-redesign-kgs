@@ -171,14 +171,14 @@ const StarkeLH = () => {
                       <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                            <span className="text-sm text-primary">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary">{spec.value}</span>
                           </div>
                         ))}
                         {expandedVariant === variant.name && variant.detailedSpecs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                            <span className="text-sm text-primary">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary">{spec.value}</span>
                           </div>
                         ))}
                       </div>
@@ -206,12 +206,12 @@ const StarkeLH = () => {
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-2xl font-semibold text-primary mb-4">О производителе</h3>
-                    <p className="text-lg leading-relaxed text-muted-foreground">Сваебойные установки производства компании Guangdong Liyuan Hydraulic Machinery Co. Ltd (Китай) характеризуются высокими показателями мощности и эффективности. Компания основана в 1993 году и успешно зарекомендовала себя на рынке.</p>
-                    <p className="text-lg leading-relaxed text-muted-foreground mt-4">Копровые машины на базе экскаватора изготавливаются с применением современных технологий, обеспечивающих долговечность работы.</p>
+                    <p className="text-lg leading-relaxed text-primary">Сваебойные установки производства компании Guangdong Liyuan Hydraulic Machinery Co. Ltd (Китай) характеризуются высокими показателями мощности и эффективности. Компания основана в 1993 году и успешно зарекомендовала себя на рынке.</p>
+                    <p className="text-lg leading-relaxed text-primary mt-4">Копровые машины на базе экскаватора изготавливаются с применением современных технологий, обеспечивающих долговечность работы.</p>
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Ключевые характеристики серии LH</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Высокая мощность</li>
                       <li className="leading-relaxed">Гидравлическая система управления</li>
                       <li className="leading-relaxed">Большое энергосбережение</li>
@@ -221,7 +221,7 @@ const StarkeLH = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Области применения</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Забивка свай</li>
                       <li className="leading-relaxed">Установка опор</li>
                       <li className="leading-relaxed">Выполнение свайных работ различной сложности</li>
@@ -267,7 +267,7 @@ const StarkeLH = () => {
             <div className="text-center mb-12 animate-fade-in">
               <Badge className="mb-4 bg-accent/10 text-accent border-accent/30">Консультация специалиста</Badge>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">Подбор сваебойной установки STARKE</h2>
-              <p className="text-lg text-muted-foreground">Заполните форму, и наш специалист поможет подобрать оптимальную модель для ваших задач</p>
+              <p className="text-lg text-primary">Заполните форму, и наш специалист поможет подобрать оптимальную модель для ваших задач</p>
             </div>
             {!showConsultationForm ? (
               <div className="text-center">

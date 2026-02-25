@@ -140,7 +140,7 @@ const MolotyJuli = () => {
               <h3 className="font-heading font-semibold text-lg">Консультация: Молоты Dongtai Juli</h3>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-primary"
+                className="text-primary hover:text-primary"
               >
                 <Icon name="X" size={24} />
               </button>

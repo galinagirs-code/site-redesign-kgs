@@ -124,7 +124,7 @@ const Svaeskusyvateli = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Назначение сваескусывателей
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Сваескусыватели — специализированное навесное оборудование для экскаваторов, предназначенное для обрезки верхней части железобетонных свай до проектной отметки. Применяются на строительных объектах после забивки свай, когда необходимо выровнять их высоту согласно проекту.
                   </p>
                 </CardContent>
@@ -135,10 +135,10 @@ const Svaeskusyvateli = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Сваескусыватели для круглых свай
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Сваескусыватели для круглых свай специально разработаны для работы с круглыми железобетонными сваями различного диаметра. Конструкция захватного механизма обеспечивает надежную фиксацию круглого сечения и точную обрезку по заданной отметке.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Применяются для обрезки круглых свай диаметром от 200 до 800 мм в зависимости от модели оборудования.
                   </p>
 
@@ -148,23 +148,23 @@ const Svaeskusyvateli = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Специализированная форма захвата под круглое сечение</span>
+                      <span className="text-primary">Специализированная форма захвата под круглое сечение</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Равномерное распределение усилия по периметру сваи</span>
+                      <span className="text-primary">Равномерное распределение усилия по периметру сваи</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая точность обрезки</span>
+                      <span className="text-primary">Высокая точность обрезки</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Минимальные повреждения арматуры</span>
+                      <span className="text-primary">Минимальные повреждения арматуры</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Возможность работы с различными диаметрами</span>
+                      <span className="text-primary">Возможность работы с различными диаметрами</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -175,10 +175,10 @@ const Svaeskusyvateli = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Сваескусыватели для квадратных свай
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Сваескусыватели для квадратных свай предназначены для работы с квадратными и прямоугольными железобетонными сваями. Конструкция учитывает особенности геометрии квадратного сечения и обеспечивает надежный захват по всем четырем сторонам.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Применяются для обрезки квадратных свай сечением от 200×200 мм до 400×400 мм и более, в зависимости от модели.
                   </p>
 
@@ -188,23 +188,23 @@ const Svaeskusyvateli = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Захват адаптирован под квадратное и прямоугольное сечение</span>
+                      <span className="text-primary">Захват адаптирован под квадратное и прямоугольное сечение</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Надежная фиксация по четырем граням</span>
+                      <span className="text-primary">Надежная фиксация по четырем граням</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Чистый скол без сколов и трещин</span>
+                      <span className="text-primary">Чистый скол без сколов и трещин</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Сохранность арматурного каркаса</span>
+                      <span className="text-primary">Сохранность арматурного каркаса</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Универсальность для различных сечений</span>
+                      <span className="text-primary">Универсальность для различных сечений</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -218,38 +218,38 @@ const Svaeskusyvateli = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая производительность по сравнению с ручной обрезкой</span>
+                      <span className="text-primary">Высокая производительность по сравнению с ручной обрезкой</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Экономия времени и трудозатрат</span>
+                      <span className="text-primary">Экономия времени и трудозатрат</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Точность обрезки по проектной отметке</span>
+                      <span className="text-primary">Точность обрезки по проектной отметке</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Безопасность работ</span>
+                      <span className="text-primary">Безопасность работ</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простота монтажа на экскаватор</span>
+                      <span className="text-primary">Простота монтажа на экскаватор</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Минимальный уровень шума и вибрации</span>
+                      <span className="text-primary">Минимальный уровень шума и вибрации</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Долговечность конструкции</span>
+                      <span className="text-primary">Долговечность конструкции</span>
                     </li>
                   </ul>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Принцип работы
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Сваескусыватель навешивается на стрелу экскаватора, захватывает сваю в заданной точке и с помощью гидравлического усилия производит скалывание бетона. Арматура обрезается встроенными ножами. Весь процесс занимает несколько минут на одну сваю.
                   </p>
                 </CardContent>
@@ -287,7 +287,7 @@ const Svaeskusyvateli = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -301,7 +301,7 @@ const Svaeskusyvateli = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -310,7 +310,7 @@ const Svaeskusyvateli = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -406,7 +406,7 @@ const Svaeskusyvateli = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

@@ -156,10 +156,10 @@ const SvaebojnyeMoloty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Гидравлические молоты Yongan (серия YC)
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Компания Yongan Machinery основана в 1985 году, специализируется на производстве гидравлических ударных молотов. За 37 лет стала ведущим китайским предприятием по производству свайных молотов.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Сваебойные молоты Yongan применяются при строительстве причалов, эстакад, морской ветроэнергетики и фундаментов зданий. Ассортимент включает более 30 моделей от YC-3 до YC-220.
                   </p>
 
@@ -169,35 +169,35 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Широкая сфера применения для забивки стальных трубчатых, железобетонных свай, шпунтов</span>
+                      <span className="text-primary">Широкая сфера применения для забивки стальных трубчатых, железобетонных свай, шпунтов</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простота управления и обслуживания</span>
+                      <span className="text-primary">Простота управления и обслуживания</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Низкий уровень шума</span>
+                      <span className="text-primary">Низкий уровень шума</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Забивка свай без предварительного бурения даже в мерзлую почву</span>
+                      <span className="text-primary">Забивка свай без предварительного бурения даже в мерзлую почву</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Выносной пульт управления с автоматическим и ручным режимами работы</span>
+                      <span className="text-primary">Выносной пульт управления с автоматическим и ручным режимами работы</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Регулировка энергии удара</span>
+                      <span className="text-primary">Регулировка энергии удара</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Подключение к гидростанции или базовой машине</span>
+                      <span className="text-primary">Подключение к гидростанции или базовой машине</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Прочный материал амортизирующей подушки, кованая ударная часть</span>
+                      <span className="text-primary">Прочный материал амортизирующей подушки, кованая ударная часть</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -208,10 +208,10 @@ const SvaebojnyeMoloty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Дизельные трубчатые молоты Starke (серия HD)
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Дизельные трубчатые молоты для забивки свай работают по принципу дизельного двигателя, обеспечивая непрерывную высокоэффективную работу. Используется независимая технология принудительной смазки насоса, значительно увеличивающая срок службы.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Применение: установка железобетонных свай, свай из стальных труб, прямых и морских свай, наклонных свай.
                   </p>
 
@@ -221,27 +221,27 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Энергия удара на 30-50% больше, чем у штанговых молотов с аналогичными параметрами</span>
+                      <span className="text-primary">Энергия удара на 30-50% больше, чем у штанговых молотов с аналогичными параметрами</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Оптимальное соотношение массы ударной части и силы удара — экономия топлива</span>
+                      <span className="text-primary">Оптимальное соотношение массы ударной части и силы удара — экономия топлива</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Регулировка силы удара в процессе работы без остановки молота</span>
+                      <span className="text-primary">Регулировка силы удара в процессе работы без остановки молота</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простая система воздушного охлаждения</span>
+                      <span className="text-primary">Простая система воздушного охлаждения</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Ниже стоимость по сравнению с гидравлическими молотами</span>
+                      <span className="text-primary">Ниже стоимость по сравнению с гидравлическими молотами</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Прочность, надежность, простота в эксплуатации и обслуживании</span>
+                      <span className="text-primary">Прочность, надежность, простота в эксплуатации и обслуживании</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -252,7 +252,7 @@ const SvaebojnyeMoloty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Дизельные штанговые молоты Dongtai Juli (серия DD)
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Дизельный штанговый молот производства Dongtai Juli Machinery Manufacturing Co., LTD (Китай) отличается большой мощностью и стабильным качеством. Серия DD — самая современная продукция, производимая на основе многолетнего опыта и передовых технологий.
                   </p>
 
@@ -262,23 +262,23 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Энергия удара на 70-80% больше, чем у молотов российского производства с таким же весом ударной части</span>
+                      <span className="text-primary">Энергия удара на 70-80% больше, чем у молотов российского производства с таким же весом ударной части</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая компрессия по сравнению с российскими аналогами</span>
+                      <span className="text-primary">Высокая компрессия по сравнению с российскими аналогами</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая мощность и низкий расход топлива</span>
+                      <span className="text-primary">Высокая мощность и низкий расход топлива</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Большой срок службы</span>
+                      <span className="text-primary">Большой срок службы</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Хорошая теплоотдача, увеличивающая производительность</span>
+                      <span className="text-primary">Хорошая теплоотдача, увеличивающая производительность</span>
                     </li>
                   </ul>
 
@@ -288,19 +288,19 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Погружение деревянных и железобетонных свай</span>
+                      <span className="text-primary">Погружение деревянных и железобетонных свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Строительство свайного фундамента</span>
+                      <span className="text-primary">Строительство свайного фундамента</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Погружение металлических труб</span>
+                      <span className="text-primary">Погружение металлических труб</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Погружение шпунта Ларсена</span>
+                      <span className="text-primary">Погружение шпунта Ларсена</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -311,10 +311,10 @@ const SvaebojnyeMoloty = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Свайные наголовники
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Свайные наголовники — важный элемент свайного оборудования, который устанавливается на верхнюю часть сваи для защиты её от разрушения при ударах молота и равномерного распределения ударной нагрузки.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Наголовники изготавливаются из высокопрочной стали и оснащаются специальными вкладышами (амортизирующими подушками), которые гасят ударную волну и предотвращают повреждение бетона и арматуры.
                   </p>
 
@@ -324,19 +324,19 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Для круглых свай — различных диаметров</span>
+                      <span className="text-primary">Для круглых свай — различных диаметров</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Для квадратных свай — различных сечений (от 200×200 до 400×400 мм)</span>
+                      <span className="text-primary">Для квадратных свай — различных сечений (от 200×200 до 400×400 мм)</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Для труб — под конкретный диаметр трубы</span>
+                      <span className="text-primary">Для труб — под конкретный диаметр трубы</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Универсальные наголовники — с регулируемым размером</span>
+                      <span className="text-primary">Универсальные наголовники — с регулируемым размером</span>
                     </li>
                   </ul>
 
@@ -346,34 +346,34 @@ const SvaebojnyeMoloty = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Защита головы сваи от разрушения</span>
+                      <span className="text-primary">Защита головы сваи от разрушения</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Равномерное распределение ударной нагрузки</span>
+                      <span className="text-primary">Равномерное распределение ударной нагрузки</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Предотвращение сколов бетона</span>
+                      <span className="text-primary">Предотвращение сколов бетона</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Сохранность арматурного каркаса</span>
+                      <span className="text-primary">Сохранность арматурного каркаса</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Увеличение срока службы сваи</span>
+                      <span className="text-primary">Увеличение срока службы сваи</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Повышение эффективности забивки</span>
+                      <span className="text-primary">Повышение эффективности забивки</span>
                     </li>
                   </ul>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Конструкция наголовника
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Стандартный наголовник состоит из стального корпуса с внутренней полостью под сваю, амортизирующей подушки (обычно из твердых пород дерева или специального композитного материала) и системы крепления. Некоторые модели оснащены механизмом центрирования для точной установки на сваю.
                   </p>
                 </CardContent>
@@ -411,7 +411,7 @@ const SvaebojnyeMoloty = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -425,7 +425,7 @@ const SvaebojnyeMoloty = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -434,7 +434,7 @@ const SvaebojnyeMoloty = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -538,7 +538,7 @@ const SvaebojnyeMoloty = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

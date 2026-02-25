@@ -161,15 +161,15 @@ const JuliKLB = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Шагающие копровые установки Dongtai Juli (серия KLB)</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Шагающие копровые установки Dongtai Juli серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Гидравлические шагающие установки Dongtai Juli серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Оснащение копровых установок</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Лебедки с электрическим приводом</span>
@@ -189,7 +189,7 @@ const JuliKLB = () => {
                 </ul>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества установок серии KLB</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Универсальность — возможность работы с разным навесным оборудованием</span>
@@ -312,7 +312,7 @@ const JuliKLB = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

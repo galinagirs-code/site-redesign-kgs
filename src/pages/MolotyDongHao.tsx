@@ -77,7 +77,7 @@ const MolotyDongHao = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-primary mb-8">
                 Информация об оборудовании появится в ближайшее время
               </p>
               <Link to="/catalog">

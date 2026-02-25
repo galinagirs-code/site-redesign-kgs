@@ -18,7 +18,7 @@ const MachtyMsExVariants = () => {
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
             Варианты исполнения мачт МКБЭ
           </h2>
-          <p className="text-muted-foreground text-center mb-8 text-base md:text-lg">
+          <p className="text-primary text-center mb-8 text-base md:text-lg">
             МКБЭ-1 (на стреле) / МКБЭ-2 (на жёсткой раме)
           </p>
 
@@ -55,7 +55,7 @@ const MachtyMsExVariants = () => {
                     <div className="space-y-2 mb-4">
                       {variant.specs.map((spec) => (
                         <div key={spec.label} className="flex justify-between items-center text-base">
-                          <span className="text-muted-foreground">{spec.label}</span>
+                          <span className="text-primary">{spec.label}</span>
                           <span className="font-semibold text-primary">{spec.value}</span>
                         </div>
                       ))}
@@ -77,9 +77,9 @@ const MachtyMsExVariants = () => {
                           <table className="w-full text-sm">
                             <thead>
                               <tr className="border-b border-gray-200">
-                                <th className="text-left py-2 pr-3 text-muted-foreground font-medium">Характеристика</th>
-                                <th className="text-center py-2 px-2 text-muted-foreground font-medium min-w-[90px]">На стреле</th>
-                                <th className="text-center py-2 pl-2 text-muted-foreground font-medium min-w-[90px]">На раме</th>
+                                <th className="text-left py-2 pr-3 text-primary font-medium">Характеристика</th>
+                                <th className="text-center py-2 px-2 text-primary font-medium min-w-[90px]">На стреле</th>
+                                <th className="text-center py-2 pl-2 text-primary font-medium min-w-[90px]">На раме</th>
                               </tr>
                             </thead>
                             <tbody>

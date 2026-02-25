@@ -147,10 +147,10 @@ const VibropogruzateliKranovye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Вибропогружатели гидравлические серия YZ
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Вибропогружатель гидравлический YZ — профессиональное оборудование для погружения и извлечения свайных элементов. Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, уголков, забивки деревянных свай, анкеров, а также уплотнения бетона.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Вибропогружатели Yongan имеют более 30 моделей вибропогружателей от YZ-35 до YZ-250T. Обеспечивает мощное вибрационное воздействие с разной частотой в диапазоне от 0 до 2500 об/мин.
                   </p>
 
@@ -160,15 +160,15 @@ const VibropogruzateliKranovye = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Регулируемый дебаланс: количество тяги можно изменить настройкой амплитуды, что обеспечивает лучшую адаптацию к строительным условиям</span>
+                      <span className="text-primary">Регулируемый дебаланс: количество тяги можно изменить настройкой амплитуды, что обеспечивает лучшую адаптацию к строительным условиям</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Переменная частота: изменяя расход масла, мотор может изменять скорость для достижения переменной частоты вибрации в нужном диапазоне 0 — 2500 об/мин</span>
+                      <span className="text-primary">Переменная частота: изменяя расход масла, мотор может изменять скорость для достижения переменной частоты вибрации в нужном диапазоне 0 — 2500 об/мин</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая универсальность: широкий спектр применения для различных строительных условий</span>
+                      <span className="text-primary">Высокая универсальность: широкий спектр применения для различных строительных условий</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -179,14 +179,14 @@ const VibropogruzateliKranovye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Вибропогружатели серия YZ-VM
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Модели серии YZ-VM — гидравлические вибропогружатели с зажимом, специально разработанные для применения на кранах. Используются для забивки и извлечения шпунтовых свай, стальных труб, балок и свай других типов на строительных площадках морских сооружений, мостов, дамб, причалов, эстакад, подземных переходов и других строительных объектов.
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Конструктивные особенности YZ-VM
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Модели серии VM имеют встроенный зажим для удержания свайных элементов, что делает их универсальным решением для различных типов строительства. Зажимной механизм обеспечивает надежную фиксацию элементов во время работы.
                   </p>
                 </CardContent>
@@ -197,10 +197,10 @@ const VibropogruzateliKranovye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Вибропогружатели электрические серия DZJ
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Вибропогружатель электрический DZJ — профессиональное оборудование для погружения и извлечения свайных элементов с электрическим приводом. Является экономичной альтернативой гидравлическим моделям.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, арматуры, деревянных свай, анкеров, а также уплотнения бетона.
                   </p>
 
@@ -210,23 +210,23 @@ const VibropogruzateliKranovye = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Экономичность: работа от электросети</span>
+                      <span className="text-primary">Экономичность: работа от электросети</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простота эксплуатации и обслуживания</span>
+                      <span className="text-primary">Простота эксплуатации и обслуживания</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Надежность конструкции</span>
+                      <span className="text-primary">Надежность конструкции</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Широкий спектр применения</span>
+                      <span className="text-primary">Широкий спектр применения</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Эффективное использование на объектах с доступом к электроэнергии</span>
+                      <span className="text-primary">Эффективное использование на объектах с доступом к электроэнергии</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -264,7 +264,7 @@ const VibropogruzateliKranovye = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -278,7 +278,7 @@ const VibropogruzateliKranovye = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -287,7 +287,7 @@ const VibropogruzateliKranovye = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -387,7 +387,7 @@ const VibropogruzateliKranovye = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

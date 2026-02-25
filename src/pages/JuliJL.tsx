@@ -160,12 +160,12 @@ const JuliJL = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Горизонтальные буровые машины Dongtai Juli (серия JL)</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Горизонтально-направленные буровые установки Dongtai Juli серии JL широко используются для строительства железных дорог, дорог, укрепления рек, центра города, других ограниченных для строительства районов, для строительства водопроводов, угольного газа, электроники, телекоммуникаций, природного газа.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии JL</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Турбодвигатель Cummins — мощная тяговая сила, высокая надежность, низкое энергопотребление</span>
@@ -284,7 +284,7 @@ const JuliJL = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

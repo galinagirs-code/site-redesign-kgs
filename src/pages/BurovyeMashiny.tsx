@@ -137,7 +137,7 @@ const BurovyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     О производителе JINT
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Shanghai Jintai Construction Machinery Co., Ltd. — китайская государственная компания, основанная в 1921 году. С 1996 по 2003 год работала совместно с немецкой компанией Bauer, производя немецкую технику. Это обеспечило высокий уровень качества и использование передовых технологий.
                   </p>
                 </CardContent>
@@ -148,7 +148,7 @@ const BurovyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Гидравлические буровые машины JINT (серия SH)
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Гидравлическая буровая машина JINT серии SH представляет собой "новый тип буровых установок с большой треугольной структурой", сочетающий современные технологии и процессы гидравлического бурового оборудования.
                   </p>
 
@@ -158,19 +158,19 @@ const BurovyeMashiny = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простота эксплуатации</span>
+                      <span className="text-primary">Простота эксплуатации</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая работоспособность</span>
+                      <span className="text-primary">Высокая работоспособность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Возможность бурить глубокие ямы с высокой эффективностью</span>
+                      <span className="text-primary">Возможность бурить глубокие ямы с высокой эффективностью</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Большое количество аксессуаров от разных мировых брендов</span>
+                      <span className="text-primary">Большое количество аксессуаров от разных мировых брендов</span>
                     </li>
                   </ul>
 
@@ -180,19 +180,19 @@ const BurovyeMashiny = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Строительство высотных зданий</span>
+                      <span className="text-primary">Строительство высотных зданий</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Строительство мостов</span>
+                      <span className="text-primary">Строительство мостов</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Работа в сложных геологических слоях с большим содержанием воды</span>
+                      <span className="text-primary">Работа в сложных геологических слоях с большим содержанием воды</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Все виды строительства фундамента</span>
+                      <span className="text-primary">Все виды строительства фундамента</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -203,10 +203,10 @@ const BurovyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Гидравлические буровые машины JINT (серия SD)
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Гидравлические буровые машины SD — это "многофункциональное роторное буровое оборудование нового поколения" с современными технологиями. Основные параметры производительности достигли международного передового уровня.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Идеальное оборудование для строительства свайного фундамента большого диаметра. Широко используются в фундаментостроении, строительстве многоэтажных зданий, мостовых и водосберегающих проектах.
                   </p>
 
@@ -216,23 +216,23 @@ const BurovyeMashiny = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая производительность: высокая мощность, выбросы Euro III, низкий центр тяжести, хорошая стабильность</span>
+                      <span className="text-primary">Высокая производительность: высокая мощность, выбросы Euro III, низкий центр тяжести, хорошая стабильность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Силовая головка: многоскоростное управление, высокая эффективность бурения, точное вертикальное сверление</span>
+                      <span className="text-primary">Силовая головка: многоскоростное управление, высокая эффективность бурения, точное вертикальное сверление</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Основная лебедка: максимальная скорость до 70 м/мин, функция быстрого нажатия двигателя</span>
+                      <span className="text-primary">Основная лебедка: максимальная скорость до 70 м/мин, функция быстрого нажатия двигателя</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Экономия энергии: разумное распределение мощности, снижение энергопотребления</span>
+                      <span className="text-primary">Экономия энергии: разумное распределение мощности, снижение энергопотребления</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Гибкость: наложенный противовес можно увеличивать или уменьшать в соответствии с условиями работы</span>
+                      <span className="text-primary">Гибкость: наложенный противовес можно увеличивать или уменьшать в соответствии с условиями работы</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -243,7 +243,7 @@ const BurovyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Горизонтальные буровые машины Dongtai Juli (серия JL)
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Горизонтально-направленные буровые установки Dongtai Juli серии JL широко используются для строительства железных дорог, дорог, укрепления рек, центра города, других ограниченных для строительства районов, для строительства водопроводов, угольного газа, электроники, телекоммуникаций, природного газа.
                   </p>
 
@@ -253,19 +253,19 @@ const BurovyeMashiny = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Турбодвигатель Cummins — мощная тяговая сила, высокая надежность, низкое энергопотребление</span>
+                      <span className="text-primary">Турбодвигатель Cummins — мощная тяговая сила, высокая надежность, низкое энергопотребление</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Прибор автоматического демонтажа и монтажа труб — высокая эффективность</span>
+                      <span className="text-primary">Прибор автоматического демонтажа и монтажа труб — высокая эффективность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Повышенная производительность и высокая эффективность</span>
+                      <span className="text-primary">Повышенная производительность и высокая эффективность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Многие ключевые компоненты используют международные продукты для обеспечения качества</span>
+                      <span className="text-primary">Многие ключевые компоненты используют международные продукты для обеспечения качества</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -303,7 +303,7 @@ const BurovyeMashiny = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -317,7 +317,7 @@ const BurovyeMashiny = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -326,7 +326,7 @@ const BurovyeMashiny = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -426,7 +426,7 @@ const BurovyeMashiny = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

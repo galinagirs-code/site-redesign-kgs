@@ -359,8 +359,8 @@ const MolotyYonganYC = () => {
                       <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                         {variant.specs.map((spec, idx) => (
                           <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-gray-700">{spec.label}</span>
-                            <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                            <span className="text-sm text-primary">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary">{spec.value}</span>
                           </div>
                         ))}
                         
@@ -368,8 +368,8 @@ const MolotyYonganYC = () => {
                           <>
                             {variant.detailedSpecs.map((spec, idx) => (
                               <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                                <span className="text-sm text-gray-700">{spec.label}</span>
-                                <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                                <span className="text-sm text-primary">{spec.label}</span>
+                                <span className="text-sm font-semibold text-primary">{spec.value}</span>
                               </div>
                             ))}
                           </>
@@ -421,17 +421,17 @@ const MolotyYonganYC = () => {
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-2xl font-semibold text-primary mb-4">О производителе</h3>
-                    <p className="text-lg leading-relaxed text-muted-foreground">
+                    <p className="text-lg leading-relaxed text-primary">
                       Компания Yongan Machinery основана в 1985 году и специализируется на производстве гидравлических ударных молотов. За 37 лет работы стала ведущим китайским предприятием по производству свайных молотов.
                     </p>
-                    <p className="text-lg leading-relaxed text-muted-foreground mt-4">
+                    <p className="text-lg leading-relaxed text-primary mt-4">
                       Сваебойные молоты Yongan применяются при строительстве причалов, эстакад, морской ветроэнергетики и фундаментов зданий. Ассортимент включает более 30 моделей от YC-3 до YC-220.
                     </p>
                   </div>
 
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Преимущества молотов серии YC</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Широкая сфера применения для забивки стальных трубчатых, железобетонных свай, шпунтов</li>
                       <li className="leading-relaxed">Простота управления и обслуживания</li>
                       <li className="leading-relaxed">Низкий уровень шума по сравнению с дизельными молотами</li>
@@ -445,7 +445,7 @@ const MolotyYonganYC = () => {
 
                   <div>
                     <h4 className="text-xl font-semibold text-primary mb-3">Назначение молотов Yongan YC</h4>
-                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                    <ul className="list-disc pl-6 space-y-2 text-primary">
                       <li className="leading-relaxed">Погружение деревянных и железобетонных свай</li>
                       <li className="leading-relaxed">Устройство свайных фундаментов</li>
                       <li className="leading-relaxed">Погружение металлических труб</li>
@@ -523,7 +523,7 @@ const MolotyYonganYC = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
                 Подбор гидравлического молота Yongan
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary">
                 Заполните форму, и наш специалист поможет подобрать оптимальную модель молота для ваших задач
               </p>
             </div>

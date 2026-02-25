@@ -159,7 +159,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-heading font-semibold text-lg mb-1">{member.name}</h3>
-                      <p className="text-sm text-muted-foreground mb-3">{member.position}</p>
+                      <p className="text-sm text-primary mb-3">{member.position}</p>
                       <a 
                         href={`mailto:${member.email}`}
                         className="inline-flex items-center space-x-2 text-sm text-primary hover:text-accent transition-colors"
@@ -200,7 +200,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-heading font-bold mb-4">
                     ООО «КоперГруппСервис»
                   </h3>
-                  <div className="space-y-2 text-muted-foreground">
+                  <div className="space-y-2 text-primary">
                     <p className="flex items-center space-x-2">
                       <span className="font-semibold text-foreground w-20">ИНН:</span>
                       <span>6670440671</span>

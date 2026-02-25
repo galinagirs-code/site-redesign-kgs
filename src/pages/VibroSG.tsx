@@ -97,11 +97,11 @@ const VibroSG = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия CS</h2>
-                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии CS — профессиональное оборудование с боковым зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы с грузоподъемностью от 18 до 40 тонн.</p>
-                <p className="text-gray-600 mb-4">Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, забивки деревянных свай, анкеров, а также уплотнения бетона.</p>
+                <p className="text-primary mb-4">Гидравлический экскаваторный вибропогружатель серии CS — профессиональное оборудование с боковым зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы с грузоподъемностью от 18 до 40 тонн.</p>
+                <p className="text-primary mb-4">Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, забивки деревянных свай, анкеров, а также уплотнения бетона.</p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии CS (боковой зажим)</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Боковое расположение зажима обеспечивает удобство работы и лучший обзор</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Возможность работы в ограниченном пространстве</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Простота замены свайных элементов</span></li>
@@ -144,7 +144,7 @@ const VibroSG = () => {
             <CardContent className="p-8">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
-                <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-gray-600"><Icon name="x" className="w-6 h-6" /></button>
+                <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-primary"><Icon name="x" className="w-6 h-6" /></button>
               </div>
               <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
             </CardContent>

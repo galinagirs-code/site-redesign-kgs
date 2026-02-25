@@ -127,8 +127,8 @@ const MachtyMkbeHero = () => {
                 <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                   {mkbeSpecs.map((row, idx) => (
                     <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                      <span className="text-base text-gray-700 flex-1">{row.label}</span>
-                      <span className="text-base font-semibold text-gray-900 text-right ml-4">{row.value}</span>
+                      <span className="text-base text-primary flex-1">{row.label}</span>
+                      <span className="text-base font-semibold text-primary text-right ml-4">{row.value}</span>
                     </div>
                   ))}
                 </div>
@@ -161,7 +161,7 @@ const MachtyMkbeHero = () => {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <p className="text-base font-semibold text-primary mb-2">Сваебойное оборудование</p>
-                          <p className="text-base text-muted-foreground mb-2">Молоты российского и импортного производства:</p>
+                          <p className="text-base text-primary mb-2">Молоты российского и импортного производства:</p>
                           <div className="space-y-2">
                             {mkbePilingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
                           </div>
@@ -171,7 +171,7 @@ const MachtyMkbeHero = () => {
                           <div className="space-y-2 mb-3">
                             {mkbeDrillingEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
                           </div>
-                          <p className="text-base text-muted-foreground mb-2">По согласованию с заказчиком:</p>
+                          <p className="text-base text-primary mb-2">По согласованию с заказчиком:</p>
                           <div className="space-y-2">
                             {mkbeOptionalEquipment.map((item, idx) => <CheckItem key={idx} text={item} />)}
                           </div>
@@ -224,8 +224,8 @@ const MachtyMkbeHero = () => {
                 <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                   {mkbe2Specs.map((row, idx) => (
                     <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                      <span className="text-base text-gray-700 flex-1">{row.label}</span>
-                      <span className="text-base font-semibold text-gray-900 text-right ml-4">{row.value}</span>
+                      <span className="text-base text-primary flex-1">{row.label}</span>
+                      <span className="text-base font-semibold text-primary text-right ml-4">{row.value}</span>
                     </div>
                   ))}
                 </div>

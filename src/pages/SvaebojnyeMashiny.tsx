@@ -139,10 +139,10 @@ const SvaebojnyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Сваебойные установки STARKE (серия LH)
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Сваебойные установки производства компании Guangdong Liyuan Hydraulic Machinery Co. Ltd (Китай) характеризуются высокими показателями мощности и эффективности. Компания основана в 1993 году и успешно зарекомендовала себя на рынке.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Копровые машины на базе экскаватора изготавливаются с применением современных технологий, обеспечивающих долговечность работы.
                   </p>
 
@@ -152,19 +152,19 @@ const SvaebojnyeMashiny = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая мощность</span>
+                      <span className="text-primary">Высокая мощность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Гидравлическая система управления</span>
+                      <span className="text-primary">Гидравлическая система управления</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Большое энергосбережение</span>
+                      <span className="text-primary">Большое энергосбережение</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Хорошая производительность</span>
+                      <span className="text-primary">Хорошая производительность</span>
                     </li>
                   </ul>
 
@@ -174,15 +174,15 @@ const SvaebojnyeMashiny = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Забивка свай</span>
+                      <span className="text-primary">Забивка свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Установка опор</span>
+                      <span className="text-primary">Установка опор</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Выполнение свайных работ различной сложности</span>
+                      <span className="text-primary">Выполнение свайных работ различной сложности</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -193,10 +193,10 @@ const SvaebojnyeMashiny = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Шагающие сваебойные установки Dongtai Juli (серия KLB)
                   </h2>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-primary mb-4 leading-relaxed">
                     Шагающие копровые установки Dongtai Juli серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Гидравлические шагающие установки Dongtai Juli серии KLB предназначены для выполнения свайных работ и лидерного бурения, они отличаются низким удельным давлением на грунт, высокой устойчивостью при выполнении работ на строительных площадках и многофункциональностью.
                   </p>
 
@@ -206,15 +206,15 @@ const SvaebojnyeMashiny = () => {
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Лебедки с электрическим приводом</span>
+                      <span className="text-primary">Лебедки с электрическим приводом</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Механизм позиционирования мачты с гидравлическим приводом</span>
+                      <span className="text-primary">Механизм позиционирования мачты с гидравлическим приводом</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Механизм передвижения шагающего типа с гидравлическим приводом (обеспечивает хорошую маневренность и высокую производительность)</span>
+                      <span className="text-primary">Механизм передвижения шагающего типа с гидравлическим приводом (обеспечивает хорошую маневренность и высокую производительность)</span>
                     </li>
                   </ul>
 
@@ -224,27 +224,27 @@ const SvaebojnyeMashiny = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Надежность конструкции</span>
+                      <span className="text-primary">Надежность конструкции</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Низкое удельное давление на грунт</span>
+                      <span className="text-primary">Низкое удельное давление на грунт</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая устойчивость при работе</span>
+                      <span className="text-primary">Высокая устойчивость при работе</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Многофункциональность</span>
+                      <span className="text-primary">Многофункциональность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая маневренность</span>
+                      <span className="text-primary">Высокая маневренность</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая производительность</span>
+                      <span className="text-primary">Высокая производительность</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -282,7 +282,7 @@ const SvaebojnyeMashiny = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -296,7 +296,7 @@ const SvaebojnyeMashiny = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -305,7 +305,7 @@ const SvaebojnyeMashiny = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -401,7 +401,7 @@ const SvaebojnyeMashiny = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

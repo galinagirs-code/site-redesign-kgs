@@ -167,15 +167,15 @@ const YonganYZ = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Вибропогружатели гидравлические серия YZ</h2>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Вибропогружатель гидравлический YZ — профессиональное оборудование для погружения и извлечения свайных элементов. Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, уголков, забивки деревянных свай, анкеров, а также уплотнения бетона.
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-primary mb-4">
                   Вибропогружатели Yongan имеют более 30 моделей вибропогружателей от YZ-35 до YZ-250T. Обеспечивает мощное вибрационное воздействие с разной частотой в диапазоне от 0 до 2500 об/мин.
                 </p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Ключевые характеристики серии YZ</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start">
                     <Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
                     <span>Регулируемый дебаланс: количество тяги можно изменить настройкой амплитуды, что обеспечивает лучшую адаптацию к строительным условиям</span>
@@ -290,7 +290,7 @@ const YonganYZ = () => {
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
                 <button 
                   onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-gray-400 hover:text-primary"
                 >
                   <Icon name="x" className="w-6 h-6" />
                 </button>

@@ -76,11 +76,11 @@ const VibroVH = () => {
               
               <div className="prose max-w-none mb-6">
                 <h2 className="text-xl font-semibold mb-3">Гидравлические экскаваторные вибропогружатели серия S</h2>
-                <p className="text-gray-600 mb-4">Гидравлический экскаваторный вибропогружатель серии S — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.</p>
-                <p className="text-gray-600 mb-4">Нижний зажим обеспечивает особенно эффективную работу при погружении длинных свайных элементов и работе на объектах с ограниченной высотой.</p>
+                <p className="text-primary mb-4">Гидравлический экскаваторный вибропогружатель серии S — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.</p>
+                <p className="text-primary mb-4">Нижний зажим обеспечивает особенно эффективную работу при погружении длинных свайных элементов и работе на объектах с ограниченной высотой.</p>
 
                 <h3 className="text-lg font-semibold mb-3 mt-6">Преимущества серии S (нижний зажим)</h3>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-primary">
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Нижнее расположение зажима идеально для работы с длинными элементами</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Возможность работы в условиях ограниченной высоты</span></li>
                   <li className="flex items-start"><Icon name="check" className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" /><span>Стабильность при погружении глубоких свай</span></li>
@@ -123,7 +123,7 @@ const VibroVH = () => {
             <CardContent className="p-8">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold">Получить консультацию</h2>
-                <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-gray-600"><Icon name="x" className="w-6 h-6" /></button>
+                <button onClick={() => setShowConsultationForm(false)} className="text-gray-400 hover:text-primary"><Icon name="x" className="w-6 h-6" /></button>
               </div>
               <EquipmentForm equipmentType="Гидравлические экскаваторные вибропогружатели с нижним зажимом (серия S)" questions={questions} onSuccess={() => setShowConsultationForm(false)} />
             </CardContent>

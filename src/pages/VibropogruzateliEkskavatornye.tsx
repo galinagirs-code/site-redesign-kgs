@@ -147,10 +147,10 @@ const VibropogruzateliEkskavatornye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Гидравлические экскаваторные вибропогружатели серия CS
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Гидравлический экскаваторный вибропогружатель серии CS — профессиональное оборудование с боковым зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы с грузоподъемностью от 18 до 40 тонн.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Применяется для погружения и извлечения шпунтовых свай, труб, двутавра, свай из бетона и железобетона, швеллера, уголков, арматуры, забивки деревянных свай, анкеров, а также уплотнения бетона.
                   </p>
 
@@ -160,23 +160,23 @@ const VibropogruzateliEkskavatornye = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Боковое расположение зажима обеспечивает удобство работы и лучший обзор</span>
+                      <span className="text-primary">Боковое расположение зажима обеспечивает удобство работы и лучший обзор</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Возможность работы в ограниченном пространстве</span>
+                      <span className="text-primary">Возможность работы в ограниченном пространстве</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Простота замены свайных элементов</span>
+                      <span className="text-primary">Простота замены свайных элементов</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Высокая производительность при работе с различными типами свай</span>
+                      <span className="text-primary">Высокая производительность при работе с различными типами свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Надежная фиксация элементов во время погружения</span>
+                      <span className="text-primary">Надежная фиксация элементов во время погружения</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -187,10 +187,10 @@ const VibropogruzateliEkskavatornye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Гидравлические экскаваторные вибропогружатели серия S
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Гидравлический экскаваторный вибропогружатель серии S — профессиональное оборудование с нижним зажимом для погружения и извлечения свайных элементов. Предназначен для монтажа на экскаваторы различной грузоподъемности.
                   </p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Нижний зажим обеспечивает особенно эффективную работу при погружении длинных свайных элементов и работе на объектах с ограниченной высотой.
                   </p>
 
@@ -200,23 +200,23 @@ const VibropogruzateliEkskavatornye = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Нижнее расположение зажима идеально для работы с длинными элементами</span>
+                      <span className="text-primary">Нижнее расположение зажима идеально для работы с длинными элементами</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Возможность работы в условиях ограниченной высоты</span>
+                      <span className="text-primary">Возможность работы в условиях ограниченной высоты</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Стабильность при погружении глубоких свай</span>
+                      <span className="text-primary">Стабильность при погружении глубоких свай</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Эффективное распределение вибрационной нагрузки</span>
+                      <span className="text-primary">Эффективное распределение вибрационной нагрузки</span>
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Универсальность применения</span>
+                      <span className="text-primary">Универсальность применения</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -227,21 +227,21 @@ const VibropogruzateliEkskavatornye = () => {
                   <h2 className="text-2xl font-bold text-primary mb-6">
                     Дополнительное оборудование
                   </h2>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Для эффективной работы вибропогружателей на экскаваторах доступно дополнительное оборудование:
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Удлинённая стрела для экскаватора
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     Удлинённая стрела позволяет увеличить глубину погружения свай и расширяет рабочую зону экскаватора. Изготавливается под конкретную модель базовой машины с учетом требуемой длины и грузоподъемности.
                   </p>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Быстросъёмное соединение (квик-каплер)
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-primary leading-relaxed">
                     Быстросъёмное соединение (квик-каплер) обеспечивает возможность оперативной замены навесного оборудования без дополнительных инструментов. Существенно сокращает время переоснащения экскаватора и повышает эффективность работы на объекте.
                   </p>
                 </CardContent>
@@ -279,7 +279,7 @@ const VibropogruzateliEkskavatornye = () => {
                   <h3 className="text-xl font-bold text-primary mb-4">
                     Получить консультацию
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-primary mb-6">
                     Заполните форму, и наш специалист свяжется с вами для подбора оптимального решения
                   </p>
                   <Button 
@@ -293,7 +293,7 @@ const VibropogruzateliEkskavatornye = () => {
                     <div className="flex items-center space-x-3 mb-4">
                       <Icon name="phone" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Телефон</p>
+                        <p className="text-sm text-primary">Телефон</p>
                         <a href="tel:+73432888845" className="font-semibold hover:text-accent transition-colors">
                           +7 (343) 288-88-45
                         </a>
@@ -302,7 +302,7 @@ const VibropogruzateliEkskavatornye = () => {
                     <div className="flex items-center space-x-3">
                       <Icon name="mail" className="h-5 w-5 text-accent" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Email</p>
+                        <p className="text-sm text-primary">Email</p>
                         <a href="mailto:info@kgs-ural.ru" className="font-semibold hover:text-accent transition-colors">
                           info@kgs-ural.ru
                         </a>
@@ -406,7 +406,7 @@ const VibropogruzateliEkskavatornye = () => {
               <h2 className="text-2xl font-bold text-primary">Консультация по оборудованию</h2>
               <button 
                 onClick={() => setShowConsultationForm(false)}
-                className="text-muted-foreground hover:text-foreground"
+                className="text-primary hover:text-foreground"
               >
                 <Icon name="x" className="h-6 w-6" />
               </button>

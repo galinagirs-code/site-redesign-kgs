@@ -107,7 +107,7 @@ const MachtyMsExInfoGallery = () => {
               </h2>
               <div className="text-center py-12 bg-gray-50 rounded-2xl">
                 <Icon name="ImageIcon" size={48} className="text-gray-300 mx-auto mb-4" />
-                <p className="text-muted-foreground text-base md:text-lg">Фотографии будут добавлены в ближайшее время</p>
+                <p className="text-primary text-base md:text-lg">Фотографии будут добавлены в ближайшее время</p>
               </div>
             </div>
           </div>
