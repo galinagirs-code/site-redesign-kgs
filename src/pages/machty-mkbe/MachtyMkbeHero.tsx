@@ -117,7 +117,7 @@ const MachtyMkbeHero = () => {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-xl md:text-2xl font-heading font-bold text-primary">
-                    Мачта копрово-бурильная экскаваторного типа (серии МКБЭ)
+                    Мачта копрово-бурильная экскаваторного типа (серия МКБЭ)
                   </h2>
                   <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 flex-shrink-0 ml-4">
                     бурильная
@@ -187,7 +187,7 @@ const MachtyMkbeHero = () => {
                         <div className="space-y-2">
                           {mkbeConstructionElements.map((item, idx) => <CheckItem key={idx} text={item} />)}
                         </div>
-                        <p className="text-base text-primary">Передвижение каретки — цепным механизмом (планетарный редуктор РДЦ-800, усилие 8 т) либо системой «гидроцилиндр – полиспаст». Мачта не требует дополнительного оборудования для монтажа.</p>
+                        <p className="text-base text-primary">Передвижение каретки — цепным механизмом (планетарный редуктор РДЦ-800, усилие 8 т), либо системой «гидроцилиндр – полиспаст». Мачта не требует дополнительного оборудования для монтажа.</p>
                       </div>
                     </div>
 
