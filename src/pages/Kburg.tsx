@@ -14,7 +14,7 @@ import { useState } from "react";
 
 const Kburg = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [showConsultationForm, setShowConsultationForm] = useState(false);
+
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -172,7 +172,7 @@ const Kburg = () => {
                 <Button 
                   size="lg" 
                   className="flex-1"
-                  onClick={() => setShowConsultationForm(true)}
+                  onClick={() => document.getElementById('consultation')?.scrollIntoView({behavior: 'smooth'})}
                 >
                   Получить консультацию
                 </Button>

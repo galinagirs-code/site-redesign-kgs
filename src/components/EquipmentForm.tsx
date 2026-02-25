@@ -6,9 +6,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import Icon from "@/components/ui/icon";
 
 interface EquipmentFormProps {
-  categoryTitle: string;
-  categoryId: string;
+  categoryTitle?: string;
+  categoryId?: string;
   questions?: unknown[];
+  equipmentType?: string;
 }
 
 export const EquipmentForm = ({ categoryTitle, categoryId }: EquipmentFormProps) => {

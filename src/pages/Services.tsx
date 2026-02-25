@@ -17,6 +17,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 const Services = () => {
   const [isServiceFormOpen, setIsServiceFormOpen] = useState(false);
   const [serviceForm, setServiceForm] = useState({ name: "", phone: "", email: "" });
+
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
