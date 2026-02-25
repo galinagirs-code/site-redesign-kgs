@@ -88,17 +88,17 @@ const DomkratyIzvlecheniya = () => {
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">О домкратах для извлечения свай</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-4">
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Домкраты для извлечения свай — специализированное гидравлическое оборудование, предназначенное для выдергивания забитых свай из грунта.
                 </p>
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Применяются в случаях, когда необходимо демонтировать временные сваи, исправить ошибки при забивке или извлечь сваи для повторного использования. Гидравлический домкрат устанавливается на оголовок сваи и с помощью мощного усилия производит постепенное извлечение.
                 </p>
                 <div className="space-y-2 pt-2">
                   {["Усилие извлечения от 30 до 500 тонн", "Поэтапный перехват сваи до полного извлечения", "Работа с ЖБ сваями, металлическими и шпунтом", "Компактная конструкция, простота монтажа"].map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="text-base text-primary">{item}</span>
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
                     </div>
                   ))}
                 </div>

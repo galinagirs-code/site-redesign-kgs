@@ -40,10 +40,10 @@ const MachtyMkbeRuHero = () => {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div className="space-y-4">
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Мачта МКБЭ — навесное копрово-бурильное оборудование, устанавливаемое на гусеничные экскаваторы отечественного и импортного производства массой от 22 тонн. Оборудование сертифицировано в соответствии с требованиями ТР ТС, имеет Декларацию соответствия ЕАЭС.
                 </p>
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Мачта устанавливается на стрелу экскаватора и подключается к гидравлической системе базовой машины. После демонтажа мачты экскаватор полностью сохраняет штатные функции.
                 </p>
                 <div className="space-y-2 pt-2">
@@ -55,8 +55,8 @@ const MachtyMkbeRuHero = () => {
                     "Экономия в сравнении с импортными аналогами",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="text-base text-primary">{item}</span>
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
                     </div>
                   ))}
                 </div>

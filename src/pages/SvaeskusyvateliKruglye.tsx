@@ -88,17 +88,17 @@ const SvaeskusyvateliKruglye = () => {
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">О сваескусывателях для круглых свай</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
               <div className="space-y-4">
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Сваескусыватели для круглых свай — специализированное навесное оборудование для экскаваторов, предназначенное для обрезки верхней части круглых железобетонных свай до проектной отметки.
                 </p>
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Конструкция захватного механизма обеспечивает надёжную фиксацию круглого сечения и точную обрезку по заданной отметке. Применяются для обрезки круглых свай диаметром от 200 до 800 мм.
                 </p>
                 <div className="space-y-2 pt-2">
                   {["Специализированная форма захвата под круглое сечение", "Равномерное распределение усилия по окружности", "Диаметр свай от 200 до 800 мм", "Высокая точность обрезки"].map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="text-base text-primary">{item}</span>
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
                     </div>
                   ))}
                 </div>

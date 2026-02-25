@@ -40,10 +40,10 @@ const MachtyMkbe2RuHero = () => {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div className="space-y-4">
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Мачта МКБЭ-2 — первая отечественная разработка, обеспечивающая совместное использование сваебойного и бурильного оборудования на одной мачте. Конструкция предусматривает два ряда направляющих: для молота и для вращателя.
                 </p>
-                <p className="text-base text-primary leading-relaxed">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   Устанавливается на жёсткую раму, закреплённую на гусеничном экскаваторе массой от 20 до 45 т. После демонтажа мачты экскаватор полностью сохраняет штатные функции.
                 </p>
                 <div className="space-y-2 pt-2">
@@ -55,8 +55,8 @@ const MachtyMkbe2RuHero = () => {
                     "Забивка свай до 12 м",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold mt-0.5 flex-shrink-0">✓</span>
-                      <span className="text-base text-primary">{item}</span>
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
                     </div>
                   ))}
                 </div>
