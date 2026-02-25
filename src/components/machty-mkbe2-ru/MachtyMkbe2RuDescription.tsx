@@ -14,7 +14,7 @@ const MachtyMkbe2RuDescription = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-6">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary text-center mb-8">
-            Описание
+            Общая информация
           </h2>
 
           <Card className="border-none shadow-lg">

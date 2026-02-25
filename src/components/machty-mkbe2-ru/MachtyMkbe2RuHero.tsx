@@ -19,7 +19,7 @@ const MachtyMkbe2RuHero = () => {
                 Технические характеристики
               </a>
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Описание
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
