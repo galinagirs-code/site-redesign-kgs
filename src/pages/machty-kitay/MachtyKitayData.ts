@@ -30,4 +30,4 @@ export const constructionElements: string[] = [
 
 export const galleryImages: { src: string; alt: string }[] = [];
 
-export const schemaImage = "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/115f0333-4d87-4f34-b07e-9c8f80392061.png";
+export const schemaImage = "https://cdn.poehali.dev/files/3429ba8f-fcf4-42f8-a82d-3717c05c0279.png";
