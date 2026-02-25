@@ -388,7 +388,7 @@ const JuliVariantsSection = () => {
                       <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                         <Icon name={b.icon} size={20} className="text-accent" />
                       </div>
-                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">{b.title}</h3>
+                      <h3 className="text-base font-heading font-bold text-primary">{b.title}</h3>
                     </div>
                     <p className="text-base text-primary leading-relaxed">{b.text}</p>
                   </div>
