@@ -4,6 +4,34 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 
+const benefits = [
+  {
+    icon: "Zap",
+    title: "Энергия удара +70–80%",
+    text: "Энергия удара на 70–80 % выше, чем у российских молотов с аналогичной массой ударной части.",
+  },
+  {
+    icon: "Gauge",
+    title: "Высокая компрессия",
+    text: "Высокая степень компрессии по сравнению с отечественными аналогами.",
+  },
+  {
+    icon: "Fuel",
+    title: "Низкий расход топлива",
+    text: "Высокая мощность при низком расходе топлива.",
+  },
+  {
+    icon: "Clock",
+    title: "Длительный срок службы",
+    text: "Надёжная конструкция и качественные материалы обеспечивают долговечность.",
+  },
+  {
+    icon: "Wind",
+    title: "Эффективная теплоотдача",
+    text: "Эффективная теплоотдача, повышающая общую производительность оборудования.",
+  },
+];
+
 const variants = [
   {
     name: "DD-18",
@@ -347,6 +375,25 @@ const JuliVariantsSection = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            <div className="bg-primary/5 rounded-2xl p-6 md:p-8 mt-4">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
+                Преимущества дизельных молотов Dongtai Juli DD
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {benefits.map((b, idx) => (
+                  <div key={idx} className="bg-white rounded-xl p-5 shadow-sm">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <Icon name={b.icon} size={20} className="text-accent" />
+                      </div>
+                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">{b.title}</h3>
+                    </div>
+                    <p className="text-base text-primary leading-relaxed">{b.text}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

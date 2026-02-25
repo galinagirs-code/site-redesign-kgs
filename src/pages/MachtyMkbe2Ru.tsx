@@ -9,7 +9,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import MachtyMkbe2RuHero from "@/components/machty-mkbe2-ru/MachtyMkbe2RuHero";
 import MachtyMkbe2RuSpecs from "@/components/machty-mkbe2-ru/MachtyMkbe2RuSpecs";
-import MachtyMkbe2RuBenefits from "@/components/machty-mkbe2-ru/MachtyMkbe2RuBenefits";
 import MachtyMkbe2RuDescription from "@/components/machty-mkbe2-ru/MachtyMkbe2RuDescription";
 import MachtyMkbe2RuGallery from "@/components/machty-mkbe2-ru/MachtyMkbe2RuGallery";
 
@@ -87,7 +86,6 @@ const MachtyMkbe2Ru = () => {
 
       <MachtyMkbe2RuHero />
       <MachtyMkbe2RuSpecs />
-      <MachtyMkbe2RuBenefits />
       <MachtyMkbe2RuDescription />
       <MachtyMkbe2RuGallery />
 

@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
 const JuliHeroSection = () => {
@@ -37,14 +36,14 @@ const JuliHeroSection = () => {
       <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-10 text-center">Дизельные штанговые молоты Dongtai Juli (серия DD)</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-10 text-center">Дизельные штанговые молоты Dongtai Juli (серия DD)</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                <p className="text-base text-primary leading-relaxed mb-6">
                   Дизельные штанговые молоты, производимые компанией Dongtai Juli Machinery Manufacturing Co., LTD (Китай), отличаются высокой мощностью, надёжностью и стабильным качеством. Оборудование завоевало хорошую репутацию и пользуется устойчивым спросом на мировом рынке.
                 </p>
-                <p className="text-base md:text-lg text-primary leading-relaxed">
+                <p className="text-base text-primary leading-relaxed">
                   Наиболее современной разработкой компании является штанговый дизельный молот серии DD, созданный на основе многолетнего производственного опыта и с применением передовых технологий китайских и зарубежных производителей.
                 </p>
               </div>
@@ -60,81 +59,30 @@ const JuliHeroSection = () => {
               </div>
             </div>
 
-            <div className="max-w-4xl mx-auto mb-12">
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-base text-primary leading-relaxed mb-6">
                 Используя принцип и технологии дизельного двигателя, данные молоты имеют возможность непрерывно и эффективно работать длительное время.
               </p>
-              <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+              <p className="text-base text-primary leading-relaxed mb-4">
                 Это свойство достигается благодаря:
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary">эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
+                  <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
+                  <span className="text-base text-primary">эффективной системе воздушного охлаждения с высокой теплоотдачей</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary">современной системе подачи топлива</span>
+                  <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
+                  <span className="text-base text-primary">современной системе подачи топлива</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                  <span className="text-base md:text-lg text-primary">компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</span>
+                  <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
+                  <span className="text-base text-primary">компактной и продуманной конструкции, удобной в эксплуатации и обслуживании</span>
                 </div>
               </div>
-              <p className="text-base md:text-lg text-primary leading-relaxed font-medium">
+              <p className="text-base text-primary leading-relaxed font-medium">
                 По совокупности технических характеристик штанговые дизельные молоты серии DD значительно превосходят отечественные аналоги.
               </p>
-            </div>
-
-            <div className="bg-primary/5 rounded-2xl p-6 md:p-8">
-              <h3 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">Преимущества дизельных молотов Dongtai Juli DD</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Zap" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Энергия удара +70–80%</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-primary leading-relaxed">Энергия удара на 70–80 % выше, чем у российских молотов с аналогичной массой ударной части.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Gauge" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Высокая компрессия</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-primary leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Fuel" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Низкий расход топлива</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-primary leading-relaxed">Высокая мощность при низком расходе топлива.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Clock" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Длительный срок службы</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-primary leading-relaxed">Надёжная конструкция и качественные материалы обеспечивают долговечность.</p>
-                </div>
-                <div className="bg-white rounded-xl p-5 shadow-sm">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon name="Wind" size={20} className="text-accent" />
-                    </div>
-                    <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Эффективная теплоотдача</h4>
-                  </div>
-                  <p className="text-base md:text-lg text-primary leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования.</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
