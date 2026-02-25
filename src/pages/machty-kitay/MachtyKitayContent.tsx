@@ -53,7 +53,7 @@ const MachtyKitayContent = () => {
                 </p>
               </div>
               <div className="flex items-center justify-center">
-                <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-900 shadow-xl max-w-sm w-full">
+                <div className="aspect-square rounded-2xl overflow-hidden bg-gray-900 shadow-xl max-w-sm w-full">
                   <OptimizedImage
                     src={schemaImage}
                     alt="Чертёж копровой мачты (Китай)"
