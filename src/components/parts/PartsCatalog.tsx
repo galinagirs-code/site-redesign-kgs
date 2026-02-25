@@ -147,7 +147,7 @@ export const PartsCatalog = () => {
         
         <div className="max-w-md mx-auto mb-12">
           <div className="relative">
-            <Icon name="Search" size={20} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+            <Icon name="Search" size={20} className="absolute left-3 top-1/2 -translate-y-1/2 text-primary" />
             <Input
               type="text"
               placeholder="Поиск по названию запчасти..."
@@ -159,7 +159,7 @@ export const PartsCatalog = () => {
         </div>
 
         {filteredParts.length === 0 ? (
-          <p className="text-center text-muted-foreground text-lg py-12">
+          <p className="text-center text-primary text-lg py-12">
             Запчасти не найдены. Попробуйте изменить запрос.
           </p>
         ) : (
@@ -175,7 +175,7 @@ export const PartsCatalog = () => {
                   {part.title}
                 </h3>
                 {part.description && (
-                  <p className="text-muted-foreground mb-4 text-sm">
+                  <p className="text-primary mb-4 text-sm">
                     {part.description}
                   </p>
                 )}

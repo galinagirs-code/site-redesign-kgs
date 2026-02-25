@@ -25,7 +25,7 @@ export const ConsultationModal = ({ show, onClose, equipmentType, questions }: C
             <h2 className="text-2xl font-bold">Получить консультацию</h2>
             <button 
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600"
+              className="text-gray-400 hover:text-primary"
             >
               <Icon name="x" className="w-6 h-6" />
             </button>

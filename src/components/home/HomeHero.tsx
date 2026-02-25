@@ -160,7 +160,7 @@ export const HomeHero = () => {
                   suffix="+" 
                   className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-accent mb-1 md:mb-2"
                 />
-                <div className="text-xs md:text-sm text-muted-foreground leading-tight">{stat.label}</div>
+                <div className="text-xs md:text-sm text-primary leading-tight">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -173,7 +173,7 @@ export const HomeHero = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">О компании КоперГруппСервис</h2>
-            <p className="text-muted-foreground text-base md:text-lg">
+            <p className="text-primary text-base md:text-lg">
               Мы — команда профессионалов с более чем 10-летним опытом в поставке и производстве оборудования для строительства свайных фундаментов.
             </p>
           </div>
@@ -195,7 +195,7 @@ export const HomeHero = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-lg mb-2">Поставка импортного оборудования</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-primary">
                     Сотрудничество с ведущими производителями Китая и Турции
                   </p>
                 </div>
@@ -207,7 +207,7 @@ export const HomeHero = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-lg mb-2">Собственное производство</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-primary">
                     2 производственных цеха площадью 1000 и 1800 м²
                   </p>
                 </div>
@@ -219,7 +219,7 @@ export const HomeHero = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-lg mb-2">Полный цикл услуг</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-primary">
                     От подбора оборудования до ввода в эксплуатацию и постпродажного сервиса
                   </p>
                 </div>

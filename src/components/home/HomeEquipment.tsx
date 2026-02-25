@@ -101,7 +101,7 @@ export const HomeEquipment = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold mb-3 md:mb-4">Наше оборудование</h2>
-          <p className="text-muted-foreground text-base md:text-lg">
+          <p className="text-primary text-base md:text-lg">
             Широкий ассортимент специализированной техники для свайных работ
           </p>
         </div>
@@ -124,7 +124,7 @@ export const HomeEquipment = () => {
                     <li key={idx}>
                       <a 
                         href="#contact"
-                        className="text-sm md:text-base text-muted-foreground hover:text-primary flex items-start transition-colors cursor-pointer group/item"
+                        className="text-sm md:text-base text-primary hover:text-primary flex items-start transition-colors cursor-pointer group/item"
                       >
                         <Icon name="ChevronRight" size={18} className="mr-1 mt-0.5 flex-shrink-0 text-accent/60 group-hover/item:text-accent" />
                         <span className="leading-snug group-hover/item:underline">{model}</span>

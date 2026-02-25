@@ -25,7 +25,7 @@ export const PartsDescription = () => {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-base mb-1 text-primary">Склад в Екатеринбурге</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-primary text-sm leading-relaxed">
                           Для максимальной скорости доставки мы организовали склад в Екатеринбурге, где всегда в наличии наиболее востребованные позиции.
                         </p>
                       </div>
@@ -39,7 +39,7 @@ export const PartsDescription = () => {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-base mb-1 text-primary">Качественные аналоги</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
+                        <p className="text-primary text-sm leading-relaxed">
                           Мы также развиваем альтернативные каналы поставок качественных аналоговых запчастей, позволяя владельцам импортной строительной техники получать надёжные детали по доступной цене, без простоев и задержек.
                         </p>
                       </div>

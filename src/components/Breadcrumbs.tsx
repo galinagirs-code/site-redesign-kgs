@@ -53,14 +53,14 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
           {allItems.map((item, index) => (
             <li key={item.path} className="flex items-center">
               {index > 0 && (
-                <Icon name="ChevronRight" size={16} className="mx-2 text-muted-foreground" />
+                <Icon name="ChevronRight" size={16} className="mx-2 text-primary" />
               )}
               {index === allItems.length - 1 ? (
                 <span className="text-foreground font-medium">{item.label}</span>
               ) : (
                 <Link 
                   to={item.path} 
-                  className="text-muted-foreground hover:text-accent transition-colors"
+                  className="text-primary hover:text-accent transition-colors"
                 >
                   {item.label}
                 </Link>

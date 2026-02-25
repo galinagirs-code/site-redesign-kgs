@@ -101,7 +101,7 @@ export const EmptyEquipmentPage = ({
               <h2 className="text-2xl font-heading font-bold mb-4 text-primary">
                 Информация появится в ближайшее время
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-primary mb-8">
                 Мы работаем над наполнением раздела подробной информацией об этом оборудовании
               </p>
               <Link to="/catalog">

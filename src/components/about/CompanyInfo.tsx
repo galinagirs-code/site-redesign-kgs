@@ -52,7 +52,7 @@ export const CompanyInfo = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-center">
               О компании КоперГруппСервис
             </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-primary leading-relaxed">
               <p>
                 <strong className="text-foreground">КоперГруппСервис</strong> специализируется на производстве и поставках оборудования для забивки свай и лидерного бурения. Мы изготавливаем копровые мачты кранового и экскаваторного типа, а также производим расходные и запасные части: свайные наголовники для гидравлических и дизельных молотов, захваты молота по направляющим, крепления, шнеки и другие металлоконструкции по вашим чертежам.
               </p>
@@ -89,7 +89,7 @@ export const CompanyInfo = () => {
               <h2 className="text-3xl font-heading font-bold mb-4 text-primary">
                 Миссия компании
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-primary text-lg leading-relaxed">
                 Подбирать и поставлять оптимальное оборудование и запчасти для надёжного, эффективного и своевременного решения проектов наших клиентов.
               </p>
             </div>
@@ -98,7 +98,7 @@ export const CompanyInfo = () => {
               <h3 className="text-3xl font-heading font-bold mb-4 text-primary">
                 Цель компании
               </h3>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-primary text-lg leading-relaxed">
                 Обеспечивать рынки России и стран СНГ высококачественным оборудованием для строительства свайных фундаментов по оптимальным ценам, формируя долгосрочные и взаимовыгодные отношения с клиентами.
               </p>
             </div>
@@ -120,14 +120,14 @@ export const CompanyInfo = () => {
           <h3 className="text-3xl font-heading font-bold mb-4 text-center text-primary">
             Задачи компании
           </h3>
-          <p className="text-muted-foreground mb-6 text-center">
+          <p className="text-primary mb-6 text-center">
             Сопровождаем каждый этап работы по поставкам оборудования заказчику:
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {tasks.map((task, index) => (
               <div key={index} className="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
                 <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-0.5" size={20} />
-                <span className="text-gray-700">{task}</span>
+                <span className="text-primary">{task}</span>
               </div>
             ))}
           </div>
@@ -147,7 +147,7 @@ export const CompanyInfo = () => {
                   <h3 className="text-xl font-heading font-bold text-primary mb-3">
                     {value.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-primary">
                     {value.description}
                   </p>
                 </CardContent>

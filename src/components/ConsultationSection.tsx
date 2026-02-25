@@ -31,7 +31,7 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-3 md:mb-4">
               Получите консультацию
             </h2>
-            <p className="text-muted-foreground text-base md:text-lg italic">
+            <p className="text-primary text-base md:text-lg italic">
               Оставьте заявку, и наш специалист свяжется с вами в ближайшее время
             </p>
           </div>
@@ -93,7 +93,7 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
                   <Checkbox id="privacy-consultation" className="mt-1" />
                   <label
                     htmlFor="privacy-consultation"
-                    className="text-sm text-muted-foreground leading-relaxed cursor-pointer"
+                    className="text-sm text-primary leading-relaxed cursor-pointer"
                   >
                     Я согласен на обработку персональных данных в соответствии с{" "}
                     <a href="#" className="text-primary hover:text-accent underline">
@@ -115,10 +115,10 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
                   </div>
                   <div>
                     <h3 className="font-heading font-bold mb-2 text-primary">Телефоны</h3>
-                    <p className="text-muted-foreground text-sm mb-1">
+                    <p className="text-primary text-sm mb-1">
                       <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a> — бесплатно
                     </p>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-primary text-sm">
                       <a href="tel:+73433467475" className="hover:text-accent transition-colors">+7 (343) 346-74-75</a> — офис
                     </p>
                   </div>
@@ -132,10 +132,10 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
                   </div>
                   <div>
                     <h3 className="font-heading font-bold mb-2 text-primary">Email</h3>
-                    <p className="text-muted-foreground text-sm mb-1">
+                    <p className="text-primary text-sm mb-1">
                       <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
                     </p>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-primary text-sm">
                       <a href="mailto:service@kgs-ural.ru" className="hover:text-accent transition-colors">service@kgs-ural.ru</a>
                     </p>
                   </div>
@@ -149,10 +149,10 @@ const ConsultationSection = ({ reversed = false }: ConsultationSectionProps) => 
                   </div>
                   <div>
                     <h3 className="font-heading font-bold mb-2 text-primary">Адрес офиса</h3>
-                    <p className="text-muted-foreground text-sm mb-1">
+                    <p className="text-primary text-sm mb-1">
                       г. Екатеринбург, ул. 40-летия Комсомола, 38/Л, офис 503
                     </p>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-primary text-sm">
                       Пн–Пт: 09:00 — 18:00
                     </p>
                   </div>

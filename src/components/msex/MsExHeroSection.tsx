@@ -134,7 +134,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Универсальность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоснащение экскаватора в полноповоротную копровую машину и обратно — без изменения базовой конструкции.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Переоснащение экскаватора в полноповоротную копровую машину и обратно — без изменения базовой конструкции.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -143,7 +143,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Экономия до 4 раз</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачты MS-EX в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Мачты MS-EX в среднем до 4 раз дешевле импортных аналогов при сопоставимом качестве.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -152,7 +152,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Быстрое переоборудование</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Переоборудование в сваебойную установку — от 2–3 часов (на стреле) до 1–2 смен (на жёсткой раме).</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Переоборудование в сваебойную установку — от 2–3 часов (на стреле) до 1–2 смен (на жёсткой раме).</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -161,7 +161,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Надёжность</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Комплектующие мировых производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Комплектующие мировых производителей. Оборудование адаптировано к российским условиям эксплуатации.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -170,7 +170,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Доступное обслуживание</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Низкие эксплуатационные затраты, наличие запчастей на складе, мобильная сервисная служба KGS.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Низкие эксплуатационные затраты, наличие запчастей на складе, мобильная сервисная служба KGS.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -179,7 +179,7 @@ const MsExHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Удобная транспортировка</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Мачта складывается в транспортное положение на экскаваторную базу, снижая затраты при перебазировке.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Мачта складывается в транспортное положение на экскаваторную базу, снижая затраты при перебазировке.</p>
                 </div>
               </div>
             </div>

@@ -52,7 +52,7 @@ export const ProductionCycle = () => {
                   <Icon name={item.icon} size={24} className="text-white" />
                 </div>
                 <h3 className="text-xl font-heading font-bold text-primary mb-3">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <p className="text-primary">{item.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -56,8 +56,8 @@ export const CartButton = () => {
 
         {cart.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-12 text-center">
-            <Icon name="ShoppingCart" size={64} className="text-muted-foreground mb-4" />
-            <p className="text-muted-foreground">Корзина пуста</p>
+            <Icon name="ShoppingCart" size={64} className="text-primary mb-4" />
+            <p className="text-primary">Корзина пуста</p>
           </div>
         ) : (
           <div className="mt-6 space-y-6">
@@ -66,7 +66,7 @@ export const CartButton = () => {
                 <div key={item.id} className="flex items-center gap-4 p-4 border rounded-lg">
                   <div className="flex-1">
                     <h4 className="font-semibold">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground">{item.price}</p>
+                    <p className="text-sm text-primary">{item.price}</p>
                   </div>
                   <div className="flex items-center gap-2">
                     <Button

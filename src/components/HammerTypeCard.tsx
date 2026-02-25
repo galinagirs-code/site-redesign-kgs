@@ -27,7 +27,7 @@ export const HammerTypeCard = ({
           {title}
         </h2>
         {description.map((paragraph, index) => (
-          <p key={index} className="text-muted-foreground mb-4 leading-relaxed">
+          <p key={index} className="text-primary mb-4 leading-relaxed">
             {paragraph}
           </p>
         ))}
@@ -39,7 +39,7 @@ export const HammerTypeCard = ({
           {advantages.map((advantage, index) => (
             <li key={index} className="flex items-start">
               <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-              <span className="text-muted-foreground">{advantage}</span>
+              <span className="text-primary">{advantage}</span>
             </li>
           ))}
         </ul>

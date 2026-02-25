@@ -161,8 +161,8 @@ const MachtyVariantsSection = () => {
                     <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                       {variant.specs.map((spec, idx) => (
                         <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-base text-gray-700 flex-1">{spec.label}</span>
-                          <span className="text-base font-semibold text-gray-900 text-right ml-4">{spec.value}</span>
+                          <span className="text-base text-primary flex-1">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
                         </div>
                       ))}
                       
@@ -172,8 +172,8 @@ const MachtyVariantsSection = () => {
                             <div key={idx} className={spec.indent ? "flex justify-between items-center py-1 border-b border-gray-200 last:border-0 ml-4" : "flex justify-between items-center py-1 border-b border-gray-200 last:border-0"}>
                               {spec.value ? (
                                 <>
-                                  <span className="text-base text-gray-700">{spec.label}</span>
-                                  <span className="text-base font-semibold text-gray-900">{spec.value}</span>
+                                  <span className="text-base text-primary">{spec.label}</span>
+                                  <span className="text-base font-semibold text-primary">{spec.value}</span>
                                 </>
                               ) : (
                                 <span className="text-base font-bold text-primary mt-2">{spec.label}</span>

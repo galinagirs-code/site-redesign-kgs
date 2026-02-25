@@ -76,7 +76,7 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Производственный цех
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary text-lg max-w-2xl mx-auto">
               Производственная площадка – г. Берёзовский, Свердловская область
             </p>
           </div>
@@ -92,31 +92,31 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">2 производственных цеха площадью 1000 и 1800 кв.м.</span>
+                  <span className="text-primary">2 производственных цеха площадью 1000 и 1800 кв.м.</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">2 станка плазменной резки с ЧПУ 2,5 × 6,0 м</span>
+                  <span className="text-primary">2 станка плазменной резки с ЧПУ 2,5 × 6,0 м</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">12 сварочных постов (полуавтомат)</span>
+                  <span className="text-primary">12 сварочных постов (полуавтомат)</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">Фрезерные станки с ЧПУ</span>
+                  <span className="text-primary">Фрезерные станки с ЧПУ</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">Токарные станки с ЧПУ</span>
+                  <span className="text-primary">Токарные станки с ЧПУ</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">Гибочные станки</span>
+                  <span className="text-primary">Гибочные станки</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">Кран-балки грузоподъёмностью 5 т</span>
+                  <span className="text-primary">Кран-балки грузоподъёмностью 5 т</span>
                 </div>
               </div>
             </Card>
@@ -128,21 +128,21 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
                 </div>
                 <h3 className="text-2xl font-heading font-semibold">Склад запчастей</h3>
               </div>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-primary mb-6">
                 На складе всегда в наличии комплектующие для поставляемого оборудования, что обеспечивает:
               </p>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <Icon name="Zap" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">быстрый ремонт техники</span>
+                  <span className="text-primary">быстрый ремонт техники</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="Clock" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">минимизацию простоев</span>
+                  <span className="text-primary">минимизацию простоев</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="TrendingDown" className="text-accent flex-shrink-0 mt-1" size={18} />
-                  <span className="text-muted-foreground">снижение затрат наших клиентов</span>
+                  <span className="text-primary">снижение затрат наших клиентов</span>
                 </div>
               </div>
             </Card>
@@ -174,7 +174,7 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Реализованные проекты
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary text-lg max-w-2xl mx-auto">
               Более 60 успешно выполненных шефмонтажей по всей России и СНГ
             </p>
           </div>
@@ -201,10 +201,10 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
                   <h3 className="font-heading font-bold text-lg text-primary mb-2 line-clamp-2">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
+                  <p className="text-sm text-primary mb-3 line-clamp-2">
                     {project.description}
                   </p>
-                  <div className="flex items-center justify-between text-xs text-muted-foreground">
+                  <div className="flex items-center justify-between text-xs text-primary">
                     <span className="flex items-center">
                       <Icon name="Clock" size={14} className="mr-1" />
                       {project.duration}
@@ -246,21 +246,21 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                     {projects.find(p => p.id === selectedProject)?.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-primary mb-6 leading-relaxed">
                     {projects.find(p => p.id === selectedProject)?.description}
                   </p>
                   <div className="space-y-3 mb-6">
                     <div className="flex items-start space-x-2">
                       <Icon name="Package" size={20} className="text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-sm font-medium text-muted-foreground">Оборудование:</span>
+                        <span className="text-sm font-medium text-primary">Оборудование:</span>
                         <p className="text-foreground">{projects.find(p => p.id === selectedProject)?.equipment}</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-2">
                       <Icon name="Clock" size={20} className="text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-sm font-medium text-muted-foreground">Срок выполнения:</span>
+                        <span className="text-sm font-medium text-primary">Срок выполнения:</span>
                         <p className="text-foreground">{projects.find(p => p.id === selectedProject)?.duration}</p>
                       </div>
                     </div>

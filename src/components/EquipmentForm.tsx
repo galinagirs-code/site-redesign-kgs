@@ -65,7 +65,7 @@ export const EquipmentForm = ({ categoryTitle, categoryId }: EquipmentFormProps)
                 <Icon name="Check" className="text-green-600" size={28} />
               </div>
               <h3 className="text-lg font-bold text-primary mb-1">Заявка отправлена!</h3>
-              <p className="text-muted-foreground text-sm">Мы свяжемся с вами в ближайшее время</p>
+              <p className="text-primary text-sm">Мы свяжемся с вами в ближайшее время</p>
             </div>
           ) : submitStatus === 'error' ? (
             <div className="text-center py-6">
@@ -73,14 +73,14 @@ export const EquipmentForm = ({ categoryTitle, categoryId }: EquipmentFormProps)
                 <Icon name="AlertCircle" className="text-red-600" size={28} />
               </div>
               <h3 className="text-lg font-bold text-primary mb-1">Ошибка отправки</h3>
-              <p className="text-muted-foreground text-sm mb-3">Попробуйте позже или свяжитесь по телефону</p>
+              <p className="text-primary text-sm mb-3">Попробуйте позже или свяжитесь по телефону</p>
               <Button onClick={() => setSubmitStatus('idle')} variant="outline" size="sm">
                 Попробовать снова
               </Button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
-              <p className="text-sm text-muted-foreground">{categoryTitle}</p>
+              <p className="text-sm text-primary">{categoryTitle}</p>
               <div>
                 <label className="text-sm font-semibold mb-1.5 block text-primary">Ваше имя<span className="text-red-500">*</span></label>
                 <Input value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} placeholder="Иван Иванов" required />
@@ -95,7 +95,7 @@ export const EquipmentForm = ({ categoryTitle, categoryId }: EquipmentFormProps)
               </div>
               <div className="flex items-start space-x-3">
                 <Checkbox id={`privacy-${categoryId}`} className="mt-1" />
-                <label htmlFor={`privacy-${categoryId}`} className="text-xs text-muted-foreground leading-relaxed cursor-pointer">
+                <label htmlFor={`privacy-${categoryId}`} className="text-xs text-primary leading-relaxed cursor-pointer">
                   Я согласен на обработку персональных данных в соответствии с{" "}
                   <a href="#" className="text-primary hover:text-accent underline">политикой конфиденциальности</a>
                 </label>

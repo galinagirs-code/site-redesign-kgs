@@ -45,7 +45,7 @@ export const TeamAndPartners = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Наша команда
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary text-lg max-w-2xl mx-auto">
               Профессионалы с многолетним опытом в сфере свайного оборудования
             </p>
           </div>
@@ -63,13 +63,13 @@ export const TeamAndPartners = () => {
                     </p>
                     <a 
                       href={`mailto:${member.email}`}
-                      className="text-xs text-muted-foreground hover:text-accent transition-colors flex items-center space-x-1"
+                      className="text-xs text-primary hover:text-accent transition-colors flex items-center space-x-1"
                     >
                       <Icon name="Mail" size={14} />
                       <span>{member.email}</span>
                     </a>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-primary">
                     {member.description}
                   </p>
                 </CardContent>
@@ -85,7 +85,7 @@ export const TeamAndPartners = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Партнёрства и сертификаты
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary text-lg max-w-2xl mx-auto">
               Официальный дилер ведущих производителей свайного оборудования
             </p>
           </div>
@@ -108,10 +108,10 @@ export const TeamAndPartners = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold mb-2">Дилерский сертификат</h3>
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-sm text-primary mb-2">
                       Официальный дилер Dongtai Juli Machinery Manufacturing Co., Ltd
                     </p>
-                    <div className="text-xs text-muted-foreground space-y-1">
+                    <div className="text-xs text-primary space-y-1">
                       <p>• Право продажи дизельных свайных молотов и запчастей</p>
                       <p>• Территория: вся Россия</p>
                       <p>• Действителен до: 24 июня 2027</p>
@@ -131,7 +131,7 @@ export const TeamAndPartners = () => {
                 <h3 className="font-heading font-semibold text-xl mb-2">
                   Полный пакет документов
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-primary mb-4">
                   Предоставляем все необходимые сертификаты, декларации соответствия, 
                   паспорта на оборудование и инструкции на русском языке. 
                   Помогаем с таможенным оформлением.

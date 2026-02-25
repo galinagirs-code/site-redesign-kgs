@@ -23,17 +23,17 @@ const MsExInfoSection = () => {
                 <div className="bg-gray-50 rounded-xl p-5 text-center">
                   <Icon name="Shovel" size={32} className="text-accent mx-auto mb-3" />
                   <h4 className="text-primary font-semibold text-base md:text-lg">Экскаватор</h4>
-                  <p className="text-muted-foreground text-sm mt-1">Основная функция базовой машины</p>
+                  <p className="text-primary text-sm mt-1">Основная функция базовой машины</p>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5 text-center">
                   <Icon name="ArrowDown" size={32} className="text-accent mx-auto mb-3" />
                   <h4 className="text-primary font-semibold text-base md:text-lg">Сваебойная установка</h4>
-                  <p className="text-muted-foreground text-sm mt-1">Полноповоротная забивка свай</p>
+                  <p className="text-primary text-sm mt-1">Полноповоротная забивка свай</p>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5 text-center">
                   <Icon name="CircleDot" size={32} className="text-accent mx-auto mb-3" />
                   <h4 className="text-primary font-semibold text-base md:text-lg">Буровая установка</h4>
-                  <p className="text-muted-foreground text-sm mt-1">Лидерное бурение до 14 м</p>
+                  <p className="text-primary text-sm mt-1">Лидерное бурение до 14 м</p>
                 </div>
               </div>
               <p className="text-primary mt-4 text-base md:text-lg leading-relaxed">

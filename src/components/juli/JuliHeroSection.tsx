@@ -96,7 +96,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Энергия удара +70–80%</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Энергия удара на 70–80 % выше, чем у российских молотов с аналогичной массой ударной части.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Энергия удара на 70–80 % выше, чем у российских молотов с аналогичной массой ударной части.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -105,7 +105,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Высокая компрессия</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Высокая степень компрессии по сравнению с отечественными аналогами.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -114,7 +114,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Низкий расход топлива</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Высокая мощность при низком расходе топлива.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Высокая мощность при низком расходе топлива.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -123,7 +123,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Длительный срок службы</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Надёжная конструкция и качественные материалы обеспечивают долговечность.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Надёжная конструкция и качественные материалы обеспечивают долговечность.</p>
                 </div>
                 <div className="bg-white rounded-xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
@@ -132,7 +132,7 @@ const JuliHeroSection = () => {
                     </div>
                     <h4 className="text-lg md:text-xl font-heading font-bold text-primary">Эффективная теплоотдача</h4>
                   </div>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования.</p>
+                  <p className="text-base md:text-lg text-primary leading-relaxed">Эффективная теплоотдача, повышающая общую производительность оборудования.</p>
                 </div>
               </div>
             </div>

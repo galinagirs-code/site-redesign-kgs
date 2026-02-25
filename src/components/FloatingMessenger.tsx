@@ -44,7 +44,7 @@ const FloatingMessenger = () => {
       <div className="bg-white rounded-2xl shadow-2xl border border-border/50 p-5 w-[280px] relative">
         <button
           onClick={() => setIsDismissed(true)}
-          className="absolute top-3 right-3 text-muted-foreground hover:text-primary transition-colors"
+          className="absolute top-3 right-3 text-primary hover:text-primary transition-colors"
         >
           <Icon name="X" size={18} />
         </button>
@@ -52,7 +52,7 @@ const FloatingMessenger = () => {
         <p className="font-heading font-bold text-primary text-sm mb-1">
           Нужен быстрый ответ?
         </p>
-        <p className="text-muted-foreground text-xs mb-3">
+        <p className="text-primary text-xs mb-3">
           Напишите менеджеру напрямую в
         </p>
 
@@ -78,8 +78,8 @@ const FloatingMessenger = () => {
         </div>
 
         <div className="flex items-center justify-center gap-1.5">
-          <Icon name="Clock" size={12} className="text-muted-foreground" />
-          <span className="text-muted-foreground text-xs">
+          <Icon name="Clock" size={12} className="text-primary" />
+          <span className="text-primary text-xs">
             Ответим в течение 5 минут
           </span>
         </div>

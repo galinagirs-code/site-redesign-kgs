@@ -127,9 +127,9 @@ const SpecTable = ({ title, columns, rows, type }: SpecTableProps) => (
           <tbody>
             {rows.map((row, idx) => (
               <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                <td className="p-3 text-gray-700 border-t border-gray-200">{row.label}</td>
+                <td className="p-3 text-primary border-t border-gray-200">{row.label}</td>
                 {row.values.map((val, vi) => (
-                  <td key={vi} className="p-3 text-center font-semibold text-gray-900 border-t border-gray-200">{val}</td>
+                  <td key={vi} className="p-3 text-center font-semibold text-primary border-t border-gray-200">{val}</td>
                 ))}
               </tr>
             ))}
@@ -161,7 +161,7 @@ const MsExVariantsSection = () => {
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
               Варианты исполнения мачт MS-EX
             </h2>
-            <p className="text-muted-foreground text-center mb-8 text-base md:text-lg">
+            <p className="text-primary text-center mb-8 text-base md:text-lg">
               В зависимости от базовой машины мачты выпускаются на жёсткой раме и на стреле
             </p>
 

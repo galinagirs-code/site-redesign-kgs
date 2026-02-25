@@ -43,8 +43,8 @@ export const EquipmentVariantsSection = ({
                     <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                       {variant.specs.map((spec, idx) => (
                         <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-sm text-gray-700">{spec.label}</span>
-                          <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                          <span className="text-sm text-primary">{spec.label}</span>
+                          <span className="text-sm font-semibold text-primary">{spec.value}</span>
                         </div>
                       ))}
                       
@@ -52,8 +52,8 @@ export const EquipmentVariantsSection = ({
                         <>
                           {variant.detailedSpecs.map((spec, idx) => (
                             <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                              <span className="text-sm text-gray-700">{spec.label}</span>
-                              <span className="text-sm font-semibold text-gray-900">{spec.value}</span>
+                              <span className="text-sm text-primary">{spec.label}</span>
+                              <span className="text-sm font-semibold text-primary">{spec.value}</span>
                             </div>
                           ))}
                         </>

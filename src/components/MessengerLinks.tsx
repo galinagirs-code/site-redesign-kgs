@@ -10,7 +10,7 @@ export const MessengerLinks = ({ compact = false }: MessengerLinksProps) => {
       <p className={`font-heading font-bold text-center text-primary ${compact ? 'text-sm mb-1' : 'text-base mb-1'}`}>
         Нужен быстрый ответ?
       </p>
-      <p className={`text-muted-foreground text-center ${compact ? 'text-xs mb-3' : 'text-sm mb-3'}`}>
+      <p className={`text-primary text-center ${compact ? 'text-xs mb-3' : 'text-sm mb-3'}`}>
         Напишите менеджеру напрямую в
       </p>
       <div className="flex gap-3 justify-center">
@@ -34,8 +34,8 @@ export const MessengerLinks = ({ compact = false }: MessengerLinksProps) => {
         </a>
       </div>
       <div className="flex items-center justify-center gap-1.5 mt-3">
-        <Icon name="Clock" size={14} className="text-muted-foreground" />
-        <span className={`text-muted-foreground ${compact ? 'text-xs' : 'text-sm'}`}>
+        <Icon name="Clock" size={14} className="text-primary" />
+        <span className={`text-primary ${compact ? 'text-xs' : 'text-sm'}`}>
           Ответим в течение 5 минут
         </span>
       </div>

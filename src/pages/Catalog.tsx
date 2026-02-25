@@ -139,7 +139,8 @@ const Catalog = () => {
       },
       models: [
         "Мачты копровые крановые (серия МК)",
-        "Мачты копровые экскаваторные (Россия)",
+        "Мачта копрово-бурильная экскаваторного типа (Россия, серия МКБЭ)",
+        "Мачта копрово-бурильная на экскаваторе (Россия, серия МКБЭ-2)",
         "Мачты копровые экскаваторные (Китай)"
       ],
       questions: [
@@ -921,8 +922,9 @@ const Catalog = () => {
                       const modelRoutes: Record<string, Record<number, string>> = {
                         "masts": {
                           0: "/catalog/machty-koprovye",
-                          1: "/catalog/machty-mkbe",
-                          2: "/catalog/machty-kitay"
+                          1: "/catalog/machty-mkbe-ru",
+                          2: "/catalog/machty-mkbe2-ru",
+                          3: "/catalog/machty-kitay"
                         },
                         "pile-hammers": {
                           0: "/catalog/moloty-donghao",

@@ -188,7 +188,7 @@ export const EngineeringAndDelivery = () => {
                             ))}
                           </ul>
                           {step.note && (
-                            <p className="mt-3 text-sm text-muted-foreground italic">* {step.note}</p>
+                            <p className="mt-3 text-sm text-primary italic">* {step.note}</p>
                           )}
                         </div>
                       </div>
