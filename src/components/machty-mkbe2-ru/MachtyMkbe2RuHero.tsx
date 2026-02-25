@@ -12,7 +12,7 @@ const MachtyMkbe2RuHero = () => {
               Мачты копровые экскаваторные (Россия)
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Мачта копрово-бурильная на экскаваторе (Россия, серия МКБЭ-2)
+              Мачта копрово-бурильная на экскаваторе (серия МКБЭ-2, Россия)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <a href="#specs" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">

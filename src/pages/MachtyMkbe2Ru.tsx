@@ -82,7 +82,7 @@ const MachtyMkbe2Ru = () => {
 
       <Breadcrumbs items={[
         { label: "Оборудование", path: "/catalog" },
-        { label: "Мачта копрово-бурильная на экскаваторе (серия МКБЭ-2)", path: "/catalog/machty-mkbe2-ru" },
+        { label: "Мачта копрово-бурильная на экскаваторе (серия МКБЭ-2, Россия)", path: "/catalog/machty-mkbe2-ru" },
       ]} />
 
       <MachtyMkbe2RuHero />
