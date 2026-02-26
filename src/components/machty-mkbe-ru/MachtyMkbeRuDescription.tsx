@@ -67,9 +67,9 @@ const MachtyMkbeRuDescription = () => {
                   <p className="text-base md:text-lg font-semibold text-primary mb-3">Сваебойное оборудование</p>
                   <p className="text-base md:text-lg text-primary mb-2">В качестве сваепогружателя применяются сваебойные молоты российского и импортного производства:</p>
                   <div className="space-y-2">
-                    <CheckItem text="дизельные трубчатые (масса ударной части до 3 500 кг)" />
-                    <CheckItem text="дизельные штанговые (масса ударной части до 4 500 кг)" />
-                    <CheckItem text="гидравлические (масса ударной части до 5 000 кг)" />
+                    <CheckItem text="дизельные трубчатые (масса ударной части до 3000 кг)" />
+                    <CheckItem text="дизельные штанговые (масса ударной части до 3 500 кг)" />
+                    <CheckItem text="гидравлические (масса ударной части до 3 000 кг)" />
                   </div>
                 </div>
                 <div>

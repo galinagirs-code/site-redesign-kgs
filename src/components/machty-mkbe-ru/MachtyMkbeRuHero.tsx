@@ -64,7 +64,7 @@ const MachtyMkbeRuHero = () => {
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl w-full max-w-md">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/105d2bb4-29a9-4951-a811-b3e5257a0cf9.png"
+                    src="https://cdn.poehali.dev/files/a70fae9f-c9db-4647-a5ab-8a972b98407e.jpg"
                     alt="Мачта копрово-бурильная экскаваторного типа МКБЭ"
                     className="w-full h-full object-contain p-6"
                   />
