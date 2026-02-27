@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const galleryImages: { src: string; alt: string }[] = [];
+const galleryImages: { src: string; alt: string }[] = [
+  { src: "https://cdn.poehali.dev/files/b02585be-b97b-40b7-a01e-9cff6a1b2110.png", alt: "Мачта копрово-бурильная экскаваторного типа МКБЭ" },
+];
 
 const MachtyMkbeRuGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

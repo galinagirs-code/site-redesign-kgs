@@ -8,7 +8,7 @@ const equipment = [
   {
     id: 1,
     title: "Мачты копровые",
-    image: "https://cdn.poehali.dev/files/4afbaf5b-8523-4c15-a79a-dd073b2720be.png",
+    image: "https://cdn.poehali.dev/files/4b0e6587-421a-4c39-90d6-02551d6069a6.png",
     models: [
       "Мачты копровые крановые (серия МК)",
       "Мачты копровые экскаваторные (серия МКБЭ)",
