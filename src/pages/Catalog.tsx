@@ -57,7 +57,7 @@ const Catalog = () => {
     {
       id: "masts",
       title: "Мачты копровые",
-      image: "https://cdn.poehali.dev/files/4b0e6587-421a-4c39-90d6-02551d6069a6.png",
+      image: "https://cdn.poehali.dev/files/4b24a03d-0d42-4cbb-905b-40af16196d7a.png",
       description: {
         title: "Копровая мачта МК KGS",
         sections: [
