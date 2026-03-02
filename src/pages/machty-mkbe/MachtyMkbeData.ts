@@ -104,4 +104,4 @@ export const mkbe2Composition: string[] = [
 ];
 
 // Фото на странице
-export const pageImage = "https://cdn.poehali.dev/files/105d2bb4-29a9-4951-a811-b3e5257a0cf9.png";
+export const pageImage = "https://cdn.poehali.dev/files/4aab381f-4d7f-4855-a633-be1fa805bea6.jpg";

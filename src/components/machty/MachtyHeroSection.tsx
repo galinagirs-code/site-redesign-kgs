@@ -65,7 +65,7 @@ const MachtyHeroSection = () => {
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/1f0cb93f-f08f-4361-8441-bac1f8cfa02d.png"
+                    src="https://cdn.poehali.dev/files/a7621a5b-a3ac-4eea-ac25-fe435cc9b539.jpg"
                     alt="Мачты копровые крановые серия МК"
                     className="w-full h-full object-contain p-6"
                   />
