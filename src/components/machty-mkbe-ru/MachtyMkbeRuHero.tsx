@@ -21,9 +21,6 @@ const MachtyMkbeRuHero = () => {
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
               </a>
-              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Фотогалерея
-              </a>
               <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
               </a>
@@ -64,7 +61,7 @@ const MachtyMkbeRuHero = () => {
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl w-full max-w-md">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/8a6283f8-d0bb-45cb-868f-55bef520a167.png"
+                    src="https://cdn.poehali.dev/files/d2c1f4a3-f581-4b59-b8d6-580d2eff604a.jpg"
                     alt="Мачта копрово-бурильная экскаваторного типа МКБЭ"
                     className="w-full h-full object-contain p-6"
                   />
