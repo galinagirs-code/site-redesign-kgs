@@ -10,7 +10,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 import MachtyMkbeRuHero from "@/components/machty-mkbe-ru/MachtyMkbeRuHero";
 import MachtyMkbeRuSpecs from "@/components/machty-mkbe-ru/MachtyMkbeRuSpecs";
 import MachtyMkbeRuDescription from "@/components/machty-mkbe-ru/MachtyMkbeRuDescription";
-
+import MachtyMkbeRuGallery from "@/components/machty-mkbe-ru/MachtyMkbeRuGallery";
 
 const MachtyMkbeRu = () => {
   const productSchema = {
@@ -87,6 +87,7 @@ const MachtyMkbeRu = () => {
       <MachtyMkbeRuHero />
       <MachtyMkbeRuSpecs />
       <MachtyMkbeRuDescription />
+      <MachtyMkbeRuGallery />
 
       <ConsultationSection />
 
