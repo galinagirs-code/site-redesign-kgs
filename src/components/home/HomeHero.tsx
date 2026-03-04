@@ -8,10 +8,11 @@ import { ImageWithWatermark } from "@/components/ImageWithWatermark";
 import { SpecialOfferBanner } from "@/components/SpecialOfferBanner";
 
 const stats = [
-  { value: 350, label: "Клиентов по России и СНГ" },
+  { value: 400, label: "Клиентов по России и СНГ" },
   { value: 60, label: "Выполненных шефмонтажей" },
   { value: 10, label: "Лет опыта команды" },
-  { value: 130, label: "Единиц поставленной техники" }
+  { value: 150, label: "Единиц поставленной техники" },
+  { value: 1000, label: "Изготовленных и поставленных запчастей и комплектующих" }
 ];
 
 const principles = [
@@ -134,7 +135,7 @@ export const HomeHero = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
                 <div className="flex items-center space-x-2">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
-                  <span className="text-white/90 text-xs sm:text-sm">350+ клиентов</span>
+                  <span className="text-white/90 text-xs sm:text-sm">400+ клиентов</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="CheckCircle2" className="text-accent flex-shrink-0" size={18} />
@@ -152,7 +153,7 @@ export const HomeHero = () => {
 
       <section className="py-8 md:py-12 bg-muted/30 border-y">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <AnimatedCounter 

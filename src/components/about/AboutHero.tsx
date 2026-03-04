@@ -3,10 +3,11 @@ import { Card } from "@/components/ui/card";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const achievements = [
-  { value: 350, label: "Клиентов" },
-  { value: 60, label: "Шефмонтажей" },
-  { value: 130, label: "Единиц техники" },
-  { value: 10, label: "Лет опыта" }
+  { value: 400, label: "Клиентов в России и СНГ" },
+  { value: 60, label: "Выполненных шефмонтажей" },
+  { value: 10, label: "Лет опыта работы" },
+  { value: 150, label: "Единиц поставленной техники" },
+  { value: 1000, label: "Изготовленных и поставленных запчастей" }
 ];
 
 export const AboutHero = () => {
@@ -32,7 +33,7 @@ export const AboutHero = () => {
 
       <section className="py-10 md:py-14">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
             {achievements.map((stat, index) => (
               <Card key={index} className="text-center p-4 md:p-6 hover:shadow-lg transition-shadow">
                 <AnimatedCounter 
