@@ -3,11 +3,11 @@ import { Card } from "@/components/ui/card";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const achievements = [
-  { value: 400, label: "Клиентов в России и СНГ" },
-  { value: 60, label: "Выполненных шефмонтажей" },
-  { value: 10, label: "Лет опыта работы" },
-  { value: 150, label: "Единиц поставленной техники" },
-  { value: 1000, label: "Изготовленных и поставленных запчастей" }
+  { value: 400, label: "клиентов в России и странах СНГ" },
+  { value: 60, label: "выполненных шефмонтажей" },
+  { value: 10, label: "лет опыта работы компании" },
+  { value: 150, label: "единиц поставленной техники" },
+  { value: 1000, label: "изготовленных и поставленных запчастей и комплектующих" }
 ];
 
 export const AboutHero = () => {
