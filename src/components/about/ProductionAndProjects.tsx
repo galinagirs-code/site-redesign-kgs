@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { Link } from "react-router-dom";
-import { RussiaMap } from "@/components/about/RussiaMap";
 
 const projects = [
   {
@@ -168,8 +167,6 @@ export const ProductionAndProjects = ({ selectedProject, setSelectedProject }: P
           </div>
         </div>
       </section>
-
-      <RussiaMap />
 
       <section className="py-10 md:py-14 bg-muted/30">
         <div className="container mx-auto px-4">
