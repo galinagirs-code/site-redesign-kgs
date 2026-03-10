@@ -153,7 +153,7 @@ const Contact = () => {
 
       <section className="py-10 md:py-14">
         <div className="container mx-auto px-4">
-          <div className="mb-16">
+          <div id="team" className="mb-16 scroll-mt-20">
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Сотрудники компании</h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {team.map((member, index) => (
