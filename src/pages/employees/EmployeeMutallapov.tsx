@@ -11,7 +11,7 @@ const EmployeeMutallapov = () => (
       { type: "email",    label: "Email",    value: "service@kgs-ural.ru",     href: "mailto:service@kgs-ural.ru" },
       { type: "phone",    label: "Телефон",  value: "+7 963 037 82 44",        href: "tel:+79630378244" },
       { type: "telegram", label: "Telegram", value: "@KoperGroupService",      href: "https://t.me/KoperGroupService" },
-      { type: "max",      label: "MAX",      value: "Написать в MAX",          href: "https://web.max.ru/40033047" },
+      { type: "max",      label: "MAX",      value: "Написать в MAX",          href: "https://max.ru/u/40033047" },
     ]}
   />
 );

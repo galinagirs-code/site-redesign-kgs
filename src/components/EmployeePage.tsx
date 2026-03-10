@@ -38,8 +38,8 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   const lastName = nameParts[0] ?? "";
   const firstName = nameParts.slice(1).join(" ");
 
-  const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\n");
-  const emails = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\n");
+  const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
+  const emails = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
 
   return [
     "BEGIN:VCARD",
@@ -51,7 +51,7 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
     phones,
     emails,
     "END:VCARD",
-  ].filter(Boolean).join("\n");
+  ].filter(Boolean).join("\r\n");
 };
 
 const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КоперГруппСервис" }: EmployeePageProps) => {

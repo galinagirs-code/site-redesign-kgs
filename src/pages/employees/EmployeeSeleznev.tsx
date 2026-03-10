@@ -13,7 +13,7 @@ const EmployeeSeleznev = () => (
       { type: "phone",    label: "Телефон",             value: "+7 (343) 346-74-75", href: "tel:+73433467475" },
       { type: "telegram", label: "Telegram",            value: "@kgs_ural",          href: "https://t.me/kgs_ural" },
       { type: "vk",       label: "ВКонтакте",           value: "vk.com/kgsural",     href: "https://vk.com/kgsural" },
-      { type: "max",      label: "MAX",                 value: "Написать в MAX",     href: "https://web.max.ru/-70972866166995" },
+      { type: "max",      label: "MAX",                 value: "Написать в MAX",     href: "https://max.ru/u/-70972866166995" },
     ]}
   />
 );
