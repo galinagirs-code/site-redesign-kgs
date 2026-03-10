@@ -10,7 +10,7 @@ const EmployeePlyukhina = () => (
     contacts={[
       { type: "email",    label: "Email",    value: "sales2@kgs-ural.ru",  href: "mailto:sales2@kgs-ural.ru" },
       { type: "phone",    label: "Телефон",  value: "+7 963 037 17 28",    href: "tel:+79630371728" },
-      { type: "telegram", label: "Telegram", value: "@JuliaKGS",           href: "https://t.me/JuliaKGS" },
+      { type: "telegram", label: "Telegram", value: "Написать в Telegram", href: "https://t.me/JuliaKGS" },
       { type: "max",      label: "MAX",      value: "Написать в MAX",      href: "https://max.ru/u/f9LHodD0cOJmyHDuRGSnU3RvFQhNRXsryVhRkTb0be0IzFK-EKoqA_wgHTw" },
     ]}
   />

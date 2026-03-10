@@ -11,7 +11,7 @@ const EmployeeTapinyuk = () => (
       { type: "email",    label: "Email",    value: "zhirova@kgs-ural.ru",     href: "mailto:zhirova@kgs-ural.ru" },
       { type: "phone",    label: "Телефон",  value: "+7 965 527 02 38",        href: "tel:+79655270238" },
       { type: "telegram", label: "Telegram", value: "Написать в Telegram",     href: "tg://user?id=6727158803" },
-      { type: "max",      label: "MAX",      value: "Написать в MAX",          href: "https://max.ru/u/28568206" },
+      { type: "max",      label: "MAX",      value: "Написать в MAX",          href: "https://max.ru/u/f9LHodD0cOIP8_25Pol0FgGthbuYFvPpONLlW4R8sdoUUmuprdyzEwbPSy0" },
     ]}
   />
 );
