@@ -47,6 +47,11 @@ import JuliYZS from "./pages/JuliYZS";
 import SvaeskusyvateliKruglye from "./pages/SvaeskusyvateliKruglye";
 import SvaeskusyvateliKvadratnye from "./pages/SvaeskusyvateliKvadratnye";
 import DomkratyIzvlecheniya from "./pages/DomkratyIzvlecheniya";
+import EmployeeSeleznev from "./pages/employees/EmployeeSeleznev";
+import EmployeeTapinyuk from "./pages/employees/EmployeeTapinyuk";
+import EmployeePlyukhina from "./pages/employees/EmployeePlyukhina";
+import EmployeeSemenova from "./pages/employees/EmployeeSemenova";
+import EmployeeMutallapov from "./pages/employees/EmployeeMutallapov";
 import NotFound from "./pages/NotFound";
 import FloatingMessenger from "./components/FloatingMessenger";
 
@@ -102,6 +107,11 @@ const App = () => (
           <Route path="/catalog/svaeskusyvateli-kruglye" element={<SvaeskusyvateliKruglye />} />
           <Route path="/catalog/svaeskusyvateli-kvadratnye" element={<SvaeskusyvateliKvadratnye />} />
           <Route path="/catalog/domkraty-izvlecheniya" element={<DomkratyIzvlecheniya />} />
+          <Route path="/contact/seleznev" element={<EmployeeSeleznev />} />
+          <Route path="/contact/tapinyuk" element={<EmployeeTapinyuk />} />
+          <Route path="/contact/plyukhina" element={<EmployeePlyukhina />} />
+          <Route path="/contact/semenova" element={<EmployeeSemenova />} />
+          <Route path="/contact/mutallapov" element={<EmployeeMutallapov />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

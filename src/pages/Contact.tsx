@@ -46,27 +46,32 @@ const Contact = () => {
     {
       name: "Евгений Анатольевич Селезнев",
       position: "Генеральный директор ООО «КГС»",
-      email: "info@kgs-ural.ru"
+      email: "info@kgs-ural.ru",
+      slug: "/contact/seleznev"
     },
     {
       name: "Ольга Александровна Тапинюк",
       position: "Исполнительный директор ООО «КГС»",
-      email: "zhirova@kgs-ural.ru"
+      email: "zhirova@kgs-ural.ru",
+      slug: "/contact/tapinyuk"
     },
     {
       name: "Юлия Александровна Плюхина",
       position: "Менеджер по продажам ООО «КГС»",
-      email: "sales2@kgs-ural.ru"
+      email: "sales2@kgs-ural.ru",
+      slug: "/contact/plyukhina"
     },
     {
       name: "Анна Викторовна Семенова",
       position: "Менеджер по продажам ООО «КГС»",
-      email: "sales4@kgs-ural.ru"
+      email: "sales4@kgs-ural.ru",
+      slug: "/contact/semenova"
     },
     {
       name: "Артур Фирдависович Муталлапов",
       position: "Сервисный инженер ООО «КГС»",
-      email: "service@kgs-ural.ru"
+      email: "service@kgs-ural.ru",
+      slug: "/contact/mutallapov"
     }
   ];
 
@@ -152,24 +157,29 @@ const Contact = () => {
             <h2 className="text-3xl font-heading font-bold text-center mb-8">Сотрудники компании</h2>
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {team.map((member, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-br from-primary to-accent/20 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Icon name="User" className="text-white" size={28} />
+                <Link key={index} to={member.slug}>
+                  <Card className="p-6 hover:shadow-xl transition-all cursor-pointer hover:border-primary/40 group">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-gradient-to-br from-primary to-accent/20 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Icon name="User" className="text-white" size={28} />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-heading font-semibold text-lg mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                        <p className="text-sm text-primary mb-3">{member.position}</p>
+                        <div className="flex items-center justify-between">
+                          <span className="inline-flex items-center space-x-2 text-sm text-muted-foreground">
+                            <Icon name="Mail" size={16} />
+                            <span>{member.email}</span>
+                          </span>
+                          <span className="inline-flex items-center space-x-1 text-xs text-primary/60 group-hover:text-primary transition-colors">
+                            <span>Открыть</span>
+                            <Icon name="ChevronRight" size={14} />
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-heading font-semibold text-lg mb-1">{member.name}</h3>
-                      <p className="text-sm text-primary mb-3">{member.position}</p>
-                      <a 
-                        href={`mailto:${member.email}`}
-                        className="inline-flex items-center space-x-2 text-sm text-primary hover:text-accent transition-colors"
-                      >
-                        <Icon name="Mail" size={16} />
-                        <span>{member.email}</span>
-                      </a>
-                    </div>
-                  </div>
-                </Card>
+                  </Card>
+                </Link>
               ))}
             </div>
 
