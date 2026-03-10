@@ -22,6 +22,7 @@ interface EmployeePageProps {
   seoTitle: string;
   seoDescription: string;
   contacts: ContactItem[];
+  company?: string;
 }
 
 const contactStyle: Record<ContactItem["type"], { icon: string; color: string; bg: string }> = {
@@ -32,8 +33,30 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
   max:      { icon: "MessageCircle", color: "text-orange-500",   bg: "bg-orange-100 group-hover:bg-orange-200" },
 };
 
-const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts }: EmployeePageProps) => {
+const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
+  const nameParts = name.trim().split(" ");
+  const lastName = nameParts[0] ?? "";
+  const firstName = nameParts.slice(1).join(" ");
+
+  const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\n");
+  const emails = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\n");
+
+  return [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    `N:${lastName};${firstName};;;`,
+    `FN:${name}`,
+    `ORG:${company}`,
+    `TITLE:${position}`,
+    phones,
+    emails,
+    "END:VCARD",
+  ].filter(Boolean).join("\n");
+};
+
+const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КоперГруппСервис" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
+  const vCard = buildVCard(name, position, company, contacts);
 
   return (
     <div className="min-h-screen bg-background">
@@ -116,11 +139,11 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
 
           <Card className="p-6 md:p-8 text-center mb-6">
             <h2 className="font-heading font-semibold text-base mb-1">Электронная визитка</h2>
-            <p className="text-sm text-muted-foreground mb-5">Отсканируйте QR-код для быстрого доступа к контактам</p>
+            <p className="text-sm text-muted-foreground mb-5">Отсканируйте QR-код камерой телефона — контакт добавится автоматически</p>
             <div className="flex justify-center">
               <div className="p-4 bg-white rounded-2xl shadow-md inline-block">
                 <QRCodeSVG
-                  value={pageUrl}
+                  value={vCard}
                   size={180}
                   bgColor="#ffffff"
                   fgColor="#0f2356"
@@ -128,7 +151,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                 />
               </div>
             </div>
-            <p className="text-xs text-muted-foreground mt-4 break-all">{pageUrl}</p>
+            <p className="text-xs text-muted-foreground mt-4">{name} · {position}</p>
           </Card>
 
           <div className="text-center">
