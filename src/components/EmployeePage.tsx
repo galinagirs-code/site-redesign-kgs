@@ -198,10 +198,10 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             {/* Декоративная фото-полоса справа — только desktop */}
             <div className="absolute top-0 right-0 w-1/4 h-full hidden sm:block" aria-hidden="true">
               <div
-                className="absolute inset-0 bg-cover bg-top opacity-70"
+                className="absolute inset-0 bg-cover bg-top opacity-40"
                 style={{ backgroundImage: "url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-white/20" />
             </div>
 
             <div className="relative p-3 sm:p-5 md:p-8 sm:pr-[28%]">
