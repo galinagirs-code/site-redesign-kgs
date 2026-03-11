@@ -34,17 +34,17 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
-  // ФИО приходит как "Фамилия Имя Отчество"
+  // ФИО: "Фамилия Имя Отчество"
   const nameParts  = name.trim().split(" ");
   const lastName   = nameParts[0] ?? "";
-  const firstName  = nameParts[1] ?? "";
-  const middleName = nameParts[2] ?? "";
+  // Имя + Отчество вместе — чтобы телефон не переставлял части местами
+  const firstName  = nameParts.slice(1).join(" ");
 
   // Убираем упоминание компании из должности для поля TITLE
   const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
 
   // FN — строго: Должность ООО «КГС» Фамилия Имя Отчество
-  const displayName = `${cleanPosition} ${company} ${lastName} ${firstName} ${middleName}`.trim();
+  const displayName = `${cleanPosition} ${company} ${name}`.trim();
 
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
   const emails  = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
@@ -52,9 +52,9 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   return [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    // N: Фамилия;Имя;Отчество — используется телефоном для сортировки
-    `N:${lastName};${firstName};${middleName};;`,
-    // FN: отображаемое имя контакта
+    // N: Фамилия;Имя Отчество — отчество объединено с именем, телефон не разбивает
+    `N:${lastName};${firstName};;;`,
+    // FN: явное отображаемое имя — приоритет над N
     `FN:${displayName}`,
     `TITLE:${cleanPosition}`,
     `ORG:${company}`,
@@ -64,19 +64,14 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   ].filter(Boolean).join("\r\n");
 };
 
-const downloadVCard = (vCard: string, name: string) => {
-  const blob = new Blob([vCard], { type: "text/vcard;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `${name.replace(/\s+/g, "_")}.vcf`;
-  a.click();
-  URL.revokeObjectURL(url);
+const buildVCardDataUrl = (vCard: string) => {
+  return "data:text/vcard;charset=utf-8," + encodeURIComponent(vCard);
 };
 
 const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО «КГС»" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
   const vCard = buildVCard(name, position, company, contacts);
+  const vCardUrl = buildVCardDataUrl(vCard);
 
   return (
     <div className="min-h-screen bg-background">
@@ -191,13 +186,14 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
               </div>
             </div>
             <p className="text-xs text-muted-foreground mt-4">{name} · {position}</p>
-            <Button
-              className="mt-5 gap-2 btn-gradient text-white w-full sm:w-auto"
-              onClick={() => downloadVCard(vCard, name)}
+            <a
+              href={vCardUrl}
+              download={`${name.replace(/\s+/g, "_")}.vcf`}
+              className="mt-5 inline-flex items-center justify-center gap-2 btn-gradient text-white rounded-md px-4 py-2 text-sm font-medium w-full sm:w-auto"
             >
-              <Icon name="Download" size={16} />
-              Скачать контакт
-            </Button>
+              <Icon name="UserPlus" size={16} />
+              Добавить контакт
+            </a>
           </Card>
 
           <div className="text-center">
