@@ -242,8 +242,14 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   value={downloadUrl}
                   size={typeof window !== "undefined" && window.innerWidth < 640 ? 140 : 180}
                   bgColor="#ffffff"
-                  fgColor="#0f2356"
-                  level="M"
+                  fgColor="#1d3476"
+                  level="H"
+                  imageSettings={{
+                    src: "https://cdn.poehali.dev/files/b05007b6-4e62-4609-b69c-5a02b6ccecf9.png",
+                    height: typeof window !== "undefined" && window.innerWidth < 640 ? 32 : 42,
+                    width: typeof window !== "undefined" && window.innerWidth < 640 ? 32 : 42,
+                    excavate: true,
+                  }}
                 />
               </div>
             </div>
