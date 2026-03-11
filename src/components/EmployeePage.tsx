@@ -97,35 +97,46 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
       ]} />
 
       <section className="relative pt-14 pb-12 md:pt-16 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
-        {/* Декоративный фоновый паттерн */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '28px 28px'}} />
+        {/* Фото-подложка */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
 
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            {/* Аватар с логотипом */}
+            {/* Круглый логотип КГС */}
             <div className="relative inline-block mb-5">
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/15 border-2 border-white/20 flex items-center justify-center shadow-xl overflow-hidden">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-white/30 shadow-xl overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/files/6ef2c65a-c917-41fb-b8ae-3bbc9f9c1b3f.jpg"
+                  src="https://cdn.poehali.dev/files/2e46674c-eee5-4dc8-9cab-b39e6d3a863b.png"
                   alt="КГС"
-                  className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-heading font-bold text-white mb-3 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-heading font-bold text-white mb-3 leading-tight drop-shadow-md">
               {name}
             </h1>
-            <p className="text-accent text-base md:text-lg font-medium">{position}</p>
+            <p className="text-accent text-base md:text-lg font-medium drop-shadow">{position}</p>
           </div>
         </div>
       </section>
 
-      <section className="py-8 md:py-12">
-        <div className="container mx-auto px-4 max-w-xl">
+      <section className="py-8 md:py-12 relative">
+        {/* Фото-подложка под контакты */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
+        />
+        <div className="absolute inset-0 bg-background/92" />
 
-          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-lg border-t-4 border-t-accent">
+        <div className="container mx-auto px-4 max-w-xl relative">
+
+          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-xl border-t-4 border-t-accent backdrop-blur-sm bg-white/95">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
@@ -149,7 +160,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             })}
           </Card>
 
-          <Card className="p-6 md:p-8 text-center mb-6">
+          <Card className="p-6 md:p-8 text-center mb-6 shadow-xl backdrop-blur-sm bg-white/95">
             <h2 className="font-heading font-semibold text-base mb-1">Электронная визитка</h2>
             <p className="text-sm text-muted-foreground mb-5">Отсканируйте QR-код камерой телефона — контакт добавится автоматически</p>
             <div className="flex justify-center">

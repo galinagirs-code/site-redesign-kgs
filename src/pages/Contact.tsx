@@ -171,8 +171,12 @@ const Contact = () => {
                 <Link key={index} to={member.slug}>
                   <Card className="p-6 hover:shadow-xl transition-all cursor-pointer hover:border-primary/40 group">
                     <div className="flex items-start space-x-4">
-                      <div className="bg-gradient-to-br from-primary to-accent/20 w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Icon name="User" className="text-white" size={28} />
+                      <div className="w-14 h-14 rounded-full flex-shrink-0 overflow-hidden border-2 border-primary/20 shadow-md">
+                        <img
+                          src="https://cdn.poehali.dev/files/2e46674c-eee5-4dc8-9cab-b39e6d3a863b.png"
+                          alt="КГС"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                       <div className="flex-1">
                         <h3 className="font-heading font-semibold text-lg mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
