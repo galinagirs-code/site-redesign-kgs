@@ -171,11 +171,11 @@ const Contact = () => {
                 <Link key={index} to={member.slug}>
                   <Card className="p-6 hover:shadow-xl transition-all cursor-pointer hover:border-primary/40 group">
                     <div className="flex items-start space-x-4">
-                      <div className="w-14 h-14 rounded-full flex-shrink-0 overflow-hidden border-2 border-primary/20 shadow-md">
+                      <div className="w-14 h-14 rounded-full flex-shrink-0 overflow-hidden border-2 border-primary/20 shadow-md bg-primary flex items-center justify-center">
                         <img
-                          src="https://cdn.poehali.dev/files/10ffe6b3-855a-4e05-bccb-8bfbb1b6ff54.png"
+                          src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/f0c32034-3119-4a73-9d2f-8c27a83d9b44.png"
                           alt="КГС"
-                          className="w-full h-full object-cover"
+                          className="w-9 h-9 object-contain"
                         />
                       </div>
                       <div className="flex-1">

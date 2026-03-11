@@ -102,11 +102,11 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <div className="relative inline-block mb-5">
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-white/30 shadow-xl overflow-hidden">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-white/30 shadow-xl overflow-hidden bg-primary flex items-center justify-center">
                 <img
-                  src="https://cdn.poehali.dev/files/10ffe6b3-855a-4e05-bccb-8bfbb1b6ff54.png"
+                  src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/f0c32034-3119-4a73-9d2f-8c27a83d9b44.png"
                   alt="КГС"
-                  className="w-full h-full object-cover"
+                  className="w-16 h-16 md:w-20 md:h-20 object-contain"
                 />
               </div>
             </div>
@@ -124,14 +124,14 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
 
           <Card className="mb-6 shadow-xl border-t-4 border-t-accent overflow-hidden relative">
             {/* Декоративная фото-полоса справа */}
-            <div className="absolute top-0 right-0 w-1/3 h-full hidden sm:block">
+            <div className="absolute top-0 right-0 w-1/4 h-full hidden sm:block">
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center opacity-60"
                 style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-white/10" />
             </div>
-            <div className="relative p-4 md:p-8 space-y-2 sm:pr-[38%]">
+            <div className="relative p-4 md:p-8 space-y-2 sm:pr-[28%]">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
