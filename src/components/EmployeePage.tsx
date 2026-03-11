@@ -224,6 +224,8 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             <p className="text-xs text-muted-foreground mb-4">{name} · {position}</p>
             <a
               href={downloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={`Добавить контакт ${name}`}
               className="inline-flex items-center justify-center gap-2 btn-gradient text-white rounded-md px-5 py-2.5 text-sm font-medium w-full sm:w-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
