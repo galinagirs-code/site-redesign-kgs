@@ -38,6 +38,9 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   const lastName = nameParts[0] ?? "";
   const firstName = nameParts.slice(1).join(" ");
 
+  // Убираем упоминание компании из должности — она уже есть в поле ORG
+  const cleanPosition = position.replace(/\s*ООО\s*[«"']?КГС[»"']?/gi, "").trim();
+
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
   const emails = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
 
@@ -47,7 +50,7 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
     `N:${lastName};${firstName};;;`,
     `FN:${name}`,
     `ORG:${company}`,
-    `TITLE:${position}`,
+    `TITLE:${cleanPosition}`,
     phones,
     emails,
     "END:VCARD",
