@@ -97,17 +97,10 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
       ]} />
 
       <section className="relative pt-14 pb-12 md:pt-16 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
-        {/* Фото-подложка */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
-        />
-        <div className="absolute inset-0 bg-primary/80" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '28px 28px'}} />
 
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            {/* Круглый логотип КГС */}
             <div className="relative inline-block mb-5">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-white/30 shadow-xl overflow-hidden">
                 <img
@@ -118,10 +111,10 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
               </div>
             </div>
 
-            <h1 className="text-2xl md:text-4xl font-heading font-bold text-white mb-3 leading-tight drop-shadow-md">
+            <h1 className="text-2xl md:text-4xl font-heading font-bold text-white mb-3 leading-tight">
               {name}
             </h1>
-            <p className="text-accent text-base md:text-lg font-medium drop-shadow">{position}</p>
+            <p className="text-accent text-base md:text-lg font-medium">{position}</p>
           </div>
         </div>
       </section>
@@ -135,7 +128,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
             />
-            <div className="absolute inset-0 bg-white/90" />
+            <div className="absolute inset-0 bg-white/75" />
             <div className="relative">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
