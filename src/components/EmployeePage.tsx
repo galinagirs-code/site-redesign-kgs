@@ -96,12 +96,28 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
         { label: name, path: slug }
       ]} />
 
-      <section className="relative pt-14 pb-10 md:pt-16 md:pb-12 bg-gradient-to-br from-primary via-primary to-primary/90">
+      <section className="relative pt-14 pb-12 md:pt-16 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
+        {/* Декоративный фоновый паттерн */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '28px 28px'}} />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-5">
-              <Icon name="User" className="text-white" size={40} />
+            {/* Аватар с логотипом */}
+            <div className="relative inline-block mb-5">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center shadow-xl">
+                <Icon name="User" className="text-white/70" size={44} />
+              </div>
+              {/* Логотип компании */}
+              <div className="absolute -bottom-2 -right-2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-white/80">
+                <img
+                  src="https://cdn.poehali.dev/files/6ef2c65a-c917-41fb-b8ae-3bbc9f9c1b3f.jpg"
+                  alt="КГС"
+                  className="w-7 h-7 object-contain"
+                />
+              </div>
             </div>
+
             <h1 className="text-2xl md:text-4xl font-heading font-bold text-white mb-3 leading-tight">
               {name}
             </h1>
@@ -113,7 +129,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4 max-w-xl">
 
-          <Card className="p-4 md:p-8 mb-6 space-y-2">
+          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-lg border-t-4 border-t-accent">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
