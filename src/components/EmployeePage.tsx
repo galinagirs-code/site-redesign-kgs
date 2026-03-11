@@ -104,7 +104,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             <div className="relative inline-block mb-5">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-white/30 shadow-xl overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/files/2e46674c-eee5-4dc8-9cab-b39e6d3a863b.png"
+                  src="https://cdn.poehali.dev/files/10ffe6b3-855a-4e05-bccb-8bfbb1b6ff54.png"
                   alt="КГС"
                   className="w-full h-full object-cover"
                 />
@@ -122,14 +122,16 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4 max-w-xl">
 
-          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-xl border-t-4 border-t-accent overflow-hidden relative">
-            {/* Фото-подложка внутри карточки */}
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
-            />
-            <div className="absolute inset-0 bg-white/75" />
-            <div className="relative">
+          <Card className="mb-6 shadow-xl border-t-4 border-t-accent overflow-hidden relative">
+            {/* Декоративная фото-полоса справа */}
+            <div className="absolute top-0 right-0 w-1/3 h-full hidden sm:block">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent" />
+            </div>
+            <div className="relative p-4 md:p-8 space-y-2 sm:pr-[38%]">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
@@ -138,7 +140,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   href={c.href}
                   target={c.type !== "email" && c.type !== "phone" ? "_blank" : undefined}
                   rel={c.type !== "email" && c.type !== "phone" ? "noopener noreferrer" : undefined}
-                  className="flex items-center space-x-4 p-3 md:p-4 rounded-xl hover:bg-white/60 transition-colors group"
+                  className="flex items-center space-x-4 p-3 md:p-4 rounded-xl hover:bg-muted transition-colors group"
                 >
                   <div className={`w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${style.bg}`}>
                     <Icon name={style.icon} className={style.color} size={20} />

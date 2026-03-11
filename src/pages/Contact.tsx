@@ -173,7 +173,7 @@ const Contact = () => {
                     <div className="flex items-start space-x-4">
                       <div className="w-14 h-14 rounded-full flex-shrink-0 overflow-hidden border-2 border-primary/20 shadow-md">
                         <img
-                          src="https://cdn.poehali.dev/files/2e46674c-eee5-4dc8-9cab-b39e6d3a863b.png"
+                          src="https://cdn.poehali.dev/files/10ffe6b3-855a-4e05-bccb-8bfbb1b6ff54.png"
                           alt="КГС"
                           className="w-full h-full object-cover"
                         />
