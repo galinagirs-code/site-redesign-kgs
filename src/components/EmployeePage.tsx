@@ -245,8 +245,8 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   fgColor="#1d3476"
                   level="H"
                   imageSettings={{
-                    src: "https://cdn.poehali.dev/files/b05007b6-4e62-4609-b69c-5a02b6ccecf9.png",
-                    height: typeof window !== "undefined" && window.innerWidth < 640 ? 30 : 38,
+                    src: "https://cdn.poehali.dev/files/5aaa56df-eda5-4057-bf0d-d54246f33983.png",
+                    height: typeof window !== "undefined" && window.innerWidth < 640 ? 36 : 46,
                     width: typeof window !== "undefined" && window.innerWidth < 640 ? 36 : 46,
                     excavate: true,
                   }}
