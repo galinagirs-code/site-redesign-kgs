@@ -34,27 +34,39 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
+  // Разбиваем ФИО: [0]=Фамилия [1]=Имя [2]=Отчество
   const nameParts = name.trim().split(" ");
-  const lastName = nameParts[0] ?? "";
-  const firstName = nameParts.slice(1).join(" ");
+  const lastName  = nameParts[0] ?? "";
+  const firstName = nameParts[1] ?? "";
+  const middleName = nameParts[2] ?? "";
 
   // Убираем упоминание компании из должности — она уже есть в поле ORG
-  const cleanPosition = position.replace(/\s*ООО\s*[«"']?КГС[»"']?/gi, "").trim();
+  const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
 
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
-  const emails = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
+  const emails  = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
 
   return [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    `N:${lastName};${firstName};;;`,
+    `N:${lastName};${firstName};${middleName};;`,
     `FN:${name}`,
-    `ORG:${company}`,
     `TITLE:${cleanPosition}`,
+    `ORG:${company}`,
     phones,
     emails,
     "END:VCARD",
   ].filter(Boolean).join("\r\n");
+};
+
+const downloadVCard = (vCard: string, name: string) => {
+  const blob = new Blob([vCard], { type: "text/vcard;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${name.replace(/\s+/g, "_")}.vcf`;
+  a.click();
+  URL.revokeObjectURL(url);
 };
 
 const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КГС" }: EmployeePageProps) => {
@@ -174,6 +186,13 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
               </div>
             </div>
             <p className="text-xs text-muted-foreground mt-4">{name} · {position}</p>
+            <Button
+              className="mt-5 gap-2 btn-gradient text-white w-full sm:w-auto"
+              onClick={() => downloadVCard(vCard, name)}
+            >
+              <Icon name="Download" size={16} />
+              Скачать контакт
+            </Button>
           </Card>
 
           <div className="text-center">
