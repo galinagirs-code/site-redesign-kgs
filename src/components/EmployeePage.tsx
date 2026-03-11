@@ -34,11 +34,14 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
-  // Убираем упоминание компании из должности для поля TITLE
-  const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
+  // Строка 1 (FN): Должность ООО «КГС»
+  // Строка 2 (N):  Фамилия Имя Отчество
+  const nameParts  = name.trim().split(" ");
+  const lastName   = nameParts[0] ?? "";
+  const firstName  = nameParts.slice(1).join(" ");
 
-  // Полное отображаемое имя: Должность ООО «КГС» Фамилия Имя Отчество
-  const displayName = `${cleanPosition} ${company} ${name}`.trim();
+  const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
+  const titleLine = `${cleanPosition} ${company}`.trim();
 
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
   const emails  = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
@@ -46,25 +49,27 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   return [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    // N: всё имя целиком в первом поле — телефон не будет переставлять части
-    `N:${displayName};;;;`,
-    `FN:${displayName}`,
-    `TITLE:${cleanPosition}`,
+    // FN = строка 1: Должность ООО «КГС»
+    `FN:${titleLine}`,
+    // N = строка 2: Фамилия;Имя Отчество
+    `N:${lastName};${firstName};;;`,
     `ORG:${company}`,
+    `TITLE:${cleanPosition}`,
     phones,
     emails,
     "END:VCARD",
   ].filter(Boolean).join("\r\n");
 };
 
-const buildVCardDataUrl = (vCard: string) => {
-  return "data:text/vcard;charset=utf-8," + encodeURIComponent(vCard);
-};
+const VCARD_URL = "https://functions.poehali.dev/2d02a6c5-8547-4475-ab59-986b14929d6e";
 
 const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО «КГС»" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
   const vCard = buildVCard(name, position, company, contacts);
   const vCardUrl = buildVCardDataUrl(vCard);
+  // slug сотрудника из пути: /contact/seleznev -> seleznev
+  const employeeSlug = slug.split("/").pop() ?? "";
+  const downloadUrl = `${VCARD_URL}?slug=${employeeSlug}`;
 
   return (
     <div className="min-h-screen bg-background">
@@ -180,8 +185,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             </div>
             <p className="text-xs text-muted-foreground mt-4">{name} · {position}</p>
             <a
-              href={vCardUrl}
-              download={`${name.replace(/\s+/g, "_")}.vcf`}
+              href={downloadUrl}
               className="mt-5 inline-flex items-center justify-center gap-2 btn-gradient text-white rounded-md px-4 py-2 text-sm font-medium w-full sm:w-auto"
             >
               <Icon name="UserPlus" size={16} />
