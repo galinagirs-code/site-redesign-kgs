@@ -25,12 +25,12 @@ interface EmployeePageProps {
   company?: string;
 }
 
-const contactStyle: Record<ContactItem["type"], { icon: string; color: string; bg: string }> = {
-  email:    { icon: "Mail",          color: "text-primary",      bg: "bg-primary/10 group-hover:bg-primary/20" },
-  phone:    { icon: "Phone",         color: "text-primary",      bg: "bg-primary/10 group-hover:bg-primary/20" },
-  telegram: { icon: "Send",          color: "text-[#2AABEE]",    bg: "bg-[#2AABEE]/10 group-hover:bg-[#2AABEE]/20" },
-  vk:       { icon: "Share2",        color: "text-[#0077FF]",    bg: "bg-[#0077FF]/10 group-hover:bg-[#0077FF]/20" },
-  max:      { icon: "MessageCircle", color: "text-orange-500",   bg: "bg-orange-100 group-hover:bg-orange-200" },
+const contactStyle: Record<ContactItem["type"], { icon: string; color: string; bg: string; row: string }> = {
+  email:    { icon: "Mail",          color: "text-primary",      bg: "bg-primary/15 group-hover:bg-primary/25",       row: "bg-primary/5 hover:bg-primary/10 border border-primary/10" },
+  phone:    { icon: "Phone",         color: "text-primary",      bg: "bg-primary/15 group-hover:bg-primary/25",       row: "bg-primary/5 hover:bg-primary/10 border border-primary/10" },
+  telegram: { icon: "Send",          color: "text-[#2AABEE]",    bg: "bg-[#2AABEE]/15 group-hover:bg-[#2AABEE]/25",  row: "bg-[#2AABEE]/5 hover:bg-[#2AABEE]/10 border border-[#2AABEE]/10" },
+  vk:       { icon: "Share2",        color: "text-[#0077FF]",    bg: "bg-[#0077FF]/15 group-hover:bg-[#0077FF]/25",  row: "bg-[#0077FF]/5 hover:bg-[#0077FF]/10 border border-[#0077FF]/10" },
+  max:      { icon: "MessageCircle", color: "text-orange-500",   bg: "bg-orange-100 group-hover:bg-orange-200",      row: "bg-orange-50 hover:bg-orange-100 border border-orange-100" },
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
@@ -126,12 +126,12 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             {/* Декоративная фото-полоса справа */}
             <div className="absolute top-0 right-0 w-1/4 h-full hidden sm:block">
               <div
-                className="absolute inset-0 bg-cover bg-center opacity-60"
+                className="absolute inset-0 bg-cover bg-top opacity-70"
                 style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-white/10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
             </div>
-            <div className="relative p-4 md:p-8 space-y-2 sm:pr-[28%]">
+            <div className="relative p-4 md:p-8 space-y-2.5 sm:pr-[28%]">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
@@ -140,7 +140,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   href={c.href}
                   target={c.type !== "email" && c.type !== "phone" ? "_blank" : undefined}
                   rel={c.type !== "email" && c.type !== "phone" ? "noopener noreferrer" : undefined}
-                  className="flex items-center space-x-4 p-3 md:p-4 rounded-xl hover:bg-muted transition-colors group"
+                  className={`flex items-center space-x-4 p-3 md:p-4 rounded-xl transition-colors group ${style.row}`}
                 >
                   <div className={`w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${style.bg}`}>
                     <Icon name={style.icon} className={style.color} size={20} />
@@ -166,7 +166,15 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   size={180}
                   bgColor="#ffffff"
                   fgColor="#0f2356"
-                  level="M"
+                  level="H"
+                  imageSettings={{
+                    src: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/d6cf01d1-f334-4d0d-87aa-14fe501e097f.png",
+                    x: undefined,
+                    y: undefined,
+                    height: 36,
+                    width: 36,
+                    excavate: true,
+                  }}
                 />
               </div>
             </div>
