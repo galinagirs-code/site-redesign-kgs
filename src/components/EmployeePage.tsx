@@ -66,7 +66,6 @@ const VCARD_URL = "https://functions.poehali.dev/2d02a6c5-8547-4475-ab59-986b149
 const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО «КГС»" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
   const vCard = buildVCard(name, position, company, contacts);
-  const vCardUrl = buildVCardDataUrl(vCard);
   // slug сотрудника из пути: /contact/seleznev -> seleznev
   const employeeSlug = slug.split("/").pop() ?? "";
   const downloadUrl = `${VCARD_URL}?slug=${employeeSlug}`;
