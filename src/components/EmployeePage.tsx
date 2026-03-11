@@ -91,7 +91,9 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
   const employeeSlug = slug.split("/").pop() ?? "";
   const downloadUrl = useMemo(() => `${VCARD_URL}?slug=${employeeSlug}`, [employeeSlug]);
 
-  const standardContacts  = contacts.filter(c => STANDARD_TYPES.includes(c.type));
+  const standardContacts  = contacts
+    .filter(c => STANDARD_TYPES.includes(c.type))
+    .sort((a) => a.type === "phone" ? -1 : 1);
   const messengerContacts = contacts.filter(c => MESSENGER_TYPES.includes(c.type));
 
   return (
