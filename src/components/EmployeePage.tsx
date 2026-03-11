@@ -126,17 +126,17 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
         </div>
       </section>
 
-      <section className="py-8 md:py-12 relative">
-        {/* Фото-подложка под контакты */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
-        />
-        <div className="absolute inset-0 bg-background/92" />
+      <section className="py-8 md:py-12">
+        <div className="container mx-auto px-4 max-w-xl">
 
-        <div className="container mx-auto px-4 max-w-xl relative">
-
-          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-xl border-t-4 border-t-accent backdrop-blur-sm bg-white/95">
+          <Card className="p-4 md:p-8 mb-6 space-y-2 shadow-xl border-t-4 border-t-accent overflow-hidden relative">
+            {/* Фото-подложка внутри карточки */}
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{backgroundImage: 'url(https://cdn.poehali.dev/files/d2abf384-7c66-44d9-834b-ddaa3f323fb1.jpg)'}}
+            />
+            <div className="absolute inset-0 bg-white/90" />
+            <div className="relative">
             {contacts.map((c, i) => {
               const style = contactStyle[c.type];
               return (
@@ -145,7 +145,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   href={c.href}
                   target={c.type !== "email" && c.type !== "phone" ? "_blank" : undefined}
                   rel={c.type !== "email" && c.type !== "phone" ? "noopener noreferrer" : undefined}
-                  className="flex items-center space-x-4 p-3 md:p-4 rounded-xl hover:bg-muted transition-colors group"
+                  className="flex items-center space-x-4 p-3 md:p-4 rounded-xl hover:bg-white/60 transition-colors group"
                 >
                   <div className={`w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${style.bg}`}>
                     <Icon name={style.icon} className={style.color} size={20} />
@@ -158,6 +158,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                 </a>
               );
             })}
+            </div>
           </Card>
 
           <Card className="p-6 md:p-8 text-center mb-6 shadow-xl backdrop-blur-sm bg-white/95">
