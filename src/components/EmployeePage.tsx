@@ -34,16 +34,10 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
-  // ФИО: "Фамилия Имя Отчество"
-  const nameParts  = name.trim().split(" ");
-  const lastName   = nameParts[0] ?? "";
-  // Имя + Отчество вместе — чтобы телефон не переставлял части местами
-  const firstName  = nameParts.slice(1).join(" ");
-
   // Убираем упоминание компании из должности для поля TITLE
   const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
 
-  // FN — строго: Должность ООО «КГС» Фамилия Имя Отчество
+  // Полное отображаемое имя: Должность ООО «КГС» Фамилия Имя Отчество
   const displayName = `${cleanPosition} ${company} ${name}`.trim();
 
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
@@ -52,9 +46,8 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   return [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    // N: Фамилия;Имя Отчество — отчество объединено с именем, телефон не разбивает
-    `N:${lastName};${firstName};;;`,
-    // FN: явное отображаемое имя — приоритет над N
+    // N: всё имя целиком в первом поле — телефон не будет переставлять части
+    `N:${displayName};;;;`,
     `FN:${displayName}`,
     `TITLE:${cleanPosition}`,
     `ORG:${company}`,
