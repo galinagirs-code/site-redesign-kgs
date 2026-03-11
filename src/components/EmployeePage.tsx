@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { QRCodeSVG } from "qrcode.react";
 import { Card } from "@/components/ui/card";
@@ -95,6 +95,32 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
     .filter(c => STANDARD_TYPES.includes(c.type))
     .sort((a) => a.type === "phone" ? -1 : 1);
   const messengerContacts = contacts.filter(c => MESSENGER_TYPES.includes(c.type));
+
+  const handleAddContact = useCallback(async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const isAndroid = /android/i.test(navigator.userAgent);
+    if (!isAndroid) return; // iOS — стандартное поведение ссылки
+
+    e.preventDefault();
+    try {
+      // Скачиваем vcf-файл как blob
+      const response = await fetch(downloadUrl);
+      const blob = await response.blob();
+      const vcfFile = new File([blob], `${name.replace(/\s+/g, "_")}.vcf`, { type: "text/vcard" });
+
+      // Web Share API — Android открывает системный диалог «Открыть с помощью»
+      if (navigator.canShare && navigator.canShare({ files: [vcfFile] })) {
+        await navigator.share({ files: [vcfFile], title: name });
+      } else {
+        // Fallback: открываем blob-url в новой вкладке
+        const url = URL.createObjectURL(blob);
+        window.open(url, "_blank");
+        setTimeout(() => URL.revokeObjectURL(url), 5000);
+      }
+    } catch {
+      // Если что-то пошло не так — открываем ссылку напрямую
+      window.open(downloadUrl, "_blank");
+    }
+  }, [downloadUrl, name]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -226,6 +252,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
               href={downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleAddContact}
               aria-label={`Добавить контакт ${name}`}
               className="inline-flex items-center justify-center gap-2 btn-gradient text-white rounded-md px-5 py-2.5 text-sm font-medium w-full sm:w-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
