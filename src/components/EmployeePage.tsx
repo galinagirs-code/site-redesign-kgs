@@ -174,7 +174,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
             <div className="flex justify-center">
               <div className="p-4 bg-white rounded-2xl shadow-md inline-block">
                 <QRCodeSVG
-                  value={vCard}
+                  value={downloadUrl}
                   size={180}
                   bgColor="#ffffff"
                   fgColor="#0f2356"

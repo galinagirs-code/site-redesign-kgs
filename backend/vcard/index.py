@@ -97,7 +97,7 @@ def handler(event: dict, context) -> dict:
         "headers": {
             "Access-Control-Allow-Origin": "*",
             "Content-Type": "text/vcard; charset=utf-8",
-            "Content-Disposition": f"attachment; filename=\"{filename}\"",
+            "Content-Disposition": f"inline; filename=\"{filename}\"",
         },
         "body": vcard,
     }
