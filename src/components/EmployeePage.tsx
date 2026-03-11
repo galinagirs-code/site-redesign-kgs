@@ -105,15 +105,11 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             {/* Аватар с логотипом */}
             <div className="relative inline-block mb-5">
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center shadow-xl">
-                <Icon name="User" className="text-white/70" size={44} />
-              </div>
-              {/* Логотип компании */}
-              <div className="absolute -bottom-2 -right-2 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center border-2 border-white/80">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white/15 border-2 border-white/20 flex items-center justify-center shadow-xl overflow-hidden">
                 <img
                   src="https://cdn.poehali.dev/files/6ef2c65a-c917-41fb-b8ae-3bbc9f9c1b3f.jpg"
                   alt="КГС"
-                  className="w-7 h-7 object-contain"
+                  className="w-14 h-14 md:w-16 md:h-16 object-contain"
                 />
               </div>
             </div>
