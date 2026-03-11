@@ -54,7 +54,7 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   ].filter(Boolean).join("\r\n");
 };
 
-const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КоперГруппСервис" }: EmployeePageProps) => {
+const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КГС" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
   const vCard = buildVCard(name, position, company, contacts);
 
@@ -166,15 +166,7 @@ const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts
                   size={180}
                   bgColor="#ffffff"
                   fgColor="#0f2356"
-                  level="H"
-                  imageSettings={{
-                    src: "https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/d6cf01d1-f334-4d0d-87aa-14fe501e097f.png",
-                    x: undefined,
-                    y: undefined,
-                    height: 36,
-                    width: 36,
-                    excavate: true,
-                  }}
+                  level="M"
                 />
               </div>
             </div>
