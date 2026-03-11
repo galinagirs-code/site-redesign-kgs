@@ -34,17 +34,17 @@ const contactStyle: Record<ContactItem["type"], { icon: string; color: string; b
 };
 
 const buildVCard = (name: string, position: string, company: string, contacts: ContactItem[]) => {
-  // Разбиваем ФИО: [0]=Фамилия [1]=Имя [2]=Отчество
-  const nameParts = name.trim().split(" ");
-  const lastName  = nameParts[0] ?? "";
-  const firstName = nameParts[1] ?? "";
+  // ФИО приходит как "Фамилия Имя Отчество"
+  const nameParts  = name.trim().split(" ");
+  const lastName   = nameParts[0] ?? "";
+  const firstName  = nameParts[1] ?? "";
   const middleName = nameParts[2] ?? "";
 
   // Убираем упоминание компании из должности для поля TITLE
   const cleanPosition = position.replace(/\s*ООО\s*[«"'»]*КГС[«"'»]*/gi, "").trim();
 
-  // Отображаемое имя: Должность ООО «КГС» Фамилия Имя Отчество
-  const displayName = `${cleanPosition} ${company} ${name}`;
+  // FN — строго: Должность ООО «КГС» Фамилия Имя Отчество
+  const displayName = `${cleanPosition} ${company} ${lastName} ${firstName} ${middleName}`.trim();
 
   const phones = contacts.filter(c => c.type === "phone").map(c => `TEL;TYPE=CELL:${c.href.replace("tel:", "")}`).join("\r\n");
   const emails  = contacts.filter(c => c.type === "email").map(c => `EMAIL:${c.value}`).join("\r\n");
@@ -52,7 +52,9 @@ const buildVCard = (name: string, position: string, company: string, contacts: C
   return [
     "BEGIN:VCARD",
     "VERSION:3.0",
+    // N: Фамилия;Имя;Отчество — используется телефоном для сортировки
     `N:${lastName};${firstName};${middleName};;`,
+    // FN: отображаемое имя контакта
     `FN:${displayName}`,
     `TITLE:${cleanPosition}`,
     `ORG:${company}`,
@@ -72,7 +74,7 @@ const downloadVCard = (vCard: string, name: string) => {
   URL.revokeObjectURL(url);
 };
 
-const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО КГС" }: EmployeePageProps) => {
+const EmployeePage = ({ name, position, slug, seoTitle, seoDescription, contacts, company = "ООО «КГС»" }: EmployeePageProps) => {
   const pageUrl = `https://kgs-ural.ru${slug}`;
   const vCard = buildVCard(name, position, company, contacts);
 
