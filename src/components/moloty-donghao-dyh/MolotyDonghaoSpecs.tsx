@@ -1,110 +1,366 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Icon from "@/components/ui/icon";
 
-const group1Models = ["DYH-3", "DYH-5", "DYH-8", "DYH-11", "DYH-14"];
-const group2Models = ["DYH-16", "DYH-20", "DYH-25", "DYH-30", "DYH-35", "DYH-40"];
+const variants = [
+  {
+    name: "DYH-3",
+    energy: "24 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "24 кН·м" },
+      { label: "Масса ударной части", value: "3 000 кг" },
+      { label: "Частота ударов", value: "50/100 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "24" },
+      { label: "Рабочий ход (мм)", value: "800" },
+      { label: "Частота ударов (уд/мин)", value: "50/100" },
+      { label: "Масса ударной части (кг)", value: "3 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "3 800" },
+      { label: "Ширина молота (мм)", value: "920" },
+      { label: "Высота молота (мм)", value: "1 100" },
+      { label: "Масса молота (кг)", value: "5 800" },
+      { label: "Модель гидростанции", value: "V120" },
+      { label: "Мощность двигателя (кВт)", value: "50" },
+      { label: "Рабочее давление (МПа)", value: "21" },
+      { label: "Расход масла (л/мин)", value: "140" },
+      { label: "Объём гидр. масла (л)", value: "400" },
+      { label: "Габариты гидростанции (мм)", value: "2600×1500×1950" },
+      { label: "Масса гидростанции (кг)", value: "3 000" },
+    ],
+  },
+  {
+    name: "DYH-5",
+    energy: "60 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "60 кН·м" },
+      { label: "Масса ударной части", value: "5 000 кг" },
+      { label: "Частота ударов", value: "40/100 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "60" },
+      { label: "Рабочий ход (мм)", value: "1 200" },
+      { label: "Частота ударов (уд/мин)", value: "40/100" },
+      { label: "Масса ударной части (кг)", value: "5 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "5 050" },
+      { label: "Ширина молота (мм)", value: "920" },
+      { label: "Высота молота (мм)", value: "1 100" },
+      { label: "Масса молота (кг)", value: "8 500" },
+      { label: "Модель гидростанции", value: "V180" },
+      { label: "Мощность двигателя (кВт)", value: "50" },
+      { label: "Рабочее давление (МПа)", value: "24" },
+      { label: "Расход масла (л/мин)", value: "200" },
+      { label: "Объём гидр. масла (л)", value: "800" },
+      { label: "Габариты гидростанции (мм)", value: "2600×1500×1950" },
+      { label: "Масса гидростанции (кг)", value: "3 000" },
+    ],
+  },
+  {
+    name: "DYH-8",
+    energy: "120 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "120 кН·м" },
+      { label: "Масса ударной части", value: "8 000 кг" },
+      { label: "Частота ударов", value: "35/90 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "120" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "35/90" },
+      { label: "Масса ударной части (кг)", value: "8 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "6 100" },
+      { label: "Ширина молота (мм)", value: "980" },
+      { label: "Высота молота (мм)", value: "1 250" },
+      { label: "Масса молота (кг)", value: "12 000" },
+      { label: "Модель гидростанции", value: "V260" },
+      { label: "Мощность двигателя (кВт)", value: "90" },
+      { label: "Рабочее давление (МПа)", value: "24" },
+      { label: "Расход масла (л/мин)", value: "260" },
+      { label: "Объём гидр. масла (л)", value: "1 200" },
+      { label: "Габариты гидростанции (мм)", value: "3300×1500×2050" },
+      { label: "Масса гидростанции (кг)", value: "4 200" },
+    ],
+  },
+  {
+    name: "DYH-11",
+    energy: "165 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "165 кН·м" },
+      { label: "Масса ударной части", value: "11 000 кг" },
+      { label: "Частота ударов", value: "35/90 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "165" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "35/90" },
+      { label: "Масса ударной части (кг)", value: "11 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "6 700" },
+      { label: "Ширина молота (мм)", value: "980" },
+      { label: "Высота молота (мм)", value: "1 250" },
+      { label: "Масса молота (кг)", value: "16 000" },
+      { label: "Модель гидростанции", value: "V400" },
+      { label: "Мощность двигателя (кВт)", value: "132" },
+      { label: "Рабочее давление (МПа)", value: "24" },
+      { label: "Расход масла (л/мин)", value: "380" },
+      { label: "Объём гидр. масла (л)", value: "1 300" },
+      { label: "Габариты гидростанции (мм)", value: "3300×1500×2050" },
+      { label: "Масса гидростанции (кг)", value: "4 600" },
+    ],
+  },
+  {
+    name: "DYH-14",
+    energy: "210 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "210 кН·м" },
+      { label: "Масса ударной части", value: "14 000 кг" },
+      { label: "Частота ударов", value: "30/90 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "210" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "30/90" },
+      { label: "Масса ударной части (кг)", value: "14 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "6 780" },
+      { label: "Ширина молота (мм)", value: "1 300" },
+      { label: "Высота молота (мм)", value: "1 520" },
+      { label: "Масса молота (кг)", value: "22 000" },
+      { label: "Модель гидростанции", value: "V400" },
+      { label: "Мощность двигателя (кВт)", value: "185" },
+      { label: "Рабочее давление (МПа)", value: "26" },
+      { label: "Расход масла (л/мин)", value: "520" },
+      { label: "Объём гидр. масла (л)", value: "1 400" },
+      { label: "Габариты гидростанции (мм)", value: "3500×1550×2050" },
+      { label: "Масса гидростанции (кг)", value: "6 000" },
+    ],
+  },
+  {
+    name: "DYH-16",
+    energy: "240 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "240 кН·м" },
+      { label: "Масса ударной части", value: "16 000 кг" },
+      { label: "Частота ударов", value: "30/90 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "240" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "30/90" },
+      { label: "Масса ударной части (кг)", value: "16 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "7 080" },
+      { label: "Ширина молота (мм)", value: "1 300" },
+      { label: "Высота молота (мм)", value: "1 520" },
+      { label: "Масса молота (кг)", value: "24 000" },
+      { label: "Модель гидростанции", value: "V400" },
+      { label: "Мощность электродвигателя (кВт)", value: "200" },
+      { label: "Рабочее давление (МПа)", value: "26" },
+      { label: "Расход масла (л/мин)", value: "520" },
+      { label: "Объём гидр. масла (л)", value: "1 400" },
+      { label: "Габариты гидростанции (мм)", value: "3500×1550×2050" },
+      { label: "Масса гидростанции (кг)", value: "6 000" },
+    ],
+  },
+  {
+    name: "DYH-20",
+    energy: "300 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "300 кН·м" },
+      { label: "Масса ударной части", value: "20 000 кг" },
+      { label: "Частота ударов", value: "30/85 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "300" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "30/85" },
+      { label: "Масса ударной части (кг)", value: "20 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "7 450" },
+      { label: "Ширина молота (мм)", value: "1 400" },
+      { label: "Высота молота (мм)", value: "1 450" },
+      { label: "Масса молота (кг)", value: "31 000" },
+      { label: "Модель гидростанции", value: "P500" },
+      { label: "Мощность двигателя (л.с.)", value: "500" },
+      { label: "Рабочее давление (МПа)", value: "26" },
+      { label: "Расход масла (л/мин)", value: "760" },
+      { label: "Объём гидр. масла (л)", value: "1 800" },
+      { label: "Объём топливного бака (л)", value: "650" },
+      { label: "Габариты гидростанции (мм)", value: "4450×1800×2250" },
+      { label: "Масса гидростанции (кг)", value: "7 500" },
+    ],
+  },
+  {
+    name: "DYH-25",
+    energy: "375 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "375 кН·м" },
+      { label: "Масса ударной части", value: "25 000 кг" },
+      { label: "Частота ударов", value: "28/85 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "375" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "28/85" },
+      { label: "Масса ударной части (кг)", value: "25 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "7 900" },
+      { label: "Ширина молота (мм)", value: "1 400" },
+      { label: "Высота молота (мм)", value: "1 450" },
+      { label: "Масса молота (кг)", value: "36 000" },
+      { label: "Модель гидростанции", value: "P600" },
+      { label: "Мощность двигателя (л.с.)", value: "600" },
+      { label: "Рабочее давление (МПа)", value: "26" },
+      { label: "Расход масла (л/мин)", value: "760" },
+      { label: "Объём гидр. масла (л)", value: "1 800" },
+      { label: "Объём топливного бака (л)", value: "650" },
+      { label: "Габариты гидростанции (мм)", value: "4350×1800×2250" },
+      { label: "Масса гидростанции (кг)", value: "8 000" },
+    ],
+  },
+  {
+    name: "DYH-30",
+    energy: "450 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "450 кН·м" },
+      { label: "Масса ударной части", value: "30 000 кг" },
+      { label: "Частота ударов", value: "25/75 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "450" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "25/75" },
+      { label: "Масса ударной части (кг)", value: "30 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "7 900" },
+      { label: "Ширина молота (мм)", value: "1 500" },
+      { label: "Высота молота (мм)", value: "1 900" },
+      { label: "Масса молота (кг)", value: "41 000" },
+      { label: "Модель гидростанции", value: "P800" },
+      { label: "Мощность двигателя (л.с.)", value: "800" },
+      { label: "Рабочее давление (МПа)", value: "26" },
+      { label: "Расход масла (л/мин)", value: "810" },
+      { label: "Объём гидр. масла (л)", value: "2 000" },
+      { label: "Объём топливного бака (л)", value: "750" },
+      { label: "Габариты гидростанции (мм)", value: "4550×1800×2400" },
+      { label: "Масса гидростанции (кг)", value: "8 500" },
+    ],
+  },
+  {
+    name: "DYH-35",
+    energy: "525 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "525 кН·м" },
+      { label: "Масса ударной части", value: "35 000 кг" },
+      { label: "Частота ударов", value: "25/75 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "525" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "25/75" },
+      { label: "Масса ударной части (кг)", value: "35 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "8 120" },
+      { label: "Ширина молота (мм)", value: "1 550" },
+      { label: "Высота молота (мм)", value: "1 900" },
+      { label: "Масса молота (кг)", value: "47 000" },
+      { label: "Модель гидростанции", value: "P900" },
+      { label: "Мощность двигателя (л.с.)", value: "900" },
+      { label: "Рабочее давление (МПа)", value: "28" },
+      { label: "Расход масла (л/мин)", value: "910" },
+      { label: "Объём гидр. масла (л)", value: "2 200" },
+      { label: "Объём топливного бака (л)", value: "800" },
+      { label: "Габариты гидростанции (мм)", value: "4650×1800×2400" },
+      { label: "Масса гидростанции (кг)", value: "12 000" },
+    ],
+  },
+  {
+    name: "DYH-40",
+    energy: "680 кН·м",
+    specs: [
+      { label: "Энергия удара", value: "680 кН·м" },
+      { label: "Масса ударной части", value: "40 000 кг" },
+      { label: "Частота ударов", value: "25/70 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Энергия удара (кН·м)", value: "680" },
+      { label: "Рабочий ход (мм)", value: "1 500" },
+      { label: "Частота ударов (уд/мин)", value: "25/70" },
+      { label: "Масса ударной части (кг)", value: "40 000" },
+      { label: "Способ подъёма", value: "Один гидравлический цилиндр" },
+      { label: "Длина молота (мм)", value: "8 520" },
+      { label: "Ширина молота (мм)", value: "1 620" },
+      { label: "Высота молота (мм)", value: "1 860" },
+      { label: "Масса молота (кг)", value: "53 000" },
+      { label: "Модель гидростанции", value: "P1200" },
+      { label: "Мощность двигателя (л.с.)", value: "1200" },
+      { label: "Рабочее давление (МПа)", value: "28" },
+      { label: "Расход масла (л/мин)", value: "1 500" },
+      { label: "Объём гидр. масла (л)", value: "2 500" },
+      { label: "Объём топливного бака (л)", value: "800" },
+      { label: "Габариты гидростанции (мм)", value: "5800×2450×2700" },
+      { label: "Масса гидростанции (кг)", value: "16 000" },
+    ],
+  },
+];
 
-const hammerParams1 = [
-  { label: "Энергия удара (кН·м)", values: ["24", "60", "120", "165", "210"] },
-  { label: "Рабочий ход (мм)", values: ["800", "1200", "1500", "1500", "1500"] },
-  { label: "Частота ударов (уд/мин)", values: ["50/100", "40/100", "35/90", "35/90", "30/90"] },
-  { label: "Масса ударной части (кг)", values: ["3 000", "5 000", "8 000", "11 000", "14 000"] },
-  { label: "Способ подъёма", values: ["Подъём одним гидравлическим цилиндром", "", "", "", ""] },
-];
-const hammerDims1 = [
-  { label: "Длина (мм)", values: ["3 800", "5 050", "6 100", "6 700", "6 780"] },
-  { label: "Ширина (мм)", values: ["920", "920", "980", "980", "1 300"] },
-  { label: "Высота (мм)", values: ["1 100", "1 100", "1 250", "1 250", "1 520"] },
-  { label: "Масса (кг)", values: ["5 800", "8 500", "12 000", "16 000", "22 000"] },
-];
-const stationParams1 = [
-  { label: "Модель станции", values: ["V120", "V180", "V260", "V400", "V400"] },
-  { label: "Мощность двигателя (кВт)", values: ["50", "50", "90", "132", "185"] },
-  { label: "Рабочее давление (МПа)", values: ["21", "24", "24", "24", "26"] },
-  { label: "Расход масла (л/мин)", values: ["140", "200", "260", "380", "520"] },
-  { label: "Объём гидравлического масла (л)", values: ["400", "800", "1 200", "1 300", "1 400"] },
-];
-const stationDims1 = [
-  { label: "Габариты (Д×Ш×В), мм", values: ["2600×1500×1950", "2600×1500×1950", "3300×1500×2050", "3300×1500×2050", "3500×1550×2050"] },
-  { label: "Масса (кг)", values: ["3 000", "3 000", "4 200", "4 600", "6 000"] },
-];
+const VariantCard = ({ variant }: { variant: typeof variants[0] }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-const hammerParams2 = [
-  { label: "Энергия удара (кН·м)", values: ["240", "300", "375", "450", "525", "680"] },
-  { label: "Рабочий ход (мм)", values: ["1500", "1500", "1500", "1500", "1500", "1500"] },
-  { label: "Частота ударов (уд/мин)", values: ["30/90", "30/85", "28/85", "25/75", "25/75", "25/70"] },
-  { label: "Масса ударной части (кг)", values: ["16 000", "20 000", "25 000", "30 000", "35 000", "40 000"] },
-  { label: "Способ подъёма", values: ["Подъём одним гидравлическим цилиндром", "", "", "", "", ""] },
-];
-const hammerDims2 = [
-  { label: "Длина (мм)", values: ["7 080", "7 450", "7 900", "7 900", "8 120", "8 520"] },
-  { label: "Ширина (мм)", values: ["1 300", "1 400", "1 400", "1 500", "1 550", "1 620"] },
-  { label: "Высота (мм)", values: ["1 520", "1 450", "1 450", "1 900", "1 900", "1 860"] },
-  { label: "Масса (кг)", values: ["24 000", "31 000", "36 000", "41 000", "47 000", "53 000"] },
-];
-const stationParams2 = [
-  { label: "Модель станции", values: ["V400", "P500", "P600", "P800", "P900", "P1200"] },
-  { label: "Мощность двигателя (л.с.)", values: ["—", "500", "600", "800", "900", "1200"] },
-  { label: "Мощность электродвигателя (кВт)", values: ["200", "—", "—", "—", "—", "—"] },
-  { label: "Рабочее давление (МПа)", values: ["26", "26", "26", "26", "28", "28"] },
-  { label: "Расход масла (л/мин)", values: ["520", "760", "760", "810", "910", "1500"] },
-  { label: "Объём гидравлического масла (л)", values: ["1 400", "1 800", "1 800", "2 000", "2 200", "2 500"] },
-  { label: "Объём топливного бака (л)", values: ["—", "650", "650", "750", "800", "800"] },
-];
-const stationDims2 = [
-  { label: "Габариты (Д×Ш×В), мм", values: ["3500×1550×2050", "4450×1800×2250", "4350×1800×2250", "4550×1800×2400", "4650×1800×2400", "5800×2450×2700"] },
-  { label: "Масса (кг)", values: ["6 000", "7 500", "8 000", "8 500", "12 000", "16 000"] },
-];
-
-interface SectionRows { label: string; values: string[] }
-interface TableSection { title: string; rows: SectionRows[] }
-
-const SpecTable = ({ models, sections }: { models: string[]; sections: TableSection[] }) => {
-  let rowGlobalIdx = 0;
   return (
-    <Card className="border-none shadow-lg">
-      <CardContent className="p-0">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-primary text-white">
-                <th className="text-left py-3 px-6 font-heading font-semibold text-base w-56">Параметр</th>
-                {models.map((m) => (
-                  <th key={m} className="py-3 px-4 font-heading font-semibold text-base text-center">{m}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {sections.map((section, si) => (
-                <>
-                  <tr key={`s${si}`} className="bg-accent/10">
-                    <td colSpan={models.length + 1} className="py-2 px-6 font-heading font-bold text-primary text-sm uppercase tracking-wide">
-                      {section.title}
-                    </td>
-                  </tr>
-                  {section.rows.map((row) => {
-                    const isSpanning = row.values.length > 1 && row.values.slice(1).every((v) => v === "");
-                    const bg = rowGlobalIdx++ % 2 === 0 ? "bg-white" : "bg-gray-50";
-                    return (
-                      <tr key={row.label} className={bg}>
-                        <td className="py-2.5 px-6 text-primary text-base">{row.label}</td>
-                        {isSpanning ? (
-                          <td colSpan={models.length} className="py-2.5 px-6 text-primary text-base text-center italic">
-                            {row.values[0]}
-                          </td>
-                        ) : (
-                          row.values.map((val, vi) => (
-                            <td key={vi} className="py-2.5 px-4 font-semibold text-primary text-base text-center">
-                              {val}
-                            </td>
-                          ))
-                        )}
-                      </tr>
-                    );
-                  })}
-                </>
-              ))}
-            </tbody>
-          </table>
+    <Card className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+      <CardContent className="p-6">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">{variant.name}</h3>
+          <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 font-semibold">
+            {variant.energy}
+          </Badge>
+        </div>
+
+        <div className="space-y-2 mb-4">
+          {variant.specs.map((spec, idx) => (
+            <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-100 last:border-0">
+              <span className="text-sm text-primary/70">{spec.label}</span>
+              <span className="text-sm font-semibold text-primary">{spec.value}</span>
+            </div>
+          ))}
+        </div>
+
+        {isExpanded && (
+          <div className="mt-4 space-y-1 border-t border-gray-100 pt-4">
+            {variant.detailedSpecs.map((spec, idx) => (
+              <div
+                key={idx}
+                className={`flex justify-between items-center py-1.5 px-3 rounded ${idx % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
+              >
+                <span className="text-sm text-primary/80">{spec.label}</span>
+                <span className="text-sm font-semibold text-primary ml-4 text-right">{spec.value}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-4 flex flex-col gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            className="w-full border-accent/40 text-accent hover:bg-accent/10"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
+            {isExpanded ? "Скрыть характеристики" : "Все характеристики"}
+          </Button>
+          <a href="#consultation">
+            <Button className="btn-gradient text-white w-full" size="sm">
+              <Icon name="MessageSquare" size={16} className="mr-2" />
+              Получить консультацию
+            </Button>
+          </a>
         </div>
       </CardContent>
     </Card>
@@ -113,43 +369,19 @@ const SpecTable = ({ models, sections }: { models: string[]; sections: TableSect
 
 const MolotyDonghaoSpecs = () => {
   return (
-    <section id="specs" className="py-10 md:py-14 bg-white">
+    <section id="specs" className="py-10 md:py-14 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto space-y-10">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
             Технические характеристики
           </h2>
-
-          <div className="space-y-3">
-            <h3 className="text-lg md:text-xl font-heading font-bold text-primary flex items-center gap-2">
-              <span className="inline-block w-1.5 h-6 bg-accent rounded-full"></span>
-              Модели DYH-3 — DYH-14
-            </h3>
-            <SpecTable
-              models={group1Models}
-              sections={[
-                { title: "Параметры молота", rows: hammerParams1 },
-                { title: "Габариты молота (без наголовника)", rows: hammerDims1 },
-                { title: "Параметры гидростанции", rows: stationParams1 },
-                { title: "Габариты и масса гидростанции", rows: stationDims1 },
-              ]}
-            />
-          </div>
-
-          <div className="space-y-3">
-            <h3 className="text-lg md:text-xl font-heading font-bold text-primary flex items-center gap-2">
-              <span className="inline-block w-1.5 h-6 bg-accent rounded-full"></span>
-              Модели DYH-16 — DYH-40
-            </h3>
-            <SpecTable
-              models={group2Models}
-              sections={[
-                { title: "Параметры молота", rows: hammerParams2 },
-                { title: "Габариты молота (без наголовника)", rows: hammerDims2 },
-                { title: "Параметры гидростанции", rows: stationParams2 },
-                { title: "Габариты и масса гидростанции", rows: stationDims2 },
-              ]}
-            />
+          <p className="text-center text-primary/60 text-sm mb-10">
+            Серия DYH — 11 моделей с энергией удара от 24 до 680 кН·м
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {variants.map((variant) => (
+              <VariantCard key={variant.name} variant={variant} />
+            ))}
           </div>
         </div>
       </div>
