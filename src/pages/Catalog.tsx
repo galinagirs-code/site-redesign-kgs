@@ -927,7 +927,7 @@ const Catalog = () => {
                           3: "/catalog/machty-kitay"
                         },
                         "pile-hammers": {
-                          0: "/catalog/moloty-donghao",
+                          0: "/catalog/moloty-donghao-dyh",
                           1: "/catalog/moloty-starke-hd",
                           2: "/catalog/moloty-semw",
                           3: "/catalog/moloty-juli",
