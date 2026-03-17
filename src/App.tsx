@@ -26,6 +26,7 @@ import VibropogruzateliEkskavatornye from "./pages/VibropogruzateliEkskavatornye
 import Svaeskusyvateli from "./pages/Svaeskusyvateli";
 import Domkraty from "./pages/Domkraty";
 import MolotyDongHao from "./pages/MolotyDongHao";
+import MolotyDonghao from "./pages/MolotyDonghao";
 import MolotyStarkeHD from "./pages/MolotyStarkeHD";
 import MolotySEMW from "./pages/MolotySEMW";
 import MolotyJuli from "./pages/MolotyJuli";
@@ -107,6 +108,7 @@ const App = () => (
           <Route path="/catalog/svaeskusyvateli-kruglye" element={<SvaeskusyvateliKruglye />} />
           <Route path="/catalog/svaeskusyvateli-kvadratnye" element={<SvaeskusyvateliKvadratnye />} />
           <Route path="/catalog/domkraty-izvlecheniya" element={<DomkratyIzvlecheniya />} />
+          <Route path="/catalog/moloty-donghao-dyh" element={<MolotyDonghao />} />
           <Route path="/contact/seleznev" element={<EmployeeSeleznev />} />
           <Route path="/contact/tapinyuk" element={<EmployeeTapinyuk />} />
           <Route path="/contact/plyukhina" element={<EmployeePlyukhina />} />
