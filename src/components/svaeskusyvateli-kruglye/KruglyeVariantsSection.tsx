@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
 
 const modularSpecs = [
   { modules: 4,  weight: 1600, diameter: "400–600",   excavator: "20–30" },
@@ -31,9 +30,6 @@ const commonSpecs = [
 ];
 
 const KruglyeVariantsSection = () => {
-  const [showAllRows, setShowAllRows] = useState(false);
-  const visibleRows = showAllRows ? modularSpecs : modularSpecs.slice(0, 6);
-
   return (
     <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -45,8 +41,27 @@ const KruglyeVariantsSection = () => {
             Количество модулей подбирается под диаметр сваи
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            {/* Таблица по модулям */}
+          <div className="flex flex-col gap-6 mb-8">
+            {/* 1. Общие параметры — первая */}
+            <Card className="border-2 border-gray-200 shadow-lg overflow-hidden">
+              <div className="bg-primary px-5 py-3">
+                <h3 className="font-heading font-bold text-white text-lg">Общие параметры</h3>
+              </div>
+              <CardContent className="p-0">
+                <table className="w-full text-sm">
+                  <tbody>
+                    {commonSpecs.map((spec, idx) => (
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                        <td className="py-3 px-5 text-primary/80 leading-snug">{spec.label}</td>
+                        <td className="py-3 px-5 font-semibold text-primary whitespace-nowrap">{spec.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </CardContent>
+            </Card>
+
+            {/* 2. Комплектация по модулям — вторая, раскрытая и шире */}
             <Card className="border-2 border-gray-200 shadow-lg overflow-hidden">
               <div className="bg-primary px-5 py-3 flex items-center justify-between">
                 <h3 className="font-heading font-bold text-white text-lg">Комплектация по модулям</h3>
@@ -56,78 +71,33 @@ const KruglyeVariantsSection = () => {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-gray-50 border-b border-gray-200">
-                      <th className="text-left py-2.5 px-4 font-semibold text-primary">Модулей</th>
-                      <th className="text-left py-2.5 px-4 font-semibold text-primary">Вес (кг)</th>
-                      <th className="text-left py-2.5 px-4 font-semibold text-primary">Диаметр (мм)</th>
-                      <th className="text-left py-2.5 px-4 font-semibold text-primary">Экскав. (т)</th>
+                      <th className="text-left py-3 px-5 font-semibold text-primary">Кол-во модулей</th>
+                      <th className="text-left py-3 px-5 font-semibold text-primary">Вес (кг)</th>
+                      <th className="text-left py-3 px-5 font-semibold text-primary">Диаметр сваи (мм)</th>
+                      <th className="text-left py-3 px-5 font-semibold text-primary">Экскаватор (т)</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {visibleRows.map((row, idx) => (
+                    {modularSpecs.map((row, idx) => (
                       <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="py-2 px-4 font-semibold text-primary">{row.modules}</td>
-                        <td className="py-2 px-4 text-primary">{row.weight}</td>
-                        <td className="py-2 px-4 text-primary">{row.diameter}</td>
-                        <td className="py-2 px-4 text-primary">{row.excavator}</td>
+                        <td className="py-3 px-5 font-semibold text-primary">{row.modules}</td>
+                        <td className="py-3 px-5 text-primary">{row.weight}</td>
+                        <td className="py-3 px-5 text-primary">{row.diameter}</td>
+                        <td className="py-3 px-5 text-primary">{row.excavator}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-                <div className="p-3 border-t border-gray-100">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => setShowAllRows(!showAllRows)}
-                    className="w-full"
-                  >
-                    {showAllRows ? (
-                      <><Icon name="ChevronUp" size={16} className="mr-2" />Скрыть</>
-                    ) : (
-                      <><Icon name="ChevronDown" size={16} className="mr-2" />Показать все {modularSpecs.length} строк</>
-                    )}
-                  </Button>
-                </div>
               </CardContent>
             </Card>
-
-            {/* Общие характеристики */}
-            <div className="flex flex-col gap-6">
-              <Card className="border-2 border-gray-200 shadow-lg overflow-hidden">
-                <div className="bg-primary px-5 py-3">
-                  <h3 className="font-heading font-bold text-white text-lg">Общие параметры</h3>
-                </div>
-                <CardContent className="p-0">
-                  <table className="w-full text-sm">
-                    <tbody>
-                      {commonSpecs.map((spec, idx) => (
-                        <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                          <td className="py-2.5 px-4 text-primary/80 leading-snug">{spec.label}</td>
-                          <td className="py-2.5 px-4 font-semibold text-primary whitespace-nowrap">{spec.value}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </CardContent>
-              </Card>
-
-              <a href="#consultation">
-                <Button className="btn-gradient text-white w-full" size="lg">
-                  <Icon name="MessageSquare" size={18} className="mr-2" />
-                  Получить консультацию
-                </Button>
-              </a>
-            </div>
           </div>
 
-          {/* Фото таблицы характеристик */}
-          <div className="mt-4">
-            <p className="text-sm text-primary/50 text-center mb-3">Официальная таблица технических характеристик</p>
-            <img
-              src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/53e68bec-83d9-4595-91c1-09fc8036f385.png"
-              alt="Технические характеристики сваескусывателей для круглых свай"
-              className="w-full rounded-xl shadow-md border border-gray-200"
-            />
-          </div>
+          <a href="#consultation">
+            <Button className="btn-gradient text-white w-full" size="lg">
+              <Icon name="MessageSquare" size={18} className="mr-2" />
+              Получить консультацию
+            </Button>
+          </a>
         </div>
       </div>
     </section>
