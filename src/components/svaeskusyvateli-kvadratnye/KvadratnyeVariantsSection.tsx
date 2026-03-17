@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
 
 const variants = [
   {
@@ -12,8 +11,6 @@ const variants = [
       { label: "Сечение сваи (мм)", value: "250–300" },
       { label: "Общий вес (кг)", value: "700" },
       { label: "Вес экскаватора (т)", value: "≥15" },
-    ],
-    detailedSpecs: [
       { label: "Макс. расход масла (л/мин)", value: "20" },
       { label: "Макс. длина среза за один подъём (мм)", value: "300" },
       { label: "Макс. осевая нагрузка (кН)", value: "300" },
@@ -28,8 +25,6 @@ const variants = [
       { label: "Сечение сваи (мм)", value: "400–550" },
       { label: "Общий вес (кг)", value: "1240" },
       { label: "Вес экскаватора (т)", value: "≥20" },
-    ],
-    detailedSpecs: [
       { label: "Макс. расход масла (л/мин)", value: "20" },
       { label: "Макс. длина среза за один подъём (мм)", value: "300" },
       { label: "Макс. осевая нагрузка (кН)", value: "300" },
@@ -44,8 +39,6 @@ const variants = [
       { label: "Сечение сваи (мм)", value: "550–650" },
       { label: "Общий вес (кг)", value: "1400" },
       { label: "Вес экскаватора (т)", value: "≥20" },
-    ],
-    detailedSpecs: [
       { label: "Макс. расход масла (л/мин)", value: "20" },
       { label: "Макс. длина среза за один подъём (мм)", value: "300" },
       { label: "Макс. осевая нагрузка (кН)", value: "300" },
@@ -56,8 +49,6 @@ const variants = [
 ];
 
 const KvadratnyeVariantsSection = () => {
-  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
-
   return (
     <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -86,39 +77,14 @@ const KvadratnyeVariantsSection = () => {
                         <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
                       </div>
                     ))}
-
-                    {expandedVariant === variant.name && (
-                      <>
-                        {variant.detailedSpecs.map((spec, idx) => (
-                          <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-base text-primary">{spec.label}</span>
-                            <span className="text-base font-semibold text-primary">{spec.value}</span>
-                          </div>
-                        ))}
-                      </>
-                    )}
                   </div>
 
-                  <div className="flex flex-col gap-2 mt-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                      className="w-full"
-                    >
-                      {expandedVariant === variant.name ? (
-                        <><Icon name="ChevronUp" size={16} className="mr-2" />Скрыть характеристики</>
-                      ) : (
-                        <><Icon name="ChevronDown" size={16} className="mr-2" />Подробнее</>
-                      )}
+                  <a href="#consultation" className="block">
+                    <Button className="btn-gradient text-white w-full" size="sm">
+                      <Icon name="MessageSquare" size={16} className="mr-2" />
+                      Получить консультацию
                     </Button>
-                    <a href="#consultation" className="block">
-                      <Button className="btn-gradient text-white w-full" size="sm">
-                        <Icon name="MessageSquare" size={16} className="mr-2" />
-                        Получить консультацию
-                      </Button>
-                    </a>
-                  </div>
+                  </a>
                 </CardContent>
               </Card>
             ))}
