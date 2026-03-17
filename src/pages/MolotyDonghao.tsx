@@ -85,8 +85,8 @@ const MolotyDonghao = () => {
       ]} />
 
       <MolotyDonghaoHero />
-      <MolotyDonghaoDescription />
       <MolotyDonghaoSpecs />
+      <MolotyDonghaoDescription />
       <MolotyDonghaoGallery />
 
       <ConsultationSection />

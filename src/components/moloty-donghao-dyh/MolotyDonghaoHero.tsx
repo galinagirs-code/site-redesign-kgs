@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 const MolotyDonghaoHero = () => {
   return (
@@ -11,22 +12,19 @@ const MolotyDonghaoHero = () => {
               Гидравлические молоты (Китай)
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Гидравлический молот DongHao (серия DYH)
+              Молоты гидравлические DongHao (серия DYH)
             </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Профессиональное оборудование для забивки свай при строительстве мостов, зданий, промышленных и инфраструктурных объектов. Энергия удара 24–680 кН·м, линейка из 11 моделей.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <a href="#description" className="inline-flex items-center px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-lg transition-all text-sm font-medium">
-                Общая информация
-              </a>
-              <a href="#specs" className="inline-flex items-center px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-lg transition-all text-sm font-medium">
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              <a href="#specs" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Технические характеристики
               </a>
-              <a href="#gallery" className="inline-flex items-center px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-lg transition-all text-sm font-medium">
+              <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
+              </a>
+              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
               </a>
-              <a href="#consultation" className="inline-flex items-center px-5 py-2.5 btn-gradient text-white rounded-lg transition-all text-sm font-medium">
+              <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
               </a>
             </div>
@@ -36,34 +34,40 @@ const MolotyDonghaoHero = () => {
 
       <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <p className="text-primary/80 text-base md:text-lg leading-relaxed mb-4">
-                Гидравлический молот DongHao — современная альтернатива дизельным молотам для забивки свай на объектах любой сложности. Обеспечивает высокую энергию удара, точную настройку рабочих параметров и стабильную работу в сложных грунтовых условиях.
-              </p>
-              <p className="text-primary/80 text-base leading-relaxed mb-6">
-                Оборудование работает с круглыми и квадратными железобетонными сваями, стальными H-сваями, шпунтовыми сваями и цементно-песчаными сваями. Питание от гидросистемы базовой машины или отдельной гидростанции DongHao.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "Экологичность — без выхлопных газов",
-                  "Низкий уровень шума ~70 дБ",
-                  "Энергия удара 24–680 кН·м",
-                  "Контроль параметров в реальном времени",
-                  "Адаптация к технике заказчика",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-primary/80">
-                    <span className="text-accent font-bold mt-0.5">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="w-full max-w-md aspect-[4/3] bg-gray-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-200">
-                <div className="text-center px-6">
-                  <div className="text-5xl mb-3">🔨</div>
-                  <p className="text-primary/40 text-sm">Фото оборудования</p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Гидравлический молот DongHao серия DYH
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div className="space-y-4">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
+                  Гидравлический молот DongHao — оборудование для забивки свай при строительстве мостов, зданий, промышленных и инфраструктурных объектов. Это современная альтернатива дизельным молотам с замкнутой гидравлической системой, обеспечивающей стабильную работу и точность регулировки давления и скорости.
+                </p>
+                <p className="text-base md:text-lg text-primary leading-relaxed">
+                  Линейка из 11 моделей серии DYH-3 — DYH-40 с энергией удара от 24 до 680 кН·м позволяет подобрать решение под задачи любого масштаба. Питание от гидросистемы базовой машины или отдельной гидростанции DongHao.
+                </p>
+                <div className="space-y-2 pt-2">
+                  {[
+                    "Экологичность — без выхлопных газов",
+                    "Низкий уровень шума (~70 дБ) для работы в городе",
+                    "Энергия удара 24–680 кН·м, 11 моделей",
+                    "Контроль параметров в реальном времени",
+                    "Адаптация к технике заказчика",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl w-full max-w-md">
+                  <OptimizedImage
+                    src="https://cdn.poehali.dev/files/3cc487f2-582a-4443-9b80-35c5f62afefe.jpg"
+                    alt="Гидравлический молот DongHao серия DYH"
+                    className="w-full h-full object-contain p-6"
+                  />
                 </div>
               </div>
             </div>
