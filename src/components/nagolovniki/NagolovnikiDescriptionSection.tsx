@@ -14,6 +14,38 @@ const NagolovnikiDescriptionSection = () => {
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Package" size={20} className="text-accent" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
+                  Ассортимент
+                </h3>
+              </div>
+              <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
+                Предлагаем изготовление и поставку свайных наголовников для молотов отечественного и зарубежного производства:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "Сварные наголовники",
+                  "Литые наголовники",
+                  "Наголовники для ж/б свай",
+                  "Наголовники для труб",
+                  "Наголовники для электротехнических свай",
+                  "Сварные наголовники для погружения шпунтовых элементов",
+                  "Наголовники для двутавров",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-gray-50 rounded-lg px-4 py-3 border border-gray-100">
+                    <span className="text-accent font-bold text-base mt-0.5 flex-shrink-0">&#10004;</span>
+                    <span className="text-primary text-base">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-none shadow-lg mb-6">
+            <CardContent className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Info" size={20} className="text-accent" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
@@ -95,22 +127,12 @@ const NagolovnikiDescriptionSection = () => {
                 <li>Проверить зазор — не более 5–10 мм</li>
                 <li>Приступить к забивке</li>
               </ol>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Материал амортизирующей вставки:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Древесина — оптимальный выбор</li>
-                    <li>Картон — только кратковременно, для мягких грунтов</li>
-                    <li>Композитные материалы</li>
-                  </ul>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Толщина подкладки:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Стандартные условия — 50–80 мм</li>
-                    <li>Мягкие грунты — 100–150 мм</li>
-                  </ul>
-                </div>
+              <div className="bg-gray-50 rounded-xl p-5">
+                <p className="text-primary font-semibold mb-2 text-base md:text-lg">Толщина амортизирующей подкладки:</p>
+                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                  <li>Стандартные условия — 50–80 мм</li>
+                  <li>Мягкие грунты — 100–150 мм</li>
+                </ul>
               </div>
             </CardContent>
           </Card>
