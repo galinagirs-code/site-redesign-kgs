@@ -10,6 +10,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 import NagolovnikiHeroSection from "@/components/nagolovniki/NagolovnikiHeroSection";
 import NagolovnikiFunctionsSection from "@/components/nagolovniki/NagolovnikiFunctionsSection";
 import NagolovnikiDescriptionSection from "@/components/nagolovniki/NagolovnikiDescriptionSection";
+import NagolovnikiGallerySection from "@/components/nagolovniki/NagolovnikiGallerySection";
 
 const SvajnyeNagolovniki = () => {
   const productSchema = {
@@ -92,6 +93,7 @@ const SvajnyeNagolovniki = () => {
       <NagolovnikiHeroSection />
       <NagolovnikiFunctionsSection />
       <NagolovnikiDescriptionSection />
+      <NagolovnikiGallerySection />
 
       <ConsultationSection />
 
