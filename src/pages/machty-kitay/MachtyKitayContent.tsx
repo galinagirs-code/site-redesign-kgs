@@ -92,14 +92,14 @@ const MachtyKitayContent = () => {
 
             {/* Конструкция */}
             <div className="bg-primary/5 rounded-2xl p-6">
-              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3">Конструкция</h3>
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary mb-3">Конструктивное исполнение</h3>
               <p className="text-base text-primary leading-relaxed mb-4">
-                Мачта представляет собой металлическую конструкцию с направляющими и усиленным оголовком.
+                Мачта представляет собой металлическую конструкцию с направляющими и оголовком.
               </p>
               <p className="text-base text-primary leading-relaxed mb-3">В состав конструкции входят:</p>
               <div className="space-y-2 mb-4">
                 {[
-                  "Мачта повышенной жёсткости",
+                  "Секции мачты",
                   "Опорный узел крепления к базовой машине",
                   "2 гидроцилиндра регулировки наклона",
                   "Гидроцилиндр для подъема и опускания шасси",
