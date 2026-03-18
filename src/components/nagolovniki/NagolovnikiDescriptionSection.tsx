@@ -21,24 +21,24 @@ const NagolovnikiDescriptionSection = () => {
                 </h3>
               </div>
               <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
-                Свайный наголовник — стальной корпус с амортизирующей вставкой, устанавливаемый на оголовок сваи перед началом забивки. Защищает сваю от разрушения при ударах молота и обеспечивает равномерную передачу ударной энергии.
+                Стандартный наголовник состоит из стального корпуса с внутренней полостью под сваю, амортизирующей подушки (обычно из твёрдых пород дерева или специального композитного материала) и системы крепления. Некоторые модели оснащены механизмом центрирования для точной установки на сваю.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Стандартный состав</h4>
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Состав наголовника</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Стальной корпус</li>
+                    <li>Стальной корпус с внутренней полостью под сваю</li>
                     <li>Амортизирующая подушка (дерево или композит)</li>
                     <li>Система крепления к молоту</li>
+                    <li>Механизм центрирования (в ряде моделей)</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Виды по типу сваи</h4>
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Материал вкладыша</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Для квадратных свай</li>
-                    <li>Для круглых свай и труб</li>
-                    <li>Для двутавров</li>
-                    <li>Для шпунтовых элементов</li>
+                    <li>Твёрдые породы дерева — оптимальный выбор</li>
+                    <li>Специальный композитный материал</li>
+                    <li>Картон — только кратковременно</li>
                   </ul>
                 </div>
               </div>

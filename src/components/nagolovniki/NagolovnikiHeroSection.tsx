@@ -43,23 +43,14 @@ const NagolovnikiHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Свайный наголовник — ключевой элемент сваебойного оборудования. Устанавливается между молотом и сваей, защищая её оголовок от разрушения в процессе забивки.
+                  Свайный наголовник — ключевой элемент сваебойного оборудования. Устанавливается между молотом и сваей, защищая оголовок от разрушения в процессе забивки.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  КоперГруппСервис поставляет наголовники для молотов отечественного и зарубежного производства. Изготавливаем под конкретный тип и размер сваи:
+                  Наголовники изготавливаются из высокопрочной стали и оснащаются специальными вкладышами — амортизирующими подушками, которые гасят ударную волну и предотвращают повреждение бетона и арматуры.
                 </p>
-                <div className="space-y-3">
-                  {[
-                    "высокое качество стальных корпусов",
-                    "амортизирующие вставки из проверенных материалов",
-                    "точное соответствие размерам сваи и молота",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                      <span className="text-base md:text-lg text-primary">{item}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                  КоперГруппСервис поставляет наголовники для молотов отечественного и зарубежного производства под конкретный тип и размер сваи.
+                </p>
               </div>
 
               <div className="flex items-center justify-center">
