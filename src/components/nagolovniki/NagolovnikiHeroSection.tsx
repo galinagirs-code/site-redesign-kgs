@@ -16,11 +16,11 @@ const NagolovnikiHeroSection = () => {
               Свайные наголовники
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <a href="#general" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Общая информация
-              </a>
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Выбор и монтаж
+              </a>
+              <a href="#general" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
