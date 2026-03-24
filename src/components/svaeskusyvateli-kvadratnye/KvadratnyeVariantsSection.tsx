@@ -6,9 +6,9 @@ import Icon from "@/components/ui/icon";
 const variants = [
   {
     name: "PB350S",
-    sectionRange: "250–300 мм",
+    sectionRange: "250–350 мм",
     specs: [
-      { label: "Сечение сваи (мм)", value: "250–300" },
+      { label: "Сечение сваи (мм)", value: "250–350" },
       { label: "Общий вес (кг)", value: "700" },
       { label: "Вес экскаватора (т)", value: "≥15" },
       { label: "Макс. расход масла (л/мин)", value: "20" },
