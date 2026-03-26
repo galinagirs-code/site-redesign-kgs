@@ -13,20 +13,8 @@ export const SpecialOfferBanner = () => {
           <CardContent className="p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start mb-4">
-                  <a 
-                    href="https://kgs-special-offer.ru" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Badge className="bg-accent/20 text-accent border-accent/50 text-base md:text-lg px-4 py-2 font-bold">
-                      Специальное предложение
-                    </Badge>
-                  </a>
-                </div>
-                
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-primary mb-4 leading-tight">
-                  Оборудование в наличии
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-4 leading-tight">
+                  Специальное предложение
                 </h3>
                 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-sm md:text-base">
