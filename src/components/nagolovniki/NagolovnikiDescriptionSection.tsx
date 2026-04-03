@@ -7,42 +7,6 @@ const NagolovnikiDescriptionSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
 
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            {[
-              {
-                icon: "Circle",
-                title: "Для круглых свай",
-                description: "Различных диаметров",
-              },
-              {
-                icon: "Square",
-                title: "Для квадратных свай",
-                description: "Сечения от 200×200 до 400×400 мм",
-              },
-              {
-                icon: "Pipette",
-                title: "Для труб",
-                description: "Под конкретный диаметр трубы",
-              },
-              {
-                icon: "SlidersHorizontal",
-                title: "Универсальные",
-                description: "С регулируемым размером",
-              },
-            ].map((type, i) => (
-              <Card key={i} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
-                    <Icon name={type.icon} size={24} className="text-accent" />
-                  </div>
-                  <h3 className="text-lg font-heading font-bold text-primary mb-2">{type.title}</h3>
-                  <p className="text-primary text-base leading-relaxed">{type.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
           <Card className="border-none shadow-lg mb-6">
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
