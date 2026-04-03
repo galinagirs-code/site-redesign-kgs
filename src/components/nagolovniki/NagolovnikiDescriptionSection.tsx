@@ -36,7 +36,7 @@ const functions = [
 
 const NagolovnikiDescriptionSection = () => {
   return (
-    <section className="py-10 md:py-14 bg-white">
+    <section id="general" className="py-10 md:py-14 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto space-y-6">
 
