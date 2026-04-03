@@ -140,7 +140,7 @@ const KvikKaplerVariantsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
-            Технические характеристики
+            Модели квик-каплера
           </h2>
 
           <div className="flex justify-center gap-3 mb-8">
