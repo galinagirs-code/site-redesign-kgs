@@ -40,7 +40,7 @@ const UdlinennayaStrelaHeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">
-              Удлинённая стрела для экскаватора KGS
+              Удлинённая стрела для экскаватора
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>

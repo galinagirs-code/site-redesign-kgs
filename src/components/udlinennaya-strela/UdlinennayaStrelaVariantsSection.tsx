@@ -55,10 +55,7 @@ const UdlinennayaStrelaVariantsSection = () => {
             {variants.map((variant, index) => (
               <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
-                      {variant.name}
-                    </h3>
+                  <div className="flex items-center justify-end mb-4">
                     <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
                       {variant.range}
                     </Badge>
