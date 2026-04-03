@@ -22,11 +22,11 @@ const KvikKaplerDescriptionSection = () => {
                 Быстросъёмное соединение предназначено для быстрой замены навесного оборудования без выхода оператора из кабины. Позволяет существенно сократить время простоев и повысить эффективность работы техники.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
+                <div className="bg-white rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Совместимость</h4>
                   <p className="text-primary text-base md:text-lg">Подходит для экскаваторов различного класса — от 1,5 до 52 тонн. Работает с большинством видов навесного оборудования.</p>
                 </div>
-                <div className="bg-gray-50 rounded-xl p-5">
+                <div className="bg-white rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Эффективность</h4>
                   <p className="text-primary text-base md:text-lg">Сокращает время смены навески в 3–5 раз. Не требуется помощь второго человека — всё управление из кабины.</p>
                 </div>
@@ -73,16 +73,16 @@ const KvikKaplerDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Область применения</h3>
               </div>
-              <p className="text-primary mb-2 text-base font-medium">Квик-каплер широко применяется в:</p>
-              <ul className="list-disc pl-5 space-y-1 text-primary text-base mb-4">
+              <p className="text-primary mb-2 text-base md:text-lg font-medium">Квик-каплер широко применяется в:</p>
+              <ul className="list-disc pl-5 space-y-1 text-primary text-base md:text-lg mb-4">
                 <li>строительстве зданий и сооружений</li>
                 <li>демонтажных работах</li>
                 <li>дорожном строительстве</li>
                 <li>карьерной добыче</li>
                 <li>ЖКХ и коммунальных службах</li>
               </ul>
-              <p className="text-primary mb-2 text-base font-medium">Совместимо с навесным оборудованием:</p>
-              <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+              <p className="text-primary mb-2 text-base md:text-lg font-medium">Совместимо с навесным оборудованием:</p>
+              <ul className="list-disc pl-5 space-y-1 text-primary text-base md:text-lg">
                 <li>ковши различного типа</li>
                 <li>гидромолоты</li>
                 <li>рыхлители</li>

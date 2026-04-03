@@ -22,18 +22,18 @@ const UdlinennayaStrelaDescriptionSection = () => {
                 Удлинённая стрела устанавливается на экскаватор и предназначена для увеличения рабочего радиуса и зоны выполнения работ. Эффективна, когда использование стандартной стрелы затруднено или невозможно.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
+                <div className="bg-white rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Область применения</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <ul className="list-disc pl-5 space-y-1 text-primary text-base md:text-lg">
                     <li>Увеличение рабочего радиуса экскаватора</li>
                     <li>Выполнение работ на удалении от базовой машины</li>
                     <li>Работа в условиях ограниченного доступа</li>
                     <li>Дноуглубительные и мелиоративные работы</li>
                   </ul>
                 </div>
-                <div className="bg-gray-50 rounded-xl p-5">
+                <div className="bg-white rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Совместимость</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <ul className="list-disc pl-5 space-y-1 text-primary text-base md:text-lg">
                     <li>Ковши различного типа</li>
                     <li>Гидромолоты</li>
                     <li>Рыхлители</li>
@@ -89,8 +89,8 @@ const UdlinennayaStrelaDescriptionSection = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base">Учитываемые параметры:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Учитываемые параметры:</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Модель и масса базового экскаватора</li>
                     <li>Требуемый рабочий вылет</li>
                     <li>Масса и тип навесного оборудования</li>
@@ -98,8 +98,8 @@ const UdlinennayaStrelaDescriptionSection = () => {
                   </ul>
                 </div>
                 <div className="bg-white rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base">Преимущества подхода:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Преимущества подхода:</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Идеальное сопряжение с базовой машиной</li>
                     <li>Оптимальная балансировка нагрузок</li>
                     <li>Максимальный срок службы</li>
