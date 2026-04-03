@@ -310,7 +310,7 @@ const JuliVariantsSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="animate-fade-in">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Модели молотов Dongtai Juli
+              Модели молотов Dongtai Juli (серия DD)
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -379,7 +379,7 @@ const JuliVariantsSection = () => {
 
             <div className="bg-primary/5 rounded-2xl p-6 md:p-8 mt-4">
               <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
-                Преимущества дизельных молотов Dongtai Juli DD
+                Преимущества дизельных молотов Dongtai Juli
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {benefits.map((b, idx) => (

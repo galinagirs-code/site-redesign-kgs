@@ -17,7 +17,7 @@ const JuliHeroSection = () => {
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Модели молотов серии DD
+                Модели молотов
               </a>
               <a href="#info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
