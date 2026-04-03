@@ -38,25 +38,6 @@ const MolotyDonghaoDescription = () => {
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Leaf" size={20} className="text-accent" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Ключевые преимущества</h3>
-              </div>
-              <div className="space-y-2">
-                <CheckItem text="Экологичность — не образует выхлопных газов, соответствует современным экологическим требованиям" />
-                <CheckItem text="Низкий уровень шума (~70 дБ) — подходит для работы в городской среде и вблизи жилой застройки" />
-                <CheckItem text="Энергия удара 24–680 кН·м — 11 моделей серии DYH-3 — DYH-40 для задач любого масштаба" />
-                <CheckItem text="Эффективность в плотных грунтах — увеличенный ход поршня обеспечивает стабильное погружение свай" />
-                <CheckItem text="Контроль параметров в реальном времени — регулировка через панель управления или дистанционный контроллер" />
-                <CheckItem text="Адаптация к технике заказчика — установка на крановую или копровую установку, интеграция с базовой машиной" />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border-none shadow-lg">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Target" size={20} className="text-accent" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Типы свай и сферы применения</h3>

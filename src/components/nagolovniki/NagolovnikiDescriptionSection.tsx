@@ -84,7 +84,7 @@ const NagolovnikiDescriptionSection = () => {
                   <Icon name="Target" size={20} className="text-accent" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
-                  Как правильно подобрать
+                  Как правильно подобрать наголовник
                 </h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">

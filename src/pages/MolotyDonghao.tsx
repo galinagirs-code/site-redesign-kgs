@@ -11,6 +11,7 @@ import MolotyDonghaoHero from "@/components/moloty-donghao-dyh/MolotyDonghaoHero
 import MolotyDonghaoDescription from "@/components/moloty-donghao-dyh/MolotyDonghaoDescription";
 import MolotyDonghaoSpecs from "@/components/moloty-donghao-dyh/MolotyDonghaoSpecs";
 import MolotyDonghaoGallery from "@/components/moloty-donghao-dyh/MolotyDonghaoGallery";
+import MolotyDonghaoAdvantages from "@/components/moloty-donghao-dyh/MolotyDonghaoAdvantages";
 
 const MolotyDonghao = () => {
   const productSchema = {
@@ -86,6 +87,7 @@ const MolotyDonghao = () => {
 
       <MolotyDonghaoHero />
       <MolotyDonghaoSpecs />
+      <MolotyDonghaoAdvantages />
       <MolotyDonghaoDescription />
       <MolotyDonghaoGallery />
 
