@@ -61,7 +61,7 @@ const DomkratySpecsSection = () => {
                   <thead>
                     <tr className="bg-primary text-white">
                       <th className="text-left py-3 px-4 md:px-6 font-heading font-semibold text-base">Модель</th>
-                      <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM850</th>
+                      <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM830</th>
                       <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM920</th>
                       <th className="text-left py-3 px-4 md:px-6 font-heading font-semibold text-base">Примечание</th>
                     </tr>

@@ -59,7 +59,7 @@ const DomkratyHeroSection = () => {
               Домкраты для извлечения свай
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Домкраты для извлечения свай (серия PTM)
+              Домкраты для извлечения свай (модель PTM)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
@@ -134,7 +134,7 @@ const DomkratyHeroSection = () => {
                       <thead>
                         <tr className="bg-primary text-white">
                           <th className="text-left py-3 px-4 md:px-6 font-heading font-semibold text-base">Модель</th>
-                          <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM850</th>
+                          <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM830</th>
                           <th className="text-center py-3 px-4 md:px-6 font-heading font-semibold text-base text-accent">PTM920</th>
                           <th className="text-left py-3 px-4 md:px-6 font-heading font-semibold text-base">Примечание</th>
                         </tr>
