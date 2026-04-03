@@ -14,31 +14,21 @@ const KvikKaplerDescriptionSection = () => {
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Shield" size={20} className="text-accent" />
+                  <Icon name="Info" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Надёжность и безопасность</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и применение</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Конструкция разработана с двойной системой фиксации, исключающей самопроизвольное отсоединение навески.
+              <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
+                Быстросъёмное соединение предназначено для быстрой замены навесного оборудования без выхода оператора из кабины. Позволяет существенно сократить время простоев и повысить эффективность работы техники.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Система фиксации:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Двойная система фиксации оборудования</li>
-                    <li>Механическая блокировка + гидравлическая защита</li>
-                    <li>Предохранительный стопорный палец</li>
-                    <li>Исключает самопроизвольное отсоединение навески</li>
-                    <li>Сохраняет работоспособность даже при сбоях гидросистемы</li>
-                  </ul>
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Совместимость</h4>
+                  <p className="text-primary text-base md:text-lg">Подходит для экскаваторов различного класса — от 1,5 до 52 тонн. Работает с большинством видов навесного оборудования.</p>
                 </div>
-                <div className="bg-white rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Конструктивные преимущества:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Высокопрочная износостойкая сталь</li>
-                    <li>Усиленная конструкция для интенсивной эксплуатации</li>
-                    <li>Подходит для работы в тяжёлых условиях: стройка, демонтаж, карьеры</li>
-                  </ul>
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Эффективность</h4>
+                  <p className="text-primary text-base md:text-lg">Сокращает время смены навески в 3–5 раз. Не требуется помощь второго человека — всё управление из кабины.</p>
                 </div>
               </div>
             </CardContent>
@@ -48,29 +38,27 @@ const KvikKaplerDescriptionSection = () => {
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Zap" size={20} className="text-accent" />
+                  <Icon name="ShieldCheck" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Удобство работы</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Надёжность и безопасность</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Квик-каплер позволяет сократить время смены навески в 3–5 раз без выхода оператора из кабины.
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Для оператора:</p>
+                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Система фиксации:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Управление прямо из кабины оператора</li>
-                    <li>Не требуется помощь второго человека</li>
-                    <li>Быстрая установка и снятие оборудования</li>
-                    <li>Снижение нагрузки на оператора</li>
+                    <li>Двойная система фиксации оборудования</li>
+                    <li>Механическая блокировка + гидравлическая защита</li>
+                    <li>Предохранительный стопорный палец</li>
+                    <li>Исключает самопроизвольное отсоединение навески</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Универсальность:</p>
+                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Конструкция:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Подходит для экскаваторов от 1,5 до 52 тонн</li>
-                    <li>Типы P и H — под разные классы машин</li>
-                    <li>Совместима с большинством видов навески</li>
+                    <li>Высокопрочная износостойкая сталь</li>
+                    <li>Усиленная конструкция для интенсивной эксплуатации</li>
+                    <li>Сохраняет работоспособность при сбоях гидросистемы</li>
+                    <li>Подходит для тяжёлых условий: стройка, демонтаж, карьеры</li>
                   </ul>
                 </div>
               </div>
@@ -93,13 +81,13 @@ const KvikKaplerDescriptionSection = () => {
                 <li>карьерной добыче</li>
                 <li>ЖКХ и коммунальных службах</li>
               </ul>
-              <p className="text-primary mb-2 text-base font-medium">Подходит для работы с:</p>
+              <p className="text-primary mb-2 text-base font-medium">Совместимо с навесным оборудованием:</p>
               <ul className="list-disc pl-5 space-y-1 text-primary text-base">
-                <li>ковшами</li>
-                <li>гидромолотами</li>
-                <li>рыхлителями</li>
-                <li>грейферами</li>
-                <li>другим навесным оборудованием</li>
+                <li>ковши различного типа</li>
+                <li>гидромолоты</li>
+                <li>рыхлители</li>
+                <li>грейферы</li>
+                <li>другое навесное оборудование</li>
               </ul>
             </CardContent>
           </Card>
