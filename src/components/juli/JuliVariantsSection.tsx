@@ -310,7 +310,7 @@ const JuliVariantsSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="animate-fade-in">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Модели молотов Dongtai Juli серии DD
+              Модели молотов Dongtai Juli
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

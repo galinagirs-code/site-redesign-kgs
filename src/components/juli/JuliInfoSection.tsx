@@ -14,10 +14,10 @@ const JuliInfoSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Target" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение молотов Dongtai Juli DD</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение молотов Dongtai Juli</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Дизельные штанговые молоты серии DD предназначены для погружения свай различных типов при устройстве фундаментов:
+                Дизельные штанговые молоты предназначены для погружения свай различных типов при устройстве фундаментов:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
