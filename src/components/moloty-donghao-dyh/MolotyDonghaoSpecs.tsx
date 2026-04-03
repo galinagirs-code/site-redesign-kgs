@@ -322,40 +322,37 @@ const VariantCard = ({ variant }: { variant: typeof variants[0] }) => {
           </Badge>
         </div>
 
-        <div className="space-y-2 mb-4">
+        <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
           {variant.specs.map((spec, idx) => (
-            <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-100 last:border-0">
-              <span className="text-sm text-primary/70">{spec.label}</span>
-              <span className="text-sm font-semibold text-primary">{spec.value}</span>
+            <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+              <span className="text-base text-primary flex-1">{spec.label}</span>
+              <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
             </div>
           ))}
+
+          {isExpanded && (
+            <>
+              {variant.detailedSpecs.map((spec, idx) => (
+                <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
+                  <span className="text-base text-primary">{spec.label}</span>
+                  <span className="text-base font-semibold text-primary">{spec.value}</span>
+                </div>
+              ))}
+            </>
+          )}
         </div>
 
-        {isExpanded && (
-          <div className="mt-4 space-y-1 border-t border-gray-100 pt-4">
-            {variant.detailedSpecs.map((spec, idx) => (
-              <div
-                key={idx}
-                className={`flex justify-between items-center py-1.5 px-3 rounded ${idx % 2 === 0 ? "bg-white" : "bg-gray-50"}`}
-              >
-                <span className="text-sm text-primary/80">{spec.label}</span>
-                <span className="text-sm font-semibold text-primary ml-4 text-right">{spec.value}</span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        <div className="mt-4 flex flex-col gap-2">
+        <div className="flex flex-col gap-2 mt-4">
           <Button
             variant="outline"
             size="sm"
-            className="w-full border-accent/40 text-accent hover:bg-accent/10"
+            className="w-full"
             onClick={() => setIsExpanded(!isExpanded)}
           >
             <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
-            {isExpanded ? "Скрыть" : "Подробнее"}
+            {isExpanded ? "Скрыть характеристики" : "Подробнее"}
           </Button>
-          <a href="#consultation">
+          <a href="#consultation" className="block">
             <Button className="btn-gradient text-white w-full" size="sm">
               <Icon name="MessageSquare" size={16} className="mr-2" />
               Получить консультацию
@@ -373,7 +370,7 @@ const MolotyDonghaoSpecs = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
-            Модели молотов
+            Модели молотов DongHao (серия DYH)
           </h2>
           <p className="text-center text-primary/60 text-sm mb-10">
             Серия DYH — 11 моделей с энергией удара от 24 до 680 кН·м

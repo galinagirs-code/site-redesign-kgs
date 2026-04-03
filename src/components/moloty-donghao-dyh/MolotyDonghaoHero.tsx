@@ -36,7 +36,7 @@ const MolotyDonghaoHero = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Гидравлический молот DongHao серия DYH
+              Гидравлический молот DongHao (серия DYH)
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div className="space-y-4">
