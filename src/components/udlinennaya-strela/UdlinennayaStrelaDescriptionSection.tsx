@@ -24,7 +24,7 @@ const UdlinennayaStrelaDescriptionSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Область применения</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Увеличение рабочего радиуса экскаватора</li>
                     <li>Выполнение работ на удалении от базовой машины</li>
                     <li>Работа в условиях ограниченного доступа</li>
@@ -33,7 +33,7 @@ const UdlinennayaStrelaDescriptionSection = () => {
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Совместимость</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Ковши различного типа</li>
                     <li>Гидромолоты</li>
                     <li>Рыхлители</li>
@@ -88,18 +88,18 @@ const UdlinennayaStrelaDescriptionSection = () => {
                 Стрела изготавливается под конкретную модель экскаватора с учётом всех параметров базовой машины.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base">Учитываемые параметры:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Учитываемые параметры:</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Модель и масса базового экскаватора</li>
                     <li>Требуемый рабочий вылет</li>
                     <li>Масса и тип навесного оборудования</li>
                     <li>Условия эксплуатации</li>
                   </ul>
                 </div>
-                <div className="bg-white rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base">Преимущества подхода:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-primary text-base">
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Преимущества подхода:</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Идеальное сопряжение с базовой машиной</li>
                     <li>Оптимальная балансировка нагрузок</li>
                     <li>Максимальный срок службы</li>

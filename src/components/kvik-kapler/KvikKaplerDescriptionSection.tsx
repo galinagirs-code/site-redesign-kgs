@@ -43,7 +43,7 @@ const KvikKaplerDescriptionSection = () => {
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Надёжность и безопасность</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-5">
+                <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Система фиксации:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Двойная система фиксации оборудования</li>
@@ -52,7 +52,7 @@ const KvikKaplerDescriptionSection = () => {
                     <li>Исключает самопроизвольное отсоединение навески</li>
                   </ul>
                 </div>
-                <div className="bg-white rounded-xl p-5">
+                <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Конструкция:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Высокопрочная износостойкая сталь</li>
