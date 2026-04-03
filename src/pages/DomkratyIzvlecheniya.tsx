@@ -10,7 +10,7 @@ import ConsultationSection from "@/components/ConsultationSection";
 import DomkratyHeroSection from "@/components/domkraty-izvlecheniya/DomkratyHeroSection";
 import DomkratyBenefitsSection from "@/components/domkraty-izvlecheniya/DomkratyBenefitsSection";
 import DomkratyDescriptionSection from "@/components/domkraty-izvlecheniya/DomkratyDescriptionSection";
-import DomkratySpecsSection from "@/components/domkraty-izvlecheniya/DomkratySpecsSection";
+import DomkratyGallerySection from "@/components/domkraty-izvlecheniya/DomkratyGallerySection";
 
 const DomkratyIzvlecheniya = () => {
   const productSchema = {
@@ -72,7 +72,7 @@ const DomkratyIzvlecheniya = () => {
       <DomkratyHeroSection />
       <DomkratyBenefitsSection />
       <DomkratyDescriptionSection />
-      <DomkratySpecsSection />
+      <DomkratyGallerySection />
 
       <ConsultationSection />
 
