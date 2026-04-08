@@ -4,7 +4,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 const JuliZYSHeroSection = () => {
   return (
     <>
-      <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90">
+      <section className="relative pt-14 pb-8 md:pt-16 md:pb-10 bg-gradient-to-br from-primary via-primary to-primary/90">
         <div
           className="absolute inset-0 opacity-[0.04]"
           aria-hidden="true"
@@ -39,10 +39,10 @@ const JuliZYSHeroSection = () => {
       <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-10 text-center">
               Сваевдавливающая установка Dongtai Juli (серия ZYS)
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Сваевдавливающая установка Dongtai Juli серии ZYS предназначена для статического вдавливания железобетонных и стальных свай в грунт без ударной нагрузки и вибраций. Безударный метод погружения обеспечивает минимальные вибрации и шум, что особенно важно при работе в городских условиях и вблизи существующих зданий.

@@ -36,9 +36,9 @@ const benefits = [
 
 const JuliZYSBenefitsSection = () => {
   return (
-    <section id="benefits" className="py-10 md:py-16 bg-gray-50">
+    <section id="benefits" className="py-10 md:py-14 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
             Преимущества сваевдавливающих установок (серия ZYS)
           </h2>
