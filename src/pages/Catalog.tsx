@@ -683,7 +683,7 @@ const Catalog = () => {
       title: "Сваевдавливающие установки",
       image: "https://cdn.poehali.dev/files/8274ba00-30ca-4dfc-9bbb-8ecdaf684819.png",
       models: [
-        "Сваевдавливающая установка Dongtai Juli (серия YZS)"
+        "Сваевдавливающая установка Dongtai Juli (серия ZYS)"
       ],
       questions: []
     },
