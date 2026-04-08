@@ -179,6 +179,14 @@ const VibropogruzateliEkskavatornye = () => {
                       <span className="text-primary">Надежная фиксация элементов во время погружения</span>
                     </li>
                   </ul>
+                  <div className="mt-6">
+                    <Link to="/catalog/vibro-cs">
+                      <Button className="btn-gradient text-white">
+                        Подробнее о серии CS
+                        <Icon name="ArrowRight" size={16} className="ml-2" />
+                      </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -318,6 +326,10 @@ const VibropogruzateliEkskavatornye = () => {
                     Модельный ряд
                   </h3>
                   <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                      <Link to="/catalog/vibro-cs" className="text-sm hover:text-accent transition-colors">Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия CS)</Link>
+                    </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Гидравлические экскаваторные вибропогружатели с боковым зажимом (серия SG)</span>
