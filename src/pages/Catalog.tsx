@@ -949,7 +949,7 @@ const Catalog = () => {
                           2: "/catalog/yongan-dzj"
                         },
                         "vibro-excavator": {
-                          0: "/catalog/vibro-sg",
+                          0: "/catalog/vibro-cs",
                           1: "/catalog/vibro-s",
                           2: "/catalog/udlinennaya-strela",
                           3: "/catalog/kvik-kapler"
