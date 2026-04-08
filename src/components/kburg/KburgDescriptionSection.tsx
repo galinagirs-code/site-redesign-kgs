@@ -19,7 +19,7 @@ const KburgDescriptionSection = () => {
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и применение</h3>
               </div>
               <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
-                Копрово-бурильные установки КБУРГ применяются в промышленном и гражданском строительстве. Навесное оборудование устанавливается на любые экскаваторы российского или импортного производства, подходящие по грузовому индексу. Эксплуатация КБУРГ производится в диапазоне температур от −40° до +40° С.
+                Копрово-бурильные установки КБУРГ применяются в промышленном и гражданском строительстве. Навесное оборудование устанавливается на любые экскаваторы российского или импортного производства, подходящие по грузовому индексу.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
@@ -53,7 +53,8 @@ const KburgDescriptionSection = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Сваепогружатели:</p>
+                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Сваепогружатели</p>
+                  <p className="text-primary text-sm mb-3 leading-relaxed">В качестве сваепогружателя используются молоты сваебойные как российского, так и импортного производства:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Молоты дизельные трубчатые — масса ударной части до 3 500 кг</li>
                     <li>Молоты дизельные штанговые — масса ударной части до 4 500 кг</li>
@@ -61,7 +62,8 @@ const KburgDescriptionSection = () => {
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Бурильное оборудование:</p>
+                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Бурильное оборудование</p>
+                  <p className="text-primary text-sm mb-3 leading-relaxed">В качестве бурильного оборудования используются:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Гидравлические вращатели с крутящим моментом до 111 кН×м</li>
                     <li>Диаметр шнека до 1 200 мм</li>
