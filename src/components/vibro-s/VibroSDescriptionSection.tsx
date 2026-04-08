@@ -83,45 +83,24 @@ const VibroSDescriptionSection = () => {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="RefreshCw" size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
+          <Card className="border-none shadow-lg">
+            <CardContent className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="RefreshCw" size={20} className="text-accent" />
                 </div>
-                <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                  <li>Вибропогружатель монтируется на стрелу экскаватора</li>
-                  <li>Подключается к гидравлической системе базовой машины</li>
-                  <li>Зажим фиксирует сваю снизу (нижний захват)</li>
-                  <li>Эксцентрики создают высокочастотные вибрации</li>
-                  <li>Вибрация снижает сопротивление грунта</li>
-                  <li>Свая погружается или извлекается под весом и давлением</li>
-                </ol>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Map" size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Условия эксплуатации</h3>
-                </div>
-                <ul className="list-disc pl-5 space-y-2 text-primary text-base">
-                  <li>Песчаные грунты (рыхлые, водонасыщенные, мелкозернистые)</li>
-                  <li>Глинистые грунты (суглинки, мягкие и полутвёрдые глины)</li>
-                  <li>Болотистые и торфяные грунты</li>
-                  <li>Морские и прибрежные условия</li>
-                  <li>Стеснённые строительные площадки</li>
-                  <li>Работа с удлинённой стрелой экскаватора</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
+              </div>
+              <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                <li>Вибропогружатель монтируется на стрелу экскаватора</li>
+                <li>Подключается к гидравлической системе базовой машины</li>
+                <li>Зажим фиксирует сваю снизу (нижний захват)</li>
+                <li>Эксцентрики создают высокочастотные вибрации</li>
+                <li>Вибрация снижает сопротивление грунта</li>
+                <li>Свая погружается или извлекается под весом и давлением</li>
+              </ol>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
