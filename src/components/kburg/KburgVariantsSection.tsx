@@ -158,7 +158,7 @@ const KburgVariantsSection = () => {
                               className="flex justify-between items-start gap-3 py-1 border-b border-gray-200 last:border-0"
                             >
                               <span className="text-sm text-primary leading-snug">{spec.label}</span>
-                              <span className="text-sm font-semibold text-primary text-right shrink-0 whitespace-nowrap">{spec.value}</span>
+                              <span className={`text-sm font-semibold text-primary text-right ${spec.label === "Базовая машина" ? "whitespace-normal max-w-[55%]" : "shrink-0 whitespace-nowrap"}`}>{spec.value}</span>
                             </div>
                           ))}
                         </>
