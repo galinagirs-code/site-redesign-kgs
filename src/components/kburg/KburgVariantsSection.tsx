@@ -132,18 +132,18 @@ const KburgVariantsSection = () => {
 
                     <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                       {variant.specs.map((spec, idx) => (
-                        <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-sm text-primary">{spec.label}</span>
-                          <span className="text-sm font-semibold text-primary text-right ml-2 whitespace-nowrap">{spec.value}</span>
+                        <div key={idx} className="flex justify-between items-start gap-2 py-1 border-b border-gray-200 last:border-0">
+                          <span className="text-sm text-primary leading-snug">{spec.label}</span>
+                          <span className="text-sm font-semibold text-primary text-right shrink-0">{spec.value}</span>
                         </div>
                       ))}
 
                       {expandedVariant === variant.name && (
                         <>
                           {variant.detailedSpecs.map((spec, idx) => (
-                            <div key={idx} className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0">
-                              <span className="text-sm text-primary">{spec.label}</span>
-                              <span className="text-sm font-semibold text-primary text-right ml-2 whitespace-nowrap">{spec.value}</span>
+                            <div key={idx} className="flex justify-between items-start gap-2 py-1 border-b border-gray-200 last:border-0">
+                              <span className="text-sm text-primary leading-snug">{spec.label}</span>
+                              <span className="text-sm font-semibold text-primary text-right shrink-0">{spec.value}</span>
                             </div>
                           ))}
                         </>
