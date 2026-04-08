@@ -1,310 +1,590 @@
-import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
-type ModelRow = { label: string; values: (string | number)[] };
-
-const modelsLight = ["D8", "D16", "D19", "D25", "D30", "D36", "D46", "D62", "D72", "D80", "D100"];
-const modelsHeavy = ["D128", "D138", "D160", "D180", "D220", "D250", "D260"];
-
-const summaryLight: ModelRow[] = [
-  { label: "Масса поршня (т)", values: [0.8, 1.6, 1.8, 2.5, 3.0, 3.6, 4.6, 6.2, 7.2, 8.0, 10] },
-  { label: "Энергия удара (кДж)", values: ["до 24", "до 53", "до 58", "до 79", "до 95", "до 114", "до 145", "до 219", "до 238", "до 267", "до 334"] },
-  { label: "Частота (уд/мин)", values: ["≥38", "≥36", "≥37", "≥37", "≥37", "≥37", "≥37", "≥36", "≥36", "≥36", "≥36"] },
-  { label: "Масса молота (кг)", values: [1950, 3250, 3550, 5330, 5830, 7800, 8800, 11870, 12670, 16350, 19820] },
-  { label: "Давление удара (кН)", values: [505, 686, 686, 1304, 1304, 1695, 1695, 1800, 1800, 2600, 2600] },
-  { label: "Расход топлива (л/ч)", values: [4, 5.5, 6.6, 8, 10, 11.5, 16, 20, 20, 25, 30] },
+const variants = [
+  {
+    name: "D8",
+    cls: "Лёгкие",
+    specs: [
+      { label: "Масса поршня", value: "0,8 т" },
+      { label: "Максимальная энергия удара", value: "23,9 кДж" },
+      { label: "Частота ударов", value: "≥38 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "800" },
+      { label: "Энергия удара, Дж", value: "≤23 940" },
+      { label: "Частота ударов, 1/мин", value: "≥38" },
+      { label: "Сила удара, кН", value: "505" },
+      { label: "Рекомендуемая масса сваи, кг", value: "2 500" },
+      { label: "Диаметр каната, мм", value: "20" },
+      { label: "Расход топлива, л/ч", value: "4" },
+      { label: "Расход масла, л/ч", value: "1" },
+      { label: "Топливный бак, л", value: "20" },
+      { label: "Масляный бак, л", value: "6" },
+      { label: "Масса молота, кг", value: "1 950" },
+      { label: "Длина молота, мм", value: "4 954" },
+      { label: "Диаметр ударного блока, мм", value: "350" },
+      { label: "Ширина молота, мм", value: "410" },
+      { label: "Ширина направляющих, мм", value: "320" },
+      { label: "Глубина, мм", value: "590" },
+    ],
+  },
+  {
+    name: "D16",
+    cls: "Лёгкие",
+    specs: [
+      { label: "Масса поршня", value: "1,6 т" },
+      { label: "Максимальная энергия удара", value: "53,5 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "1 600" },
+      { label: "Энергия удара, Дж", value: "≤53 460" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "686" },
+      { label: "Рекомендуемая масса сваи, кг", value: "5 000" },
+      { label: "Диаметр каната, мм", value: "20" },
+      { label: "Расход топлива, л/ч", value: "5,5" },
+      { label: "Расход масла, л/ч", value: "1" },
+      { label: "Топливный бак, л", value: "32" },
+      { label: "Масляный бак, л", value: "9" },
+      { label: "Масса молота, кг", value: "3 250" },
+      { label: "Длина молота, мм", value: "4 984" },
+      { label: "Диаметр ударного блока, мм", value: "440" },
+      { label: "Ширина молота, мм", value: "485" },
+      { label: "Ширина направляющих, мм", value: "320" },
+      { label: "Глубина, мм", value: "665" },
+    ],
+  },
+  {
+    name: "D19",
+    cls: "Лёгкие",
+    specs: [
+      { label: "Масса поршня", value: "1,8 т" },
+      { label: "Максимальная энергия удара", value: "57,6 кДж" },
+      { label: "Частота ударов", value: "≥37 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "1 800" },
+      { label: "Энергия удара, Дж", value: "≤57 585" },
+      { label: "Частота ударов, 1/мин", value: "≥37" },
+      { label: "Сила удара, кН", value: "686" },
+      { label: "Рекомендуемая масса сваи, кг", value: "6 000" },
+      { label: "Диаметр каната, мм", value: "20" },
+      { label: "Расход топлива, л/ч", value: "6,6" },
+      { label: "Расход масла, л/ч", value: "1" },
+      { label: "Топливный бак, л", value: "32" },
+      { label: "Масляный бак, л", value: "9" },
+      { label: "Масса молота, кг", value: "3 550" },
+      { label: "Длина молота, мм", value: "4 984" },
+      { label: "Диаметр ударного блока, мм", value: "440" },
+      { label: "Ширина молота, мм", value: "485" },
+      { label: "Ширина направляющих, мм", value: "320" },
+      { label: "Глубина, мм", value: "665" },
+    ],
+  },
+  {
+    name: "D25",
+    cls: "Лёгкие",
+    specs: [
+      { label: "Масса поршня", value: "2,5 т" },
+      { label: "Максимальная энергия удара", value: "78,7 кДж" },
+      { label: "Частота ударов", value: "≥37 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "2 500" },
+      { label: "Энергия удара, Дж", value: "≤78 700" },
+      { label: "Частота ударов, 1/мин", value: "≥37" },
+      { label: "Сила удара, кН", value: "1 304" },
+      { label: "Рекомендуемая масса сваи, кг", value: "7 000" },
+      { label: "Диаметр каната, мм", value: "22" },
+      { label: "Расход топлива, л/ч", value: "8" },
+      { label: "Расход масла, л/ч", value: "1" },
+      { label: "Топливный бак, л", value: "67" },
+      { label: "Масляный бак, л", value: "19" },
+      { label: "Масса молота, кг", value: "5 330" },
+      { label: "Длина молота, мм", value: "5 514" },
+      { label: "Диаметр ударного блока, мм", value: "560" },
+      { label: "Ширина молота, мм", value: "640" },
+      { label: "Ширина направляющих, мм", value: "540" },
+      { label: "Глубина, мм", value: "715" },
+    ],
+  },
+  {
+    name: "D30",
+    cls: "Лёгкие",
+    specs: [
+      { label: "Масса поршня", value: "3,0 т" },
+      { label: "Максимальная энергия удара", value: "94,8 кДж" },
+      { label: "Частота ударов", value: "≥37 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "3 000" },
+      { label: "Энергия удара, Дж", value: "≤94 765" },
+      { label: "Частота ударов, 1/мин", value: "≥37" },
+      { label: "Сила удара, кН", value: "1 304" },
+      { label: "Рекомендуемая масса сваи, кг", value: "8 000" },
+      { label: "Диаметр каната, мм", value: "22" },
+      { label: "Расход топлива, л/ч", value: "10" },
+      { label: "Расход масла, л/ч", value: "1" },
+      { label: "Топливный бак, л", value: "67" },
+      { label: "Масляный бак, л", value: "19" },
+      { label: "Масса молота, кг", value: "5 830" },
+      { label: "Длина молота, мм", value: "5 514" },
+      { label: "Диаметр ударного блока, мм", value: "560" },
+      { label: "Ширина молота, мм", value: "640" },
+      { label: "Ширина направляющих, мм", value: "540" },
+      { label: "Глубина, мм", value: "715" },
+    ],
+  },
+  {
+    name: "D36",
+    cls: "Средние",
+    specs: [
+      { label: "Масса поршня", value: "3,6 т" },
+      { label: "Максимальная энергия удара", value: "113,7 кДж" },
+      { label: "Частота ударов", value: "≥37 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "3 600" },
+      { label: "Энергия удара, Дж", value: "≤113 720" },
+      { label: "Частота ударов, 1/мин", value: "≥37" },
+      { label: "Сила удара, кН", value: "1 695" },
+      { label: "Рекомендуемая масса сваи, кг", value: "10 000" },
+      { label: "Диаметр каната, мм", value: "28" },
+      { label: "Расход топлива, л/ч", value: "11,5" },
+      { label: "Расход масла, л/ч", value: "2" },
+      { label: "Топливный бак, л", value: "89" },
+      { label: "Масляный бак, л", value: "17" },
+      { label: "Масса молота, кг", value: "7 800" },
+      { label: "Длина молота, мм", value: "5 539" },
+      { label: "Диаметр ударного блока, мм", value: "660" },
+      { label: "Ширина молота, мм", value: "785" },
+      { label: "Ширина направляющих, мм", value: "640" },
+      { label: "Глубина, мм", value: "848" },
+    ],
+  },
+  {
+    name: "D46",
+    cls: "Средние",
+    specs: [
+      { label: "Масса поршня", value: "4,6 т" },
+      { label: "Максимальная энергия удара", value: "145,3 кДж" },
+      { label: "Частота ударов", value: "≥37 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "4 600" },
+      { label: "Энергия удара, Дж", value: "≤145 305" },
+      { label: "Частота ударов, 1/мин", value: "≥37" },
+      { label: "Сила удара, кН", value: "1 695" },
+      { label: "Рекомендуемая масса сваи, кг", value: "15 000" },
+      { label: "Диаметр каната, мм", value: "28" },
+      { label: "Расход топлива, л/ч", value: "16" },
+      { label: "Расход масла, л/ч", value: "2" },
+      { label: "Топливный бак, л", value: "89" },
+      { label: "Масляный бак, л", value: "17" },
+      { label: "Масса молота, кг", value: "8 800" },
+      { label: "Длина молота, мм", value: "5 539" },
+      { label: "Диаметр ударного блока, мм", value: "660" },
+      { label: "Ширина молота, мм", value: "785" },
+      { label: "Ширина направляющих, мм", value: "640" },
+      { label: "Глубина, мм", value: "848" },
+    ],
+  },
+  {
+    name: "D62",
+    cls: "Средние",
+    specs: [
+      { label: "Масса поршня", value: "6,2 т" },
+      { label: "Максимальная энергия удара", value: "219,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "6 200" },
+      { label: "Энергия удара, Дж", value: "≤218 960" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "1 800" },
+      { label: "Рекомендуемая масса сваи, кг", value: "25 000" },
+      { label: "Диаметр каната, мм", value: "28" },
+      { label: "Расход топлива, л/ч", value: "20" },
+      { label: "Расход масла, л/ч", value: "2,3" },
+      { label: "Топливный бак, л", value: "98" },
+      { label: "Масляный бак, л", value: "31,5" },
+      { label: "Масса молота, кг", value: "11 870" },
+      { label: "Длина молота, мм", value: "6 146" },
+      { label: "Диаметр ударного блока, мм", value: "710" },
+      { label: "Ширина молота, мм", value: "800" },
+      { label: "Ширина направляющих, мм", value: "800" },
+      { label: "Глубина, мм", value: "970" },
+    ],
+  },
+  {
+    name: "D72",
+    cls: "Средние",
+    specs: [
+      { label: "Масса поршня", value: "7,2 т" },
+      { label: "Максимальная энергия удара", value: "238,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "7 200" },
+      { label: "Энергия удара, Дж", value: "≤238 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "1 800" },
+      { label: "Рекомендуемая масса сваи, кг", value: "26 000" },
+      { label: "Диаметр каната, мм", value: "28" },
+      { label: "Расход топлива, л/ч", value: "20" },
+      { label: "Расход масла, л/ч", value: "2,3" },
+      { label: "Топливный бак, л", value: "98" },
+      { label: "Масляный бак, л", value: "31,5" },
+      { label: "Масса молота, кг", value: "12 670" },
+      { label: "Длина молота, мм", value: "6 146" },
+      { label: "Диаметр ударного блока, мм", value: "710" },
+      { label: "Ширина молота, мм", value: "800" },
+      { label: "Ширина направляющих, мм", value: "800" },
+      { label: "Глубина, мм", value: "970" },
+    ],
+  },
+  {
+    name: "D80",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "8,0 т" },
+      { label: "Максимальная энергия удара", value: "266,8 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "8 000" },
+      { label: "Энергия удара, Дж", value: "≤266 830" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "2 600" },
+      { label: "Рекомендуемая масса сваи, кг", value: "30 000" },
+      { label: "Диаметр каната, мм", value: "30" },
+      { label: "Расход топлива, л/ч", value: "25" },
+      { label: "Расход масла, л/ч", value: "2,9" },
+      { label: "Топливный бак, л", value: "155" },
+      { label: "Масляный бак, л", value: "32" },
+      { label: "Масса молота, кг", value: "16 350" },
+      { label: "Длина молота, мм", value: "6 454" },
+      { label: "Диаметр ударного блока, мм", value: "820" },
+      { label: "Ширина молота, мм", value: "890" },
+      { label: "Ширина направляющих, мм", value: "800" },
+      { label: "Глубина, мм", value: "1 110" },
+    ],
+  },
+  {
+    name: "D100",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "10,0 т" },
+      { label: "Максимальная энергия удара", value: "333,5 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "10 000" },
+      { label: "Энергия удара, Дж", value: "≤333 540" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "2 600" },
+      { label: "Рекомендуемая масса сваи, кг", value: "40 000" },
+      { label: "Диаметр каната, мм", value: "30" },
+      { label: "Расход топлива, л/ч", value: "30" },
+      { label: "Расход масла, л/ч", value: "2,9" },
+      { label: "Топливный бак, л", value: "155" },
+      { label: "Масляный бак, л", value: "32" },
+      { label: "Масса молота, кг", value: "19 820" },
+      { label: "Длина молота, мм", value: "6 612" },
+      { label: "Диаметр ударного блока, мм", value: "820" },
+      { label: "Ширина молота, мм", value: "890" },
+      { label: "Ширина направляющих, мм", value: "800" },
+      { label: "Глубина, мм", value: "1 110" },
+    ],
+  },
+  {
+    name: "D128",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "12,8 т" },
+      { label: "Максимальная энергия удара", value: "426,5 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "12 800" },
+      { label: "Энергия удара, Дж", value: "≤426 500" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "3 600" },
+      { label: "Диаметр каната, мм", value: "Ø32" },
+      { label: "Расход топлива, л/ч", value: "36,6" },
+      { label: "Расход масла, л/ч", value: "2,9" },
+      { label: "Топливный бак, л", value: "200" },
+      { label: "Масляный бак, л", value: "28,6" },
+      { label: "Масса молота, кг", value: "26 300" },
+      { label: "Длина молота, мм", value: "7 600" },
+      { label: "Диаметр ударного блока, мм", value: "960" },
+      { label: "Общая ширина, мм", value: "1 200" },
+      { label: "Ширина молота, мм", value: "1 040" },
+      { label: "Ширина направляющих, мм", value: "910" },
+      { label: "Расстояние центр–край, мм", value: "625" },
+      { label: "Мин. высота установки, мм", value: "795" },
+      { label: "Шаг направляющих", value: "600×102" },
+    ],
+  },
+  {
+    name: "D138",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "13,8 т" },
+      { label: "Максимальная энергия удара", value: "459,8 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "13 800" },
+      { label: "Энергия удара, Дж", value: "≤459 800" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "3 900" },
+      { label: "Диаметр каната, мм", value: "Ø32" },
+      { label: "Расход топлива, л/ч", value: "40,5" },
+      { label: "Расход масла, л/ч", value: "2,9" },
+      { label: "Топливный бак, л", value: "200" },
+      { label: "Масляный бак, л", value: "28,6" },
+      { label: "Масса молота, кг", value: "27 300" },
+      { label: "Длина молота, мм", value: "7 600" },
+      { label: "Диаметр ударного блока, мм", value: "960" },
+      { label: "Общая ширина, мм", value: "1 200" },
+      { label: "Ширина молота, мм", value: "1 040" },
+      { label: "Ширина направляющих, мм", value: "910" },
+      { label: "Расстояние центр–край, мм", value: "625" },
+      { label: "Мин. высота установки, мм", value: "795" },
+      { label: "Шаг направляющих", value: "600×102" },
+    ],
+  },
+  {
+    name: "D160",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "16,0 т" },
+      { label: "Максимальная энергия удара", value: "533,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "16 000" },
+      { label: "Энергия удара, Дж", value: "≤533 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "4 500" },
+      { label: "Диаметр каната, мм", value: "Ø37" },
+      { label: "Расход топлива, л/ч", value: "46" },
+      { label: "Расход масла, л/ч", value: "4,5" },
+      { label: "Топливный бак, л", value: "240" },
+      { label: "Масляный бак, л", value: "40,3" },
+      { label: "Масса молота, кг", value: "35 000" },
+      { label: "Длина молота, мм", value: "8 020" },
+      { label: "Диаметр ударного блока, мм", value: "1 070" },
+      { label: "Общая ширина, мм", value: "1 400" },
+      { label: "Ширина молота, мм", value: "1 160" },
+      { label: "Ширина направляющих, мм", value: "1 020" },
+      { label: "Расстояние центр–край, мм", value: "700" },
+    ],
+  },
+  {
+    name: "D180",
+    cls: "Тяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "18,0 т" },
+      { label: "Максимальная энергия удара", value: "590,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "18 000" },
+      { label: "Энергия удара, Дж", value: "≤590 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "5 000" },
+      { label: "Диаметр каната, мм", value: "Ø37" },
+      { label: "Расход топлива, л/ч", value: "54" },
+      { label: "Расход масла, л/ч", value: "4,5" },
+      { label: "Топливный бак, л", value: "240" },
+      { label: "Масляный бак, л", value: "40,3" },
+      { label: "Масса молота, кг", value: "37 500" },
+      { label: "Длина молота, мм", value: "8 150" },
+      { label: "Диаметр ударного блока, мм", value: "1 070" },
+      { label: "Общая ширина, мм", value: "1 400" },
+      { label: "Ширина молота, мм", value: "1 160" },
+      { label: "Ширина направляющих, мм", value: "1 020" },
+      { label: "Расстояние центр–край, мм", value: "700" },
+    ],
+  },
+  {
+    name: "D220",
+    cls: "Сверхтяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "22,0 т" },
+      { label: "Максимальная энергия удара", value: "733,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "22 000" },
+      { label: "Энергия удара, Дж", value: "≤733 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "6 200" },
+      { label: "Диаметр каната, мм", value: "Ø42" },
+      { label: "Расход топлива, л/ч", value: "70" },
+      { label: "Расход масла, л/ч", value: "6,5" },
+      { label: "Топливный бак, л", value: "360" },
+      { label: "Масляный бак, л", value: "100" },
+      { label: "Масса молота, кг", value: "45 400" },
+      { label: "Длина молота, мм", value: "7 900" },
+      { label: "Диаметр ударного блока, мм", value: "1 200" },
+      { label: "Общая ширина, мм", value: "1 480" },
+      { label: "Ширина молота, мм", value: "1 300" },
+      { label: "Ширина направляющих, мм", value: "1 100" },
+      { label: "Расстояние центр–край, мм", value: "820" },
+    ],
+  },
+  {
+    name: "D250",
+    cls: "Сверхтяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "25,0 т" },
+      { label: "Максимальная энергия удара", value: "833,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "25 000" },
+      { label: "Энергия удара, Дж", value: "≤833 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "7 000" },
+      { label: "Диаметр каната, мм", value: "Ø42" },
+      { label: "Расход топлива, л/ч", value: "80" },
+      { label: "Расход масла, л/ч", value: "6,5" },
+      { label: "Топливный бак, л", value: "360" },
+      { label: "Масляный бак, л", value: "100" },
+      { label: "Масса молота, кг", value: "49 000" },
+      { label: "Длина молота, мм", value: "8 020" },
+      { label: "Диаметр ударного блока, мм", value: "1 200" },
+      { label: "Общая ширина, мм", value: "1 480" },
+      { label: "Ширина молота, мм", value: "1 300" },
+      { label: "Ширина направляющих, мм", value: "1 100" },
+      { label: "Расстояние центр–край, мм", value: "820" },
+    ],
+  },
+  {
+    name: "D260",
+    cls: "Сверхтяжёлые",
+    specs: [
+      { label: "Масса поршня", value: "26,0 т" },
+      { label: "Максимальная энергия удара", value: "866,0 кДж" },
+      { label: "Частота ударов", value: "≥36 уд/мин" },
+    ],
+    detailedSpecs: [
+      { label: "Масса поршня, кг", value: "26 000" },
+      { label: "Энергия удара, Дж", value: "≤866 000" },
+      { label: "Частота ударов, 1/мин", value: "≥36" },
+      { label: "Сила удара, кН", value: "7 000" },
+      { label: "Диаметр каната, мм", value: "Ø42" },
+      { label: "Расход топлива, л/ч", value: "85" },
+      { label: "Расход масла, л/ч", value: "6,5" },
+      { label: "Топливный бак, л", value: "360" },
+      { label: "Масляный бак, л", value: "100" },
+      { label: "Масса молота, кг", value: "51 500" },
+      { label: "Длина молота, мм", value: "8 020" },
+      { label: "Диаметр ударного блока, мм", value: "1 200" },
+      { label: "Общая ширина, мм", value: "1 480" },
+      { label: "Ширина молота, мм", value: "1 300" },
+      { label: "Ширина направляющих, мм", value: "1 100" },
+      { label: "Расстояние центр–край, мм", value: "820" },
+    ],
+  },
 ];
 
-const summaryHeavy: ModelRow[] = [
-  { label: "Масса поршня (т)", values: [12.8, 13.8, 16, 18, 22, 25, 26] },
-  { label: "Энергия удара (кДж)", values: ["~400–430", "~450", "~500–530", "384–610", "~700+", "~830", "550–866"] },
-  { label: "Частота (уд/мин)", values: ["~36–45", "~36–45", "~36–45", "36–46", "~36–45", "~36–45", "36–45"] },
-  { label: "Масса молота (кг)", values: ["~26000", "~28000", "~30000+", "~34000", "~40000+", "~45000+", "~53000"] },
-  { label: "Расход топлива (л/ч)", values: ["~35–40", "~40", "~46", "~54", "~70", "~80", "~85"] },
-];
-
-const detailGroups: { title: string; rows: ModelRow[] }[] = [
-  {
-    title: "Основные параметры",
-    rows: [
-      { label: "Масса поршня, кг", values: [800, 1600, 1800, 2500, 3000, 3600, 4600, 6200, 7200, 8000, 10000] },
-      { label: "Энергия удара, Дж", values: ["≤23940", "≤53460", "≤57585", "≤78700", "≤94765", "≤113720", "≤145305", "≤218960", "≤238000", "≤266830", "≤333540"] },
-      { label: "Частота ударов, 1/мин", values: ["≥38", "≥36", "≥37", "≥37", "≥37", "≥37", "≥37", "≥36", "≥36", "≥36", "≥36"] },
-      { label: "Сила удара, кН", values: [505, 686, 686, 1304, 1304, 1695, 1695, 1800, 1800, 2600, 2600] },
-    ],
-  },
-  {
-    title: "Масса сваи и канат",
-    rows: [
-      { label: "Рекомендуемая масса сваи, кг", values: [2500, 5000, 6000, 7000, 8000, 10000, 15000, 25000, 26000, 30000, 40000] },
-      { label: "Диаметр каната, мм", values: [20, 20, 20, 22, 22, 28, 28, 28, 28, 30, 30] },
-    ],
-  },
-  {
-    title: "Расход топлива и масла",
-    rows: [
-      { label: "Расход топлива, л/ч", values: [4, 5.5, 6.6, 8, 10, 11.5, 16, 20, 20, 25, 30] },
-      { label: "Расход масла, л/ч", values: [1, 1, 1, 1, 1, 2, 2, 2.3, 2.3, 2.9, 2.9] },
-      { label: "Топливный бак, л", values: [20, 32, 32, 67, 67, 89, 89, 98, 98, 155, 155] },
-      { label: "Масляный бак, л", values: [6, 9, 9, 19, 19, 17, 17, 31.5, 31.5, 32, 32] },
-    ],
-  },
-  {
-    title: "Масса компонентов",
-    rows: [
-      { label: "Масса молота, кг", values: [1950, 3250, 3550, 5330, 5830, 7800, 8800, 11870, 12670, 16350, 19820] },
-      { label: "Подъёмное устройство, кг", values: [100, 100, 100, 180, 180, 400, 400, 400, 400, 750, 750] },
-      { label: "Транспортная скоба, кг", values: [11, 11, 11, 20, 20, 31.5, 31.5, 72, 72, 135, 135] },
-      { label: "Наголовник, кг", values: [15, 15, 15, 23, 23, 25, 25, 34, 34, 220, 220] },
-      { label: "Инструмент, кг", values: [75, 75, 75, 100, 100, 125, 125, 125, 125, 125, 125] },
-    ],
-  },
-  {
-    title: "Габаритные размеры",
-    rows: [
-      { label: "Длина молота, мм", values: [4954, 4984, 4984, 5514, 5514, 5539, 5539, 6146, 6146, 6454, 6612] },
-      { label: "Диаметр ударного блока, мм", values: [350, 440, 440, 560, 560, 660, 660, 710, 710, 820, 820] },
-      { label: "Ширина молота, мм", values: [410, 485, 485, 640, 640, 785, 785, 800, 800, 890, 890] },
-      { label: "Ширина направляющих, мм", values: [320, 320, 320, 540, 540, 640, 640, 800, 800, 800, 800] },
-      { label: "Глубина, мм", values: [590, 665, 665, 715, 715, 848, 848, 970, 970, 1110, 1110] },
-    ],
-  },
-];
-
-const detailGroupsHeavy: { title: string; rows: ModelRow[] }[] = [
-  {
-    title: "Основные параметры",
-    rows: [
-      { label: "Масса поршня, кг", values: [12800, 13800, 16000, 18000, 22000, 25000, 26000] },
-      { label: "Энергия удара, Дж", values: ["≤426500", "≤459800", "≤533000", "≤590000", "≤733000", "≤833000", "≤866000"] },
-      { label: "Частота ударов, 1/мин", values: ["≥36", "≥36", "≥36", "≥36", "≥36", "≥36", "≥36"] },
-      { label: "Сила удара, кН", values: [3600, 3900, 4500, 5000, 6200, 7000, 7000] },
-      { label: "Диаметр каната, мм", values: ["Ø32", "Ø32", "Ø37", "Ø37", "Ø42", "Ø42", "Ø42"] },
-    ],
-  },
-  {
-    title: "Расход топлива и масла",
-    rows: [
-      { label: "Расход топлива, л/ч", values: [36.6, 40.5, 46, 54, 70, 80, 85] },
-      { label: "Расход масла, л/ч", values: [2.9, 2.9, 4.5, 4.5, 6.5, 6.5, 6.5] },
-      { label: "Топливный бак, л", values: [200, 200, 240, 240, 360, 360, 360] },
-      { label: "Масляный бак, л", values: [28.6, 28.6, 40.3, 40.3, 100, 100, 100] },
-    ],
-  },
-  {
-    title: "Масса компонентов",
-    rows: [
-      { label: "Масса молота, кг", values: [26300, 27300, 35000, 37500, 45400, 49000, 51500] },
-      { label: "Подъёмное устройство, кг", values: [770, 770, 1700, 1700, 2400, 2400, 2400] },
-      { label: "Транспортная скоба, кг", values: [950, 950, 950, 950, 950, 950, 950] },
-      { label: "Инструмент, кг", values: [125, 125, 125, 125, 125, 125, 125] },
-    ],
-  },
-  {
-    title: "Габаритные размеры",
-    rows: [
-      { label: "Длина молота, мм", values: [7600, 7600, 8020, 8150, 7900, 8020, 8020] },
-      { label: "Диаметр ударного блока, мм", values: [960, 960, 1070, 1070, 1200, 1200, 1200] },
-      { label: "Общая ширина, мм", values: [1200, 1200, 1400, 1400, 1480, 1480, 1480] },
-      { label: "Ширина молота, мм", values: [1040, 1040, 1160, 1160, 1300, 1300, 1300] },
-      { label: "Ширина направляющих, мм", values: [910, 910, 1020, 1020, 1100, 1100, 1100] },
-      { label: "Расстояние центр–край, мм", values: [625, 625, 700, 700, 820, 820, 820] },
-      { label: "Центр молота – центр направляющих, мм", values: [420, 420, 465, 465, 500, 500, 500] },
-      { label: "Мин. высота установки, мм", values: [795, 795, "—", "—", "—", "—", "—"] },
-      { label: "Шаг направляющих", values: ["600×102", "600×102", "—", "—", "—", "—", "—"] },
-    ],
-  },
-];
-
-function SpecTable({ models, rows }: { models: string[]; rows: ModelRow[] }) {
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm border-collapse">
-        <thead>
-          <tr className="bg-primary text-white">
-            <th className="text-left py-3 px-4 font-heading font-semibold min-w-[200px] border-r border-white/10">
-              Параметр
-            </th>
-            {models.map((m) => (
-              <th key={m} className="text-center py-3 px-3 font-heading font-semibold text-accent whitespace-nowrap border-r border-white/10 last:border-0">
-                {m}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr key={row.label} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-              <td className="py-2.5 px-4 text-primary border-r border-gray-200 font-medium">{row.label}</td>
-              {row.values.map((val, j) => (
-                <td key={j} className="py-2.5 px-3 text-center font-semibold text-primary border-r border-gray-100 last:border-0 whitespace-nowrap">
-                  {val}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
+const clsColors: Record<string, string> = {
+  "Лёгкие": "bg-blue-50 border-blue-200 text-blue-700",
+  "Средние": "bg-green-50 border-green-200 text-green-700",
+  "Тяжёлые": "bg-orange-50 border-orange-200 text-orange-700",
+  "Сверхтяжёлые": "bg-red-50 border-red-200 text-red-700",
+};
 
 const SemwDVariantsSection = () => {
-  const [activeTab, setActiveTab] = useState<"light" | "heavy">("light");
-  const [showDetail, setShowDetail] = useState(false);
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   return (
     <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Технические характеристики серии D
+            Модели серии D
           </h2>
 
-          {/* Class info */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {[
-              { cls: "Лёгкие", range: "D8–D30", use: "Малоэтажное строительство", color: "bg-blue-50 border-blue-200" },
-              { cls: "Средние", range: "D36–D62", use: "Универсальные", color: "bg-green-50 border-green-200" },
-              { cls: "Тяжёлые", range: "D80–D180", use: "Мосты, порты", color: "bg-orange-50 border-orange-200" },
-              { cls: "Сверхтяжёлые", range: "D220+", use: "Специальные проекты", color: "bg-red-50 border-red-200" },
-            ].map((item) => (
-              <Card key={item.cls} className={`border-2 ${item.color}`}>
-                <CardContent className="p-4 text-center">
-                  <div className="font-heading font-bold text-primary text-base mb-1">{item.cls}</div>
-                  <div className="font-heading font-bold text-accent text-lg mb-1">{item.range}</div>
-                  <div className="text-primary text-sm">{item.use}</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {variants.map((variant) => (
+              <Card
+                key={variant.name}
+                className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
+                      {variant.name}
+                    </h3>
+                    <Badge
+                      variant="outline"
+                      className={`border ${clsColors[variant.cls]}`}
+                    >
+                      {variant.cls}
+                    </Badge>
+                  </div>
+
+                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                    {variant.specs.map((spec, idx) => (
+                      <div
+                        key={idx}
+                        className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0"
+                      >
+                        <span className="text-base text-primary flex-1">{spec.label}</span>
+                        <span className="text-base font-semibold text-primary text-right ml-4">
+                          {spec.value}
+                        </span>
+                      </div>
+                    ))}
+
+                    {expandedVariant === variant.name &&
+                      variant.detailedSpecs.map((spec, idx) => (
+                        <div
+                          key={idx}
+                          className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0"
+                        >
+                          <span className="text-base text-primary">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary">{spec.value}</span>
+                        </div>
+                      ))}
+                  </div>
+
+                  <button
+                    onClick={() =>
+                      setExpandedVariant(expandedVariant === variant.name ? null : variant.name)
+                    }
+                    className="w-full flex items-center justify-center gap-2 py-2 text-accent hover:text-accent/80 font-medium text-sm transition-colors"
+                  >
+                    <Icon
+                      name={expandedVariant === variant.name ? "ChevronUp" : "ChevronDown"}
+                      size={16}
+                    />
+                    {expandedVariant === variant.name
+                      ? "Скрыть характеристики"
+                      : "Все характеристики"}
+                  </button>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          {/* Tabs */}
-          <div className="flex gap-2 mb-6">
-            <button
-              onClick={() => setActiveTab("light")}
-              className={`px-6 py-2.5 rounded-lg font-heading font-semibold text-sm transition-all ${activeTab === "light" ? "bg-primary text-white shadow-md" : "bg-gray-100 text-primary hover:bg-gray-200"}`}
-            >
-              Серия D8–D100
-            </button>
-            <button
-              onClick={() => setActiveTab("heavy")}
-              className={`px-6 py-2.5 rounded-lg font-heading font-semibold text-sm transition-all ${activeTab === "heavy" ? "bg-primary text-white shadow-md" : "bg-gray-100 text-primary hover:bg-gray-200"}`}
-            >
-              Серия D128–D260
-            </button>
-          </div>
-
-          {/* Summary table */}
-          {activeTab === "light" && (
-            <>
-              <Card className="border-2 border-gray-200 mb-6 overflow-hidden">
-                <div className="px-5 py-3 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-                  <h3 className="font-heading font-bold text-primary">Сводная таблица D8–D100</h3>
-                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">лёгкие и средние</Badge>
-                </div>
-                <SpecTable models={modelsLight} rows={summaryLight} />
-              </Card>
-
-              <button
-                onClick={() => setShowDetail(!showDetail)}
-                className="flex items-center gap-2 text-accent hover:text-accent/80 font-medium mb-6 transition-colors"
-              >
-                <Icon name={showDetail ? "ChevronUp" : "ChevronDown"} size={18} />
-                {showDetail ? "Скрыть детальные таблицы" : "Показать детальные таблицы"}
-              </button>
-
-              {showDetail && (
-                <div className="space-y-6">
-                  {detailGroups.map((group) => (
-                    <Card key={group.title} className="border-2 border-gray-200 overflow-hidden">
-                      <div className="px-5 py-3 bg-gray-50 border-b border-gray-200">
-                        <h3 className="font-heading font-bold text-primary">{group.title}</h3>
-                      </div>
-                      <SpecTable models={modelsLight} rows={group.rows} />
-                    </Card>
-                  ))}
-                </div>
-              )}
-            </>
-          )}
-
-          {activeTab === "heavy" && (
-            <>
-              <Card className="border-2 border-gray-200 mb-6 overflow-hidden">
-                <div className="px-5 py-3 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
-                  <h3 className="font-heading font-bold text-primary">Сводная таблица D128–D260</h3>
-                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">тяжёлые и сверхтяжёлые</Badge>
-                </div>
-                <SpecTable models={modelsHeavy} rows={summaryHeavy} />
-              </Card>
-
-              <button
-                onClick={() => setShowDetail(!showDetail)}
-                className="flex items-center gap-2 text-accent hover:text-accent/80 font-medium mb-6 transition-colors"
-              >
-                <Icon name={showDetail ? "ChevronUp" : "ChevronDown"} size={18} />
-                {showDetail ? "Скрыть детальные таблицы" : "Показать детальные таблицы"}
-              </button>
-
-              {showDetail && (
-                <div className="space-y-6">
-                  {detailGroupsHeavy.map((group) => (
-                    <Card key={group.title} className="border-2 border-gray-200 overflow-hidden">
-                      <div className="px-5 py-3 bg-gray-50 border-b border-gray-200">
-                        <h3 className="font-heading font-bold text-primary">{group.title}</h3>
-                      </div>
-                      <SpecTable models={modelsHeavy} rows={group.rows} />
-                    </Card>
-                  ))}
-
-                  {/* D300/D400 */}
-                  <Card className="border-2 border-gray-200 overflow-hidden">
-                    <div className="px-5 py-3 bg-gray-50 border-b border-gray-200">
-                      <h3 className="font-heading font-bold text-primary">Сверхтяжёлые модели D300–D400</h3>
-                    </div>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm border-collapse">
-                        <thead>
-                          <tr className="bg-primary text-white">
-                            <th className="text-left py-3 px-4 font-heading font-semibold border-r border-white/10">Параметр</th>
-                            <th className="text-center py-3 px-4 font-heading text-accent border-r border-white/10">D300</th>
-                            <th className="text-center py-3 px-4 font-heading text-accent">D400</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {[
-                            { label: "Масса поршня, кг", vals: ["30 000", "40 000"] },
-                            { label: "Энергия удара, Дж", vals: ["~640 000–1 000 000", "~850 000–1 300 000"] },
-                            { label: "Масса молота, кг", vals: ["~59 500", "~79 500"] },
-                          ].map((row, i) => (
-                            <tr key={row.label} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                              <td className="py-2.5 px-4 text-primary border-r border-gray-200 font-medium">{row.label}</td>
-                              {row.vals.map((v, j) => (
-                                <td key={j} className="py-2.5 px-4 text-center font-semibold text-primary border-r border-gray-100 last:border-0">{v}</td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </Card>
-                </div>
-              )}
-            </>
-          )}
-
-          {/* Note */}
-          <Card className="border-2 border-amber-200 bg-amber-50 mt-6">
+          <Card className="border-2 border-amber-200 bg-amber-50">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
                 <Icon name="Lightbulb" size={20} className="text-amber-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-heading font-bold text-primary mb-2">Как читать характеристики</p>
                   <ul className="space-y-1.5 text-primary text-sm">
-                    <li><strong>Масса поршня ≠ масса молота.</strong> Поршень — это энергия. Молот — вся конструкция. Например, D80: поршень 8 т, но весь молот ~16–17 т.</li>
+                    <li><strong>Масса поршня ≠ масса молота.</strong> Поршень — это энергия. Молот — вся конструкция. Например, D80: поршень 8 т, но весь молот ~16 т.</li>
                     <li><strong>Энергия удара — диапазон.</strong> Зависит от подачи топлива и сопротивления грунта.</li>
                     <li><strong>Частота снижается при росте мощности:</strong> лёгкие — до 50+ уд/мин, тяжёлые — ~35–40 уд/мин.</li>
                   </ul>
