@@ -5,8 +5,11 @@ const KburgHeroSection = () => {
   return (
     <>
       <section className="relative pt-16 pb-12 md:pt-24 md:pb-16 bg-gradient-to-br from-primary via-primary to-primary/90">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          aria-hidden="true"
+          style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "28px 28px" }}
+        />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
@@ -16,11 +19,8 @@ const KburgHeroSection = () => {
               Полноповоротные копрово-бурильные установки (КБУРГ)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <a href="#benefits" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Преимущества
-              </a>
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Модели установок КБУРГ
+                Модели установок
               </a>
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
@@ -39,10 +39,10 @@ const KburgHeroSection = () => {
       <section className="py-10 md:py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-10 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">
               Полноповоротные копрово-бурильные установки на базе гусеничных экскаваторов
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   КБУРГ — уникальная конструкция навесного оборудования, которая позволяет навешивать копрово-бурильное оборудование на любые гусеничные экскаваторы российского и импортного производства с массой от 18 тонн и более.

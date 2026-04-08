@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 
@@ -13,19 +14,19 @@ const variants = [
     ],
     detailedSpecs: [
       { label: "Базовая машина", value: "Экскаваторы серии от 250 до 500" },
-      { label: "Максимальное сечение забиваемых свай, мм", value: "400×400" },
-      { label: "Максимальная масса забиваемых свай, кг", value: "7 500" },
+      { label: "Макс. сечение забиваемых свай, мм", value: "400×400" },
+      { label: "Макс. масса забиваемых свай, кг", value: "7 500" },
       { label: "Ширина направляющих мачты, мм", value: "500×83" },
       { label: "Угол поворота платформы, град", value: "360" },
-      { label: "Вылет мачты, мм", value: "3500…4300" },
+      { label: "Вылет мачты, мм", value: "3 500…4 300" },
       { label: "Наклон мачты вправо-влево, град", value: "±7" },
       { label: "Наклон мачты вперёд, град", value: "3" },
       { label: "Наклон мачты назад, град", value: "14" },
       { label: "Макс. частота вращения платформы, об/мин", value: "3" },
-      { label: "Макс. скорость подъёма навесного оборудования и сваи, м/мин", value: "16" },
-      { label: "Макс. допустимая скорость ветра, м/с", value: "14" },
-      { label: "Макс. допустимый уклон стройплощадки, град", value: "3" },
-      { label: "Максимальная масса навесного оборудования, кг", value: "12 000" },
+      { label: "Макс. скорость подъёма, м/мин", value: "16" },
+      { label: "Макс. скорость ветра при работе, м/с", value: "14" },
+      { label: "Макс. уклон стройплощадки, град", value: "3" },
+      { label: "Макс. масса навесного оборудования, кг", value: "12 000" },
       { label: "Масса КБУРГ без молота и сваи, кг", value: "43 000" },
       { label: "Высота в рабочем положении, мм", value: "20 300" },
       { label: "Длина в рабочем положении, мм", value: "5 200" },
@@ -47,19 +48,19 @@ const variants = [
     ],
     detailedSpecs: [
       { label: "Базовая машина", value: "Экскаваторы серии от 250 до 500" },
-      { label: "Максимальное сечение забиваемых свай, мм", value: "400×400" },
-      { label: "Максимальная масса забиваемых свай, кг", value: "7 500" },
+      { label: "Макс. сечение забиваемых свай, мм", value: "400×400" },
+      { label: "Макс. масса забиваемых свай, кг", value: "7 500" },
       { label: "Ширина направляющих мачты, мм", value: "500×83" },
       { label: "Угол поворота платформы, град", value: "360" },
-      { label: "Вылет мачты, мм", value: "3450…4550" },
+      { label: "Вылет мачты, мм", value: "3 450…4 550" },
       { label: "Наклон мачты вправо-влево, град", value: "±7" },
       { label: "Наклон мачты вперёд, град", value: "3" },
       { label: "Наклон мачты назад, град", value: "14" },
       { label: "Макс. частота вращения платформы, об/мин", value: "3" },
-      { label: "Макс. скорость подъёма навесного оборудования и сваи, м/мин", value: "16" },
-      { label: "Макс. допустимая скорость ветра, м/с", value: "14" },
-      { label: "Макс. допустимый уклон стройплощадки, град", value: "3" },
-      { label: "Максимальная масса навесного оборудования, кг", value: "12 000" },
+      { label: "Макс. скорость подъёма, м/мин", value: "16" },
+      { label: "Макс. скорость ветра при работе, м/с", value: "14" },
+      { label: "Макс. уклон стройплощадки, град", value: "3" },
+      { label: "Макс. масса навесного оборудования, кг", value: "12 000" },
       { label: "Масса КБУРГ без молота и сваи, кг", value: "45 000" },
       { label: "Высота в рабочем положении, мм", value: "22 300" },
       { label: "Длина в рабочем положении, мм", value: "5 200" },
@@ -81,19 +82,19 @@ const variants = [
     ],
     detailedSpecs: [
       { label: "Базовая машина", value: "Экскаваторы серии от 250 до 500" },
-      { label: "Максимальное сечение забиваемых свай, мм", value: "400×400" },
-      { label: "Максимальная масса забиваемых свай, кг", value: "9 000" },
+      { label: "Макс. сечение забиваемых свай, мм", value: "400×400" },
+      { label: "Макс. масса забиваемых свай, кг", value: "9 000" },
       { label: "Ширина направляющих мачты, мм", value: "500×83" },
       { label: "Угол поворота платформы, град", value: "360" },
-      { label: "Вылет мачты, мм", value: "3450…4550" },
+      { label: "Вылет мачты, мм", value: "3 450…4 550" },
       { label: "Наклон мачты вправо-влево, град", value: "±7" },
       { label: "Наклон мачты вперёд, град", value: "5" },
       { label: "Наклон мачты назад, град", value: "18" },
       { label: "Макс. частота вращения платформы, об/мин", value: "3" },
-      { label: "Макс. скорость подъёма навесного оборудования и сваи, м/мин", value: "16" },
-      { label: "Макс. допустимая скорость ветра, м/с", value: "14" },
-      { label: "Макс. допустимый уклон стройплощадки, град", value: "3" },
-      { label: "Максимальная масса навесного оборудования, кг", value: "14 500" },
+      { label: "Макс. скорость подъёма, м/мин", value: "16" },
+      { label: "Макс. скорость ветра при работе, м/с", value: "14" },
+      { label: "Макс. уклон стройплощадки, град", value: "3" },
+      { label: "Макс. масса навесного оборудования, кг", value: "14 500" },
       { label: "Масса КБУРГ без молота и сваи, кг", value: "55 500" },
       { label: "Высота в рабочем положении, мм", value: "24 930" },
       { label: "Длина в рабочем положении, мм", value: "7 040" },
@@ -112,7 +113,7 @@ const KburgVariantsSection = () => {
   const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   return (
-    <section id="variants" className="py-10 md:py-16 bg-gray-50">
+    <section id="variants" className="py-10 md:py-14 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="animate-fade-in">
@@ -120,30 +121,44 @@ const KburgVariantsSection = () => {
               Модели копрово-бурильных установок КБУРГ
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {variants.map((variant, index) => (
-                <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+              {variants.map((variant) => (
+                <Card
+                  key={variant.name}
+                  className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
+                >
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-heading font-bold text-primary">
+                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
                         {variant.name}
                       </h3>
+                      <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                        КБУРГ
+                      </Badge>
                     </div>
 
                     <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                       {variant.specs.map((spec, idx) => (
-                        <div key={idx} className="flex justify-between items-start gap-2 py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-sm text-primary leading-snug">{spec.label}</span>
-                          <span className="text-sm font-semibold text-primary text-right shrink-0">{spec.value}</span>
+                        <div
+                          key={idx}
+                          className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0"
+                        >
+                          <span className="text-base text-primary flex-1">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary text-right ml-4">
+                            {spec.value}
+                          </span>
                         </div>
                       ))}
 
                       {expandedVariant === variant.name && (
                         <>
                           {variant.detailedSpecs.map((spec, idx) => (
-                            <div key={idx} className="flex justify-between items-start gap-2 py-1 border-b border-gray-200 last:border-0">
-                              <span className="text-sm text-primary leading-snug">{spec.label}</span>
-                              <span className="text-sm font-semibold text-primary text-right shrink-0">{spec.value}</span>
+                            <div
+                              key={idx}
+                              className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0"
+                            >
+                              <span className="text-base text-primary">{spec.label}</span>
+                              <span className="text-base font-semibold text-primary">{spec.value}</span>
                             </div>
                           ))}
                         </>
@@ -154,7 +169,9 @@ const KburgVariantsSection = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                        onClick={() =>
+                          setExpandedVariant(expandedVariant === variant.name ? null : variant.name)
+                        }
                         className="w-full"
                       >
                         {expandedVariant === variant.name ? (
@@ -180,6 +197,22 @@ const KburgVariantsSection = () => {
                 </Card>
               ))}
             </div>
+
+            <Card className="border-2 border-amber-200 bg-amber-50">
+              <CardContent className="p-5">
+                <div className="flex items-start gap-3">
+                  <Icon name="Lightbulb" size={20} className="text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-heading font-bold text-primary mb-2">О базовой машине</p>
+                    <ul className="space-y-1.5 text-primary text-sm">
+                      <li><strong>Базовая машина не входит в поставку.</strong> КБУРГ — это навесное оборудование, которое монтируется на имеющийся экскаватор заказчика.</li>
+                      <li><strong>Совместимость по грузовому индексу.</strong> Подходят экскаваторы российского и импортного производства от 18 тонн (серии 250–500).</li>
+                      <li><strong>Цифра в названии — длина сваи:</strong> КБУРГ-12 забивает сваи до 12 м, КБУРГ-14 — до 14 м, КБУРГ-16 — до 16 м.</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

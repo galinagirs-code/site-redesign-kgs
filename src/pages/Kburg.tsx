@@ -8,9 +8,10 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import KburgHeroSection from "@/components/kburg/KburgHeroSection";
-import KburgBenefitsSection from "@/components/kburg/KburgBenefitsSection";
 import KburgVariantsSection from "@/components/kburg/KburgVariantsSection";
+import KburgBenefitsSection from "@/components/kburg/KburgBenefitsSection";
 import KburgDescriptionSection from "@/components/kburg/KburgDescriptionSection";
+import KburgGallerySection from "@/components/kburg/KburgGallerySection";
 
 const Kburg = () => {
   const productSchema = {
@@ -90,30 +91,14 @@ const Kburg = () => {
       <Breadcrumbs items={[
         { label: 'Оборудование', path: '/catalog' },
         { label: 'Сваебойные машины', path: '/catalog/svaebojnye-mashiny' },
-        { label: 'КБУРГ', path: '/catalog/kburg' }
+        { label: 'Копрово-бурильные установки КБУРГ', path: '/catalog/kburg' }
       ]} />
 
       <KburgHeroSection />
-      <KburgBenefitsSection />
       <KburgVariantsSection />
+      <KburgBenefitsSection />
       <KburgDescriptionSection />
-
-      <section id="gallery" className="py-10 md:py-14 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Фотогалерея
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[1,2,3,4,5,6].map((i) => (
-                <div key={i} className="aspect-square rounded-xl bg-gray-100 flex items-center justify-center border-2 border-dashed border-gray-300">
-                  <span className="text-gray-400 text-sm">Фото {i}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <KburgGallerySection />
 
       <ConsultationSection />
 
