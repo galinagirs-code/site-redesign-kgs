@@ -9,7 +9,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import KburgHeroSection from "@/components/kburg/KburgHeroSection";
 import KburgVariantsSection from "@/components/kburg/KburgVariantsSection";
-import KburgBenefitsSection from "@/components/kburg/KburgBenefitsSection";
 import KburgDescriptionSection from "@/components/kburg/KburgDescriptionSection";
 
 const Kburg = () => {
@@ -95,7 +94,6 @@ const Kburg = () => {
 
       <KburgHeroSection />
       <KburgVariantsSection />
-      <KburgBenefitsSection />
       <KburgDescriptionSection />
 
       <ConsultationSection />
