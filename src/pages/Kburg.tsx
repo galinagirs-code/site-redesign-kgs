@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -8,279 +6,163 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
 import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { OptimizedImage } from "@/components/OptimizedImage";
-import { EquipmentForm } from "@/components/EquipmentForm";
-import { useState } from "react";
+import ConsultationSection from "@/components/ConsultationSection";
+import KburgHeroSection from "@/components/kburg/KburgHeroSection";
+import KburgVariantsSection from "@/components/kburg/KburgVariantsSection";
+import KburgBenefitsSection from "@/components/kburg/KburgBenefitsSection";
+import KburgDescriptionSection from "@/components/kburg/KburgDescriptionSection";
 
 const Kburg = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов",
-    "description": "Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов для забивки свай. Профессиональное оборудование для свайных работ.",
+    "name": "Полноповоротные копрово-бурильные установки КБУРГ на базе гусеничных экскаваторов",
+    "description": "КБУРГ — первая отечественная разработка для совместного использования сваебойного и бурильного оборудования на копровой мачте. Модели КБУРГ-12, КБУРГ-14, КБУРГ-16.",
     "brand": {
       "@type": "Brand",
-      "name": "КБУРГ"
+      "name": "KGS"
     },
     "category": "Сваебойные машины",
     "manufacturer": {
       "@type": "Organization",
-      "name": "КБУРГ"
+      "name": "КоперГруппСервис"
     }
   };
 
-  const galleryImages = [
-    "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
-    "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
-    "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png",
-    "https://cdn.poehali.dev/files/fa6a1c32-f5ac-47df-9c14-016eeb4d7260.png"
-  ];
-
-  const questions = [
-    {
-      question: "Нужна сваебойная или буровая установка?",
-      options: ["Сваебойная", "Буровая", "Гусеничный кран с мачтой", "Шагающая установка"]
-    },
-    {
-      question: "Какие сваи будут использоваться?",
-      subfields: [
-        { label: "Сечение", placeholder: "Укажите сечение" },
-        { label: "Длина", placeholder: "Укажите длину" }
-      ]
-    },
-    {
-      question: "Какой грунт на объекте?"
-    },
-    {
-      question: "Требуется ли шефмонтаж?",
-      options: ["Да", "Нет"]
-    },
-    {
-      question: "В какой город осуществлять доставку?"
-    }
-  ];
-
   return (
     <div className="min-h-screen">
-      <SEO 
-        title="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов | KGS"
-        description="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов для забивки свай. Надежное оборудование для свайных работ любой сложности."
-        keywords="сваебойная установка, КБУРГ, забивка свай, свайные работы, копровая установка"
+      <SEO
+        title="Копрово-бурильные установки КБУРГ на базе гусеничных экскаваторов | KGS"
+        description="КБУРГ — первая отечественная копрово-бурильная установка на базе гусеничных экскаваторов. Модели КБУРГ-12, КБУРГ-14, КБУРГ-16. Сваи до 16 м, сечение до 400×400 мм. Сертификат ТС."
+        keywords="КБУРГ, копрово-бурильная установка, гусеничный экскаватор, сваебойная установка, КБУРГ-12, КБУРГ-14, КБУРГ-16"
         canonical="https://kgs-ural.ru/catalog/kburg"
-        ogTitle="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов - профессиональное оборудование"
-        ogDescription="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов для выполнения свайных работ. Консультация и подбор оборудования."
+        ogTitle="Копрово-бурильные установки КБУРГ — первая отечественная разработка"
+        ogDescription="КБУРГ на базе гусеничных экскаваторов. Забивка свай до 16 м, бурение до 1200 мм. Модели КБУРГ-12, КБУРГ-14, КБУРГ-16."
       />
       <SchemaOrg data={productSchema} />
       <ScrollToTop />
-      
+
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="https://cdn.poehali.dev/files/e28d33a0-39b3-47ca-8f8d-54ccfc65a97b.svg"
-                alt="КоперГруппСервис"
-                className="h-8 w-auto"
+              <img
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-12 w-auto"
               />
             </Link>
-            
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/catalog" className="text-white/90 hover:text-white transition-colors">
-                Каталог
-              </Link>
-              <Link to="/services" className="text-white/90 hover:text-white transition-colors">
-                Услуги
-              </Link>
-              <Link to="/about" className="text-white/90 hover:text-white transition-colors">
-                О компании
-              </Link>
-              <Link to="/contacts" className="text-white/90 hover:text-white transition-colors">
-                Контакты
-              </Link>
+
+            <nav className="hidden md:flex items-center space-x-6">
+              <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
+              <Link to="/catalog" className="text-accent transition-colors text-sm font-medium">Оборудование</Link>
+              <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
+              <Link to="/services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</Link>
+              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
+              <a href="#" className="text-white/90 hover:text-accent transition-colors text-sm">Новости</a>
+              <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+73432888499" className="text-white/90 hover:text-white transition-colors">
-                +7 343 288-84-99
+            <div className="flex items-center space-x-4">
+              <div className="hidden lg:flex items-center space-x-3">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Send" size={18} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={18} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
+                </a>
+              </div>
+              <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
+                8 (800) 600-74-65
               </a>
+              <Button size="sm" className="btn-gradient text-white hidden md:block">
+                Заказать звонок
+              </Button>
+              <MobileMenu currentPath="/catalog/kburg" />
             </div>
-
-            <MobileMenu />
           </div>
         </div>
       </header>
 
-      <main className="pt-16">
-        <div className="container mx-auto px-4 py-8">
-          <Breadcrumbs 
-            items={[
-              { label: "Главная", href: "/" },
-              { label: "Каталог", href: "/catalog" },
-              { label: "Сваебойные машины", href: "/catalog#pile-machines" },
-              { label: "Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов" }
-            ]}
-          />
+      <Breadcrumbs items={[
+        { label: 'Оборудование', path: '/catalog' },
+        { label: 'Сваебойные машины', path: '/catalog/svaebojnye-mashiny' },
+        { label: 'КБУРГ', path: '/catalog/kburg' }
+      ]} />
 
-          <div className="grid lg:grid-cols-2 gap-8 mt-8">
-            <div>
-              <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 mb-4">
-                <OptimizedImage
-                  src={selectedImage || galleryImages[0]}
-                  alt="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              
-              <div className="grid grid-cols-4 gap-4">
-                {galleryImages.map((image, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSelectedImage(image)}
-                    className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                      selectedImage === image || (!selectedImage && index === 0)
-                        ? 'border-primary'
-                        : 'border-gray-200 hover:border-gray-300'
-                    }`}
-                  >
-                    <OptimizedImage
-                      src={image}
-                      alt={`Вид ${index + 1}`}
-                      className="w-full h-full object-contain"
-                    />
-                  </button>
-                ))}
-              </div>
-            </div>
+      <KburgHeroSection />
+      <KburgVariantsSection />
+      <KburgBenefitsSection />
+      <KburgDescriptionSection />
 
-            <div>
-              <Badge className="mb-4">Сваебойные машины</Badge>
-              <h1 className="text-3xl font-bold mb-4">Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов</h1>
-              
-              <div className="prose max-w-none mb-6">
-                <p className="text-primary mb-4">
-                  Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов предназначена для выполнения свайных работ любой сложности. Надежное и производительное оборудование для профессионального использования.
-                </p>
-                <p className="text-primary mb-4">
-                  Для получения подробной информации о характеристиках, стоимости и сроках поставки, пожалуйста, свяжитесь с нашими специалистами.
-                </p>
-              </div>
+      <ConsultationSection />
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="flex-1"
-                  onClick={() => document.getElementById('consultation')?.scrollIntoView({behavior: 'smooth'})}
-                >
-                  Получить консультацию
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="flex-1"
-                  asChild
-                >
-                  <a href="tel:+73432888499">
-                    <Icon name="phone" className="w-5 h-5 mr-2" />
-                    Позвонить
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <Card className="mt-12">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">Получить консультацию</h2>
-              <EquipmentForm 
-                equipmentType="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов"
-                questions={questions}
-              />
-            </CardContent>
-          </Card>
-        </div>
-      </main>
-
-      <footer className="bg-gray-900 text-white py-12 mt-16">
+      <footer className="bg-primary text-white py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <img 
-                src="https://cdn.poehali.dev/files/e28d33a0-39b3-47ca-8f8d-54ccfc65a97b.svg"
-                alt="КоперГруппСервис"
-                className="h-8 w-auto mb-4"
+              <img
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-16 w-auto mb-4"
               />
-              <p className="text-gray-400 text-sm">
-                Поставка свайного оборудования и спецтехники
+              <p className="text-white/70 text-sm leading-relaxed">
+                Официальный дилер ведущих производителей сваебойного оборудования
               </p>
             </div>
-            
+
             <div>
-              <h3 className="font-semibold mb-4">Навигация</h3>
+              <h4 className="font-heading font-bold mb-4">Навигация</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/catalog" className="text-gray-400 hover:text-white transition-colors">Каталог</Link></li>
-                <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Услуги</Link></li>
-                <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">О компании</Link></li>
-                <li><Link to="/contacts" className="text-gray-400 hover:text-white transition-colors">Контакты</Link></li>
+                <li><Link to="/about" className="text-white/70 hover:text-accent transition-colors">О компании</Link></li>
+                <li><Link to="/catalog" className="text-white/70 hover:text-accent transition-colors">Оборудование</Link></li>
+                <li><Link to="/parts" className="text-white/70 hover:text-accent transition-colors">Запчасти</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Услуги</Link></li>
               </ul>
             </div>
-            
+
             <div>
-              <h3 className="font-semibold mb-4">Контакты</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <a href="tel:+73432888499" className="hover:text-white transition-colors">
-                    +7 343 288-84-99
-                  </a>
+              <h4 className="font-heading font-bold mb-4">Контакты</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start text-white/70">
+                  <Icon name="Phone" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a>
                 </li>
-                <li>
-                  <a href="mailto:kgs@kgs-ural.ru" className="hover:text-white transition-colors">
-                    kgs@kgs-ural.ru
-                  </a>
+                <li className="flex items-start text-white/70">
+                  <Icon name="Mail" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
+                </li>
+                <li className="flex items-start text-white/70">
+                  <Icon name="MapPin" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Екатеринбург, ул. Победы, 5</span>
                 </li>
               </ul>
             </div>
-            
+
             <div>
-              <h3 className="font-semibold mb-4">Юридическая информация</h3>
-              <p className="text-sm text-gray-400">
-                ООО "КоперГруппСервис"<br />
-                ИНН: 6686113105<br />
-                ОГРН: 1196658042503
-              </p>
+              <h4 className="font-heading font-bold mb-4">Мы в соцсетях</h4>
+              <div className="flex space-x-4">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Send" size={22} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={22} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Video" size={22} />
+                </a>
+              </div>
             </div>
           </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
-            © 2024 КоперГруппСервис. Все права защищены.
+
+          <div className="border-t border-white/10 pt-8 text-center text-white/60 text-sm">
+            <p>&copy; {new Date().getFullYear()} КоперГруппСервис. Все права защищены.</p>
           </div>
         </div>
       </footer>
-
-      {showConsultationForm && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <Card className="w-full max-w-2xl max-h-[90vh] overflow-y-auto">
-            <CardContent className="p-8">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-bold">Получить консультацию</h2>
-                <button 
-                  onClick={() => setShowConsultationForm(false)}
-                  className="text-gray-400 hover:text-primary"
-                >
-                  <Icon name="x" className="w-6 h-6" />
-                </button>
-              </div>
-              <EquipmentForm 
-                equipmentType="Полноповоротные копрово-бурильные установки (КБУРГ) на базе гусеничных экскаваторов"
-                questions={questions}
-                onSuccess={() => setShowConsultationForm(false)}
-              />
-            </CardContent>
-          </Card>
-        </div>
-      )}
     </div>
   );
 };
