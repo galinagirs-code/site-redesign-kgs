@@ -23,10 +23,10 @@ const JuliZYSHeroSection = () => {
                 Модели установок
               </a>
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Принцип работы
+                Общая информация
               </a>
-              <a href="#benefits" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Преимущества
+              <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Фотогалерея
               </a>
               <a href="#consultation" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Оставить заявку
@@ -40,15 +40,12 @@ const JuliZYSHeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">
-              Статическое вдавливание свай без вибрации и шума
+              Сваевдавливающая установка Dongtai Juli (серия ZYS)
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Сваевдавливающая установка Dongtai Juli серии ZYS предназначена для статического вдавливания железобетонных и стальных свай в грунт без ударной нагрузки и вибраций. Безударный метод погружения обеспечивает минимальные вибрации и шум, что особенно важно при работе в городских условиях и вблизи существующих зданий.
-                </p>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Принцип работы основан на использовании собственного веса установки и противовесов, которые создают усилие для плавного погружения свай в грунт. В отличие от вибропогружателей и молотов — нет вибрации, нет шума, минимальное воздействие на окружающую застройку.
                 </p>
                 <div className="space-y-3">
                   {[

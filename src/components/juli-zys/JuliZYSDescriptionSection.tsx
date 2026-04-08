@@ -35,9 +35,13 @@ const JuliZYSDescriptionSection = () => {
     <section id="description" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Принцип работы и конструктивные особенности
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
+            Общая информация
           </h2>
+
+          <p className="text-base md:text-lg text-primary leading-relaxed mb-8 max-w-4xl mx-auto text-center">
+            Принцип работы сваевдавливающих установок (серия ZYS) основан на использовании собственного веса установки и противовесов, которые создают усилие для плавного погружения свай в грунт. В отличие от вибропогружателей и молотов — нет вибрации, нет шума, минимальное воздействие на окружающую застройку.
+          </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             <div>
