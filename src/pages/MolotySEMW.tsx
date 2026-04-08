@@ -4,96 +4,165 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { SEO } from "@/components/SEO";
+import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import ConsultationSection from "@/components/ConsultationSection";
+import SemwDHeroSection from "@/components/moloty-semw-d/SemwDHeroSection";
+import SemwDVariantsSection from "@/components/moloty-semw-d/SemwDVariantsSection";
+import SemwDBenefitsSection from "@/components/moloty-semw-d/SemwDBenefitsSection";
+import SemwDDescriptionSection from "@/components/moloty-semw-d/SemwDDescriptionSection";
+import SemwDGallerySection from "@/components/moloty-semw-d/SemwDGallerySection";
 
 const MolotySEMW = () => {
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Молоты дизельные трубчатые SEMW серия D",
+    "description": "Дизельные трубчатые молоты серии D — ключевой продукт компании SEMW для забивки свай в различных грунтовых условиях. Диапазон моделей D8–D260.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SEMW"
+    },
+    "category": "Сваебойное оборудование",
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "SEMW"
+    }
+  };
+
   return (
     <div className="min-h-screen">
-      <SEO 
-        title="Молоты дизельные трубчатые SEMW | KGS"
-        description="Молоты дизельные трубчатые SEMW для забивки свай"
-        keywords="молоты semw, дизельные молоты, трубчатые молоты, молот для свай"
+      <SEO
+        title="Молоты дизельные трубчатые SEMW серия D | KGS"
+        description="Дизельные трубчатые молоты SEMW серии D для забивки свай. Диапазон моделей D8–D260. Высокая энергия удара, низкий расход топлива, проверенная альтернатива DELMAG."
+        keywords="молоты semw, дизельные трубчатые молоты, молоты серия D, SEMW D8 D100 D260, сваебойные молоты, молоты для забивки свай"
         canonical="https://kgs-ural.ru/catalog/moloty-semw"
+        ogTitle="Молоты дизельные трубчатые SEMW серия D"
+        ogDescription="Дизельные трубчатые молоты SEMW серии D для забивки свай. Модели D8–D260. Альтернатива DELMAG."
       />
+      <SchemaOrg data={productSchema} />
       <ScrollToTop />
-      
+
       <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-white/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="https://cdn.poehali.dev/files/5c1db9e3-d3bc-4fef-9e97-4e9fc1e1f1fc.png" 
-                alt="KGS Logo" 
-                className="h-8 w-auto"
+              <img
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-12 w-auto"
               />
             </Link>
-            
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-white/90 hover:text-white transition-colors">
-                Главная
-              </Link>
-              <Link to="/catalog" className="text-white hover:text-white transition-colors">
-                Оборудование
-              </Link>
-              <Link to="/about" className="text-white/90 hover:text-white transition-colors">
-                О компании
-              </Link>
-              <Link to="/contact" className="text-white/90 hover:text-white transition-colors">
-                Контакты
-              </Link>
+
+            <nav className="hidden md:flex items-center space-x-6">
+              <Link to="/about" className="text-white/90 hover:text-accent transition-colors text-sm">О компании</Link>
+              <Link to="/catalog" className="text-accent transition-colors text-sm font-medium">Оборудование</Link>
+              <Link to="/parts" className="text-white/90 hover:text-accent transition-colors text-sm">Запчасти</Link>
+              <Link to="/services" className="text-white/90 hover:text-accent transition-colors text-sm">Услуги</Link>
+              <Link to="/production" className="text-white/90 hover:text-accent transition-colors text-sm">Производство и доставка</Link>
+              <a href="#" className="text-white/90 hover:text-accent transition-colors text-sm">Новости</a>
+              <Link to="/contact" className="text-white/90 hover:text-accent transition-colors text-sm">Контакты</Link>
             </nav>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+73432888845" className="text-white hover:text-accent transition-colors">
-                +7 (343) 288-88-45
+            <div className="flex items-center space-x-4">
+              <div className="hidden lg:flex items-center space-x-3">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Send" size={18} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={18} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-accent transition-colors">
+                  <Icon name="Video" size={18} />
+                </a>
+              </div>
+              <a href="tel:88006007465" className="text-white hover:text-accent transition-colors text-sm font-medium hidden lg:block">
+                8 (800) 600-74-65
               </a>
+              <Button size="sm" className="btn-gradient text-white hidden md:block">
+                Заказать звонок
+              </Button>
+              <MobileMenu currentPath="/catalog/moloty-semw" />
             </div>
-
-            <MobileMenu />
           </div>
         </div>
       </header>
 
-      <main className="pt-16">
-        <div className="bg-gradient-to-br from-primary via-primary/95 to-secondary py-12">
-          <div className="container mx-auto px-4">
-            <Breadcrumbs 
-              items={[
-                { label: "Главная", href: "/" },
-                { label: "Каталог", href: "/catalog" },
-                { label: "Сваебойные молоты", href: "/catalog/svaebojnye-moloty" },
-                { label: "Молоты дизельные трубчатые SEMW" }
-              ]}
-            />
-            <h1 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-4">
-              Молоты дизельные трубчатые SEMW
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl">
-              Дизельные трубчатые молоты для забивки свай
-            </p>
-          </div>
-        </div>
+      <Breadcrumbs items={[
+        { label: 'Оборудование', path: '/catalog' },
+        { label: 'Сваебойные молоты', path: '/catalog/svaebojnye-moloty' },
+        { label: 'Молоты дизельные трубчатые SEMW (серия D)', path: '/catalog/moloty-semw' }
+      ]} />
 
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg text-primary mb-8">
-                Информация об оборудовании появится в ближайшее время
+      <SemwDHeroSection />
+      <SemwDVariantsSection />
+      <SemwDBenefitsSection />
+      <SemwDDescriptionSection />
+      <SemwDGallerySection />
+
+      <ConsultationSection />
+
+      <footer className="bg-primary text-white py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+              <img
+                src="https://cdn.poehali.dev/files/e8940fa1-9132-49b3-bf7b-93d6cc15b33f.png"
+                alt="КГС Логотип"
+                className="h-16 w-auto mb-4"
+              />
+              <p className="text-white/70 text-sm leading-relaxed">
+                Официальный дилер ведущих производителей сваебойного оборудования
               </p>
-              <Link to="/catalog">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  <Icon name="ArrowLeft" className="mr-2" size={20} />
-                  Вернуться в каталог
-                </Button>
-              </Link>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-bold mb-4">Навигация</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/about" className="text-white/70 hover:text-accent transition-colors">О компании</Link></li>
+                <li><Link to="/catalog" className="text-white/70 hover:text-accent transition-colors">Оборудование</Link></li>
+                <li><Link to="/parts" className="text-white/70 hover:text-accent transition-colors">Запчасти</Link></li>
+                <li><Link to="/services" className="text-white/70 hover:text-accent transition-colors">Услуги</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-bold mb-4">Контакты</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start text-white/70">
+                  <Icon name="Phone" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <a href="tel:88006007465" className="hover:text-accent transition-colors">8 (800) 600-74-65</a>
+                </li>
+                <li className="flex items-start text-white/70">
+                  <Icon name="Mail" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <a href="mailto:info@kgs-ural.ru" className="hover:text-accent transition-colors">info@kgs-ural.ru</a>
+                </li>
+                <li className="flex items-start text-white/70">
+                  <Icon name="MapPin" size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                  <span>Екатеринбург, ул. Победы, 5</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-bold mb-4">Мы в соцсетях</h4>
+              <div className="flex space-x-4">
+                <a href="https://t.me/kgs_ural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Send" size={22} />
+                </a>
+                <a href="https://vk.com/kgsural" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Share2" size={22} />
+                </a>
+                <a href="https://rutube.ru/channel/37307143/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
+                  <Icon name="Video" size={22} />
+                </a>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
 
-      <footer className="bg-primary text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 КГС. Все права защищены.</p>
+          <div className="border-t border-white/10 pt-8 text-center text-white/60 text-sm">
+            <p>&copy; {new Date().getFullYear()} КоперГруппСервис. Все права защищены.</p>
+          </div>
         </div>
       </footer>
     </div>
