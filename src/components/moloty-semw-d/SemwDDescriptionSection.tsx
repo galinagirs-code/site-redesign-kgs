@@ -93,54 +93,42 @@ const SemwDDescriptionSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-none shadow-lg mb-6">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="RefreshCw" size={20} className="text-accent" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="RefreshCw" size={20} className="text-accent" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Принцип работы</h3>
-              </div>
-              <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                <li>Поршень поднимается</li>
-                <li>Падает — сжимает воздух</li>
-                <li>Впрыск топлива</li>
-                <li>Воспламенение</li>
-                <li>Удар + повтор цикла</li>
-              </ol>
-            </CardContent>
-          </Card>
+                <ol className="list-decimal pl-5 space-y-1.5 text-primary text-base md:text-lg">
+                  <li>Поршень поднимается</li>
+                  <li>Падает — сжимает воздух</li>
+                  <li>Впрыск топлива</li>
+                  <li>Воспламенение</li>
+                  <li>Удар + повтор цикла</li>
+                </ol>
+              </CardContent>
+            </Card>
 
-          <Card className="border-none shadow-lg">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Map" size={20} className="text-accent" />
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Map" size={20} className="text-accent" />
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Условия эксплуатации</h3>
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Условия эксплуатации</h3>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Типы грунтов:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li>Мягкие грунты</li>
-                    <li>Плотные грунты</li>
-                    <li>Морские условия</li>
-                    <li>Работа под наклоном</li>
-                  </ul>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Классы моделей:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
-                    <li><strong>Лёгкие D8–D30</strong> — малоэтажное строительство</li>
-                    <li><strong>Средние D36–D62</strong> — универсальные</li>
-                    <li><strong>Тяжёлые D80–D180</strong> — мосты, порты</li>
-                    <li><strong>Сверхтяжёлые D220+</strong> — специальные проекты</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                <ul className="list-disc pl-5 space-y-2 text-primary text-base">
+                  <li>Мягкие грунты (слабые, обводнённые, торфяники, пластичные глины и супеси)</li>
+                  <li>Плотные грунты (плотные суглинки и глины, сухие пески, гравелистые грунты, мергели)</li>
+                  <li>Морские условия (причалы, платформы, мосты через море, ветроэнергетика)</li>
+                  <li>Работа под наклоном (наклонные сваи, откосы, берегоукрепление)</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
