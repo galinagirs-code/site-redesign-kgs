@@ -950,7 +950,7 @@ const Catalog = () => {
                         },
                         "vibro-excavator": {
                           0: "/catalog/vibro-sg",
-                          1: "/catalog/vibro-vh",
+                          1: "/catalog/vibro-s",
                           2: "/catalog/udlinennaya-strela",
                           3: "/catalog/kvik-kapler"
                         },
