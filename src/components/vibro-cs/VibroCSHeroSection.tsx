@@ -67,7 +67,7 @@ const VibroCSHeroSection = () => {
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/0f07ca09-88bc-4d0c-a670-0ebdc75edbc1.png"
+                    src="https://cdn.poehali.dev/files/05395cd1-e682-42d5-be1a-b8e559de4b67.jpg"
                     alt="Гидравлический экскаваторный вибропогружатель серия CS"
                     className="w-full h-full object-contain p-6"
                   />
