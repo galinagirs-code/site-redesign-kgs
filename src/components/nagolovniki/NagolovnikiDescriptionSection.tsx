@@ -79,7 +79,7 @@ const NagolovnikiDescriptionSection = () => {
             </CardContent>
           </Card>
 
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary text-center pt-4">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary text-center pt-4 mb-8">
             Функции наголовников
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -92,7 +92,7 @@ const NagolovnikiDescriptionSection = () => {
                   <h3 className="text-lg font-heading font-bold text-primary mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-primary leading-relaxed text-base">
+                  <p className="text-primary leading-relaxed text-sm">
                     {item.description}
                   </p>
                 </CardContent>

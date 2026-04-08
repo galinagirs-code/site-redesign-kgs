@@ -414,8 +414,8 @@ const HDVariantsSection = () => {
                     <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                       {variant.specs.map((spec, idx) => (
                         <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-base text-primary flex-1">{spec.label}</span>
-                          <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                          <span className="text-sm text-primary flex-1">{spec.label}</span>
+                          <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                         </div>
                       ))}
 
@@ -423,8 +423,8 @@ const HDVariantsSection = () => {
                         <>
                           {variant.detailedSpecs.map((spec, idx) => (
                             <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                              <span className="text-base text-primary flex-1">{spec.label}</span>
-                              <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                              <span className="text-sm text-primary flex-1">{spec.label}</span>
+                              <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                             </div>
                           ))}
                         </>

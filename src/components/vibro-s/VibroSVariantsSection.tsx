@@ -193,8 +193,8 @@ const VibroSVariantsSection = () => {
                           key={idx}
                           className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0"
                         >
-                          <span className="text-base text-primary flex-1">{spec.label}</span>
-                          <span className="text-base font-semibold text-primary text-right ml-4">
+                          <span className="text-sm text-primary flex-1">{spec.label}</span>
+                          <span className="text-sm font-semibold text-primary text-right ml-4">
                             {spec.value}
                           </span>
                         </div>
@@ -207,8 +207,8 @@ const VibroSVariantsSection = () => {
                               key={idx}
                               className="flex justify-between items-center py-1 border-b border-gray-200 last:border-0"
                             >
-                              <span className="text-base text-primary">{spec.label}</span>
-                              <span className="text-base font-semibold text-primary">{spec.value}</span>
+                              <span className="text-sm text-primary flex-1">{spec.label}</span>
+                              <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                             </div>
                           ))}
                         </>

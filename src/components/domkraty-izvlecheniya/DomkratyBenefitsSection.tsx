@@ -52,7 +52,7 @@ const DomkratyBenefitsSection = () => {
                   <h3 className="text-lg font-heading font-bold text-primary mb-2">
                     {benefit.title}
                   </h3>
-                  <p className="text-primary leading-relaxed text-base">
+                  <p className="text-primary leading-relaxed text-sm">
                     {benefit.description}
                   </p>
                 </CardContent>

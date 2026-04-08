@@ -44,7 +44,7 @@ const UdlinennayaStrelaVariantsSection = () => {
     <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
             Технические характеристики
           </h2>
           <p className="text-center text-primary/60 text-sm mb-8">
@@ -64,8 +64,8 @@ const UdlinennayaStrelaVariantsSection = () => {
                   <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                     {variant.specs.map((spec, idx) => (
                       <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                        <span className="text-base text-primary flex-1">{spec.label}</span>
-                        <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                        <span className="text-sm text-primary flex-1">{spec.label}</span>
+                        <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                       </div>
                     ))}
                   </div>

@@ -42,7 +42,7 @@ const NagolovnikiFunctionsSection = () => {
                   <h3 className="text-lg font-heading font-bold text-primary mb-2">
                     {type.title}
                   </h3>
-                  <p className="text-primary leading-relaxed text-base">
+                  <p className="text-primary leading-relaxed text-sm">
                     {type.desc}
                   </p>
                 </CardContent>
