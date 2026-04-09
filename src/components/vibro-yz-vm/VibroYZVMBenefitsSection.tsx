@@ -113,7 +113,7 @@ const VibroYZVMBenefitsSection = () => {
             </div>
           </div>
           <div id="general-info" className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
-            <h3 className="text-xl font-heading font-bold text-primary mb-6">Общая информация</h3>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
             <h4 className="text-lg font-heading font-bold text-primary mb-3">Технология регулируемого эксцентрикового момента</h4>
             <p className="text-primary/80 leading-relaxed mb-6">
