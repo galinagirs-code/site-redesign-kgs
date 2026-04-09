@@ -123,7 +123,6 @@ const VibroYZDescriptionSection = () => {
           </h2>
 
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-8">
-            <h3 className="text-xl font-heading font-bold text-primary mb-4">Гидравлические станции</h3>
             <p className="text-primary/80 mb-5 leading-relaxed">
               Yongan Machinery предлагает комплексные решения: вибропогружатели и гидравлические станции, совместимые как между собой, так и с другим гидравлическим оборудованием. Гидростанции Yongan — универсальное решение для питания вибропогружателей и другого гидравлического оборудования.
             </p>
