@@ -13,7 +13,7 @@ const VibroYZVMHeroSection = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Вибропогружатели · Серия YZ-VM (вариабельный)
+              Вибропогружатели · Серия YZ-VM (вариабельные)
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Гидравлические крановые вибропогружатели Yongan (серия YZ-VM)
@@ -28,8 +28,8 @@ const VibroYZVMHeroSection = () => {
               <a href="#stations" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Гидравлическая станция
               </a>
-              <a href="#benefits" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Преимущества вибропогружателей
+              <a href="#general-info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Общая информация
               </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея

@@ -112,6 +112,72 @@ const VibroYZVMBenefitsSection = () => {
               ))}
             </div>
           </div>
+          <div id="general-info" className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+            <h3 className="text-xl font-heading font-bold text-primary mb-6">Общая информация</h3>
+
+            <h4 className="text-lg font-heading font-bold text-primary mb-3">Технология регулируемого эксцентрикового момента</h4>
+            <p className="text-primary/80 leading-relaxed mb-6">
+              Система регулируемого эксцентрикового момента позволяет изменять вибрационную силу за счёт взаимного положения эксцентриков, обеспечивая точную настройку амплитуды и стабильную работу вибропогружателя в различных условиях.
+            </p>
+
+            <h4 className="text-lg font-heading font-bold text-primary mb-3">Ключевые преимущества</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+              {[
+                "Плавный запуск и остановка — отсутствие ударных нагрузок",
+                "Точная регулировка амплитуды — адаптация под любые задачи",
+                "Гибкость применения — подходит для телескопических стрел автокранов",
+              ].map((item, i) => (
+                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Icon name="Check" size={12} className="text-accent" />
+                  </div>
+                  <p className="text-primary text-sm">{item}</p>
+                </div>
+              ))}
+            </div>
+
+            <h4 className="text-lg font-heading font-bold text-primary mb-4">Принцип работы</h4>
+            <div className="space-y-4 mb-8">
+              {[
+                {
+                  title: "Запуск и остановка",
+                  text: "Нулевая амплитуда при запуске и остановке. Отсутствуют ударные нагрузки и рывки при пуске и остановке.",
+                },
+                {
+                  title: "Гибкость применения",
+                  text: "Подходит для работы с телескопическими стрелами автокранов. Обеспечивает более гибкое применение и снижает стоимость строительства.",
+                },
+                {
+                  title: "Регулировка амплитуды",
+                  text: "Амплитуда вибрации может регулироваться в любой момент за счёт изменения эксцентрикового момента. Максимальная амплитуда — до 100%.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="border-l-4 border-accent pl-4 py-1">
+                  <p className="font-semibold text-primary mb-1">{item.title}</p>
+                  <p className="text-primary/80 text-sm leading-relaxed">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <h4 className="text-lg font-heading font-bold text-primary mb-3">Области применения</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                "Безрезонансные работы и испытания",
+                "Устройство фундаментов зданий",
+                "Работа вблизи существующей застройки",
+                "Жилищное и коммерческое строительство",
+                "Минимальное воздействие на водную среду",
+                "Строительство объектов аквакультуры и морских сооружений",
+              ].map((item, i) => (
+                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-center gap-3">
+                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Check" size={12} className="text-accent" />
+                  </div>
+                  <p className="font-semibold text-primary text-sm">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
