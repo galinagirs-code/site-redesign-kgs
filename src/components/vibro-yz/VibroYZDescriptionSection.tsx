@@ -122,25 +122,23 @@ const VibroYZDescriptionSection = () => {
             Модели гидравлических станций
           </h2>
 
-          <div className="max-w-3xl mx-auto mb-8">
-            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg mb-8">
+            <h3 className="text-xl font-heading font-bold text-primary mb-4">Гидравлические станции</h3>
+            <p className="text-primary/80 mb-4 leading-relaxed">
               Yongan Machinery предлагает комплексные решения: вибропогружатели и гидравлические станции, совместимые как между собой, так и с другим гидравлическим оборудованием.
             </p>
-            <p className="text-base md:text-lg text-primary leading-relaxed mb-5">
+            <p className="text-primary/80 mb-5 leading-relaxed">
               Гидростанции Yongan — универсальное решение для питания вибропогружателей и другого гидравлического оборудования.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Высокая стабильность работы",
-                "Качественная система фильтрации",
-                "Надёжные насосы и двигатели",
-                "Адаптация к тяжёлым условиям эксплуатации",
+                { brand: "Высокая стабильность работы", part: "" },
+                { brand: "Качественная система фильтрации", part: "" },
+                { brand: "Надёжные насосы и двигатели", part: "" },
+                { brand: "Адаптация к тяжёлым условиям эксплуатации", part: "" },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Icon name="Check" size={12} className="text-accent" />
-                  </div>
-                  <span className="text-sm text-primary/80">{item}</span>
+                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <p className="font-semibold text-primary text-sm">{item.brand}</p>
                 </div>
               ))}
             </div>
