@@ -198,21 +198,7 @@ const KburgVariantsSection = () => {
               ))}
             </div>
 
-            <Card className="border-2 border-amber-200 bg-amber-50">
-              <CardContent className="p-5">
-                <div className="flex items-start gap-3">
-                  <Icon name="Lightbulb" size={20} className="text-amber-600 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-heading font-bold text-primary mb-2">О базовой машине</p>
-                    <ul className="space-y-1.5 text-primary text-sm">
-                      <li><strong>Базовая машина не входит в поставку.</strong> КБУРГ — это навесное оборудование, которое монтируется на имеющийся экскаватор заказчика.</li>
-                      <li><strong>Совместимость по грузовому индексу.</strong> Подходят экскаваторы российского и импортного производства от 18 тонн (серии 250–500).</li>
-                      <li><strong>Цифра в названии — длина сваи:</strong> КБУРГ-12 забивает сваи до 12 м, КБУРГ-14 — до 14 м, КБУРГ-16 — до 16 м.</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
       </div>
