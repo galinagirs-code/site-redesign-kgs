@@ -50,22 +50,9 @@ const KburgHeroSection = () => {
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
                   Копрово-бурильная установка осуществляет погружение (забивку) железобетонных или металлических свай длиной до 16 метров с максимальным сечением 400×400 мм, а также устройство скважин строительного назначения и шпунтовые работы.
                 </p>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
+                <p className="text-base md:text-lg text-primary leading-relaxed">
                   На установке используются как дизельные, так и гидравлические молоты с массой ударной части до 5 тн.
                 </p>
-                <div className="space-y-3">
-                  {[
-                    "Совместное использование сваебойного и бурильного оборудования на одной копровой мачте.",
-                    "Универсальная установка на экскаваторы различных производителей от 18 тонн",
-                    "Широкий диапазон моделей, обеспечивающий забивку свай длиной от 12 до 16 метров.",
-                    "Надёжная конструкция для работы в тяжёлых условиях — от −40°C до +40°C",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                      <span className="text-base md:text-lg text-primary">{item}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
