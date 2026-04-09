@@ -11,7 +11,7 @@ import VibroYZHeroSection from "@/components/vibro-yz/VibroYZHeroSection";
 import VibroYZVariantsSection from "@/components/vibro-yz/VibroYZVariantsSection";
 import VibroYZBenefitsSection from "@/components/vibro-yz/VibroYZBenefitsSection";
 import VibroYZDescriptionSection from "@/components/vibro-yz/VibroYZDescriptionSection";
-import VibroYZGallerySection from "@/components/vibro-yz/VibroYZGallerySection";
+import VibroYZClampSection from "@/components/vibro-yz/VibroYZClampSection";
 
 const VibroYZ = () => {
   const productSchema = {
@@ -98,7 +98,7 @@ const VibroYZ = () => {
       <VibroYZVariantsSection />
       <VibroYZBenefitsSection />
       <VibroYZDescriptionSection />
-      <VibroYZGallerySection />
+      <VibroYZClampSection />
 
       <ConsultationSection />
 
