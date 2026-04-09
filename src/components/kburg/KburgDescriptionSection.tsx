@@ -74,8 +74,6 @@ const KburgDescriptionSection = () => {
                 </div>
                 <ul className="list-disc pl-5 space-y-2 text-primary text-base md:text-lg">
                   <li>Диапазон рабочих температур: от −40°C до +40°C</li>
-                  <li>Максимально допустимый уклон стройплощадки: 3 градуса</li>
-                  <li>Максимально допустимая скорость ветра: 14 м/с</li>
                   <li>Полный ресурс работы: 10 000 часов (10 лет)</li>
                 </ul>
               </CardContent>
