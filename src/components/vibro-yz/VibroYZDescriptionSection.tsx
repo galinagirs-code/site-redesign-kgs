@@ -154,7 +154,7 @@ const VibroYZDescriptionSection = () => {
                 >
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-heading font-bold text-primary">{station.name}</h3>
+                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">{station.name}</h3>
                       <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
                         станция
                       </Badge>
