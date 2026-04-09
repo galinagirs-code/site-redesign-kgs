@@ -377,64 +377,60 @@ const VibroYZVariantsSection = () => {
             {models.map((model) => (
               <Card
                 key={model.name}
-                className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl cursor-pointer"
-                onClick={() => setExpandedModel(expandedModel === model.name ? null : model.name)}
+                className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
               >
-                <CardContent className="p-5">
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-lg font-heading font-bold text-primary">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-heading font-bold text-primary">
                       {model.name}
                     </h3>
-                    <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 text-xs">
+                    <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
                       крановый
                     </Badge>
                   </div>
 
-                  <div className="space-y-1.5 bg-gray-50 rounded-lg p-3 mb-3">
+                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
                     {model.specs.slice(0, 3).map((spec, idx) => (
-                      <div key={idx} className="flex justify-between items-start py-0.5">
-                        <span className="text-xs text-primary/70 flex-1 pr-2">{spec.label}</span>
-                        <span className="text-xs font-semibold text-primary text-right">{spec.value}</span>
+                      <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                        <span className="text-sm text-primary flex-1">{spec.label}</span>
+                        <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                       </div>
                     ))}
                     {expandedModel === model.name && (
                       <>
                         {model.specs.slice(3).map((spec, idx) => (
-                          <div key={idx} className="flex justify-between items-start py-0.5 border-t border-gray-200 pt-1.5 first:border-0">
-                            <span className="text-xs text-primary/70 flex-1 pr-2">{spec.label}</span>
-                            <span className="text-xs font-semibold text-primary text-right">{spec.value}</span>
+                          <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-primary flex-1">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                           </div>
                         ))}
                       </>
                     )}
                   </div>
 
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 mt-4">
                     <Button
                       variant="outline"
                       size="sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setExpandedModel(expandedModel === model.name ? null : model.name);
-                      }}
-                      className="w-full text-xs"
+                      onClick={() => setExpandedModel(expandedModel === model.name ? null : model.name)}
+                      className="w-full"
                     >
                       {expandedModel === model.name ? (
                         <>
-                          <Icon name="ChevronUp" size={14} className="mr-1" />
-                          Скрыть
+                          <Icon name="ChevronUp" size={16} className="mr-2" />
+                          Скрыть характеристики
                         </>
                       ) : (
                         <>
-                          <Icon name="ChevronDown" size={14} className="mr-1" />
-                          Все характеристики
+                          <Icon name="ChevronDown" size={16} className="mr-2" />
+                          Подробнее
                         </>
                       )}
                     </Button>
-                    <a href="#consultation" onClick={(e) => e.stopPropagation()}>
-                      <Button className="btn-gradient text-white w-full text-xs" size="sm">
-                        <Icon name="MessageSquare" size={14} className="mr-1" />
-                        Запросить цену
+                    <a href="#consultation" className="block">
+                      <Button className="btn-gradient text-white w-full" size="sm">
+                        <Icon name="MessageSquare" size={16} className="mr-2" />
+                        Получить консультацию
                       </Button>
                     </a>
                   </div>

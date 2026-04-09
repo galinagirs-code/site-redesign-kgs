@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const clamps = [
@@ -24,6 +27,8 @@ const specs = [
 type Clamp = typeof clamps[0];
 
 const VibroYZClampSection = () => {
+  const [expandedClamp, setExpandedClamp] = useState<string | null>(null);
+
   return (
     <section id="clamps" className="py-10 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -32,30 +37,67 @@ const VibroYZClampSection = () => {
             Модели зажимов
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {clamps.map((clamp) => (
               <Card
                 key={clamp.model}
                 className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
               >
-                <CardContent className="p-5">
-                  <h3 className="text-lg font-heading font-bold text-primary mb-3">{clamp.model}</h3>
-                  <div className="space-y-1.5 bg-white rounded-lg p-3 mb-3">
-                    {specs.map((s) => (
-                      <div key={s.key} className="flex justify-between items-start py-0.5 border-b border-gray-100 last:border-0">
-                        <span className="text-xs text-primary/70 flex-1 pr-2">{s.label}</span>
-                        <span className="text-xs font-semibold text-primary text-right">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-heading font-bold text-primary">{clamp.model}</h3>
+                    <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                      зажим
+                    </Badge>
+                  </div>
+                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                    {specs.slice(0, 3).map((s) => (
+                      <div key={s.key} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                        <span className="text-sm text-primary flex-1">{s.label}</span>
+                        <span className="text-sm font-semibold text-primary text-right ml-4">
                           {clamp[s.key as keyof Clamp]}
                         </span>
                       </div>
                     ))}
+                    {expandedClamp === clamp.model && (
+                      <>
+                        {specs.slice(3).map((s) => (
+                          <div key={s.key} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-primary flex-1">{s.label}</span>
+                            <span className="text-sm font-semibold text-primary text-right ml-4">
+                              {clamp[s.key as keyof Clamp]}
+                            </span>
+                          </div>
+                        ))}
+                      </>
+                    )}
                   </div>
-                  <a href="#consultation" className="block">
-                    <button className="w-full btn-gradient text-white text-xs py-2 rounded-lg font-medium transition-all hover:scale-105">
-                      <Icon name="MessageSquare" size={13} className="inline mr-1.5 mb-0.5" />
-                      Запросить цену
-                    </button>
-                  </a>
+                  <div className="flex flex-col gap-2 mt-4">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setExpandedClamp(expandedClamp === clamp.model ? null : clamp.model)}
+                      className="w-full"
+                    >
+                      {expandedClamp === clamp.model ? (
+                        <>
+                          <Icon name="ChevronUp" size={16} className="mr-2" />
+                          Скрыть характеристики
+                        </>
+                      ) : (
+                        <>
+                          <Icon name="ChevronDown" size={16} className="mr-2" />
+                          Подробнее
+                        </>
+                      )}
+                    </Button>
+                    <a href="#consultation" className="block">
+                      <Button className="btn-gradient text-white w-full" size="sm">
+                        <Icon name="MessageSquare" size={16} className="mr-2" />
+                        Получить консультацию
+                      </Button>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             ))}
