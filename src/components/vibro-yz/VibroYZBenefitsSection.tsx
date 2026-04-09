@@ -87,6 +87,26 @@ const VibroYZBenefitsSection = () => {
               </Card>
             ))}
           </div>
+
+          <div className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
+            <h3 className="text-xl font-heading font-bold text-primary mb-4">Компоненты мирового уровня</h3>
+            <p className="text-primary/80 mb-5 leading-relaxed">
+              В конструкции вибропогружателей Yongan YZ используются компоненты ведущих производителей, что обеспечивает стабильную работу, минимальный износ и длительный срок службы оборудования:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { brand: "Parker (США)", part: "Гидромоторы" },
+                { brand: "FAG (Германия)", part: "Подшипники повышенной нагрузки и увеличенного ресурса" },
+                { brand: "Rexroth / Kawasaki", part: "Насосы" },
+                { brand: "Caterpillar / Cummins", part: "Двигатели" },
+              ].map((item, i) => (
+                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                  <p className="font-semibold text-primary text-sm">{item.brand}</p>
+                  <p className="text-primary/70 text-sm mt-1">{item.part}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

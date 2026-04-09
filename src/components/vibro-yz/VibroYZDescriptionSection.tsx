@@ -115,82 +115,36 @@ const VibroYZDescriptionSection = () => {
   const [expandedStation, setExpandedStation] = useState<string | null>(null);
 
   return (
-    <>
-      <section id="description" className="py-10 md:py-14 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto space-y-6">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Общая информация
-            </h2>
+    <section id="stations" className="py-10 md:py-16 bg-gray-50 scroll-mt-16">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
+            Модели гидравлических станций
+          </h2>
 
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Cpu" size={20} className="text-accent" />
+          <div className="max-w-3xl mx-auto mb-8">
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+              Yongan Machinery предлагает комплексные решения: вибропогружатели и гидравлические станции, совместимые как между собой, так и с другим гидравлическим оборудованием.
+            </p>
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-5">
+              Гидростанции Yongan — универсальное решение для питания вибропогружателей и другого гидравлического оборудования.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                "Высокая стабильность работы",
+                "Качественная система фильтрации",
+                "Надёжные насосы и двигатели",
+                "Адаптация к тяжёлым условиям эксплуатации",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Icon name="Check" size={12} className="text-accent" />
                   </div>
-                  <h3 className="text-xl font-heading font-bold text-primary">Компоненты мирового уровня</h3>
+                  <span className="text-sm text-primary/80">{item}</span>
                 </div>
-                <p className="text-primary/80 mb-5 leading-relaxed">
-                  В конструкции вибропогружателей Yongan YZ используются компоненты ведущих производителей, что обеспечивает стабильную работу, минимальный износ и длительный срок службы оборудования:
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {[
-                    { brand: "Parker (США)", part: "Гидромоторы" },
-                    { brand: "FAG (Германия)", part: "Подшипники повышенной нагрузки и увеличенного ресурса" },
-                    { brand: "Rexroth / Kawasaki", part: "Насосы" },
-                    { brand: "Caterpillar / Cummins", part: "Двигатели" },
-                  ].map((item, i) => (
-                    <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                      <p className="font-semibold text-primary text-sm">{item.brand}</p>
-                      <p className="text-primary/70 text-sm mt-1">{item.part}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Icon name="Gauge" size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-xl font-heading font-bold text-primary">Гидравлические станции</h3>
-                </div>
-                <p className="text-primary/80 mb-4 leading-relaxed">
-                  Yongan Machinery предлагает комплексные решения: вибропогружатели и гидравлические станции, совместимые как между собой, так и с другим гидравлическим оборудованием.
-                </p>
-                <p className="text-primary/80 mb-5 leading-relaxed">
-                  Гидростанции Yongan — универсальное решение для питания вибропогружателей и другого гидравлического оборудования.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {[
-                    "Высокая стабильность работы",
-                    "Качественная система фильтрации",
-                    "Надёжные насосы и двигатели",
-                    "Адаптация к тяжёлым условиям эксплуатации",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-2">
-                      <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Icon name="Check" size={12} className="text-accent" />
-                      </div>
-                      <span className="text-sm text-primary/80">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section id="stations" className="py-10 md:py-16 bg-gray-50 scroll-mt-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Модели гидравлических станций
-            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {stations.map((station) => (
                 <Card
@@ -254,8 +208,7 @@ const VibroYZDescriptionSection = () => {
             </div>
           </div>
         </div>
-      </section>
-    </>
+    </section>
   );
 };
 
