@@ -3,34 +3,54 @@ import Icon from "@/components/ui/icon";
 
 const benefits = [
   {
-    icon: "FlaskConical",
-    title: "Первая отечественная разработка",
-    description: "КБУРГ — инновационное российское решение, впервые обеспечивающее совместное использование сваебойного и бурильного оборудования на одной копровой мачте.",
+    icon: "Construction",
+    title: "Универсальная мачта из усиленного металла",
+    description: "Два варианта исполнения: с одной направляющей (под молот или бур) или с двумя направляющими (молот + бур одновременно).",
   },
   {
-    icon: "Tractor",
-    title: "Совместимость с любыми экскаваторами",
-    description: "Навесное оборудование легко интегрируется с гусеничными экскаваторами от 18 тонн российского и импортного производства. Это позволяет использовать уже имеющийся парк техники без дополнительных инвестиций.",
+    icon: "ArrowLeftRight",
+    title: "Увеличенный рабочий ход — 1200 мм",
+    description: "Пантограф позволяет погружать сваи как максимально близко к базе, так и с выносом до 1200 мм без перемещения установки.",
   },
   {
-    icon: "Hammer",
-    title: "Широкий выбор молотов",
-    description: "Установка работает с дизельными трубчатыми, дизельными штанговыми и гидравлическими молотами. Масса ударной части — до 5 000 кг.",
+    icon: "RotateCcw",
+    title: "Поворот платформы 360°",
+    description: "Сокращает время подачи и установки свай, повышая производительность до 50% по сравнению с гусеничными копрами типа СП49.",
   },
   {
-    icon: "Drill",
-    title: "Мощное бурильное оборудование",
-    description: "КБУРГ оснащается гидравлическими вращателями с крутящим моментом до 111 кН×м и диаметром шнека до 1 200 мм.",
+    icon: "Timer",
+    title: "Быстрый монтаж",
+    description: "Перевод из транспортного положения в рабочее — менее 15 минут.",
   },
   {
-    icon: "Award",
-    title: "Официальная сертификация",
-    description: "Оборудование полностью соответствует требованиям Таможенного союза и прошло все этапы сертификации.",
+    icon: "Truck",
+    title: "Удобная транспортировка",
+    description: "Разборная мачта (3 секции). Габариты: длина до 12 м, высота 3,5 м, ширина — от 3,4 м до 3,7 м.",
   },
   {
-    icon: "Layers",
-    title: "Линейка моделей под любые задачи",
-    description: "В ассортименте три модели: КБУРГ-12, КБУРГ-14, КБУРГ-16 — с забивкой свай от 12 до 16 метров.",
+    icon: "ShieldCheck",
+    title: "Электронная система безопасности",
+    description: "Контроль наклонов и автоматическая остановка при отклонениях, звуковая и световая сигнализация, механические ограничители и кренометр, защита от ошибок оператора.",
+  },
+  {
+    icon: "Cpu",
+    title: "Электросхема контроля управления (IPS)",
+    description: "Интеллектуальная система управления Intelligent Power Switches с защитой от перегрузок и коротких замыканий.",
+  },
+  {
+    icon: "Settings",
+    title: "Качественная гидравлика",
+    description: "Гидравлическое оборудование Bosch Rexroth (Германия).",
+  },
+  {
+    icon: "Anchor",
+    title: "Грузоподъёмные лебёдки ZOLLERN (Германия)",
+    description: "Тяговое усилие 8 т, до 16 т с полиспастами. Повышенная устойчивость и возможность работы с тяжёлыми молотами.",
+  },
+  {
+    icon: "Armchair",
+    title: "Комфорт оператора",
+    description: "Большая площадь остекления, удобное управление и регулируемое сиденье.",
   },
 ];
 
@@ -42,19 +62,23 @@ const KburgBenefitsSection = () => {
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
             Преимущества копрово-бурильных установок КБУРГ
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
               <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
-                    <Icon name={benefit.icon} size={24} className="text-accent" />
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon name={benefit.icon} size={24} className="text-accent" fallback="CheckCircle" />
+                    </div>
+                    <div>
+                      <h3 className="text-base md:text-lg font-heading font-bold text-primary mb-1">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-primary leading-relaxed text-base md:text-lg">
+                        {benefit.description}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-heading font-bold text-primary mb-2">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-primary leading-relaxed text-base">
-                    {benefit.description}
-                  </p>
                 </CardContent>
               </Card>
             ))}
