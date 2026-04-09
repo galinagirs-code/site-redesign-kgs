@@ -100,9 +100,14 @@ const VibroYZBenefitsSection = () => {
                 { brand: "Rexroth / Kawasaki", part: "Насосы" },
                 { brand: "Caterpillar / Cummins", part: "Двигатели" },
               ].map((item, i) => (
-                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                  <p className="font-semibold text-primary text-sm">{item.brand}</p>
-                  <p className="text-primary/70 text-sm mt-1">{item.part}</p>
+                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Icon name="Check" size={12} className="text-accent" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary text-sm">{item.brand}</p>
+                    <p className="text-primary/70 text-sm mt-1">{item.part}</p>
+                  </div>
                 </div>
               ))}
             </div>
