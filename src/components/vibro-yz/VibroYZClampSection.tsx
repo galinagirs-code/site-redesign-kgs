@@ -33,9 +33,30 @@ const VibroYZClampSection = () => {
     <section id="clamps" className="py-10 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6 text-center">
             Модели зажимов
           </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white rounded-2xl overflow-hidden shadow flex items-center justify-center p-4">
+              <img
+                src="https://cdn.poehali.dev/files/491d2312-7d45-4725-8bc3-12c07e0db06f.png"
+                alt="Зажим YZJ120-320"
+                className="object-contain max-h-64 w-full"
+              />
+            </div>
+            <div className="bg-white rounded-2xl overflow-hidden shadow flex items-center justify-center p-4">
+              <img
+                src="https://cdn.poehali.dev/files/26159174-1ec7-4fd9-9d27-08f0eb06a178.png"
+                alt="Зажим YZJ80DC-320DC"
+                className="object-contain max-h-64 w-full"
+              />
+            </div>
+          </div>
+
+          <p className="text-primary/80 leading-relaxed mb-8 max-w-3xl mx-auto text-center">
+            Для гидравлических крановых вибропогружателей (серия YZ) предлагается широкий ассортимент зажимов, предназначенных для шпунтовых свай, Н-балок и других профилей. Надёжная конструкция и мощный зажимной цилиндр обеспечивает стабильную и безопасную фиксацию свай.
+          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {clamps.map((clamp) => (
