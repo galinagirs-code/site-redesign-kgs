@@ -13,11 +13,6 @@ const types = [
     icon: "Square",
   },
   {
-    title: "Для труб",
-    desc: "Под конкретный диаметр трубы",
-    icon: "Cylinder",
-  },
-  {
     title: "Универсальные",
     desc: "С регулируемым размером",
     icon: "Settings2",
