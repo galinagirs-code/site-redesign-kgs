@@ -43,8 +43,8 @@ const KburgDescriptionSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Сваепогружатели</p>
-                  <p className="text-primary text-base mb-3 leading-relaxed">В качестве сваепогружателя используются сваебойные молоты как российского, так и импортного производства:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                  <p className="text-primary text-base md:text-lg mb-3 leading-relaxed">В качестве сваепогружателя используются сваебойные молоты как российского, так и импортного производства:</p>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Молоты дизельные трубчатые — масса ударной части до 3 500 кг</li>
                     <li>Молоты дизельные штанговые — масса ударной части до 4 500 кг</li>
                     <li>Молоты гидравлические — масса ударной части до 5 000 кг</li>
@@ -52,8 +52,8 @@ const KburgDescriptionSection = () => {
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Бурильное оборудование</p>
-                  <p className="text-primary text-base mb-3 leading-relaxed">В качестве бурильного оборудования используются:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                  <p className="text-primary text-base md:text-lg mb-3 leading-relaxed">В качестве бурильного оборудования используются:</p>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg">
                     <li>Гидравлические вращатели с крутящим моментом до 111 кН×м</li>
                     <li>Диаметр шнека до 1 200 мм</li>
                     <li>Российского и импортного производства</li>
@@ -72,7 +72,7 @@ const KburgDescriptionSection = () => {
                   </div>
                   <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Условия эксплуатации</h3>
                 </div>
-                <ul className="list-disc pl-5 space-y-2 text-primary text-base">
+                <ul className="list-disc pl-5 space-y-2 text-primary text-base md:text-lg">
                   <li>Диапазон рабочих температур: от −40°C до +40°C</li>
                   <li>Максимально допустимый уклон стройплощадки: 3 градуса</li>
                   <li>Максимально допустимая скорость ветра: 14 м/с</li>
