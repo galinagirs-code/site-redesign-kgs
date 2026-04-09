@@ -43,7 +43,7 @@ const KburgDescriptionSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Сваепогружатели</p>
-                  <p className="text-primary text-sm mb-3 leading-relaxed">В качестве сваепогружателя используются сваебойные молоты как российского, так и импортного производства:</p>
+                  <p className="text-primary text-base mb-3 leading-relaxed">В качестве сваепогружателя используются сваебойные молоты как российского, так и импортного производства:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Молоты дизельные трубчатые — масса ударной части до 3 500 кг</li>
                     <li>Молоты дизельные штанговые — масса ударной части до 4 500 кг</li>
@@ -52,7 +52,7 @@ const KburgDescriptionSection = () => {
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <p className="text-primary font-semibold mb-2 text-base md:text-lg">Бурильное оборудование</p>
-                  <p className="text-primary text-sm mb-3 leading-relaxed">В качестве бурильного оборудования используются:</p>
+                  <p className="text-primary text-base mb-3 leading-relaxed">В качестве бурильного оборудования используются:</p>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Гидравлические вращатели с крутящим моментом до 111 кН×м</li>
                     <li>Диаметр шнека до 1 200 мм</li>
