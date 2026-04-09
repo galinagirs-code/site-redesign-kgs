@@ -44,6 +44,7 @@ import VibroSG from "./pages/VibroSG";
 import VibroVH from "./pages/VibroVH";
 import VibroS from "./pages/VibroS";
 import VibroCS from "./pages/VibroCS";
+import VibroYZ from "./pages/VibroYZ";
 import UdlinennayaStrela from "./pages/UdlinennayaStrela";
 import KvikKapler from "./pages/KvikKapler";
 import JuliYZS from "./pages/JuliYZS";
@@ -106,6 +107,7 @@ const App = () => (
           <Route path="/catalog/vibro-vh" element={<VibroVH />} />
           <Route path="/catalog/vibro-s" element={<VibroS />} />
           <Route path="/catalog/vibro-cs" element={<VibroCS />} />
+          <Route path="/catalog/vibro-yz" element={<VibroYZ />} />
           <Route path="/catalog/udlinennaya-strela" element={<UdlinennayaStrela />} />
           <Route path="/catalog/kvik-kapler" element={<KvikKapler />} />
           <Route path="/catalog/juli-yzs" element={<JuliYZS />} />

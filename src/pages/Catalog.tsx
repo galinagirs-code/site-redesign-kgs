@@ -944,7 +944,7 @@ const Catalog = () => {
                           2: "/catalog/juli-jl"
                         },
                         "vibro-crane": {
-                          0: "/catalog/yongan-yz",
+                          0: "/catalog/vibro-yz",
                           1: "/catalog/yongan-yz-vm",
                           2: "/catalog/yongan-dzj"
                         },
