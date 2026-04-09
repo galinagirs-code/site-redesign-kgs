@@ -18,6 +18,9 @@ const KburgDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и применение</h3>
               </div>
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                КБУРГ — это первая отечественная разработка, позволяющая совместное использование на копровой мачте сваебойного и бурильного оборудования.
+              </p>
               <p className="text-primary mb-6 text-base md:text-lg leading-relaxed">
                 Копрово-бурильные установки КБУРГ применяются в промышленном и гражданском строительстве. Навесное оборудование устанавливается на любые экскаваторы российского или импортного производства, подходящие по грузовому индексу.
               </p>
