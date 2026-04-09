@@ -10,7 +10,7 @@ const NagolovnikiHeroSection = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Расходники и аксессуары
+              Свайные наголовники
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
               Свайные наголовники
