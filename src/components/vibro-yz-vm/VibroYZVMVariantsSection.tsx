@@ -127,7 +127,7 @@ const VibroYZVMVariantsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
-            Модели гидравлических крановых вибропогружателей (серия YZ-VM)
+            Модели гидравлических крановых вибропогружателей<br />(серия YZ-VM)
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
             {models.map((model) => (
