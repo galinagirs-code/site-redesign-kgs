@@ -40,14 +40,14 @@ const VibroYZClampSection = () => {
           <div className="flex flex-col sm:flex-row gap-2 mb-8 justify-center">
             <div className="bg-white rounded-2xl overflow-hidden shadow flex items-center justify-center p-4 sm:w-72">
               <img
-                src="https://cdn.poehali.dev/files/491d2312-7d45-4725-8bc3-12c07e0db06f.png"
+                src="https://cdn.poehali.dev/files/33abfdf8-8a0f-4940-b749-a919d0c8c527.jpg"
                 alt="Зажим YZJ120-320"
                 className="object-contain max-h-64 w-full"
               />
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow flex items-center justify-center p-4 sm:w-72">
               <img
-                src="https://cdn.poehali.dev/files/26159174-1ec7-4fd9-9d27-08f0eb06a178.png"
+                src="https://cdn.poehali.dev/files/4a389767-3b46-4602-acb2-7a297ce94f49.jpg"
                 alt="Зажим YZJ80DC-320DC"
                 className="object-contain max-h-64 w-full"
               />
