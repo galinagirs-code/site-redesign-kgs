@@ -27,7 +27,7 @@ const NagolovnikiFunctionsSection = () => {
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
             Типы свайных наголовников
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
             {types.map((type, index) => (
               <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-6">
