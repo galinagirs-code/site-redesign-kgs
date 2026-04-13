@@ -183,9 +183,6 @@ const VibroDZJClampSection = () => {
           </div>
           <div className="mb-12">
             <ClampGrid clamps={singleClamps} />
-            <p className="text-sm text-primary/60 mt-4 italic">
-              Дуговая зажимная балка (опционально) для трубных свай небольшого размера
-            </p>
           </div>
 
           {/* Двойной зажим */}
@@ -195,7 +192,7 @@ const VibroDZJClampSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
             <div className="bg-white rounded-2xl overflow-hidden shadow flex flex-col items-center p-4 sm:w-80">
               <img
-                src="https://cdn.poehali.dev/projects/ac018ba4-20ce-4648-95d6-1d6c97ae54c8/bucket/607c34a0-43af-43ce-b935-f6996f609e5c.png"
+                src="https://cdn.poehali.dev/files/483e0e69-a78f-44c5-9523-9ce5f7513580.jpg"
                 alt="Двойной гидравлический зажим DZJ"
                 className="object-contain max-h-64 w-full"
               />
