@@ -52,23 +52,20 @@ const VibroDZJHeroSection = () => {
                 </p>
 
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-3">
-                  Электрические вибропогружатели Yongan серии DZJ оснащены компонентами ведущих мировых брендов:
+                  Электрические вибропогружатели серии DZJ оснащены компонентами ведущих мировых брендов:
                 </p>
-                <div className="space-y-2">
-                  {[
-                    { brand: "FAG (Германия)", part: "Подшипники — трёхслойная конструкция" },
-                    { brand: "Siemens / Schneider Electric", part: "Электрические компоненты" },
-                    { brand: "Итальянское производство", part: "Гидравлический масляный насос" },
-                    { brand: "Два исполнения", part: "Стандартная и регулируемая частота (инверторные модели)" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                      <span className="text-base md:text-lg text-primary">
-                        <span className="font-semibold">{item.brand}</span> — {item.part}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                <ul className="list-disc list-inside space-y-1 mb-4 text-base md:text-lg text-primary">
+                  <li>подшипники FAG (трёхслойная конструкция);</li>
+                  <li>гидравлический масляный насос итальянского производства;</li>
+                  <li>электрические компоненты Siemens и Schneider Electric.</li>
+                </ul>
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-3">
+                  Оборудование доступно в двух исполнениях:
+                </p>
+                <ul className="list-disc list-inside space-y-1 text-base md:text-lg text-primary">
+                  <li>стандартная частота;</li>
+                  <li>регулируемая частота (инверторные модели).</li>
+                </ul>
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
