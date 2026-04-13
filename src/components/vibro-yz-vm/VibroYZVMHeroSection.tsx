@@ -70,7 +70,7 @@ const VibroYZVMHeroSection = () => {
                 </div>
 
                 <h3 className="text-lg font-heading font-bold text-primary mb-3 mt-6">Технология регулируемого эксцентрикового момента</h3>
-                <p className="text-base md:text-lg text-primary/80 leading-relaxed mb-6">
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Система регулируемого эксцентрикового момента позволяет изменять вибрационную силу за счёт взаимного положения эксцентриков, обеспечивая точную настройку амплитуды и стабильную работу вибропогружателя в различных условиях.
                 </p>
 
