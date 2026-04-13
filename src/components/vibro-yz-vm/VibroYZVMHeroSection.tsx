@@ -68,22 +68,7 @@ const VibroYZVMHeroSection = () => {
                     </div>
                   ))}
                 </div>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Вибропогружатели отлично подходят для морских и прибрежных работ, обеспечивая стабильную работу на глубине и устойчивость к подводным нагрузкам.
-                </p>
-                <div className="space-y-3">
-                  {[
-                    "Усиленная грузоподъёмная секция (Heavy Duty Lifting Section) — обеспечивает надёжную работу при высоких нагрузках",
-                    "Двухступенчатая система виброизоляции (Double Stage Vibration Absorption) — снижает нагрузку на кран и повышает эффективность передачи усилия на сваю",
-                    "Интеграция функций подъёма, погружения и извлечения — повышает общую производительность работ",
-                    "Регулируемые эластомеры — позволяют адаптировать оборудование под различные типы грунта",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                      <span className="text-base md:text-lg text-primary">{item}</span>
-                    </div>
-                  ))}
-                </div>
+
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">

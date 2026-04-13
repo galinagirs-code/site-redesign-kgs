@@ -115,6 +115,23 @@ const VibroYZVMBenefitsSection = () => {
           <div id="general-info" className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+              Гидравлические крановые вибропогружатели Yongan (серия YZ-VM) отлично подходят для морских и прибрежных работ, обеспечивая стабильную работу на глубине и устойчивость к подводным нагрузкам.
+            </p>
+            <div className="space-y-3 mb-8">
+              {[
+                "Усиленная грузоподъёмная секция (Heavy Duty Lifting Section) — обеспечивает надёжную работу при высоких нагрузках",
+                "Двухступенчатая система виброизоляции (Double Stage Vibration Absorption) — снижает нагрузку на кран и повышает эффективность передачи усилия на сваю",
+                "Интеграция функций подъёма, погружения и извлечения — повышает общую производительность работ",
+                "Регулируемые эластомеры — позволяют адаптировать оборудование под различные типы грунта",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
+                  <span className="text-base text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+
             <h4 className="text-lg font-heading font-bold text-primary mb-3">Технология регулируемого эксцентрикового момента</h4>
             <p className="text-primary/80 leading-relaxed mb-6">
               Система регулируемого эксцентрикового момента позволяет изменять вибрационную силу за счёт взаимного положения эксцентриков, обеспечивая точную настройку амплитуды и стабильную работу вибропогружателя в различных условиях.
