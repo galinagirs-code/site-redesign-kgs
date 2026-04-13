@@ -10,6 +10,8 @@ import ConsultationSection from "@/components/ConsultationSection";
 import VibroDZJHeroSection from "@/components/vibro-dzj/VibroDZJHeroSection";
 import VibroDZJVariantsSection from "@/components/vibro-dzj/VibroDZJVariantsSection";
 import VibroDZJBenefitsSection from "@/components/vibro-dzj/VibroDZJBenefitsSection";
+import VibroDZJClampSection from "@/components/vibro-dzj/VibroDZJClampSection";
+import VibroDZJPowerSection from "@/components/vibro-dzj/VibroDZJPowerSection";
 import VibroDZJGallerySection from "@/components/vibro-dzj/VibroDZJGallerySection";
 
 const YonganDZJ = () => {
@@ -96,6 +98,8 @@ const YonganDZJ = () => {
       <VibroDZJHeroSection />
       <VibroDZJVariantsSection />
       <VibroDZJBenefitsSection />
+      <VibroDZJClampSection />
+      <VibroDZJPowerSection />
       <VibroDZJGallerySection />
 
       <ConsultationSection />

@@ -22,6 +22,12 @@ const VibroDZJHeroSection = () => {
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Модели вибропогружателей
               </a>
+              <a href="#clamps" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Модели зажимов
+              </a>
+              <a href="#power" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
+                Блоки питания
+              </a>
               <a href="#general-info" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
               </a>
