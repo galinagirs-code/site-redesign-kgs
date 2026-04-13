@@ -69,6 +69,39 @@ const VibroYZVMHeroSection = () => {
                   ))}
                 </div>
 
+                <h3 className="text-lg font-heading font-bold text-primary mb-3 mt-6">Технология регулируемого эксцентрикового момента</h3>
+                <p className="text-base md:text-lg text-primary/80 leading-relaxed mb-6">
+                  Система регулируемого эксцентрикового момента позволяет изменять вибрационную силу за счёт взаимного положения эксцентриков, обеспечивая точную настройку амплитуды и стабильную работу вибропогружателя в различных условиях.
+                </p>
+
+                <h3 className="text-lg font-heading font-bold text-primary mb-3">Ключевые преимущества</h3>
+                <div className="space-y-2 mb-6">
+                  {[
+                    "Плавный запуск и остановка — отсутствие ударных нагрузок",
+                    "Точная регулировка амплитуды — адаптация под любые задачи",
+                    "Гибкость применения — подходит для телескопических стрел автокранов",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <h3 className="text-lg font-heading font-bold text-primary mb-3">Принцип работы</h3>
+                <div className="space-y-4">
+                  {[
+                    { title: "Запуск и остановка", text: "Нулевая амплитуда при запуске и остановке. Отсутствуют ударные нагрузки и рывки при пуске и остановке." },
+                    { title: "Гибкость применения", text: "Подходит для работы с телескопическими стрелами автокранов. Обеспечивает более гибкое применение и снижает стоимость строительства." },
+                    { title: "Регулировка амплитуды", text: "Амплитуда вибрации может регулироваться в любой момент за счёт изменения эксцентрикового момента. Максимальная амплитуда — до 100%." },
+                  ].map((item) => (
+                    <div key={item.title} className="border-l-4 border-accent pl-4 py-1">
+                      <p className="font-semibold text-primary mb-1">{item.title}</p>
+                      <p className="text-base text-primary/80 leading-relaxed">{item.text}</p>
+                    </div>
+                  ))}
+                </div>
+
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
