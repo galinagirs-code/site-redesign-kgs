@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -89,8 +88,6 @@ const clamps: Clamp[] = [
 ];
 
 const VibroDZJClampSection = () => {
-  const [expandedClamp, setExpandedClamp] = useState<string | null>(null);
-
   return (
     <section id="clamps" className="py-10 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -119,51 +116,19 @@ const VibroDZJClampSection = () => {
                     </Badge>
                   </div>
                   <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
-                    {clamp.specs.slice(0, 3).map((spec, idx) => (
+                    {clamp.specs.map((spec, idx) => (
                       <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
                         <span className="text-sm text-primary flex-1">{spec.label}</span>
                         <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
                       </div>
                     ))}
-                    {expandedClamp === clamp.model && clamp.specs.length > 3 && (
-                      <>
-                        {clamp.specs.slice(3).map((spec, idx) => (
-                          <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                            <span className="text-sm text-primary flex-1">{spec.label}</span>
-                            <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
-                          </div>
-                        ))}
-                      </>
-                    )}
                   </div>
-                  <div className="flex flex-col gap-2 mt-4">
-                    {clamp.specs.length > 3 && (
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => setExpandedClamp(expandedClamp === clamp.model ? null : clamp.model)}
-                        className="w-full"
-                      >
-                        {expandedClamp === clamp.model ? (
-                          <>
-                            <Icon name="ChevronUp" size={16} className="mr-2" />
-                            Скрыть характеристики
-                          </>
-                        ) : (
-                          <>
-                            <Icon name="ChevronDown" size={16} className="mr-2" />
-                            Подробнее
-                          </>
-                        )}
-                      </Button>
-                    )}
-                    <a href="#consultation" className="block">
-                      <Button className="btn-gradient text-white w-full" size="sm">
-                        <Icon name="MessageSquare" size={16} className="mr-2" />
-                        Получить консультацию
-                      </Button>
-                    </a>
-                  </div>
+                  <a href="#consultation" className="block mt-4">
+                    <Button className="btn-gradient text-white w-full" size="sm">
+                      <Icon name="MessageSquare" size={16} className="mr-2" />
+                      Получить консультацию
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
