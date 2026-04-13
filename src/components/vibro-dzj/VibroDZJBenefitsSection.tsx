@@ -56,7 +56,7 @@ const VibroDZJBenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Преимущества вибропогружателей Yongan DZJ
+            Преимущества электрических крановых вибропогружателей (серия DZJ)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
@@ -86,7 +86,7 @@ const VibroDZJBenefitsSection = () => {
 
             <h4 className="text-lg font-heading font-bold text-primary mb-3">Ключевые особенности оборудования</h4>
             <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
-              Оборудование доступно в двух исполнениях — со стандартной и регулируемой частотой (инверторные модели). Это позволяет:
+              Вибропогружатели электрические крановые Yongan (серия DZJ) доступны в двух исполнениях — со стандартной и регулируемой частотой (инверторные модели), что позволяет:
             </p>
             <div className="space-y-2 mb-8">
               {[
