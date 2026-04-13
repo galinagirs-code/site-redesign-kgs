@@ -52,18 +52,30 @@ const VibroDZJHeroSection = () => {
                 </p>
 
                 <h3 className="text-lg font-heading font-bold text-primary mb-3 mt-6">Электрические вибропогружатели серии DZJ оснащены компонентами ведущих мировых брендов:</h3>
-                <ul className="list-disc list-inside space-y-1 mb-4 text-base md:text-lg text-primary">
-                  <li>подшипники FAG (трёхслойная конструкция);</li>
-                  <li>гидравлический масляный насос итальянского производства;</li>
-                  <li>электрические компоненты Siemens и Schneider Electric.</li>
-                </ul>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-3">
-                  Оборудование доступно в двух исполнениях:
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-base md:text-lg text-primary">
-                  <li>стандартная частота;</li>
-                  <li>регулируемая частота (инверторные модели).</li>
-                </ul>
+                <div className="space-y-2 mb-6">
+                  {[
+                    "подшипники FAG (трёхслойная конструкция)",
+                    "гидравлический масляный насос итальянского производства",
+                    "электрические компоненты Siemens и Schneider Electric",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <h3 className="text-lg font-heading font-bold text-primary mb-3">Оборудование доступно в двух исполнениях:</h3>
+                <div className="space-y-2">
+                  {[
+                    "стандартная частота",
+                    "регулируемая частота (инверторные модели)",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                      <span className="text-base md:text-lg text-primary">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
