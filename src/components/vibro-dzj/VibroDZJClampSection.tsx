@@ -108,14 +108,14 @@ const VibroDZJClampSection = () => {
                 key={clamp.model}
                 className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
               >
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-base md:text-lg font-heading font-bold text-primary leading-tight">{clamp.model}</h3>
                     <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 ml-2 flex-shrink-0">
                       зажим
                     </Badge>
                   </div>
-                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4 flex-1">
                     {clamp.specs.map((spec, idx) => (
                       <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
                         <span className="text-sm text-primary flex-1">{spec.label}</span>
