@@ -104,23 +104,6 @@ const VibroDZJBenefitsSection = () => {
               ))}
             </div>
 
-            <h4 className="text-lg font-heading font-bold text-primary mb-3">Почему стоит выбрать Yongan</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-              {[
-                "Проверенные технологии с мировым опытом применения",
-                "Высокое качество комплектующих",
-                "Адаптация под различные условия эксплуатации",
-                "Снижение затрат на строительство",
-              ].map((item, i) => (
-                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Icon name="Check" size={12} className="text-accent" />
-                  </div>
-                  <p className="text-primary text-sm">{item}</p>
-                </div>
-              ))}
-            </div>
-
             <h4 className="text-lg font-heading font-bold text-primary mb-3">Принцип работы</h4>
             <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
               Электрические вибропогружатели Yongan работают на основе теории резонанса. Когда частота вибрации оборудования совпадает с частотой грунта:

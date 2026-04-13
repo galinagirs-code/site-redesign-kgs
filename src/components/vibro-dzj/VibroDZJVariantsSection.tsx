@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 const models = [
   {
@@ -258,70 +259,79 @@ const models = [
   },
 ];
 
-const VISIBLE_SPECS = 3;
-
 const VibroDZJVariantsSection = () => {
-  const [expandedModels, setExpandedModels] = useState<Set<string>>(new Set());
-
-  const toggleModel = (name: string) => {
-    setExpandedModels((prev) => {
-      const next = new Set(prev);
-      if (next.has(name)) {
-        next.delete(name);
-      } else {
-        next.add(name);
-      }
-      return next;
-    });
-  };
+  const [expandedModel, setExpandedModel] = useState<string | null>(null);
 
   return (
-    <section id="variants" className="py-10 md:py-14 bg-gray-50">
+    <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-4 text-center">
             Модели электрических крановых вибропогружателей<br />(серия DZJ)
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
-            {models.map((model) => {
-              const isExpanded = expandedModels.has(model.name);
-              const visibleSpecs = isExpanded ? model.specs : model.specs.slice(0, VISIBLE_SPECS);
-              return (
-                <Card
-                  key={model.name}
-                  className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
-                >
-                  <CardContent className="p-4">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-lg font-heading font-bold text-primary">{model.name}</h3>
-                      <Badge className="bg-accent/10 text-accent border-accent/30 text-xs">электрический</Badge>
-                    </div>
-                    <div className="space-y-2 mb-3">
-                      {visibleSpecs.map((spec) => (
-                        <div key={spec.label} className="flex justify-between items-start gap-2">
-                          <span className="text-xs text-primary/60 leading-tight">{spec.label}</span>
-                          <span className="text-xs font-semibold text-primary text-right">{spec.value}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="space-y-2 pt-2 border-t border-gray-100">
-                      <button
-                        onClick={() => toggleModel(model.name)}
-                        className="w-full text-xs text-accent hover:text-accent/80 transition-colors font-medium"
-                      >
-                        {isExpanded ? "Свернуть ▲" : "Подробнее ▼"}
-                      </button>
-                      <a
-                        href="#consultation"
-                        className="block w-full text-center text-xs bg-primary text-white rounded-md py-2 hover:bg-primary/90 transition-colors"
-                      >
+            {models.map((model) => (
+              <Card
+                key={model.name}
+                className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl"
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
+                      {model.name}
+                    </h3>
+                    <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                      электрический
+                    </Badge>
+                  </div>
+
+                  <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                    {model.specs.slice(0, 3).map((spec, idx) => (
+                      <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                        <span className="text-sm text-primary flex-1">{spec.label}</span>
+                        <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
+                      </div>
+                    ))}
+                    {expandedModel === model.name && (
+                      <>
+                        {model.specs.slice(3).map((spec, idx) => (
+                          <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-sm text-primary flex-1">{spec.label}</span>
+                            <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
+
+                  <div className="flex flex-col gap-2 mt-4">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setExpandedModel(expandedModel === model.name ? null : model.name)}
+                      className="w-full"
+                    >
+                      {expandedModel === model.name ? (
+                        <>
+                          <Icon name="ChevronUp" size={16} className="mr-2" />
+                          Скрыть характеристики
+                        </>
+                      ) : (
+                        <>
+                          <Icon name="ChevronDown" size={16} className="mr-2" />
+                          Подробнее
+                        </>
+                      )}
+                    </Button>
+                    <a href="#consultation" className="block">
+                      <Button className="btn-gradient text-white w-full" size="sm">
                         Получить консультацию
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
