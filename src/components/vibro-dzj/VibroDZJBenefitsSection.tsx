@@ -83,31 +83,6 @@ const VibroDZJBenefitsSection = () => {
             ))}
           </div>
 
-          <div className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
-            <h3 className="text-xl font-heading font-bold text-primary mb-4">Компоненты мирового уровня</h3>
-            <p className="text-primary/80 mb-5 leading-relaxed">
-              Электрические вибропогружатели Yongan серии DZJ оснащены компонентами ведущих мировых брендов:
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                { brand: "FAG (Германия)", part: "Подшипники — трёхслойная конструкция" },
-                { brand: "Siemens / Schneider Electric", part: "Электрические компоненты" },
-                { brand: "Итальянское производство", part: "Гидравлический масляный насос" },
-                { brand: "Два исполнения", part: "Стандартная и регулируемая частота (инверторные модели)" },
-              ].map((item, i) => (
-                <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Icon name="Check" size={12} className="text-accent" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-primary text-sm">{item.brand}</p>
-                    <p className="text-primary/70 text-sm mt-1">{item.part}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div id="general-info" className="mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
@@ -145,6 +120,27 @@ const VibroDZJBenefitsSection = () => {
                 </div>
               ))}
             </div>
+
+            <h4 className="text-lg font-heading font-bold text-primary mb-3">Принцип работы</h4>
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+              Электрические вибропогружатели Yongan работают на основе теории резонанса. Когда частота вибрации оборудования совпадает с частотой грунта:
+            </p>
+            <div className="space-y-2 mb-4">
+              {[
+                "возникает резонанс",
+                "увеличивается амплитуда колебаний",
+                "разрушается сцепление между сваей и грунтом",
+                "сопротивление грунта резко снижается",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
+                  <span className="text-base text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-base md:text-lg text-primary leading-relaxed mb-8">
+              В результате свая погружается в грунт под действием собственного веса с минимальным дополнительным усилием.
+            </p>
 
             <h4 className="text-lg font-heading font-bold text-primary mb-3">Область применения</h4>
             <p className="text-base md:text-lg text-primary leading-relaxed mb-4">

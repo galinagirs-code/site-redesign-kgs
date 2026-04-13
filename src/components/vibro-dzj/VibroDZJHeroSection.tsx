@@ -54,26 +54,25 @@ const VibroDZJHeroSection = () => {
                   Оборудование сочетает более 30 лет производственного опыта, современные технологии и комплектующие мирового уровня. За это время вибропогружатели успешно применялись в крупных строительных проектах по всему миру.
                 </p>
 
-                <h3 className="text-lg font-heading font-bold text-primary mb-3 mt-6">Принцип работы</h3>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
-                  Электрические вибропогружатели Yongan работают на основе теории резонанса. Когда частота вибрации оборудования совпадает с частотой грунта:
-                </p>
-                <div className="space-y-2 mb-4">
+                <h3 className="text-lg font-heading font-bold text-primary mb-3 mt-6">Электрические вибропогружатели Yongan серии DZJ оснащены компонентами ведущих мировых брендов:</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
-                    "возникает резонанс",
-                    "увеличивается амплитуда колебаний",
-                    "разрушается сцепление между сваей и грунтом",
-                    "сопротивление грунта резко снижается",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                      <span className="text-base md:text-lg text-primary">{item}</span>
+                    { brand: "FAG (Германия)", part: "Подшипники — трёхслойная конструкция" },
+                    { brand: "Siemens / Schneider Electric", part: "Электрические компоненты" },
+                    { brand: "Итальянское производство", part: "Гидравлический масляный насос" },
+                    { brand: "Два исполнения", part: "Стандартная и регулируемая частота (инверторные модели)" },
+                  ].map((item, i) => (
+                    <div key={i} className="bg-gray-50 rounded-lg p-4 border border-gray-100 flex items-start gap-3">
+                      <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-accent font-bold text-xs">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary text-sm">{item.brand}</p>
+                        <p className="text-primary/70 text-sm mt-1">{item.part}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
-                <p className="text-base md:text-lg text-primary leading-relaxed">
-                  В результате свая погружается в грунт под действием собственного веса с минимальным дополнительным усилием.
-                </p>
               </div>
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
