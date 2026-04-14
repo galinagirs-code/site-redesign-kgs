@@ -50,7 +50,7 @@ const StarkeHeroSection = () => {
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Оборудование сочетает высокую мощность, надёжность и эффективность, соответствуя современным международным стандартам. По своим характеристикам техника STARKE успешно конкурирует с европейскими аналогами.
                 </p>
-                <h3 className="text-lg font-heading font-bold text-primary mb-3">STARKE LH — универсальная сваебойная установка:</h3>
+                <h3 className="text-lg font-heading font-bold text-primary mb-3">STARKE (серия LH) — универсальная сваебойная установка:</h3>
                 <div className="space-y-2">
                   {[
                     "работа с дизельными и гидравлическими молотами (масса ударной части от 3000 до 5000 кг)",

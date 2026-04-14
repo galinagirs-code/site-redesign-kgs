@@ -138,29 +138,29 @@ const StarkeVariantsSection = () => {
               const extraSpecs = card.specs.slice(3);
 
               return (
-                <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
-                  <CardContent className="p-6">
+                <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl flex flex-col">
+                  <CardContent className="p-6 flex flex-col flex-1">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">STARKE {card.name}</h3>
                     </div>
 
-                    <div className="space-y-1 mb-4 bg-gray-50 rounded-lg p-4">
+                    <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4 flex-1">
                       {previewSpecs.map((spec, idx) => (
                         <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-sm text-primary flex-1">{spec.label}</span>
-                          <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
+                          <span className="text-base text-primary flex-1">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
                         </div>
                       ))}
 
                       {isExpanded && extraSpecs.map((spec, idx) => (
                         <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
-                          <span className="text-sm text-primary flex-1">{spec.label}</span>
-                          <span className="text-sm font-semibold text-primary text-right ml-4">{spec.value}</span>
+                          <span className="text-base text-primary flex-1">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 mt-auto">
                       <Button
                         variant="outline"
                         size="sm"
@@ -170,7 +170,7 @@ const StarkeVariantsSection = () => {
                         {isExpanded ? (
                           <><Icon name="ChevronUp" size={16} className="mr-2" />Скрыть характеристики</>
                         ) : (
-                          <><Icon name="ChevronDown" size={16} className="mr-2" />Все характеристики</>
+                          <><Icon name="ChevronDown" size={16} className="mr-2" />Подробнее</>
                         )}
                       </Button>
                       <a href="#consultation" className="block">
