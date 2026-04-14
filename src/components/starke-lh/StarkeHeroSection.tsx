@@ -45,12 +45,9 @@ const StarkeHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Сваебойные установки STARKE производятся на базе технологий компании Guangdong Liyuan Hydraulic Machinery Co. Ltd (Китай) — одного из признанных производителей строительной техники, работающего на рынке с 1993 года.
+                  Сваебойные установки STARKE созданы на основе технологий и инженерных решений компании Guangdong Liyuan Hydraulic Machinery Co. Ltd (Китай). Будучи одним из лидеров рынка строительной техники с 1993 года, партнер гарантирует высочайшее качество комплектующих и проверенную временем надежность каждой единицы оборудования.
                 </p>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Оборудование сочетает высокую мощность, надёжность и эффективность, соответствуя современным международным стандартам. По своим характеристикам техника STARKE успешно конкурирует с европейскими аналогами.
-                </p>
-                <h3 className="text-lg font-heading font-bold text-primary mb-3">STARKE (серия LH) — универсальная сваебойная установка: работа с дизельными и гидравлическими молотами, забивка свай длиной до 16 метров.</h3>
+                <h3 className="text-lg font-heading font-bold text-primary mb-3">STARKE (серия LH) — универсальная сваебойная установка:</h3>
                 <div className="space-y-2">
                   {[
                     "работа с дизельными и гидравлическими молотами",
