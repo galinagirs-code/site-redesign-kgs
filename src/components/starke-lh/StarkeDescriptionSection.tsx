@@ -18,9 +18,9 @@ const StarkeDescriptionSection = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
-                  { title: "Телескопическая мачта", desc: "Облегчает загрузку и установку свай, обеспечивает регулируемую высоту под различные задачи." },
-                  { title: "Горизонтальное перемещение направляющей", desc: "Повышает точность монтажа свай и удобство позиционирования." },
-                  { title: "Расширяемая гусеничная база", desc: "Обеспечивает устойчивость на сложных и неровных грунтах." },
+                  { title: "Телескопическая мачта", desc: "Облегчает подъём и установку свай, обеспечивает регулируемую высоту под различные задачи." },
+                  { title: "Горизонтальное перемещение направляющей", desc: "Даёт возможность точного и удобного позиционирования свай." },
+                  { title: "Раздвижная гусеничная база", desc: "Обеспечивает устойчивость на сложных и неровных грунтах." },
                   { title: "Компактные размеры", desc: "Упрощают транспортировку между объектами и перемещение по площадке." },
                 ].map((item, i) => (
                   <div key={i} className="bg-gray-50 rounded-xl p-5">
@@ -57,32 +57,6 @@ const StarkeDescriptionSection = () => {
                     <li>повышение точности выполнения работ</li>
                   </ul>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border-none shadow-lg mb-6">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="ListChecks" size={20} className="text-accent" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Функциональные возможности</h3>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  "Совместимость с широким спектром навесного оборудования",
-                  "Регулируемая высота мачты под различные задачи",
-                  "Удобное перемещение и быстрая транспортировка",
-                  "Стабильная работа благодаря треугольной схеме опоры",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
-                    <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Icon name="Check" size={12} className="text-accent" />
-                    </div>
-                    <p className="text-primary text-base">{item}</p>
-                  </div>
-                ))}
               </div>
             </CardContent>
           </Card>
