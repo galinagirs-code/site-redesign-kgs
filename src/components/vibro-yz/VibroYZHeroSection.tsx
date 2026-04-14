@@ -51,7 +51,7 @@ const VibroYZHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Гидравлические вибропогружатели серии YZ от Yongan Machinery Co., Ltd. (Китай) разработаны с акцентом на надёжность, эффективность и долговечность при работе в самых сложных условиях.
+                  Гидравлические вибропогружатели серии YZ от Yongan Machinery Co., Ltd. (Китай) сочетают высокую надёжность, эффективность и долговечность даже при работе в самых сложных условиях.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
                   Оборудование применяется для погружения и извлечения:

@@ -111,7 +111,7 @@ const StarkeDescriptionSection = () => {
                     <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                       <Icon name="Check" size={12} className="text-accent" />
                     </div>
-                    <p className="font-semibold text-primary text-sm">{item}</p>
+                    <p className="font-semibold text-primary text-base">{item}</p>
                   </div>
                 ))}
               </div>
