@@ -65,7 +65,7 @@ const KlbVariantsSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="animate-fade-in">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-              Модели
+              Модели сваебойных установок Dongtai Juli (серия KLB)
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">

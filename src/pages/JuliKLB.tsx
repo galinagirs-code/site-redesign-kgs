@@ -97,6 +97,21 @@ const JuliKLB = () => {
       <KlbBenefitsSection />
       <KlbDescriptionSection />
 
+      <section id="gallery" className="py-10 md:py-14 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Фотогалерея</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                <div key={i} className="aspect-square rounded-xl bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
+                  Фото {i}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ConsultationSection />
 
       <footer className="bg-primary text-white py-12 md:py-16">

@@ -28,9 +28,9 @@ const KlbDescriptionSection = () => {
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary text-base leading-relaxed">
-                    Компания активно внедряет инновации и постоянно расширяет линейку техники, предлагая решения для задач любой сложности в фундаментостроении.
-                  </p>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                    <li>Компания активно внедряет инновации и постоянно расширяет линейку техники, предлагая решения для задач любой сложности в фундаментостроении.</li>
+                  </ul>
                 </div>
               </div>
             </CardContent>
@@ -44,17 +44,14 @@ const KlbDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и возможности</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Установки серии KLB применяются для:
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Область применения</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>погружения свай различного типа</li>
-                    <li>лидерного бурения</li>
-                    <li>выполнения фундаментных работ</li>
-                    <li>строительства мостов, портов и промышленных объектов</li>
+                    <li>Погружение свай различного типа</li>
+                    <li>Лидерное бурение</li>
+                    <li>Фундаментные работы</li>
+                    <li>Строительство мостов, портов и промышленных объектов</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
@@ -78,23 +75,13 @@ const KlbDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Конструктивные особенности</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Установки KLB оснащены:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>лебедками с электрическим приводом</li>
-                    <li>гидравлическим механизмом позиционирования мачты</li>
-                    <li>шагающим механизмом передвижения с гидравлическим приводом</li>
-                  </ul>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary font-semibold mb-2 text-base md:text-lg">Шагающая система обеспечивает:</p>
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>отличную маневренность</li>
-                    <li>работу на слабых и нестабильных грунтах</li>
-                    <li>высокую производительность на площадке</li>
-                  </ul>
-                </div>
+              <div className="bg-gray-50 rounded-xl p-5">
+                <p className="text-primary font-semibold mb-2 text-base md:text-lg">Установки KLB оснащены:</p>
+                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                  <li>лебедками с электрическим приводом</li>
+                  <li>гидравлическим механизмом позиционирования мачты</li>
+                  <li>шагающим механизмом передвижения с гидравлическим приводом</li>
+                </ul>
               </div>
             </CardContent>
           </Card>
