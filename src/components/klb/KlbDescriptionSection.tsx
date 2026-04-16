@@ -12,6 +12,34 @@ const KlbDescriptionSection = () => {
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Building2" size={20} className="text-accent" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">О производителе</h3>
+              </div>
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                Компания Dongtai Juli Machinery Manufacturing Co., Ltd. (Китай) более 20 лет специализируется на разработке и производстве оборудования для фундаментостроения.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                    <li>Реализовано более 300 мостовых проектов в Китае</li>
+                    <li>Продукция успешно экспортируется на международные рынки</li>
+                    <li>Высокие оценки за качество и технологичность оборудования</li>
+                  </ul>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <p className="text-primary text-base leading-relaxed">
+                    Компания активно внедряет инновации и постоянно расширяет линейку техники, предлагая решения для задач любой сложности в фундаментостроении.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-none shadow-lg mb-6">
+            <CardContent className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Info" size={20} className="text-accent" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Назначение и возможности</h3>
@@ -71,7 +99,7 @@ const KlbDescriptionSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-none shadow-lg mb-6">
+          <Card className="border-none shadow-lg">
             <CardContent className="p-6 md:p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -99,34 +127,6 @@ const KlbDescriptionSection = () => {
                     <span className="text-accent font-bold text-base mt-0.5">&#10004;</span>
                     <span className="text-base text-primary">Высокий ресурс работы и стабильность эксплуатации</span>
                   </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border-none shadow-lg">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Building2" size={20} className="text-accent" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">О производителе</h3>
-              </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Компания Dongtai Juli Machinery Manufacturing Co., Ltd. (Китай) более 20 лет специализируется на разработке и производстве оборудования для фундаментостроения.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Реализовано более 300 мостовых проектов в Китае</li>
-                    <li>Продукция успешно экспортируется на международные рынки</li>
-                    <li>Высокие оценки за качество и технологичность оборудования</li>
-                  </ul>
-                </div>
-                <div className="bg-gray-50 rounded-xl p-5">
-                  <p className="text-primary text-base leading-relaxed">
-                    Компания активно внедряет инновации и постоянно расширяет линейку техники, предлагая решения для задач любой сложности в фундаментостроении.
-                  </p>
                 </div>
               </div>
             </CardContent>
