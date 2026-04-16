@@ -16,7 +16,7 @@ const JuliKLB = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Шагающие сваебойные установки Dongtai Juli (серия KLB)",
+    "name": "Сваебойные установки Dongtai Juli (серия KLB)",
     "description": "Современное оборудование для свайных работ и лидерного бурения. Высокая устойчивость, маневренность, работа в сложных геологических условиях.",
     "brand": {
       "@type": "Brand",
