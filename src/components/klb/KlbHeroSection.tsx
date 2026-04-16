@@ -10,10 +10,10 @@ const KlbHeroSection = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <Badge className="mb-4 bg-accent/20 text-accent border-accent/50">
-              Шагающие сваебойные установки
+              Сваебойные установки
             </Badge>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
-              Шагающие сваебойные установки Dongtai Juli (серия KLB)
+              Сваебойные установки Dongtai Juli (серия KLB)
             </h1>
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <a href="#variants" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
@@ -37,13 +37,13 @@ const KlbHeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-6 text-center">
-              Dongtai Juli KLB — шагающие копровые установки
+              Dongtai Juli KLB — копровые установки серии KLB
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Шагающие сваебойные установки Dongtai Juli серии KLB — это современное оборудование для выполнения свайных работ и лидерного бурения. Машины отличаются высокой устойчивостью, маневренностью и возможностью работы в сложных геологических условиях.
+                  Сваебойные установки Dongtai Juli серии KLB — это современное оборудование для выполнения свайных работ и лидерного бурения. Машины отличаются высокой устойчивостью, маневренностью и возможностью работы в сложных геологических условиях.
                 </p>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
                   Установки могут оснащаться различным навесным оборудованием:
@@ -72,7 +72,7 @@ const KlbHeroSection = () => {
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
                     src="https://cdn.poehali.dev/files/1ec3ab29-4fbc-4a99-8349-ab8ac590e229.png"
-                    alt="Шагающие сваебойные установки Dongtai Juli серия KLB"
+                    alt="Сваебойные установки Dongtai Juli серия KLB"
                     className="w-full h-full object-contain p-6"
                   />
                 </div>

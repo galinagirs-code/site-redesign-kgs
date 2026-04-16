@@ -32,11 +32,11 @@ const JuliKLB = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Шагающие сваебойные установки Dongtai Juli (серия KLB) | KGS"
-        description="Шагающие копровые установки Dongtai Juli KLB для свайных работ и лидерного бурения. Низкое давление на грунт, высокая устойчивость, многофункциональность."
-        keywords="шагающие сваебойные установки, Dongtai Juli, серия KLB, копровые установки, свайные работы, лидерное бурение"
+        title="Сваебойные установки Dongtai Juli (серия KLB) | KGS"
+        description="Копровые установки Dongtai Juli KLB для свайных работ и лидерного бурения. Низкое давление на грунт, высокая устойчивость, многофункциональность."
+        keywords="сваебойные установки, Dongtai Juli, серия KLB, копровые установки, свайные работы, лидерное бурение"
         canonical="https://kgs-ural.ru/catalog/juli-klb"
-        ogTitle="Шагающие сваебойные установки Dongtai Juli (серия KLB)"
+        ogTitle="Сваебойные установки Dongtai Juli (серия KLB)"
         ogDescription="Копровые установки KLB с дизель-молотом, гидромолотом, вибропогружателем или буровой установкой. Официальный дилер KGS."
       />
       <SchemaOrg data={productSchema} />
@@ -89,7 +89,7 @@ const JuliKLB = () => {
 
       <Breadcrumbs items={[
         { label: 'Оборудование', path: '/catalog' },
-        { label: 'Шагающие сваебойные установки Dongtai Juli (серия KLB)', path: '/catalog/juli-klb' }
+        { label: 'Сваебойные установки Dongtai Juli (серия KLB)', path: '/catalog/juli-klb' }
       ]} />
 
       <KlbHeroSection />

@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
@@ -121,24 +122,32 @@ const KlbVariantsSection = () => {
                       )}
                     </div>
 
-                    <button
-                      onClick={() =>
-                        setExpandedVariant(expandedVariant === variant.name ? null : variant.name)
-                      }
-                      className="w-full flex items-center justify-center gap-2 text-accent hover:text-accent/80 transition-colors text-sm font-medium"
-                    >
-                      {expandedVariant === variant.name ? (
-                        <>
-                          <Icon name="ChevronUp" size={16} />
-                          Свернуть характеристики
-                        </>
-                      ) : (
-                        <>
-                          <Icon name="ChevronDown" size={16} />
-                          Все характеристики
-                        </>
-                      )}
-                    </button>
+                    <div className="flex flex-col gap-2 mt-4">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                        className="w-full"
+                      >
+                        {expandedVariant === variant.name ? (
+                          <>
+                            <Icon name="ChevronUp" size={16} className="mr-2" />
+                            Скрыть характеристики
+                          </>
+                        ) : (
+                          <>
+                            <Icon name="ChevronDown" size={16} className="mr-2" />
+                            Подробнее
+                          </>
+                        )}
+                      </Button>
+                      <a href="#consultation" className="block">
+                        <Button className="btn-gradient text-white w-full" size="sm">
+                          <Icon name="MessageSquare" size={16} className="mr-2" />
+                          Получить консультацию
+                        </Button>
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
