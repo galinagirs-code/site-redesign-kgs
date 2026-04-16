@@ -63,7 +63,7 @@ const KlbHeroSection = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">буровой установкой (буровой головкой)</span>
+                    <span className="text-base md:text-lg text-primary">буровой установкой (вращатель)</span>
                   </div>
                 </div>
               </div>
