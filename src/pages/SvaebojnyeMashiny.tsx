@@ -191,7 +191,7 @@ const SvaebojnyeMashiny = () => {
               <Card className="border-primary/20">
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold text-primary mb-6">
-                    Шагающие сваебойные установки Dongtai Juli (серия KLB)
+                    Сваебойные установки Dongtai Juli (серия KLB)
                   </h2>
                   <p className="text-primary mb-4 leading-relaxed">
                     Шагающие копровые установки Dongtai Juli серии KLB предназначены для выполнения свайных работ. Они могут оснащаться дизель-молотом, гидравлическим молотом, вибропогружателем или буровым станком (буровой головкой).
