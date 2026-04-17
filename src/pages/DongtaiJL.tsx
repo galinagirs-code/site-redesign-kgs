@@ -8,6 +8,7 @@ import { SchemaOrg } from "@/components/SchemaOrg";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ConsultationSection from "@/components/ConsultationSection";
 import DongtaiJLHeroSection from "@/components/dongtai-jl/DongtaiJLHeroSection";
+import DongtaiJLVariantsSection from "@/components/dongtai-jl/DongtaiJLVariantsSection";
 import DongtaiJLBenefitsSection from "@/components/dongtai-jl/DongtaiJLBenefitsSection";
 import DongtaiJLDescriptionSection from "@/components/dongtai-jl/DongtaiJLDescriptionSection";
 
@@ -92,6 +93,7 @@ const DongtaiJL = () => {
       ]} />
 
       <DongtaiJLHeroSection />
+      <DongtaiJLVariantsSection />
       <DongtaiJLDescriptionSection />
       <DongtaiJLBenefitsSection />
 

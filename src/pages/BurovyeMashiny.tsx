@@ -246,6 +246,13 @@ const BurovyeMashiny = () => {
                   <p className="text-primary mb-6 leading-relaxed">
                     Горизонтально-направленные буровые установки Dongtai Juli серии JL широко используются для строительства железных дорог, дорог, укрепления рек, центра города, других ограниченных для строительства районов, для строительства водопроводов, угольного газа, электроники, телекоммуникаций, природного газа.
                   </p>
+                  <Link
+                    to="/catalog/dongtai-jl"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 mb-6 bg-accent text-white rounded-lg text-sm font-medium hover:bg-accent/90 transition-colors"
+                  >
+                    Подробнее о серии JL
+                    <Icon name="ArrowRight" size={16} />
+                  </Link>
 
                   <h3 className="text-xl font-semibold text-primary mb-4">
                     Преимущества серии JL
@@ -352,7 +359,7 @@ const BurovyeMashiny = () => {
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Горизонтальная буровая машина Dongtai Juli (серия JL)</span>
+                      <Link to="/catalog/dongtai-jl" className="text-sm hover:text-accent transition-colors">Горизонтальная буровая машина Dongtai Juli (серия JL)</Link>
                     </li>
                   </ul>
                 </CardContent>
