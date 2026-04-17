@@ -30,20 +30,20 @@ const variants = [
       { label: "Мощность", value: "133 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×230 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "150 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT45", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT45", indent: true },
       { label: "Ширина гусеничных башмаков", value: "700 мм", indent: true },
       { label: "Длина шасси", value: "5 110 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 100–4 200 мм", indent: true },
       { label: "Тяговое усилие", value: "280 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "45 500 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 500 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 000 мм", indent: true },
     ],
@@ -73,20 +73,20 @@ const variants = [
       { label: "Мощность", value: "133 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×230 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "150 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT45", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT45", indent: true },
       { label: "Ширина гусеничных башмаков", value: "700 мм", indent: true },
       { label: "Длина шасси", value: "5 110 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 100–4 200 мм", indent: true },
       { label: "Тяговое усилие", value: "280 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "45 500 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 200 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 000 мм", indent: true },
     ],
@@ -116,20 +116,20 @@ const variants = [
       { label: "Мощность", value: "196 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×250 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "200 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT70B", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT70B", indent: true },
       { label: "Ширина гусеничных башмаков", value: "700 мм", indent: true },
       { label: "Длина шасси", value: "5 400 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 150–4 300 мм", indent: true },
       { label: "Тяговое усилие", value: "430 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "57 500 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 900 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 600 мм", indent: true },
     ],
@@ -159,20 +159,20 @@ const variants = [
       { label: "Мощность", value: "196 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×250 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "200 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT70B", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT70B", indent: true },
       { label: "Ширина гусеничных башмаков", value: "700 мм", indent: true },
       { label: "Длина шасси", value: "5 400 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 150–4 300 мм", indent: true },
       { label: "Тяговое усилие", value: "430 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "57 500 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 700 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 400 мм", indent: true },
     ],
@@ -202,20 +202,20 @@ const variants = [
       { label: "Мощность", value: "221 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×288 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "250 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT70A", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT70A", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "5 535 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 200–4 300 мм", indent: true },
       { label: "Тяговое усилие", value: "500 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "67 000 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 800 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 500 мм", indent: true },
     ],
@@ -245,20 +245,20 @@ const variants = [
       { label: "Мощность", value: "221 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×288 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "250 кНм", indent: true },
       { label: "Скорость вращения", value: "8–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT70A", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT70A", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "5 535 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 200–4 300 мм", indent: true },
       { label: "Тяговое усилие", value: "500 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "67 500 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "2 000 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 700 мм", indent: true },
     ],
@@ -288,20 +288,20 @@ const variants = [
       { label: "Мощность", value: "263 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×380 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "286 кНм", indent: true },
       { label: "Скорость вращения", value: "6–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT80", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT80", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "5 680 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 300–4 400 мм", indent: true },
       { label: "Тяговое усилие", value: "500 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "78 000 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "1 800 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 500 мм", indent: true },
     ],
@@ -331,20 +331,20 @@ const variants = [
       { label: "Мощность", value: "263 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×380 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "286 кНм", indent: true },
       { label: "Скорость вращения", value: "6–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT80", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT80", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "5 680 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 300–4 400 мм", indent: true },
       { label: "Тяговое усилие", value: "500 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "79 000 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "2 400 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "2 100 мм", indent: true },
     ],
@@ -374,20 +374,20 @@ const variants = [
       { label: "Мощность", value: "263 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×380 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "286 кНм", indent: true },
       { label: "Скорость вращения", value: "6–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT80", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT80", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "5 680 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 300–4 400 мм", indent: true },
       { label: "Тяговое усилие", value: "500 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "78 000 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "2 200 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "1 900 мм", indent: true },
     ],
@@ -417,149 +417,115 @@ const variants = [
       { label: "Мощность", value: "263 кВт", indent: true },
       { label: "ГИДРАВЛИЧЕСКАЯ СИСТЕМА", value: "" },
       { label: "Поток", value: "2×380 л/мин", indent: true },
-      { label: "Давление", value: "33 бар", indent: true },
-      { label: "ВРАЩАТЕЛЬНАЯ ГОЛОВКА", value: "" },
+      { label: "Давление", value: "33 мПа", indent: true },
+      { label: "ГИДРАВЛИЧЕСКИЙ ПРИВОД", value: "" },
       { label: "Крутящий момент вращателя", value: "320 кНм", indent: true },
       { label: "Скорость вращения", value: "6–30 об/мин", indent: true },
       { label: "ГУСЕНИЧНОЕ ШАССИ", value: "" },
-      { label: "Шасси", value: "JT90B", indent: true },
+      { label: "Выдвижные гусеницы", value: "JT90B", indent: true },
       { label: "Ширина гусеничных башмаков", value: "800 мм", indent: true },
       { label: "Длина шасси", value: "6 020 мм", indent: true },
       { label: "Мин/макс ширина шасси", value: "3 450–4 600 мм", indent: true },
       { label: "Тяговое усилие", value: "650 кН", indent: true },
       { label: "Скорость передвижения", value: "1,5 км/ч", indent: true },
-      { label: "ТРАНСПОРТИРОВОЧНЫЕ ПАРАМЕТРЫ", value: "" },
+      { label: "ТРАНСПОРТИРОВОЧНЫЙ ВЕС", value: "" },
       { label: "Транспортировочный вес", value: "86 000 кг", indent: true },
-      { label: "ПАРАМЕТРЫ БУРЕНИЯ", value: "" },
+      { label: "ГЛУБИНА БУРЕНИЯ", value: "" },
       { label: "Диаметр необсаженного отверстия", value: "2 600 мм", indent: true },
       { label: "Диаметр обсаженного отверстия", value: "2 300 мм", indent: true },
     ],
   },
 ];
 
-const typeColors: Record<string, string> = {
-  "стандартная": "bg-blue-100 text-blue-800",
-  "увеличенный ход": "bg-green-100 text-green-800",
-  "усиленная": "bg-orange-100 text-orange-800",
-};
-
 const JintSDVariantsSection = () => {
-  const [selectedVariant, setSelectedVariant] = useState(0);
-  const [showDetailed, setShowDetailed] = useState(false);
-
-  const variant = variants[selectedVariant];
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   return (
-    <section id="variants" className="py-10 md:py-14 bg-gray-50">
+    <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Модели серии SD
-          </h2>
+          <div className="animate-fade-in">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Модели буровых установок JINT (серия SD)
+            </h2>
 
-          <div className="flex flex-wrap gap-2 justify-center mb-8">
-            {variants.map((v, i) => (
-              <button
-                key={i}
-                onClick={() => { setSelectedVariant(i); setShowDetailed(false); }}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                  selectedVariant === i
-                    ? "bg-primary text-white shadow-md"
-                    : "bg-white text-primary border border-gray-200 hover:border-primary"
-                }`}
-              >
-                {v.name}
-              </button>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {variants.map((variant, index) => (
+                <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
+                        {variant.name}
+                      </h3>
+                      <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 text-xs">
+                        {variant.type}
+                      </Badge>
+                    </div>
 
-          <Card className="border-none shadow-xl">
-            <CardContent className="p-6 md:p-8">
-              <div className="flex flex-wrap items-center gap-3 mb-6">
-                <h3 className="text-2xl font-heading font-bold text-primary">{variant.name}</h3>
-                <Badge className={typeColors[variant.type] || "bg-gray-100 text-gray-800"}>
-                  {variant.type}
-                </Badge>
-              </div>
+                    <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                      {variant.specs.map((spec, idx) => (
+                        <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                          <span className="text-base text-primary flex-1">{spec.label}</span>
+                          <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                        </div>
+                      ))}
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                {variant.specs.map((spec, i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-base text-primary flex-1">{spec.label}</span>
-                    <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Button
-                variant="outline"
-                onClick={() => setShowDetailed(!showDetailed)}
-                className="mb-6 w-full md:w-auto"
-              >
-                <Icon name={showDetailed ? "ChevronUp" : "ChevronDown"} size={16} className="mr-2" />
-                {showDetailed ? "Скрыть характеристики" : "Полные характеристики"}
-              </Button>
-
-              {showDetailed && (
-                <div className="border-t border-gray-100 pt-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1">
-                    {(() => {
-                      const mid = Math.ceil(variant.detailedSpecs.length / 2);
-                      const left = variant.detailedSpecs.slice(0, mid);
-                      const right = variant.detailedSpecs.slice(mid);
-                      return (
+                      {expandedVariant === variant.name && (
                         <>
-                          <div className="space-y-1">
-                            {left.map((spec, i) => (
-                              <div
-                                key={i}
-                                className={`flex justify-between items-start py-1.5 ${spec.value ? "border-b border-gray-100" : "pt-3"}`}
-                              >
-                                {spec.value ? (
-                                  <>
-                                    <span className={`text-base text-primary${spec.indent ? " pl-3" : ""}`}>{spec.label}</span>
-                                    <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
-                                  </>
-                                ) : (
-                                  <span className="text-base font-semibold text-primary w-full">{spec.label}</span>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                          <div className="space-y-1">
-                            {right.map((spec, i) => (
-                              <div
-                                key={i}
-                                className={`flex justify-between items-start py-1.5 ${spec.value ? "border-b border-gray-100" : "pt-3"}`}
-                              >
-                                {spec.value ? (
-                                  <>
-                                    <span className={`text-base text-primary${spec.indent ? " pl-3" : ""}`}>{spec.label}</span>
-                                    <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
-                                  </>
-                                ) : (
-                                  <span className="text-base font-semibold text-primary w-full">{spec.label}</span>
-                                )}
-                              </div>
-                            ))}
-                          </div>
+                          {variant.detailedSpecs.map((spec, idx) => (
+                            <div
+                              key={idx}
+                              className={
+                                spec.indent
+                                  ? "flex justify-between items-center py-1 border-b border-gray-200 last:border-0 ml-4"
+                                  : "flex justify-between items-center py-1 border-b border-gray-200 last:border-0"
+                              }
+                            >
+                              {spec.value ? (
+                                <>
+                                  <span className="text-base text-primary">{spec.label}</span>
+                                  <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                                </>
+                              ) : (
+                                <span className="text-base font-semibold text-primary w-full">{spec.label}</span>
+                              )}
+                            </div>
+                          ))}
                         </>
-                      );
-                    })()}
-                  </div>
-                </div>
-              )}
+                      )}
+                    </div>
 
-              <div className="flex flex-wrap gap-3 mt-4">
-                <a href="#consultation" className="px-6 py-2.5 btn-gradient text-white rounded-lg text-sm font-medium transition-all hover:scale-105">
-                  Запросить цену
-                </a>
-                <a href="#consultation" className="px-6 py-2.5 border border-primary text-primary rounded-lg text-sm font-medium hover:bg-primary/5 transition-colors">
-                  Получить консультацию
-                </a>
-              </div>
-            </CardContent>
-          </Card>
+                    <div className="flex flex-col gap-2 mt-4">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                        className="w-full"
+                      >
+                        {expandedVariant === variant.name ? (
+                          <>
+                            <Icon name="ChevronUp" size={16} className="mr-2" />
+                            Скрыть характеристики
+                          </>
+                        ) : (
+                          <>
+                            <Icon name="ChevronDown" size={16} className="mr-2" />
+                            Подробнее
+                          </>
+                        )}
+                      </Button>
+                      <a href="#consultation" className="block">
+                        <Button className="btn-gradient text-white w-full" size="sm">
+                          <Icon name="MessageSquare" size={16} className="mr-2" />
+                          Получить консультацию
+                        </Button>
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
