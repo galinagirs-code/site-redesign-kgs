@@ -6,7 +6,7 @@ import Icon from "@/components/ui/icon";
 
 const variants = [
   {
-    name: "JuLi JL-10",
+    name: "JL-10",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "60" },
@@ -26,7 +26,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-12",
+    name: "JL-12",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "75" },
@@ -46,7 +46,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-15",
+    name: "JL-15",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "75" },
@@ -66,7 +66,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-18",
+    name: "JL-18",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "110" },
@@ -86,7 +86,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-25",
+    name: "JL-25",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "125" },
@@ -106,7 +106,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-33",
+    name: "JL-33",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "132" },
@@ -126,7 +126,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-36",
+    name: "JL-36",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "160" },
@@ -146,7 +146,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-40",
+    name: "JL-40",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "179" },
@@ -166,7 +166,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-45",
+    name: "JL-45",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "179" },
@@ -186,7 +186,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-68/85",
+    name: "JL-68/85",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "239" },
@@ -206,7 +206,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-80/105",
+    name: "JL-80/105",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "338" },
@@ -226,7 +226,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-150",
+    name: "JL-150",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "392" },
@@ -246,7 +246,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-240",
+    name: "JL-240",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "264 × 2" },
@@ -266,7 +266,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-300",
+    name: "JL-300",
     specs: [
       { label: "Двигатель", value: "CUMMINS" },
       { label: "Номинальная мощность, кВт", value: "298 × 2" },
@@ -286,7 +286,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-500",
+    name: "JL-500",
     specs: [
       { label: "Двигатель", value: "VOLVO" },
       { label: "Номинальная мощность, кВт", value: "394 × 2" },
@@ -306,7 +306,7 @@ const variants = [
     ],
   },
   {
-    name: "JuLi JL-660",
+    name: "JL-660",
     specs: [
       { label: "Двигатель", value: "VOLVO" },
       { label: "Номинальная мощность, кВт", value: "565 × 2" },
