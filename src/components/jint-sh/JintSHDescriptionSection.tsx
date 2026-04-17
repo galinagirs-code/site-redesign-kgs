@@ -153,17 +153,17 @@ const JintSHDescriptionSection = () => {
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Расчёт глубины бурения</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Стандартная длина бура: 1,7 м</li>
-                    <li>С келли-баром: (кол-во секций × длина секции) − 0,2 м</li>
-                    <li>Возможна поставка келли-баров различной длины по запросу</li>
+                    <li>Расчет с келли-штангой: (количество секций × длина секции) − 0,2 м</li>
+                    <li>Возможна поставка келли-штанг различной длины под требования проекта</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Подбор келли-бара</h4>
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Подбор келли-штанги</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Тип подбирается по глубине бурения</li>
-                    <li>Учитывается требуемый крутящий момент</li>
-                    <li>Учитывается усилие задавливания</li>
-                    <li>Суммарный вес келли-бара и инструмента — в пределах мощности лебёдки</li>
+                    <li>Подбирается по требуемой глубине бурения</li>
+                    <li>Учитывается необходимый крутящий момент</li>
+                    <li>Учитывается усилие задавливания (подачи)</li>
+                    <li>Суммарный вес келли-штанги и бурового инструмента должен соответствовать мощности лебёдки</li>
                   </ul>
                 </div>
               </div>
