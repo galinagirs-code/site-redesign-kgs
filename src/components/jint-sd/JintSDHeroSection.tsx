@@ -43,19 +43,30 @@ const JintSDHeroSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-6">
               <div>
                 <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Гидравлические буровые установки серии SD — это современное оборудование, разработанное с учётом передовых мировых технологий. Машины отличаются высокой производительностью, надёжностью и адаптацией под реальные задачи строительного рынка.
+                  Гидравлические буровые установки серии SD — это современное оборудование, разработанное с учетом передовых мировых технологий. Машины отличаются высокой производительностью, надежностью и адаптацией под реальные задачи строительного рынка.
                 </p>
-                <p className="text-base md:text-lg text-primary leading-relaxed mb-6">
-                  Оборудование сочетает в себе мощность, мобильность и точность — для эффективной работы при устройстве свайных фундаментов, строительстве многоэтажных зданий, возведении мостов и гидротехнических проектов.
+                <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
+                  Оборудование сочетает мощность, мобильность и точность, обеспечивая эффективную работу при:
                 </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-primary text-base md:text-lg mb-6">
+                  <li>устройстве свайных фундаментов</li>
+                  <li>строительстве многоэтажных зданий</li>
+                  <li>возведении мостов</li>
+                  <li>реализации гидротехнических проектов</li>
+                </ul>
+                <p className="text-base md:text-lg text-primary font-semibold mb-3">Ключевые преимущества</p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">Высокая производительность бурения</span>
+                    <span className="text-base md:text-lg text-primary">Высокая производительность бурения за счёт мощной силовой головки</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">Компактный хвост и низкий центр тяжести</span>
+                    <span className="text-base md:text-lg text-primary">Компактная компоновка с уменьшенным задним свесом</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
+                    <span className="text-base md:text-lg text-primary">Низкий центр тяжести для повышения устойчивости</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
