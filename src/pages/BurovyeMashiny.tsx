@@ -359,7 +359,7 @@ const BurovyeMashiny = () => {
                     </li>
                     <li className="flex items-start">
                       <Icon name="check-circle" className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <Link to="/catalog/dongtai-jl" className="text-sm hover:text-accent transition-colors">Горизонтальная буровая машина Dongtai Juli (серия JL)</Link>
+                      <Link to="/catalog/dongtai-jl" className="text-sm hover:text-accent transition-colors">Горизонтально-направленные буровые установки Dongtai JuLi (серия JL) (ГНБ)</Link>
                     </li>
                   </ul>
                 </CardContent>
