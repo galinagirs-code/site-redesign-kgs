@@ -94,8 +94,8 @@ const DongtaiJL = () => {
 
       <DongtaiJLHeroSection />
       <DongtaiJLVariantsSection />
-      <DongtaiJLDescriptionSection />
       <DongtaiJLBenefitsSection />
+      <DongtaiJLDescriptionSection />
 
       <section id="gallery" className="py-10 md:py-14 bg-gray-50">
         <div className="container mx-auto px-4">

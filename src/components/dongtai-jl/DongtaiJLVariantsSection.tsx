@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
+import Icon from "@/components/ui/icon";
 
 const variants = [
   {
@@ -326,64 +328,85 @@ const variants = [
 ];
 
 const DongtaiJLVariantsSection = () => {
-  const [activeVariant, setActiveVariant] = useState(0);
+  const [expandedVariant, setExpandedVariant] = useState<string | null>(null);
 
   return (
-    <section id="variants" className="py-10 md:py-14 bg-white">
+    <section id="variants" className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-2 text-center">
-            Модельный ряд JuLi серии JL
-          </h2>
-          <p className="text-center text-primary/70 mb-8 text-base">
-            Выберите модель для просмотра технических характеристик
-          </p>
+          <div className="animate-fade-in">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Модели горизонтально-направленных буровых установок JuLi (серия JL)
+            </h2>
 
-          <div className="flex flex-wrap gap-2 justify-center mb-8">
-            {variants.map((v, i) => (
-              <button
-                key={i}
-                onClick={() => setActiveVariant(i)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all border ${
-                  activeVariant === i
-                    ? "bg-accent text-white border-accent shadow-md"
-                    : "bg-white text-primary border-primary/20 hover:border-accent hover:text-accent"
-                }`}
-              >
-                {v.name}
-              </button>
-            ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {variants.map((variant, index) => {
+                const shortSpecs = variant.specs.slice(0, 4);
+                const detailedSpecs = variant.specs.slice(4);
+                return (
+                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
+                          {variant.name}
+                        </h3>
+                        <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30 text-xs">
+                          Серия JL
+                        </Badge>
+                      </div>
+
+                      <div className="space-y-2 mb-4 bg-gray-50 rounded-lg p-4">
+                        {shortSpecs.map((spec, idx) => (
+                          <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                            <span className="text-base text-primary flex-1">{spec.label}</span>
+                            <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                          </div>
+                        ))}
+
+                        {expandedVariant === variant.name && (
+                          <>
+                            {detailedSpecs.map((spec, idx) => (
+                              <div key={idx} className="flex justify-between items-start py-1 border-b border-gray-200 last:border-0">
+                                <span className="text-base text-primary flex-1">{spec.label}</span>
+                                <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
+                              </div>
+                            ))}
+                          </>
+                        )}
+                      </div>
+
+                      <div className="flex flex-col gap-2 mt-4">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
+                          className="w-full"
+                        >
+                          {expandedVariant === variant.name ? (
+                            <>
+                              <Icon name="ChevronUp" size={16} className="mr-2" />
+                              Скрыть характеристики
+                            </>
+                          ) : (
+                            <>
+                              <Icon name="ChevronDown" size={16} className="mr-2" />
+                              Подробнее
+                            </>
+                          )}
+                        </Button>
+                        <a href="#consultation" className="block">
+                          <Button className="btn-gradient text-white w-full" size="sm">
+                            <Icon name="MessageSquare" size={16} className="mr-2" />
+                            Получить консультацию
+                          </Button>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
           </div>
-
-          <Card className="border-none shadow-xl">
-            <CardContent className="p-0">
-              <div className="bg-primary rounded-t-xl px-6 py-4 flex items-center justify-between">
-                <h3 className="text-xl font-heading font-bold text-white">
-                  Технические характеристики {variants[activeVariant].name}
-                </h3>
-                <Badge className="bg-accent/20 text-accent border-accent/50 text-sm">
-                  Серия JL
-                </Badge>
-              </div>
-              <div className="divide-y divide-gray-100">
-                {variants[activeVariant].specs.map((spec, i) => (
-                  <div
-                    key={i}
-                    className={`flex items-center justify-between px-6 py-3 ${
-                      i % 2 === 0 ? "bg-white" : "bg-gray-50/50"
-                    }`}
-                  >
-                    <span className="text-sm md:text-base text-primary/70 font-medium">
-                      {spec.label}
-                    </span>
-                    <span className="text-sm md:text-base text-primary font-semibold text-right ml-4">
-                      {spec.value}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
