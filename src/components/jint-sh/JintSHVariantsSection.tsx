@@ -537,7 +537,7 @@ const JintSHVariantsSection = () => {
                                   <span className="text-base font-semibold text-primary text-right ml-4">{spec.value}</span>
                                 </>
                               ) : (
-                                <span className="text-sm font-bold text-primary/70 uppercase tracking-wide w-full pt-2">{spec.label}</span>
+                                <span className="text-base font-semibold text-primary w-full">{spec.label}</span>
                               )}
                             </div>
                           ))}
