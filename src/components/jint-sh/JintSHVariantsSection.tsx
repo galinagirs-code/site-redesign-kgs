@@ -6,7 +6,7 @@ import Icon from "@/components/ui/icon";
 
 const variants = [
   {
-    name: "JINT SH25C",
+    name: "SH25C",
     type: "стандартная",
     specs: [
       { label: "Высота мачты", value: "23 500 мм" },
@@ -54,7 +54,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH25CW",
+    name: "SH25CW",
     type: "увеличенный ход",
     specs: [
       { label: "Высота мачты", value: "23 500 мм" },
@@ -102,7 +102,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH30",
+    name: "SH30",
     type: "стандартная",
     specs: [
       { label: "Высота мачты", value: "24 400 мм" },
@@ -150,7 +150,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH30W",
+    name: "SH30W",
     type: "увеличенный ход",
     specs: [
       { label: "Высота мачты", value: "24 400 мм" },
@@ -198,7 +198,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH30H",
+    name: "SH30H",
     type: "усиленная",
     specs: [
       { label: "Высота мачты", value: "24 600 мм" },
@@ -246,7 +246,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH30HW",
+    name: "SH30HW",
     type: "усил. + увел. ход",
     specs: [
       { label: "Высота мачты", value: "24 600 мм" },
@@ -294,7 +294,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH36",
+    name: "SH36",
     type: "стандартная",
     specs: [
       { label: "Высота мачты", value: "24 400 мм" },
@@ -342,7 +342,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH36W",
+    name: "SH36W",
     type: "увеличенный ход",
     specs: [
       { label: "Высота мачты", value: "24 400 мм" },
@@ -390,7 +390,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH36H",
+    name: "SH36H",
     type: "усиленная",
     specs: [
       { label: "Высота мачты", value: "27 400 мм" },
@@ -438,7 +438,7 @@ const variants = [
     ],
   },
   {
-    name: "JINT SH36HW",
+    name: "SH36HW",
     type: "усил. + увел. ход",
     specs: [
       { label: "Высота мачты", value: "27 400 мм" },
