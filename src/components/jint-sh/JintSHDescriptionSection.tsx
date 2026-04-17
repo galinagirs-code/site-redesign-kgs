@@ -23,7 +23,7 @@ const JintSHDescriptionSection = () => {
                 <div className="bg-gray-50 rounded-xl p-5">
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Более 100 лет в машиностроении</li>
-                    <li>1996–2003 — совместное производство с немецкой Bauer</li>
+                    <li>1996–2003г — совместное производство с немецкой Bauer</li>
                     <li>Государственная компания, входящая в число крупнейших в КНР</li>
                   </ul>
                 </div>
@@ -56,16 +56,15 @@ const JintSHDescriptionSection = () => {
                     <li>Мостостроение и гидротехническое строительство</li>
                     <li>Крупные промышленные объекты</li>
                     <li>Устройство свай большого диаметра (до 2 500 мм и более)</li>
-                    <li>Бурение в скальных грунтах и мерзлоте</li>
-                    <li>Объекты с особыми требованиями к несущей способности</li>
+                    <li>Бурение в скальных и мерзлых грунтах</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Когда нужна серия SH</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Глубина бурения более 60 метров (до 90+ м)</li>
-                    <li>Скальные грунты, мерзлота, сложная геология</li>
-                    <li>Сваи диаметром более 2 000 мм</li>
+                    <li>Скальные и мерзлые грунты, сложная геология</li>
+                    <li>Сваи диаметром до 2 500 мм и более</li>
                     <li>Мосты, ГЭС, промышленные объекты</li>
                   </ul>
                 </div>
