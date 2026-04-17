@@ -9,7 +9,7 @@ const DongtaiJLDescriptionSection = () => {
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-8 text-center">Общая информация</h2>
 
           <Card className="border-none shadow-lg mb-6">
-            <CardContent className="p-6 md:p-8">
+            <CardContent className="p-4 md:p-6">
               <p className="text-base md:text-lg text-primary leading-relaxed">
                 Буровые установки Dongtai JuLi (серия JL) — это надёжное и эффективное решение для выполнения задач горизонтально-направленного бурения, особенно в условиях городской застройки и ограниченного пространства.
               </p>
