@@ -22,9 +22,6 @@ const JintSHHeroSection = () => {
               <a href="#description" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Общая информация
               </a>
-              <a href="#benefits" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
-                Преимущества
-              </a>
               <a href="#gallery" className="px-6 py-3 btn-gradient text-white rounded-lg transition-all hover:scale-105 text-base font-medium">
                 Фотогалерея
               </a>

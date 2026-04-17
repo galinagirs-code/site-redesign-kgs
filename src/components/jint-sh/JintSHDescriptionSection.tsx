@@ -17,21 +17,21 @@ const JintSHDescriptionSection = () => {
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">О производителе</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Shanghai Jintai Construction Machinery Co., Ltd. — государственная машиностроительная компания Китая, основанная в 1921 году и входящая в число крупнейших производителей строительной техники в стране.
+                Shanghai Jintai Construction Machinery Co., Ltd. — государственная машиностроительная компания Китая, основанная в 1921 году. С 1996 по 2003 год компания работала в совместном производстве с немецкой Bauer — мировым лидером в производстве буровых установок. Это партнёрство обеспечило высокий уровень инженерной культуры и передовые технологии, заложенные в продуктовую линейку JINT.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Более 100 лет в машиностроении</li>
-                    <li>С 1996 по 2003 год — совместное производство с немецкой Bauer</li>
-                    <li>Входит в число крупнейших производителей строительной техники Китая</li>
+                    <li>1996–2003 — совместное производство с немецкой Bauer</li>
+                    <li>Государственная компания, входящая в число крупнейших в КНР</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Высокий уровень качества и передовые технологии</li>
-                    <li>Широкая линейка буровых машин для различных задач</li>
-                    <li>Продукция поставляется на международные рынки</li>
+                    <li>Передовые технологии немецкой инженерной школы</li>
+                    <li>Широкая линейка буровых машин серий SD и SH</li>
+                    <li>Поставки на международные рынки, в т.ч. в Россию</li>
                   </ul>
                 </div>
               </div>
@@ -44,28 +44,29 @@ const JintSHDescriptionSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Info" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Описание серии SH</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Серия SH — тяжёлые роторные установки</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Буровые установки серии SH — новое поколение гидравлических машин с усиленной треугольной конструкцией, разработанных с применением современных технологий и инженерных решений. По своим характеристикам установки превосходят мировые аналоги.
+                Серия SH (Heavy) — это мощные гидравлические роторные установки, предназначенные для мостостроения, гидротехнического строительства, крупных промышленных объектов и бурения свай большого диаметра. По характеристикам существенно превосходят серию SD.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Оборудование обеспечивает</h4>
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Назначение и применение</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Высокую производительность бурения</li>
-                    <li>Надёжную работу в сложных условиях</li>
-                    <li>Простоту эксплуатации</li>
-                    <li>Универсальность применения</li>
+                    <li>Мостостроение и гидротехническое строительство</li>
+                    <li>Крупные промышленные объекты</li>
+                    <li>Устройство свай большого диаметра (до 2 500 мм и более)</li>
+                    <li>Бурение в скальных грунтах и мерзлоте</li>
+                    <li>Объекты с особыми требованиями к несущей способности</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
-                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Область применения</h4>
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Когда нужна серия SH</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Строительство высотных зданий</li>
-                    <li>Мостовое строительство</li>
-                    <li>Инфраструктурные проекты</li>
-                    <li>Устройство свайных фундаментов</li>
+                    <li>Глубина бурения более 60 метров (до 90+ м)</li>
+                    <li>Скальные грунты, мерзлота, сложная геология</li>
+                    <li>Сваи диаметром более 2 000 мм</li>
+                    <li>Мосты, ГЭС, промышленные объекты</li>
                   </ul>
                 </div>
               </div>
@@ -80,19 +81,57 @@ const JintSHDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Конструктивные особенности</h3>
               </div>
+              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
+                Установки серии SH имеют усиленную по сравнению с серией SD конструкцию всех ключевых узлов: мачты, гусеничного шасси, гидравлической системы и противовеса.
+              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Мачта и ходовая часть</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Усиленная треугольная конструкция мачты</li>
-                    <li>Гидравлическая система нового поколения</li>
-                    <li>Возможность работы с различными типами келли-баров</li>
+                    <li>Усиленное сечение мачты с треугольной структурой</li>
+                    <li>Усиленные направляющие каретки ротора</li>
+                    <li>Эффективное гашение вибрации при бурении в твёрдых грунтах</li>
+                    <li>Увеличенный размер гусеничных башмаков</li>
+                    <li>Общий вес установки: 50–70+ тонн</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Гидравлика и управление</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Совместимость с навесным оборудованием мировых брендов</li>
-                    <li>Высокая эффективность при глубоком бурении</li>
-                    <li>Работа в водонасыщенных и нестабильных грунтах</li>
+                    <li>Система LUDV (Load Sensing) — чувствительная к нагрузке</li>
+                    <li>Плавное совмещение операций без потери мощности</li>
+                    <li>Цифровая панель с расширенной самодиагностикой</li>
+                    <li>Контроль глубины и вертикальности бурения</li>
+                    <li>Противовес с механизмом откидывания/сдвига</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-none shadow-lg mb-6">
+            <CardContent className="p-6 md:p-8">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Zap" size={20} className="text-accent" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Двигатель и силовые характеристики</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Двигатель</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                    <li>Cummins QSL9, QSM11 и аналоги</li>
+                    <li>Мощность: от 300 до 450 л.с.</li>
+                    <li>Экологический стандарт: Tier 3 / Stage IIIA (новые модели)</li>
+                  </ul>
+                </div>
+                <div className="bg-gray-50 rounded-xl p-5">
+                  <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Бурение</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
+                    <li>Крутящий момент: от 300 кНм до 460+ кНм</li>
+                    <li>Глубина бурения: до 90+ метров</li>
+                    <li>Диаметр сваи: до 2 500 мм и более</li>
                   </ul>
                 </div>
               </div>
@@ -105,7 +144,7 @@ const JintSHDescriptionSection = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Icon name="Drill" size={20} className="text-accent" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Особенности бурения</h3>
+                <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Особенности бурения и подбор оснастки</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
                 Параметры бурения зависят от конфигурации оборудования и рассчитываются индивидуально под задачи проекта.
@@ -115,7 +154,7 @@ const JintSHDescriptionSection = () => {
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Расчёт глубины бурения</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
                     <li>Стандартная длина бура: 1,7 м</li>
-                    <li>При использовании келли-баров: (кол-во секций × длина секции) − 0,2 м</li>
+                    <li>С келли-баром: (кол-во секций × длина секции) − 0,2 м</li>
                     <li>Возможна поставка келли-баров различной длины по запросу</li>
                   </ul>
                 </div>
@@ -125,12 +164,13 @@ const JintSHDescriptionSection = () => {
                     <li>Тип подбирается по глубине бурения</li>
                     <li>Учитывается требуемый крутящий момент</li>
                     <li>Учитывается усилие задавливания</li>
-                    <li>Суммарный вес келли-бара и бурового инструмента должен соответствовать мощности лебёдки</li>
+                    <li>Суммарный вес келли-бара и инструмента — в пределах мощности лебёдки</li>
                   </ul>
                 </div>
               </div>
             </CardContent>
           </Card>
+
         </div>
       </div>
     </section>
