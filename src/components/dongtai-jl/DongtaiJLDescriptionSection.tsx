@@ -10,12 +10,6 @@ const DongtaiJLDescriptionSection = () => {
 
           <Card className="border-none shadow-lg mb-6">
             <CardContent className="p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                  <Icon name="Info" size={20} className="text-accent" />
-                </div>
-                <h3 className="text-xl font-heading font-bold text-primary">О серии JL</h3>
-              </div>
               <p className="text-base md:text-lg text-primary leading-relaxed">
                 Буровые установки Dongtai JuLi (серия JL) — это надёжное и эффективное решение для выполнения задач горизонтально-направленного бурения, особенно в условиях городской застройки и ограниченного пространства.
               </p>
