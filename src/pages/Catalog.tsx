@@ -941,7 +941,7 @@ const Catalog = () => {
                         "drilling": {
                           0: "/catalog/jint-sh",
                           1: "/catalog/jint-sd",
-                          2: "/catalog/juli-jl"
+                          2: "/catalog/dongtai-jl"
                         },
                         "vibro-crane": {
                           0: "/catalog/vibro-yz",
