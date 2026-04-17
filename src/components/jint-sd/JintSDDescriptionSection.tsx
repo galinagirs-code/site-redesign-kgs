@@ -80,9 +80,6 @@ const JintSDDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Конструктивные особенности</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Установки серии SD спроектированы с акцентом на мобильность, экономичность и надёжность при работе в городских условиях и на объектах стандартной сложности.
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Мачта и ходовая часть</h4>
@@ -96,7 +93,7 @@ const JintSDDescriptionSection = () => {
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Гидравлика и управление</h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-primary text-base">
-                    <li>Многопоточная гидравлическая система</li>
+                    <li>Гидравлическая система</li>
                     <li>Оптимальное распределение мощности</li>
                     <li>Многоскоростное управление силовой головкой</li>
                     <li>Двойная система защиты и амортизации ротора</li>
@@ -143,9 +140,6 @@ const JintSDDescriptionSection = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">Сравнение серий SD и SH</h3>
               </div>
-              <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Серия SD — универсальная «рабочая лошадка» для большинства строительных задач. Серия SH — тяжёлая серия для глубокого бурения большого диаметра в сложных условиях.
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
                   <h4 className="text-primary font-semibold mb-2 text-base md:text-lg">Серия SD</h4>
