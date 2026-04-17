@@ -344,8 +344,8 @@ const DongtaiJLVariantsSection = () => {
                 const shortSpecs = variant.specs.slice(0, 4);
                 const detailedSpecs = variant.specs.slice(4);
                 return (
-                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl">
-                    <CardContent className="p-6">
+                  <Card key={index} className="border-2 border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl flex flex-col">
+                    <CardContent className="p-6 flex flex-col flex-1">
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">
                           {variant.name}
@@ -375,12 +375,12 @@ const DongtaiJLVariantsSection = () => {
                         )}
                       </div>
 
-                      <div className="flex flex-row gap-2 mt-4">
+                      <div className="flex flex-col gap-2 mt-auto pt-4">
                         <Button
                           variant="outline"
                           size="sm"
                           onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                          className="flex-1"
+                          className="w-full"
                         >
                           {expandedVariant === variant.name ? (
                             <>
@@ -394,10 +394,10 @@ const DongtaiJLVariantsSection = () => {
                             </>
                           )}
                         </Button>
-                        <a href="#consultation" className="flex-1">
+                        <a href="#consultation" className="block">
                           <Button className="btn-gradient text-white w-full" size="sm">
                             <Icon name="MessageSquare" size={16} className="mr-2" />
-                            Консультация
+                            Получить консультацию
                           </Button>
                         </a>
                       </div>
