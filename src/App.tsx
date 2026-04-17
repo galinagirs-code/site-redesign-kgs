@@ -37,6 +37,7 @@ import Kburg from "./pages/Kburg";
 import JintSH from "./pages/JintSH";
 import JintSD from "./pages/JintSD";
 import JuliJL from "./pages/JuliJL";
+import DongtaiJL from "./pages/DongtaiJL";
 import YonganYZ from "./pages/YonganYZ";
 import YonganYZVM from "./pages/YonganYZVM";
 import YonganDZJ from "./pages/YonganDZJ";
@@ -100,6 +101,7 @@ const App = () => (
           <Route path="/catalog/jint-sh" element={<JintSH />} />
           <Route path="/catalog/jint-sd" element={<JintSD />} />
           <Route path="/catalog/juli-jl" element={<JuliJL />} />
+          <Route path="/catalog/dongtai-jl" element={<DongtaiJL />} />
           <Route path="/catalog/yongan-yz" element={<YonganYZ />} />
           <Route path="/catalog/yongan-yz-vm" element={<YonganYZVM />} />
           <Route path="/catalog/yongan-dzj" element={<YonganDZJ />} />
