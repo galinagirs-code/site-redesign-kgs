@@ -17,7 +17,7 @@ const JintSHDescriptionSection = () => {
                 <h3 className="text-xl md:text-2xl font-heading font-bold text-primary">О производителе</h3>
               </div>
               <p className="text-primary mb-4 text-base md:text-lg leading-relaxed">
-                Shanghai Jintai Construction Machinery Co., Ltd. — государственная машиностроительная компания Китая, основанная в 1921 году. С 1996 по 2003 год компания работала в совместном производстве с немецкой компанией Bauer — мировым лидером в производстве буровых установок. Это партнёрство обеспечило высокий уровень инженерной культуры и передовые технологии, заложенные в продуктовую линейку JINT.
+                Shanghai Jintai — государственная компания Китая, основана в 1921 году. С 1996 по 2003 год работала в партнёрстве с немецкой компанией Bauer. Это партнёрство обеспечило высокий уровень инженерной культуры и передовые технологии, заложенные в продуктовую линейку JINT.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gray-50 rounded-xl p-5">
