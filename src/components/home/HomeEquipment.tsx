@@ -29,7 +29,7 @@ const equipment = [
   {
     id: 3,
     title: "Буровые машины",
-    image: "https://cdn.poehali.dev/files/d6969695-9ea3-4575-ae46-0100d7ffa85f.png",
+    image: "https://cdn.poehali.dev/files/8f021290-5fb6-4a9e-b157-ad9b6ee9090c.jpg",
     models: [
       "Гидравлическая буровая машина JINT (серия SH)",
       "Гидравлическая буровая машина JINT (серия SD)",

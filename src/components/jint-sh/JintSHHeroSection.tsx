@@ -74,7 +74,7 @@ const JintSHHeroSection = () => {
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-gray-50 shadow-xl max-w-md w-full">
                   <OptimizedImage
-                    src="https://cdn.poehali.dev/files/750721a1-cef9-4371-9db0-ec48fe8eee19.png"
+                    src="https://cdn.poehali.dev/files/8f021290-5fb6-4a9e-b157-ad9b6ee9090c.jpg"
                     alt="Гидравлическая буровая машина JINT серия SH"
                     className="w-full h-full object-contain p-6"
                   />
