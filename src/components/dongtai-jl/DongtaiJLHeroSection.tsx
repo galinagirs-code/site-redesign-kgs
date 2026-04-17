@@ -76,7 +76,7 @@ const DongtaiJLHeroSection = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="text-accent font-bold text-base md:text-lg mt-0.5">&#10004;</span>
-                    <span className="text-base md:text-lg text-primary">Оптимальное соотношение цены и эффективности</span>
+                    <span className="text-base md:text-lg text-primary">Оптимальное соотношение цены и качества</span>
                   </div>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const DongtaiJLDescriptionSection = () => {
                 <h3 className="text-xl font-heading font-bold text-primary">О серии JL</h3>
               </div>
               <p className="text-base md:text-lg text-primary leading-relaxed">
-                Буровые установки JuLi серии JL — это надёжное и экономически эффективное решение для выполнения задач горизонтально-направленного бурения, особенно в условиях городской застройки и ограниченного пространства.
+                Буровые установки Dongtai JuLi (серия JL) — это надёжное и эффективное решение для выполнения задач горизонтально-направленного бурения, особенно в условиях городской застройки и ограниченного пространства.
               </p>
             </CardContent>
           </Card>
@@ -84,7 +84,7 @@ const DongtaiJLDescriptionSection = () => {
                 <h3 className="text-xl font-heading font-bold text-primary">Область применения</h3>
               </div>
               <p className="text-base md:text-lg text-primary leading-relaxed mb-4">
-                Установки серии JL применяются для бестраншейной прокладки коммуникаций в самых разных условиях:
+                Горизонтально-направленные буровые установки Dongtai JuLi (серия JL) применяются для бестраншейной прокладки коммуникаций в самых разных условиях:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
