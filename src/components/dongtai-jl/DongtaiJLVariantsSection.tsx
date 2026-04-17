@@ -375,17 +375,17 @@ const DongtaiJLVariantsSection = () => {
                         )}
                       </div>
 
-                      <div className="flex flex-col gap-2 mt-4">
+                      <div className="flex flex-row gap-2 mt-4">
                         <Button
                           variant="outline"
                           size="sm"
                           onClick={() => setExpandedVariant(expandedVariant === variant.name ? null : variant.name)}
-                          className="w-full"
+                          className="flex-1"
                         >
                           {expandedVariant === variant.name ? (
                             <>
                               <Icon name="ChevronUp" size={16} className="mr-2" />
-                              Скрыть характеристики
+                              Скрыть
                             </>
                           ) : (
                             <>
@@ -394,10 +394,10 @@ const DongtaiJLVariantsSection = () => {
                             </>
                           )}
                         </Button>
-                        <a href="#consultation" className="block">
+                        <a href="#consultation" className="flex-1">
                           <Button className="btn-gradient text-white w-full" size="sm">
                             <Icon name="MessageSquare" size={16} className="mr-2" />
-                            Получить консультацию
+                            Консультация
                           </Button>
                         </a>
                       </div>
